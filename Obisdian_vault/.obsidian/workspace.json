@@ -98,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md"
+                "file": "TryHackMe/Jr.Penetration Tester.md"
               }
             }
           }
@@ -161,8 +159,14 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
+    "TryHackMe/Comptia Pentest+",
+    "TryHackMe/Jr. Penetration Tester",
+    "TryHackMe/Offensive Penetration Tester",
+    "Jr.Penetration Tester",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "TryHackMe/Jr.Penetration Tester.md",
+    "TryHackMe",
+    "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket",
     "Cloud.Pawned Labs/Thunder Dome",
     "Welcome.md",
