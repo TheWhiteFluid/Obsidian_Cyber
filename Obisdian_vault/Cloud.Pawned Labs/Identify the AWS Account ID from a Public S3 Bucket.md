@@ -11,11 +11,13 @@ so... voila! the bucket name where images are stored is **mega-big-tech**
 We will be using our AWS account that have following role permissions:
 ![[Pasted image 20240523192542.png]]
 
-Log in our AWS account using CLI : ```aws configure```
+Log in our AWS account using CLI:
 
-![[Pasted image 20240523192721.png]]
+![[Pasted image 20240523195044.png]]
 
 We will use an open source tool called s3-search-account (python script that is searching account ids based on wildcards): we need to provide the Amazon Resource Name (ARN) of the role under our control (i.e. in our own AWS account), as well as a target S3 bucket in the AWS account whose ID we want to enumerate.
+![[Pasted image 20240523194443.png]]
+![[Pasted image 20240523194629.png]]
 ```
 s3-account-search arn:aws:iam::427648302155:role/LeakyBucket mega-big-tech
 ```
