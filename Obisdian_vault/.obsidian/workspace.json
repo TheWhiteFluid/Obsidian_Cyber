@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
+                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
+                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
+                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Fundamentals.md"
+                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md"
               }
             }
           }
@@ -148,17 +148,21 @@
   },
   "active": "c213b10b926196f7",
   "lastOpenFiles": [
-    "Screenshots/Pasted image 20240523114052.png",
+    "Pasted image 20240523194057.png",
+    "Screenshots/Pasted image 20240523192542.png",
+    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "Screenshots/Pasted image 20240523193423.png",
+    "Screenshots/Pasted image 20240523192721.png",
+    "Screenshots/Pasted image 20240523192631.png",
+    "Screenshots/Pasted image 20240523192343.png",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
+    "Screenshots/Pasted image 20240523114052.png",
     "Screenshots/Pasted image 20240523113921.png",
     "Screenshots/Pasted image 20240523114659.png",
     "Screenshots/Pasted image 20240523114420.png",
     "Screenshots/Pasted image 20240523114426.png",
     "Screenshots.md",
     "Screenshots",
-    "Pasted image 20240523113047.png",
-    "Pasted image 20240523113013.png",
-    "Pasted image 20240523113008.png",
     "Websites Malware Detection.md",
     "Frameworks & Tools.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
@@ -167,7 +171,6 @@
     "TryHackMe/Jr. Penetration Tester",
     "TryHackMe/Offensive Penetration Tester",
     "Jr.Penetration Tester",
-    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket",
     "Cloud.Pawned Labs/Thunder Dome",
