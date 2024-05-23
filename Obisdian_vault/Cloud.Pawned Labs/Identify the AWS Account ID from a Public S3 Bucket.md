@@ -4,18 +4,18 @@ first step is port scanning of the public IP
 nmap -Pn 54.204.171.32
 ```
 
-quick inspect of the web page reveals that is a static website and it's image are stored in a S3 bucket
+Quick inspect of the web page reveals that is a static website and it's image are stored in a S3 bucket
 ![[Pasted image 20240523192343.png]]
 so... voila! the bucket name where images are stored is **mega-big-tech**
 
-we will be using our AWS account that have following role permissions:
+We will be using our AWS account that have following role permissions:
 ![[Pasted image 20240523192542.png]]
 
-log in our AWS account using CLI : ```aws configure```
+Log in our AWS account using CLI : ```aws configure```
 
 ![[Pasted image 20240523192721.png]]
 
-we will use an open source tool called s3-search-account (python script that is searching account ids based on wildcards): We need to provide the Amazon Resource Name (ARN) of the role under our control (i.e. in our own AWS account), as well as a target S3 bucket in the AWS account whose ID we want to enumerate.
+We will use an open source tool called s3-search-account (python script that is searching account ids based on wildcards): we need to provide the Amazon Resource Name (ARN) of the role under our control (i.e. in our own AWS account), as well as a target S3 bucket in the AWS account whose ID we want to enumerate.
 ```
 s3-account-search arn:aws:iam::427648302155:role/LeakyBucket mega-big-tech
 ```
