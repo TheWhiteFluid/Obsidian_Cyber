@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4c798f425f42f1ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+                "file": "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+                "file": "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md"
+                "file": "Cloud.Pawned Labs/SSRF on GoogleCloud.md"
               }
             }
           }
@@ -146,8 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "4c798f425f42f1ce",
   "lastOpenFiles": [
+    "Screenshots/Pasted image 20240524034113.png",
+    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
+    "Screenshots/Pasted image 20240524035445.png",
+    "Screenshots/Pasted image 20240524035318.png",
+    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "Screenshots/Pasted image 20240523195044.png",
     "Screenshots/Pasted image 20240523194629.png",
     "Screenshots/Pasted image 20240523194621.png",
@@ -155,11 +173,6 @@
     "Screenshots/Pasted image 20240523194443.png",
     "Screenshots/Pasted image 20240523194057.png",
     "Screenshots/Pasted image 20240523192542.png",
-    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "Screenshots/Pasted image 20240523193423.png",
-    "Screenshots/Pasted image 20240523192721.png",
-    "Screenshots/Pasted image 20240523192631.png",
-    "Screenshots/Pasted image 20240523192343.png",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
     "Screenshots",
