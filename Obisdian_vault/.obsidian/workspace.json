@@ -23,16 +23,34 @@
             "id": "3653c1b5dc4f5868",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Content Discovery.md",
-                "mode": "source",
-                "source": false
+                "file": "Screenshots/Pasted image 20240527020817.png"
+              }
+            }
+          },
+          {
+            "id": "4d61813a1b5cb4e6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240527020845.png"
+              }
+            }
+          },
+          {
+            "id": "6fde7653bf4c1fa3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240527020817.png"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Content Discovery.md",
+                "file": "Screenshots/Pasted image 20240527020817.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Content Discovery.md",
+                "file": "Screenshots/Pasted image 20240527020817.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Content Discovery.md"
+                "file": "Screenshots/Pasted image 20240527020817.png"
               }
             }
           }
@@ -159,10 +177,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3653c1b5dc4f5868",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
+    "Screenshots/Pasted image 20240527020848.png",
+    "Screenshots/Pasted image 20240527020845.png",
+    "Screenshots/Pasted image 20240527020817.png",
     "TryHackMe/Jr. Penetration Tester/Content Discovery.md",
+    "Screenshots/Pasted image 20240527020907.png",
+    "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "Screenshots/Pasted image 20240524034113.png",
@@ -171,10 +193,6 @@
     "Screenshots/Pasted image 20240523195044.png",
     "Screenshots/Pasted image 20240523194629.png",
     "Screenshots/Pasted image 20240523194621.png",
-    "Screenshots/Pasted image 20240523194545.png",
-    "Screenshots/Pasted image 20240523194443.png",
-    "Screenshots/Pasted image 20240523194057.png",
-    "Screenshots/Pasted image 20240523192542.png",
     "Screenshots.md",
     "Screenshots",
     "Websites Malware Detection.md",

@@ -76,13 +76,16 @@ Although there are many different content discovery tools available, all with th
 ```shell-session
 user@machine$ ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://10.10.142.89/FUZZ
 ```
+![[Pasted image 20240527020817.png]]
 
 **Using dirb:**
 ```shell-session
 user@machine$ dirb http://10.10.142.89/ /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
+![[Pasted image 20240527020848.png]]
 
 **Using Gobuster:**
 ```shell-session
 user@machine$ gobuster dir --url http://10.10.142.89/ -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt
 ```
+![[Pasted image 20240527020907.png]]
