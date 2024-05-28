@@ -31,16 +31,26 @@
             "id": "f72acc3b6f7613b2",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240527032817.png"
+              }
+            }
+          },
+          {
+            "id": "52e9d0c59bb5e523",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
+                "file": "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
+                "file": "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
+                "file": "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md"
+                "file": "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md"
               }
             }
           }
@@ -167,12 +177,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f72acc3b6f7613b2",
+  "active": "52e9d0c59bb5e523",
   "lastOpenFiles": [
-    "Pasted image 20240527032817.png",
+    "Pasted image 20240528051335.png",
+    "Screenshots/Pasted image 20240527032817.png",
+    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
+    "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
     "Screenshots/Pasted image 20240527031403.png",
     "Screenshots/Pasted image 20240527031411.png",
-    "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
     "Screenshots/Pasted image 20240527031015.png",
     "Screenshots/Pasted image 20240527031050.png",
     "Screenshots/Pasted image 20240527031103.png",
@@ -184,7 +196,6 @@
     "Screenshots/Pasted image 20240527020907.png",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "Screenshots/Pasted image 20240524034113.png",
     "Screenshots.md",
     "Screenshots",
     "Websites Malware Detection.md",
