@@ -11,6 +11,16 @@
             "id": "30d897b432eaf1e4",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240601141418.png"
+              }
+            }
+          },
+          {
+            "id": "be0a8bca3fac9450",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
@@ -19,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,14 +157,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30d897b432eaf1e4",
+  "active": "be0a8bca3fac9450",
   "lastOpenFiles": [
-    "Pasted image 20240601142148.png",
-    "Pasted image 20240601141926.png",
-    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
+    "Screenshots/Pasted image 20240601141418.png",
+    "Screenshots/Pasted image 20240601141926.png",
+    "Screenshots/Pasted image 20240601141453.png",
     "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
-    "Pasted image 20240601141453.png",
-    "Pasted image 20240601141418.png",
+    "Screenshots/Pasted image 20240601142148.png",
+    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
     "Screenshots/Pasted image 20240529190635.png",
     "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
@@ -165,7 +176,6 @@
     "Screenshots/Pasted image 20240527031411.png",
     "Screenshots/Pasted image 20240527031403.png",
     "Screenshots/Pasted image 20240527031103.png",
-    "Screenshots/Pasted image 20240527031050.png",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
