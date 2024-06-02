@@ -11,6 +11,26 @@
             "id": "52e9d0c59bb5e523",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240602043555.png"
+              }
+            }
+          },
+          {
+            "id": "391d2b375890f119",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240602044852.png"
+              }
+            }
+          },
+          {
+            "id": "a2f572367d5044c7",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
@@ -19,7 +39,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,16 +167,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52e9d0c59bb5e523",
+  "active": "a2f572367d5044c7",
   "lastOpenFiles": [
-    "Pasted image 20240602044852.png",
-    "Pasted image 20240602043555.png",
+    "Pasted image 20240602051034.png",
+    "Screenshots/Pasted image 20240602043555.png",
+    "Screenshots/Pasted image 20240602044852.png",
+    "Screenshots/Pasted image 20240602050101.png",
+    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
     "Frameworks & Tools.md",
     "Screenshots/Pasted image 20240601142148.png",
     "Screenshots/Pasted image 20240601141926.png",
     "Screenshots/Pasted image 20240601141453.png",
     "Screenshots/Pasted image 20240601141418.png",
-    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
     "Screenshots/Pasted image 20240529190635.png",
     "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
@@ -165,8 +188,6 @@
     "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
     "Screenshots/Pasted image 20240528051335.png",
     "Screenshots/Pasted image 20240527032817.png",
-    "Screenshots/Pasted image 20240527031403.png",
-    "Screenshots/Pasted image 20240527031411.png",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "Screenshots.md",
