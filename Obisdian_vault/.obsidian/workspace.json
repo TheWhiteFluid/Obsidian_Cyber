@@ -8,17 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "30d897b432eaf1e4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Screenshots/Pasted image 20240601141418.png"
-              }
-            }
-          },
-          {
-            "id": "be0a8bca3fac9450",
+            "id": "52e9d0c59bb5e523",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,31 +146,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "be0a8bca3fac9450",
+  "active": "52e9d0c59bb5e523",
   "lastOpenFiles": [
-    "Screenshots/Pasted image 20240601141418.png",
+    "Frameworks & Tools.md",
+    "Screenshots/Pasted image 20240601142148.png",
     "Screenshots/Pasted image 20240601141926.png",
     "Screenshots/Pasted image 20240601141453.png",
+    "Screenshots/Pasted image 20240601141418.png",
     "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
-    "Screenshots/Pasted image 20240601142148.png",
     "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
     "Screenshots/Pasted image 20240529190635.png",
     "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
-    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
+    "Websites Malware Detection.md",
     "TryHackMe/Jr. Penetration Tester/02.Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
     "Screenshots/Pasted image 20240528051335.png",
     "Screenshots/Pasted image 20240527032817.png",
-    "Screenshots/Pasted image 20240527031411.png",
     "Screenshots/Pasted image 20240527031403.png",
-    "Screenshots/Pasted image 20240527031103.png",
+    "Screenshots/Pasted image 20240527031411.png",
+    "Screenshots/Pasted image 20240527031015.png",
+    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
     "Screenshots",
-    "Websites Malware Detection.md",
-    "Frameworks & Tools.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "TryHackMe/Jr.Penetration Tester.md",
     "Comptia PenTest+",
