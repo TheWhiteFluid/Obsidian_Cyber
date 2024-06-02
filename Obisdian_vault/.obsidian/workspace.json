@@ -11,8 +11,12 @@
             "id": "c5e153049976cf1e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,14 +124,16 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md"
+              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -139,11 +147,14 @@
   },
   "active": "c5e153049976cf1e",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
+    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
+    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
     "Screenshots/Pasted image 20240602051034.png",
     "TryHackMe/Jr. Penetration Tester/02.Content Discovery.md",
     "Screenshots/Pasted image 20240602052925.png",
     "Screenshots/Pasted image 20240602052849.png",
-    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
     "Screenshots/Pasted image 20240602043555.png",
     "Screenshots/Pasted image 20240602044852.png",
     "Screenshots/Pasted image 20240602050101.png",
@@ -152,8 +163,6 @@
     "Screenshots/Pasted image 20240601141926.png",
     "Screenshots/Pasted image 20240601141453.png",
     "Screenshots/Pasted image 20240601141418.png",
-    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
     "Websites Malware Detection.md",
     "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
