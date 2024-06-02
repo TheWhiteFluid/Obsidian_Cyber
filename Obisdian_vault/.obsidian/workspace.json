@@ -11,6 +11,16 @@
             "id": "c5e153049976cf1e",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240602195526.png"
+              }
+            }
+          },
+          {
+            "id": "1cc68278f1798715",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
@@ -19,7 +29,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 253.5
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -133,7 +144,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,12 +157,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5e153049976cf1e",
+  "active": "1cc68278f1798715",
   "lastOpenFiles": [
+    "Screenshots/Pasted image 20240602195526.png",
+    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
+    "Screenshots/Pasted image 20240602195609.png",
+    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
     "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
     "Screenshots/Pasted image 20240602051034.png",
     "TryHackMe/Jr. Penetration Tester/02.Content Discovery.md",
     "Screenshots/Pasted image 20240602052925.png",
@@ -161,8 +175,6 @@
     "Frameworks & Tools.md",
     "Screenshots/Pasted image 20240601142148.png",
     "Screenshots/Pasted image 20240601141926.png",
-    "Screenshots/Pasted image 20240601141453.png",
-    "Screenshots/Pasted image 20240601141418.png",
     "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
     "Websites Malware Detection.md",
     "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
