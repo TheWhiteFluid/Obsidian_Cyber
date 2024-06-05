@@ -5,3 +5,5 @@ https://www.nist.gov/cyberframework
 
 https://github.com/danielmiessler/SecLists (bruteforce)
 https://crackstation.net (hash database)
+
+https://github.com/mandatoryprogrammer/xsshunter-express (Blind XSS attacks)
