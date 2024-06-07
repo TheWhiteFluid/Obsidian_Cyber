@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md"
               }
             }
           }
@@ -159,6 +159,9 @@
   },
   "active": "1cc68278f1798715",
   "lastOpenFiles": [
+    "Pasted image 20240607184239.png",
+    "Pasted image 20240607184212.png",
+    "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
     "Screenshots/Pasted image 20240602195526.png",
     "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
@@ -172,9 +175,7 @@
     "Screenshots/Pasted image 20240602043555.png",
     "Screenshots/Pasted image 20240602044852.png",
     "Screenshots/Pasted image 20240602050101.png",
-    "Frameworks & Tools.md",
     "Screenshots/Pasted image 20240601142148.png",
-    "Screenshots/Pasted image 20240601141926.png",
     "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
     "Websites Malware Detection.md",
     "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
