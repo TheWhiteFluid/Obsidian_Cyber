@@ -23,14 +23,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c5b7d22c39d3b438",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Screenshots/Pasted image 20240607184212.png"
+              }
+            }
+          },
+          {
+            "id": "1c0128e37f823408",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -96,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md"
               }
             }
           }
@@ -157,29 +179,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cc68278f1798715",
+  "active": "1c0128e37f823408",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
+    "Screenshots/Pasted image 20240607184212.png",
+    "Screenshots/Pasted image 20240607184239.png",
+    "Frameworks & Tools.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
+    "Screenshots/Pasted image 20240607185804.png",
+    "Screenshots/Pasted image 20240607185739.png",
+    "Screenshots/Pasted image 20240607185425.png",
+    "Screenshots/Pasted image 20240607185340.png",
+    "Screenshots/Pasted image 20240607185315.png",
+    "Screenshots/Pasted image 20240607185221.png",
+    "Screenshots/Pasted image 20240607185157.png",
+    "Screenshots/Pasted image 20240607185058.png",
+    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB",
-    "Screenshots/Pasted image 20240606000611.png",
-    "Screenshots/Pasted image 20240606000556.png",
-    "Screenshots/Pasted image 20240606000321.png",
-    "Screenshots/Pasted image 20240606000041.png",
-    "Screenshots/Pasted image 20240606000022.png",
-    "Screenshots/Pasted image 20240605235939.png",
-    "Screenshots/Pasted image 20240605235723.png",
-    "Screenshots/Pasted image 20240605235648.png",
-    "Screenshots/Pasted image 20240605235350.png",
-    "Screenshots/Pasted image 20240605235328.png",
-    "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
