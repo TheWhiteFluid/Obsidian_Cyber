@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "387ee59ebed82de0",
+        "id": "fa964fa6a024552e",
         "type": "tabs",
         "children": [
           {
-            "id": "c5e153049976cf1e",
+            "id": "a076090b93b80785",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "Screenshots/Pasted image 20240602195526.png"
+                "file": "Screenshots/Pasted image 20240605235328.png"
               }
             }
           },
           {
-            "id": "1cc68278f1798715",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5b7d22c39d3b438",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Screenshots/Pasted image 20240607184212.png"
-              }
-            }
-          },
-          {
-            "id": "1c0128e37f823408",
+            "id": "54e38cf3b6daea37",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -52,7 +30,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 300
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -166,7 +144,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -179,13 +157,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c0128e37f823408",
+  "active": "54e38cf3b6daea37",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
-    "Screenshots/Pasted image 20240607184212.png",
-    "Screenshots/Pasted image 20240607184239.png",
-    "Frameworks & Tools.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "Screenshots/Pasted image 20240607185804.png",
     "Screenshots/Pasted image 20240607185739.png",
     "Screenshots/Pasted image 20240607185425.png",
@@ -194,25 +167,25 @@
     "Screenshots/Pasted image 20240607185221.png",
     "Screenshots/Pasted image 20240607185157.png",
     "Screenshots/Pasted image 20240607185058.png",
-    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
+    "Screenshots/Pasted image 20240607185027.png",
+    "Screenshots/Pasted image 20240607184239.png",
+    "Screenshots/Pasted image 20240607184212.png",
+    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/WEB",
-    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/02.Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
-    "Websites Malware Detection.md",
-    "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
     "Screenshots",
+    "Websites Malware Detection.md",
+    "Frameworks & Tools.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "TryHackMe/Jr.Penetration Tester.md",
     "Comptia PenTest+",
