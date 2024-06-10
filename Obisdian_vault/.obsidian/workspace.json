@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a362919e7371f6b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
+                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
+                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md"
+                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md"
               }
             }
           }
@@ -146,13 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ab21fbc52dfea80",
+  "active": "a362919e7371f6b5",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
+    "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
+    "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice",
     "ZeroPoint Security/exams.md",
     "ZeroPoint Security/Red Team Ops II",
     "TryHackMe/DevSecOps",
     "TryHackMe/Offensive Pentesting",
-    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "ZeroPoint Security/Red Team Ops I",
     "ZeroPoint Security",
     "zz.Screenshots/Pasted image 20240610230406.png",
@@ -186,7 +201,6 @@
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "TryHackMe/Jr.Penetration Tester.md",
     "TryHackMe/Comptia PenTest+",
-    "TryHackMe/Jr. Penetration Tester",
     "Welcome.md"
   ]
 }
