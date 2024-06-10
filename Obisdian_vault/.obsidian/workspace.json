@@ -85,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md"
               }
             }
           }
@@ -144,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "4ab21fbc52dfea80",
   "lastOpenFiles": [
+    "ZeroPoint Security/exams.md",
     "ZeroPoint Security/Red Team Ops II",
-    "Untitled.md",
     "TryHackMe/DevSecOps",
     "TryHackMe/Offensive Pentesting",
     "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
@@ -185,7 +187,6 @@
     "TryHackMe/Jr.Penetration Tester.md",
     "TryHackMe/Comptia PenTest+",
     "TryHackMe/Jr. Penetration Tester",
-    "TryHackMe/Offensive Penetration Tester",
     "Welcome.md"
   ]
 }
