@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10..md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10..md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10..md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10..md"
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md"
               }
             }
           }
@@ -182,7 +182,7 @@
   "active": "4ab21fbc52dfea80",
   "lastOpenFiles": [
     "Screenshots/Pasted image 20240610003156.png",
-    "TryHackMe/Jr. Penetration Tester/WEB/10..md",
+    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "Screenshots/Pasted image 20240610004509.png",
     "Screenshots/Pasted image 20240610004405.png",
