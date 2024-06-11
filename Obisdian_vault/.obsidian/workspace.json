@@ -8,38 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c5e153049976cf1e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Screenshots/Pasted image 20240602195526.png"
-              }
-            }
-          },
-          {
-            "id": "1cc68278f1798715",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5b7d22c39d3b438",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Screenshots/Pasted image 20240607184212.png"
-              }
-            }
-          },
-          {
             "id": "1c0128e37f823408",
             "type": "leaf",
             "state": {
@@ -51,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,11 +148,12 @@
   },
   "active": "1c0128e37f823408",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
     "Screenshots/Pasted image 20240607184212.png",
+    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
+    "Screenshots/Pasted image 20240602195526.png",
+    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
     "Screenshots/Pasted image 20240607184239.png",
     "Frameworks & Tools.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "Screenshots/Pasted image 20240607185804.png",
     "Screenshots/Pasted image 20240607185739.png",
     "Screenshots/Pasted image 20240607185425.png",
@@ -193,7 +161,6 @@
     "Screenshots/Pasted image 20240607185315.png",
     "Screenshots/Pasted image 20240607185221.png",
     "Screenshots/Pasted image 20240607185157.png",
-    "Screenshots/Pasted image 20240607185058.png",
     "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
     "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
