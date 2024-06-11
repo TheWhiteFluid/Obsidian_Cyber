@@ -7,3 +7,4 @@ https://github.com/danielmiessler/SecLists (bruteforce)
 https://crackstation.net (hash database)
 
 https://github.com/mandatoryprogrammer/xsshunter-express (Blind XSS attacks)
+https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md (injections)
