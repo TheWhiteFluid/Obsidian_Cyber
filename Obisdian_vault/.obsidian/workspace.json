@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
+                "file": "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
+                "file": "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
+                "file": "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md"
+                "file": "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md"
               }
             }
           }
@@ -146,24 +146,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a362919e7371f6b5",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/File Upload",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Path Traversal",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/CSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/XSS",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection",
     "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "zz.Screenshots/Pasted image 20240611024231.png",
     "zz.Screenshots/Pasted image 20240611030152.png",
     "zz.Screenshots/Pasted image 20240611030138.png",
     "zz.Screenshots/Pasted image 20240611030129.png",
     "zz.Screenshots/Pasted image 20240611024315.png",
-    "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice/Website.md",
-    "TryHackMe/Jr. Penetration Tester/0)Exercises.Rooms.Practice",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice",
     "ZeroPoint Security/exams.md",
     "ZeroPoint Security/Red Team Ops II",
     "TryHackMe/DevSecOps",
     "TryHackMe/Offensive Pentesting",
     "ZeroPoint Security/Red Team Ops I",
-    "ZeroPoint Security",
     "zz.Screenshots/Pasted image 20240610230406.png",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite",
     "zz.Screenshots/Pasted image 20240610232401.png",
     "zz.Screenshots/Pasted image 20240610232020.png",
     "zz.Screenshots/Pasted image 20240610232000.png",
@@ -174,7 +178,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB",
     "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
     "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
@@ -183,11 +186,9 @@
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
-    "zz.Screenshots",
     "Websites Malware Detection.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "TryHackMe/Jr.Penetration Tester.md",
-    "TryHackMe/Comptia PenTest+",
     "Welcome.md"
   ]
 }
