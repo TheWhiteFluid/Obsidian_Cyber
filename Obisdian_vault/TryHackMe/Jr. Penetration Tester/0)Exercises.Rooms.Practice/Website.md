@@ -1,6 +1,6 @@
 https://portswigger.net/web-security
 
-Sqli tot
+SQL injection tot
     XSS tot 
     CSRF tot   
     SSRF tot
