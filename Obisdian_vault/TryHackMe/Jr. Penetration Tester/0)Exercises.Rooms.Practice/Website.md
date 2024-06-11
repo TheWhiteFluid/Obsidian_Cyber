@@ -1,4 +1,4 @@
-https://portswigger.net/web-security
+https://portswigger.net/web-security/all-labs
 
 SQL injection tot
     XSS tot 
