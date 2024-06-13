@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "90f2a867f9fefbd8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c0128e37f823408",
+  "active": "90f2a867f9fefbd8",
   "lastOpenFiles": [
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "zz.Screenshots/Pasted image 20240611030129.png",
