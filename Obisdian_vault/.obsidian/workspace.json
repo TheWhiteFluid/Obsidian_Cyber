@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+                "file": "Frameworks & Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4af2f671d3a187e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Commands(Linux.Windows).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+                "file": "Commands(Linux.Windows).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+                "file": "Commands(Linux.Windows).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md"
+                "file": "Commands(Linux.Windows).md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b35d68d986e4489",
+  "active": "4af2f671d3a187e4",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
+    "Frameworks & Tools.md",
+    "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
     "TryHackMe/Jr. Penetration Tester/Burp",
@@ -175,7 +190,6 @@
     "zz.Screenshots/Pasted image 20240610232000.png",
     "zz.Screenshots/Pasted image 20240610230424.png",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
-    "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
