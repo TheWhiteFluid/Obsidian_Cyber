@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "387ee59ebed82de0",
+        "id": "fa964fa6a024552e",
         "type": "tabs",
         "children": [
           {
-            "id": "1c0128e37f823408",
+            "id": "8b35d68d986e4489",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "90f2a867f9fefbd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "61c4bb6fc89fa3fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Burp/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTimeReverse"
               }
             }
           },
@@ -94,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 350.5
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Burp/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Burp/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Burp/Repeater.md"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md"
               }
             }
           }
@@ -158,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -171,53 +146,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "61c4bb6fc89fa3fa",
+  "active": "8b35d68d986e4489",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
-    "TryHackMe/Jr. Penetration Tester/Burp/Repeater.md",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
     "TryHackMe/Jr. Penetration Tester/Burp",
-    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
-    "zz.Screenshots/Pasted image 20240611030129.png",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/File Upload",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Path Traversal",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/CSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/XSS",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection",
+    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
+    "zz.Screenshots/Pasted image 20240611024231.png",
     "zz.Screenshots/Pasted image 20240611030152.png",
     "zz.Screenshots/Pasted image 20240611030138.png",
+    "zz.Screenshots/Pasted image 20240611030129.png",
     "zz.Screenshots/Pasted image 20240611024315.png",
-    "zz.Screenshots/Pasted image 20240611024231.png",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice",
+    "ZeroPoint Security/exams.md",
+    "ZeroPoint Security/Red Team Ops II",
+    "TryHackMe/DevSecOps",
+    "zz.Screenshots/Pasted image 20240610230406.png",
     "zz.Screenshots/Pasted image 20240610232401.png",
     "zz.Screenshots/Pasted image 20240610232020.png",
     "zz.Screenshots/Pasted image 20240610232000.png",
     "zz.Screenshots/Pasted image 20240610230424.png",
-    "zz.Screenshots/Pasted image 20240610230406.png",
-    "zz.Screenshots",
-    "ZeroPoint Security/exams.md",
-    "ZeroPoint Security",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
-    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
-    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice",
-    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
     "Frameworks & Tools.md",
-    "TryHackMe/Jr. Penetration Tester/07.Intro to SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/WEB",
-    "TryHackMe/Jr. Penetration Tester/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/02.Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/03.Subdomain Enumeration.md",
-    "Websites Malware Detection.md",
-    "TryHackMe/Jr. Penetration Tester/01.Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
-    "Screenshots",
+    "Websites Malware Detection.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
-    "Comptia PenTest+",
-    "TryHackMe/Jr. Penetration Tester",
-    "TryHackMe/Offensive Penetration Tester",
-    "Jr.Penetration Tester"
+    "TryHackMe/Jr.Penetration Tester.md",
+    "Welcome.md"
   ]
 }
