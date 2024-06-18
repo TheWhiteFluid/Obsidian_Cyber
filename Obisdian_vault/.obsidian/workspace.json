@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Commands(Linux.Windows).md",
+                "file": "Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Commands(Linux.Windows).md",
+                "file": "Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Commands(Linux.Windows).md",
+                "file": "Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Commands(Linux.Windows).md"
+                "file": "Frameworks & Tools.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "4af2f671d3a187e4",
   "lastOpenFiles": [
+    "Websites Malware Detection.md",
     "Frameworks & Tools.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
@@ -202,7 +203,6 @@
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md",
     "Screenshots.md",
-    "Websites Malware Detection.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "TryHackMe/Jr.Penetration Tester.md",
     "Welcome.md"
