@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md"
               }
             }
           }
@@ -161,8 +161,15 @@
   },
   "active": "4af2f671d3a187e4",
   "lastOpenFiles": [
-    "Websites Malware Detection.md",
+    "Screen Recording 2024-06-19 at 01.12.01.mov",
+    "Pasted image 20240619011108.png",
+    "Pasted image 20240619011031.png",
+    "Pasted image 20240619011008.png",
+    "Screen Recording 2024-06-19 at 01.03.47.mov",
+    "Pasted image 20240619005917.png",
+    "Pasted image 20240619005804.png",
     "Frameworks & Tools.md",
+    "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
@@ -184,12 +191,6 @@
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice",
     "ZeroPoint Security/exams.md",
     "ZeroPoint Security/Red Team Ops II",
-    "TryHackMe/DevSecOps",
-    "zz.Screenshots/Pasted image 20240610230406.png",
-    "zz.Screenshots/Pasted image 20240610232401.png",
-    "zz.Screenshots/Pasted image 20240610232020.png",
-    "zz.Screenshots/Pasted image 20240610232000.png",
-    "zz.Screenshots/Pasted image 20240610230424.png",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",

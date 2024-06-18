@@ -97,3 +97,62 @@ Burp Suite's Intruder tool offers several payload types, each designed for diffe
 |**Custom Iterator**|Defines custom iterators for complex payload generation|Generating complex payloads requiring specific combinations|
 |**Extension-generated**|Uses Burp extensions for payload generation|Customized payload generation|
 |**Markov Chains**|Generates payloads based on statistical models of character sequences|Generating realistic payloads based on observed patterns|
+
+## Example Walktrough
+
+1. Navigate to `http://MACHINE_IP/admin/login/`. Activate **Intercept** in the Proxy module and attempt to log in. Capture the request and send it to Intruder.
+    
+2. Configure the positions the same way as we did for brute-forcing the support login:
+    
+    - Set the attack type to "Pitchfork".
+    - Clear all predefined positions and select only the username and password form fields. Our macro will handle the other two positions.
+- ![[Pasted image 20240619005804.png]]
+3. Now switch over to the Payloads tab and load in the same username and password wordlists we used for the support login attack.
+    
+    Up until this point, we have configured Intruder in almost the same way as our previous credential stuffing attack; this is where things start to get more complicated.
+    
+4. With the username and password parameters handled, we now need to find a way to grab the ever-changing loginToken and session cookie. Unfortunately, "recursive grep" won't work here due to the redirect response, so we can't do this entirely within Intruder – we will need to build a macro.
+    
+    Macros allow us to perform the same set of actions repeatedly. In this case, we simply want to send a GET request to `/admin/login/`.
+    
+	Fortunately, setting this up is a straightforward process.
+
+	- Switch over to the main "Settings" tab at the top-right of Burp.
+	- Click on the "Sessions" category.
+	- Scroll down to the bottom of the category to the "Macros" section and click the **Add** button.
+	- The menu that appears will show us our request history. If there isn't a GET request to `http://MACHINE_IP/admin/login/` in the list already, navigate to this location in your browser, and you should see a suitable request appear in the list.
+	- With the request selected, click **OK**.
+	- Finally, give the macro a suitable name, then click **OK** again to finish the process.
+
+![[Screen Recording 2024-06-19 at 01.03.47.mov]]
+
+5. Now that we have a macro defined, we need to set Session Handling rules that define how the macro should be used.
+
+	- Still in the "Sessions" category of the main settings, scroll up to the "Session Handling Rules" section and choose to **Add** a new rule.
+	- A new window will pop up with two tabs in it: "Details" and "Scope". We are in the Details tab by default.
+	![[Pasted image 20240619011008.png]]
+	
+	- Fill in an appropriate description, then switch to the Scope tab.
+	- In the "Tools Scope" section, deselect every checkbox other than Intruder – we do not need this rule to apply anywhere else.
+	- In the "URL Scope" section, choose "Use suite scope"; this will set the macro to only operate on sites that have been added to the global scope (as was discussed in [Burp Basics](https://tryhackme.com/room/burpsuitebasics)). If you have not set a global scope, keep the "Use custom scope" option as default and add `http://MACHINE_IP/` to the scope in this section
+		 ![[Pasted image 20240619011108.png]]
+
+6. Now we need to switch back over to the Details tab and look at the "Rule Actions" section.
+
+	- Click the **Add** button – this will cause a dropdown menu to appear with a list of actions we can add.
+	- Select "Run a Macro" from this list.
+	- In the new window that appears, select the macro we created earlier.
+	    
+	As it stands, this macro will now overwrite all of the parameters in our Intruder requests before we send them; this is great, as it means that we will get the loginTokens and session cookies added straight into our requests. That said, we should restrict which parameters and cookies are being updated before we start our attack:
+	
+	- Select "Update only the following parameters and headers", then click the **Edit** button next to the input box below the radio button.
+	- In the "Enter a new item" text field, type "loginToken". Press **Add**, then **Close**.
+	- Select "Update only the following cookies", then click the relevant **Edit** button.
+	- Enter "session" in the "Enter a new item" text field. Press **Add**, then **Close**.
+	- Finally, press **OK** to confirm our action.
+	![[Screen Recording 2024-06-19 at 01.12.01.mov]]
+You should now have a macro defined that will substitute in the CSRF token and session cookie. All that's left to do is switch back to Intruder and start the attack!
+    
+**Note:** You should be getting 302 status code responses for every request in this attack. If you see 403 errors, then your macro is not working properly.
+    
+ As with the support login credential stuffing attack we carried out, the response codes here are all the same (302 Redirects). Once again, order your responses by length to find the valid credentials. Your results won't be quite as clear-cut as last time – you will see quite a few different response lengths: however, the response that indicates a successful login should still stand out as being significantly shorter.
