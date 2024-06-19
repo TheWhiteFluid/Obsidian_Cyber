@@ -32,7 +32,6 @@ Hashes are used to securely store passwords since the one-way hashing process ma
 ![[Pasted image 20240619190737.png]]
 ## Comparer
 Comparer, as the name implies, lets us compare two pieces of data, either by ASCII words or by bytes.
-
 ![[Pasted image 20240619190849.png]]
 
 ![[Pasted image 20240619190859.png]]
@@ -40,7 +39,6 @@ Comparer, as the name implies, lets us compare two pieces of data, either by ASC
 
 ## Sequencer
 Sequencer allows us to evaluate the entropy, or randomness, of "tokens". Tokens are strings used to identify something and should ideally be generated in a cryptographically secure manner. These tokens could be session cookies or **C**ross-**S**ite **R**equest **F**orgery (CSRF) tokens used to protect form submissions. If these tokens aren't generated securely, then, in theory, we could predict upcoming token values. The implications could be substantial, for instance, if the token in question is used for password resets.
-
 ![[Pasted image 20240619191342.png]]
 
 We have two main ways to perform token analysis with Sequencer:
@@ -63,6 +61,21 @@ If we wished for periodic updates on the analysis, we could have also selected t
 
 At this point, it's also worth noting that we could choose to copy or save the captured tokens for further analysis at a later time.
 
+The generated entropy analysis report is split into four primary sections. The first of these is the **Summary** of the results. The summary gives us the following:
+![[Pasted image 20240619195043.png]]
+
+- **Overall result**: This gives a broad assessment of the security of the token generation mechanism. In this case, the level of entropy indicates that the tokens are likely securely generated.
+    
+- **Effective entropy**: This measures the randomness of the tokens. The effective entropy of 117 bits is relatively high, indicating that the tokens are sufficiently random and, therefore, secure against prediction or brute force attacks.
+    
+- **Reliability**: The significance level of 1% implies that there is 99% confidence in the accuracy of the results. This level of confidence is quite high, providing assurance in the accuracy of the effective entropy estimation.
+    
+- **Sample**: This provides details about the token samples analyzed during the entropy testing process, including the number of tokens and their characteristics.
+    
+
+While the summary report often provides enough information to assess the security of the token generation process, it's important to remember that further investigation may be necessary in some cases. The character-level and bit-level analysis can provide more detailed insights into the randomness of the tokens, especially when the summary results raise potential concerns.
+
+While the entropy report can provide a strong indicator of the security of the token generation mechanism, there needs to be more definitive proof. Other factors could also impact the security of the tokens, and the nature of probability and statistics means there's always a degree of uncertainty. That said, an effective entropy of 117 bits with a significance level of 1% suggests a robustly secure token generation process.
 
 
 
