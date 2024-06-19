@@ -32,12 +32,24 @@ Hashes are used to securely store passwords since the one-way hashing process ma
 ![[Pasted image 20240619190737.png]]
 ## Comparer
 Comparer, as the name implies, lets us compare two pieces of data, either by ASCII words or by bytes.
+
 ![[Pasted image 20240619190849.png]]
 
 ![[Pasted image 20240619190859.png]]
 
 
 ## Sequencer
+Sequencer allows us to evaluate the entropy, or randomness, of "tokens". Tokens are strings used to identify something and should ideally be generated in a cryptographically secure manner. These tokens could be session cookies or **C**ross-**S**ite **R**equest **F**orgery (CSRF) tokens used to protect form submissions. If these tokens aren't generated securely, then, in theory, we could predict upcoming token values. The implications could be substantial, for instance, if the token in question is used for password resets.
 
+![[Pasted image 20240619191342.png]]
+
+We have two main ways to perform token analysis with Sequencer:
+- **Live Capture**: This is the more common method and is the default sub-tab for Sequencer. Live capture lets us pass a request that will generate a token to Sequencer for analysis. For instance, we might want to pass a POST request to a login endpoint to Sequencer, knowing that the server will respond with a cookie. With the request passed in, we can instruct Sequencer to start a live capture. It will then automatically make the same request thousands of times, storing the generated token samples for analysis. After collecting enough samples, we stop the Sequencer and allow it to analyze the captured tokens.
+    
+- **Manual Load**: This allows us to load a list of pre-generated token samples directly into Sequencer for analysis. Using Manual Load means we don't need to make thousands of requests to our target, which can be noisy and resource-intensive. However, it does require that we have a large list of pre-generated tokens.
+
+**a) Live Capture:**
+
+**b) Manual Load:**
 
 
