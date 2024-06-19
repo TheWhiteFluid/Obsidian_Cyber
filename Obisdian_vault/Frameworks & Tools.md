@@ -1,4 +1,3 @@
-
 ## Map
 1. https://github.com/Ignitetechnologies/Mindmap
 
