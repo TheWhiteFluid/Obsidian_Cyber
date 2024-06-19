@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d2587dc0a43416b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md"
               }
             }
           }
@@ -171,10 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2587dc0a43416b3",
+  "active": "31bad27560252211",
   "lastOpenFiles": [
-    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
     "Commands(Linux.Windows).md",
     "Frameworks & Tools.md",
