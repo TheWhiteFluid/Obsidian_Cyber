@@ -59,3 +59,44 @@ To overcome this issue, we can manually add the PortSwigger CA certificate to ou
 4. **Set Trust for the CA Certificate:** In the subsequent window that appears, check the box that says "Trust this CA to identify websites" and click OK.
 
 By completing these steps, we have added the PortSwigger CA certificate to our list of trusted certificate authorities. Now, we should be able to visit any TLS-enabled site without encountering the certificate error.
+
+## Burp Browser
+
+If you are running Burp Suite on Linux as the root user (as is the case with the AttackBox), you may encounter an error preventing the Burp Browser from starting due to the inability to create a sandbox environment.
+
+There are two simple solutions to this:
+
+1. **Smart option:** Create a new user and run Burp Suite under a low-privilege account to allow the Burp Browser to run without issues.
+2. **Easy option:** Go to `Settings -> Tools -> Burp's browser` and check the `Allow Burp's browser to run without a sandbox` option. Enabling this option will allow the browser to start without a sandbox. However, please be aware that this option is disabled by default for security reasons. If you choose to enable it, exercise caution, as compromising the browser could grant an attacker access to your entire machine. In the training environment of the AttackBox, this is unlikely to be a significant issue, but use it responsibly.
+
+How to give low privilege account in order to run open browser feature of proxy BurpSuite without having set sandbox:
+
+1. Add a new user with limited privileges. Replace `burpuser` with your desired username.
+		`sudo adduser burpuser`
+		
+2. Set Up Necessary Permissions
+	Ensure the new user has permission to execute Burp Suite and access any necessary files. If Burp Suite was installed in a directory that requires root permissions, you may need to adjust the permissions of that directory.
+		`sudo chown -R burpuser:burpuser /opt/BurpSuite`
+		
+3. Switch to the Low-Privilege User and run BurpSuite
+		``` su - burpuser 
+			cd /opt/BurpSuite 
+				./burpsuite
+
+4. **Check the Current DISPLAY Variable:**
+    First, as the original user (the one who started the X session), check the current DISPLAY variable:
+    `echo $DISPLAY` | This will typically output something like `:0` or `:1`.
+    
+5. **Allow Access to the X Server:**
+    Allow the `burpuser` to access the X server:
+
+    `xhost +SI:localuser:burpuser`
+    
+6. **Switch to `burpuser` and Set DISPLAY Variable:**
+    `su - burpuser` | Set the DISPLAY variable to match the value obtained in step 1. For example, if the original user’s DISPLAY variable was `:0`, set it as follows:
+    
+    `export DISPLAY=:0`
+    
+7. **Run Burp Suite:**
+    `cd /opt/BurpSuite ./burpsuite`
+

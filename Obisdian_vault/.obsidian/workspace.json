@@ -57,7 +57,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md"
               }
             }
           }
@@ -193,13 +193,13 @@
   },
   "active": "31bad27560252211",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
-    "Pasted image 20240619162440.png",
-    "Pasted image 20240619162353.png",
-    "Pasted image 20240619162342.png",
-    "Pasted image 20240619162337.png",
-    "Pasted image 20240619162132.png",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+    "zz.Screenshots/Pasted image 20240619162132.png",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+    "zz.Screenshots/Pasted image 20240619162440.png",
+    "zz.Screenshots/Pasted image 20240619162353.png",
+    "zz.Screenshots/Pasted image 20240619162342.png",
+    "zz.Screenshots/Pasted image 20240619162337.png",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "zz.Screenshots/Pasted image 20240619161503.png",
     "zz.Screenshots/Pasted image 20240619161558.png",
