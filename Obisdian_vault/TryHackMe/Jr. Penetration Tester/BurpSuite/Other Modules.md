@@ -48,8 +48,21 @@ We have two main ways to perform token analysis with Sequencer:
     
 - **Manual Load**: This allows us to load a list of pre-generated token samples directly into Sequencer for analysis. Using Manual Load means we don't need to make thousands of requests to our target, which can be noisy and resource-intensive. However, it does require that we have a large list of pre-generated tokens.
 
-**a) Live Capture:**
+ **Live Capture:**
+First, capture a request to `http://10.10.192.242/admin/login/` in the Proxy. Right-click on the request and select **Send to Sequencer**.
 
-**b) Manual Load:**
+In the "Token Location Within Response" section, we can select between **Cookie**, **Form field**, and **Custom location**. Since we're testing the loginToken in this case, select the "Form field" radio button and choose the loginToken from the dropdown menu:
+![[Pasted image 20240619194441.png]]
+
+A new window will pop up indicating that a live capture is in progress and displaying the number of tokens captured so far. Wait until a sufficient number of tokens are captured (approximately 10,000 should suffice); the more tokens we have, the more precise our analysis will be.
+
+Once around 10,000 tokens are captured, click on **Pause** and then select the **Analyze now** button:
+![[Pasted image 20240619194509.png]]
+
+If we wished for periodic updates on the analysis, we could have also selected the "Auto analyze" checkbox. This option tells Burp to perform the entropy analysis after every 2000 requests, providing frequent updates that will become increasingly accurate as more samples are loaded into Sequencer.
+
+At this point, it's also worth noting that we could choose to copy or save the captured tokens for further analysis at a later time.
+
+
 
 
