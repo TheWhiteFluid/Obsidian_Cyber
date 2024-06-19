@@ -1,4 +1,3 @@
-
 ## Attack Types
 Burp Suite's Intruder tool supports several attack types, each designed for specific testing scenarios. Here’s a detailed explanation of each attack type:
 ### 1. **Sniper**
@@ -98,7 +97,7 @@ Burp Suite's Intruder tool offers several payload types, each designed for diffe
 |**Extension-generated**|Uses Burp extensions for payload generation|Customized payload generation|
 |**Markov Chains**|Generates payloads based on statistical models of character sequences|Generating realistic payloads based on observed patterns|
 
-## Example Walktrough
+## Example Walkthrough
 
 1. Navigate to `http://MACHINE_IP/admin/login/`. Activate **Intercept** in the Proxy module and attempt to log in. Capture the request and send it to Intruder.
     

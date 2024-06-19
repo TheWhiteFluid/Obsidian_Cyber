@@ -1,6 +1,5 @@
 ## Map
 1. https://github.com/Ignitetechnologies/Mindmap
-
 ## Frameworks
 1. https://owasp.org/ (OWASP)
 2. [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
