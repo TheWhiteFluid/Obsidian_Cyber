@@ -55,9 +55,11 @@
             "id": "31bad27560252211",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "zz.Screenshots/Pasted image 20240619161503.png"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -81,7 +83,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -128,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz.Screenshots/Pasted image 20240619161503.png",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz.Screenshots/Pasted image 20240619161503.png",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz.Screenshots/Pasted image 20240619161503.png"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md"
               }
             }
           }
@@ -189,15 +191,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "31bad27560252211",
   "lastOpenFiles": [
-    "zz.Screenshots/Pasted image 20240619161558.png",
-    "zz.Screenshots/Pasted image 20240619161503.png",
-    "zz.Screenshots/Pasted image 20240619161618.png",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+    "Pasted image 20240619162440.png",
+    "Pasted image 20240619162353.png",
+    "Pasted image 20240619162342.png",
+    "Pasted image 20240619162337.png",
+    "Pasted image 20240619162132.png",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+    "zz.Screenshots/Pasted image 20240619161503.png",
+    "zz.Screenshots/Pasted image 20240619161558.png",
+    "zz.Screenshots/Pasted image 20240619161618.png",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "ZeroPoint Security/exams.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
@@ -208,11 +216,7 @@
     "zz.Screenshots/Pasted image 20240619005804.png",
     "zz.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz.Screenshots/Pasted image 20240619011108.png",
-    "zz.Screenshots/Pasted image 20240619011031.png",
-    "zz.Screenshots/Pasted image 20240619011008.png",
     "zz.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "zz.Screenshots/Pasted image 20240619005917.png",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
     "TryHackMe/Jr. Penetration Tester/Burp",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/File Upload",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Path Traversal",
@@ -221,8 +225,6 @@
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/XSS",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection",
     "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
-    "zz.Screenshots/Pasted image 20240611024231.png",
-    "zz.Screenshots/Pasted image 20240611030152.png",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
