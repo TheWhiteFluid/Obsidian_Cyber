@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md"
+                "file": "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md"
               }
             }
           }
@@ -161,12 +161,17 @@
   },
   "active": "31bad27560252211",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/To do.md",
+    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS.md",
     "TryHackMe/Jr. Penetration Tester/WEB/07.SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
-    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
@@ -200,11 +205,6 @@
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/XSS",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/sfaf",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs",
-    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/Fundamentals.md"
   ]
 }
