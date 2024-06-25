@@ -1,5 +1,11 @@
 ## Map
 1. https://github.com/Ignitetechnologies/Mindmap
+
+## Info
+SQL Injection:
+	https://portswigger.net/web-security/sql-injection
+	https://portswigger.net/web-security/sql-injection/cheat-sheet
+
 ## Frameworks
 1. https://owasp.org/ (OWASP)
 2. [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
