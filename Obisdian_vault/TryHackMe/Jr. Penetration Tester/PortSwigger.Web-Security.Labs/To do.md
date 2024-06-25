@@ -6,3 +6,6 @@ SQL injection - in progress
     SSRF - 
     Path traversal - 
     File upload  -
+
+	## Authentication
+	## OS command injection
