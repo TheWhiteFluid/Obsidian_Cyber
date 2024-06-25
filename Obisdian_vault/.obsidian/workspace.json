@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "a6b59b7082374807",
+            "id": "31bad27560252211",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,7 +51,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md"
+                "file": "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md"
               }
             }
           }
@@ -159,42 +159,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6b59b7082374807",
+  "active": "31bad27560252211",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/To do.md",
+    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
-    "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
-    "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
     "zz. Screenshots/Pasted image 20240619201039.png",
     "zz. Screenshots/Pasted image 20240619200407.png",
-    "zz. Screenshots/Pasted image 20240619195425.png",
+    "Websites Malware Detection.md",
+    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
+    "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
+    "Commands(Linux.Windows).md",
+    "Frameworks & Tools.md",
     "zz. Screenshots/Pasted image 20240619195043.png",
+    "zz. Screenshots/Pasted image 20240619195425.png",
     "zz. Screenshots/Pasted image 20240619194509.png",
     "zz. Screenshots/Pasted image 20240619194441.png",
     "zz. Screenshots/Pasted image 20240619191342.png",
     "zz. Screenshots/Pasted image 20240619190859.png",
     "zz. Screenshots/Pasted image 20240619190849.png",
     "zz. Screenshots/Pasted image 20240619190750.png",
-    "zz. Screenshots",
-    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
-    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection",
-    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/Info.md",
-    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
-    "zz.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
-    "zz.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "Frameworks & Tools.md",
-    "Websites Malware Detection.md",
-    "Commands(Linux.Windows).md",
-    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
-    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SQL Injection/SQL injection vulnerability in WHERE clause allowing retrieval of hidden data.md",
+    "ZeroPoint Security/exams.md",
+    "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
+    "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/Jr. Penetration Tester/Burp",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/File Upload",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Path Traversal",
-    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
-    "ZeroPoint Security/exams.md",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/SSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/CSRF",
+    "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/XSS",
+    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/sfaf",
+    "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs",
     "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
@@ -204,7 +205,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
-    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
-    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md"
+    "TryHackMe/Jr. Penetration Tester/Fundamentals.md"
   ]
 }
