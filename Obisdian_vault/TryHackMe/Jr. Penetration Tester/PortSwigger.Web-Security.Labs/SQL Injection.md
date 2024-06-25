@@ -33,6 +33,7 @@ SQL injection attack that logs in to the application as the `administrator` us
 ```
 
 ## 4. SQL injection attack, querying the database type and version on MySQL and Microsoft
+
 Determine the [number of columns that are being returned by the query](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns) and [which columns contain text data](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text). Verify that the query is returning two columns, both of which contain text, using a payload like the following in the `category` parameter:
 
 In Microsoft database we can payload without to specify FROM table, instead we can comment with "#" right after selected columns:
@@ -43,3 +44,7 @@ In Microsoft database we can payload without to specify FROM table, instead we c
  Display the database version:
 ```
  .../filter?category=Accessories'UNION SELECT 'a', @@version#
+ ```
+
+## 5.SQL injection attack, listing the database contents on non-Oracle databases
+
