@@ -35,9 +35,11 @@
             "id": "d53a9dedf07fd14a",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.5"
+                "file": "PortSwigger.Web-Security.Labs/SQL Injection.md",
+                "mode": "source",
+                "source": false
               }
             }
           }

