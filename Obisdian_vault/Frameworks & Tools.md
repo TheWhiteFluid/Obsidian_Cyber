@@ -1,4 +1,4 @@
-## Map
+## Map & Technologies
 1. https://github.com/Ignitetechnologies/Mindmap
 
 ## Info
