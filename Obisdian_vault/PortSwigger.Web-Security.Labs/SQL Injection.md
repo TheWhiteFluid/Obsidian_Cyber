@@ -138,7 +138,7 @@ In order to retrieve data we need to do that only on the second position using c
 
 ## 10. Blind SQL injection with conditional responses
 
-We will perform injection based on the session cookie response (welcome back message)
+We will perform injection based on the session cookie (response = welcome back message)
 ```
 Cookie: TrackingId=XZqKxHXKgUbxQYVh
 ```
