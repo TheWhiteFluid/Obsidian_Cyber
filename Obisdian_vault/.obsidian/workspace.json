@@ -98,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "CEH.md"
               }
             }
           }
@@ -159,8 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6b59b7082374807",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "Frameworks & Tools.md",
+    "CEH.md",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "zz. Screenshots/Pasted image 20240627154051.png",
     "zz. Screenshots/Pasted image 20240627154432.png",
@@ -190,7 +190,6 @@
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "zz.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "Frameworks & Tools.md",
     "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/00)Exercises.Rooms.Practice/Info.md",
