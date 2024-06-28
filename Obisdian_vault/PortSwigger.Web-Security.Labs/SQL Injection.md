@@ -260,3 +260,8 @@ We send the request and confirm that we no longer receive an error. This suggest
 TrackingId=ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT username FROM users) AS int)--
 ```
 We receive the initial error message again. The query now appears to be truncated due to a character limit. As a result, the comment characters we added to fix up the query aren't included.
+
+Deleting the original value of the `TrackingId` cookie to free up some additional characters. 
+```
+TrackingId=' AND 1=CAST((SELECT username FROM users) AS int)--`
+```
