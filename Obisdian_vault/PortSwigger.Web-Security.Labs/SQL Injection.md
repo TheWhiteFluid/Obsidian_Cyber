@@ -297,3 +297,4 @@ TrackingId=ogAZZfxtOKUELbuJ' || (SELECT pg_sleep(10)) --
 
 
 ## 14. Blind SQL injection with time delays and information retrieval
+![[Pasted image 20240629024841.png]]
