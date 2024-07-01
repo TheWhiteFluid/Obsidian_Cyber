@@ -1,6 +1,9 @@
-https://portswigger.net/web-security/sql-injection 
-https://portswigger.net/web-security/sql-injection/blind
-https://portswigger.net/web-security/sql-injection/cheat-sheet
+## Links:
+1. https://portswigger.net/web-security/sql-injection 
+   a. https://portswigger.net/web-security/sql-injection/union-attacks
+   b. https://portswigger.net/web-security/sql-injection/blind
+   
+2. https://portswigger.net/web-security/sql-injection/cheat-sheet
 ## Labs:
 ## 1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
