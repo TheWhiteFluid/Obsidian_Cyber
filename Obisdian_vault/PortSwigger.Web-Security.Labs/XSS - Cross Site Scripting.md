@@ -17,3 +17,23 @@
 
 ## Labs:
 
+## 1. Stored XSS into HTML context with nothing encoded
+
+<script>alert(1)</script>
+
+## 2. DOM XSS in `document.write` sink using source `location.search`
+
+String has been placed inside an `img src` attribute.
+1. Breaking out of the `img` attribute by:
+	`"><svg onload=alert(1)>`  ("> is closing the previous tag )
+
+SVG tags can include scripting capabilities, such as JavaScript, through attributes like `onload`, `onclick`, etc. This means that an attacker can inject an SVG element with an `onload` attribute to execute malicious scripts. Some web applications may not properly sanitize or filter SVG elements. Since SVG is less commonly considered in input sanitization, attackers may exploit it to bypass security filters that would catch more common tags like `<script>`.
+
+## 3. DOM XSS in `innerHTML` sink using source `location.search`
+
+The value of the `src` attribute is invalid and throws an error. This triggers the `onerror` event handler, which then calls the `alert()` function. 
+	<img src=0 onerror=alert(0)>
+	
+![[Pasted image 20240703015300.png]]
+
+## 4. DOM XSS in jQuery anchor `href` attribute sink using `location.search` source
