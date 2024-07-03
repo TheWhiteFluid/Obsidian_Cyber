@@ -31,6 +31,7 @@ SVG tags can include scripting capabilities, such as JavaScript, through attribu
 
 ## 3. DOM XSS in `innerHTML` sink using source `location.search`
 
+String has been placed inside an `img src` attribute. 
 The value of the `src` attribute is invalid and throws an error. This triggers the `onerror` event handler, which then calls the `alert()` function. 
 	<img src=0 onerror=alert(0)>
 	
@@ -53,6 +54,9 @@ javascript:alert(document.cookie)
 
 ## 5. Reflected XSS into attribute with angle brackets HTML-encoded
 
+String has been reflected inside a quoted attribute `value`
 
+![[Pasted image 20240703053618.png]]
 
+## 6. 
 
