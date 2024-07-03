@@ -37,3 +37,22 @@ The value of the `src` attribute is invalid and throws an error. This triggers
 ![[Pasted image 20240703015300.png]]
 
 ## 4. DOM XSS in jQuery anchor `href` attribute sink using `location.search` source
+
+The vulnerability in the submit feedback page. It uses the jQuery library's `$` selector function to find an anchor element, and changes its `href` attribute using data from `location.search`.
+
+Changing the query parameter `returnPath` to `/` followed by a random alphanumeric string we observe that our random string has been placed inside an a `href` attribute.
+
+We will XSS by changing  `returnPath` to: 
+```
+javascript:alert(document.cookie)
+```
+
+![[Pasted image 20240703034210.png]]
+![[Pasted image 20240703034106.png]]
+
+
+## 5. Reflected XSS into attribute with angle brackets HTML-encoded
+
+
+
+
