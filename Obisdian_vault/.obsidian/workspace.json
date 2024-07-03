@@ -160,8 +160,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a63d18ad5dd517a",
+  "active": "d53a9dedf07fd14a",
   "lastOpenFiles": [
+    "zz. Screenshots/Pasted image 20240703053618.png",
+    "zz. Screenshots/Pasted image 20240703034210.png",
+    "zz. Screenshots/Pasted image 20240703034117.png",
+    "zz. Screenshots/Pasted image 20240703034106.png",
+    "zz. Screenshots/Pasted image 20240703015300.png",
+    "zz. Screenshots/Pasted image 20240629024841.png",
+    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
@@ -184,11 +191,6 @@
     "PortSwigger.Web-Security.Labs/To do.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "zz. Screenshots/Pasted image 20240619201039.png",
-    "zz. Screenshots/Pasted image 20240619200407.png",
-    "zz. Screenshots/Pasted image 20240619195425.png",
-    "zz. Screenshots/Pasted image 20240619195043.png",
-    "zz. Screenshots/Pasted image 20240619194509.png",
     "zz. Screenshots",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/SQL Injection",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/Info.md",
@@ -205,7 +207,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/08.XSS Payloads.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/07.Intro to SSRF.md"
+    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md"
   ]
 }
