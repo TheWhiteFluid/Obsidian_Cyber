@@ -56,7 +56,7 @@ javascript:alert(document.cookie)
 
 String has been reflected inside a quoted attribute `value` and we will use onmouseover='alert(0)'
 
-`paein" onmouseover='alert(0)'`
+` " onmouseover='alert(0)' `
 
 ![[Pasted image 20240703053618.png]]
 
@@ -66,4 +66,21 @@ String has been reflected inside an anchor `href` attribute
 ![[Pasted image 20240713161951.png]]
 
 
-## 7. 
+## 7. Reflected XSS into a JavaScript string with angle brackets HTML encoded
+
+String has been reflected inside a JavaScript string
+![[Pasted image 20240713173758.png]]
+![[Pasted image 20240713173710.png]]
+## 8.
+
+JavaScript extracts a `storeId` parameter from the `location.search` source. It then uses `document.write` to create a new option in the select element for the stock checker functionality.
+
+Adding a `storeId` query parameter to the URL and enter a random alphanumeric string as its value we notice that the string is now listed as one of the options in the drop-down list.
+
+` ?productId=1& storeId=paein </option></select><img src="0" onerror="alert(1)"
+
+![[Pasted image 20240713181806.png]]
+
+![[Pasted image 20240713182122.png]]
+
+## 8. DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
