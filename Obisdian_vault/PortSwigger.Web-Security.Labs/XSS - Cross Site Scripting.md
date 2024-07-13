@@ -54,9 +54,16 @@ javascript:alert(document.cookie)
 
 ## 5. Reflected XSS into attribute with angle brackets HTML-encoded
 
-String has been reflected inside a quoted attribute `value`
+String has been reflected inside a quoted attribute `value` and we will use onmouseover='alert(0)'
+
+`paein" onmouseover='alert(0)'`
 
 ![[Pasted image 20240703053618.png]]
 
-## 6. 
+## 6. Stored XSS into anchor href attribute with double quotes HTML-encoded
 
+String has been reflected inside an anchor `href` attribute
+![[Pasted image 20240713161951.png]]
+
+
+## 7. 
