@@ -1,11 +1,8 @@
 ## Map & Technologies
 1. https://github.com/Ignitetechnologies/Mindmap
-
 ## Info
-SQL Injection:
-	https://portswigger.net/web-security/sql-injection
-	https://portswigger.net/web-security/sql-injection/cheat-sheet
-
+1. https://dnsdumpster.com/ (DNS)
+2. https://www.shodan.io/ (DNS and more)
 ## Frameworks
 1. https://owasp.org/ (OWASP)
 	 [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
