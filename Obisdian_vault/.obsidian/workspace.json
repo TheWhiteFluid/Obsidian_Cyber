@@ -11,38 +11,6 @@
             "id": "cfdb67c70ce3f27f",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240715130124.png"
-              }
-            }
-          },
-          {
-            "id": "a2bfc596594896d4",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240715125653.png"
-              }
-            }
-          },
-          {
-            "id": "1d06d4779e91e4f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "28c932b9cef9f9e0",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
@@ -51,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,18 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "cfdb67c70ce3f27f",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
-    "zz. Screenshots/Pasted image 20240715125506.png",
-    "zz. Screenshots/Pasted image 20240715125653.png",
-    "zz. Screenshots/Pasted image 20240715124755.png",
-    "zz. Screenshots/Pasted image 20240715130124.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
     "Frameworks & Tools.md",
+    "zz. Screenshots/Pasted image 20240715130124.png",
+    "zz. Screenshots/Pasted image 20240715125653.png",
+    "zz. Screenshots/Pasted image 20240715125506.png",
+    "zz. Screenshots/Pasted image 20240715124755.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "ZeroPoint Security/exams.md",
     "zz. Screenshots/Pasted image 20240714142328.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
     "zz. Screenshots/Pasted image 20240714142842.png",
     "Websites Malware Detection.md",
     "zz. Screenshots/Pasted image 20240714140917.png",
@@ -218,7 +185,6 @@
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/Jr. Penetration Tester/Burp",
