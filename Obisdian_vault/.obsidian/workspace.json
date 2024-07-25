@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "83b55ef15c05d5b7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfdb67c70ce3f27f",
+  "active": "83b55ef15c05d5b7",
   "lastOpenFiles": [
     "ZeroPoint Security/exams.md",
     "zz. Screenshots/Pasted image 20240714142328.png",
