@@ -32,10 +32,27 @@ Examples of target specification are:
 
 `nmap -iL list_of_hosts.txt` - scan list of host
 `nmap -sL TARGET` - perform a list scan with DNS resolution
-`nmap -sL -n TARGET` - perform a list scan without  DNS resolution (-n)
 
-`nmap -sL -n RANGE OF IPS` - list scan of the whole range of ips provided
+`nmap -sL -n TARGET` - perform a list scan without  DNS resolution (-n)
 ![[Pasted image 20240726225145.png]]
 
-`nmap -sL -n RANGE OF IPS` - list scan of the whole range of ips provided
+`nmap -sL -n RANGE OF IPS` - list scan of the whole range of IPs provided
 ![[Pasted image 20240726235644.png]]
+
+## Discovering Live Hosts
+
+ We will leverage the protocols to discover the live hosts. Starting from bottom to top, we can use:
+ 
+- **ARP** from **Link** Layer
+- **ICMP** from **Network** Layer
+- **TCP** from **Transport** Layer
+- **UDP** from **Transport** Layer
+
+![[Pasted image 20240727005356.png]]
+
+ - **ARP** has one purpose: sending a frame to the broadcast address on the network segment and asking the computer with a specific IP address to respond by providing its MAC (hardware) address.
+- **ICMP** has [many types](https://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml). ICMP ping uses Type 8 (Echo) and Type 0 (Echo Reply). 
+  If you want to ping a system on the same subnet, an **ARP** query should precede the **ICMP Echo**.
+- **TCP** and **UDP** are transport layers, for network scanning purposes, a scanner can send a specially-crafted packet to common **TCP** or **UDP** ports to check whether the target will respond. This method is efficient, especially when **ICMP Echo** is blocked.
+
+## Nmap Host Discovery Using ARP
