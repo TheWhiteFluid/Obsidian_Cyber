@@ -75,9 +75,9 @@ Syntax:    `nc MACHINE_IP PORT`
 
 ![[Pasted image 20240715130124.png]]
 
-## nc -lvnp 
+## nc -nvlp 
 
-On the _server_ system, where you want to open a port and listen on it, you can issue `nc -vnlp PORT`, which is equivalent to `nc -v -l -n -p PORT NUMBER`.
+On the _server_ system, where you want to open a port and listen on it, you can issue `nc -nvlp PORT`, which is equivalent to `nc -v -l -n -p PORT NUMBER`.
 
 | option | meaning                                                    |
 | ------ | ---------------------------------------------------------- |
