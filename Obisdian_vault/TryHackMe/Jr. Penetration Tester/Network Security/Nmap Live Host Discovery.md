@@ -31,9 +31,11 @@ Examples of target specification are:
 - **subnet**: `MACHINE_IP/30` will scan 4 IP addresses.
 
 `nmap -iL list_of_hosts.txt` - scan list of host
-`nmap -sL TARGET` - perform a list scan 
-`nmap -sL -n TARGET` - list scan without performing DNS resolution (-n)
-`nmap -sL -n RANGE OF IPS` - list scan of the whole range of ips provided
+`nmap -sL TARGET` - perform a list scan with DNS resolution
+`nmap -sL -n TARGET` - perform a list scan without  DNS resolution (-n)
 
+`nmap -sL -n RANGE OF IPS` - list scan of the whole range of ips provided
 ![[Pasted image 20240726225145.png]]
 
+`nmap -sL -n RANGE OF IPS` - list scan of the whole range of ips provided
+![[Pasted image 20240726235644.png]]
