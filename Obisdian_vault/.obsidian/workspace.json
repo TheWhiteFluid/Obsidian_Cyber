@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240715130124.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240715130124.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240715130124.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md"
               }
             }
           }
@@ -146,14 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "28c932b9cef9f9e0",
   "lastOpenFiles": [
+    "Pasted image 20240726225145.png",
+    "Pasted image 20240726224139.png",
+    "Pasted image 20240726223921.png",
+    "zz. Screenshots/Pasted image 20240715130124.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "zz. Screenshots/Pasted image 20240715125506.png",
     "zz. Screenshots/Pasted image 20240715125653.png",
     "zz. Screenshots/Pasted image 20240715124755.png",
-    "zz. Screenshots/Pasted image 20240715130124.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
     "Frameworks & Tools.md",
     "ZeroPoint Security/exams.md",
@@ -164,8 +167,6 @@
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "Commands(Linux.Windows).md",
     "zz. Screenshots/Pasted image 20240714141711.png",
-    "zz. Screenshots/Pasted image 20240714141006.png",
-    "zz. Screenshots/Pasted image 20240714140931.png",
     "TryHackMe/Jr. Penetration Tester/Network Security",
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "PortSwigger.Web-Security.Labs/To do.md",
@@ -185,7 +186,6 @@
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/Jr. Penetration Tester/Burp",
