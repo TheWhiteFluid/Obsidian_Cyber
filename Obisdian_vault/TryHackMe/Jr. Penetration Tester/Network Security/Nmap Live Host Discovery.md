@@ -56,3 +56,101 @@ Examples of target specification are:
 - **TCP** and **UDP** are transport layers, for network scanning purposes, a scanner can send a specially-crafted packet to common **TCP** or **UDP** ports to check whether the target will respond. This method is efficient, especially when **ICMP Echo** is blocked.
 
 ## Nmap Host Discovery Using ARP
+
+ There are various ways to discover online hosts. When no host discovery options are provided, Nmap follows the following approaches to discover live hosts:
+ 
+1. When a **_privileged_ user** tries to scan targets on a **local network** (Ethernet), Nmap uses **_ARP requests_**. A privileged user is `root` or a user who belongs to `sudoers` and can run `sudo`.
+2. When a **_privileged_ user** tries to scan targets **outside** the local network, Nmap uses **ICMP echo** requests, **TCP ACK** (Acknowledge) to port **80**, **TCP SYN** (Synchronize) to port **443**, and ICMP timestamp request.
+3. When an **_unprivileged_ user** tries to scan targets outside the local network, Nmap resorts to a **TCP 3-way handshake** by sending **SYN** packets to ports **80 and 443**.
+
+ If you want to use Nmap to discover online hosts without port-scanning the live systems, you can issue `nmap -sn TARGETS`
+ 
+ARP scan is possible only if you are on the same subnet as the target systems. On an Ethernet (802.3) and WiFi (802.11), you need to know the MAC address of any system before you can communicate with it. 
+
+The MAC address is necessary for the link-layer header; the header contains the source MAC address and the destination MAC address among other fields. To get the MAC address, the OS sends an ARP query. A host that replies to ARP queries is up. 
+
+If you want Nmap only to perform an ARP scan without port-scanning, you can use `nmap -PR -sn TARGETS`, where `-PR` indicates that you only want an ARP scan.
+![[Pasted image 20240727034113.png]]
+
+
+## Nmap Host Discovery Using ICMP
+
+ Many firewalls block ICMP echo; new versions of MS Windows are configured with a host firewall that blocks ICMP echo requests by default. Remember that an ARP query will precede the ICMP request if your target is on the same subnet.
+
+**ICMP Echo**
+	To use ICMP echo request to discover live hosts, add the option `-PE`. (Remember to add `-sn` if you don’t want to follow that with a port scan.)
+![[Pasted image 20240727035443.png]]
+
+**ICMP Timestamp**
+	To use ICMP echo request to discover live hosts, add the option `-PP` 
+![[Pasted image 20240727035631.png]]
+
+**ICMP Address Mask**
+	To use ICMP echo request to discover live hosts, add the option `-PM` 
+![[Pasted image 20240727035827.png]]
+
+**Note:** Based on earlier scans, we know that at least eight hosts are up, this scan returned none. The reason is that the target system or a firewall on the route is blocking this type of ICMP packet. Therefore, it is essential to learn multiple approaches to achieve the same result. If one type of packet is being blocked, we can always choose another to discover the target network and services.
+
+## Nmap Host Discovery Using TCP and UDP
+
+**TCP SYN Ping**
+We can send a packet with the SYN (Synchronize) flag set to a TCP port, 80 by default, and wait for a response. 
+- An open port should reply with a SYN/ACK (Acknowledge); 
+- A closed port would result in an RST (Reset).
+
+If you want Nmap to use TCP SYN ping, you can do so via the option `-PS` followed by the port number, range, list, or a combination of them.
+
+*Examples:*
+- `-PS21` will target port 21.
+-  `-PS21-25` will target ports 21, 22, 23, 24, and 25. 
+- `-PS80,443,8080` will target the three ports 80, 443, and 8080.
+
+*Note:*
+	**Privileged** users (root and sudoers) can send TCP SYN packets and don’t need to complete the TCP 3-way handshake even if the port is open.
+	**Unprivileged** users have no choice but to complete the 3-way handshake if the port is open.
+
+![[Pasted image 20240727040906.png]]
+
+![[Pasted image 20240727040702.png]]
+
+
+**TCP ACK Ping**
+
+*Note:*
+	You must be running Nmap as a privileged user.
+	 If you try it as an unprivileged user, Nmap will attempt a 3-way handshake.
+
+The syntax is similar to TCP SYN ping. `-PA` should be followed by a port number, range, list, or a combination of them. For example, consider `-PA21`, `-PA21-25` and `-PA80,443,8080`. If no port is specified, port 80 will be used.
+
+![[Pasted image 20240727040929.png]]
+
+![[Pasted image 20240727040941.png]]
+
+
+**UDP Ping**
+Contrary to TCP ping, sending a UDP packet to an open port is not expected to lead to any reply. However, if we send a UDP packet to a closed UDP port, we expect to get an ICMP port unreachable packet; this indicates that the target system is up and available.
+
+The syntax to specify the ports is similar to that of TCP SYN ping and TCP ACK ping; Nmap uses `-PU` for UDP ping.
+
+![[Pasted image 20240727041124.png]]
+
+![[Pasted image 20240727041156.png]]
+
+
+**Masscan**
+Masscan uses a similar approach to discover the available systems. However, to finish its network scan quickly, Masscan is quite aggressive with the rate of packets it generates.
+
+The syntax is quite similar: `-p` can be followed by a port number, list, or range.
+
+*Examples:*
+- `masscan MACHINE_IP/24 -p443`
+- `masscan MACHINE_IP/24 -p80,443`
+- `masscan MACHINE_IP/24 -p22-25`
+
+## Using Reverse-DNS Lookup
+
+Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
+
+To have Nmap perform reverse DNS lookups for all possible hosts on a subnet, you should use the `-R` option. This option forces reverse DNS resolution on all the IP addresses in the target range.
+
+				![[Pasted image 20240727042631.png]]
