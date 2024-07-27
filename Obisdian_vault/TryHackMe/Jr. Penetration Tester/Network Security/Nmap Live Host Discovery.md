@@ -154,3 +154,25 @@ Nmap’s default behaviour is to use reverse-DNS online hosts. Because the host
 To have Nmap perform reverse DNS lookups for all possible hosts on a subnet, you should use the `-R` option. This option forces reverse DNS resolution on all the IP addresses in the target range.
 
 				![[Pasted image 20240727042631.png]]
+
+
+## Summary
+
+| Scan Type              | Example Command                             |
+| ---------------------- | ------------------------------------------- |
+| ARP Scan               | `sudo nmap -PR -sn MACHINE_IP/24`           |
+| ICMP Echo Scan         | `sudo nmap -PE -sn MACHINE_IP/24`           |
+| ICMP Timestamp Scan    | `sudo nmap -PP -sn MACHINE_IP/24`           |
+| ICMP Address Mask Scan | `sudo nmap -PM -sn MACHINE_IP/24`           |
+| TCP SYN Ping Scan      | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |
+| TCP ACK Ping Scan      | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |
+| UDP Ping Scan          | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |
+
+| Option | Purpouse                         |
+| ------ | -------------------------------- |
+| -n     | no DNS lookpup                   |
+| -R     | reverse DNS lookup for all hosts |
+| -sn    | host discovery only              |
+
+*Note:* 
+	Remember to add `-sn` if you are only interested in host discovery without port-scanning. Omitting `-sn` will let Nmap default to port-scanning the live hosts.
