@@ -28,9 +28,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3bd513c2d4e201de",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -157,7 +167,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bf24c228eedeacd8",
+  "active": "3bd513c2d4e201de",
   "lastOpenFiles": [
     "Pasted image 20240727042631.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
