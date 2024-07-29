@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md"
               }
             }
           }
@@ -171,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "7fae71ea4ae8dba6",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "Pasted image 20240728052838.png",
@@ -184,7 +185,6 @@
     "zz. Screenshots/Pasted image 20240713173758.png",
     "zz. Screenshots/Pasted image 20240713173710.png",
     "zz. Screenshots/Pasted image 20240713161951.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "Pasted image 20240728041552.png",
     "Pasted image 20240728041404.png",
     "Pasted image 20240728041253.png",
