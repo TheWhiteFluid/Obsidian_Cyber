@@ -56,7 +56,7 @@ You can choose to run TCP connect scan using `-sT`.
 ![[Pasted image 20240728040946.png]]
 
 
-## TCP SYN Scan
+## SYN Scan
 
 Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it *requires a privileged (root or sudoer) user to run it*.
 
