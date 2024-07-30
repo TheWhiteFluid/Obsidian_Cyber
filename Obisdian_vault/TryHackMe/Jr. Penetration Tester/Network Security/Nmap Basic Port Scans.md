@@ -47,21 +47,26 @@ Setting a flag bit means setting its value to 1. From left to right, the TCP h
 
 TCP connect scan works by completing the TCP 3-way handshake. In standard TCP connection establishment, the client sends a TCP packet with SYN flag set, and the server responds with SYN/ACK if the port is open; finally, the client completes the 3-way handshake by sending an ACK.
 
-We are interested in learning whether the TCP port is open, not establishing a TCP connection. Hence the connection is torn as soon as its state is confirmed by sending a RST/ACK. You can choose to run TCP connect scan using `-sT`.
+We are interested in learning whether the TCP port is open, not establishing a TCP connection. Hence the connection is torn as soon as its state is confirmed by sending a RST/ACK. 
+
+You can choose to run TCP connect scan using `-sT`.
 
 ![[Pasted image 20240728041253.png]]
 
 ![[Pasted image 20240728040946.png]]
 
 
-## TCP SYN Scan
+## SYN Scan
 
-Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it requires a privileged (root or sudoer) user to run it.
+Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it *requires a privileged (root or sudoer) user to run it*.
 
 SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server.
 
-Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. We can select this scan type by using the `-sS` option. The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
+Because we didn’t establish a TCP connection, this decreases the chances of the scan being logged. 
 
+We can select this scan type by using the `-sS` option. 
+
+The figure below shows how the TCP SYN scan works without completing the TCP 3-way handshake.
 ![[Pasted image 20240728041404.png]]
 
 ![[Pasted image 20240728041552.png]]
@@ -74,7 +79,7 @@ Because we didn’t establish a TCP connection, this decreases the chances of 
 
 ## UDP Scan
 
-UDP is a connectionless protocol, and hence it does not require any handshake for connection establishment.
+UDP is a connectionless protocol, and hence it *does not require any handshake* for connection establishment.
 
  If a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned.
 	  You can select UDP scan using the `-sU` option; moreover, you can combine it with another TCP scan.
