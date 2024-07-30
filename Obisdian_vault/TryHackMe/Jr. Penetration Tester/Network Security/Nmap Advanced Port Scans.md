@@ -37,7 +37,7 @@ However, the target system should respond with an RST if the port is closed. Con
 You can choose this scan type using the `-sF` option:
 ![[Pasted image 20240730041611.png]]
  
-## #Xmas Scan
+### #Xmas Scan
 An Xmas scan sets the `FIN`, `PSH`, and `URG` flags simultaneously. 
  
  Like the Null scan and FIN scan, if an RST packet is received, it means that the port is closed. Otherwise, it will be reported as open|filtered.
@@ -100,3 +100,72 @@ If you want to experiment with a new TCP flag combination beyond the built-in�
 
 
 ## Spoofing and Decoys
+In some network setups, you will be able to scan a target system using a spoofed IP address and even a spoofed MAC address. 
+
+*Note:*
+	Such a scan is only beneficial in a situation where you can guarantee to capture the response. If you try to scan a target from some random network using a spoofed IP address, chances are you won’t have any response routed to you, and the scan results could be unreliable.
+
+The following figure shows the attacker launching the command `nmap -S SPOOFED_IP MACHINE_IP`. Consequently, Nmap will craft all the packets using the provided source IP address `SPOOFED_IP`. The target machine will respond to the incoming packets sending the replies to the destination IP address `SPOOFED_IP`.
+
+![[Pasted image 20240730180500.png]]
+
+In brief, scanning with a spoofed IP address is three steps:
+1. Attacker sends a packet with a spoofed source IP address to the target machine.
+2. Target machine replies to the spoofed IP address as the destination.
+3. Attacker captures the replies to figure out open ports.
+
+*Note:*
+	In general, you expect to specify the network interface using `-e` and to explicitly disable ping scan `-Pn`. 
+
+ You will need to issue `nmap -e NET_INTERFACE -Pn -S SPOOFED_IP MACHINE_IP` to tell Nmap explicitly which network interface to use and not to expect to receive a ping reply.
+
+
+When you are on the same subnet as the target machine, you would be able to spoof your MAC address as well. You can specify the source MAC address using `--spoof-mac SPOOFED_MAC`. 
+
+*Note:*
+	This address spoofing is only possible if the attacker and the target machine are on the same Ethernet (802.3) network or same WiFi (802.11).
+
+
+You can launch a decoy scan by specifying a specific or random IP address after `-D`. 
+
+For example, `nmap -D 10.10.0.1,10.10.0.2,ME MACHINE_IP` will make the scan of MACHINE_IP appear as coming from the IP addresses 10.10.0.1, 10.10.0.2, and then `ME`.
+
+![[Pasted image 20240730180934.png]]
+
+Another example command would be `nmap -D 10.10.0.1,10.10.0.2,RND,RND,ME MACHINE_IP`, where the third and fourth source IP addresses are assigned randomly, while the fifth source is going to be the attacker’s IP address.
+
+## Fragmented Packets
+
+### #Firewall
+A firewall is a piece of software or hardware that permits packets to pass through or blocks them. It functions based on firewall rules, summarized as blocking all traffic with exceptions or allowing all traffic with exceptions. A traditional firewall inspects, at least, the IP header and the transport layer header. A more sophisticated firewall would also try to examine the data carried by the transport layer.
+
+### #IDS
+An intrusion detection system (IDS) inspects network packets for select behavioural patterns or specific content signatures. It raises an alert whenever a malicious rule is met. In addition to the IP header and transport layer header, an IDS would inspect the data contents in the transport layer and check if it matches any malicious patterns. Depending on the type of firewall/IDS, you might benefit from dividing the packet into smaller packets.
+
+### Fragmented Packets
+Nmap provides the option `-f` to fragment packets. Once chosen, the IP data will be divided into 8 bytes or less. Adding another `-f` (`-f -f` or `-ff`) will split the data into 16 byte-fragments instead of 8. You can change the default value by using the `--mtu`; however, you should always choose a multiple of 8.
+
+To properly understand fragmentation, we need to look at the IP header in the figure below. In particular, notice the source address taking 32 bits (4 bytes) on the fourth row, while the destination address is taking another 4 bytes on the fifth row.
+![[Pasted image 20240730182003.png]]
+
+The data that we will fragment across multiple packets is highlighted in red. To aid in the reassembly on the recipient side, IP uses the identification (ID) and fragment offset.
+
+Let’s compare running `sudo nmap -sS -p80 10.20.30.144` and `sudo nmap -sS -p80 -f 10.20.30.144`. This will use stealth TCP SYN scan on port 80; however, in the second command, we are requesting Nmap to fragment the IP packets.
+
+In the first two lines, we can see an ARP query and response. Nmap issued an ARP query because the target is on the same Ethernet.
+	The second two lines show a TCP SYN ping and a reply.
+		The fifth line is the beginning of the port scan; Nmap sends a TCP SYN packet to p.80
+
+![[Pasted image 20240730190706.png]]
+
+*In this case, the IP header is 20 bytes, and the TCP header is 24 bytes. Note that the minimum size of the TCP header is 20 bytes.
+
+With fragmentation requested via `-f`, the 24 bytes of the TCP header will be divided into multiples of 8 bytes, with the last fragment containing 8 bytes or less of the TCP header. Since 24 is divisible by 8, we got 3 IP fragments; each has 20 bytes of IP header and 8 bytes of TCP header.
+![[Pasted image 20240730190757.png]]
+
+*Note:* 
+	If you added `-ff` (or `-f -f`), the fragmentation of the data will be multiples of 16. In other words, the 24 bytes of the TCP header, in this case, would be divided over two IP fragments, the first containing 16 bytes and the second containing 8 bytes of the TCP header.
+
+If you prefer to increase the size of your packets to make them look innocuous, you can use the option `--data-length NUM`, where num specifies the number of bytes you want to append to your packets.
+
+## Idle/Zombie Scan
