@@ -35,6 +35,26 @@
             "id": "62f809b2f9c4e5d2",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240730045416.png"
+              }
+            }
+          },
+          {
+            "id": "3bb341a531ccb6e4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240730045416.png"
+              }
+            }
+          },
+          {
+            "id": "9d2d69570c265ec4",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
@@ -44,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -171,21 +191,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "62f809b2f9c4e5d2",
+  "active": "9d2d69570c265ec4",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
+    "zz. Screenshots/Pasted image 20240730045416.png",
+    "zz. Screenshots/Pasted image 20240730050819.png",
+    "zz. Screenshots/Pasted image 20240730045430.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
+    "zz. Screenshots/Pasted image 20240731005813.png",
+    "zz. Screenshots/Pasted image 20240731005210.png",
+    "zz. Screenshots/Pasted image 20240731005145.png",
+    "zz. Screenshots/Pasted image 20240731005031.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "zz. Screenshots/Pasted image 20240730190757.png",
     "zz. Screenshots/Pasted image 20240730182003.png",
     "zz. Screenshots/Pasted image 20240730190706.png",
     "zz. Screenshots/Pasted image 20240730181951.png",
-    "zz. Screenshots/Pasted image 20240730180934.png",
-    "zz. Screenshots/Pasted image 20240730180500.png",
-    "zz. Screenshots/Pasted image 20240730043027.png",
-    "zz. Screenshots/Pasted image 20240730042959.png",
-    "zz. Screenshots/Pasted image 20240730041611.png",
-    "zz. Screenshots/Pasted image 20240730041545.png",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",

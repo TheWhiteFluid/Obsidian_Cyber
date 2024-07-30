@@ -169,3 +169,155 @@ With fragmentation requested via `-f`, the 24 bytes of the TCP header will be
 If you prefer to increase the size of your packets to make them look innocuous, you can use the option `--data-length NUM`, where num specifies the number of bytes you want to append to your packets.
 
 ## Idle/Zombie Scan
+The idle scan, or zombie scan, requires an idle system connected to the network that you can communicate with. Practically, Nmap will make each probe appear as if coming from the idle (zombie) host, then it will check for indicators whether the idle (zombie) host received any response to the spoofed probe.
+
+This is accomplished by checking the IP identification (IP ID) value in the IP header. You can run an idle scan using `nmap -sI ZOMBIE_IP MACHINE_IP`, where `ZOMBIE_IP` is the IP address of the idle host (zombie).
+
+The idle (zombie) scan requires the following three steps to discover whether a port is open:
+1. Trigger the idle host to respond so that you can record the current IP ID on the idle host.
+2. Send a SYN packet to a TCP port on the target. The packet should be spoofed to appear as if it was coming from the idle host (zombie) IP address.
+3. Trigger the idle machine again to respond so that you can compare the new IP ID with the one received earlier.
+	![[Pasted image 20240731005031.png]]
+
+The attacker will send a SYN packet to the TCP port they want to check on the target machine in the next step. However, this packet will use the idle host (zombie) IP address as the source. 
+
+Three scenarios would arise:
+1) In the first scenario, shown in the figure below, the TCP port is closed; therefore, the target machine responds to the idle host with an RST packet. The idle host does not respond; hence its IP ID is not incremented.
+
+![[Pasted image 20240731005145.png]]
+
+2) In the second scenario, as shown below, the TCP port is open, so the target machine responds with a SYN/ACK to the idle host (zombie). The idle host responds to this unexpected packet with an RST packet, thus incrementing its IP ID.
+
+![[Pasted image 20240731005210.png]]
+
+3) In the third scenario, the target machine does not respond at all due to firewall rules. This lack of response will lead to the same result as with the closed port; the idle host won’t increase the IP ID.
+
+For the final step, the attacker sends another SYN/ACK to the idle host. The idle host responds with an RST packet, incrementing the IP ID by one again. The attacker needs to compare the IP ID of the RST packet received in the first step with the IP ID of the RST packet received in this third step. 
+	If the difference is 1, it means the port on the target machine was closed or filtered.
+	If the difference is 2, it means that the port on the target was open.
+
+*Note:*
+	It is worth repeating that this scan is called an idle scan because choosing an idle host is indispensable for the accuracy of the scan. If the “idle host” is busy, all the returned IP IDs would be useless.
+
+## Getting More Details
+You might consider adding `--reason` if you want Nmap to provide more details regarding its reasoning and conclusions.
+
+```shell-session
+pentester@TryHackMe$ sudo nmap -sS 10.10.252.27
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:39 BST
+Nmap scan report for ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27)
+Host is up (0.0020s latency).
+Not shown: 994 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+111/tcp open  rpcbind
+143/tcp open  imap
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
+```
+
+```shell-session
+pentester@TryHackMe$ sudo nmap -sS --reason 10.10.252.27
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:40 BST
+Nmap scan report for ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27)
+Host is up, received arp-response (0.0020s latency).
+Not shown: 994 closed ports
+Reason: 994 resets
+PORT    STATE SERVICE REASON
+22/tcp  open  ssh     syn-ack ttl 64
+25/tcp  open  smtp    syn-ack ttl 64
+80/tcp  open  http    syn-ack ttl 64
+110/tcp open  pop3    syn-ack ttl 64
+111/tcp open  rpcbind syn-ack ttl 64
+143/tcp open  imap    syn-ack ttl 64
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.59 seconds
+```
+
+Providing the `--reason` flag gives us the explicit reason why Nmap concluded that the system is up or a particular port is open. In this console output above, we can see that this system is considered online because Nmap “received arp-response.” On the other hand, we know that the SSH port is deemed to be open because Nmap received a “syn-ack” packet back.
+
+For more detailed output, you can consider using `-v` for verbose output or `-vv` for even more verbosity.
+```shell-session
+pentester@TryHackMe$ sudo nmap -sS -vv 10.10.252.27
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-08-30 10:41 BST
+Initiating ARP Ping Scan at 10:41
+Scanning 10.10.252.27 [1 port]
+Completed ARP Ping Scan at 10:41, 0.22s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:41
+Completed Parallel DNS resolution of 1 host. at 10:41, 0.00s elapsed
+Initiating SYN Stealth Scan at 10:41
+Scanning ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27) [1000 ports]
+Discovered open port 22/tcp on 10.10.252.27
+Discovered open port 25/tcp on 10.10.252.27
+Discovered open port 80/tcp on 10.10.252.27
+Discovered open port 110/tcp on 10.10.252.27
+Discovered open port 111/tcp on 10.10.252.27
+Discovered open port 143/tcp on 10.10.252.27
+Completed SYN Stealth Scan at 10:41, 1.25s elapsed (1000 total ports)
+Nmap scan report for ip-10-10-252-27.eu-west-1.compute.internal (10.10.252.27)
+Host is up, received arp-response (0.0019s latency).
+Scanned at 2021-08-30 10:41:02 BST for 1s
+Not shown: 994 closed ports
+Reason: 994 resets
+PORT    STATE SERVICE REASON
+22/tcp  open  ssh     syn-ack ttl 64
+25/tcp  open  smtp    syn-ack ttl 64
+80/tcp  open  http    syn-ack ttl 64
+110/tcp open  pop3    syn-ack ttl 64
+111/tcp open  rpcbind syn-ack ttl 64
+143/tcp open  imap    syn-ack ttl 64
+MAC Address: 02:45:BF:8A:2D:6B (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.59 seconds
+           Raw packets sent: 1002 (44.072KB) | Rcvd: 1002 (40.092KB)
+```
+
+*Note:*
+	You can use `-d` for debugging details or `-dd` for even more details.
+
+
+## Summary
+| Port Scan Type                 | Example Command                                              |
+| ------------------------------ | ------------------------------------------------------------ |
+| TCP Null Scan                  | `sudo nmap -sN MACHINE_IP`                                   |
+| TCP FIN Scan                   | `sudo nmap -sF MACHINE_IP`                                   |
+| TCP Xmas Scan                  | `sudo nmap -sX MACHINE_IP`                                   |
+| TCP Maimon Scan                | `sudo nmap -sM MACHINE_IP`                                   |
+| TCP ACK Scan                   | `sudo nmap -sA MACHINE_IP`                                   |
+| TCP Window Scan                | `sudo nmap -sW MACHINE_IP`                                   |
+| Custom TCP Scan                | `sudo nmap --scanflags URGACKPSHRSTSYNFIN MACHINE_IP`        |
+| ------------------------------ | ------------------------------------------------------------ |
+| Spoofed Source IP              | `sudo nmap -S SPOOFED_IP MACHINE_IP`                         |
+| Spoofed MAC Address            | `--spoof-mac SPOOFED_MAC`                                    |
+| Decoy Scan                     | `nmap -D DECOY_IP,ME MACHINE_IP`                             |
+| ------------------------------ | ------------------------------------------------------------ |
+| Idle (Zombie) Scan             | `sudo nmap -sI ZOMBIE_IP MACHINE_IP`                         |
+| ------------------------------ | ------------------------------------------------------------ |
+| Fragment IP data into 8 bytes  | `-f`                                                         |
+| Fragment IP data into 16 bytes | `-ff`                                                        |
+
+These scan types rely on setting TCP flags in unexpected ways to prompt ports for a reply:
+- `Null`, `FIN`, and `Xmas` scan provoke a response from closed ports;
+- `Maimon`, `ACK`, and `Window` scans provoke a response from open and closed ports.
+
+|Option|Purpose|
+|---|---|
+|`--source-port PORT_NUM`|specify source port number|
+|`--data-length NUM`|append random data to reach given length|
+
+| Option     | Purpose                               |
+| ---------- | ------------------------------------- |
+| `--reason` | explains how Nmap made its conclusion |
+| `-v`       | verbose                               |
+| `-vv`      | very verbose                          |
+| `-d`       | debugging                             |
+| `-dd`      | more details for debugging            |
