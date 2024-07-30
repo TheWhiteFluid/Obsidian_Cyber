@@ -115,7 +115,6 @@ If you want Nmap to use TCP SYN ping, you can do so via the option `-PS` fol
 
 
 **TCP ACK Ping**
-
 *Note:*
 	You must be running Nmap as a privileged user.
 	 If you try it as an unprivileged user, Nmap will attempt a 3-way handshake.
@@ -160,6 +159,7 @@ To have Nmap perform reverse DNS lookups for all possible hosts on a subnet, you
 
 | Scan Type              | Example Command                             |
 | ---------------------- | ------------------------------------------- |
+| Enumerating targets    | `nmap -sL -n MACHINE_IP`                    |
 | ARP Scan               | `sudo nmap -PR -sn MACHINE_IP/24`           |
 | ICMP Echo Scan         | `sudo nmap -PE -sn MACHINE_IP/24`           |
 | ICMP Timestamp Scan    | `sudo nmap -PP -sn MACHINE_IP/24`           |
