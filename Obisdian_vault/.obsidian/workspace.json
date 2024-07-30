@@ -32,67 +32,19 @@
             }
           },
           {
-            "id": "23d841636b47c8f2",
+            "id": "62f809b2f9c4e5d2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png"
-              }
-            }
-          },
-          {
-            "id": "3b4814ddc3d1fc7f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png"
-              }
-            }
-          },
-          {
-            "id": "fd59dc146738e837",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190706.png"
-              }
-            }
-          },
-          {
-            "id": "2cc2cef9d5b2c33b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png"
-              }
-            }
-          },
-          {
-            "id": "536d45d992c38ddd",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190706.png"
-              }
-            }
-          },
-          {
-            "id": "4595c6c65d240b39",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730190757.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md"
               }
             }
           }
@@ -219,16 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "62f809b2f9c4e5d2",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
+    "zz. Screenshots/Pasted image 20240730190757.png",
     "zz. Screenshots/Pasted image 20240730182003.png",
     "zz. Screenshots/Pasted image 20240730190706.png",
-    "zz. Screenshots/Pasted image 20240730190757.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "zz. Screenshots/Pasted image 20240730181951.png",
     "zz. Screenshots/Pasted image 20240730180934.png",
     "zz. Screenshots/Pasted image 20240730180500.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "zz. Screenshots/Pasted image 20240730043027.png",
     "zz. Screenshots/Pasted image 20240730042959.png",
     "zz. Screenshots/Pasted image 20240730041611.png",
@@ -237,7 +190,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
