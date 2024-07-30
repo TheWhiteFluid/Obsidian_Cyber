@@ -25,24 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "7fae71ea4ae8dba6",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240730041611.png"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730041611.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730041611.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240730041611.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md"
               }
             }
           }
@@ -169,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "cffd90f1c49b67da",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "zz. Screenshots/Pasted image 20240730041611.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "zz. Screenshots/Pasted image 20240730041545.png",
     "zz. Screenshots/Pasted image 20240730041448.png",
     "zz. Screenshots/Pasted image 20240730041301.png",
@@ -181,7 +172,6 @@
     "TryHackMe/DevSecOps",
     "TryHackMe/Security Engineer",
     "TryHackMe/Offensive Pentesting",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "zz. Screenshots/Pasted image 20240728052838.png",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",

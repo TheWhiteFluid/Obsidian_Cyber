@@ -20,7 +20,6 @@ You can choose this scan using the `-sN` option:
 
   
 ## FIN Scan
-
 The FIN scan sends a TCP packet with the `FIN` flag set. Similarly, no response will be sent if the TCP port is open. Again, Nmap cannot be sure if the port is open or if a firewall is blocking the traffic related to this TCP port.
 
 ![[Pasted image 20240730041448.png]]
@@ -31,7 +30,6 @@ However, the target system should respond with an RST if the port is closed. Con
 
 *Note:*
 	 It's worth noting some firewalls will 'silently' drop the traffic without sending an RST.
-
 
 You can choose this scan type using the `-sF` option:
 ![[Pasted image 20240730041611.png]]
