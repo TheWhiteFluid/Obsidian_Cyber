@@ -196,7 +196,7 @@ MAC Address: 02:A0:E7:B5:B6:C5 (Unknown)
 Nmap done: 1 IP address (1 host up) scanned in 2.21 seconds
 ```
 
-You can also specify the script by name using `--script "SCRIPT-NAME"` or a pattern such as `--script "ftp*"`, which would include `ftp-brute`. In the case of `ftp-brute`, it states: “Performs brute force password auditing against FTP servers.”
+You can also specify the script by name using `--script "SCRIPT-NAME"` or a pattern such as `--script "ftp*"`, which would include `ftp-brute`.
 
 *Note:*
 	You have to be careful as some scripts are pretty intrusive. Moreover, some scripts might be for a specific server and, if chosen at random, will waste your time with no benefit. As usual, make sure that you are authorised to launch such tests on the target server.\
@@ -227,3 +227,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.78 seconds
 	You might expand the functionality of Nmap beyond the official Nmap scripts; you can write your script or download Nmap scripts from the Internet. Downloading and using a Nmap script from the Internet holds a certain level of risk. So it is a good idea not to run a script from an author you don’t trust.
 
 ## Saving the Output
+Whenever you run a Nmap scan, it is only reasonable to save the results in a file. Selecting and adopting a good naming convention for your filenames is also crucial. The number of files can quickly grow and hinder your ability to find a previous scan result. The three main formats are:
+1. Normal
+2. Grepable (`grep`able)
+3. XML
