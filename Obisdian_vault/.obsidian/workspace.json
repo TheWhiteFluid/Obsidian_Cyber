@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 271.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -183,7 +183,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "1a9006541f7b73c3",
   "lastOpenFiles": [
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
