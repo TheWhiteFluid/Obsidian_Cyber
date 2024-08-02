@@ -157,7 +157,7 @@ http-drupal-enum-users.nse              http-vhosts.nse
 *Note:*
 	Some scripts belong to more than one category. Moreover, some scripts launch brute-force attacks against services, while others launch DoS attacks and exploit systems. Hence, it is crucial to be careful when selecting scripts to run if you don’t want to crash services or exploit them.
 
-The command is `sudo nmap -sS -sC MACHINE_IP`, where `-sC` will ensure that Nmap will execute the default scripts following the SYN scan. There are new details that appear below. Take a look at the SSH service at port 22; Nmap recovered all four public keys related to the running server. Consider another example, the HTTP service at port 80; Nmap retrieved the default page title.
+The command is `sudo nmap -sS -sC MACHINE_IP`, where `-sC` will ensure that Nmap will execute the default scripts following the SYN scan. There are new details that appear below. Take a look at the SSH service at port **22**; Nmap recovered all four public keys related to the running server. Consider another example, the HTTP service at port 80; Nmap retrieved the default page title.
 ```shell-session
 pentester@TryHackMe$ sudo nmap -sS -sC MACHINE_IP
 

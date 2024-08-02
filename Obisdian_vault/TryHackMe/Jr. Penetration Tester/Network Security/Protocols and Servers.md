@@ -5,7 +5,7 @@ Few protocols commonly used, such as:
 - POP3
 - SMTP
 - IMAP
-## Telnet
+## Telnet -23
 The Telnet protocol is an application layer protocol used to connect to a virtual terminal of another computer. Using Telnet, a user can log into another computer and access its terminal (console) to run programs, start batch processes, and perform system administration tasks remotely.
 
 When a user connects, they will be asked for a username and password. Upon correct authentication, the user will access the remote system’s terminal. Unfortunately, all this communication between the Telnet client and the Telnet server is not encrypted, making it an easy target for attackers.
@@ -50,9 +50,9 @@ Telnet is not a reliable protocol for remote administration as all the data are 
 ![[Pasted image 20240802165501.png]]
 
 *Note:*
-	Telnet is no longer considered a secure option, especially that anyone capturing your network traffic will be able to discover your usernames and passwords, which would grant them access to the remote system. The secure alternative is SSH.
+	Telnet is no longer considered a secure option, especially that anyone capturing your network traffic will be able to discover your usernames and passwords, which would grant them access to the remote system. The secure alternative is SSH -**22**.
 
-## Hypertext Transfer Protocol (HTTP)
+## Hypertext Transfer Protocol (HTTP) -80
 Hypertext Transfer Protocol (HTTP) is the protocol used to transfer web pages. Web browser connects to the webserver and uses HTTP to request HTML pages and images among other files and submit forms and upload various files.
 
 ![[Pasted image 20240802171439.png]]
@@ -127,7 +127,7 @@ Accept-Ranges: bytes
 THM{e3eb0a1df437f3f97a64aca5952c8ea0}
 ```
 
-## File Transfer Protocol (FTP)
+## File Transfer Protocol (FTP) -20/21
 File Transfer Protocol (FTP) was developed to make the transfer of files between different computers with different systems efficient.
 
 FTP also sends and receives data as cleartext; therefore, we can use Telnet (or Netcat) to communicate with an FTP server and act as an FTP client. In the example below, we carried out the following steps:
@@ -267,7 +267,7 @@ root@ip-10-10-232-50:~# cat ftp_flag.thm   !!!
 THM{364db6ad0e3ddfe7bf0b1870fb06fbdf}
 ```
 
-## Simple Mail Transfer Protocol (SMTP)
+## Simple Mail Transfer Protocol (SMTP) -25
 Email is one of the most used services on the Internet. There are various configurations for email servers; for instance, you may set up an email system to allow local users to exchange emails with each other with no access to the Internet. However, we will consider the more general setup where different email servers connect over the Internet.
 
 Email delivery over the Internet requires the following components:
@@ -318,7 +318,7 @@ quit
 Connection closed by foreign host.
 ```
 
-## Post Office Protocol 3 (POP3)
+## Post Office Protocol 3 (POP3) -110
 Post Office Protocol version 3 (POP3) is a protocol used to download the email messages from a Mail Delivery Agent (MDA) server, as shown in the figure below. The mail client connects to the POP3 server, authenticates, downloads the new email messages before (optionally) deleting them.
 ![[Pasted image 20240802190928.png]]
 
@@ -378,7 +378,33 @@ LIST      !!!
 +OK POP3 clients that break here, they violate STD53.
 ```
 
-## Internet Message Access Protocol (IMAP)
+## Internet Message Access Protocol (IMAP) -143
 Internet Message Access Protocol (IMAP) is more sophisticated than POP3. IMAP makes it possible to keep your email synchronized across multiple devices (and mail clients). In other words, if you mark an email message as read when checking your email on your smartphone, the change will be saved on the IMAP server (MDA) and replicated on your laptop when you synchronise your inbox.
 
+The default port for IMAP is **143**.
+```shell-session
+pentester@TryHackMe$ telnet 10.10.179.8 143 !!!
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
+* OK [CAPABILITY IMAP4rev1 UIDPLUS CHILDREN NAMESPACE THREAD=ORDEREDSUBJECT THREAD=REFERENCES SORT QUOTA IDLE ACL ACL2=UNION STARTTLS ENABLE UTF8=ACCEPT] Courier-IMAP ready. Copyright 1998-2018 Double Precision, Inc.  See COPYING for distribution information.
+c1 LOGIN frank D2xc9CgD  !!!
+* OK [ALERT] Filesystem notification initialization error -- contact your mail administrator (check for configuration errors with the FAM/Gamin library)
+c1 OK LOGIN Ok.    !!!
+c2 LIST "" "*"     !!!
+```
+
+*Note:*
+	It is clear that IMAP sends the login credentials in cleartext, as we can see in the command `LOGIN frank D2xc9CgD`. Anyone watching the network traffic would be able to know Frank’s username and password.
+
+##  Summary
+| Protocol | TCP Port | Application(s) | Data Security |
+| -------- | -------- | -------------- | ------------- |
+| FTP      | 21       | File Transfer  | Cleartext     |
+| SSH      | 22       | SecureShell    | Ciphertext    |
+| Telnet   | 23       | Remote Access  | Cleartext     |
+| SMTP     | 25       | Email (MTA)    | Cleartext     |
+| HTTP     | 80       | Worldwide Web  | Cleartext     |
+| POP3     | 110      | Email (MDA)    | Cleartext     |
+| IMAP     | 143      | Email (MDA)    | Cleartext     |
 
