@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md"
               }
             }
           }
