@@ -107,3 +107,39 @@ Three popular choices for HTTP servers are:
 - [Apache](https://www.apache.org/)
 - [nginx](https://nginx.org/)  
 - [Internet Information Services (IIS)](https://www.iis.net/)
+```
+root@ip-10-10-232-50:~# telnet 10.10.179.8 80
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
+GET /flag.thm HTTP/1.1
+host:telnet
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 02 Aug 2024 15:01:24 GMT
+Content-Type: application/octet-stream
+Content-Length: 39
+Last-Modified: Wed, 15 Sep 2021 09:19:23 GMT
+Connection: keep-alive
+ETag: "6141ba9b-27"
+Accept-Ranges: bytes
+
+THM{e3eb0a1df437f3f97a64aca5952c8ea0}
+```
+
+## File Transfer Protocol (FTP)
+File Transfer Protocol (FTP) was developed to make the transfer of files between different computers with different systems efficient.
+
+FTP also sends and receives data as cleartext; therefore, we can use Telnet (or Netcat) to communicate with an FTP server and act as an FTP client. In the example below, we carried out the following steps:
+1. We connected to an FTP server using a Telnet client. Since FTP servers listen on port 21 by default, we had to specify to our Telnet client to attempt connection to port 21 instead of the default Telnet port.
+2. We needed to provide the username with the command `USER frank`.
+3. Then, we provided the password with the command `PASS D2xc9CgD`.
+4. Because we supplied the correct username and password, we got logged in.
+
+*Note:*
+- The `SYST` command shows the System Type of the target (UNIX in this case). 
+- A command like `STAT` can provide some added information
+- `PASV` switches the mode to passive. It is worth noting that there are two modes for FTP:
+	 *`Active`*: In the active mode, the data is sent over a separate channel originating from the FTP server’s port 20.
+	 *`Passive`*: In the passive mode, the data is sent over a separate channel originating from an FTP client’s port above port number 1023.
