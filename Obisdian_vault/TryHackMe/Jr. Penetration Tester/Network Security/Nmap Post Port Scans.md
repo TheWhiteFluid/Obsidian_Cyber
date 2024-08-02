@@ -304,3 +304,5 @@ You can save the scan results in XML format using `-oX FILENAME`. The XML f
 | `-oG`                       | save output in grepable format                  |
 | `-oX`                       | save output in XML format                       |
 | `-oA`                       | save output in normal, XML and Grepable formats |
+
+![[Pasted image 20240802174847.png]]

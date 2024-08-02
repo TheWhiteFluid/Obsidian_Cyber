@@ -11,6 +11,56 @@
             "id": "e29edeb708b94961",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240802174847.png"
+              }
+            }
+          },
+          {
+            "id": "88309814b0edc00e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240802171439.png"
+              }
+            }
+          },
+          {
+            "id": "67f9458eae7a5254",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240802171439.png"
+              }
+            }
+          },
+          {
+            "id": "035015c624b2b2db",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240802171439.png"
+              }
+            }
+          },
+          {
+            "id": "115a146565cbf536",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240802174847.png"
+              }
+            }
+          },
+          {
+            "id": "4fce401c0fb677e9",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
@@ -19,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -69,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.51103591918945
+    "width": 264.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -146,9 +197,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e29edeb708b94961",
+  "active": "4fce401c0fb677e9",
   "lastOpenFiles": [
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
+    "zz. Screenshots/Pasted image 20240802171439.png",
+    "zz. Screenshots/Pasted image 20240802174847.png",
+    "zz. Screenshots/Pasted image 20240802165501.png",
+    "Frameworks & Tools.md",
+    "Websites Malware Detection.md",
+    "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
@@ -161,20 +218,14 @@
     "zz. Screenshots/Pasted image 20240731005813.png",
     "zz. Screenshots/Pasted image 20240731005210.png",
     "zz. Screenshots/Pasted image 20240731005145.png",
-    "zz. Screenshots/Pasted image 20240731005031.png",
-    "zz. Screenshots/Pasted image 20240730190757.png",
-    "zz. Screenshots/Pasted image 20240730182003.png",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
-    "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
     "ZeroPoint Security/exams.md",
-    "Websites Malware Detection.md",
-    "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/Network Security",
     "PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
@@ -186,7 +237,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/Jr. Penetration Tester/Burp",
