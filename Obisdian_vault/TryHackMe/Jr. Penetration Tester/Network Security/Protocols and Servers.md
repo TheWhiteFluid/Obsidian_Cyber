@@ -5,7 +5,6 @@ Few protocols commonly used, such as:
 - POP3
 - SMTP
 - IMAP
-
 ## Telnet
 The Telnet protocol is an application layer protocol used to connect to a virtual terminal of another computer. Using Telnet, a user can log into another computer and access its terminal (console) to run programs, start batch processes, and perform system administration tasks remotely.
 
@@ -70,12 +69,12 @@ In the following example, we will see how we can request a page from a web serve
 3. Finally, you need to provide some value for the host like `host: telnet` and press the Enter/Return key **twice**.
 
 ```shell-session
-pentester@TryHackMe$ telnet MACHINE_IP 80
+pentester@TryHackMe$ telnet MACHINE_IP 80   !!!
 Trying MACHINE_IP...
 Connected to MACHINE_IP.
 Escape character is '^]'.
-GET /index.html HTTP/1.1
-host: telnet
+GET /index.html HTTP/1.1      !!!
+host: telnet                   !!!
 
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
@@ -108,12 +107,12 @@ Three popular choices for HTTP servers are:
 - [nginx](https://nginx.org/)  
 - [Internet Information Services (IIS)](https://www.iis.net/)
 ```
-root@ip-10-10-232-50:~# telnet 10.10.179.8 80
+root@ip-10-10-232-50:~# telnet 10.10.179.8 80  !!!
 Trying 10.10.179.8...
 Connected to 10.10.179.8.
 Escape character is '^]'.
-GET /flag.thm HTTP/1.1
-host:telnet
+GET /flag.thm HTTP/1.1   !!!
+host:telnet               !!!
 
 HTTP/1.1 200 OK
 Server: nginx/1.18.0 (Ubuntu)
@@ -143,3 +142,243 @@ FTP also sends and receives data as cleartext; therefore, we can use Telnet (or
 - `PASV` switches the mode to passive. It is worth noting that there are two modes for FTP:
 	 *`Active`*: In the active mode, the data is sent over a separate channel originating from the FTP server’s port 20.
 	 *`Passive`*: In the passive mode, the data is sent over a separate channel originating from an FTP client’s port above port number 1023.
+- `TYPE A` switches the file transfer mode to ASCII // `TYPE I` switches the file transfer mode to binary.
+```shell-session
+pentester@TryHackMe$ telnet 10.10.179.8 21   !!!
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
+220 (vsFTPd 3.0.3)
+USER frank      !!!
+331 Please specify the password.
+PASS D2xc9CgD   !!!
+230 Login successful.
+SYST      !!!
+215 UNIX Type: L8
+PASV      !!!
+227 Entering Passive Mode (10,10,0,148,78,223).
+TYPE A    !!!
+200 Switching to ASCII mode.
+STAT      !!!     
+211-FTP server status:
+     Connected to ::ffff:10.10.0.1
+     Logged in as frank
+     TYPE: ASCII
+     No session bandwidth limit
+     Session timeout in seconds is 300
+     Control connection is plain text
+     Data connections will be plain text
+     At session startup, client count was 1
+     vsFTPd 3.0.3 - secure, fast, stable
+211 End of status
+QUIT
+221 Goodbye.
+Connection closed by foreign host.
+```
+
+The image below shows how an actual file transfer would be conducted using FTP. To keep things simple in this figure, let’s only focus on the fact that the FTP client will initiate a connection to an FTP server, which listens on port 21 by default. All commands will be sent over the control channel. Once the client requests a file, another TCP connection will be established between them.
+![[Pasted image 20240802181444.png]]
+
+Considering the sophistication of the data transfer over FTP, let’s use an actual FTP client to download a text file. We only needed a small number of commands to retrieve the file:
+ 1. After logging in successfully, we get the FTP prompt, `ftp>`, to execute various FTP commands. 
+ 2. We used `ls` to list the files and learn the file name;
+ 3. We switched to `ascii` since it is a text file (not binary). 
+ 4. Finally, `get FILENAME` made the client and server establish another channel for file transfer.
+```shell-session
+pentester@TryHackMe$ ftp 10.10.179.8   !!!
+Connected to 10.10.179.8.
+220 (vsFTPd 3.0.3)
+Name: frank    !!!
+331 Please specify the password.
+Password: D2xc9CgD   !!!
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls   !!!
+227 Entering Passive Mode (10,20,30,148,201,180).
+150 Here comes the directory listing.
+-rw-rw-r--    1 1001     1001         4006 Sep 15 10:27 README.txt
+226 Directory send OK.
+ftp> ascii   !!!
+200 Switching to ASCII mode.
+ftp> get README.txt   !!!
+local: README.txt remote: README.txt
+227 Entering Passive Mode (10,10,0,148,125,55).
+150 Opening BINARY mode data connection for README.txt (4006 bytes).
+WARNING! 9 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Transfer complete.
+4006 bytes received in 0.000269 secs (14892.19 Kbytes/sec)
+ftp> exit
+221 Goodbye.
+```
+
+FTP servers and FTP clients use the FTP protocol. There are various FTP server software that you can select from if you want to host your FTP file server. Examples of FTP server software include:
+- [vsftpd](https://security.appspot.com/vsftpd.html)
+- [ProFTPD](http://www.proftpd.org/)
+- [uFTP](https://www.uftpserver.com/)
+
+*Note:*
+	Because FTP sends the login credentials along with the commands and files in cleartext, FTP traffic can be an easy target for attackers.
+
+```
+root@ip-10-10-232-50:~# ftp 10.10.179.8 !!!
+Connected to 10.10.179.8.
+220 (vsFTPd 3.0.3)
+Name (10.10.179.8:root): frank     !!!
+331 Please specify the password.
+Password:                          !!!
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> LS
+?Invalid command
+ftp> ls            !!!
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwx------   10 1001     1001         4096 Sep 15  2021 Maildir
+-rw-rw-r--    1 1001     1001         4006 Sep 15  2021 README.txt
+-rw-rw-r--    1 1001     1001           39 Sep 15  2021 ftp_flag.thm
+226 Directory send OK.
+ftp> ascii        !!!
+200 Switching to ASCII mode.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwx------   10 1001     1001         4096 Sep 15  2021 Maildir
+-rw-rw-r--    1 1001     1001         4006 Sep 15  2021 README.txt
+-rw-rw-r--    1 1001     1001           39 Sep 15  2021 ftp_flag.thm
+226 Directory send OK.
+ftp> get ftp_flag.thm    !!!
+local: ftp_flag.thm remote: ftp_flag.thm
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for ftp_flag.thm (39 bytes).
+WARNING! 2 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Transfer complete.
+39 bytes received in 0.00 secs (19.6522 kB/s)
+ftp> ^C
+ftp> ^Z
+[1]+  Stopped                 ftp 10.10.179.8 21
+root@ip-10-10-232-50:~# ls        !!!
+burp.json   Desktop    ftp_flag.thm  Pictures  Rooms    thinclient_drives
+CTFBuilder  Downloads  Instructions  Postman   Scripts  Tools
+root@ip-10-10-232-50:~# cat ftp_flag.thm   !!!
+THM{364db6ad0e3ddfe7bf0b1870fb06fbdf}
+```
+
+## Simple Mail Transfer Protocol (SMTP)
+Email is one of the most used services on the Internet. There are various configurations for email servers; for instance, you may set up an email system to allow local users to exchange emails with each other with no access to the Internet. However, we will consider the more general setup where different email servers connect over the Internet.
+
+Email delivery over the Internet requires the following components:
+1. Mail Submission Agent (MSA)
+2. Mail Transfer Agent (MTA)
+3. Mail Delivery Agent (MDA)
+4. Mail User Agent (MUA)
+
+![[Pasted image 20240802190012.png]]
+
+Consider the following analogy:
+1. You (MUA) want to send postal mail.
+2. The post office employee (MSA) checks the postal mail for any issues before your local post office (MTA) accepts it.
+3. The local post office checks the mail destination and sends it to the post office (MTA) in the correct country.
+4. The post office (MTA) delivers the mail to the recipient mailbox (MDA).
+5. The recipient (MUA) regularly checks the mailbox for new mail. They notice the new mail, and they take it.
+
+In the same way, we need to follow a protocol to communicate with an HTTP server, and we need to rely on email protocols to talk with an MTA and an MDA. The protocols are:
+1. Simple Mail Transfer Protocol (SMTP)
+2. Post Office Protocol version 3 (POP3) or Internet Message Access Protocol (IMAP)
+
+Simple Mail Transfer Protocol (SMTP) is used to communicate with an MTA server. Because SMTP uses cleartext, where all commands are sent without encryption, we can use a basic Telnet client to connect to an SMTP server and act as an email client (MUA) sending a message.
+
+SMTP server listens on port 25 by default. To see basic communication with an SMTP server, we used Telnet to connect to it. Once connected, we issue `helo hostname` and then start typing our email.
+
+After `helo`, we issue `mail from:`, `rcpt to:` to indicate the sender and the recipient. When we send our email message, we issue the command `data` and type our message:
+```shell-session
+pentester@TryHackMe$ telnet 10.10.179.8 25  !!!
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
+220 bento.localdomain ESMTP Postfix (Ubuntu)
+helo telnet    !!!
+250 bento.localdomain
+mail from:    !!!
+250 2.1.0 Ok
+rcpt to:      !!!
+250 2.1.5 Ok
+data          !!!
+354 End data with .
+subject: Sending email with Telnet
+Hello Frank,
+I am just writing to say hi!             
+.
+250 2.0.0 Ok: queued as C3E7F45F06
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
+```
+
+## Post Office Protocol 3 (POP3)
+Post Office Protocol version 3 (POP3) is a protocol used to download the email messages from a Mail Delivery Agent (MDA) server, as shown in the figure below. The mail client connects to the POP3 server, authenticates, downloads the new email messages before (optionally) deleting them.
+![[Pasted image 20240802190928.png]]
+
+The example below shows what a POP3 session would look like if conducted via a Telnet client:
+- First, the user connects to the POP3 server at the POP3 default port 110.
+- Authentication is required to access the email messages; the user authenticates by providing his username `USER frank` and password `PASS D2xc9CgD`.
+- Using the command `STAT`, we get the reply `+OK 1 179`; based on [RFC 1939](https://datatracker.ietf.org/doc/html/rfc1939), a positive response to `STAT` has the format `+OK nn mm`, where _nn_ is the number of email messages in the inbox, and _mm_ is the size of the inbox in octets (byte). 
+- The command `LIST` provided a list of new messages on the server
+- `RETR 1` retrieved the first message in the list.
+```shell-session
+pentester@TryHackMe$ telnet 10.10.179.8 110
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
++OK 10.10.179.8 Mail Server POP3 Wed, 15 Sep 2021 11:05:34 +0300 
+USER frank
++OK frank
+PASS D2xc9CgD
++OK 1 messages (179) octets
+STAT
++OK 1 179
+LIST
++OK 1 messages (179) octets
+1 179
+.
+RETR 1
++OK
+From: Mail Server 
+To: Frank 
+subject: Sending email with Telnet
+Hello Frank,
+I am just writing to say hi!
+.
+QUIT
++OK 10.10.179.8 closing connection
+Connection closed by foreign host.
+```
+
+The example above shows that the commands are sent in cleartext. Using Telnet was enough to authenticate and retrieve an email message. As the username and password are sent in cleartext, any third party watching the network traffic can steal the login credentials.
+
+Note:
+	Based on the default settings, the mail client deletes the mail message after it downloads it. The default behaviour can be changed from the mail client settings if you wish to download the emails again from another mail client. Accessing the same mail account via multiple clients using POP3 is usually not very convenient as one would lose track of read and unread messages. To keep all mailboxes synchronized, we need to consider other protocols, such as IMAP.
+
+```
+root@ip-10-10-232-50:~# telnet 10.10.179.8 110   !!!
+Trying 10.10.179.8...
+Connected to 10.10.179.8.
+Escape character is '^]'.
++OK Hello there.
+USER frank     !!!
++OK Password required.
+PASS D2xc9CgD  !!!
++OK logged in.
+STAT      !!!
++OK 0 0
+LIST      !!!
++OK POP3 clients that break here, they violate STD53.
+```
+
+## Internet Message Access Protocol (IMAP)
+Internet Message Access Protocol (IMAP) is more sophisticated than POP3. IMAP makes it possible to keep your email synchronized across multiple devices (and mail clients). In other words, if you mark an email message as read when checking your email on your smartphone, the change will be saved on the IMAP server (MDA) and replicated on your laptop when you synchronise your inbox.
+
+

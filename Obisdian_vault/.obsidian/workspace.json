@@ -8,56 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e29edeb708b94961",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240802174847.png"
-              }
-            }
-          },
-          {
-            "id": "88309814b0edc00e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240802171439.png"
-              }
-            }
-          },
-          {
-            "id": "67f9458eae7a5254",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240802171439.png"
-              }
-            }
-          },
-          {
-            "id": "035015c624b2b2db",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240802171439.png"
-              }
-            }
-          },
-          {
-            "id": "115a146565cbf536",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240802174847.png"
-              }
-            }
-          },
-          {
             "id": "4fce401c0fb677e9",
             "type": "leaf",
             "state": {
@@ -69,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,6 +148,10 @@
   },
   "active": "4fce401c0fb677e9",
   "lastOpenFiles": [
+    "zz. Screenshots/Pasted image 20240802190928.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
+    "zz. Screenshots/Pasted image 20240802190012.png",
+    "zz. Screenshots/Pasted image 20240802181444.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
     "zz. Screenshots/Pasted image 20240802171439.png",
     "zz. Screenshots/Pasted image 20240802174847.png",
@@ -206,7 +159,6 @@
     "Frameworks & Tools.md",
     "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
@@ -215,9 +167,6 @@
     "zz. Screenshots/Pasted image 20240730045416.png",
     "zz. Screenshots/Pasted image 20240730050819.png",
     "zz. Screenshots/Pasted image 20240730045430.png",
-    "zz. Screenshots/Pasted image 20240731005813.png",
-    "zz. Screenshots/Pasted image 20240731005210.png",
-    "zz. Screenshots/Pasted image 20240731005145.png",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
