@@ -11,6 +11,26 @@
             "id": "bf24c228eedeacd8",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240803154405.png"
+              }
+            }
+          },
+          {
+            "id": "e87614b1141a2089",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "zz. Screenshots/Pasted image 20240803154103.png"
+              }
+            }
+          },
+          {
+            "id": "921025f423cdae80",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
@@ -19,7 +39,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,12 +167,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bf24c228eedeacd8",
+  "active": "921025f423cdae80",
   "lastOpenFiles": [
+    "zz. Screenshots/Pasted image 20240803154103.png",
+    "zz. Screenshots/Pasted image 20240803154405.png",
+    "Frameworks & Tools.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
@@ -164,8 +188,6 @@
     "zz. Screenshots/Pasted image 20240802165501.png",
     "zz. Screenshots/Pasted image 20240731015659.png",
     "zz. Screenshots/Pasted image 20240731005813.png",
-    "zz. Screenshots/Pasted image 20240731005210.png",
-    "zz. Screenshots/Pasted image 20240731005145.png",
     "Untitled.canvas",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
@@ -184,7 +206,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
-    "Frameworks & Tools.md",
     "ZeroPoint Security/exams.md",
     "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
