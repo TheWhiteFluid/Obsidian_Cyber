@@ -169,3 +169,96 @@ document.txt                                        100% 1997KB  70.4MB/s   00:0
 	FTP could be secured using SSL/TLS by using the FTPS protocol which uses port 990. It is worth mentioning that FTP can also be secured using the SSH protocol which is the SFTP protocol. By default this service listens on port 22, just like SSH.
 
 ## Password Attack
+Authentication, or proving your identity, can be achieved through one of the following, or a combination of two:
+
+1. Something you _know_, such as password and PIN code.
+2. Something you _have_, such as a SIM card, RFID card, and USB dongle.
+3. Something you _are_, such as fingerprint and iris.
+
+Based on the 150 million usernames and passwords leaked from the Adobe breach in 2013, the top ten passwords are:
+- 123456
+- 123456789
+- password
+- adobe123
+- 12345678
+- qwerty
+- 1234567
+- 111111
+- photoshop
+- 123123
+
+Attacks against passwords are usually carried out by:
+1. **Password Guessing**: Guessing a password requires some knowledge of the target, such as their pet’s name and birth year.
+2. **Dictionary Attack**: This approach expands on password guessing and attempts to include all valid words in a dictionary or a wordlist.
+3. **Brute Force Attack**: This attack is the most exhaustive and time-consuming where an attacker can go as far as trying all possible character combinations, which grows fast (exponential growth with the number of characters).
+
+Let’s focus on dictionary attacks. Over time, hackers have compiled list after list containing leaked passwords from data breaches. The choice of the word list should depend on your knowledge of the target. For instance, a French user might use a French word instead of an English one. Consequently, a French word list might be more promising.
+
+We want an automated way to try the common passwords or the entries from a word list; here comes [THC Hydra](https://github.com/vanhauser-thc/thc-hydra). Hydra supports many protocols, including FTP, POP3, IMAP, SMTP, SSH, and all methods related to HTTP. The general command-line syntax is: `hydra -l username -P wordlist.txt server service` where we specify the following options:
+
+- `-l username`: `-l` should precede the `username`, i.e. the login name of the target.
+- `-P wordlist.txt`: `-P` precedes the `wordlist.txt` file, which is a text file containing the list of passwords you want to try with the provided username.
+- `server` is the hostname or IP address of the target server.
+- `service` indicates the service which you are trying to launch the dictionary attack.
+
+Consider the following concrete examples:
+- `hydra -l mark -P /usr/share/wordlists/rockyou.txt 10.10.55.133 ftp` will use `mark` as the username as it iterates over the provided passwords against the FTP server.
+- `hydra -l mark -P /usr/share/wordlists/rockyou.txt ftp://10.10.55.133` is identical to the previous example. `10.10.55.133 ftp` is the same as `ftp://10.10.55.133`.
+- `hydra -l frank -P /usr/share/wordlists/rockyou.txt 10.10.55.133 ssh` will use `frank` as the user name as it tries to login via SSH using the different passwords.
+
+There are some extra optional arguments that you can add:
+- `-s PORT` to specify a non-default port for the service in question.
+- `-V` or `-vV`, for verbose, makes Hydra show the username and password combinations that are being tried. This verbosity is very convenient to see the progress, especially if you are still not confident of your command-line syntax.
+- `-t n` where n is the number of parallel connections to the target. `-t 16` will create 16 threads used to connect to the target.
+- `-d`, for debugging, to get more detailed information about what’s going on. The debugging output can save you much frustration; for instance, if Hydra tries to connect to a closed port and timing out, `-d` will reveal this right away.
+
+
+In summary, attacks against login systems can be carried out efficiently using a tool, such as THC Hydra combined with a suitable word list. Mitigation against such attacks can be sophisticated and depends on the target system. A few of the approaches include:
+
+- Password Policy: Enforces minimum complexity constraints on the passwords set by the user.
+- Account Lockout: Locks the account after a certain number of failed attempts.
+- Throttling Authentication Attempts: Delays the response to a login attempt. A couple of seconds of delay is tolerable for someone who knows the password, but they can severely hinder automated tools.
+- Using CAPTCHA: Requires solving a question difficult for machines. It works well if the login page is via a graphical user interface (GUI). (Note that CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart.)
+- Requiring the use of a public certificate for authentication. This approach works well with SSH, for instance.
+- Two-Factor Authentication: Ask the user to provide a code available via other means, such as email, smartphone app or SMS.
+- There are many other approaches that are more sophisticated or might require some established knowledge about the user, such as IP-based geolocation.
+
+![[Pasted image 20240803182625.png]]
+
+## Summary
+
+1. Sniffing Attack
+2. MITM Attack
+3. Password Attack
+
+Many other attacks can be conducted against specific servers and protocols. We will provide a list of some related modules.
+- [Vulnerability Research](https://tryhackme.com/module/vulnerability-research)
+- [Metasploit](https://tryhackme.com/module/metasploit)
+- [Burp Suite](https://tryhackme.com/module/learn-burp-suite)
+
+| Protocol | TCP Port | Application(s)                  | Data Security |
+| -------- | -------- | ------------------------------- | ------------- |
+| FTP      | 21       | File Transfer                   | Cleartext     |
+| FTPS     | 990      | File Transfer                   | Encrypted     |
+| HTTP     | 80       | Worldwide Web                   | Cleartext     |
+| HTTPS    | 443      | Worldwide Web                   | Encrypted     |
+| IMAP     | 143      | Email (MDA)                     | Cleartext     |
+| IMAPS    | 993      | Email (MDA)                     | Encrypted     |
+| POP3     | 110      | Email (MDA)                     | Cleartext     |
+| POP3S    | 995      | Email (MDA)                     | Encrypted     |
+| SFTP     | 22       | File Transfer                   | Encrypted     |
+| SSH      | 22       | Remote Access and File Transfer | Encrypted     |
+| SMTP     | 25       | Email (MTA)                     | Cleartext     |
+| SMTPS    | 465      | Email (MTA)                     | Encrypted     |
+| Telnet   | 23       | Remote Access                   | Cleartext     |
+
+Hydra remains a very efficient tool that you can launch from the terminal to try the different passwords. We summarize its main options in the following table.
+
+|Option|Explanation|
+|---|---|
+|`-l username`|Provide the login name|
+|`-P WordList.txt`|Specify the password list to use|
+|`server service`|Set the server address and service to attack|
+|`-s PORT`|Use in case of non-default service port number|
+|`-V` or `-vV`|Show the username and password combinations being tried|
+|`-d`|Display debugging output if the verbose output is not helping|
