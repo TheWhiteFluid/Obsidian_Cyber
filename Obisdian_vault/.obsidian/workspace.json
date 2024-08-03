@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md"
               }
             }
           }
@@ -148,6 +148,14 @@
   },
   "active": "bf24c228eedeacd8",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
     "zz. Screenshots/Pasted image 20240802190928.png",
     "zz. Screenshots/Pasted image 20240802190012.png",
     "zz. Screenshots/Pasted image 20240802181444.png",
@@ -158,15 +166,7 @@
     "zz. Screenshots/Pasted image 20240731005813.png",
     "zz. Screenshots/Pasted image 20240731005210.png",
     "zz. Screenshots/Pasted image 20240731005145.png",
-    "zz. Screenshots/Pasted image 20240731005031.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
     "Untitled.canvas",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/DevSecOps",
@@ -185,7 +185,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "Frameworks & Tools.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
     "ZeroPoint Security/exams.md",
     "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
