@@ -210,4 +210,75 @@ THM{321452667098}   !!!
 ```
 
 Browsing to `http://10.10.216.66:8080` displays a small challenge that will give you a flag once you solve it. What is the flag?
+```
+root@ip-10-10-153-80:~# nmap -sN 10.10.216.66
 
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-04 15:07 BST
+Nmap scan report for ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Host is up (0.00050s latency).
+Not shown: 995 closed ports
+PORT     STATE         SERVICE
+22/tcp   open|filtered ssh
+80/tcp   open|filtered http
+139/tcp  open|filtered netbios-ssn
+445/tcp  open|filtered microsoft-ds
+8080/tcp open|filtered http-proxy
+MAC Address: 02:A8:58:77:DE:AB (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 95.91 seconds
+
+```
+
+### TCP SYN Scan (`-sS`)
+
+#### How It Works:
+1. **SYN Packet Sent:** Nmap sends a SYN packet (like a normal TCP connection initiation).
+2. **Response Interpretation:**
+    - **SYN/ACK:** If the target port is open, the target responds with a SYN/ACK packet.
+    - **RST:** If the port is closed, the target responds with a RST packet.
+    - **No Response or ICMP Message:** Indicates the port is filtered by a firewall.
+3. **Connection Reset:** Upon receiving a SYN/ACK, Nmap immediately sends a RST packet to terminate the connection, avoiding the completion of the TCP handshake. This makes the scan less conspicuous because a full connection is never established.
+
+#### Advantages:
+- **Speed:** Faster than a full TCP connect scan (`-sT`).
+- **Stealth:** Less likely to be logged because a full connection is not established.
+
+#### Detection:
+- **Firewalls/IDS/IPS:** Many firewalls, intrusion detection systems (IDS), and intrusion prevention systems (IPS) are configured to detect SYN scans. The characteristic SYN packets without subsequent data packets can trigger alerts.
+- **Logs:** Even though a full TCP connection isn't established, many security systems log the initial SYN packet, especially when it's followed by a RST packet shortly after.
+
+### TCP Null Scan (`-sN`)
+#### How It Works:
+1. **Null Packet Sent:** Nmap sends a TCP packet with no flags set.
+2. **Response Interpretation:**
+    - **No Response:** Indicates the port is open.
+    - **RST:** Indicates the port is closed.
+    - **ICMP Messages or Other Responses:** Can indicate filtering by a firewall.
+
+#### Advantages
+- **Evasion:** Null scans can bypass some firewalls and IDS/IPS that are not configured to recognize them, as they don't follow standard connection patterns.
+- **Fingerprinting:** Useful for identifying certain types of operating systems based on how they handle unexpected packets.
+
+#### Detection:
+- **Less Common:** Since Null scans are less common and do not follow the typical patterns of TCP connections, they might not trigger IDS/IPS systems that are tuned to detect SYN or other typical scan types.
+- **Log Analysis:** More sophisticated security systems might still detect and log these packets, especially if they notice unusual traffic patterns or a high volume of Null packets.
+
+### Why `-sS` Might Be Detected While `-sN` Might Not
+1. **Typical Traffic Patterns:**
+    
+    - **SYN Scan (`-sS`):** Follows the initial pattern of a normal TCP handshake (SYN packet), which is common and therefore often scrutinized by security systems.
+    - **Null Scan (`-sN`):** Sends packets with no flags, which do not follow any typical communication pattern and might not be recognized by less sophisticated systems.
+2. **Firewall/IDS/IPS Configuration:**
+    
+    - **SYN Scan Detection:** Many systems are configured to detect multiple SYN packets from a single source, especially when they are followed by a RST packet, as this is a hallmark of a SYN scan.
+    - **Null Scan Evasion:** Some firewalls and IDS/IPS might not be configured to detect Null scans because they are less common and do not follow standard TCP connection procedures.
+3. **Logging and Alerts:**
+    
+    - **SYN Scans:** More likely to be logged due to the nature of the packets and their typical detection by security systems.
+    - **Null Scans:** Might evade detection if the security systems are not configured to recognize or log such traffic.
+
+### Summary
+- **SYN Scan (`-sS`):** Fast and effective but more likely to be detected by firewalls, IDS, and IPS due to its recognizable pattern of SYN packets followed by RST packets.
+- **Null Scan (`-sN`):** Less common and may bypass some security systems because it does not follow standard TCP communication patterns, making it less likely to be detected.
+
+When choosing between the two, consider the target environment's security measures and the specific goals of your scan. For stealthier reconnaissance, a Null scan might be preferable, whereas a SYN scan is useful for its speed and efficiency but comes with a higher risk of detection.
