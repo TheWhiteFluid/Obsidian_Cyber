@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "19eec5b66699556b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "26df56455dae9053",
             "type": "leaf",
             "state": {
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+                "file": "zz. Screenshots/Pasted image 20240805155329.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+                "file": "zz. Screenshots/Pasted image 20240805155329.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md"
+                "file": "zz. Screenshots/Pasted image 20240805155329.png"
               }
             }
           }
@@ -158,15 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19eec5b66699556b",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Pasted image 20240805161038.png",
+    "zz. Screenshots/Pasted image 20240805155842.png",
+    "zz. Screenshots/Pasted image 20240805155329.png",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+    "zz. Screenshots/Pasted image 20240805161038.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Net Sec Challenge.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
-    "Pasted image 20240805160914.png",
-    "Pasted image 20240805155842.png",
-    "Pasted image 20240805155329.png",
+    "zz. Screenshots/Pasted image 20240805160914.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
     "zz. Screenshots/Pasted image 20240803182625.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
@@ -179,7 +167,6 @@
     "zz. Screenshots/Pasted image 20240803165918.png",
     "zz. Screenshots/Pasted image 20240803164332.png",
     "zz. Screenshots/Pasted image 20240803164643.png",
-    "zz. Screenshots/Pasted image 20240803154103.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
