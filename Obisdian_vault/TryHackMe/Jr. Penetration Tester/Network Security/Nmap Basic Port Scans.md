@@ -1,12 +1,9 @@
-
 ![[Pasted image 20240728034725.png]]
-
 
 Different types of port scans
 1. TCP connect port scan
 2. TCP SYN port scan
 3. UDP port scan
-
 ## **TCP and UDP ports**
 In the same sense that an IP address specifies a host on a network among many others, a TCP port or UDP port is used to identify a network service running on that host.
 
