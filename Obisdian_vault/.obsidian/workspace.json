@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 274.5
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -171,13 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "26df56455dae9053",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
     "TryHackMe/Jr. Penetration Tester/Network Security/Net Sec Challenge.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
-    "Pasted image 20240803182625.png",
+    "zz. Screenshots/Pasted image 20240803182625.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "Frameworks & Tools.md",
