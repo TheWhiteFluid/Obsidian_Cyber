@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240805155329.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240805155329.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240805155329.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md"
               }
             }
           }
@@ -146,10 +146,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "26df56455dae9053",
   "lastOpenFiles": [
-    "zz. Screenshots/Pasted image 20240805155842.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/Content Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/Authentication Bypass.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/File Inclusion.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/Subdomain Enumeration.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/IDOR Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/Command Injection.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/XSS.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/SQL Injections.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/SSRF.md",
     "zz. Screenshots/Pasted image 20240805155329.png",
+    "zz. Screenshots/Pasted image 20240805155842.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "zz. Screenshots/Pasted image 20240805161038.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
@@ -169,25 +182,12 @@
     "zz. Screenshots/Pasted image 20240803164643.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
     "Untitled.canvas",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/DevSecOps",
     "TryHackMe/Security Engineer",
     "TryHackMe/Offensive Pentesting",
-    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/02.Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/06.File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/05.IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/09.Command Injection.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/08.XSS.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/07.SSRF.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/10.SQL Injections.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/Jr. Penetration Tester/Network Security",

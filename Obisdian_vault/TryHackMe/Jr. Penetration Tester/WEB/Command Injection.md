@@ -1,4 +1,3 @@
-
 Command injection is the abuse of an application's behaviour to execute commands on the operating system, using the same privileges that the application on a device is running with.
 
 Command injection is also often known as “Remote Code Execution” (RCE) because of the ability to remotely execute code within an application. For example, an attacker may read system or user files, data, and things of that nature.

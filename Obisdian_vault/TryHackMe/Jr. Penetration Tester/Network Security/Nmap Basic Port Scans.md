@@ -7,8 +7,7 @@ Different types of port scans
 2. TCP SYN port scan
 3. UDP port scan
 
-## TCP and UDP ports
-
+## **TCP and UDP ports**
 In the same sense that an IP address specifies a host on a network among many others, a TCP port or UDP port is used to identify a network service running on that host.
 
  A port is usually linked to a service using that specific port number: for instance, an HTTP server would bind to TCP port 80 by default; moreover, if the HTTP server supports SSL/TLS, it would listen on TCP port 443.
