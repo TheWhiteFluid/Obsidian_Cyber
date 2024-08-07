@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md"
               }
             }
           }
@@ -179,8 +179,8 @@
   },
   "active": "ff2074c103885be7",
   "lastOpenFiles": [
-    "zz. Screenshots/Pasted image 20240807153626.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+    "zz. Screenshots/Pasted image 20240807153626.png",
     "zz. Screenshots/Pasted image 20240807154306.png",
     "zz. Screenshots/Pasted image 20240807153809.png",
     "TryHackMe/Jr. Penetration Tester/WEB/Authentication Bypass.md",
