@@ -21,16 +21,13 @@ However, in practical situations, we need to consider the impact of firewalls. T
 5. **Open|Filtered**: This means that Nmap cannot determine whether the port is open or filtered.
 6. **Closed|Filtered**: This means that Nmap cannot decide whether a port is closed or filtered.
 
-## TCP Flags
-
+## **TCP Flags**
 Nmap supports different types of TCP port scans. To understand the difference between these port scans, we need to review the TCP header.
 
 The TCP header is the first 24 bytes of a TCP segment:
-
 ![[Pasted image 20240728035824.png]]
 
 Setting a flag bit means setting its value to 1. From left to right, the TCP header flags are:
-
 1. **URG**: Urgent flag indicates that the urgent pointer filed is significant. The urgent pointer indicates that the incoming data is urgent, and that a TCP segment with the URG flag set is processed immediately without consideration of having to wait on previously sent TCP segments.
 2. **ACK**: Acknowledgement flag indicates that the acknowledgement number is significant. It is used to acknowledge the receipt of a TCP segment.
 3. **PSH**: Push flag asking TCP to pass the data to the application promptly.
@@ -38,22 +35,17 @@ Setting a flag bit means setting its value to 1. From left to right, the TCP h
 5. **SYN**: Synchronize flag is used to initiate a TCP 3-way handshake and synchronize sequence numbers with the other host. The sequence number should be set randomly during TCP connection establishment.
 6. **FIN**: The sender has no more data to send.
 
-
-## TCP Connect Scan
-
+## **TCP Connect Scan**
 TCP connect scan works by completing the TCP 3-way handshake. In standard TCP connection establishment, the client sends a TCP packet with SYN flag set, and the server responds with SYN/ACK if the port is open; finally, the client completes the 3-way handshake by sending an ACK.
 
 We are interested in learning whether the TCP port is open, not establishing a TCP connection. Hence the connection is torn as soon as its state is confirmed by sending a RST/ACK. 
 
 You can choose to run TCP connect scan using `-sT`.
-
 ![[Pasted image 20240728041253.png]]
 
 ![[Pasted image 20240728040946.png]]
 
-
-## SYN Scan
-
+## **SYN Scan**
 Unprivileged users are limited to connect scan. However, the default scan mode is SYN scan, and it *requires a privileged (root or sudoer) user to run it*.
 
 SYN scan does not need to complete the TCP 3-way handshake; instead, it tears down the connection once it receives a response from the server.
@@ -72,9 +64,7 @@ The figure below shows how the TCP SYN scan works without completing the TCP�
 
 ![[Pasted image 20240728052838.png]]
 
-
-## UDP Scan
-
+## **UDP Scan**
 UDP is a connectionless protocol, and hence it *does not require any handshake* for connection establishment.
 
  If a UDP packet is sent to a closed port, an ICMP port unreachable error (type 3, code 3) is returned.
@@ -87,8 +77,7 @@ UDP is a connectionless protocol, and hence it *does not require any handshake*
 
 ![[Pasted image 20240728052820.png]]
 
-## Fine-Tuning Scope and Performance
-
+## **Fine-Tuning Scope and Performance**
 You can specify the ports you want to scan instead of the default 1000 ports
 
 *Example:*
@@ -106,16 +95,20 @@ You can control the scan timing using `-T<0-5>`. `-T0` is the slowest (parano
 - insane (5)
 
 *Note:*
-	 `-T4` is often used during CTFs and when learning to scan on practice targets, whereas `-T1` is often used during real engagements where stealth is more important.
+	 `-T4` is often used during CTFs and when learning to scan on practice targets
+	 `-T1` is often used during real engagements where stealth is more important.
 
+**Packet rate**:
 Control the packet rate using `--min-rate <number>` and `--max-rate <number>`. For example, `--max-rate 10` or `--max-rate=10` ensures that your scanner is not sending more than ten packets per second.
 
+**Parallelization**:
 Control probing parallelization using `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>`. Nmap probes the targets to discover which hosts are live and which ports are open; probing parallelization specifies the number of such probes that can be run in parallel.
 
 *Example:*
 	 `--min-parallelism=512` pushes Nmap to maintain at least 512 probes in parallel; these 512 probes are related to host discovery and open ports.
 
-## Summary
+
+## **Summary**
 
 |Port Scan Type|Example Command|
 |---|---|
