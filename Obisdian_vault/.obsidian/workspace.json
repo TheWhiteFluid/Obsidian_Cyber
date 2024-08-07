@@ -8,36 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "def882efdb429f6a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240807144609.png"
-              }
-            }
-          },
-          {
-            "id": "5188f478a5c74a0b",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240807144652.png"
-              }
-            }
-          },
-          {
-            "id": "b23c42e6f68960ed",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "zz. Screenshots/Pasted image 20240807144609.png"
-              }
-            }
-          },
-          {
             "id": "ff2074c103885be7",
             "type": "leaf",
             "state": {
@@ -49,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,6 +149,7 @@
   "active": "ff2074c103885be7",
   "lastOpenFiles": [
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "zz. Screenshots/Pasted image 20240807153626.png",
     "zz. Screenshots/Pasted image 20240807154306.png",
     "zz. Screenshots/Pasted image 20240807153809.png",
@@ -192,7 +162,6 @@
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/0)Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240807125615.png",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
