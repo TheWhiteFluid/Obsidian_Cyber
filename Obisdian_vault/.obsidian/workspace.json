@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "d3a98ce03dff308a",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/1)Active Reconnaissance.md",
@@ -186,7 +187,6 @@
     "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "zz. Screenshots/Pasted image 20240803180302.png",
     "zz. Screenshots/Pasted image 20240803175824.png",
