@@ -6,7 +6,7 @@ Nmap can be used to:
 - Run Nmap’s traceroute;
 - Run select Nmap scripts;
 - Save the scan results in various formats;
-## Service Detection
+## **Service Detection**
 Once Nmap discovers open ports, you can probe the available port to detect the running service. Further investigation of open ports is an essential piece of information as the pentester can use it to learn if there are any known vulnerabilities of the service.
 
 Adding `-sV` to your Nmap command will collect and determine service and version information for the open ports. 
@@ -38,8 +38,8 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 8.40 seconds
 ```
 
-## OS Detection and Traceroute
-### OS Detection
+## **OS Detection and Traceroute**
+###  #OS Detection
 Nmap can detect the Operating System (OS) based on its behaviour and any telltale signs in its responses. OS detection can be enabled using `-O`; this is an _uppercase O_ as in OS.
 ```shell-session
 pentester@TryHackMe$ sudo nmap -sS -O 10.10.162.84
@@ -69,7 +69,7 @@ Nmap done: 1 IP address (1 host up) scanned in 3.91 seconds
 *Note:*
 	The OS detection is very convenient, but many factors might affect its accuracy. First and foremost, Nmap needs to find at least one open and one closed port on the target to make a reliable guess. Furthermore, the guest OS fingerprints might get distorted due to the rising use of virtualization and similar technologies. Therefore, always take the OS version with a grain of salt.
 
-### Traceroute
+### #Traceroute
 If you want Nmap to find the routers between you and the target, just add `--traceroute`
 
 *Note:*
@@ -99,7 +99,7 @@ HOP RTT     ADDRESS
 Nmap done: 1 IP address (1 host up) scanned in 1.59 seconds
 ```
 
-### Nmap Scripting Engine (NSE)
+## **Nmap Scripting Engine (NSE)**
 A script is a piece of code that does not need to be compiled. In other words, it remains in its original human-readable form and does not need to be converted to machine language. Many programs provide additional functionality via scripts; moreover, scripts make it possible to add custom functionality that did not exist via the built-in commands.
 
 Nmap default installation can easily contain close to 600 scripts at `/usr/share/nmap/scripts`.
@@ -203,7 +203,6 @@ You can also specify the script by name using `--script "SCRIPT-NAME"` or a pa
 *Note:*
 	You have to be careful as some scripts are pretty intrusive. Moreover, some scripts might be for a specific server and, if chosen at random, will waste your time with no benefit. As usual, make sure that you are authorised to launch such tests on the target server.\
 
-
 Let’s consider a benign script, `http-date`, which we guess would retrieve the http server date and time, and this is indeed confirmed in its description: “Gets the date from HTTP-like services. Also, it prints how much the date differs from local time…”
 ```shell-session
 pentester@TryHackMe$ sudo nmap -sS -n --script "http-date" MACHINE_IP
@@ -228,7 +227,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.78 seconds
 *Note:*
 	You might expand the functionality of Nmap beyond the official Nmap scripts; you can write your script or download Nmap scripts from the Internet. Downloading and using a Nmap script from the Internet holds a certain level of risk. So it is a good idea not to run a script from an author you don’t trust.
 
-## Saving the Output
+## **Saving the Output**
 Whenever you run a Nmap scan, it is only reasonable to save the results in a file. Selecting and adopting a good naming convention for your filenames is also crucial. The number of files can quickly grow and hinder your ability to find a previous scan result. The three main formats are:
 1. Normal
 2. Grepable (`grep`able)
@@ -288,7 +287,9 @@ Host: 10.10.178.94	Ports: 22/open/tcp//ssh//OpenSSH 6.7p1 Debian 5+deb8u8 (proto
 ### XML
 You can save the scan results in XML format using `-oX FILENAME`. The XML format would be most convenient to process the output in other programs. Conveniently enough, you can save the scan output in all three formats using `-oA FILENAME` to combine `-oN`, `-oG`, and `-oX` for normal, grepable, and XML.
 
-## Summary
+
+## **Summary**
+
 | Option                      | Meaning                                         |
 | --------------------------- | ----------------------------------------------- |
 | `-sV`                       | determine service/version info on open ports    |
