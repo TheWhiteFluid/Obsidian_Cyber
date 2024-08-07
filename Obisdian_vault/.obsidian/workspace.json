@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -51,7 +51,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SSH",
+                "query": "version ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md"
               }
             }
           }
@@ -159,8 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "d3a98ce03dff308a",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
+    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/0)Passive Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/1)Active Reconnaissance.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "zz. Screenshots/Pasted image 20240803180302.png",
     "zz. Screenshots/Pasted image 20240803175824.png",
     "zz. Screenshots/Pasted image 20240803165918.png",
@@ -168,19 +177,10 @@
     "zz. Screenshots/Pasted image 20240803164332.png",
     "zz. Screenshots/Pasted image 20240803154405.png",
     "zz. Screenshots/Pasted image 20240803154103.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Net Sec Challenge.md",
-    "Pasted image 20240803182625.png",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Protocols and Servers 2.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Live Host Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Passive Reconnaissance.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Active Reconnaissance.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Post Port Scans.md",
+    "zz. Screenshots/Pasted image 20240803182625.png",
+    "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "zz. Screenshots/Pasted image 20240802190928.png",
     "zz. Screenshots/Pasted image 20240802190012.png",
-    "zz. Screenshots/Pasted image 20240802181444.png",
     "Frameworks & Tools.md",
     "Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
@@ -199,7 +199,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/04.Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/Jr. Penetration Tester/WEB/03.Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "TryHackMe/Jr. Penetration Tester/Burp",

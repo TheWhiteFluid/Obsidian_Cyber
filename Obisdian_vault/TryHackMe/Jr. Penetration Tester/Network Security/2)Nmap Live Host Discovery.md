@@ -40,9 +40,7 @@ Examples of target specification are:
 ![[Pasted image 20240726235644.png]]
 
 ## Discovering Live Hosts
-
  We will leverage the protocols to discover the live hosts. Starting from bottom to top, we can use:
- 
 - **ARP** from **Link** Layer
 - **ICMP** from **Network** Layer
 - **TCP** from **Transport** Layer
@@ -56,7 +54,6 @@ Examples of target specification are:
 - **TCP** and **UDP** are transport layers, for network scanning purposes, a scanner can send a specially-crafted packet to common **TCP** or **UDP** ports to check whether the target will respond. This method is efficient, especially when **ICMP Echo** is blocked.
 
 ## Nmap Host Discovery Using ARP
-
  There are various ways to discover online hosts. When no host discovery options are provided, Nmap follows the following approaches to discover live hosts:
  
 1. When a **_privileged_ user** tries to scan targets on a **local network** (Ethernet), Nmap uses **_ARP requests_**. A privileged user is `root` or a user who belongs to `sudoers` and can run `sudo`.
@@ -74,7 +71,6 @@ If you want Nmap only to perform an ARP scan without port-scanning, you can us
 
 
 ## Nmap Host Discovery Using ICMP
-
  Many firewalls block ICMP echo; new versions of MS Windows are configured with a host firewall that blocks ICMP echo requests by default. Remember that an ARP query will precede the ICMP request if your target is on the same subnet.
 
 **ICMP Echo**
@@ -82,11 +78,11 @@ If you want Nmap only to perform an ARP scan without port-scanning, you can us
 ![[Pasted image 20240727035443.png]]
 
 **ICMP Timestamp**
-	To use ICMP echo request to discover live hosts, add the option `-PP` 
+	To use ICMP timestamp request to discover live hosts, add the option `-PP` 
 ![[Pasted image 20240727035631.png]]
 
 **ICMP Address Mask**
-	To use ICMP echo request to discover live hosts, add the option `-PM` 
+	To use ICMP address mask request to discover live hosts, add the option `-PM` 
 ![[Pasted image 20240727035827.png]]
 
 **Note:** Based on earlier scans, we know that at least eight hosts are up, this scan returned none. The reason is that the target system or a firewall on the route is blocking this type of ICMP packet. Therefore, it is essential to learn multiple approaches to achieve the same result. If one type of packet is being blocked, we can always choose another to discover the target network and services.
@@ -147,7 +143,6 @@ The syntax is quite similar: `-p` can be followed by a port number, list, or r
 - `masscan MACHINE_IP/24 -p22-25`
 
 ## Using Reverse-DNS Lookup
-
 Nmap’s default behaviour is to use reverse-DNS online hosts. Because the hostnames can reveal a lot, this can be a helpful step. However, if you don’t want to send such DNS queries, you use `-n` to skip this step.
 
 To have Nmap perform reverse DNS lookups for all possible hosts on a subnet, you should use the `-R` option. This option forces reverse DNS resolution on all the IP addresses in the target range.
@@ -160,10 +155,12 @@ To have Nmap perform reverse DNS lookups for all possible hosts on a subnet, you
 | Scan Type              | Example Command                             |
 | ---------------------- | ------------------------------------------- |
 | Enumerating targets    | `nmap -sL -n MACHINE_IP`                    |
+|                        |                                             |
 | ARP Scan               | `sudo nmap -PR -sn MACHINE_IP/24`           |
 | ICMP Echo Scan         | `sudo nmap -PE -sn MACHINE_IP/24`           |
 | ICMP Timestamp Scan    | `sudo nmap -PP -sn MACHINE_IP/24`           |
 | ICMP Address Mask Scan | `sudo nmap -PM -sn MACHINE_IP/24`           |
+|                        |                                             |
 | TCP SYN Ping Scan      | `sudo nmap -PS22,80,443 -sn MACHINE_IP/30`  |
 | TCP ACK Ping Scan      | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`  |
 | UDP Ping Scan          | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30` |
