@@ -1,4 +1,3 @@
-
 - `whois` to query WHOIS servers
 - `nslookup` to query DNS servers
 - `dig` to query DNS servers
@@ -6,34 +5,28 @@
 We use `whois` to query WHOIS records, while we use `nslookup` and `dig` to query DNS database records. These are all publicly available records and hence do not alert the target.
 
 These two online services allow us to collect information about our target without directly connecting to it:
-
 - DNSDumpster (https://dnsdumpster.com/)
 - Shodan.io (https://www.shodan.io/)
 
 Reconnaissance (recon) can be defined as a preliminary survey to gather information about a target. It is the first step in [The Unified Kill Chain](https://www.unifiedkillchain.com/) to gain an initial foothold on a system. We divide reconnaissance into:
-
 1. Passive Reconnaissance
 2. Active Reconnaissance
 
 In **passive reconnaissance**, you rely on publicly available knowledge. It is the knowledge that you can access from publicly available resources without directly engaging with the target. Passive reconnaissance activities include many activities, for instance:
-
 - Looking up DNS records of a domain from a public DNS server.
 - Checking job ads related to the target website.
 - Reading news articles about the target company.
 
 **Active reconnaissance**, on the other hand, cannot be achieved so discreetly. It requires direct engagement with the target. Examples of active reconnaissance activities include:
-
 - Connecting to one of the company servers such as HTTP, FTP, and SMTP.
 - Calling the company in an attempt to get information (social engineering).
 - Entering company premises pretending to be a repairman.
 
-## Whois
-
+##  #Whois
 WHOIS is a request and response protocol that follows the [RFC 3912](https://www.ietf.org/rfc/rfc3912.txt) specification. A WHOIS server listens on TCP port 43 for incoming requests. The domain registrar is responsible for maintaining the WHOIS records for the domain names it is leasing.
 ![[Pasted image 20240714141006.png]]
 
 The WHOIS server replies with various information related to the domain requested. Of particular interest, we can learn:
-
 - Registrar: Via which registrar was the domain name registered?
 - Contact info of registrant: Name, organization, address, phone, among other things. (unless made hidden via a privacy service)
 - Creation, update, and expiration dates: When was the domain name first registered? When was it last updated? And when does it need to be renewed?
@@ -46,8 +39,7 @@ The information collected can be inspected to find new attack surfaces, such as 
 **Note**:
 	It is important to note that due to automated tools abusing WHOIS queries to harvest email addresses, many WHOIS services take measures against this. They might redact email addresses, for instance. Moreover, many registrants subscribe to privacy services to avoid their email addresses being harvested by spammers and keep their information private.
 
-## nslookup
-
+## #nslookup
  The syntax is `nslookup OPTIONS DOMAIN_NAME SERVER`
  
 - **OPTIONS** contains the query type as shown in the table below. For instance, you can use `A` for IPv4 addresses and `AAAA` for IPv6 addresses.
@@ -80,8 +72,7 @@ ex: `nslookup -type=MX tryhackme.com` return all the email servers and configura
 Since MX is looking up the Mail Exchange servers, we notice that when a mail server tries to deliver email `@tryhackme.com`, it will try to connect to the `aspmx.l.google.com`, which has order 1. 
 If it is busy or unavailable, the mail server will attempt to connect to the next in order mail exchange servers, `alt1.aspmx.l.google.com` or `alt2.aspmx.l.google.com`.
 
-## dig
-
+## #dig
 For more advanced DNS queries and additional functionality, we can use `dig`.
 
 The syntax is `dig @SERVER DOMAIN_NAME TYPE`.
@@ -96,7 +87,7 @@ ex: `dig @1.1.1.1 tryhackme.com MX`
 
 ![[Pasted image 20240714141711.png]]
 
-## DNSDumpster
+## #DNSDumpster
 
 DNS lookup tools, such as nslookup and dig, cannot find subdomains on their own. The domain you are inspecting might include a different subdomain that can reveal much information about the target.
 
@@ -104,7 +95,7 @@ DNS lookup tools, such as nslookup and dig, cannot find subdomains on their own
 
 ![[Pasted image 20240714142328.png]]
 
-## Shodan.io
+## #Shodan.io
 
  [Shodan.io](https://www.shodan.io/) can be helpful to learn various pieces of information about the client’s network, without actively connecting to it. Furthermore, on the defensive side, you can use different services from Shodan.io to learn about connected and exposed devices belonging to your organization.
  

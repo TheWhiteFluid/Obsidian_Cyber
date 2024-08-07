@@ -1,4 +1,3 @@
-
 In some scenarios, web applications are written to request access to files on a given system, including images, static text, and so on via parameters. 
 - Parameters are query parameter strings attached to the URL that could be used to retrieve data or perform actions based on user input. The following diagram breaks down the essential parts of a URL.
 ![[Pasted image 20240601141418.png]]

@@ -1,4 +1,3 @@
-
 In XSS, the payload is the JavaScript code we wish to be executed on the targets computer. There are two parts to the payload, the intention and the modification.
 
 **Examples**

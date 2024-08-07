@@ -1,4 +1,3 @@
-
 **OSSTMM**: https://www.isecom.org/OSSTMM.3.pdf
 ![[Pasted image 20240523113921.png]]
 

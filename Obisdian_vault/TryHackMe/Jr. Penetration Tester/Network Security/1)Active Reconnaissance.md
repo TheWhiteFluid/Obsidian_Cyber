@@ -1,11 +1,9 @@
-
 Add-ons for Firefox and Chrome that can help in penetration testing examples:
-
 - **FoxyProxy** lets you quickly change the proxy server you are using to access the target website. This browser extension is convenient when you are using a tool such as Burp Suite or if you need to switch proxy servers regularly. You can get FoxyProxy for Firefox from [here](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard).
 - **User-Agent Switcher and Manager** gives you the ability to pretend to be accessing the webpage from a different operating system or different web browser. In other words, you can pretend to be browsing a site using an iPhone when in fact, you are accessing it from Mozilla Firefox. You can download User-Agent Switcher and Manager for Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher).
 - **Wappalyzer** provides insights about the technologies used on the visited websites. Such extension is handy, primarily when you collect all this information while browsing the website like any other user. A screenshot of Wappalyzer is shown below. You can find Wappalyzer for Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer).
 
-## Ping
+## #Ping
 Ping is a command that sends an ICMP Echo packet to a remote system. If the remote system is online, and the ping packet was correctly routed and not blocked by any firewall, the remote system should send back an ICMP Echo Reply. Similarly, the ping reply should reach the first system if appropriately routed and not blocked by any firewall.
 
 more info: `man ping`
@@ -16,13 +14,12 @@ Syntax:     `ping -c 10 MACHINE_IP  | Linux`
 ![[Pasted image 20240715124755.png]]
 
  When we don’t get a ping reply back, there are a few explanations that would explain why we didn’t get a ping reply, for example:
-
 - The destination computer is not responsive; possibly still booting up or turned off, or the OS has crashed.
 - It is unplugged from the network, or there is a faulty network device across the path.
 - A firewall is configured to block such packets. The firewall might be a piece of software running on the system itself or a separate network appliance. Note that MS Windows firewall blocks ping by default.
 - Your system is unplugged from the network.
 
-## Traceroute
+##  #Traceroute
 The purpose of a traceroute is to find the IP addresses of the routers or hops that a packet traverses as it goes from your system to a target host. This command also reveals the number of routers between the two systems. It is helpful as it indicates the number of hops (routers) between your system and the target host. 
 
 *Note*: The route taken by the packets might change as many routers use dynamic routing protocols that adapt to network changes.
@@ -47,7 +44,7 @@ To summarize, we can notice the following:
 - Some routers return a public IP address. You might examine a few of these routers based on the scope of the intended penetration testing.
 - Some routers don’t return a reply.
 
-## Telnet
+##  #Telnet
 From a security perspective, `telnet` sends all the data, including usernames and passwords, in cleartext. Sending in cleartext makes it easy for anyone, who has access to the communication channel, to steal the login credentials. The secure alternative is SSH -22 (Secure SHell) protocol.
 
 However, the telnet client, with its simplicity, can be used for other purposes. Knowing that telnet client relies on the TCP protocol, you can use Telnet to connect to any service and grab its banner. Using `telnet MACHINE_IP PORT`, you can connect to any service running on TCP and even exchange a few messages unless it uses encryption.
@@ -62,7 +59,7 @@ We connect to the server at port 80, and then we communicate using the HTTP pr
 
 To get a valid response, instead of an error, you need to input some value for the host `host: example` and hit enter twice.
 
-## Netcat
+## #Netcat
 Netcat or simply `nc` has different applications that can be of great value to a pentester. Netcat supports both TCP and UDP protocols. It can function as a client that connects to a listening port; alternatively, it can act as a server that listens on a port of your choice.
 
 Syntax:    `nc MACHINE_IP PORT`
@@ -71,7 +68,7 @@ Syntax:    `nc MACHINE_IP PORT`
 
 ![[Pasted image 20240715130124.png]]
 
-## nc -nvlp 
+## #nc -nvlp 
 On the _server_ system, where you want to open a port and listen on it, you can issue `nc -nvlp PORT`, which is equivalent to `nc -v -l -n -p PORT NUMBER`.
 
 | option | meaning                                                    |
@@ -86,9 +83,8 @@ Notes:
 - the option `-p` should appear just before the port number you want to listen on.
 - the option `-n` will avoid DNS lookups and warnings.
 - port numbers less than 1024 require root privileges to listen on.
-
-
 ## Summary
+
 - `traceroute` to map the path to the target
 - `ping` to check if the target system responds to ICMP Echo,
 - `telnet`/ `netcat` to check which ports are open and reachable by attempting to connect to them. 
