@@ -20,7 +20,7 @@ If you are connected to a subnet **different** from the subnet of the target sys
 
 ## **Enumerating Targets**
 Generally speaking, you can provide a **list**, a **range**, or a **subnet**. Examples of target specification are:
-- **list**: `MACHINE_IP scanme.nmap.org example.com` will scan 3 IP addresses.
+- **list**: `MACHINE_IP scanme.nmap.org example.com` 
 - **range**: `10.11.12.15-20` will scan 6 IP addresses: `10.11.12.15`, `10.11.12.16`,… and `10.11.12.20`.
 - **subnet**: `MACHINE_IP/30` will scan 4 IP addresses.
 
@@ -70,11 +70,11 @@ Many firewalls block ICMP echo; new versions of MS Windows are configured with a
 ![[Pasted image 20240727035443.png]]
 
 **ICMP Timestamp**
-	To use ICMP echo request to discover live hosts, add the option `-PP` 
+	To use ICMP timestamp echo request to discover live hosts, add the option `-PP` 
 ![[Pasted image 20240727035631.png]]
 
 **ICMP Address Mask**
-	To use ICMP echo request to discover live hosts, add the option `-PM` 
+	To use ICMP address mask echo request to discover live hosts, add the option `-PM` 
 ![[Pasted image 20240727035827.png]]
 
 **Note:** Based on earlier scans, we know that at least eight hosts are up, this scan returned none. The reason is that the target system or a firewall on the route is blocking this type of ICMP packet. Therefore, it is essential to learn multiple approaches to achieve the same result. If one type of packet is being blocked, we can always choose another to discover the target network and services.
@@ -94,8 +94,8 @@ If you want Nmap to use TCP SYN ping, you can do so via the option `-PS` fol
 - `-PS80,443,8080` will target the three ports 80, 443, and 8080.
 
 *Note:*
-	**Privileged** users (root and sudoers) can send TCP SYN packets and don’t need to complete the TCP 3-way handshake even if the port is open.
-	**Unprivileged** users have no choice but to complete the 3-way handshake if the port is open.
+	- **Privileged** users (root and sudoers) can send TCP SYN packets and don’t need to complete the TCP 3-way handshake even if the port is open.
+	- **Unprivileged** users have no choice but to complete the 3-way handshake if the port is open.
 
 ![[Pasted image 20240727040906.png]]
 
