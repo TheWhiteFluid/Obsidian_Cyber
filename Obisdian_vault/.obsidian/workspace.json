@@ -8,48 +8,42 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4fce401c0fb677e9",
+            "id": "def882efdb429f6a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
-                "mode": "source",
-                "source": false
+                "file": "zz. Screenshots/Pasted image 20240807144609.png"
               }
             }
           },
           {
-            "id": "d3a98ce03dff308a",
+            "id": "5188f478a5c74a0b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
-                "mode": "source",
-                "source": false
+                "file": "zz. Screenshots/Pasted image 20240807144652.png"
               }
             }
           },
           {
-            "id": "3e365a5ca16e3a48",
+            "id": "b23c42e6f68960ed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
-                "mode": "source",
-                "source": false
+                "file": "zz. Screenshots/Pasted image 20240807144609.png"
               }
             }
           },
           {
-            "id": "45e0a9e60dc6c1eb",
+            "id": "ff2074c103885be7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "version ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md"
               }
             }
           }
@@ -183,12 +177,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45e0a9e60dc6c1eb",
+  "active": "ff2074c103885be7",
   "lastOpenFiles": [
-    "Pasted image 20240807125615.png",
+    "zz. Screenshots/Pasted image 20240807144609.png",
+    "zz. Screenshots/Pasted image 20240807144652.png",
+    "zz. Screenshots/Pasted image 20240807144700.png",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+    "zz. Screenshots/Pasted image 20240807145640.png",
+    "zz. Screenshots/Pasted image 20240807144910.png",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/0)Vulnerabilities 101.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "zz. Screenshots/Pasted image 20240807125615.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
@@ -215,13 +215,6 @@
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
     "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
-    "zz. Screenshots/Pasted image 20240803180302.png",
-    "zz. Screenshots/Pasted image 20240803175824.png",
-    "zz. Screenshots/Pasted image 20240803165918.png",
-    "zz. Screenshots/Pasted image 20240803164643.png",
-    "zz. Screenshots/Pasted image 20240803164332.png",
-    "zz. Screenshots/Pasted image 20240803154405.png",
-    "Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "TryHackMe/Jr. Penetration Tester/Network Security",
     "PortSwigger.Web-Security.Labs",
