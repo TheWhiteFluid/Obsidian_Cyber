@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md"
               }
             }
           }
@@ -148,11 +148,11 @@
   },
   "active": "ff2074c103885be7",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
-    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
     "zz. Screenshots/Pasted image 20240807153626.png",
