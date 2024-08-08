@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md"
+                "file": "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md"
               }
             }
           }
@@ -148,8 +148,13 @@
   },
   "active": "ff2074c103885be7",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
+    "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
     "zz. Screenshots/Pasted image 20240807153626.png",
     "zz. Screenshots/Pasted image 20240807154306.png",
     "zz. Screenshots/Pasted image 20240807153809.png",
@@ -179,11 +184,7 @@
     "TryHackMe/Jr. Penetration Tester/WEB/IDOR Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/WEB/Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/Content Discovery.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
-    "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/01.Fundamentals.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "TryHackMe/Jr. Penetration Tester/Network Security",
     "PortSwigger.Web-Security.Labs",
