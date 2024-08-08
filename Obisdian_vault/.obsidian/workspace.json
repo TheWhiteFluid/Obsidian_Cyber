@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md"
               }
             }
           }
@@ -146,12 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae6a8ae5b36118fe",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
     "zz. Screenshots/Pasted image 20240808180437.png",
     "zz. Screenshots/Pasted image 20240808181911.png",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240808181832.png",
     "zz. Screenshots/Pasted image 20240808181337.png",
     "zz. Screenshots/Pasted image 20240808180528.png",
@@ -165,7 +165,7 @@
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Extensions.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
     "TryHackMe/Jr. Penetration Tester/WEB/Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/0)Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
