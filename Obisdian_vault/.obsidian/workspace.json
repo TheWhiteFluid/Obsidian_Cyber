@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff2074c103885be7",
+            "id": "ae6a8ae5b36118fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff2074c103885be7",
+  "active": "ae6a8ae5b36118fe",
   "lastOpenFiles": [
+    "zz. Screenshots/Pasted image 20240808164358.png",
+    "zz. Screenshots/Pasted image 20240808170051.png",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "zz. Screenshots/Pasted image 20240808170115.png",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Repeater.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Other Modules.md",
@@ -163,10 +167,7 @@
     "zz. Screenshots/Pasted image 20240807144652.png",
     "zz. Screenshots/Pasted image 20240807144700.png",
     "zz. Screenshots/Pasted image 20240807145640.png",
-    "zz. Screenshots/Pasted image 20240807144910.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/0)Vulnerabilities 101.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "zz. Screenshots/Pasted image 20240807125615.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
@@ -176,14 +177,12 @@
     "TryHackMe/Jr. Penetration Tester/Network Security/1)Active Reconnaissance.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Net Sec Challenge.md",
-    "zz. Screenshots/Pasted image 20240805161038.png",
     "TryHackMe/Jr. Penetration Tester/WEB/XSS.md",
     "TryHackMe/Jr. Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/WEB/SSRF.md",
     "TryHackMe/Jr. Penetration Tester/WEB/SQL Injections.md",
     "TryHackMe/Jr. Penetration Tester/WEB/IDOR Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/WEB/Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "TryHackMe/Jr. Penetration Tester/Network Security",
