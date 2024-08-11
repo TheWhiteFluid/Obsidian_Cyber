@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "AA)Websites Malware Detection.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "AA)Websites Malware Detection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "AA)Websites Malware Detection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md"
+                "file": "AA)Websites Malware Detection.md"
               }
             }
           }
@@ -146,11 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f9a43c74a2712d2",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "A)Frameworks & Tools.md",
+    "Commands(Linux.Windows).md",
+    "AA)Websites Malware Detection.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "ZeroPoint Security/exams.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240811015245.png",
     "zz. Screenshots/Pasted image 20240811024546.png",
     "zz. Screenshots/Pasted image 20240811024625.png",
@@ -181,9 +184,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/WEB/File Inclusion.md",
     "TryHackMe/Jr. Penetration Tester/WEB/Subdomain Enumeration.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/Fundamentals.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/IDOR Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "Untitled.canvas",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",

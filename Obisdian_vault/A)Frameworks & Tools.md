@@ -6,8 +6,11 @@
 ## Frameworks
 1. https://owasp.org/ (OWASP)
 	 [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
-2. https://www.nist.gov/cyberframework (NIST)
-3. https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
+	 https://owasp.org/www-project-secure-headers/
+	 https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html
+1. https://www.nist.gov/cyberframework (NIST)
+2. https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
+
 ## Tools
 1. https://github.com/danielmiessler/SecLists (Bruteforce attack)
 2. https://crackstation.net (Hashes database)
@@ -17,3 +20,7 @@
 6. https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 7. [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
 8. https://github.com/vanhauser-thc/thc-hydra (Dictionary Password Attacks)
+
+
+
+https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html
