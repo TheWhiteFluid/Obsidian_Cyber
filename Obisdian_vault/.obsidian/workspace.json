@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md"
               }
             }
           }
@@ -161,9 +161,9 @@
   },
   "active": "bda0867f87ed1bc4",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/b.Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240812193334.png",
     "zz. Screenshots/Pasted image 20240812035034.png",
