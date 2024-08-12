@@ -20,6 +20,7 @@
 6. https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 7. [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
 8. https://github.com/vanhauser-thc/thc-hydra (Dictionary Password Attacks)
+9. http://www.xss-payloads.com (XSS payloads)
 
 
 
