@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.51103591918945
+    "width": 221.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -148,6 +148,7 @@
   },
   "active": "ae6a8ae5b36118fe",
   "lastOpenFiles": [
+    "Pasted image 20240812193334.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
     "zz. Screenshots/Pasted image 20240812035034.png",
     "zz. Screenshots/Pasted image 20240812035000.png",
