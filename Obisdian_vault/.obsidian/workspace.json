@@ -11,9 +11,11 @@
             "id": "5f9a43c74a2712d2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240812035034.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240812035034.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240812035034.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240812035034.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md"
               }
             }
           }
@@ -144,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "5f9a43c74a2712d2",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240812035034.png",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240812035000.png",
     "zz. Screenshots/Pasted image 20240812034830.png",
     "zz. Screenshots/Pasted image 20240812034822.png",
