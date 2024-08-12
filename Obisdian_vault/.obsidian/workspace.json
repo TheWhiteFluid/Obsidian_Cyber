@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/b.Exploit Vulnerabilities.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md"
               }
             }
           }
@@ -161,9 +161,10 @@
   },
   "active": "bda0867f87ed1bc4",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/b.Exploit Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/a.Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "zz. Screenshots/Pasted image 20240812193334.png",
     "zz. Screenshots/Pasted image 20240812035034.png",
@@ -181,7 +182,6 @@
     "zz. Screenshots/Pasted image 20240811024625.png",
     "zz. Screenshots/Pasted image 20240811024714.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
     "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
