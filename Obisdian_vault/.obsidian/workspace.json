@@ -11,11 +11,9 @@
             "id": "5f9a43c74a2712d2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-                "mode": "source",
-                "source": false
+                "file": "zz. Screenshots/Pasted image 20240812035034.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "zz. Screenshots/Pasted image 20240812035034.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+                "file": "zz. Screenshots/Pasted image 20240812035034.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md"
+                "file": "zz. Screenshots/Pasted image 20240812035034.png"
               }
             }
           }
@@ -146,11 +144,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f9a43c74a2712d2",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "zz. Screenshots/Pasted image 20240812035034.png",
+    "zz. Screenshots/Pasted image 20240812035000.png",
+    "zz. Screenshots/Pasted image 20240812034830.png",
+    "zz. Screenshots/Pasted image 20240812034822.png",
+    "zz. Screenshots/Pasted image 20240812034542.png",
     "A)Frameworks & Tools.md",
     "AA)Websites Malware Detection.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "ZeroPoint Security/exams.md",
@@ -159,12 +162,7 @@
     "zz. Screenshots/Pasted image 20240811024625.png",
     "zz. Screenshots/Pasted image 20240811024714.png",
     "zz. Screenshots/Pasted image 20240810231729.png",
-    "zz. Screenshots/Pasted image 20240810231736.png",
-    "zz. Screenshots/Pasted image 20240810232130.png",
-    "zz. Screenshots/Pasted image 20240810231753.png",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
-    "zz. Screenshots/Pasted image 20240808181911.png",
-    "zz. Screenshots/Pasted image 20240808181832.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/0)Vulnerabilities 101.md",
@@ -183,7 +181,6 @@
     "TryHackMe/Jr. Penetration Tester/WEB/Content Discovery.md",
     "TryHackMe/Jr. Penetration Tester/WEB/Authentication Bypass.md",
     "TryHackMe/Jr. Penetration Tester/WEB/File Inclusion.md",
-    "TryHackMe/Jr. Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "Untitled.canvas",
     "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
