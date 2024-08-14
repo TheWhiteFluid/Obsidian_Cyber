@@ -6,7 +6,6 @@ The main components of the Metasploit Framework can be summarized as follows:
 - **msfconsole**: The main command-line interface.
 - **Modules**: supporting modules such as exploits, scanners, payloads, etc.
 - **Tools**: Stand-alone tools that will help vulnerability research, vulnerability assessment, or penetration testing. Some of these tools are msfvenom, pattern_create and pattern_offset. We will cover msfvenom within this module, but pattern_create and pattern_offset are tools useful in exploit development
-
 ## **Main** **Components**
 While using the Metasploit Framework, you will primarily interact with the Metasploit console. You can launch it from the AttackBox terminal using the `msfconsole` command. The console will be your main interface to interact with the different modules of the Metasploit Framework. Modules are small components within the Metasploit framework that are built to perform a specific task, such as exploiting a vulnerability, scanning a target, or performing a brute-force attack.
 
@@ -62,4 +61,51 @@ Post modules will be useful on the final stage of the penetration testing proces
 ![[Pasted image 20240813235434.png]]
 
 ### **Msfconsole**
+Once launched, you will see the command line changes to msf6 (or msf5 depending on the installed version of Metasploit). The Metasploit console (msfconsole) can be used just like a regular command-line shell, as you can see below. The first command is `ls` which lists the contents of the folder from which Metasploit was launched using the `msfconsole` command.
 
+You can use the `history` command to see commands you have typed earlier.
+![[Pasted image 20240814030226.png]]
+
+We will use the MS17-010 “Eternalblue” exploit for illustration purposes.
+Once you type the `use exploit/windows/smb/ms17_010_eternalblue` command, you will see the command line prompt change from msf6 to “*msf6 exploit(windows/smb/ms17_010_eternalblue)*”.
+![[Pasted image 20240814030434.png]]
+
+**Show options**
+The prompt tells us we now have a context set in which we will work. You can see this by typing the `show options` command:
+![[Pasted image 20240814030709.png]]
+
+The `show` command can be used in any context followed by a module type (auxiliary, payload, exploit, etc.) to list available modules. The example below lists payloads that can be used with the ms17-010 Eternalblue exploit.
+![[Pasted image 20240814031014.png]]
+
+If used from the msfconsole prompt, the `show` command will list all modules. The `use` and `show options` commands we have seen so far are identical for all modules in Metasploit.
+
+You can leave the context using the `back` command.
+![[Pasted image 20240814031046.png]]
+
+**Info**
+Further information on any module can be obtained by typing the `info` command within its context. Alternatively, you can use the `info` command followed by the module’s path from the msfconsole prompt (e.g. `info exploit/windows/smb/ms17_010_eternalblue`). Info is not a help menu; it will display detailed information on the module such as its author, relevant sources, etc.
+![[Pasted image 20240814031124.png]]
+
+**Search**
+One of the most useful commands in msfconsole is `search`. This command will search the Metasploit Framework database for modules relevant to the given search parameter. You can conduct searches using CVE numbers, exploit names (eternalblue, heartbleed, etc.), or target system.
+![[Pasted image 20240814031719.png]]
+
+The output of the `search` command provides an overview of each returned module. You may notice the “name” column already gives more information than just the module name. You can see the type of module (auxiliary, exploit, etc.) and the category of the module (scanner, admin, windows, Unix, etc.). You can use any module returned in a search result with the command use followed by the number at the beginning of the result line. (e.g. `use 0` instead of `use auxiliary/admin/smb/ms17_010_command`)
+
+Another essential piece of information returned is in the “rank” column. Exploits are rated based on their reliability. The table below provides their respective descriptions.
+![[Pasted image 20240814031749.png]]
+
+You can direct the search function using keywords such as type and platform. For example, if we wanted our search results to only include auxiliary modules, we could set the type to auxiliary. The screenshot below shows the output of the `search type:auxiliary telnet` command.
+![[Pasted image 20240814031911.png]]
+
+Note:
+	Exploits take advantage of a vulnerability on the target system and may always show unexpected behavior. A low-ranking exploit may work perfectly, and an excellent ranked exploit may not, or worse, crash the target system.
+
+
+## **Working with modules**
+Once you have entered the context of a module using the `use` command followed by the module name, as seen earlier, you will need to set parameters. The most common parameters you will use are listed below. Remember, based on the module you use, additional or different parameters may need to be set. It is good practice to use the `show options` command to list the required parameters.
+
+
+
+
+## Practical: **ms17_010_eternalblue** exploit use case
