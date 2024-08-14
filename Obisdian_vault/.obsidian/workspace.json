@@ -11,9 +11,11 @@
             "id": "8e2abd8c0b9d420a",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240814041054.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240814041054.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240814041054.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zz. Screenshots/Pasted image 20240814041054.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md"
               }
             }
           }
@@ -144,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "8e2abd8c0b9d420a",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "zz. Screenshots/Pasted image 20240814041054.png",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "zz. Screenshots/Pasted image 20240814041026.png",
     "zz. Screenshots/Pasted image 20240814040911.png",
     "zz. Screenshots/Pasted image 20240814040808.png",
