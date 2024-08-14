@@ -105,6 +105,18 @@ Note:
 ## **Working with modules**
 Once you have entered the context of a module using the `use` command followed by the module name, as seen earlier, you will need to set parameters. The most common parameters you will use are listed below. Remember, based on the module you use, additional or different parameters may need to be set. It is good practice to use the `show options` command to list the required parameters.
 
+All parameters are set using the same command syntax:   `set PARAMETER_NAME VALUE`
+
+`show options` command for listing all available parameters:
+![[Pasted image 20240814032612.png]]
+
+Some of these parameters require a value for the exploit to work. Some required parameter values will be pre-populated, make sure you check if these should remain the same for your target. For example, a web exploit could have an RPORT (remote port: the port on the target system Metasploit will try to connect to and run the exploit) value preset to 80, but your target web application could be using port 8080.
+
+
+
+
+
+
 
 
 
