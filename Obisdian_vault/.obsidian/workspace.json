@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5440df245f3872b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md"
               }
             }
           }
@@ -146,8 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "107802b4fb1a7f88",
+  "active": "e5440df245f3872b",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
+    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "z.Screenshots/Pasted image 20240814053515.png",
@@ -161,14 +178,11 @@
     "z.Screenshots/Pasted image 20240814040808.png",
     "z.Screenshots/Pasted image 20240814040408.png",
     "z.Screenshots",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "Red Team (ZeroPoint Security)/exams.md",
     "Red Team (ZeroPoint Security)",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "CompTIA PenTest+.md",
     "TryHackMe/CompTIA PenTest+",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit",
@@ -192,7 +206,6 @@
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "TryHackMe/Jr. Penetration Tester/Network Security",
-    "PortSwigger.Web-Security.Labs",
-    "zz. Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov"
+    "PortSwigger.Web-Security.Labs"
   ]
 }
