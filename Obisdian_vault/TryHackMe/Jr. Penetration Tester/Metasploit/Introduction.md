@@ -103,6 +103,7 @@ Note:
 
 
 ## **Working with modules**
+### Practical: **ms17_010_eternalblue** exploit use case
 Once you have entered the context of a module using the `use` command followed by the module name, as seen earlier, you will need to set parameters. The most common parameters you will use are listed below. Remember, based on the module you use, additional or different parameters may need to be set. It is good practice to use the `show options` command to list the required parameters.
 
 All parameters are set using the same command syntax:   `set PARAMETER_NAME VALUE`
@@ -112,12 +113,42 @@ All parameters are set using the same command syntax:   `set PARAMETER_NAME VALU
 
 Some of these parameters require a value for the exploit to work. Some required parameter values will be pre-populated, make sure you check if these should remain the same for your target. For example, a web exploit could have an RPORT (remote port: the port on the target system Metasploit will try to connect to and run the exploit) value preset to 80, but your target web application could be using port 8080.
 
+In this example, we will set the RHOSTS parameter to the IP address of our target system using the `set` command:
+![[Pasted image 20240814035621.png]]
+
+Parameters you will often use are:
+- **RHOSTS:** “Remote host”, the IP address of the target system. A single IP address or a network range can be set. This will support the CIDR (Classless Inter-Domain Routing) notation (/24, /16, etc.) or a network range (10.10.10.x – 10.10.10.y). You can also use a file where targets are listed, one target per line using `file:/path/of/the/target_file.txt`
+- **RPORT:** “Remote port”, the port on the target system the vulnerable application is running on.
+- **PAYLOAD:** The payload you will use with the exploit.
+- **LHOST:** “Localhost”, the attacking machine (your AttackBox or Kali Linux) IP address.
+- **LPORT:** “Local port”, the port you will use for the reverse shell to connect back to. This is a port on your attacking machine, and you can set it to any port not used by any other application.
+- **SESSION:** Each connection established to the target system using Metasploit will have a session ID. You will use this with post-exploitation modules that will connect to the target system using an existing connection.
+
+You can override any set parameter using the set command again with a different value. You can also clear any parameter value using the `unset` command or clear all set parameters with the `unset all` command.
+![[Pasted image 20240814040210.png]]
+
+You can use the `setg` command to set values that will be used for all modules. The `setg` command is used like the set command. The difference is that if you use the `set` command to set a value using a module and you switch to another module, you will need to set the value again. The `setg` command allows you to set the value so it can be used by default across different modules. You can clear any value set with `setg` using `unsetg`.
+
+The `setg` command sets a global value that will be used until you exit Metasploit or clear it using the `unsetg` command.
+
+#### **Using Modules**
+Once all module parameters are set, you can launch the module using the `exploit` command. Metasploit also supports the `run` command, which is an alias created for the `exploit` command as the word exploit did not make sense when using modules that were not exploits (port scanners, vulnerability scanners, etc.)
+
+The `exploit -z` command will run the exploit and background the session as soon as it opens.
+![[Pasted image 20240814040408.png]]
+
+This will return you the context prompt from which you have run the exploit. Some modules support the `check` option. This will check if the target system is vulnerable without exploiting it.
+
+#### **Sessions**
+Once a vulnerability has been successfully exploited, a session will be created. This is the communication channel established between the target system and Metasploit.
+
+You can use the `background` command to background the session prompt and go back to the msfconsole prompt.
+![[Pasted image 20240814040808.png]]
+
+The `sessions` command can be used from the msfconsole prompt or any context to see the existing sessions.
+![[Pasted image 20240814040911.png]]
+
+To interact with any session, you can use the `sessions -i` command followed by the desired session number.
+![[Pasted image 20240814041054.png]]
 
 
-
-
-
-
-
-
-## Practical: **ms17_010_eternalblue** exploit use case
