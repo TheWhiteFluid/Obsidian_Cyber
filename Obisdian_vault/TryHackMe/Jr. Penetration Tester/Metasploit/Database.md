@@ -48,3 +48,42 @@ You may want to look for low-hanging fruits such as:
 In a typical penetration testing engagement, we could have the following scenario: 
 - Finding available hosts using the `db_nmap` command
 - Scanning these for further vulnerabilities or open ports (using a port scanning module)
+
+
+1) Exploit one of the critical vulnerabilities on the target VM
+```
+msf6 > workspace
+  tryhackme
+* default
+msf6 > workspace tryhackme
+[*] Workspace: tryhackme
+msf6 > workspace
+  default
+* tryhackme
+msf6 > db_nmap -sC -sV 10.10.63.66   !!! (-sC =>use nmap scripts||-sV =>version)
+[*] Nmap: Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-08-15 18:53 +03
+[*] Nmap: Nmap scan report for 10.10.63.66
+[*] Nmap: Host is up (0.069s latency).
+[*] Nmap: Not shown: 991 closed tcp ports (reset)
+[*] Nmap: PORT      STATE SERVICE      VERSION
+[*] Nmap: 135/tcp   open  msrpc        Microsoft Windows RPC
+[*] Nmap: 139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+[*] Nmap: 445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+[*] Nmap: 3389/tcp  open  tcpwrapped
+[*] Nmap: | ssl-cert: Subject: commonName=Jon-PC
+[*] Nmap: | Not valid before: 2024-08-14T15:48:32
+[*] Nmap: |_Not valid after:  2025-02-13T15:48:32
+[*] Nmap: 49152/tcp open  unknown
+[*] Nmap: 49153/tcp open  unknown
+[*] Nmap: 49154/tcp open  msrpc        Microsoft Windows RPC
+[*] Nmap: 49155/tcp open  msrpc        Microsoft Windows RPC
+[*] Nmap: 49159/tcp open  msrpc        Microsoft Windows RPC
+[*] Nmap: Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+[*] Nmap: Host script results:
+[*] Nmap: |_smb2-time: Protocol negotiation failed (SMB2)
+[*] Nmap: Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[*] Nmap: Nmap done: 1 IP address (1 host up) scanned in 186.49 seconds
+```
+
+![[Pasted image 20240815190832.png]]
+![[Pasted image 20240815190850.png]]
