@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.51103591918945
+    "width": 286.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -169,21 +169,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "49c0635847946d79",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240815204009.png",
+    "z.Screenshots/Pasted image 20240816010547.png",
+    "AA)Websites Malware Detection.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+    "z.Screenshots/Pasted image 20240816012346.png",
+    "z.Screenshots/Pasted image 20240816010851.png",
+    "z.Screenshots/Pasted image 20240816010729.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+    "z.Screenshots/Pasted image 20240815204009.png",
     "z.Screenshots/Pasted image 20240815204656.png",
     "z.Screenshots/Pasted image 20240815204600.png",
     "z.Screenshots/Pasted image 20240815204439.png",
     "z.Screenshots/Pasted image 20240815204419.png",
     "z.Screenshots/Pasted image 20240815204155.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
-    "z.Screenshots/Pasted image 20240815200512.png",
-    "z.Screenshots/Pasted image 20240815201242.png",
-    "z.Screenshots/Pasted image 20240815201819.png",
-    "z.Screenshots/Pasted image 20240815201802.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
     "TryHackMe/Security Enginner",
@@ -198,7 +199,6 @@
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit",
-    "AA)Websites Malware Detection.md",
     "A)Frameworks & Tools.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/1)Exploit Vulnerabilities.md",
     "TryHackMe/Jr. Penetration Tester/BurpSuite/Basics.md",
