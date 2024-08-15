@@ -162,3 +162,13 @@ The shell command will launch a regular command-line shell on the target system.
 ![[Pasted image 20240816024730.png]]
 
 ## Post-Exploitation Challenge
+Commands mentioned previously, such as `getsystem` and `hashdump` will provide important leverage and information for privilege escalation and lateral movement. Meterpreter is also a good base you can use to run post-exploitation modules available on the Metasploit framework. Finally, you can also use the load command to leverage additional tools such as Kiwi or even the whole Python language.
+![[Pasted image 20240816025517.png]]
+
+The post-exploitation phase will have several goals; Meterpreter has functions that can assist all of them:
+- Gathering further information about the target system.
+- Looking for interesting files, user credentials, additional network interfaces, and generally interesting information on the target system.
+- Privilege escalation.
+- Lateral movement.
+
+Once any additional tool is loaded using the `load` command, you will see new options on the `help` menu. The example below shows commands added for the Kiwi module (using the `load kiwi` command). These will change according to the loaded menu, so running the `help` command after loading a module is always a good idea.![[Pasted image 20240816025559.png]]
