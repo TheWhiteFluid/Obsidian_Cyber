@@ -23,11 +23,9 @@
             "id": "a4404aeb4bad65f2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20240815204009.png"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "file": "z.Screenshots/Pasted image 20240815204009.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "file": "z.Screenshots/Pasted image 20240815204009.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md"
+                "file": "z.Screenshots/Pasted image 20240815204009.png"
               }
             }
           }
@@ -161,21 +159,21 @@
   },
   "active": "a4404aeb4bad65f2",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240815190850.png",
-    "z.Screenshots/Pasted image 20240815190832.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+    "z.Screenshots/Pasted image 20240815204656.png",
+    "z.Screenshots/Pasted image 20240815204600.png",
+    "z.Screenshots/Pasted image 20240815204439.png",
+    "z.Screenshots/Pasted image 20240815204419.png",
+    "z.Screenshots/Pasted image 20240815204155.png",
+    "z.Screenshots/Pasted image 20240815204009.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
+    "z.Screenshots/Pasted image 20240815200512.png",
+    "z.Screenshots/Pasted image 20240815201242.png",
+    "z.Screenshots/Pasted image 20240815201819.png",
+    "z.Screenshots/Pasted image 20240815201802.png",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
-    "z.Screenshots/Pasted image 20240815190807.png",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
-    "z.Screenshots/Pasted image 20240815181709.png",
-    "z.Screenshots/Pasted image 20240815181453.png",
-    "z.Screenshots/Pasted image 20240815181431.png",
-    "z.Screenshots/Pasted image 20240815181353.png",
-    "z.Screenshots/Pasted image 20240815181242.png",
-    "z.Screenshots/Pasted image 20240815023325.png",
     "TryHackMe/Security Enginner",
-    "z.Screenshots/Pasted image 20240815023404.png",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
     "z.Screenshots",
