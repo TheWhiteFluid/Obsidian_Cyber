@@ -21,7 +21,6 @@
 7. [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
 8. https://github.com/vanhauser-thc/thc-hydra (Dictionary Password Attacks)
 9. http://www.xss-payloads.com (XSS payloads)
-
-
-
-https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html
+10. https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Shell Payloads)
+11. https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
+12. https://github.com/danielmiessler/SecLists. (Wordlists & Shells)

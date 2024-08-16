@@ -23,16 +23,26 @@
             "id": "49c0635847946d79",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20240816150002.png"
+              }
+            }
+          },
+          {
+            "id": "c0499f4cf0dbfd9f",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+                "file": "A)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+                "file": "A)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+                "file": "A)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md"
+                "file": "A)Frameworks & Tools.md"
               }
             }
           }
@@ -159,21 +169,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49c0635847946d79",
+  "active": "c0499f4cf0dbfd9f",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240816024214.png",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
-    "z.Screenshots/Pasted image 20240816024300.png",
-    "z.Screenshots/Pasted image 20240816024408.png",
-    "z.Screenshots/Pasted image 20240816025559.png",
-    "z.Screenshots/Pasted image 20240816025517.png",
-    "z.Screenshots/Pasted image 20240816024730.png",
-    "z.Screenshots/Pasted image 20240816024702.png",
-    "z.Screenshots/Pasted image 20240816024526.png",
-    "z.Screenshots/Pasted image 20240816010547.png",
     "AA)Websites Malware Detection.md",
-    "z.Screenshots/Pasted image 20240816012346.png",
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
+    "z.Screenshots/Pasted image 20240816150002.png",
+    "z.Screenshots/Pasted image 20240816150022.png",
+    "Privilege Escalation.md",
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+    "z.Screenshots/Pasted image 20240816152631.png",
+    "z.Screenshots/Pasted image 20240816152250.png",
+    "z.Screenshots/Pasted image 20240816151936.png",
+    "z.Screenshots/Pasted image 20240816151154.png",
+    "z.Screenshots/Pasted image 20240816150558.png",
+    "z.Screenshots/Pasted image 20240816150311.png",
+    "z.Screenshots/Pasted image 20240816150220.png",
+    "z.Screenshots/Pasted image 20240816024214.png",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
@@ -201,10 +214,7 @@
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
-    "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
-    "TryHackMe/Jr. Penetration Tester/Network Security"
+    "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs"
   ]
 }
