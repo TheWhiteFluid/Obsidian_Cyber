@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8e2abd8c0b9d420a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e91346dddc41ca78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 211.5
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md"
               }
             }
           }
@@ -161,6 +148,7 @@
   },
   "active": "e91346dddc41ca78",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "z.Screenshots/Pasted image 20240816025517.png",
     "z.Screenshots/Pasted image 20240816024730.png",
     "z.Screenshots/Pasted image 20240816024702.png",
@@ -171,14 +159,12 @@
     "z.Screenshots/Pasted image 20240816012346.png",
     "z.Screenshots/Pasted image 20240816010851.png",
     "z.Screenshots/Pasted image 20240816010729.png",
-    "z.Screenshots/Pasted image 20240816010547.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
     "TryHackMe/CompTIA PenTest+.md",
     "TryHackMe/CompTIA PenTest+",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
