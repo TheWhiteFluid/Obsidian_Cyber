@@ -382,7 +382,6 @@ Start listening on the attacking machine:
 ![[Pasted image 20240820053634.png]]
 
 stabilize the netcat:
-
-1. `python3 -c 'import pty;pty.spawn("/bin/bash")'` Try python, python2 and Python3 by order.
+1. `python3 -c 'import pty;pty.spawn("/bin/bash")'` 
 2. `export TERM=xterm`
 3. Background the shell using Ctrl + Z. Back in our own terminal we use `stty raw -echo; fg`
