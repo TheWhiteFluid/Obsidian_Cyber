@@ -140,10 +140,79 @@ Find specific file permissions:
 - `find / -perm -u=s -type f 2>/dev/null`: Find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user.
 
 ### locate
+The `locate` command is used to quickly find the locations of files on your system.
+
+- **How it works:** `locate` searches through a database of file paths that is created by the `updatedb` command. This database contains a snapshot of your filesystem, allowing `locate` to find files much faster than using a command like `find`, which searches the filesystem directly.
+
+    `locate filename`
+    
+    This will return a list of paths that match the provided filename.
 
 ### grep
+The `grep` command is used to search text or files for lines that match a specified pattern.
+
+- **How it works:** `grep` searches through the content of files line by line, matching each line against the pattern you provide.
+
+    `grep "pattern" filename`
+    
+    This will print all lines in `filename` that contain the `pattern`.
+    
+- **Example:**
+    `grep "error" /var/log/syslog`
+    
+    This will search for the word "error" in the system log file.
+    
+- **Common options:**
+    - `-i`: Ignore case (case-insensitive search).
+    - `-r`: Recursively search directories.
+    - `-n`: Show line numbers where matches are found.
+    - `-v`: Invert the match, showing lines that do not match the pattern.
 
 ### cut
+The `cut` command is used to extract specific sections from each line of a file or stream of text.
+
+- **How it works:** `cut` can split each line into fields based on a delimiter (e.g., a space or comma) and then extract one or more fields from each line.
+    `cut -d "delimiter" -f field_number filename`
+    
+    - `-d "delimiter"` specifies the delimiter used to separate fields.
+    - `-f field_number` specifies which field(s) to extract.
+- **Example:**
+    `cut -d ":" -f 1 /etc/passwd`
+    
+    This will extract the first field from each line in `/etc/passwd`, where fields are separated by colons (`:`). In this case, it will display usernames.
+    
+- **Common options:**
+    - `-b`: Extract specific bytes.
+    - `-c`: Extract specific characters.
+    - `-f`: Extract specific fields based on a delimiter.
 
 ### sort
+The `sort` command is used to sort lines of text files or input streams.
 
+- **How it works:** `sort` reads input line by line, compares them, and then outputs the lines in sorted order. The default is to sort alphabetically, but it can also sort numerically, by month, etc.
+
+    `sort filename`
+    
+    This will sort the lines in `filename` alphabetically.
+    
+    `sort numbers.txt`
+    
+    This will sort the contents of `numbers.txt` in ascending order.
+    
+- **Common options:**
+    - `-r`: Reverse the sort order (descending).
+    - `-n`: Sort numerically.
+    - `-k`: Sort by a specific key (column).
+    - `-t`: Specify a field delimiter for sorting.
+
+
+## **Automated Enumeration Tools**
+Several tools can help you save time during the enumeration process. These tools should only be used to save time knowing they may miss some privilege escalation vectors. Below is a list of popular Linux enumeration tools with links to their respective Github repositories.
+
+The target system’s environment will influence the tool you will be able to use. For example, you will not be able to run a tool written in Python if it is not installed on the target system. This is why it would be better to be familiar with a few rather than having a single go-to tool.
+
+- **LinPeas**: [https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+- **LinEnum:** [https://github.com/rebootuser/LinEnum](https://github.com/rebootuser/LinEnum)[](https://github.com/rebootuser/LinEnum)
+- **LES (Linux Exploit Suggester):** [https://github.com/mzet-/linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester)
+- **Linux Smart Enumeration:** [https://github.com/diego-treitos/linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
+- **Linux Priv Checker:** [https://github.com/linted/linuxprivchecker](https://github.com/linted/linuxprivchecker)

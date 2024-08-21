@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
+                "file": "A)Frameworks & Tools.md"
               }
             }
           }
@@ -157,20 +157,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "9c339660730d130d",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "A)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240821173637.png",
     "z.Screenshots/Pasted image 20240821173356.png",
     "z.Screenshots/Pasted image 20240821173116.png",
     "z.Screenshots/Pasted image 20240821173151.png",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240821173041.png",
     "z.Screenshots/Pasted image 20240821172957.png",
     "z.Screenshots/Pasted image 20240821172902.png",
     "z.Screenshots/Pasted image 20240821172821.png",
     "z.Screenshots/Pasted image 20240821172635.png",
     "z.Screenshots/Pasted image 20240821172546.png",
-    "z.Screenshots/Pasted image 20240821172526.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
@@ -188,7 +188,6 @@
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "A)Frameworks & Tools.md",
     "AA)Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
