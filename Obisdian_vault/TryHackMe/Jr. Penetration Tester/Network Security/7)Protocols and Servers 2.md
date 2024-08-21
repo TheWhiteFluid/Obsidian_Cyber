@@ -1,9 +1,3 @@
-- Telnet
-- HTTP
-- FTP
-- SMTP
-- POP3
-- IMAP
 
 Servers implementing these protocols are subject to different kinds of attacks. To name a few, consider:
 1. Sniffing Attack (Network Packet Capture);
@@ -194,7 +188,9 @@ Attacks against passwords are usually carried out by:
 
 Let’s focus on dictionary attacks. Over time, hackers have compiled list after list containing leaked passwords from data breaches. The choice of the word list should depend on your knowledge of the target. For instance, a French user might use a French word instead of an English one. Consequently, a French word list might be more promising.
 
-We want an automated way to try the common passwords or the entries from a word list; here comes [THC Hydra](https://github.com/vanhauser-thc/thc-hydra). Hydra supports many protocols, including FTP, POP3, IMAP, SMTP, SSH, and all methods related to HTTP. The general command-line syntax is: `hydra -l username -P wordlist.txt server service` where we specify the following options:
+We want an automated way to try the common passwords or the entries from a word list; here comes [THC Hydra](https://github.com/vanhauser-thc/thc-hydra). Hydra supports many protocols, including FTP, POP3, IMAP, SMTP, SSH, and all methods related to HTTP. The general command-line syntax is: 
+
+`hydra -l username -P wordlist.txt server service` 
 
 - `-l username`: `-l` should precede the `username`, i.e. the login name of the target.
 - `-P wordlist.txt`: `-P` precedes the `wordlist.txt` file, which is a text file containing the list of passwords you want to try with the provided username.
