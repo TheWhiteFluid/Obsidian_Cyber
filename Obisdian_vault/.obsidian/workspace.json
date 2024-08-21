@@ -13,11 +13,22 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240820200847.png"
+                "file": "z.Screenshots/Pasted image 20240821173356.png"
+              }
+            }
+          },
+          {
+            "id": "9c339660730d130d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20240821173356.png"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240820200847.png",
+                "file": "z.Screenshots/Pasted image 20240821173356.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240820200847.png",
+                "file": "z.Screenshots/Pasted image 20240821173356.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240820200847.png"
+                "file": "z.Screenshots/Pasted image 20240821173356.png"
               }
             }
           }
@@ -146,19 +157,18 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240821044338.png",
-    "z.Screenshots/Pasted image 20240821044152.png",
-    "z.Screenshots/Pasted image 20240821025829.png",
-    "z.Screenshots/Pasted image 20240821025811.png",
-    "z.Screenshots/Pasted image 20240821025239.png",
-    "z.Screenshots/Pasted image 20240821025229.png",
-    "z.Screenshots/Pasted image 20240821025104.png",
-    "z.Screenshots/Pasted image 20240821011938.png",
-    "z.Screenshots/Pasted image 20240821011814.png",
-    "z.Screenshots/Pasted image 20240821010756.png",
-    "z.Screenshots/Pasted image 20240820234148.png",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "z.Screenshots/Pasted image 20240821173116.png",
+    "z.Screenshots/Pasted image 20240821173151.png",
+    "z.Screenshots/Pasted image 20240821173356.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "z.Screenshots/Pasted image 20240821173041.png",
+    "z.Screenshots/Pasted image 20240821172957.png",
+    "z.Screenshots/Pasted image 20240821172902.png",
+    "z.Screenshots/Pasted image 20240821172821.png",
+    "z.Screenshots/Pasted image 20240821172635.png",
+    "z.Screenshots/Pasted image 20240821172546.png",
+    "z.Screenshots/Pasted image 20240821172526.png",
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation",
