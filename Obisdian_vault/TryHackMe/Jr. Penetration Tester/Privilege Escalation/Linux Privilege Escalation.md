@@ -168,7 +168,7 @@ The `grep` command is used to search text or files for lines that match a specif
     - `-n`: Show line numbers where matches are found.
     - `-v`: Invert the match, showing lines that do not match the pattern.
 
-### cut
+### **cut**
 The `cut` command is used to extract specific sections from each line of a file or stream of text.
 
 - **How it works:** `cut` can split each line into fields based on a delimiter (e.g., a space or comma) and then extract one or more fields from each line.
@@ -186,7 +186,7 @@ The `cut` command is used to extract specific sections from each line of a file 
     - `-c`: Extract specific characters.
     - `-f`: Extract specific fields based on a delimiter.
 
-### sort
+### **sort**
 The `sort` command is used to sort lines of text files or input streams.
 
 - **How it works:** `sort` reads input line by line, compares them, and then outputs the lines in sorted order. The default is to sort alphabetically, but it can also sort numerically, by month, etc.
@@ -209,10 +209,65 @@ The `sort` command is used to sort lines of text files or input streams.
 ## **Automated Enumeration Tools**
 Several tools can help you save time during the enumeration process. These tools should only be used to save time knowing they may miss some privilege escalation vectors. Below is a list of popular Linux enumeration tools with links to their respective Github repositories.
 
-The target system’s environment will influence the tool you will be able to use. For example, you will not be able to run a tool written in Python if it is not installed on the target system. This is why it would be better to be familiar with a few rather than having a single go-to tool.
-
-- **LinPeas**: [https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
-- **LinEnum:** [https://github.com/rebootuser/LinEnum](https://github.com/rebootuser/LinEnum)[](https://github.com/rebootuser/LinEnum)
-- **LES (Linux Exploit Suggester):** [https://github.com/mzet-/linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester)
 - **Linux Smart Enumeration:** [https://github.com/diego-treitos/linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
-- **Linux Priv Checker:** [https://github.com/linted/linuxprivchecker](https://github.com/linted/linuxprivchecker)
+	
+	![[Pasted image 20240821235212.png]]
+	
+	![[Pasted image 20240821235246.png]]
+
+	![[Pasted image 20240821235323.png]]
+
+## **Privilege Escalation: Kernel Exploits**
+Privilege escalation ideally leads to root privileges. This can sometimes be achieved simply by exploiting an existing vulnerability, or in some cases by accessing another user account that has more privileges, information, or access.
+
+Unless a single vulnerability leads to a root shell, the privilege escalation process will rely on misconfigurations and lax permissions.
+
+The kernel on Linux systems manages the communication between components such as the memory on the system and applications. This critical function requires the kernel to have specific privileges; thus, a successful exploit will potentially lead to root privileges.
+
+The Kernel exploit methodology is simple;
+1. Identify the kernel version;
+2. Search and find an exploit code for the kernel version of the target system;
+3. Run the exploit;
+
+*Note:*
+	Please remember that a failed kernel exploit can lead to a system crash. Make sure this potential outcome is acceptable within the scope of your penetration testing engagement before attempting a kernel exploit.
+
+*Hints:*
+1. Being too specific about the kernel version when searching for exploits on Google, Exploit-db, or searchsploit
+2. Be sure you understand how the exploit code works BEFORE you launch it. Some exploit codes can make changes on the operating system that would make them unsecured in further use or make irreversible changes to the system, creating problems later. Of course, these may not be great concerns within a lab or CTF environment, but these are absolute no-nos during a real penetration testing engagement.
+3. Some exploits may require further interaction once they are run. Read all comments and instructions provided with the exploit code.
+4. You can transfer the exploit code from your machine to the target system using the `SimpleHTTPServer` Python module and `wget` respectively.
+
+Q) Find and use the appropriate kernel exploit to gain root privileges on the target system.
+	![[Pasted image 20240822021207.png]]\
+
+Q)What is the content of the flag1.txt file?
+	![[Pasted image 20240822021346.png]]
+	![[Pasted image 20240822021411.png]]
+	
+To pull the exploit code into the target file via wget, send it to `/tmp`, since it can run on the exploit file you want there.
+	![[Pasted image 20240822021519.png]]
+
+Now we will try to run this code using the command  `gcc exploit.c -o exploit`
+
+If you have a simple C program like this in `exploit.c`:
+```
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+Running the command `gcc exploit.c -o exploit` will create an executable named `exploit`. 
+
+You can then run it with: `./exploit`
+
+	![[Pasted image 20240822021619.png]]
+	![[Pasted image 20240822021646.png]]
+
+## **Privilege Escalation: Sudo**
+The sudo command, by default, allows you to run a program with root privileges. Under some conditions, system administrators may need to give regular users some flexibility on their privileges. For example, a junior SOC analyst may need to use Nmap regularly but would not be cleared for full root access. In this situation, the system administrator can allow this user to only run Nmap with root privileges while keeping its regular privilege level throughout the rest of the system. Any user can check its current situation related to root privileges using the `sudo -l` command.
+
+[https://gtfobins.github.io/](https://gtfobins.github.io/) is a valuable source that provides information on how any program, on which you may have sudo rights, can be used.
