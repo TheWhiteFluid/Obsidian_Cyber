@@ -8,32 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e91346dddc41ca78",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240820231832.png"
-              }
-            }
-          },
-          {
-            "id": "3cdc8fe63dc8322f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240820232015.png"
-              }
-            }
-          },
-          {
             "id": "bbe74e19c9eb4def",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "439bd8a1755c4af8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ace33bfdbf57c625",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md"
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
               }
             }
           }
@@ -167,8 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ace33bfdbf57c625",
   "lastOpenFiles": [
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
+    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
     "z.Screenshots/Pasted image 20240821025829.png",
     "z.Screenshots/Pasted image 20240821025811.png",
     "z.Screenshots/Pasted image 20240821025239.png",
@@ -179,9 +187,6 @@
     "z.Screenshots/Pasted image 20240821010756.png",
     "z.Screenshots/Pasted image 20240820231832.png",
     "z.Screenshots/Pasted image 20240820232346.png",
-    "z.Screenshots/Pasted image 20240820232015.png",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
     "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
@@ -207,7 +212,6 @@
     "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
     "Untitled.canvas",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
