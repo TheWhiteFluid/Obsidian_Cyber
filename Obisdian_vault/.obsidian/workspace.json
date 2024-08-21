@@ -21,9 +21,11 @@
             "id": "9c339660730d130d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240821173356.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -94,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240821173356.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240821173356.png",
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240821173356.png"
+                "file": "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
               }
             }
           }
@@ -157,9 +159,10 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240821173637.png",
+    "z.Screenshots/Pasted image 20240821173356.png",
     "z.Screenshots/Pasted image 20240821173116.png",
     "z.Screenshots/Pasted image 20240821173151.png",
-    "z.Screenshots/Pasted image 20240821173356.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240821173041.png",
     "z.Screenshots/Pasted image 20240821172957.png",
