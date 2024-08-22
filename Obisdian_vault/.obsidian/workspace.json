@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
+                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md"
               }
             }
           }
@@ -157,8 +157,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "9c339660730d130d",
   "lastOpenFiles": [
+    "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
+    "RedTeam.ZeroPointSecurity",
+    "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
+    "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/Cloud/AWS",
     "TryHackMe/Cloud/DevSecOps",
     "TryHackMe/Cloud",
@@ -168,7 +174,6 @@
     "z.Screenshots/Pasted image 20240822024543.png",
     "z.Screenshots/Pasted image 20240822024427.png",
     "A)Frameworks & Tools.md",
-    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240821235212.png",
     "z.Screenshots/Pasted image 20240822021646.png",
     "z.Screenshots/Pasted image 20240822021619.png",
@@ -195,16 +200,11 @@
     "AA)Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
     "TryHackMe/PenTesting/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
-    "Red Team (ZeroPoint Security)/exams.md",
+    "Red Team.ZeroPoint Security)/exams.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
-    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
-    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research",
     "Untitled.canvas",
-    "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
-    "z.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "TryHackMe/DevSecOps"
+    "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov"
   ]
 }
