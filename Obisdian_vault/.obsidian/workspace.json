@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
               }
             }
           }
@@ -157,53 +157,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c339660730d130d",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "TryHackMe/Cloud/AWS",
+    "TryHackMe/Cloud/DevSecOps",
+    "TryHackMe/Cloud",
+    "TryHackMe/PenTesting",
+    "z.Screenshots/Pasted image 20240822024823.png",
+    "z.Screenshots/Pasted image 20240822024807.png",
+    "z.Screenshots/Pasted image 20240822024543.png",
+    "z.Screenshots/Pasted image 20240822024427.png",
+    "A)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240821235212.png",
     "z.Screenshots/Pasted image 20240822021646.png",
     "z.Screenshots/Pasted image 20240822021619.png",
     "z.Screenshots/Pasted image 20240822021519.png",
     "z.Screenshots/Pasted image 20240822021411.png",
     "z.Screenshots/Pasted image 20240822021403.png",
-    "z.Screenshots/Pasted image 20240822021346.png",
-    "z.Screenshots/Pasted image 20240822021207.png",
-    "z.Screenshots/Pasted image 20240821235323.png",
-    "z.Screenshots/Pasted image 20240821235246.png",
-    "A)Frameworks & Tools.md",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Exploitation.md",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Meterpreter.md",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Database.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation/Shell.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Metasploit/Exploitation.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Privilege Escalation",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Metasploit/Meterpreter.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Metasploit/Database.md",
     "TryHackMe/CompTIA PenTest+.md",
-    "TryHackMe/CompTIA PenTest+",
-    "TryHackMe/Jr. Penetration Tester/Metasploit/Introduction.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
-    "TryHackMe/Jr. Penetration Tester/Metasploit",
+    "TryHackMe/PenTesting/CompTIA PenTest+",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Metasploit/Introduction.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/7)Protocols and Servers 2.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research/Nessus.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Metasploit",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "AA)Websites Malware Detection.md",
     "Commands(Linux.Windows).md",
-    "TryHackMe/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "Red Team (ZeroPoint Security)/exams.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/Nmap Basic Port Scans.md",
     "TryHackMe/Jr. Penetration Tester/Network Security/8)Net Sec Challenge.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/6)Protocols and Servers.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr. Penetration Tester/Vulnerability Research",
     "Untitled.canvas",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.03.47.mov",
-    "TryHackMe/DevSecOps",
-    "TryHackMe/Security Engineer",
-    "TryHackMe/Offensive Pentesting",
-    "TryHackMe/Jr. Penetration Tester/Network Security"
+    "TryHackMe/DevSecOps"
   ]
 }
