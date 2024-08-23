@@ -12,6 +12,7 @@
 -  https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
 
 ## A2)**Tools**
+- https://pentestmonkey.net/ (pentest cheatsheet)
 - https://github.com/cyberheartmi9/PayloadsAllTheThings (Payloads)
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 ### Hashes
