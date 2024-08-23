@@ -11,11 +11,9 @@
             "id": "ace33bfdbf57c625",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20240823233354.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "z.Screenshots/Pasted image 20240823233354.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "z.Screenshots/Pasted image 20240823233354.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
+                "file": "z.Screenshots/Pasted image 20240823233354.png"
               }
             }
           }
@@ -146,20 +144,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ace33bfdbf57c625",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "z.Screenshots/Pasted image 20240823235241.png",
+    "z.Screenshots/Pasted image 20240823234405.png",
+    "z.Screenshots/Pasted image 20240823234334.png",
+    "z.Screenshots/Pasted image 20240823234159.png",
+    "z.Screenshots/Pasted image 20240823233708.png",
+    "z.Screenshots/Pasted image 20240823233458.png",
+    "z.Screenshots/Pasted image 20240823233354.png",
     "z.Screenshots/Pasted image 20240823223330.png",
     "z.Screenshots/Pasted image 20240823223110.png",
     "z.Screenshots/Pasted image 20240823223053.png",
-    "z.Screenshots/Pasted image 20240823202311.png",
-    "z.Screenshots/Pasted image 20240823202045.png",
-    "z.Screenshots/Pasted image 20240823201734.png",
-    "z.Screenshots/Pasted image 20240823201730.png",
-    "z.Screenshots/Pasted image 20240823201710.png",
-    "z.Screenshots/Pasted image 20240823201604.png",
-    "z.Screenshots/Pasted image 20240823201531.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "z.Screenshots/Pasted image 20240821173041.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/SQL Injection.md",
@@ -176,7 +174,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Authentication Bypass.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/Net Sec Challenge.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
