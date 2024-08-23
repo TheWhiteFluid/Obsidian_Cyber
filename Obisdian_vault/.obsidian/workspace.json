@@ -11,11 +11,9 @@
             "id": "ace33bfdbf57c625",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20240824021755.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "z.Screenshots/Pasted image 20240824021755.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+                "file": "z.Screenshots/Pasted image 20240824021755.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
+                "file": "z.Screenshots/Pasted image 20240824021755.png"
               }
             }
           }
@@ -146,20 +144,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ace33bfdbf57c625",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240824011016.png",
-    "z.Screenshots/Pasted image 20240824011035.png",
-    "z.Screenshots/Pasted image 20240824011821.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "z.Screenshots/Pasted image 20240824012606.png",
-    "z.Screenshots/Pasted image 20240824011831.png",
+    "z.Screenshots/Pasted image 20240824021755.png",
+    "z.Screenshots/Pasted image 20240824021750.png",
+    "z.Screenshots/Pasted image 20240824021557.png",
+    "z.Screenshots/Pasted image 20240824021450.png",
+    "z.Screenshots/Pasted image 20240824020417.png",
+    "z.Screenshots/Pasted image 20240824020108.png",
+    "z.Screenshots/Pasted image 20240824020032.png",
+    "z.Screenshots/Pasted image 20240824015928.png",
+    "z.Screenshots/Pasted image 20240824015830.png",
+    "z.Screenshots/Pasted image 20240824015732.png",
     "A)Frameworks & Tools.md",
-    "z.Screenshots/Pasted image 20240824005207.png",
-    "z.Screenshots/Pasted image 20240824005143.png",
-    "z.Screenshots/Pasted image 20240824005130.png",
-    "z.Screenshots/Pasted image 20240824005024.png",
-    "z.Screenshots/Pasted image 20240824004958.png",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
