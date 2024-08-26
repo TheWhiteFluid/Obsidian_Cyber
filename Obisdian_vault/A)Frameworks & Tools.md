@@ -28,6 +28,7 @@
 ### **WEB**
 #### Injections
 -  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md (Injections)
+- https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
 #### XSS
 - http://www.xss-payloads.com (XSS payloads)
 #### Shell
