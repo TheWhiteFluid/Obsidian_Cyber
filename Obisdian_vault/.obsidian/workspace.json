@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   "active": "ace33bfdbf57c625",
   "lastOpenFiles": [
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "A)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240825231922.png",
     "z.Screenshots/Pasted image 20240825231856.png",
@@ -175,8 +177,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Authentication Bypass.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/Net Sec Challenge.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
