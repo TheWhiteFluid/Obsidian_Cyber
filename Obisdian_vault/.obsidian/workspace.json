@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "RedTeam.ZeroPointSecurity/Red Team Ops I.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
               }
             }
           }
@@ -157,8 +157,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "9c339660730d130d",
   "lastOpenFiles": [
+    "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "z.Screenshots/Pasted image 20240827204942.png",
     "z.Screenshots/Pasted image 20240827204847.png",
     "z.Screenshots/Pasted image 20240826204501.png",
@@ -169,9 +170,7 @@
     "z.Screenshots/Pasted image 20240825231856.png",
     "z.Screenshots/Pasted image 20240825231822.png",
     "z.Screenshots/Pasted image 20240825231102.png",
-    "z.Screenshots/Pasted image 20240825230634.png",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "RedTeam.ZeroPointSecurity",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
