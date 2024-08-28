@@ -8,29 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e91346dddc41ca78",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240821173356.png"
-              }
-            }
-          },
-          {
-            "id": "9c339660730d130d",
+            "id": "ebba322a6d75749b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Untitled.md"
               }
             }
           }
@@ -157,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c339660730d130d",
+  "active": "ebba322a6d75749b",
   "lastOpenFiles": [
+    "A)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Untitled.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240828175326.png",
     "z.Screenshots/Pasted image 20240828175924.png",
@@ -170,7 +161,6 @@
     "z.Screenshots/Pasted image 20240828165317.png",
     "z.Screenshots/Pasted image 20240828154814.png",
     "z.Screenshots/Pasted image 20240828154750.png",
-    "A)Frameworks & Tools.md",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "RedTeam.ZeroPointSecurity",
