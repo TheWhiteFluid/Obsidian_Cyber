@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
               }
             }
           }
@@ -159,6 +159,7 @@
   },
   "active": "9c339660730d130d",
   "lastOpenFiles": [
+    "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "z.Screenshots/Pasted image 20240827204942.png",
@@ -180,7 +181,6 @@
     "TryHackMe/Cloud/DevSecOps",
     "TryHackMe/Cloud",
     "TryHackMe/PenTesting",
-    "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation",
