@@ -56,3 +56,9 @@ https://gtfobins.github.io/
 - [Decoder's Blog](https://decoder.cloud/)
 - [Token Kidnapping](https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf)
 - [Hacktricks - Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation)
+
+
+- WinPEAS (https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS) (detectable)
+- PrivescCheck (https://github.com/itm4n/PrivescCheck) (detectable)
+- WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
+- Metasploit (`multi/recon/local_exploit_suggester` module)

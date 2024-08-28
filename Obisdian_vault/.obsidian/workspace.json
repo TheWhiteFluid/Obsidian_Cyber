@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "A)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
+                "file": "A)Frameworks & Tools.md"
               }
             }
           }
@@ -159,8 +159,8 @@
   },
   "active": "9c339660730d130d",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240828175326.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "z.Screenshots/Pasted image 20240828175326.png",
     "z.Screenshots/Pasted image 20240828175924.png",
     "z.Screenshots/Pasted image 20240828175400.png",
     "z.Screenshots/Pasted image 20240828175119.png",
