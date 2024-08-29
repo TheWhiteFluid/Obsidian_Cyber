@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+                "file": "TryHackMe/Security Enginner/IDS.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+                "file": "TryHackMe/Security Enginner/IDS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+                "file": "TryHackMe/Security Enginner/IDS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md"
+                "file": "TryHackMe/Security Enginner/IDS.md"
               }
             }
           }
@@ -173,25 +173,24 @@
   },
   "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
-    "Pasted image 20240829165044.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+    "TryHackMe/PenTesting/Rules of Engagement.md",
+    "z.Screenshots/Pasted image 20240829192531.png",
+    "z.Screenshots/Pasted image 20240829193530.png",
+    "z.Screenshots/Pasted image 20240829193357.png",
+    "z.Screenshots/Pasted image 20240829192734.png",
+    "z.Screenshots/Pasted image 20240829192635.png",
+    "z.Screenshots/Pasted image 20240829165044.png",
     "TryHackMe/Security Enginner/IPS.md",
     "TryHackMe/Security Enginner/IDS.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "z.Screenshots/Pasted image 20240829164418.png",
     "z.Screenshots/Pasted image 20240829163757.png",
     "z.Screenshots/Pasted image 20240829163420.png",
     "z.Screenshots/Pasted image 20240829163354.png",
-    "TryHackMe/PenTesting/Rules.md",
     "Untitled.canvas",
     "2024-08-29.md",
     "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "z.Screenshots/Pasted image 20240828175326.png",
-    "z.Screenshots/Pasted image 20240828175924.png",
-    "z.Screenshots/Pasted image 20240828175400.png",
-    "z.Screenshots/Pasted image 20240828175119.png",
-    "z.Screenshots/Pasted image 20240828170322.png",
-    "z.Screenshots/Pasted image 20240828165736.png",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "RedTeam.ZeroPointSecurity",
