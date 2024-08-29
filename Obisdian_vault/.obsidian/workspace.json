@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Rules.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Rules.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Rules.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Rules.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md"
               }
             }
           }
@@ -146,12 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ebba322a6d75749b",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240829163420.png",
+    "z.Screenshots/Pasted image 20240829163354.png",
+    "TryHackMe/PenTesting/Rules.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "Untitled.canvas",
     "2024-08-29.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Rules.md",
     "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240828175326.png",
@@ -163,7 +165,6 @@
     "z.Screenshots/Pasted image 20240828165500.png",
     "z.Screenshots/Pasted image 20240828165317.png",
     "z.Screenshots/Pasted image 20240828154814.png",
-    "z.Screenshots/Pasted image 20240828154750.png",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "RedTeam.ZeroPointSecurity",
