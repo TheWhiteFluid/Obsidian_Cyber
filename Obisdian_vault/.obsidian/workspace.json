@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fb26633fd53517a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/Security Enginner/IDS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4e1afc06c71f942e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,12 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
+    "Pasted image 20240829165044.png",
+    "TryHackMe/Security Enginner/IPS.md",
+    "TryHackMe/Security Enginner/IDS.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
+    "z.Screenshots/Pasted image 20240829164418.png",
+    "z.Screenshots/Pasted image 20240829163757.png",
     "z.Screenshots/Pasted image 20240829163420.png",
     "z.Screenshots/Pasted image 20240829163354.png",
     "TryHackMe/PenTesting/Rules.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "Untitled.canvas",
     "2024-08-29.md",
     "A)Frameworks & Tools.md",
@@ -162,9 +192,6 @@
     "z.Screenshots/Pasted image 20240828175119.png",
     "z.Screenshots/Pasted image 20240828170322.png",
     "z.Screenshots/Pasted image 20240828165736.png",
-    "z.Screenshots/Pasted image 20240828165500.png",
-    "z.Screenshots/Pasted image 20240828165317.png",
-    "z.Screenshots/Pasted image 20240828154814.png",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "RedTeam.ZeroPointSecurity",
@@ -191,8 +218,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "AA)Websites Malware Detection.md",
-    "Commands(Linux.Windows).md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov"
   ]
