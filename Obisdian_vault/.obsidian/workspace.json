@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebba322a6d75749b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb26633fd53517a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/Security Enginner/IDS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4e1afc06c71f942e",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 264.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -173,6 +148,15 @@
   },
   "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
+    "A)Frameworks & Tools.md",
+    "AA)Websites Malware Detection.md",
+    "TryHackMe/Security Enginner/IDS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/1)Active Reconnaissance.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "TryHackMe/PenTesting/Rules of Engagement.md",
     "z.Screenshots/Pasted image 20240829192531.png",
@@ -182,14 +166,12 @@
     "z.Screenshots/Pasted image 20240829192635.png",
     "z.Screenshots/Pasted image 20240829165044.png",
     "TryHackMe/Security Enginner/IPS.md",
-    "TryHackMe/Security Enginner/IDS.md",
     "z.Screenshots/Pasted image 20240829164418.png",
     "z.Screenshots/Pasted image 20240829163757.png",
     "z.Screenshots/Pasted image 20240829163420.png",
     "z.Screenshots/Pasted image 20240829163354.png",
     "Untitled.canvas",
     "2024-08-29.md",
-    "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "RedTeam.ZeroPointSecurity/Red Team Ops I.md",
     "Cloud.Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
@@ -210,13 +192,7 @@
     "TryHackMe/PenTesting/CompTIA PenTest+",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Introduction.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Nessus.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/Nessus(to be continued).md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
-    "TryHackMe/Jr. Penetration Tester/Vulnerability Research/c.Vulnerability Capstone.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov"
   ]
