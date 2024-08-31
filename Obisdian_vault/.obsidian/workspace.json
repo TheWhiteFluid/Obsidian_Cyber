@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a04721a5105a98d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "TryHackMe/Security Enginner/IDS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,15 +159,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e1afc06c71f942e",
+  "active": "a04721a5105a98d1",
   "lastOpenFiles": [
+    "A)Frameworks & Tools.md",
+    "TryHackMe/Security Enginner/IDS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
+    "2024-09-01.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
-    "A)Frameworks & Tools.md",
     "AA)Websites Malware Detection.md",
-    "TryHackMe/Security Enginner/IDS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/1)Active Reconnaissance.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
@@ -184,14 +200,11 @@
     "TryHackMe/Cloud",
     "TryHackMe/PenTesting",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Meterpreter.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Database.md",
     "TryHackMe/CompTIA PenTest+.md",
     "TryHackMe/PenTesting/CompTIA PenTest+",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Introduction.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research",
     "z.Screenshots/Screen Recording 2024-06-19 at 01.12.01.mov"

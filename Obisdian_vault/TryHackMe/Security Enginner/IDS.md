@@ -101,8 +101,41 @@ Q) What is the password of the grafana-admin account?
 
 ## **Host Based IDS (HIDS)**
 Not all forms of malicious activity involve network traffic that could be detected by a NIDS, ransomware, for example, could be disturbed via an external email service provider installed and executed on a target machine and, only be detected by a NIDS once, it calls home with messages of its success which, of course, is way too late. For this reason, it is often advisable to deploy a host-based IDS alongside a NIDS to check for suspicious activity that occurs on devices and not just over the network including:
-- Malware execution
-- System configuration changes
-- Software errors
-- File integrity changes
-- Privilege escalation
+- Malware execution;
+- System configuration changes;
+- Software errors;
+- File integrity changes;
+- Privilege escalation;
+
+HIDS deployment can be a lot more complex than NIDS as they often require the installation and management of an agent on each host intended to be covered by the HIDS. This agent typically forwards activity from the data sources on the system to a central management and processing node which then applies the rules to the forwarded data in a manner similar to any other IDS. These data sources typically include:
+- Application and system log files.
+- The Windows registry.
+- System performance metrics.
+- The state of the file system itself.
+
+This can be hard to manage in a large environment without some form of automated deployment mechanism, like Ansible. It is also often necessary to perform additional configuration work when first deploying a HIDS as the default options are likely to miss certain applications. For example, to create this demo deployment I built custom docker images for each service that was monitored by the HIDS and configured the agent to read from each services log file, performing this for every containerised service on a real network and managing updates would quickly get out of hand unless automation was deployed.
+
+The primary difference between HIDS and NIDS is the types of activity that they can detect. A HIDS will not typically have access to a log of network traffic and is, therefore, unable to detect certain forms of activity at all or will only be able to detect more aggressive activity.
+
+## **Privilege Escalation Recon**
+This is primarily a task for HIDS as many post-exploitation tasks like, privilege escalation do not require communication with the outside world and are hard or impossible to detect with a NIDS. In fact, privilege escalation is our first task as we are not yet root. The first step in privilege escalation is usually checking what permissions we currently have this, could save us a lot of work if we're already in the sudo group. There are a few different ways to check this including:
+
+- `sudo -l` this will return a list of all the commands that an account can run with elevated permissions via `sudo`
+- `groups` will list all of the groups that the current user is a part of.
+- `cat /etc/group` should return a list of all of the groups on the system and their members. This can help in locating users with higher access privileges and not just our own.
+
+Suricata is capable of detecting when scripts are downloaded via `wget`  , however, TLS restricts its ability to actually detect the traffic without the deployment of web proxy servers. It may also be possible to simply copy and paste the script's content however, most HIDS implement some form of file system integrity monitoring which would detect the addition of the script even if an antivirus was not installed;
+
+## **Performing Privilege Escalation**
+The last task allowed us to identify Docker as a potential privilege escalation vector. Now it's time to perform the escalation itself. First, though, I should explain how this particular privilege escalation works. In short, this attack leverages a commonly suggested [workaround](https://stackoverflow.com/questions/48568172/docker-sock-permission-denied) that allows non-root users to run docker containers. The workaround requires adding a non-privileged user to the `docker`group which, allows that user to run containers without using `sudo` or having root privileges. However, this also grants effective root-level privileges to the provided user, as they are able to spawn containers without restriction.
+
+We can use these capabilities to gain root privileges quite easily try and run the following with the `grafana-admin` account:
+
+`docker run -it --entrypoint=/bin/bash -v /:/mnt/ ghcr.io/jroo1053/ctfscoreapache:master`  
+
+This will spawn a container in interactive mode, overwrite the default entry-point to give us a shell, and mount the hosts file system to root.  From within this container, we can then edit one of the following files to gain elevated privileges:
+
+- `/etc/group` We could add the `grafana-admin` account to the root group. Note, that this file is covered by the HIDS  
+- `/etc/sudoers` Editing this file would allow us to add the grafana-admin account to the sudoers list and thus, we would be able to run `sudo` to gain extra privileges. Again, this file is monitored by Wazuh.  In this case, we can perform this by running:  
+   `echo "grafana-admin ALL=(ALL) NOPASSWD: ALL" >>/mnt/etc/sudoers   `  
+- We could add a new user to the system and join the root group via `/etc/passwd` . Again though, this activity is likely to be noticed by the HIDS
