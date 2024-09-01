@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Security Enginner/IDS.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Security Enginner/IDS.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Security Enginner/IDS.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Security Enginner/IDS.md"
+                "file": "TryHackMe/Security Enginner/IPS.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "a04721a5105a98d1",
   "lastOpenFiles": [
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/Security Enginner/IDS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
