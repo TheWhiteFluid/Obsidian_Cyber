@@ -159,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "a04721a5105a98d1",
   "lastOpenFiles": [
-    "A)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/Security Enginner/IDS.md",
+    "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
     "2024-09-01.md",
@@ -194,7 +195,6 @@
     "RedTeam.ZeroPointSecurity",
     "Cloud.Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud.Pawned Labs/Thunder Dome/Lab1.Emerge through the breach.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/Cloud/AWS",
     "TryHackMe/Cloud/DevSecOps",
     "TryHackMe/Cloud",
