@@ -11,8 +11,12 @@
             "id": "1f495852cb9c2878",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "(!!)Frameworks & Tools.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "(!!)Frameworks & Tools.md"
+              }
             }
           }
         ]
@@ -140,10 +148,11 @@
   },
   "active": "1f495852cb9c2878",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+    "z.Screenshots/Pasted image 20240902225146.png",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/PenTesting/IPS.md",
     "z.Screenshots/Pasted image 20240902051117.png",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/Cloud/Pawned Labs/SSRF on GoogleCloud.md",
     "TryHackMe/Cloud/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Cloud/Pawned Labs",
@@ -171,7 +180,6 @@
     "TryHackMe/Cloud",
     "AA)Websites Malware Detection.md",
     "z.Screenshots/Pasted image 20240902032245.png",
-    "z.Screenshots/Pasted image 20240902032237.png",
     "TryHackMe/PenTesting/IDS.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",

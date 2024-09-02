@@ -40,7 +40,6 @@
 
 
 ## **Priv. Escalation**
-
 ### **Linux:**
 https://gtfobins.github.io/
 #### **Enumeration**
@@ -65,6 +64,9 @@ https://gtfobins.github.io/
 - WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
 - Metasploit (`multi/recon/local_exploit_suggester` module)
 
+
+### **Red Team**
+https://github.com/bigb0sss/RedTeam-OffensiveSecurity/tree/master/01-CobaltStrike (Cobalt Strike)
 
 
 
