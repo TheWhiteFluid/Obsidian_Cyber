@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A)Frameworks & Tools.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A)Frameworks & Tools.md"
+                "file": "(!!)Frameworks & Tools.md"
               }
             }
           }
@@ -146,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ace33bfdbf57c625",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
     "AA)Websites Malware Detection.md",
-    "A)Frameworks & Tools.md",
+    "(!!)Frameworks & Tools.md",
     "TryHackMe/Security Enginner/IPS.md",
     "z.Screenshots/Pasted image 20240902032245.png",
     "z.Screenshots/Pasted image 20240902032237.png",
