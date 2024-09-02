@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(!!)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "1f495852cb9c2878",
   "lastOpenFiles": [
+    "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "z.Screenshots/Pasted image 20240902225146.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
@@ -159,7 +160,6 @@
     "Pasted image 20240902051117.png",
     "z.Screenshots/Pasted image 20240902050200.png",
     "z.Screenshots/Pasted image 20240902045551.png",
-    "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240902043300.png",
     "z.Screenshots/Pasted image 20240902042303.png",
     "z.Screenshots/Pasted image 20240902034444.png",
