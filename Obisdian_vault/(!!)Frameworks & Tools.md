@@ -16,6 +16,7 @@
 - https://github.com/cyberheartmi9/PayloadsAllTheThings (Payloads)
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 - https://www.monkey.org/~dugsong/fragroute/ (Packets Fragmentation)
+- [CyberChef](https://icyberchef.com/) (Escaped Unicodes) 
 ### Hashes
 -  https://crackstation.net (Hashes database)
 ### Brute Force
