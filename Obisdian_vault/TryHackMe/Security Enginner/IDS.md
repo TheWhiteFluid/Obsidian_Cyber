@@ -2,7 +2,7 @@ Intrusion detection systems (IDS) are a tool commonly deployed to defend network
 - Signature (or rule) based IDS will apply a large rule set to search one or more data sources for suspicious activity whereas
 - Anomaly-based(behaviour) IDS establish what is considered normal activity and then raise alerts when an activity that does not fit the baseline is detected.
 
-Either way, once an incident is detected, the IDS will generate an alert and will then forward it further up the security chain to log aggregation or data visualisation platforms like [Graylog](https://www.graylog.org/products/open-source) or the [ELK Stack](https://www.elastic.co/what-is/elk-stack). Some IDS may also feature some form of intrusion prevention technology and may automatically respond to the incident.
+Either way, once an incident is detected, the IDS will generate an alert and will then forward it further up the security chain to log aggregation or data visualization platforms like [Graylog](https://www.graylog.org/products/open-source) or the [ELK Stack](https://www.elastic.co/what-is/elk-stack). Some IDS may also feature some form of intrusion prevention technology and may automatically respond to the incident.
 
 Examples:
 -  [Suricata](https://suricata.io/), a network-based IDS (NIDS)
@@ -51,7 +51,7 @@ We should also consider the exact definition of evasion as applied to IDS; it ca
 
 Q) What scale is used to measure alert severity in Suricata? 
 	1-3
-Q)   How many services is nmap able to fully recognise when the service scan (-sV) is performed?
+Q)   How many services is nmap able to fully recognize when the service scan (-sV) is performed?
 	3: HTTP / FTP /SSH
 ## **Further Reconnaissance Evasion**
 Of course, `nmap` is not the only tool that features IDS evasion tools. As an example the web-scanner `nikto` also features a number of options that we will experiment with within this task, where we perform more aggressive scans to enumerate the services we have already discovered. In general, `nikto` is a much more aggressive scanner than `nmap` and is thus harder to conceal; however, these more aggressive scans can return more useful information in some cases. Let's start by running `nikto` with the minimum options:

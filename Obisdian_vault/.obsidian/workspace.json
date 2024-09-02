@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+                "file": "TryHackMe/Security Enginner/IPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
+                "file": "TryHackMe/Security Enginner/IPS.md"
               }
             }
           }
@@ -146,8 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ace33bfdbf57c625",
   "lastOpenFiles": [
+    "Pasted image 20240902031207.png",
+    "Pasted image 20240902023307.png",
+    "TryHackMe/Security Enginner/IDS.md",
+    "TryHackMe/PenTesting/Rules of Engagement.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "z.Screenshots/Pasted image 20240829193530.png",
     "z.Screenshots/Pasted image 20240829193357.png",
     "z.Screenshots/Pasted image 20240829192734.png",
@@ -155,20 +163,14 @@
     "z.Screenshots/Pasted image 20240828151445.png",
     "z.Screenshots/Pasted image 20240828151112.png",
     "TryHackMe/Security Enginner/IPS.md",
-    "TryHackMe/Security Enginner/IDS.md",
     "TryHackMe/Security Enginner",
-    "TryHackMe/PenTesting/Rules of Engagement.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "TryHackMe/PenTesting/CompTIA PenTest+",
     "z.Screenshots/Pasted image 20240827204942.png",
     "z.Screenshots/Pasted image 20240827204847.png",
     "z.Screenshots/Pasted image 20240826204501.png",
-    "z.Screenshots/Pasted image 20240826204231.png",
-    "z.Screenshots/Pasted image 20240826204056.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "A)Frameworks & Tools.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
@@ -185,8 +187,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Authentication Bypass.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/Net Sec Challenge.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security",
