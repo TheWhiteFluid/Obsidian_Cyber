@@ -3,7 +3,7 @@
 ## **Info**
 -  https://dnsdumpster.com/ (DNS)
 -  https://www.shodan.io/ (DNS and more)
-## A1)**Frameworks**
+## **A1)Frameworks**
 -  https://owasp.org/ (OWASP)
 	 - [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
 	 - https://owasp.org/www-project-secure-headers
@@ -11,7 +11,7 @@
 -  https://www.nist.gov/cyberframework (NIST)
 -  https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
 
-## A2)**Tools**
+## **A2)Tools**
 - https://pentestmonkey.net/ (pentest cheatsheet)
 - https://github.com/cyberheartmi9/PayloadsAllTheThings (Payloads)
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
@@ -62,3 +62,18 @@ https://gtfobins.github.io/
 - PrivescCheck (https://github.com/itm4n/PrivescCheck) (detectable)
 - WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
 - Metasploit (`multi/recon/local_exploit_suggester` module)
+
+
+
+
+
+
+
+
+## **A3)Malware Detection**
+1. www.virustotal.com
+2. www.hybrid-analysis.com
+3. www.threatminer.com
+4. www.threatcrowd.com
+5. www.robtext.com
+

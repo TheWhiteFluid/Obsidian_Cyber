@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Security Enginner/IPS.md",
+                "file": "A)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/Security Enginner/IPS.md",
+                "file": "A)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/Security Enginner/IPS.md",
+                "file": "A)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/Security Enginner/IPS.md"
+                "file": "A)Frameworks & Tools.md"
               }
             }
           }
@@ -148,8 +148,14 @@
   },
   "active": "ace33bfdbf57c625",
   "lastOpenFiles": [
-    "Pasted image 20240902031207.png",
-    "Pasted image 20240902023307.png",
+    "AA)Websites Malware Detection.md",
+    "A)Frameworks & Tools.md",
+    "TryHackMe/Security Enginner/IPS.md",
+    "z.Screenshots/Pasted image 20240902032245.png",
+    "z.Screenshots/Pasted image 20240902032237.png",
+    "z.Screenshots/Pasted image 20240902031602.png",
+    "z.Screenshots/Pasted image 20240902031207.png",
+    "z.Screenshots/Pasted image 20240902023307.png",
     "TryHackMe/Security Enginner/IDS.md",
     "TryHackMe/PenTesting/Rules of Engagement.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
@@ -161,16 +167,10 @@
     "z.Screenshots/Pasted image 20240829192734.png",
     "z.Screenshots/Pasted image 20240829192635.png",
     "z.Screenshots/Pasted image 20240828151445.png",
-    "z.Screenshots/Pasted image 20240828151112.png",
-    "TryHackMe/Security Enginner/IPS.md",
     "TryHackMe/Security Enginner",
     "TryHackMe/PenTesting/CompTIA PenTest+/Governance & Regulations.md",
     "TryHackMe/PenTesting/CompTIA PenTest+",
-    "z.Screenshots/Pasted image 20240827204942.png",
-    "z.Screenshots/Pasted image 20240827204847.png",
-    "z.Screenshots/Pasted image 20240826204501.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "A)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
