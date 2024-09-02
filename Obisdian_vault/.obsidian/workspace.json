@@ -146,7 +146,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e1afc06c71f942e",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
     "TryHackMe/Security Enginner/IPS.md",
     "z.Screenshots/Pasted image 20240902050200.png",
@@ -159,8 +159,8 @@
     "z.Screenshots/Pasted image 20240902032237.png",
     "z.Screenshots/Pasted image 20240902031602.png",
     "z.Screenshots/Pasted image 20240902031207.png",
-    "TryHackMe/PenTesting/IPS.md",
-    "TryHackMe/PenTesting/IDS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/PenTesting/Firewalls.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
@@ -171,9 +171,9 @@
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
     "RedTeam/ZeroPointSecurity",
     "RedTeam",
-    "Pawned Labs/SSRF on GoogleCloud.md",
-    "Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "Pawned Labs",
+    "TryHackMe/Cloud/Pawned Labs/SSRF on GoogleCloud.md",
+    "TryHackMe/Cloud/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "TryHackMe/Cloud/Pawned Labs",
     "(!!)Frameworks & Tools.md",
     "TryHackMe/Security Enginner/IDS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
