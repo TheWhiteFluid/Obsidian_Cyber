@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+                "file": "TryHackMe/PenTesting/Firewalls.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+                "file": "TryHackMe/PenTesting/Firewalls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+                "file": "TryHackMe/PenTesting/Firewalls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md"
+                "file": "TryHackMe/PenTesting/Firewalls.md"
               }
             }
           }
@@ -146,9 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f495852cb9c2878",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240903004723.png",
+    "z.Screenshots/Pasted image 20240903003417.png",
+    "z.Screenshots/Pasted image 20240903003210.png",
     "(!!)Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20240523113921.png",
+    "TryHackMe/PenTesting/Firewalls.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "z.Screenshots/Pasted image 20240902225146.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
@@ -162,9 +167,6 @@
     "z.Screenshots/Pasted image 20240902045551.png",
     "z.Screenshots/Pasted image 20240902043300.png",
     "z.Screenshots/Pasted image 20240902042303.png",
-    "z.Screenshots/Pasted image 20240902034444.png",
-    "z.Screenshots/Pasted image 20240902034302.png",
-    "TryHackMe/PenTesting/Firewalls.md",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
     "RedTeam/ZeroPointSecurity",
     "TryHackMe/Cloud/Security Engineer.md",
@@ -179,7 +181,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
     "TryHackMe/Cloud",
     "AA)Websites Malware Detection.md",
-    "z.Screenshots/Pasted image 20240902032245.png",
     "TryHackMe/PenTesting/IDS.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
