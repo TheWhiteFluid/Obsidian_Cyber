@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1f495852cb9c2878",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTesting/IPS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -171,24 +183,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bbb2f384d0f0211c",
+  "active": "1f495852cb9c2878",
   "lastOpenFiles": [
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/IPS.md",
+    "z.Screenshots/Pasted image 20240902034444.png",
+    "z.Screenshots/Pasted image 20240902034302.png",
+    "TryHackMe/PenTesting/Firewalls.md",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
     "RedTeam/ZeroPointSecurity",
-    "TryHackMe/PenTesting/IPS.md",
     "TryHackMe/Cloud/Security Engineer.md",
     "TryHackMe/Cloud/AWS.md",
     "TryHackMe/Cloud/Security Engineer",
     "TryHackMe/Cloud/AWS",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
-    "Untitled.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks and Exploits",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
     "TryHackMe/Cloud",
-    "(!!)Frameworks & Tools.md",
     "AA)Websites Malware Detection.md",
     "z.Screenshots/Pasted image 20240902032245.png",
     "z.Screenshots/Pasted image 20240902032237.png",
@@ -204,8 +218,6 @@
     "z.Screenshots/Pasted image 20240829193530.png",
     "z.Screenshots/Pasted image 20240829193357.png",
     "z.Screenshots/Pasted image 20240829192734.png",
-    "z.Screenshots/Pasted image 20240829192635.png",
-    "z.Screenshots/Pasted image 20240828151445.png",
     "TryHackMe/ds",
     "TryHackMe/PenTesting/CompTIA PenTest+",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
@@ -217,7 +229,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SQL Injections.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs",
     "Untitled.canvas"
   ]
