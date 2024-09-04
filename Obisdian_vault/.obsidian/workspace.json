@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "z.Screenshots/Pasted image 20240904034920.png",
     "z.Screenshots/Pasted image 20240904034817.png",
     "z.Screenshots/Pasted image 20240904034742.png",
@@ -158,7 +159,6 @@
     "z.Screenshots/Pasted image 20240904022227.png",
     "z.Screenshots/Pasted image 20240904022221.png",
     "z.Screenshots/Pasted image 20240904022147.png",
-    "z.Screenshots/Pasted image 20240904022114.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
@@ -166,7 +166,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/PenTesting/Firewalls.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
