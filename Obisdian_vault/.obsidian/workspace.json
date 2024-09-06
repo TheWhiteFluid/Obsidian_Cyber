@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
               }
             }
           }
@@ -159,10 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba8aa3cb8ee0053",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Pasted image 20240907005702.png",
-    "Pasted image 20240907005437.png",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "z.Screenshots/Pasted image 20240907005702.png",
+    "z.Screenshots/Pasted image 20240907005437.png",
     "z.Screenshots/Pasted image 20240907003446.png",
     "z.Screenshots/Pasted image 20240907003342.png",
     "z.Screenshots/Pasted image 20240907002912.png",
@@ -171,9 +174,7 @@
     "z.Screenshots/Pasted image 20240907001824.png",
     "z.Screenshots/Pasted image 20240906234453.png",
     "z.Screenshots/Pasted image 20240906234431.png",
-    "z.Screenshots/Pasted image 20240906232517.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
@@ -206,7 +207,6 @@
     "TryHackMe/ds",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/Jr. Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "Untitled.canvas"
   ]
 }
