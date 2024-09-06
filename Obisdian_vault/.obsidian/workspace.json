@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md"
               }
             }
           }
@@ -146,14 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
     "z.Screenshots/Pasted image 20240906051024.png",
     "z.Screenshots/Pasted image 20240906051005.png",
     "z.Screenshots/Pasted image 20240906050848.png",
     "z.Screenshots/Pasted image 20240906050739.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
