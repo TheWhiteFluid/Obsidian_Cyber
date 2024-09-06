@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e1afc06c71f942e",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240906051024.png",
+    "z.Screenshots/Pasted image 20240906051005.png",
+    "z.Screenshots/Pasted image 20240906050848.png",
+    "z.Screenshots/Pasted image 20240906050739.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
@@ -160,9 +164,6 @@
     "z.Screenshots/Pasted image 20240905153316.png",
     "z.Screenshots/Pasted image 20240905150558.png",
     "z.Screenshots/Pasted image 20240905040632.png",
-    "z.Screenshots/Pasted image 20240905034629.png",
-    "z.Screenshots/Pasted image 20240905033725.png",
-    "z.Screenshots/Pasted image 20240905030119.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
@@ -189,7 +190,6 @@
     "2024-09-01.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "Untitled.canvas",
     "RedTeam.ZeroPointSecurity",
     "TryHackMe/Cloud/AWS",
