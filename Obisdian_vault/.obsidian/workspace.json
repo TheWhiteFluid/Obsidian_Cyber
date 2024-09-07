@@ -159,8 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba8aa3cb8ee0053",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240907020933.png",
+    "z.Screenshots/Pasted image 20240907020445.png",
+    "z.Screenshots/Pasted image 20240907015409.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
@@ -173,8 +176,6 @@
     "z.Screenshots/Pasted image 20240907002330.png",
     "z.Screenshots/Pasted image 20240907002115.png",
     "z.Screenshots/Pasted image 20240907001824.png",
-    "z.Screenshots/Pasted image 20240906234453.png",
-    "z.Screenshots/Pasted image 20240906234431.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
@@ -206,7 +207,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/ds",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "Untitled.canvas"
   ]
 }
