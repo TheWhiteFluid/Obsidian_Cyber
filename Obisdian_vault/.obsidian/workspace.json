@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f495852cb9c2878",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eba8aa3cb8ee0053",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a50f36025a4a97e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ab139cc7fd2970b7",
             "type": "leaf",
             "state": {
@@ -55,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,20 +148,21 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+    "z.Screenshots/Pasted image 20240908202354.png",
+    "z.Screenshots/Pasted image 20240908202349.png",
+    "z.Screenshots/Pasted image 20240908202345.png",
+    "z.Screenshots/Pasted image 20240908202259.png",
+    "z.Screenshots/Pasted image 20240908202045.png",
+    "z.Screenshots/Pasted image 20240908201739.png",
+    "z.Screenshots/Pasted image 20240908201706.png",
+    "z.Screenshots/Pasted image 20240908201244.png",
+    "z.Screenshots/Pasted image 20240908200911.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "z.Screenshots/Pasted image 20240908200716.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
     "z.Screenshots/Pasted image 20240908182926.png",
-    "z.Screenshots/Pasted image 20240908182020.png",
-    "z.Screenshots/Pasted image 20240908181809.png",
-    "z.Screenshots/Pasted image 20240908164454.png",
-    "z.Screenshots/Pasted image 20240908164132.png",
-    "z.Screenshots/Pasted image 20240908164125.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "(!!)Frameworks & Tools.md",
-    "Pasted image 20240908164003.png",
-    "Pasted image 20240908164005.png",
-    "Pasted image 20240908164010.png",
-    "Pasted image 20240908164024.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "Untitled",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
@@ -230,7 +194,6 @@
     "TryHackMe/PenTesting/IDS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "Untitled.canvas"
   ]
 }
