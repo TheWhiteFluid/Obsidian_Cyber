@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ab139cc7fd2970b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md"
               }
             }
           }
@@ -171,9 +183,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a50f36025a4a97e",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Pasted image 20240908164454.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "z.Screenshots/Pasted image 20240908182926.png",
+    "z.Screenshots/Pasted image 20240908182020.png",
+    "z.Screenshots/Pasted image 20240908181809.png",
+    "z.Screenshots/Pasted image 20240908164454.png",
     "z.Screenshots/Pasted image 20240908164132.png",
     "z.Screenshots/Pasted image 20240908164125.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
@@ -182,11 +199,6 @@
     "Pasted image 20240908164005.png",
     "Pasted image 20240908164010.png",
     "Pasted image 20240908164024.png",
-    "Pasted image 20240908164037.png",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "z.Screenshots/Pasted image 20240908162815.png",
-    "z.Screenshots/Pasted image 20240908162811.png",
-    "z.Screenshots/Pasted image 20240908162743.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "Untitled",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
