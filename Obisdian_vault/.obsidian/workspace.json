@@ -159,8 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fde64aeeb2966f68",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240909183441.png",
+    "z.Screenshots/Pasted image 20240909174938.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "z.Screenshots/Pasted image 20240908210107.png",
@@ -172,7 +174,6 @@
     "z.Screenshots/Pasted image 20240908201739.png",
     "z.Screenshots/Pasted image 20240908201706.png",
     "z.Screenshots/Pasted image 20240908201244.png",
-    "z.Screenshots/Pasted image 20240908200911.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "(!!)Frameworks & Tools.md",
@@ -206,7 +207,6 @@
     "AA)Websites Malware Detection.md",
     "TryHackMe/PenTesting/IDS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "Untitled.canvas"
   ]
 }
