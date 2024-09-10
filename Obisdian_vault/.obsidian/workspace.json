@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md"
+                "file": "(!!)Frameworks & Tools.md"
               }
             }
           }
@@ -148,6 +148,19 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240523113921.png",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Nessus.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "z.Screenshots/Pasted image 20240910033314.png",
     "z.Screenshots/Pasted image 20240910033217.png",
     "z.Screenshots/Pasted image 20240910024925.png",
@@ -156,15 +169,10 @@
     "z.Screenshots/Pasted image 20240910022927.png",
     "z.Screenshots/Pasted image 20240910022812.png",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
-    "(!!)Frameworks & Tools.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "z.Screenshots/Pasted image 20240909205501.png",
     "z.Screenshots/Pasted image 20240909205431.png",
     "z.Screenshots/Pasted image 20240909205345.png",
-    "z.Screenshots/Pasted image 20240909205233.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
@@ -173,23 +181,15 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/Security Enginner/IPS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/PenTesting/Firewalls.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
     "RedTeam/ZeroPointSecurity",
     "RedTeam",
     "TryHackMe/Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
     "TryHackMe/Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
-    "TryHackMe/Security Enginner/IDS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "A)Frameworks & Tools.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
     "Untitled.canvas",
     "RedTeam.ZeroPointSecurity",
     "TryHackMe/Cloud/AWS",
