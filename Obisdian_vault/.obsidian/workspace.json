@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e1afc06c71f942e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c69db28575354694",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "db10e51778579b1d",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db10e51778579b1d",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240911041955.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
@@ -213,7 +189,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
     "RedTeam/ZeroPointSecurity",
     "RedTeam",
-    "TryHackMe/Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled.canvas",
     "RedTeam.ZeroPointSecurity",
