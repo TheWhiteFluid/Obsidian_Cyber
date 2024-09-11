@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(!!)Frameworks & Tools.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md"
               }
             }
           }
@@ -146,12 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "4e1afc06c71f942e",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240911030030.png",
+    "z.Screenshots/Pasted image 20240911025808.png",
+    "z.Screenshots/Pasted image 20240911025546.png",
+    "z.Screenshots/Pasted image 20240911024459.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240523113921.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
-    "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Nessus.md",
@@ -167,12 +172,7 @@
     "z.Screenshots/Pasted image 20240910024828.png",
     "z.Screenshots/Pasted image 20240910024802.png",
     "z.Screenshots/Pasted image 20240910022927.png",
-    "z.Screenshots/Pasted image 20240910022812.png",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
-    "z.Screenshots/Pasted image 20240909205501.png",
-    "z.Screenshots/Pasted image 20240909205431.png",
-    "z.Screenshots/Pasted image 20240909205345.png",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
