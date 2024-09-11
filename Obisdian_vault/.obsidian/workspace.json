@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c69db28575354694",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db10e51778579b1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md"
               }
             }
           }
@@ -146,14 +171,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e1afc06c71f942e",
+  "active": "db10e51778579b1d",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+    "z.Screenshots/Pasted image 20240911033854.png",
+    "(!!)Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20240911032130.png",
+    "z.Screenshots/Pasted image 20240911031921.png",
     "z.Screenshots/Pasted image 20240911030030.png",
     "z.Screenshots/Pasted image 20240911025808.png",
     "z.Screenshots/Pasted image 20240911025546.png",
     "z.Screenshots/Pasted image 20240911024459.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240523113921.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
@@ -164,14 +195,9 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "z.Screenshots/Pasted image 20240910033314.png",
     "z.Screenshots/Pasted image 20240910033217.png",
-    "z.Screenshots/Pasted image 20240910024925.png",
-    "z.Screenshots/Pasted image 20240910024828.png",
-    "z.Screenshots/Pasted image 20240910024802.png",
-    "z.Screenshots/Pasted image 20240910022927.png",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
@@ -188,7 +214,6 @@
     "RedTeam/ZeroPointSecurity",
     "RedTeam",
     "TryHackMe/Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
-    "TryHackMe/Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled.canvas",
     "RedTeam.ZeroPointSecurity",

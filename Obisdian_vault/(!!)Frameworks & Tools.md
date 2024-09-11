@@ -39,7 +39,7 @@
 -  https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
 -  https://github.com/danielmiessler/SecLists. (Wordlists & Shells)
 - https://www.revshells.com/ (Reverse Shell Generator)
-
+  - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
 ## **Priv. Escalation**
 ### **Linux:**
 https://gtfobins.github.io/
