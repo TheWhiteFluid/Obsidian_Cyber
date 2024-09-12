@@ -71,7 +71,7 @@ String has been reflected inside an anchor `href` attribute
 String has been reflected inside a JavaScript string
 ![[Pasted image 20240713173758.png]]
 ![[Pasted image 20240713173710.png]]
-## 8.
+## 8. XSS in a storeID parameter
 
 JavaScript extracts a `storeId` parameter from the `location.search` source. It then uses `document.write` to create a new option in the select element for the stock checker functionality.
 
