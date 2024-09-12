@@ -34,12 +34,12 @@
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
 #### XSS
 - http://www.xss-payloads.com (XSS payloads)
-#### Shell
+#### Reverse Shell
 -  https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Reverse Shell Cheat Sheet)
 -  https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
 -  https://github.com/danielmiessler/SecLists. (Wordlists & Shells)
-
-
+- https://www.revshells.com/ (Reverse Shell Generator)
+  - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
 ## **Priv. Escalation**
 ### **Linux:**
 https://gtfobins.github.io/
