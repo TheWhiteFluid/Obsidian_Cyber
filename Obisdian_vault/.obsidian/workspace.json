@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md"
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "fde64aeeb2966f68",
   "lastOpenFiles": [
+    "PortSwigger.Web-Security.Labs/0.To do.md",
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
@@ -201,7 +202,6 @@
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
     "RedTeam/ZeroPointSecurity",
-    "TryHackMe/Cloud/Security Engineer.md",
     "TryHackMe/Cloud/Security Engineer",
     "TryHackMe/Cloud/AWS",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
