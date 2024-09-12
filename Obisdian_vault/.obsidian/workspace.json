@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md"
               }
             }
           }
@@ -159,20 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "24a7fec9abcf8788",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+    "z.Screenshots/Pasted image 20240912032544.png",
+    "z.Screenshots/Pasted image 20240912032441.png",
+    "z.Screenshots/Pasted image 20240912032233.png",
+    "z.Screenshots/Pasted image 20240912032112.png",
     "z.Screenshots/Pasted image 20240912031828.png",
     "z.Screenshots/Pasted image 20240912031641.png",
     "z.Screenshots/Pasted image 20240912031549.png",
     "z.Screenshots/Pasted image 20240912031350.png",
     "z.Screenshots/Pasted image 20240912025017.png",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
     "z.Screenshots/Pasted image 20240912025759.png",
-    "z.Screenshots/Pasted image 20240912025717.png",
-    "z.Screenshots/Pasted image 20240912025714.png",
-    "z.Screenshots/Pasted image 20240912025503.png",
-    "z.Screenshots/Pasted image 20240912025359.png",
-    "z.Screenshots/Pasted image 20240912025317.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
