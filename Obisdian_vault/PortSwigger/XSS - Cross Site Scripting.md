@@ -83,4 +83,4 @@ Adding a `storeId` query parameter to the URL and enter a random alphanumeric 
 
 ![[Pasted image 20240713182122.png]]
 
-## 8. DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+## 9. DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded

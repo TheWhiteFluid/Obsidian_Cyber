@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger/XSS - Cross Site Scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger/XSS - Cross Site Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger/XSS - Cross Site Scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md"
+                "file": "PortSwigger/XSS - Cross Site Scripting.md"
               }
             }
           }
@@ -161,6 +161,9 @@
   },
   "active": "24a7fec9abcf8788",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
     "z.Screenshots/Pasted image 20240912032544.png",
     "z.Screenshots/Pasted image 20240912032441.png",
@@ -172,10 +175,9 @@
     "z.Screenshots/Pasted image 20240912031350.png",
     "z.Screenshots/Pasted image 20240912025017.png",
     "z.Screenshots/Pasted image 20240912025759.png",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/PortSwigger.Web-Security.Labs/To do.md",
+    "PortSwigger/0.To do.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
@@ -196,7 +198,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
     "RedTeam/ZeroPointSecurity",
