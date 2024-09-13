@@ -390,3 +390,21 @@ This lab contains a [reflected cross-site scripting](https://portswigger.net/we
 	
 	- if we try to escape the backslash using our own backlash we see that is escaped as well		![[Pasted image 20240913195113.png]]
 - To bypass this escaping mechanism, we need to completely break out of the JavaScript string and inject our own script.	![[Pasted image 20240913195137.png]]
+### **Mitigation**:
+
+1. **Sanitize User Input**: Ensure that all user inputs are properly escaped and sanitized before being reflected in the HTML or JavaScript context.
+2. **Use CSP (Content Security Policy)**: Implement a strict CSP to block the execution of inline JavaScript.
+3. **Encode Output**: Properly encode special characters when reflecting user inputs, especially inside sensitive contexts like JavaScript or HTML.
+
+## **16. Reflected XSS into a JavaScript string with angle brackets and double quotes HTML-encoded and single quotes escaped**
+
+This lab contains a [reflected cross-site scripting](https://portswigger.net/web-security/cross-site-scripting/reflected) vulnerability in the search query tracking functionality where angle brackets and double are HTML encoded and single quotes are escaped.
+
+1. Submit a random alphanumeric string in the search box, then use Burp Suite to intercept the search request and send it to Burp Repeater.
+2. Observe that the random string has been reflected inside a JavaScript string.
+3. Try sending the payload `test'payload` and observe that your single quote gets backslash-escaped, preventing you from breaking out of the string.
+4. Try sending the payload `test\payload` and observe that your backslash doesn't get escaped.
+5. Replace your input with the following payload to break out of the JavaScript string and inject an alert:
+    `\'-alert(1)//`
+
+1. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in the browser. When you load the page it should trigger an alert.
