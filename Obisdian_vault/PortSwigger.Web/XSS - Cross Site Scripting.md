@@ -11,8 +11,6 @@
 3) https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection
 4) https://portswigger.net/web-security/cross-site-scripting/cheat-sheet (cheat sheet)
 
-
-
 ## **1. Stored XSS into HTML context with nothing encoded**
 
 ```
@@ -352,7 +350,6 @@ The `<svg>` tag can be used in **XSS (Cross-Site Scripting)** attacks because it
 - In this example, the `onload` event of the `<svg>` tag is used to trigger a JavaScript `alert(1)` when the SVG is loaded into the browser. This is a basic example, but it demonstrates how SVG tags can be used to run JavaScript in the browser.
 ### Why SVG is Vulnerable:
 1. **SVG Supports Scripting and Events**: SVG allows you to include event handlers like `onload`, `onclick`, etc., which can execute JavaScript code.
-    
 2. **SVG is Often Trusted**: Websites often allow SVG content to be uploaded or embedded, sometimes without properly sanitizing the SVG content.
 
 ### Other Ways to Use SVG for XSS Injection:
@@ -360,8 +357,6 @@ The `<svg>` tag can be used in **XSS (Cross-Site Scripting)** attacks because it
 #### 1. **Using `<script>` Inside `<svg>`:**
 
 `<svg>   <script>alert(1)</script> </svg>`
-
-This injects an inline `<script>` within the SVG, which runs when the SVG is loaded.
 
 #### 2. **Using `<animate>` with Event Listeners:**
 

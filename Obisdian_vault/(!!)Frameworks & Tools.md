@@ -1,10 +1,13 @@
-## **Map & Technologies**
+## #Map/Technologies
+
 -  https://github.com/Ignitetechnologies/Mindmap
-## **Info**
+
+## #Info
 -  https://dnsdumpster.com/ (DNS)
 -  https://www.shodan.io/ (DNS and more)
 - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml (Service names & Port numbers)
-## **A1)Frameworks**
+
+## #Frameworks
 -  https://owasp.org/ (OWASP)
 	 - [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
 	 - https://owasp.org/www-project-secure-headers
@@ -12,12 +15,19 @@
 -  https://www.nist.gov/cyberframework (NIST)
 -  https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
 
-## **A2)Tools**
+## #OSINT
+- https://haveibeenpwned.com/ (databreach - find email)
+- https://www.dehashed.com/ (leaked personal data)
+
+
+## #Tools
 - https://pentestmonkey.net/ (pentest cheatsheet)
 - https://github.com/cyberheartmi9/PayloadsAllTheThings (Payloads)
+
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 - https://www.monkey.org/~dugsong/fragroute/ (Packets Fragmentation)
 - [CyberChef](https://icyberchef.com/) (Escaped Unicodes) 
+
 ### Hashes
 -  https://crackstation.net (Hashes database)
 ### Brute Force
@@ -28,7 +38,7 @@
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
 
 
-### **WEB**
+### #WEB
 #### Injections
 -  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md (Injections)
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
@@ -40,7 +50,10 @@
 -  https://github.com/danielmiessler/SecLists. (Wordlists & Shells)
 - https://www.revshells.com/ (Reverse Shell Generator)
   - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
-## **Priv. Escalation**
+
+
+
+## #PrivEscalation
 ### **Linux:**
 https://gtfobins.github.io/
 #### **Enumeration**
@@ -66,16 +79,10 @@ https://gtfobins.github.io/
 - Metasploit (`multi/recon/local_exploit_suggester` module)
 
 
-### **Red Team**
+
+### #RedTeam
 https://github.com/bigb0sss/RedTeam-OffensiveSecurity/tree/master/01-CobaltStrike (Cobalt Strike)
-
-
-
-
-
-
-
-## **A3)Malware Detection**
+## Malware Detection
 1. www.virustotal.com
 2. www.hybrid-analysis.com
 3. www.threatminer.com
