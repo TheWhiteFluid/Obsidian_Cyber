@@ -3,17 +3,13 @@
    a. https://portswigger.net/web-security/cross-site-scripting#reflected-cross-site-scripting
    b. https://portswigger.net/web-security/cross-site-scripting/stored
    c. https://portswigger.net/web-security/cross-site-scripting/dom-based
-   
+
 2) https://portswigger.net/web-security/cross-site-scripting/exploiting
 	 https://portswigger.net/web-security/cross-site-scripting/contexts
-
 1) https://portswigger.net/web-security/cross-site-scripting/content-security-policy
-
 2) https://portswigger.net/web-security/cross-site-scripting/dangling-markup
-
 3) https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection
-
-4) https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+4) https://portswigger.net/web-security/cross-site-scripting/cheat-sheet (cheat sheet)
 
 
 
@@ -264,3 +260,59 @@ In an attempt to prevent [XSS](https://portswigger.net/web-security/cross-site-
     - Ensure that all user inputs are properly encoded before being rendered to the browser. Encoding should handle special characters like `<`, `>`, and `"` to prevent XSS vulnerabilities.
 
 ## **12. Reflected XSS into HTML context with most tags and attributes blocked**
+
+This lab contains a [reflected XSS](https://portswigger.net/web-security/cross-site-scripting/reflected) vulnerability in the search functionality but uses a web application firewall (WAF) to protect against common XSS vectors.
+
+1. Inject a standard XSS vector, such as:
+    `<img src=1 onerror=print()>`
+    
+1. Observe that this gets blocked. In the next few steps, we'll use use Burp Intruder to test which tags and attributes are being blocked.
+2. Open Burp's browser and use the search function in the lab. Send the resulting request to Burp Intruder.
+3. In Burp Intruder, in the Positions tab, replace the value of the search term with: `<>`
+4. Place the cursor between the angle brackets and click "Add §" twice, to create a payload position. The value of the search term should now look like: `<§§>`
+5. Visit the [XSS cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) and click "Copy tags to clipboard".
+6. In Burp Intruder, in the Payloads tab, click "Paste" to paste the list of tags into the payloads list. Click "Start attack".
+7. When the attack is finished, review the results. Note that all payloads caused an HTTP 400 response, except for the `body` payload, which caused a 200 response.
+8. Go back to the Positions tab in Burp Intruder and replace your search term with:
+    `<body%20=1>`
+
+1. Place the cursor before the `=` character and click "Add §" twice, to create a payload position. The value of the search term should now look like: `<body%20§§=1>`
+2. Visit the [XSS cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) and click "copy events to clipboard".
+3. In Burp Intruder, in the Payloads tab, click "Clear" to remove the previous payloads. Then click "Paste" to paste the list of attributes into the payloads list. Click "Start attack".
+4. When the attack is finished, review the results. Note that all payloads caused an HTTP 400 response, except for the `onresize` payload, which caused a 200 response.
+5. Go to the exploit server and paste the following code, replacing `YOUR-LAB-ID` with your lab ID:
+    `<iframe src="https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=print()%3E" onload=this.style.width='100px'>`
+
+
+- first we have to try out for different tags that are not blocked by WAF
+	![[Pasted image 20240913043552.png]]
+		![[Pasted image 20240913043613.png]]
+			![[Pasted image 20240913043631.png]]
+				![[Pasted image 20240913043651.png]]
+
+- now for onload method (we need to find a substitute method that is not blocked by WAF)
+	![[Pasted image 20240913043719.png]]
+		![[Pasted image 20240913044102.png]]
+			![[Pasted image 20240913044126.png]]
+				![[Pasted image 20240913044154.png]]
+					![[Pasted image 20240913044215.png]]
+
+	- using iframe method with onload resize to automatically generate the XXS without user interaction
+	![[Pasted image 20240913044440.png]]
+
+## **13.Reflected XSS into HTML context with all tags blocked except custom ones**
+
+This injection creates a custom tag with the ID `x`, which contains an `onfocus` event handler that triggers the `alert` function. The hash at the end of the URL focuses on this element as soon as the page is loaded, causing the `alert` payload to be called.
+
+ Go to the exploit server and paste the following code, replacing `YOUR-LAB-ID` with your lab ID:
+    `<script> location = 'https://YOUR-LAB-ID.web-security-academy.net/?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x'; </script>`
+
+	![[Pasted image 20240913050102.png]]
+	![[Pasted image 20240913050151.png]]
+		![[Pasted image 20240913050241.png]]
+			![[Pasted image 20240913050203.png]]
+
+- now we will create a script where we will place our malicious URL generated in order to generate an automatically XXS when user will acces it:
+	- ![[Pasted image 20240913050351.png]]
+
+## **14. Reflected XSS with some SVG markup allowed**
