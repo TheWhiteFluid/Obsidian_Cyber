@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "8cfb3c5aa7c9da02",
+        "id": "4988ad18b85fe7d2",
         "type": "tabs",
         "children": [
           {
-            "id": "852d501d952c20fe",
+            "id": "ab139cc7fd2970b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "24a7fec9abcf8788",
+            "id": "fde64aeeb2966f68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,11 +61,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Path Traversal",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": true,
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.51103591918945
+    "width": 272.5
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md"
+                "file": "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md"
               }
             }
           }
@@ -159,54 +159,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24a7fec9abcf8788",
+  "active": "fde64aeeb2966f68",
   "lastOpenFiles": [
+    "PortSwigger.Web-Security.Labs/SQL Injection.md",
+    "z.Screenshots/Pasted image 20240913050351.png",
+    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
+    "z.Screenshots/Pasted image 20240913050241.png",
+    "z.Screenshots/Pasted image 20240913050203.png",
+    "z.Screenshots/Pasted image 20240913050151.png",
+    "z.Screenshots/Pasted image 20240913050102.png",
+    "z.Screenshots/Pasted image 20240913050057.png",
+    "z.Screenshots/Pasted image 20240913043552.png",
+    "z.Screenshots/Pasted image 20240913044440.png",
+    "z.Screenshots/Pasted image 20240913044215.png",
+    "z.Screenshots/Pasted image 20240913044154.png",
+    "PortSwigger.Web-Security.Labs/0.To do.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
-    "z.Screenshots/Pasted image 20240912032544.png",
-    "z.Screenshots/Pasted image 20240912032441.png",
-    "z.Screenshots/Pasted image 20240912032233.png",
-    "z.Screenshots/Pasted image 20240912032112.png",
-    "z.Screenshots/Pasted image 20240912031828.png",
-    "z.Screenshots/Pasted image 20240912031641.png",
-    "z.Screenshots/Pasted image 20240912031549.png",
-    "z.Screenshots/Pasted image 20240912031350.png",
-    "z.Screenshots/Pasted image 20240912025017.png",
-    "z.Screenshots/Pasted image 20240912025759.png",
-    "PortSwigger/0.To do.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
-    "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Post Exploitation Tools.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Nessus.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+    "TryHackMe/Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
+    "TryHackMe/Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
+    "TryHackMe/Cloud/AWS/Pawned Labs",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
-    "RedTeam/ZeroPointSecurity/Red Team Ops I.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+    "Untitled",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
+    "TryHackMe/PenTesting/IPS.md",
+    "TryHackMe/Cloud/Pawned Labs/SSRF on GoogleCloud.md",
+    "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
-    "RedTeam",
-    "TryHackMe/Cloud/AWS/Pawned Labs",
-    "Untitled.canvas",
-    "RedTeam.ZeroPointSecurity",
+    "TryHackMe/Cloud/Security Engineer",
     "TryHackMe/Cloud/AWS",
-    "TryHackMe/Cloud/DevSecOps",
-    "TryHackMe/Cloud"
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks and Exploits",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis",
+    "Untitled.canvas"
   ]
 }
