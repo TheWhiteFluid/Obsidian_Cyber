@@ -316,3 +316,77 @@ This injection creates a custom tag with the ID `x`, which contains an `onfocu
 	- ![[Pasted image 20240913050351.png]]
 
 ## **14. Reflected XSS with some SVG markup allowed**
+This lab has a simple [reflected XSS](https://portswigger.net/web-security/cross-site-scripting/reflected) vulnerability. The site is blocking common tags but misses some SVG tags and events.
+
+1. Inject a standard XSS payload, such as:
+    `<img src=1 onerror=alert(1)>`
+
+1. Observe that this payload gets blocked. In the next few steps, we'll use Burp Intruder to test which tags and attributes are being blocked.
+2. Open Burp's browser and use the search function in the lab. Send the resulting request to Burp Intruder.
+3. In Burp Intruder, in the Positions tab, click "Clear §".
+4. In the request template, replace the value of the search term with: `<>`
+5. Place the cursor between the angle brackets and click "Add §" twice to create a payload position. The value of the search term should now be: `<§§>`
+6. Visit the [XSS cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) and click "Copy tags to clipboard".
+7. In Burp Intruder, in the Payloads tab, click "Paste" to paste the list of tags into the payloads list. Click "Start attack".
+8. When the attack is finished, review the results. Observe that all payloads caused an HTTP 400 response, except for the ones using the `<svg>`, `<animatetransform>`, `<title>`, and `<image>` tags, which received a 200 response.
+10. Go back to the Positions tab in Burp Intruder and replace your search term with:
+    `<svg><animatetransform%20=1>`
+
+1. Place the cursor before the `=` character and click "Add §" twice to create a payload position. The value of the search term should now be:
+    `<svg><animatetransform%20§§=1>`
+
+1. Visit the [XSS cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) and click "Copy events to clipboard".
+2. In Burp Intruder, in the Payloads tab, click "Clear" to remove the previous payloads. Then click "Paste" to paste the list of attributes into the payloads list. Click "Start attack".
+3. When the attack is finished, review the results. Note that all payloads caused an HTTP 400 response, except for the `onbegin` payload, which caused a 200 response.
+
+    Visit the following URL in the browser to confirm that the alert() function is called and the lab is solved:
+    `https://YOUR-LAB-ID.web-security-academy.net/?search=%22%3E%3Csvg%3E%3Canimat`
+
+	![[Pasted image 20240913182924.png]]
+		![[Pasted image 20240913184634.png]]
+
+The `<svg>` tag can be used in **XSS (Cross-Site Scripting)** attacks because it's a container for graphics that can include various elements, including scripts and events. Since many websites allow the inclusion of SVG code, attackers can leverage it to inject malicious scripts.
+### Example of an SVG-Based XSS Attack:
+`<svg onload="alert(1)"></svg>`
+
+- In this example, the `onload` event of the `<svg>` tag is used to trigger a JavaScript `alert(1)` when the SVG is loaded into the browser. This is a basic example, but it demonstrates how SVG tags can be used to run JavaScript in the browser.
+### Why SVG is Vulnerable:
+1. **SVG Supports Scripting and Events**: SVG allows you to include event handlers like `onload`, `onclick`, etc., which can execute JavaScript code.
+    
+2. **SVG is Often Trusted**: Websites often allow SVG content to be uploaded or embedded, sometimes without properly sanitizing the SVG content.
+
+### Other Ways to Use SVG for XSS Injection:
+
+#### 1. **Using `<script>` Inside `<svg>`:**
+
+`<svg>   <script>alert(1)</script> </svg>`
+
+This injects an inline `<script>` within the SVG, which runs when the SVG is loaded.
+
+#### 2. **Using `<animate>` with Event Listeners:**
+
+`<svg>   <animate onbegin="alert(1)"></animate> </svg>`
+
+The `onbegin` event in the `<animate>` element can trigger JavaScript when the animation begins.
+
+#### 3. **Using `<a>` for Click Events:**
+
+`<svg>   <a href="javascript:alert(1)"> <text x="20" y="20">Click Me</text>   </a> </svg>`
+
+This example uses a clickable `<text>` element, where the `href` is a `javascript:` URL that triggers an `alert`.
+
+## **15. Reflected XSS into a JavaScript string with single quote and backslash escaped**
+
+This lab contains a [reflected cross-site scripting](https://portswigger.net/web-security/cross-site-scripting/reflected) vulnerability in the search query tracking functionality. The reflection occurs inside a JavaScript string with single quotes and backslashes escaped.
+
+1. Submit a random alphanumeric string in the search box, then use Burp Suite to intercept the search request and send it to Burp Repeater.
+2. Observe that the random string has been reflected inside a JavaScript string.
+3. Try sending the payload `test'payload` and observe that your single quote gets backslash-escaped, preventing you from breaking out of the string.
+4. Replace your input with the following payload to break out of the script block and inject a new script:
+    `</script><script>alert(1)</script>`
+
+- single quote is escaped as backslash
+	![[Pasted image 20240913195042.png]]
+	
+	- if we try to escape the backslash using our own backlash we see that is escaped as well		![[Pasted image 20240913195113.png]]
+- To bypass this escaping mechanism, we need to completely break out of the JavaScript string and inject our own script.	![[Pasted image 20240913195137.png]]

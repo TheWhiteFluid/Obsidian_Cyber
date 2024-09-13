@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger/XSS - Cross Site Scripting.md"
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md"
               }
             }
           }
@@ -159,24 +159,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fde64aeeb2966f68",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "PortSwigger/SQL Injection.md",
+    "z.Screenshots/Pasted image 20240913195137.png",
+    "z.Screenshots/Pasted image 20240913195113.png",
+    "z.Screenshots/Pasted image 20240913195042.png",
+    "z.Screenshots/Pasted image 20240913184634.png",
+    "z.Screenshots/Pasted image 20240913184615.png",
+    "z.Screenshots/Pasted image 20240913182924.png",
     "PortSwigger/XSS - Cross Site Scripting.md",
+    "PortSwigger.Web/XSS - Cross Site Scripting.md",
+    "PortSwigger/SQL Injection.md",
     "PortSwigger/0.To do.md",
-    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
-    "PortSwigger.Web-Security.Labs/SQL Injection.md",
+    "PortSwigger.Web/SQL Injection.md",
     "z.Screenshots/Pasted image 20240913050351.png",
     "z.Screenshots/Pasted image 20240913050241.png",
     "z.Screenshots/Pasted image 20240913050203.png",
     "z.Screenshots/Pasted image 20240913050151.png",
     "z.Screenshots/Pasted image 20240913050102.png",
-    "z.Screenshots/Pasted image 20240913050057.png",
-    "z.Screenshots/Pasted image 20240913043552.png",
-    "z.Screenshots/Pasted image 20240913044440.png",
-    "z.Screenshots/Pasted image 20240913044215.png",
-    "z.Screenshots/Pasted image 20240913044154.png",
-    "PortSwigger.Web-Security.Labs/0.To do.md",
+    "PortSwigger.Web/0.To do.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
@@ -199,7 +200,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IDS.md",
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
     "TryHackMe/Cloud/Security Engineer",
