@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md"
+                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md"
               }
             }
           }
@@ -146,11 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ab139cc7fd2970b7",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240914030949.png",
+    "z.Screenshots/Pasted image 20240914030938.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "z.Screenshots/Pasted image 20240914014658.png",
     "(!!)Frameworks & Tools.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "PortSwigger.Web/SQL Injection.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
@@ -168,8 +170,6 @@
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "z.Screenshots/Pasted image 20240913050351.png",
     "z.Screenshots/Pasted image 20240913050241.png",
-    "z.Screenshots/Pasted image 20240913050203.png",
-    "z.Screenshots/Pasted image 20240913050151.png",
     "PortSwigger.Web-Security.Labs/0.To do.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",

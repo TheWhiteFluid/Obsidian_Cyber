@@ -403,3 +403,71 @@ This lab contains a [reflected cross-site scripting](https://portswigger.net/we
     `\'-alert(1)//`
 
 1. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in the browser. When you load the page it should trigger an alert.
+
+as in previous examples , quote is encoded by server by a backslash --> we are tryin to escape that  backslash using ours backslash(in this case it is no more escaped)  --> concatenate the payload in the string using (-)substraction --> commenting everything else after the payload :)
+
+
+## **17. Stored XSS into `onclick` event with angle brackets and double quotes HTML-encoded and single quotes and backslash escaped**
+1. Post a comment with a random alphanumeric string in the "Website" input, then use Burp Suite to intercept the request and send it to Burp Repeater.
+2. Make a second request in the browser to view the post and use Burp Suite to intercept the request and send it to Burp Repeater.
+3. Observe that the random string in the second Repeater tab has been reflected inside an `onclick` event handler attribute.
+4. Repeat the process again but this time modify your input to inject a JavaScript URL that calls `alert`, using the following payload:
+    `http://foo?&apos;-alert(1)-&apos;`
+
+![[Pasted image 20240914030938.png]]
+	![[Pasted image 20240914030949.png]]
+
+This scenario describes a **Stored Cross-Site Scripting (XSS)** attack where user input is being stored on the server and then reflected into an `onclick` event handler in HTML. The input is being partially sanitized, but not fully, leaving room for an attacker to exploit this vulnerability.
+
+### Breakdown of the Context
+1. **Stored XSS**: This means the malicious input is saved on the server and is later served to other users. When users interact with the affected element (like clicking a button), the malicious script executes in their browser.
+2. **Context**: The input is injected into an `onclick` event handler. This handler is used in HTML elements to define JavaScript code that runs when the element is clicked.
+3. **Partial Sanitization**:
+    - **Angle brackets (`<` and `>`)** are HTML-encoded to prevent injection of raw HTML tags.
+    - **Double quotes (`"`)** are also HTML-encoded to prevent breaking out of HTML attributes.
+    - **Single quotes (`'`)** and **backslashes (`\`)** are escaped to prevent breaking out of the JavaScript string.
+
+### Initial Input Reflection
+Let's assume an example of how the input might be reflected in an `onclick` event handler:
+
+`<button onclick="doSomething('USER_INPUT')">Click me</button>`
+
+After injecting the sanitized input, it could look like this:
+
+`<button onclick="doSomething('&apos;-alert(1)-&apos;')">Click me</button>`
+
+Even though some encoding and escaping are applied, this does not entirely prevent XSS because the JavaScript context in an `onclick` event can still execute code. An attacker can carefully craft a payload to bypass these filters.
+
+### The Payload: `http://foo?&apos;-alert(1)-&apos;`
+The attacker provides this payload as the input: `http://foo?&apos;-alert(1)-&apos;`. Let's break it down:
+
+1. **HTML-encoded Single Quotes (`&apos;`)**: These represent the single quote character (`'`) in HTML. When decoded, they will break out of the existing single-quoted string.
+2. **Payload Breakdown**:
+    - `&apos;` translates to `'`, which ends the current JavaScript string.
+    - `-alert(1)-` is a JavaScript expression that will be executed once the context is broken.
+    - `&apos;` again ends this injected JavaScript code.
+
+### Injecting the Payload
+When the payload is inserted into the `onclick` attribute, it will look something like this before decoding:
+
+`<button onclick="doSomething('&apos; -alert(1)- &apos;')">Click me</button>`
+
+### Resulting Code After Decoding
+
+When the HTML is parsed and the `&apos;` entities are decoded, it becomes:
+
+`<button onclick="doSomething('' -alert(1)- '')">Click me</button>`
+
+Now, it looks like this:
+
+- The `onclick` event now contains: `doSomething('' -alert(1)- '')`
+- The JavaScript string is broken because the first `&apos;` decodes to a single quote (`'`), ending the string.
+- `-alert(1)-` is then treated as JavaScript code, which will execute and show an alert when the button is clicked.
+
+### Mitigation
+1. **Proper Input Validation**: Validate and sanitize inputs on the server side, ensuring no harmful scripts can be executed.
+2. **Output Encoding**: Encode user input appropriately based on the context where it's used. For event handler attributes, this means ensuring that input can't break out of the JavaScript context.
+3. **Use Safe Methods**: Avoid inserting user input directly into inline event handlers. Instead, use event listeners added through JavaScript code.
+
+## **18. Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped**
+
