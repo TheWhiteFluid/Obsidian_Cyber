@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger.Web/SQL Injection.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger.Web/SQL Injection.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger.Web/SQL Injection.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger.Web/SQL Injection.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "ab139cc7fd2970b7",
   "lastOpenFiles": [
+    "PortSwigger.Web/SQL Injection.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240915034624.png",
     "z.Screenshots/Pasted image 20240915034504.png",
@@ -166,7 +167,6 @@
     "z.Screenshots/Pasted image 20240914030938.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "(!!)Frameworks & Tools.md",
-    "PortSwigger.Web/SQL Injection.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
