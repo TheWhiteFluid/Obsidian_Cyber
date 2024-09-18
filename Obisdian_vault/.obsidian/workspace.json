@@ -13,13 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
+                "file": "PortSwigger.Web/SQL Injection.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "5310507cbc60ae1e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20240918095729.png"
+              }
+            }
+          },
+          {
+            "id": "d50ea9de26c78737",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20240918100905.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
+                "file": "z.Screenshots/Pasted image 20240918100905.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
+                "file": "z.Screenshots/Pasted image 20240918100905.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md"
+                "file": "z.Screenshots/Pasted image 20240918100905.png"
               }
             }
           }
@@ -146,25 +167,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab139cc7fd2970b7",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240918095729.png",
+    "z.Screenshots/Pasted image 20240918095940.png",
     "PortSwigger.Web/SQL Injection.md",
+    "z.Screenshots/Pasted image 20240918102633.png",
+    "z.Screenshots/Pasted image 20240918101148.png",
+    "z.Screenshots/Pasted image 20240918100938.png",
+    "z.Screenshots/Pasted image 20240918100905.png",
+    "z.Screenshots/Pasted image 20240918100813.png",
+    "z.Screenshots/Pasted image 20240918100602.png",
+    "z.Screenshots/Pasted image 20240918100131.png",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240915034624.png",
-    "z.Screenshots/Pasted image 20240915034504.png",
-    "z.Screenshots/Pasted image 20240915034247.png",
-    "z.Screenshots/Pasted image 20240915034146.png",
-    "z.Screenshots/Pasted image 20240915033742.png",
-    "z.Screenshots/Pasted image 20240915033650.png",
-    "z.Screenshots/Pasted image 20240915033546.png",
-    "z.Screenshots/Pasted image 20240915033425.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "Untitled.md",
-    "z.Screenshots/Pasted image 20240914030949.png",
-    "z.Screenshots/Pasted image 20240914030938.png",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
@@ -183,10 +207,7 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "Untitled",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
     "TryHackMe/Cloud/Security Engineer",

