@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md"
+                "file": "(!!)Frameworks & Tools.md"
               }
             }
           }
@@ -181,6 +181,7 @@
   },
   "active": "2306653005572eeb",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
@@ -218,7 +219,6 @@
     "TryHackMe/Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/Cloud/Pawned Labs",
