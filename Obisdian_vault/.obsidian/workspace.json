@@ -8,38 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab139cc7fd2970b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PortSwigger.Web/SQL Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5310507cbc60ae1e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240918095729.png"
-              }
-            }
-          },
-          {
-            "id": "d50ea9de26c78737",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240918100905.png"
-              }
-            }
-          },
-          {
             "id": "2306653005572eeb",
             "type": "leaf",
             "state": {
@@ -57,14 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux shortcuts.md",
+                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -130,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux shortcuts.md",
+                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux shortcuts.md",
+                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux shortcuts.md"
+                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md"
               }
             }
           }
@@ -193,26 +162,28 @@
   },
   "active": "de98bd46a6ccde88",
   "lastOpenFiles": [
-    "(!!)Frameworks & Tools.md",
-    "Linux shortcuts.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+    "PortSwigger.Web/SQL Injection.md",
+    "PortSwigger.Web/0)Info.md",
     "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
+    "Linux shortcuts.md",
+    "z.Screenshots/Pasted image 20240920210450.png",
+    "z.Screenshots/Pasted image 20240920210345.png",
+    "z.Screenshots/Pasted image 20240920210319.png",
+    "z.Screenshots/Pasted image 20240920210251.png",
+    "z.Screenshots/Pasted image 20240920205439.png",
+    "Untitled.md",
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
     "z.Screenshots/Pasted image 20240918100905.png",
     "z.Screenshots/Pasted image 20240918095729.png",
     "z.Screenshots/Pasted image 20240918095940.png",
-    "PortSwigger.Web/SQL Injection.md",
     "z.Screenshots/Pasted image 20240918102633.png",
     "z.Screenshots/Pasted image 20240918101148.png",
-    "z.Screenshots/Pasted image 20240918100938.png",
-    "z.Screenshots/Pasted image 20240918100813.png",
-    "z.Screenshots/Pasted image 20240918100602.png",
-    "z.Screenshots/Pasted image 20240918100131.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
-    "z.Screenshots/Pasted image 20240915034624.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
@@ -222,14 +193,11 @@
     "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
-    "PortSwigger.Web/0.To do.md",
     "PortSwigger.Web",
     "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "PortSwigger.Web-Security.Labs/0.To do.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
-    "TryHackMe/Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
-    "TryHackMe/Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
