@@ -23,11 +23,9 @@
             "id": "de98bd46a6ccde88",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20240921183005.png"
               }
             }
           }
@@ -82,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -99,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
+                "file": "z.Screenshots/Pasted image 20240921183005.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
+                "file": "z.Screenshots/Pasted image 20240921183005.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger.Web/CSRF - Cross Site Request Forgery.md"
+                "file": "z.Screenshots/Pasted image 20240921183005.png"
               }
             }
           }
@@ -160,25 +157,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de98bd46a6ccde88",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Pasted image 20240922013015.png",
-    "Pasted image 20240922013007.png",
-    "Pasted image 20240922012739.png",
-    "Pasted image 20240922012718.png",
-    "Pasted image 20240922010507.png",
-    "Pasted image 20240922003858.png",
-    "Pasted image 20240922003407.png",
-    "Pasted image 20240922003356.png",
-    "Pasted image 20240921183028.png",
-    "Pasted image 20240921183005.png",
-    "(!!)Frameworks & Tools.md",
     "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
+    "z.Screenshots/Pasted image 20240924115940.png",
+    "z.Screenshots/Pasted image 20240924115507.png",
+    "z.Screenshots/Pasted image 20240924115441.png",
+    "z.Screenshots/Pasted image 20240924115100.png",
+    "z.Screenshots/Pasted image 20240922013015.png",
+    "z.Screenshots/Pasted image 20240922013007.png",
+    "z.Screenshots/Pasted image 20240922012739.png",
+    "z.Screenshots/Pasted image 20240922012718.png",
+    "z.Screenshots/Pasted image 20240922010507.png",
+    "z.Screenshots/Pasted image 20240922003858.png",
+    "(!!)Frameworks & Tools.md",
     "PortSwigger.Web/SQL Injection.md",
     "PortSwigger.Web/0)Info.md",
     "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "Linux shortcuts.md",
-    "z.Screenshots/Pasted image 20240920210450.png",
     "Untitled.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
