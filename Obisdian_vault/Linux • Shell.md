@@ -1,0 +1,1 @@
+Linux shortcuts: https://youtu.be/CVak_jswibM?si=zoDQYeTt8hm3fRG_

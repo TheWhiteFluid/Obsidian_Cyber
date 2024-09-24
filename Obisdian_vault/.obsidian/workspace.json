@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "unq",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,11 +78,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 256.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md",
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger.Web/XSS - Cross Site Scripting.md"
+                "file": "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md"
               }
             }
           }
@@ -161,6 +162,16 @@
   },
   "active": "fde64aeeb2966f68",
   "lastOpenFiles": [
+    "Linux • Shell.md",
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
+    "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240914030949.png",
     "z.Screenshots/Pasted image 20240914030938.png",
     "z.Screenshots/Pasted image 20240914014658.png",
@@ -171,12 +182,10 @@
     "z.Screenshots/Pasted image 20240913184615.png",
     "z.Screenshots/Pasted image 20240913182924.png",
     "PortSwigger/XSS - Cross Site Scripting.md",
-    "PortSwigger.Web/XSS - Cross Site Scripting.md",
     "PortSwigger/SQL Injection.md",
     "PortSwigger/0.To do.md",
     "PortSwigger.Web/SQL Injection.md",
     "z.Screenshots/Pasted image 20240913050351.png",
-    "z.Screenshots/Pasted image 20240913050241.png",
     "PortSwigger.Web/0.To do.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
@@ -187,19 +196,11 @@
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
-    "(!!)Frameworks & Tools.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "Untitled",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Firewalls.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/IPS.md",
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
     "TryHackMe/Cloud/Security Engineer",
