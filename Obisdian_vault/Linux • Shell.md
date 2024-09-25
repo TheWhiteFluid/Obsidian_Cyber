@@ -1,3 +1,4 @@
+Linux shortcuts: https://youtu.be/CVak_jswibM?si=zoDQYeTt8hm3fRG_
 TAB 
 CD  rapid [01:50](https://www.youtube.com/watch?v=CVak_jswibM&t=110s) 
 Fisiere terminal [02:12](https://www.youtube.com/watch?v=CVak_jswibM&t=132s) -

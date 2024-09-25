@@ -1,9 +1,9 @@
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
 
 SQL injection - done
-    XSS -
-    CSRF -
-    SSRF - 
+    XSS - done
+    CSRF - done
+    SSRF - in progress
     Path traversal - 
     File upload  -
 
