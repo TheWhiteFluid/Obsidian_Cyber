@@ -1,17 +1,17 @@
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
 
-SQL injection - done
-    XSS - done
-    CSRF - done
-    SSRF - in progress
-    Path traversal - 
-    File upload  -
-
-	## Authentication
-	## OS command injection
+Path traversal - 
+File upload  -
+Authentication -
+OS command injection - 
+HTTP Host header attacks -
+Web cache poisoning -
+Information disclosure -
+File upload vulnerabilities - 
+OAuth authentication - 
+JWT - 
 
 ### Vulnerabilities
-
 1. [XXE Injection](https://www.hackingarticles.in/comprehensive-guide-on-xxe-injection/)
 2. [CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)
 3. [Cross-Site Scripting Exploitation](https://www.hackingarticles.in/cross-site-scripting-exploitation/)
