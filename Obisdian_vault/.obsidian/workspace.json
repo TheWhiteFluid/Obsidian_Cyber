@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 205.51103591918945
+    "width": 200
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -148,6 +148,7 @@
   },
   "active": "ad2c6c78e5d44b2a",
   "lastOpenFiles": [
+    "Pasted image 20240926201314.png",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240925011636.png",
     "z.Screenshots/Pasted image 20240925194143.png",
