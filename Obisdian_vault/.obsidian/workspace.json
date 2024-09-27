@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ad2c6c78e5d44b2a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20240926201314.png"
-              }
-            }
-          },
-          {
             "id": "21cd84ebb0fedff5",
             "type": "leaf",
             "state": {
@@ -29,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,19 +148,19 @@
   },
   "active": "21cd84ebb0fedff5",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20240927014600.png",
+    "WEB.PortSwigger/XEE (XML external entity injection).md",
+    "z.Screenshots/Pasted image 20240927015321.png",
+    "z.Screenshots/Pasted image 20240927015032.png",
+    "z.Screenshots/Pasted image 20240927014716.png",
     "z.Screenshots/Pasted image 20240927012427.png",
     "z.Screenshots/Pasted image 20240926201314.png",
-    "WEB.PortSwigger/XEE (XML external entity injection).md",
     "z.Screenshots/Pasted image 20240927013218.png",
     "z.Screenshots/Pasted image 20240927013034.png",
     "z.Screenshots/Pasted image 20240927012657.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/BurpSuite/Basics.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240925011636.png",
-    "z.Screenshots/Pasted image 20240925194143.png",
-    "z.Screenshots/Pasted image 20240925194111.png",
-    "z.Screenshots/Pasted image 20240925194015.png",
-    "z.Screenshots/Pasted image 20240925193806.png",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/SQL Injection.md",
