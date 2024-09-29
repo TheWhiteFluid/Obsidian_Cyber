@@ -249,9 +249,47 @@ Analysis:
 
 
 ## **7.  Exploiting XInclude to retrieve files**
-This lab has a "Check stock" feature that embeds the user input inside a server-side XML document that is subsequently parsed.
+This lab has a "Check stock" feature that embeds the user input inside a server-side XML document that is subsequently parsed(partially parsed).
 Because you don't control the entire XML document you can't define a DTD to launch a classic [XXE](https://portswigger.net/web-security/xxe) attack.
 
 To solve the lab, inject an `XInclude` statement to retrieve the contents of the `/etc/passwd` file.
 
+1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
+2. Set the value of the `productId` parameter to:
+    
+    `<foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>`
 
+Analysis:
+	![[Pasted image 20240929090140.png]]
+
+- first thought is maybe this is not taking XML but try to convert via burp to JSON / XML format
+	![[Pasted image 20240929090035.png]]
+	
+	- If the API accepts JSON or other content we will change it to XML. If the expected is returned --> it's parsing XML so we can inject
+	![[Pasted image 20240929090318.png]]
+
+- if it will not accept none of the mentioned above formats we will use XInclude function:
+	- entering an entity that does not exists(encode the `&`)  to analyse the error recieved
+	![[Pasted image 20240929091055.png]]
+
+- XInclude is useful when we do not have control over the entire document.
+	- refer the XInclude name space first / refer the file that we want to retrieve
+```
+<foo
+ xmlns:xi="http://www.w3.org/2001/XInclude">
+ <xi:include parse="text" href="file:///etc/passwd"/>
+</foo>
+```
+	![[Pasted image 20240929091746.png]]
+
+## **8. Exploiting XXE via image file upload**
+This lab lets users attach avatars to comments and uses the Apache Batik library to process avatar image files. 
+To solve the lab, upload an image that displays the contents of the `/etc/hostname` file after processing.
+
+1. Create a local SVG image with the following content:
+    `<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]><svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>`
+    
+2. Post a comment on a blog post, and upload this image as an avatar.
+3. When you view your comment, you should see the contents of the `/etc/hostname` file in your image. Use the "Submit solution" button to submit the value of the server hostname.
+
+Analysis:

@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "a880a76182fe3cc9",
+            "id": "ecadfa83aa8eaece",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.51103591918945
+    "width": 200
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -159,28 +159,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a880a76182fe3cc9",
+  "active": "ecadfa83aa8eaece",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20240927230532.png",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "z.Screenshots/Pasted image 20240927221138.png",
-    "z.Screenshots/Pasted image 20240927220556.png",
-    "z.Screenshots/Pasted image 20240927215510.png",
-    "z.Screenshots/Pasted image 20240927215424.png",
-    "z.Screenshots/Pasted image 20240927015321.png",
-    "z.Screenshots/Pasted image 20240927015032.png",
-    "z.Screenshots/Pasted image 20240927014716.png",
-    "z.Screenshots/Pasted image 20240927014600.png",
-    "z.Screenshots/Pasted image 20240927013218.png",
-    "z.Screenshots/Pasted image 20240927013034.png",
     "(!!)Frameworks & Tools.md",
+    "Linux • Shell.md",
+    "z.Screenshots/Pasted image 20240929085812.png",
+    "z.Screenshots/Pasted image 20240929090035.png",
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "z.Screenshots/Pasted image 20240929091746.png",
+    "z.Screenshots/Pasted image 20240929091055.png",
+    "z.Screenshots/Pasted image 20240929090318.png",
+    "z.Screenshots/Pasted image 20240929090315.png",
+    "z.Screenshots/Pasted image 20240929090312.png",
+    "z.Screenshots/Pasted image 20240929090140.png",
+    "z.Screenshots/Pasted image 20240927230532.png",
+    "z.Screenshots/Pasted image 20240927221138.png",
     "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/0.To do.md",
-    "Linux • Shell.md",
     "Linux shortcuts.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
