@@ -51,6 +51,9 @@
 - https://www.revshells.com/ (Reverse Shell Generator)
   - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
 
+#### **LFI(local file inclusion)**
+- https://github.com/D35m0nd142/LFISuite 
+
 
 
 ## #PrivEscalation

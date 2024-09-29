@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 282.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -161,12 +161,13 @@
   },
   "active": "a880a76182fe3cc9",
   "lastOpenFiles": [
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "(!!)Frameworks & Tools.md",
+    "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger/XEE (XML external entity injection).md",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/0)Info.md",
     "z.Screenshots/Pasted image 20240925194143.png",
     "z.Screenshots/Pasted image 20240925194111.png",
     "z.Screenshots/Pasted image 20240925194015.png",
@@ -176,7 +177,6 @@
     "z.Screenshots/Pasted image 20240925193654.png",
     "z.Screenshots/Pasted image 20240925193628.png",
     "PortSwigger.Web/0.To do.md",
-    "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240925153207.png",
     "z.Screenshots/Pasted image 20240925184345.png",
     "Linux • Shell.md",
