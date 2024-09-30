@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md"
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
               }
             }
           }
@@ -146,23 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21cd84ebb0fedff5",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "Pasted image 20240930194637.png",
-    "Pasted image 20240930194309.png",
-    "Pasted image 20240930194015.png",
-    "Pasted image 20240930193909.png",
-    "Pasted image 20240930193726.png",
-    "Pasted image 20240930193712.png",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
-    "(!!)Frameworks & Tools.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "z.Screenshots/Pasted image 20240930195006.png",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "z.Screenshots/Pasted image 20240930193712.png",
+    "z.Screenshots/Pasted image 20240930193726.png",
+    "z.Screenshots/Pasted image 20240930194637.png",
+    "z.Screenshots/Pasted image 20240930194309.png",
+    "z.Screenshots/Pasted image 20240930194015.png",
+    "z.Screenshots/Pasted image 20240930193909.png",
+    "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20240930191727.png",
     "z.Screenshots/Pasted image 20240930191646.png",
     "z.Screenshots/Pasted image 20240930191222.png",
     "WEB.PortSwigger/XEE (XML external entity injection).md",
-    "z.Screenshots/Pasted image 20240929091746.png",
-    "z.Screenshots/Pasted image 20240929091055.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/BurpSuite/Basics.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
