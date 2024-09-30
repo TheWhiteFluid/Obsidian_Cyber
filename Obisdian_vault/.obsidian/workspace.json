@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4988ad18b85fe7d2",
+        "id": "fae5a7afc6f64b70",
         "type": "tabs",
         "children": [
           {
-            "id": "81fed4eba6c9e626",
+            "id": "21cd84ebb0fedff5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/0)Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ecadfa83aa8eaece",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md"
+                "file": "(!!)Frameworks & Tools.md"
               }
             }
           }
@@ -159,44 +146,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ecadfa83aa8eaece",
+  "active": "21cd84ebb0fedff5",
   "lastOpenFiles": [
-    "(!!)Frameworks & Tools.md",
-    "Linux • Shell.md",
-    "z.Screenshots/Pasted image 20240929085812.png",
-    "z.Screenshots/Pasted image 20240929090035.png",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "z.Screenshots/Pasted image 20240930191727.png",
+    "z.Screenshots/Pasted image 20240930191646.png",
+    "z.Screenshots/Pasted image 20240930191222.png",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "WEB.PortSwigger/XEE (XML external entity injection).md",
     "z.Screenshots/Pasted image 20240929091746.png",
     "z.Screenshots/Pasted image 20240929091055.png",
     "z.Screenshots/Pasted image 20240929090318.png",
     "z.Screenshots/Pasted image 20240929090315.png",
     "z.Screenshots/Pasted image 20240929090312.png",
     "z.Screenshots/Pasted image 20240929090140.png",
-    "z.Screenshots/Pasted image 20240927230532.png",
-    "z.Screenshots/Pasted image 20240927221138.png",
-    "WEB.PortSwigger/0)Info.md",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "z.Screenshots/Pasted image 20240929090035.png",
+    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/BurpSuite/Basics.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
-    "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "PortSwigger.Web/0.To do.md",
-    "Linux shortcuts.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
+    "WEB.PortSwigger/SQL Injection.md",
+    "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger",
-    "PortSwigger.Web-Security.Labs/SQL Injection.md",
+    "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
+    "PortSwigger.Web/0)Info.md",
+    "Linux • Shell.md",
+    "Linux shortcuts.md",
+    "PortSwigger.Web/SQL Injection.md",
+    "PortSwigger.Web/XSS - Cross Site Scripting.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
+    "PortSwigger/XSS - Cross Site Scripting.md",
+    "PortSwigger/SQL Injection.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",

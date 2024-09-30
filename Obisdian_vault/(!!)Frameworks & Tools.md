@@ -54,6 +54,8 @@
 #### **LFI(local file inclusion)**
 - https://github.com/D35m0nd142/LFISuite 
 
+#### **XXE**
+- https://github.com/GoSecure/dtd-finder
 
 
 ## #PrivEscalation
