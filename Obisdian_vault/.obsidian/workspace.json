@@ -11,9 +11,11 @@
             "id": "21cd84ebb0fedff5",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241001150727.png"
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241001150727.png",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241001150727.png",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241001150727.png"
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
               }
             }
           }
@@ -144,15 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "21cd84ebb0fedff5",
   "lastOpenFiles": [
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "z.Screenshots/Pasted image 20241001150727.png",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241001151253.png",
     "z.Screenshots/Pasted image 20241001151139.png",
     "z.Screenshots/Pasted image 20241001150956.png",
     "z.Screenshots/Pasted image 20241001150837.png",
-    "z.Screenshots/Pasted image 20241001150727.png",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
     "z.Screenshots/Pasted image 20240930195006.png",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "z.Screenshots/Pasted image 20240930193712.png",

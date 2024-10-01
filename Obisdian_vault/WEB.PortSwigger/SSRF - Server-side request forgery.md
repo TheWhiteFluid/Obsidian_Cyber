@@ -21,3 +21,5 @@ To solve the lab, change the stock check URL to access the admin interface at `
 ![[Pasted image 20241001151253.png]]
 
 ## **2.  Basic SSRF against another back-end system**
+This lab has a stock check feature which fetches data from an internal system.
+To solve the lab, use the stock check functionality to scan the internal `192.168.0.X` range for an admin interface on port 8080, then use it to delete the user `carlos`.
