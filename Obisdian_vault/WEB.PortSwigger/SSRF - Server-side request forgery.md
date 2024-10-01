@@ -11,3 +11,13 @@ To solve the lab, change the stock check URL to access the admin interface at `
     `http://localhost/admin/delete?username=carlos
     
 5. Submit this URL in the `stockApi` parameter, to deliver the [SSRF attack](https://portswigger.net/web-security/ssrf).
+
+- we observe that we have an API parameter which does a request directly to the local server. In this case we will try to manipulate it in order to do request in our behalf.
+![[Pasted image 20241001150727.png]]
+![[Pasted image 20241001150837.png]]
+
+- after sending the request we cant delete directly the accounts so we have to inspect the delete button in order to execute the request from the server side (not user)
+![[Pasted image 20241001150956.png]]
+![[Pasted image 20241001151253.png]]
+
+## **2.  Basic SSRF against another back-end system**
