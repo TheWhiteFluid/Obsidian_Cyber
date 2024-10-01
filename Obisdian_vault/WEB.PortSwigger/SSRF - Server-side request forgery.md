@@ -83,3 +83,5 @@ The developer has deployed two weak anti-SSRF defenses that you will need to byp
 5. Obfuscate the "a" by double-URL encoding it to %2561 to access the admin interface and delete the target user.
 
 Analysis:
+
+- 
