@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "certs.md",
+                "file": "Usage/certs.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "certs.md",
+                "file": "Usage/certs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "certs.md",
+                "file": "Usage/certs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "certs.md"
+                "file": "Usage/certs.md"
               }
             }
           }
@@ -183,12 +183,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab78cefb18424e8d",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
     "(!!)Frameworks & Tools.md",
-    "Linux • Shell.md",
-    "Websites Analyse Tools.md",
-    "certs.md",
+    "Usage/certs.md",
+    "Usage",
+    "Usage/Linux • Shell.md",
+    "Usage/Websites Analyse Tools.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241002210051.png",
     "z.Screenshots/Pasted image 20241002205727.png",
@@ -220,10 +221,8 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
-    "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
