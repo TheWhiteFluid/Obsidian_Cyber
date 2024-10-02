@@ -84,4 +84,26 @@ The developer has deployed two weak anti-SSRF defenses that you will need to byp
 
 Analysis:
 
-- 
+- vulnerable parameter: `stockApi`
+	![[Pasted image 20241002165334.png]]
+
+- we will modify stock.weliketoshop.net to be redirected to local host address(127.0.0.1) by the server (also delete the port number 8080)
+	![[Pasted image 20241002165652.png]]
+
+- it seems to be blacklisted and we have to workaround to bypass that 
+	127.0.0.1 == 127.1 == localhost
+		![[Pasted image 20241002165946.png]]
+
+- now we get another error which seems to be different (it seems that we have bypassed the security blacklist)
+	![[Pasted image 20241002170053.png]]
+
+- quick brute forcing of directories using a list and intruder and we have found the `admin` to be a valid one
+	![[Pasted image 20241002170302.png]]
+
+- it seems that our request is blocked again so in order to bypass it we will double URL encode the admin string (using hackvertor extension of burp) ( url encode all --> convert tags)
+	![[Pasted image 20241002170504.png]]
+
+- we will append `/delete?username=carlos` to our admin url 
+	![[Pasted image 20241002170632.png]]
+
+## **5. SSRF with filter bypass via open redirection vulnerability**
