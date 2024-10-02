@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ab78cefb18424e8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "certs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "certs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "certs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
+                "file": "certs.md"
               }
             }
           }
@@ -171,12 +183,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad3d76e233903a6d",
+  "active": "ab78cefb18424e8d",
   "lastOpenFiles": [
-    "roadmap.md",
+    "(!!)Frameworks & Tools.md",
+    "Linux • Shell.md",
     "Websites Analyse Tools.md",
+    "certs.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "z.Screenshots/Pasted image 20241002210051.png",
+    "z.Screenshots/Pasted image 20241002205727.png",
+    "z.Screenshots/Pasted image 20241002205715.png",
+    "z.Screenshots/Pasted image 20241002205444.png",
+    "z.Screenshots/Pasted image 20241002205157.png",
+    "z.Screenshots/Pasted image 20241002203759.png",
+    "z.Screenshots/Pasted image 20241002203438.png",
+    "z.Screenshots/Pasted image 20241002202855.png",
+    "z.Screenshots/Pasted image 20241002202550.png",
+    "z.Screenshots/Pasted image 20241002202326.png",
+    "roadmap.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
-    "z.Screenshots/Pasted image 20241002183709.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
@@ -184,19 +209,7 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SQL Injections.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
-    "z.Screenshots/Pasted image 20241002182807.png",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
-    "z.Screenshots/Pasted image 20241002170632.png",
-    "z.Screenshots/Pasted image 20241002170504.png",
-    "z.Screenshots/Pasted image 20241002170302.png",
-    "z.Screenshots/Pasted image 20241002170053.png",
-    "z.Screenshots/Pasted image 20241002165946.png",
-    "z.Screenshots/Pasted image 20241002165652.png",
-    "z.Screenshots/Pasted image 20241002165334.png",
-    "z.Screenshots/Pasted image 20241002164537.png",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "(!!)Frameworks & Tools.md",
-    "Linux • Shell.md",
     "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/SQL Injection.md",
@@ -208,7 +221,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
