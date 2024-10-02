@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/0)Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ecadfa83aa8eaece",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad3d76e233903a6d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab78cefb18424e8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Usage/certs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Usage/certs.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Usage/certs.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Usage/certs.md"
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
               }
             }
           }
@@ -185,12 +148,14 @@
   },
   "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "(!!)Frameworks & Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
+    "WEB.PortSwigger/0)Info.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "Usage/certs.md",
+    "(!!)Frameworks & Tools.md",
     "Usage",
     "Usage/Linux • Shell.md",
     "Usage/Websites Analyse Tools.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241002210051.png",
     "z.Screenshots/Pasted image 20241002205727.png",
     "z.Screenshots/Pasted image 20241002205715.png",
@@ -208,10 +173,8 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/IDOR Vulnerabilities.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SQL Injections.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
