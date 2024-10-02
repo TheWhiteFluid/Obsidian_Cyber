@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Websites Analyse Tools.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Websites Analyse Tools.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Websites Analyse Tools.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Websites Analyse Tools.md"
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
               }
             }
           }
@@ -171,8 +171,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ad3d76e233903a6d",
   "lastOpenFiles": [
+    "roadmap.md",
+    "Websites Analyse Tools.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
+    "z.Screenshots/Pasted image 20241002183709.png",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Command Injection.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/IDOR Vulnerabilities.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SQL Injections.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+    "z.Screenshots/Pasted image 20241002182807.png",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241002170632.png",
     "z.Screenshots/Pasted image 20241002170504.png",
@@ -181,11 +193,8 @@
     "z.Screenshots/Pasted image 20241002165946.png",
     "z.Screenshots/Pasted image 20241002165652.png",
     "z.Screenshots/Pasted image 20241002165334.png",
-    "Websites Analyse Tools.md",
     "z.Screenshots/Pasted image 20241002164537.png",
-    "z.Screenshots/Pasted image 20241002164503.png",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "z.Screenshots/Pasted image 20241001182113.png",
     "(!!)Frameworks & Tools.md",
     "Linux • Shell.md",
     "WEB.PortSwigger/0)Info.md",
@@ -194,20 +203,12 @@
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/0.To do.md",
     "Linux shortcuts.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
