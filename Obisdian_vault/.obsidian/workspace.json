@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad3d76e233903a6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "websites analyse  tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "websites analyse  tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
+                "file": "websites analyse  tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/XEE - XML external entity injection.md"
+                "file": "websites analyse  tools.md"
               }
             }
           }
@@ -159,8 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ecadfa83aa8eaece",
+  "active": "ad3d76e233903a6d",
   "lastOpenFiles": [
+    "Pasted image 20241002164537.png",
+    "Pasted image 20241002164503.png",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "websites analyse  tools.md",
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
     "z.Screenshots/Pasted image 20241001182113.png",
     "z.Screenshots/Pasted image 20241001181535.png",
     "z.Screenshots/Pasted image 20241001175832.png",
@@ -170,14 +187,10 @@
     "z.Screenshots/Pasted image 20241001175615.png",
     "z.Screenshots/Pasted image 20241001175528.png",
     "z.Screenshots/Pasted image 20241001151253.png",
-    "z.Screenshots/Pasted image 20241001151139.png",
-    "z.Screenshots/Pasted image 20241001150956.png",
     "(!!)Frameworks & Tools.md",
     "Linux • Shell.md",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
     "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/0.To do.md",
@@ -197,7 +210,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "WEB.PortSwigger",
-    "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
