@@ -120,3 +120,7 @@ The stock checker has been restricted to only access the local application, so y
 5. Amend the path to delete the target user:
     `/product/nextProduct?path=http://192.168.0.12:8`
 
+Analysis:
+
+
+
