@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "fae5a7afc6f64b70",
+        "id": "4988ad18b85fe7d2",
         "type": "tabs",
         "children": [
           {
-            "id": "21cd84ebb0fedff5",
+            "id": "81fed4eba6c9e626",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/0)Info.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ecadfa83aa8eaece",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/XEE - XML external entity injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
+                "file": "WEB.PortSwigger/XEE - XML external entity injection.md"
               }
             }
           }
@@ -146,45 +159,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ecadfa83aa8eaece",
   "lastOpenFiles": [
     "z.Screenshots/Pasted image 20241001182113.png",
     "z.Screenshots/Pasted image 20241001181535.png",
-    "z.Screenshots/Pasted image 20241001175528.png",
-    "z.Screenshots/Pasted image 20241001175615.png",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241001175832.png",
     "z.Screenshots/Pasted image 20241001175814.png",
     "z.Screenshots/Pasted image 20241001175707.png",
     "z.Screenshots/Pasted image 20241001175639.png",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "z.Screenshots/Pasted image 20241001150727.png",
+    "z.Screenshots/Pasted image 20241001175615.png",
+    "z.Screenshots/Pasted image 20241001175528.png",
     "z.Screenshots/Pasted image 20241001151253.png",
     "z.Screenshots/Pasted image 20241001151139.png",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "z.Screenshots/Pasted image 20241001150956.png",
     "(!!)Frameworks & Tools.md",
-    "WEB.PortSwigger/XEE (XML external entity injection).md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/BurpSuite/Basics.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/SQL Injection.md",
-    "WEB.PortSwigger/0)Info.md",
-    "WEB.PortSwigger",
-    "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
-    "PortSwigger.Web/0)Info.md",
     "Linux • Shell.md",
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "WEB.PortSwigger/0)Info.md",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/SQL Injection.md",
+    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "PortSwigger.Web/0.To do.md",
     "Linux shortcuts.md",
-    "PortSwigger.Web/SQL Injection.md",
-    "PortSwigger.Web/XSS - Cross Site Scripting.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Metasploit/Exploitation.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Vulnerability Research/OWASP Top 10.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
-    "PortSwigger/XSS - Cross Site Scripting.md",
-    "PortSwigger/SQL Injection.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "PortSwigger.Web-Security.Labs/XSS - Cross Site Scripting.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
+    "WEB.PortSwigger",
+    "PortSwigger.Web-Security.Labs/SQL Injection.md",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "Untitled",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
