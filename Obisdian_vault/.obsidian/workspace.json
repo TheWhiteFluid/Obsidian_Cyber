@@ -23,14 +23,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/0.Info.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad4f43b1fb2c07c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
+                "file": "WEB.PortSwigger/OS command injection.md"
               }
             }
           }
@@ -157,11 +169,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2485e68fd35b4bd",
+  "active": "ad4f43b1fb2c07c1",
   "lastOpenFiles": [
+    "WEB.PortSwigger/SQL Injection.md",
+    "WEB.PortSwigger/0.Info.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "WEB.PortSwigger/OS command injection.md",
+    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "z.Screenshots/Pasted image 20241003211211.png",
     "z.Screenshots/Pasted image 20241003210743.png",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241003212410.png",
     "z.Screenshots/Pasted image 20241003212338.png",
     "z.Screenshots/Pasted image 20241003212239.png",
@@ -170,18 +188,13 @@
     "z.Screenshots/Pasted image 20241003211222.png",
     "z.Screenshots/Pasted image 20241002210051.png",
     "z.Screenshots/Pasted image 20241002205727.png",
-    "Usage/certs.md",
-    "Usage/Websites Analyse Tools.md",
-    "Usage/Linux • Shell.md",
-    "Usage",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "Additional Info/certs.md",
+    "Additional Info/Websites Analyse Tools.md",
+    "Additional Info/Linux • Shell.md",
+    "Additional Info",
     "(!!)Frameworks & Tools.md",
     "WEB.PortSwigger/XEE (XML external entity injection).md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/BurpSuite/Basics.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/SQL Injection.md",
-    "WEB.PortSwigger/0)Info.md",
     "WEB.PortSwigger",
     "PortSwigger.Web/CSRF - Cross Site Request Forgery.md",
     "PortSwigger.Web/0)Info.md",

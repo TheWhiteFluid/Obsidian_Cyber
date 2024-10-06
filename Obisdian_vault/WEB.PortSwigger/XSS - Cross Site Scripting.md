@@ -11,6 +11,8 @@
 3) https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection
 4) https://portswigger.net/web-security/cross-site-scripting/cheat-sheet (cheat sheet)
 
+[Cross-Site Scripting (XSS)](https://www.hackingarticles.in/comprehensive-guide-on-cross-site-scripting-xss/)
+
 ## **1. Stored XSS into HTML context with nothing encoded**
 
 ```
