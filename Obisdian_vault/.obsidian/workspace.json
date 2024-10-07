@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 349.50390243530273
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/SSRF - Server-side request forgery.md"
+                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md"
               }
             }
           }
@@ -146,11 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "81fed4eba6c9e626",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/1)Active Reconnaissance.md",
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "WEB.PortSwigger/0)Info.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "Usage/certs.md",
     "(!!)Frameworks & Tools.md",
     "Usage",
@@ -169,21 +185,6 @@
     "roadmap.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Content Discovery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Command Injection.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/IDOR Vulnerabilities.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SQL Injections.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
-    "WEB.PortSwigger/SQL Injection.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "PortSwigger.Web/0.To do.md",
-    "Linux shortcuts.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/XSS.md",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
