@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nslookup",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.50390243530273
+    "width": 257.50390243530273
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+                "file": "WEB.PortSwigger/OS command injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md"
+                "file": "WEB.PortSwigger/OS command injection.md"
               }
             }
           }
@@ -146,21 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "81fed4eba6c9e626",
   "lastOpenFiles": [
+    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
+    "WEB.PortSwigger/OS command injection.md",
+    "z.Screenshots/Pasted image 20241007180502.png",
+    "z.Screenshots/Pasted image 20241007201453.png",
+    "z.Screenshots/Pasted image 20241007201334.png",
+    "z.Screenshots/Pasted image 20241007200116.png",
+    "z.Screenshots/Pasted image 20241007200025.png",
+    "z.Screenshots/Pasted image 20241007181105.png",
+    "z.Screenshots/Pasted image 20241007180742.png",
+    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "z.Screenshots/Pasted image 20241003212410.png",
     "z.Screenshots/Pasted image 20241003212338.png",
     "z.Screenshots/Pasted image 20241003212239.png",
-    "z.Screenshots/Pasted image 20241003211941.png",
-    "z.Screenshots/Pasted image 20241003211718.png",
-    "z.Screenshots/Pasted image 20241003211222.png",
-    "z.Screenshots/Pasted image 20241003211211.png",
-    "z.Screenshots/Pasted image 20241003210743.png",
-    "WEB.PortSwigger/OS command injection.md",
     "WEB.PortSwigger/0.Info.md",
-    "Pasted image 20241006185925.png",
-    "Pasted image 20241006185012.png",
-    "Pasted image 20241006184943.png",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Linux • Shell.md",
     "Additional Info/certs.md",
@@ -180,11 +181,9 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/1)Active Reconnaissance.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/WEB/SSRF.md",
     "WEB.PortSwigger/0)Info.md",
-    "Usage/certs.md",
     "Usage",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
