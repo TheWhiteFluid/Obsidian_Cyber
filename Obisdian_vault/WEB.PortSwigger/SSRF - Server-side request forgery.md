@@ -174,4 +174,51 @@ Analysis:
 - we have received the response for whoami on our server via the shellshock
 	![[Pasted image 20241002210051.png]]
 
-**ShellShock:**
+	**Shellshock** exploits a vulnerability in how Bash processes environment variables. Bash can use specially formatted strings in environment variables to execute commands when it’s invoked. This allows attackers to inject malicious code into those environment variables, which then gets executed by Bash. The flaw arises because Bash doesn't properly sanitize these environment variables before executing them.
+	
+	**Vulnerability Impact**:
+	Shellshock allows attackers to execute arbitrary commands on a vulnerable machine. This means they can gain unauthorized access to a system, modify data, steal information, or use the system for further attacks.
+	
+	### **How Shellshock is Exploited**:
+	An attacker can exploit Shellshock in a variety of ways, but common attack vectors include:
+	
+	- **CGI Scripts**: Many web servers use CGI scripts written in Bash to interact with users. If an attacker sends a request with malicious environment variables, the vulnerable Bash shell will execute arbitrary code.
+	- **OpenSSH**: Systems that use Bash for processing SSH commands and have shell access may also be vulnerable if attackers can set environment variables during login.
+	- **DHCP (Dynamic Host Configuration Protocol)**: Some DHCP clients invoke Bash to configure network settings, allowing attacks via DHCP responses from a malicious server.
+	
+	One of the simplest ways to exploit Shellshock is through a CGI script on a web server. Here’s an example of a malicious HTTP request targeting a vulnerable Bash shell via an environment variable:
+		 ```
+		GET /cgi-bin/test.cgi HTTP/1.1 Host: target.com User-Agent: () { :; }; echo; /bin/bash -c "echo Hello World" ```
+
+	- The `User-Agent` field (which is normally used to specify the browser type) is crafted to exploit the vulnerability.
+	- The payload `() { :; };` tells Bash to treat the content as a function definition, followed by arbitrary code (in this case, `echo Hello World`).
+
+## **7. SSRF with whitelist-based input filter**
+This lab has a stock check feature which fetches data from an internal system.
+To solve the lab, change the stock check URL to access the admin interface at `http://localhost/admin` and delete the user `carlos`.
+
+The developer has deployed an anti-SSRF defense you will need to bypass.
+
+1. Visit a product, click "Check stock", intercept the request in Burp Suite, and send it to Burp Repeater.
+2. Change the URL in the `stockApi` parameter to `http://127.0.0.1/` and observe that the application is parsing the URL, extracting the hostname, and validating it against a whitelist.
+3. Change the URL to `http://username@stock.weliketoshop.net/` and observe that this is accepted, indicating that the URL parser supports embedded credentials.
+4. Append a `#` to the username and observe that the URL is now rejected.
+5. Double-URL encode the `#` to `%2523` and observe the extremely suspicious "Internal Server Error" response, indicating that the server may have attempted to connect to "username".
+6. To access the admin interface and delete the target user, change the URL to:
+    `http://localhost:80%2523@stock.weliketoshop.net/admin/delete?username=carlos`
+
+Analysis:
+![[Pasted image 20241003211211.png]]
+
+![[Pasted image 20241003211718.png]]
+
+- append the required url string to the localhost (localhost@....)
+![[Pasted image 20241003211941.png]]
+
+- obfuscate the url parsing using `#` and double encoded it 
+![[Pasted image 20241003212239.png]]
+
+![[Pasted image 20241003212338.png]]
+
+- find the admin page
+![[Pasted image 20241003212410.png]]

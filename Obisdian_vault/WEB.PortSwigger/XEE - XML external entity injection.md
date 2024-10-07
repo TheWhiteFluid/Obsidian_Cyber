@@ -1,3 +1,5 @@
+[XXE Injection](https://www.hackingarticles.in/comprehensive-guide-on-xxe-injection/)
+
 ## **1. Exploiting XXE using external entities to retrieve files**
 This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.
 1. Visit a product page, click "Check stock", and intercept the resulting POST request in Burp Suite.
