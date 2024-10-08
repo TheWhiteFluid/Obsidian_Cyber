@@ -80,3 +80,13 @@ You can log in to your own account using the following credentials: `content-man
 7. Remove the invalid syntax that you entered earlier, and insert your new payload into the template. Save the template and view the product page to solve the lab.
 
 Analysis:
+- we observe that we have a default template (edit template feature on product stock)
+	![[Pasted image 20241009021545.png]]
+
+- we will trigger an error condition by modifying with a non-existent template
+	![[Pasted image 20241009021825.png]]
+
+- we have identified the template (`FreeMarker.java`) --> research for a ssti exploit on hacktricks 
+	![[Pasted image 20241009022024.png]]
+	- we will modify the payload on `${ex("id")}` --> `${ex("rm /home/carlos/...")}`	
+	  ![[Pasted image 20241009022149.png]]
