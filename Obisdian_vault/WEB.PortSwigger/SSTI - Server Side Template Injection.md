@@ -51,3 +51,32 @@ You can log in to your own account using the following credentials: `wiener:pet
 10. Reload the page containing your comment to execute the template and solve the lab.
 
 Analysis:
+- "My account" page, we can select whether we want the site to use full name, first name, or nickname. When you submit your choice, a `POST` request sets the value of the parameter `blog-post-author-display` to either `user.name`, `user.first_name`, or `user.nickname`. When you load the page containing your comment, the name above your comment is updated based on the current value of this parameter. We will send the `POST /my-account/change-blog-post-author-display` to repeater.
+	![[Pasted image 20241009004227.png]]
+
+- we try to inject different payloads in the comment section to see how the application respond and what is reflected back, however, the only thing reflected is the username (in our case was selected only `first.name`) so we will do our approach from there on.
+	![[Pasted image 20241009005523.png]]
+
+- changing to `user.doesnotexist` will trigger an error from where we can see the template that is used (tornado) --> we will search the specific documentation on hacktricks
+	![[Pasted image 20241009010741.png]]
+		![[Pasted image 20241009010936.png]]
+
+- we need to close the curly brackets
+	![[Pasted image 20241009011106.png]]
+	![[Pasted image 20241009012034.png]]
+
+## **3. Server-side template injection using documentation**
+This lab is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection). To solve the lab, identify the template engine and use the documentation to work out how to execute arbitrary code, then delete the `morale.txt` file from Carlos's home directory.
+
+You can log in to your own account using the following credentials: `content-manager:C0nt3ntM4n4g3r`
+
+1. Log in and edit one of the product description templates. Notice that this template engine uses the syntax `${someExpression}` to render the result of an expression on the page. Either enter your own expression or change one of the existing ones to refer to an object that doesn't exist, such as `${foobar}`, and save the template. The error message in the output shows that the Freemarker template engine is being used.
+2. Study the Freemarker documentation and find that appendix contains an FAQs section with the question "Can I allow users to upload templates and what are the security implications?". The answer describes how the `new()` built-in can be dangerous.
+3. Go to the "Built-in reference" section of the documentation and find the entry for `new()`. This entry further describes how `new()` is a security concern because it can be used to create arbitrary Java objects that implement the `TemplateModel` interface.
+4. Load the JavaDoc for the `TemplateModel` class, and review the list of "All Known Implementing Classes".
+5. Observe that there is a class called `Execute`, which can be used to execute arbitrary shell commands
+6. Either attempt to construct your own exploit, or find [@albinowax's exploit](https://portswigger.net/research/server-side-template-injection) on our research page and adapt it as follows:
+    `<#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("rm /home/carlos/morale.txt") }`
+7. Remove the invalid syntax that you entered earlier, and insert your new payload into the template. Save the template and view the product page to solve the lab.
+
+Analysis:

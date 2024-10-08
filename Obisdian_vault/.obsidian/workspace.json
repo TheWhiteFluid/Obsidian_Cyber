@@ -18,16 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "81420f6a2b235d83",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "z.Screenshots/Pasted image 20241008201457.png"
-              }
-            }
           }
         ]
       }
@@ -156,8 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "ec1f8f7679b25c42",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20241009012034.png",
+    "z.Screenshots/Pasted image 20241009011106.png",
+    "z.Screenshots/Pasted image 20241009010936.png",
+    "z.Screenshots/Pasted image 20241009010741.png",
+    "z.Screenshots/Pasted image 20241009010653.png",
+    "z.Screenshots/Pasted image 20241009005523.png",
+    "z.Screenshots/Pasted image 20241009004227.png",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/OS Command Injection.md",
     "WEB.PortSwigger/Path traversal.md",
@@ -174,13 +171,7 @@
     "z.Screenshots/Pasted image 20241008201457.png",
     "z.Screenshots/Pasted image 20241008200755.png",
     "z.Screenshots/Pasted image 20241008203010.png",
-    "z.Screenshots/Pasted image 20241008202635.png",
-    "z.Screenshots/Pasted image 20241008202630 1.png",
-    "z.Screenshots/Pasted image 20241008202630.png",
-    "z.Screenshots/Pasted image 20241008202423.png",
-    "z.Screenshots/Pasted image 20241008202239.png",
     "Untitled",
-    "z.Screenshots/Pasted image 20241008194047.png",
     "Additional Info",
     "(!!)Frameworks & Tools.md",
     "WEB.PortSwigger/XEE (XML external entity injection).md",
