@@ -90,3 +90,5 @@ Analysis:
 	![[Pasted image 20241009022024.png]]
 	- we will modify the payload on `${ex("id")}` --> `${ex("rm /home/carlos/...")}`	
 	  ![[Pasted image 20241009022149.png]]
+
+## **4. Server-side template injection in an unknown language with a documented exploit**
