@@ -1,11 +1,12 @@
 ## Links:
 1. https://portswigger.net/web-security/sql-injection 
-   a. https://portswigger.net/web-security/sql-injection/union-attacks
-   b. https://portswigger.net/web-security/sql-injection/blind
 2. https://portswigger.net/web-security/sql-injection/cheat-sheet
 
  [How to Bypass SQL Injection Filter](https://www.hackingarticles.in/bypass-filter-sql-injection-manually/)
  [Form Based SQL Injection](https://www.hackingarticles.in/form-based-sql-injection-manually/)
+
+https://book.hacktricks.xyz/pentesting-web/sql-injection
+https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
 
 ## **1. SQL injection vulnerability in WHERE clause allowing retrieval of hidden data**
 SQL injection attack that causes the application to display one or more unreleased products.

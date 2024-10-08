@@ -1,17 +1,12 @@
 ## Links:
 1) https://portswigger.net/web-security/cross-site-scripting
-   a. https://portswigger.net/web-security/cross-site-scripting#reflected-cross-site-scripting
-   b. https://portswigger.net/web-security/cross-site-scripting/stored
-   c. https://portswigger.net/web-security/cross-site-scripting/dom-based
-
 2) https://portswigger.net/web-security/cross-site-scripting/exploiting
-	 https://portswigger.net/web-security/cross-site-scripting/contexts
+	 https://portswigger.net/web-security/cross-site-scripting/context
 1) https://portswigger.net/web-security/cross-site-scripting/content-security-policy
-2) https://portswigger.net/web-security/cross-site-scripting/dangling-markup
-3) https://portswigger.net/web-security/cross-site-scripting/contexts/client-side-template-injection
-4) https://portswigger.net/web-security/cross-site-scripting/cheat-sheet (cheat sheet)
 
 [Cross-Site Scripting (XSS)](https://www.hackingarticles.in/comprehensive-guide-on-cross-site-scripting-xss/)
+https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet 
 
 ## **1. Stored XSS into HTML context with nothing encoded**
 

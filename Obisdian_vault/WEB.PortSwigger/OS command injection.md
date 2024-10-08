@@ -1,4 +1,5 @@
 [OS Command Injection](https://www.hackingarticles.in/comprehensive-guide-on-os-command-injection/) (git)
+https://book.hacktricks.xyz/pentesting-web/command-injection
 
 ## **1. OS command injection, simple case**
 This lab contains an [OS command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the product stock checker.
