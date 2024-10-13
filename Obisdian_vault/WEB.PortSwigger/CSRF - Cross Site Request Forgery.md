@@ -1,4 +1,5 @@
-[CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)
+[CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)https://book.hacktricks.xyz/pentesting-web/csrf-cross-site-request-forgery
+
 ## **1. CSRF vulnerability with no defenses**
 This lab's email change functionality is vulnerable to CSRF.
 1. Open Burp's browser and log in to your account. Submit the "Update email" form, and find the resulting request in your Proxy history.
