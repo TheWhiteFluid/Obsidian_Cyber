@@ -91,4 +91,39 @@ Analysis:
 	- we will modify the payload on `${ex("id")}` --> `${ex("rm /home/carlos/...")}`	
 	  ![[Pasted image 20241009022149.png]]
 
-## **4. Server-side template injection in an unknown language with a documented exploit**
+## **4. Server-side template injection with information disclosure via user-supplied objects
+
+This lab is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection) due to the way an object is being passed into the template. This vulnerability can be exploited to access sensitive data.
+
+You can log in to your own account using the following credentials: `content-manager:C0nt3ntM4n4g3r`
+
+1. Log in and edit one of the product description templates.
+2. Change one of the template expressions to something invalid, such as a fuzz string `${{<%[%'"}}%\`, and save the template. The error message in the output hints that the Django framework is being used.
+3. Study the Django documentation and notice that the built-in template tag `debug` can be called to display debugging information.
+4. In the template, remove your invalid syntax and enter the following statement to invoke the `debug` built-in:
+    
+    `{% debug %}`
+5. Save the template. The output will contain a list of objects and properties to which you have access from within this template. Crucially, notice that you can access the `settings` object.
+6. Study the `settings` object in the Django documentation and notice that it contains a `SECRET_KEY` property, which has dangerous security implications if known to an attacker.
+7. In the template, remove the `{% debug %}` statement and enter the expression `{{settings.SECRET_KEY}}`
+8. Save the template to output the framework's secret key.
+
+
+Analysis:
+
+- trying to generate an error injecting custom text: if it does not throw an error --> inject some arbitrary code (in our case Jinjava seems pretty alike)
+![[Pasted image 20241013052921.png]]
+![[Pasted image 20241013053547.png]]
+
+![[Pasted image 20241013053647.png]]
+
+- searching for "django ssti"  we find some pretty useful information
+  ![[Pasted image 20241013053915.png]]
+	![[Pasted image 20241013054104.png]]
+	![[Pasted image 20241013054433.png]]
+
+- checking django settings documentation we find out how leak the secret key 
+  ![[Pasted image 20241013055646.png]]
+	  ![[Pasted image 20241013055815.png]]
+
+## **5. Server-side template injection in a sandboxed environment**
