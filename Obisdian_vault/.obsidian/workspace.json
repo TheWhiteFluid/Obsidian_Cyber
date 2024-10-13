@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+                "file": "WEB.PortSwigger/Path traversal.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 228.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+                "file": "WEB.PortSwigger/Path traversal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+                "file": "WEB.PortSwigger/Path traversal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/SSTI - Server Side Template Injection.md"
+                "file": "WEB.PortSwigger/Path traversal.md"
               }
             }
           }
@@ -148,18 +149,19 @@
   },
   "active": "c5b8abe10bef29ff",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20241013053547.png",
-    "z.Screenshots/Pasted image 20241013052921.png",
+    "Untitled.md",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
-    "z.Screenshots/Pasted image 20241013055815.png",
-    "z.Screenshots/Pasted image 20241013055646.png",
-    "z.Screenshots/Pasted image 20241013054433.png",
-    "z.Screenshots/Pasted image 20241013054104.png",
-    "z.Screenshots/Pasted image 20241013053915.png",
-    "z.Screenshots/Pasted image 20241013053647.png",
+    "z.Screenshots/Pasted image 20241013194854.png",
+    "z.Screenshots/Pasted image 20241013194750.png",
+    "z.Screenshots/Pasted image 20241013194445.png",
+    "z.Screenshots/Pasted image 20241013194050.png",
+    "z.Screenshots/Pasted image 20241013193928.png",
+    "z.Screenshots/Pasted image 20241013193230.png",
+    "z.Screenshots/Pasted image 20241013193031.png",
+    "z.Screenshots/Pasted image 20241013181218.png",
+    "z.Screenshots/Pasted image 20241013181056.png",
+    "z.Screenshots/Pasted image 20241013180751.png",
     "WEB.PortSwigger/OS command injection.md",
-    "z.Screenshots/Pasted image 20241009022149.png",
-    "z.Screenshots/Pasted image 20241009022124.png",
     "WEB.PortSwigger/Path traversal.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",

@@ -127,3 +127,65 @@ Analysis:
 	  ![[Pasted image 20241013055815.png]]
 
 ## **5. Server-side template injection in a sandboxed environment**
+
+This lab uses the Freemarker template engine. It is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection) due to its poorly implemented sandbox. To solve the lab, break out of the sandbox to read the file `my_password.txt` from Carlos's home directory. Then submit the contents of the file.
+
+You can log in to your own account using the following credentials: `content-manager:C0nt3ntM4n4g3r`
+
+1. Log in and edit one of the product description templates. Notice that you have access to the `product` object.
+2. Load the JavaDoc for the `Object` class to find methods that should be available on all objects. Confirm that you can execute `${object.getClass()}` using the `product` object.
+3. Explore the documentation to find a sequence of method invocations that grant access to a class with a static method that lets you read a file, such as:
+`${product.getClass().getProtectionDomain().getCodeSource().getLocation().toURI().resolve('/home/carlos/my_password.txt').toURL().openStream().readAllBytes()?join(" ")}`
+4. Enter this payload in one of the templates and save. The output will contain the contents of the file as decimal ASCII code points.
+5. Convert the returned bytes to ASCII.
+
+Analysis:
+
+- generated an error for template disclosure
+	![[Pasted image 20241013180605.png]]
+	![[Pasted image 20241013180751.png]]
+
+- doing the necessary modifications
+  ![[Pasted image 20241013181056.png]]
+		![[Pasted image 20241013181218.png]]
+
+# 6. Server-side template injection with a custom exploit (to be redone)
+This lab is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection). To solve the lab, create a custom exploit to delete the file `/.ssh/id_rsa` from Carlos's home directory.
+
+You can log in to your own account using the following credentials: `wiener:peter`
+
+1. While proxying traffic through Burp, log in and post a comment on one of the blogs.
+2. Go to the "My account" page. Notice that the functionality for setting a preferred name is vulnerable to server-side template injection, as we saw in a previous lab. You should also have noticed that you have access to the `user` object.
+3. Investigate the custom avatar functionality. Notice that when you upload an invalid image, the error message discloses a method called `user.setAvatar()`. Also take note of the file path `/home/carlos/User.php`. You will need this later.
+4. Upload a valid image as your avatar and load the page containing your test comment.
+5. In Burp Repeater, open the `POST` request for changing your preferred name and use the `blog-post-author-display` parameter to set an arbitrary file as your avatar:
+    `user.setAvatar('/etc/passwd')`
+6. Load the page containing your test comment to render the template. Notice that the error message indicates that you need to provide an image MIME type as the second argument. Provide this argument and view the comment again to refresh the template:
+    `user.setAvatar('/etc/passwd','image/jpg')`
+7. To read the file, load the avatar using `GET /avatar?avatar=wiener`. This will return the contents of the `/etc/passwd` file, confirming that you have access to arbitrary files.
+8. Repeat this process to read the PHP file that you noted down earlier:
+    `user.setAvatar('/home/carlos/User.php','image/jpg')`
+9. In the PHP file, Notice that you have access to the `gdprDelete()` function, which deletes the user's avatar. You can combine this knowledge to delete Carlos's file.
+10. First set the target file as your avatar, then view the comment to execute the template:
+    `user.setAvatar('/home/carlos/.ssh/id_rsa','image/jpg')`
+11. Invoke the `user.gdprDelete()` method and view your comment again to solve the lab.
+
+
+Analysis:
+
+- we will make use of the upload avatar application feature 
+	![[Pasted image 20241013193031.png]]
+
+- created a php reverse shell file (RCE file)
+	![[Pasted image 20241013193230.png]]
+
+- after uploading the malicious file we get the following error:
+  ![[Pasted image 20241013194050.png]]
+	![[Pasted image 20241013194445.png]]
+
+- we need to provide as an argument a image 
+	![[Pasted image 20241013194750.png]]
+
+- after the avatar will be updated --> copy image link --> intercept with burp and see the disclosed specified file content
+	![[Pasted image 20241013194854.png]]
+	
