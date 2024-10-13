@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c5b8abe10bef29ff",
+            "id": "d2eb0eddc4c59b79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/Path traversal.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/Path traversal.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/Path traversal.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/Path traversal.md"
+                "file": "WEB.PortSwigger/Access Control & IDOR.md"
               }
             }
           }
@@ -147,26 +147,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5b8abe10bef29ff",
+  "active": "d2eb0eddc4c59b79",
   "lastOpenFiles": [
-    "Pasted image 20241013202459.png",
-    "Pasted image 20241013202421.png",
-    "Pasted image 20241013195741.png",
-    "Pasted image 20241013195722.png",
-    "Untitled.md",
-    "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
-    "z.Screenshots/Pasted image 20241013194854.png",
-    "z.Screenshots/Pasted image 20241013194750.png",
-    "z.Screenshots/Pasted image 20241013194445.png",
-    "z.Screenshots/Pasted image 20241013194050.png",
-    "z.Screenshots/Pasted image 20241013193928.png",
-    "z.Screenshots/Pasted image 20241013193230.png",
-    "z.Screenshots/Pasted image 20241013193031.png",
-    "WEB.PortSwigger/OS command injection.md",
+    "WEB.PortSwigger/0.Info.md",
+    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "WEB.PortSwigger/Access Control & IDOR.md",
+    "WEB.PortSwigger/IDOR.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/SQL Injection.md",
+    "WEB.PortSwigger/OS Injection.md",
     "WEB.PortSwigger/Path traversal.md",
+    "z.Screenshots/Pasted image 20241013195722.png",
+    "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+    "z.Screenshots/Pasted image 20241014001833.png",
+    "z.Screenshots/Pasted image 20241014001513.png",
+    "z.Screenshots/Pasted image 20241014001421.png",
+    "z.Screenshots/Pasted image 20241014001357.png",
+    "z.Screenshots/Pasted image 20241014000851.png",
+    "z.Screenshots/Pasted image 20241014000523.png",
+    "z.Screenshots/Pasted image 20241014000454.png",
+    "z.Screenshots/Pasted image 20241014000248.png",
+    "z.Screenshots/Pasted image 20241013234033.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
-    "WEB.PortSwigger/0.Info.md",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Linux • Shell.md",
     "Additional Info/certs.md",
@@ -183,9 +186,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/3)Nmap Basic Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/2)Nmap Live Host Discovery.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/1)Active Reconnaissance.md",
     "Usage",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
