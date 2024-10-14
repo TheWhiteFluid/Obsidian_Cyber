@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 228.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -147,8 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2eb0eddc4c59b79",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20241014032503.png",
+    "z.Screenshots/Pasted image 20241014032045.png",
+    "z.Screenshots/Pasted image 20241014031954.png",
+    "z.Screenshots/Pasted image 20241014030810.png",
+    "z.Screenshots/Pasted image 20241014022559.png",
+    "z.Screenshots/Pasted image 20241014022505.png",
+    "z.Screenshots/Pasted image 20241014020115.png",
+    "z.Screenshots/Pasted image 20241014020052.png",
+    "z.Screenshots/Pasted image 20241014020033.png",
     "WEB.PortSwigger/0.Info.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/Access Control & IDOR.md",
@@ -160,14 +168,6 @@
     "z.Screenshots/Pasted image 20241013195722.png",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
     "z.Screenshots/Pasted image 20241014001833.png",
-    "z.Screenshots/Pasted image 20241014001513.png",
-    "z.Screenshots/Pasted image 20241014001421.png",
-    "z.Screenshots/Pasted image 20241014001357.png",
-    "z.Screenshots/Pasted image 20241014000851.png",
-    "z.Screenshots/Pasted image 20241014000523.png",
-    "z.Screenshots/Pasted image 20241014000454.png",
-    "z.Screenshots/Pasted image 20241014000248.png",
-    "z.Screenshots/Pasted image 20241013234033.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "Additional Info/Websites Analyse Tools.md",
@@ -185,7 +185,6 @@
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/4)Nmap Advanced Port Scans.md",
     "Usage",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
