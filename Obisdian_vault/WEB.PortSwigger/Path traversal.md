@@ -1,7 +1,7 @@
 https://www.hackingarticles.in/comprehensive-guide-on-path-traversal/
 https://hacktricks.boitatech.com.br/pentesting-web/file-inclusion
 
-# 1. File path traversal, simple case
+# **1. File path traversal, simple case**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 To solve the lab, retrieve the contents of the `/etc/passwd` file.
 
@@ -17,7 +17,7 @@ Analysis:
 - using dot-dot slash method until we get no errors 
 	![[Pasted image 20241013202459.png]]
 
-# 2. File path traversal, traversal sequences blocked with absolute path bypass
+# **2. File path traversal, traversal sequences blocked with absolute path bypass**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 
 The application blocks traversal sequences but treats the supplied filename as being relative to a default working directory.
@@ -34,8 +34,7 @@ Analysis:
   `/etc/passwd`
 	![[Pasted image 20241013230611.png]]
 
-
-# 3. File path traversal, traversal sequences stripped non-recursively
+# **3. File path traversal, traversal sequences stripped non-recursively**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 The application strips path traversal sequences from the user-supplied filename before using it.
 
@@ -47,7 +46,7 @@ The application strips path traversal sequences from the user-supplied filename 
 Analysis:
 - input is being stripped (simple ../ parameter is blocked) --> we obfuscate it using double `../`
 
-# 4. File path traversal, traversal sequences stripped with superfluous URL-decode
+# **4. File path traversal, traversal sequences stripped with superfluous URL-decode**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 The application blocks input containing path traversal sequences. It then performs a URL-decode of the input before using it.
 
@@ -61,7 +60,7 @@ Analysis:
 	![[Pasted image 20241013233650.png]]
 	![[Pasted image 20241013234033.png]]
 
-# 5. File path traversal, validation of start of path
+# **5. File path traversal, validation of start of path**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 
 The application transmits the full file path via a request parameter, and validates that the supplied path starts with the expected folder.
@@ -76,7 +75,7 @@ Analysis:
 		![[Pasted image 20241014000454.png]]
 			![[Pasted image 20241014000523.png]]
 
-# 6. File path traversal, validation of file extension with null byte bypass
+# **6. File path traversal, validation of file extension with null byte bypass**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
 The application validates that the supplied filename ends with the expected file extension.
 

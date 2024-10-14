@@ -1,5 +1,5 @@
 https://portswigger.net/web-security/access-control
-# 1. Unprotected admin functionality
+# **1. Unprotected admin functionality**
 This lab has an unprotected admin panel. Solve the lab by deleting the user `carlos`.
 
 1. Go to the lab and view `robots.txt` by appending `/robots.txt` to the lab URL. Notice that the `Disallow` line discloses the path to the admin panel.
@@ -9,7 +9,7 @@ This lab has an unprotected admin panel. Solve the lab by deleting the user `ca
 Analysis:
 ![[Pasted image 20241014020115.png]]
 
-# 2. Unprotected admin functionality with unpredictable URL
+# **2. Unprotected admin functionality with unpredictable URL**
 This lab has an unprotected admin panel. It's located at an unpredictable location, but the location is disclosed somewhere in the application.
 Solve the lab by accessing the admin panel, and using it to delete the user `carlos`.
 
@@ -21,7 +21,7 @@ Analysis:
 ![[Pasted image 20241014022505.png]]
 	![[Pasted image 20241014022559.png]]
 
-# 3. User role controlled by request parameter
+# **3. User role controlled by request parameter**
 This lab has an admin panel at `/admin`, which identifies administrators using a forgeable cookie.
 Solve the lab by accessing the admin panel and using it to delete the user `carlos`.
 
@@ -41,7 +41,7 @@ Analysis:
 - inspect page and modify admin cookie accordingly to have acces to the admin pannel
 	 ![[Pasted image 20241014032503.png]]
 
-# 4. User role can be modified in user profile
+# **4. User role can be modified in user profile**
 This lab has an admin panel at `/admin`. It's only accessible to logged-in users with a `roleid` of 2.
 Solve the lab by accessing the admin panel and using it to delete the user `carlos`.
 
@@ -59,7 +59,7 @@ Analysis:
 
 ![[Pasted image 20241014040928.png]]
 
-# 5.  User ID controlled by request parameter
+# **5.  User ID controlled by request parameter**
 This lab has a horizontal privilege escalation vulnerability on the user account page.
 To solve the lab, obtain the API key for the user `carlos` and submit it as the solution.
 

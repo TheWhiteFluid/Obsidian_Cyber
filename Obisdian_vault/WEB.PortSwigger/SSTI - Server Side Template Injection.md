@@ -91,8 +91,7 @@ Analysis:
 	- we will modify the payload on `${ex("id")}` --> `${ex("rm /home/carlos/...")}`	
 	  ![[Pasted image 20241009022149.png]]
 
-## **4. Server-side template injection with information disclosure via user-supplied objects
-
+## **4. Server-side template injection with information disclosure via user-supplied objects**
 This lab is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection) due to the way an object is being passed into the template. This vulnerability can be exploited to access sensitive data.
 
 You can log in to your own account using the following credentials: `content-manager:C0nt3ntM4n4g3r`
@@ -108,9 +107,7 @@ You can log in to your own account using the following credentials: `content-man
 7. In the template, remove the `{% debug %}` statement and enter the expression `{{settings.SECRET_KEY}}`
 8. Save the template to output the framework's secret key.
 
-
 Analysis:
-
 - trying to generate an error injecting custom text: if it does not throw an error --> inject some arbitrary code (in our case Jinjava seems pretty alike)
 ![[Pasted image 20241013052921.png]]
 ![[Pasted image 20241013053547.png]]
@@ -127,7 +124,6 @@ Analysis:
 	  ![[Pasted image 20241013055815.png]]
 
 ## **5. Server-side template injection in a sandboxed environment**
-
 This lab uses the Freemarker template engine. It is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection) due to its poorly implemented sandbox. To solve the lab, break out of the sandbox to read the file `my_password.txt` from Carlos's home directory. Then submit the contents of the file.
 
 You can log in to your own account using the following credentials: `content-manager:C0nt3ntM4n4g3r`
@@ -149,7 +145,7 @@ Analysis:
   ![[Pasted image 20241013181056.png]]
 		![[Pasted image 20241013181218.png]]
 
-# 6. Server-side template injection with a custom exploit (to be redone)
+# **6. Server-side template injection with a custom exploit (to be redone)**
 This lab is vulnerable to [server-side template injection](https://portswigger.net/web-security/server-side-template-injection). To solve the lab, create a custom exploit to delete the file `/.ssh/id_rsa` from Carlos's home directory.
 
 You can log in to your own account using the following credentials: `wiener:peter`

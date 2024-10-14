@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 228.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -149,11 +148,15 @@
   },
   "active": "d2eb0eddc4c59b79",
   "lastOpenFiles": [
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "WEB.PortSwigger/OS Injection.md",
+    "WEB.PortSwigger/Path traversal.md",
+    "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
     "WEB.PortSwigger/Access Control & IDOR.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "z.Screenshots/Pasted image 20241014040928.png",
     "z.Screenshots/Pasted image 20241014040733.png",
     "z.Screenshots/Pasted image 20241014040544.png",
@@ -165,11 +168,7 @@
     "z.Screenshots/Pasted image 20241014022505.png",
     "z.Screenshots/Pasted image 20241014020115.png",
     "WEB.PortSwigger/0.Info.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/IDOR.md",
-    "WEB.PortSwigger/SQL Injection.md",
-    "WEB.PortSwigger/OS Injection.md",
-    "WEB.PortSwigger/Path traversal.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "Additional Info/Websites Analyse Tools.md",

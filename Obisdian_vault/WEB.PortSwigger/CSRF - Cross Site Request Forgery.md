@@ -419,7 +419,7 @@ python3 -m http.server <port-number>
 - we observe that in the post request of login page we have set SameSite strict attribute
 	![[Pasted image 20240925011636.png]]
 	
-- we observe that in the post request of the change email we can change the request from POST to GET(which it means that this endpoint accepts also get request)
+- we observe that in the post request of the change email functionality we can change the request from POST to GET(which it means that this endpoint accepts also get request)
 	![[Pasted image 20240925011800.png]]
 - we have to bypass the SameSite strict by finding a redirecting element which method is trough GET (we will find a redirect in the comment section and the element is postID )
 	![[Pasted image 20240925012029.png]]
@@ -467,7 +467,6 @@ document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/conf
 4. Look at the response to the `GET /oauth-callback?code=[...]` request at the end of the [OAuth](https://portswigger.net/web-security/oauth) flow. Notice that the website doesn't explicitly specify any SameSite restrictions when setting session cookies. As a result, the browser will use the default `Lax` restriction level.
 
 ##### Attempt a CSRF attack
-
 1. In the browser, go to the exploit server.
 2. Use the following template to create a basic CSRF attack for changing the victim's email address:
 ```
