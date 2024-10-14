@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945
+    "width": 228.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -146,8 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "d2eb0eddc4c59b79",
   "lastOpenFiles": [
+    "WEB.PortSwigger/XEE - XML external entity injection.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
+    "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+    "WEB.PortSwigger/Access Control & IDOR.md",
+    "z.Screenshots/Pasted image 20241014040928.png",
+    "z.Screenshots/Pasted image 20241014040733.png",
+    "z.Screenshots/Pasted image 20241014040544.png",
     "z.Screenshots/Pasted image 20241014032503.png",
     "z.Screenshots/Pasted image 20241014032045.png",
     "z.Screenshots/Pasted image 20241014031954.png",
@@ -155,19 +164,12 @@
     "z.Screenshots/Pasted image 20241014022559.png",
     "z.Screenshots/Pasted image 20241014022505.png",
     "z.Screenshots/Pasted image 20241014020115.png",
-    "z.Screenshots/Pasted image 20241014020052.png",
-    "z.Screenshots/Pasted image 20241014020033.png",
     "WEB.PortSwigger/0.Info.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
     "WEB.PortSwigger/IDOR.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/OS Injection.md",
     "WEB.PortSwigger/Path traversal.md",
-    "z.Screenshots/Pasted image 20241013195722.png",
-    "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
-    "z.Screenshots/Pasted image 20241014001833.png",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "Additional Info/Websites Analyse Tools.md",
@@ -184,7 +186,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/WireShark.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/6)Protocols and Servers.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/7)Protocols and Servers 2.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/5)Nmap Post Port Scans.md",
     "Usage",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",

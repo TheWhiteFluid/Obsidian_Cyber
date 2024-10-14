@@ -257,10 +257,10 @@ Because you don't control the entire XML document you can't define a DTD to laun
 Analysis:
 	![[Pasted image 20240929090140.png]]
 
-- first thought is maybe this is not taking XML but try to convert via burp to JSON / XML format
+- first thought is maybe this is not taking XML but try to convert via burp to JSON / XML format (content type converter extension must be installed)
 	![[Pasted image 20240929090035.png]]
 	
-	- If the API accepts JSON or other content we will change it to XML. If the expected is returned --> it's parsing XML so we can inject
+	- If the API accepts JSON or other content we will change it to XML. If the expected output is returned --> it's parsing XML so we can inject
 	![[Pasted image 20240929090318.png]]
 
 - if it will not accept none of the mentioned above formats we will use XInclude function:
