@@ -145,3 +145,56 @@ Analysis:
 ![[Pasted image 20241015173811.png]]
 
 # **10.  URL-based access control can be circumvented**
+This website has an unauthenticated admin panel at `/admin`, but a front-end system has been configured to block external access to that path. However, the back-end application is built on a framework that supports the `X-Original-URL` header.
+
+To solve the lab, access the admin panel and delete the user `carlos`.
+
+1. Try to load `/admin` and observe that you get blocked. Notice that the response is very plain, suggesting it may originate from a front-end system.
+2. Send the request to Burp Repeater. Change the URL in the request line to `/` and add the HTTP header `X-Original-URL: /invalid`. Observe that the application returns a "not found" response. This indicates that the back-end system is processing the URL from the `X-Original-URL` header.
+3. Change the value of the `X-Original-URL` header to `/admin`. Observe that you can now access the admin page.
+4. To delete `carlos`, add `?username=carlos` to the real query string, and change the `X-Original-URL` path to `/admin/delete`.
+
+Analysis: 
+![[Pasted image 20241015174355.png]]
+![[Pasted image 20241015175303.png]]
+![[Pasted image 20241015175600.png]]
+
+# **11.   Method-based access control can be circumvented**
+This lab implements [access controls](https://portswigger.net/web-security/access-control) based partly on the HTTP method of requests. You can familiarize yourself with the admin panel by logging in using the credentials `administrator:admin`.
+
+To solve the lab, log in using the credentials `wiener:peter` and exploit the flawed access controls to promote yourself to become an administrator.
+
+1. Log in using the admin credentials.
+2. Browse to the admin panel, promote `carlos`, and send the HTTP request to Burp Repeater.
+3. Open a private/incognito browser window, and log in with the non-admin credentials.
+4. Attempt to re-promote `carlos` with the non-admin user by copying that user's session cookie into the existing Burp Repeater request, and observe that the response says "Unauthorized".
+5. Change the method from `POST` to `POSTX` and observe that the response changes to "missing parameter".
+6. Convert the request to use the `GET` method by right-clicking and selecting "Change request method".
+7. Change the username parameter to your username and resend the request.
+
+Analysis:
+![[Pasted image 20241015180007.png]]
+
+- reattempt promoting via an external user cookies (using wiener cookies) 
+![[Pasted image 20241015180607.png]]
+
+- POST -> POSTX 
+	**POST** is a well-established and widely used HTTP method for sending data to a server.
+	 **POSTX** is not part of the official HTTP specification. It could be a custom extension used in specific systems or APIs to refer to specialized POST request handling, but its exact meaning would depend on the context and implementation by a specific system.
+![[Pasted image 20241015180815.png]]
+
+- changing the http request to GET (in order to see if the security implementation is only on the POST request method)
+![[Pasted image 20241015181241.png]]
+	![[Pasted image 20241015181358.png]]
+
+# **12. Multi-step process with no access control on one step**
+This lab has an admin panel with a flawed multi-step process for changing a user's role. You can familiarize yourself with the admin panel by logging in using the credentials `administrator:admin`.
+
+To solve the lab, log in using the credentials `wiener:peter` and exploit the flawed [access controls](https://portswigger.net/web-security/access-control) to promote yourself to become an administrator.
+
+1. Log in using the admin credentials.
+2. Browse to the admin panel, promote `carlos`, and send the confirmation HTTP request to Burp Repeater.
+3. Open a private/incognito browser window, and log in with the non-admin credentials.
+4. Copy the non-admin user's session cookie into the existing Repeater request, change the username to yours, and replay it.
+
+Analysis:
