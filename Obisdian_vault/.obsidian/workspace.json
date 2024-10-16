@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/Access Control & IDOR.md",
+                "file": "WEB.PortSwigger/Authentication.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945
+    "width": 228.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/Access Control & IDOR.md",
+                "file": "WEB.PortSwigger/Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/Access Control & IDOR.md",
+                "file": "WEB.PortSwigger/Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/Access Control & IDOR.md"
+                "file": "WEB.PortSwigger/Authentication.md"
               }
             }
           }
@@ -148,17 +149,18 @@
   },
   "active": "d2eb0eddc4c59b79",
   "lastOpenFiles": [
+    "Pasted image 20241016182101.png",
+    "Pasted image 20241016181819.png",
+    "Pasted image 20241016181627.png",
+    "Pasted image 20241016174234.png",
+    "Pasted image 20241016174020.png",
+    "WEB.PortSwigger/Access Control & IDOR.md",
     "z.Screenshots/Pasted image 20241016002809.png",
     "z.Screenshots/Pasted image 20241016002616.png",
     "z.Screenshots/Pasted image 20241016002519.png",
     "z.Screenshots/Pasted image 20241016001817.png",
     "z.Screenshots/Pasted image 20241016001611.png",
     "z.Screenshots/Pasted image 20241016001529.png",
-    "z.Screenshots/Pasted image 20241016001437.png",
-    "z.Screenshots/Pasted image 20241015181358.png",
-    "z.Screenshots/Pasted image 20241015181241.png",
-    "z.Screenshots/Pasted image 20241015181108.png",
-    "z.Screenshots/Pasted image 20241015180815.png",
     "WEB.PortSwigger/File Upload -.md",
     "WEB.PortSwigger/Authentication.md",
     "WEB.PortSwigger/API testing -.md",
@@ -169,7 +171,6 @@
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/0.Info.md",
     "WEB.PortSwigger/IDOR.md",
