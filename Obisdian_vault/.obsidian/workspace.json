@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d42092dd02ccb91e",
+            "id": "d2eb0eddc4c59b79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/0.Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f725637c06f8a7c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/0.Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4d59bf45a6896031",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/File Upload -.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4355e933b4106452",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/Authentication.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 228.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -123,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md",
+                "file": "WEB.PortSwigger/Access Control & IDOR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md"
+                "file": "WEB.PortSwigger/Access Control & IDOR.md"
               }
             }
           }
@@ -184,16 +146,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4355e933b4106452",
+  "active": "d2eb0eddc4c59b79",
   "lastOpenFiles": [
-    "Additional Info/Certs.md",
-    "WEB.PortSwigger/Authentication.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
-    "WEB.PortSwigger/0.Info.md",
-    "WEB.PortSwigger/File Upload -.md",
-    "WEB.PortSwigger/API testing -.md",
-    "z.Screenshots/Pasted image 20241015155547.png",
-    "z.Screenshots/Pasted image 20241015155826.png",
     "z.Screenshots/Pasted image 20241016002809.png",
     "z.Screenshots/Pasted image 20241016002616.png",
     "z.Screenshots/Pasted image 20241016002519.png",
@@ -202,6 +156,12 @@
     "z.Screenshots/Pasted image 20241016001529.png",
     "z.Screenshots/Pasted image 20241016001437.png",
     "z.Screenshots/Pasted image 20241015181358.png",
+    "z.Screenshots/Pasted image 20241015181241.png",
+    "z.Screenshots/Pasted image 20241015181108.png",
+    "z.Screenshots/Pasted image 20241015180815.png",
+    "WEB.PortSwigger/File Upload -.md",
+    "WEB.PortSwigger/Authentication.md",
+    "WEB.PortSwigger/API testing -.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/OS Injection.md",
     "WEB.PortSwigger/Path traversal.md",
@@ -209,12 +169,15 @@
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+    "WEB.PortSwigger/Access Control & IDOR.md",
     "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/0.Info.md",
     "WEB.PortSwigger/IDOR.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Linux • Shell.md",
+    "Additional Info/certs.md",
     "Additional Info",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
@@ -222,7 +185,6 @@
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Hydra.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Tools and Code Analysis/Python.md",
     "Usage",
     "WEB.PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
