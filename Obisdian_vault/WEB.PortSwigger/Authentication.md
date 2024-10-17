@@ -93,3 +93,65 @@ This lab is vulnerable to username enumeration using its response times. To solv
 13. Log in using the username and password that you identified and access the user account page to solve the lab.
 
 Analysis:
+- The longer the password, the more work the algorithm has to do in terms of processing each character and producing a hash. This results in **increased response time** for longer passwords. When an **invalid username** is entered, the system may bypass the password hashing and comparison altogether, quickly returning a generic "invalid credentials" message, resulting in a uniform response time.
+
+![[Pasted image 20241017165815.png]]
+- using `X-Forwarded-For` to bypass IP blocking by too many requests
+![[Pasted image 20241017165935.png]]
+![[Pasted image 20241017170132.png]]
+![[Pasted image 20241017170554.png]]
+- fuzzing the username --> password
+![[Pasted image 20241017170653.png]]
+
+# **5.  Broken brute-force protection, IP block**
+This lab is vulnerable due to a logic flaw in its password brute-force protection. To solve the lab, brute-force the victim's password, then log in and access their account page.
+
+- Your credentials: `wiener:peter`
+- Victim's username: `carlos`
+- [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+1. With Burp running, investigate the login page. Observe that your IP is temporarily blocked if you submit 3 incorrect logins in a row. However, notice that you can reset the counter for the number of failed login attempts by logging in to your own account before this limit is reached.
+2. Enter an invalid username and password, then send the `POST /login` request to Burp Intruder. Create a pitchfork attack with payload positions in both the `username` and `password` parameters.
+3. Click  **Resource pool** to open the **Resource pool** side panel, then add the attack to a resource pool with **Maximum concurrent requests** set to `1`. By only sending one request at a time, you can ensure that your login attempts are sent to the server in the correct order.
+4. Click  **Payloads** to open the **Payloads** side panel, then select position `1` from the **Payload position** drop-down list. Add a list of payloads that alternates between your username and `carlos`. Make sure that your username is first and that `carlos` is repeated at least 100 times.
+5. Edit the list of candidate passwords and add your own password before each one. Make sure that your password is aligned with your username in the other list.
+6. Select position `2` from the **Payload position** drop-down list, then add the password list. Start the attack.
+7. When the attack finishes, filter the results to hide responses with a `200` status code. Sort the remaining results by username. There should only be a single `302` response for requests with the username `carlos`. Make a note of the password from the **Payload 2** column.
+8. Log in to Carlos's account using the password that you identified and access his account page to solve the lab.
+
+Analysis:
+![[Pasted image 20241017173139.png]]
+![[Pasted image 20241017173228.png]]
+- alternating list with valid credentials in order to reset the login attempt treshold
+![[Pasted image 20241017173718.png]]
+![[Pasted image 20241017173831.png]]
+- filtering by 302 http response on carlos username
+![[Pasted image 20241017181023.png]]
+1. **IP Blocking Mechanism**: The server blocks an IP after 3 failed login attempts, which is supposed to protect against brute-force attacks.
+2. **Logic Flaw**: You can **reset** the failure count by logging into your own account before hitting the limit. By doing this, you bypass the IP block.
+3. **Burp Suite Attack**: You configure a **Pitchfork attack** in Burp Intruder to alternate login requests between your account (**wiener**) and the victim’s account (**carlos**).
+    - You alternate the usernames (wiener and carlos).
+    - For **wiener**, you send your correct password.
+    - For **carlos**, you brute-force passwords from the candidate list.
+4. **Bypass IP Blocking**: Since the requests are alternating between two users, the IP block is never triggered because successful logins to **wiener** reset the counter.
+	
+	- **200 OK**: This is the typical response when the login fails because the page is reloaded (i.e., failed login attempt).
+	- **302 Found** (Redirect): When a login is **successful**, the server often responds with a **302 status code** to redirect the user to a different page (like the account dashboard).
+
+# **6. Username enumeration via account lock**
+This lab is vulnerable to username enumeration. It uses account locking, but this contains a logic flaw. To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+
+- [Candidate usernames](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+- [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+1. With Burp running, investigate the login page and submit an invalid username and password. Send the `POST /login` request to Burp Intruder.
+2. Select **Cluster bomb attack** from the attack type drop-down menu. Add a payload position to the `username` parameter. Add a blank payload position to the end of the request body by clicking **Add §** twice. The result should look something like this:
+    `username=§invalid-username§&password=example§§`
+3. In the **Payloads** side panel, add the list of usernames for the first payload position. For the second payload position, select the **Null payloads** type and choose the option to generate 5 payloads. This will effectively cause each username to be repeated 5 times. Start the attack.
+4. In the results, notice that the responses for one of the usernames were longer than responses when using other usernames. Study the response more closely and notice that it contains a different error message: `You have made too many incorrect login attempts.` Make a note of this username.
+5. Create a new Burp Intruder attack on the `POST /login` request, but this time select **Sniper attack** from the attack type drop-down menu. Set the `username` parameter to the username that you just identified and add a payload position to the `password` parameter.
+6. Add the list of passwords to the payload set and create a grep extraction rule for the error message. Start the attack.
+7. In the results, look at the grep extract column. Notice that there are a couple of different error messages, but one of the responses did not contain any error message. Make a note of this password.
+8. Wait for a minute to allow the account lock to reset. Log in using the username and password that you identified and access the user account page to solve the lab.
+
+Analysis:
