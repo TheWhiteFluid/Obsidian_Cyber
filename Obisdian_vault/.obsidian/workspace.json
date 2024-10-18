@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d42092dd02ccb91e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/0.Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f725637c06f8a7c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WEB.PortSwigger/0.Info.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4d59bf45a6896031",
             "type": "leaf",
             "state": {
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,17 +162,17 @@
   },
   "active": "4355e933b4106452",
   "lastOpenFiles": [
-    "Pasted image 20241017181023.png",
-    "Pasted image 20241017181010.png",
-    "Pasted image 20241017180927.png",
-    "Pasted image 20241017173831.png",
-    "Pasted image 20241017173718.png",
-    "Pasted image 20241017173228.png",
-    "Pasted image 20241017173215.png",
-    "Pasted image 20241017173139.png",
-    "Pasted image 20241017170653.png",
-    "Pasted image 20241017170554.png",
-    "Pasted image 20241017170132.png",
+    "Pasted image 20241019022121.png",
+    "Pasted image 20241019021103.png",
+    "Pasted image 20241019021050.png",
+    "Pasted image 20241019004838.png",
+    "Pasted image 20241019003549.png",
+    "Pasted image 20241019003533.png",
+    "Pasted image 20241019002839.png",
+    "Pasted image 20241019002453.png",
+    "Pasted image 20241018234940.png",
+    "Pasted image 20241018234640.png",
+    "Pasted image 20241018234604.png",
     "Additional Info/Certs.md",
     "WEB.PortSwigger/Authentication.md",
     "WEB.PortSwigger/Access Control & IDOR.md",

