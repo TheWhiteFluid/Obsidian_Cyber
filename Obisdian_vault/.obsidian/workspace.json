@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/File Upload -.md",
+                "file": "WEB.PortSwigger/File Upload.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 228.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -99,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md",
+                "file": "WEB.PortSwigger/File Upload.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md",
+                "file": "WEB.PortSwigger/File Upload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/Authentication.md"
+                "file": "WEB.PortSwigger/File Upload.md"
               }
             }
           }
@@ -160,24 +158,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4355e933b4106452",
+  "active": "4d59bf45a6896031",
   "lastOpenFiles": [
-    "Pasted image 20241021142519.png",
-    "Pasted image 20241021142233.png",
-    "Pasted image 20241021142119.png",
-    "Pasted image 20241021141937.png",
-    "Pasted image 20241019022121.png",
-    "Pasted image 20241019021103.png",
-    "Pasted image 20241019021050.png",
-    "Pasted image 20241019004838.png",
-    "Pasted image 20241019003549.png",
-    "Pasted image 20241019003533.png",
-    "Pasted image 20241019002839.png",
-    "Additional Info/Certs.md",
-    "WEB.PortSwigger/Authentication.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
     "WEB.PortSwigger/0.Info.md",
-    "WEB.PortSwigger/File Upload -.md",
+    "WEB.PortSwigger/File Upload.md",
+    "z.Screenshots/Pasted image 20241016174020.png",
+    "WEB.PortSwigger/Authentication.md",
+    "z.Screenshots/Pasted image 20241021160537.png",
+    "z.Screenshots/Pasted image 20241021160445.png",
+    "z.Screenshots/Pasted image 20241021160340.png",
+    "z.Screenshots/Pasted image 20241021160302.png",
+    "z.Screenshots/Pasted image 20241021155818.png",
+    "z.Screenshots/Pasted image 20241021155608.png",
+    "z.Screenshots/Pasted image 20241021155339.png",
+    "z.Screenshots/Pasted image 20241021155250.png",
+    "z.Screenshots/Pasted image 20241021155151.png",
+    "Additional Info/Certs.md",
+    "WEB.PortSwigger/Access Control & IDOR.md",
     "WEB.PortSwigger/API testing -.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/OS Injection.md",

