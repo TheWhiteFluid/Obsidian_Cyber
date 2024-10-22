@@ -23,6 +23,16 @@
             "id": "2ebb8f8baedbea6c",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20241022170425.png"
+              }
+            }
+          },
+          {
+            "id": "5d3b34a7b31b665a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "WEB.PortSwigger/File Upload.md",
@@ -44,7 +54,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -172,30 +182,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ebb8f8baedbea6c",
+  "active": "5d3b34a7b31b665a",
   "lastOpenFiles": [
-    "Pasted image 20241022181459.png",
-    "Pasted image 20241022181258.png",
-    "Pasted image 20241022181134.png",
-    "Pasted image 20241022181017.png",
-    "Pasted image 20241022180009.png",
-    "Pasted image 20241022175956.png",
-    "Pasted image 20241022175941.png",
-    "Pasted image 20241022170646.png",
-    "Pasted image 20241022170552.png",
-    "Pasted image 20241022170457.png",
-    "Pasted image 20241022170441.png",
+    "WEB.PortSwigger/Path traversal.md",
+    "z.Screenshots/Pasted image 20241022170425.png",
+    "z.Screenshots/Pasted image 20241022170441.png",
+    "WEB.PortSwigger/File Upload.md",
+    "z.Screenshots/Pasted image 20241023013319.png",
+    "z.Screenshots/Pasted image 20241023012730.png",
+    "z.Screenshots/Pasted image 20241023012634.png",
+    "z.Screenshots/Pasted image 20241023012403.png",
+    "z.Screenshots/Pasted image 20241023012327.png",
+    "z.Screenshots/Pasted image 20241023012233.png",
+    "z.Screenshots/Pasted image 20241023010909.png",
+    "z.Screenshots/Pasted image 20241023010504.png",
     "WEB.PortSwigger/Authentication.md",
     "WEB.PortSwigger/API testing -.md",
     "WEB.PortSwigger/Access Control & IDOR.md",
     "Additional Info/vids.md",
     "Additional Info/Websites Analyse Tools.md",
-    "WEB.PortSwigger/File Upload.md",
     "WEB.PortSwigger/0.Info.md",
     "Additional Info/Certs.md",
     "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
     "WEB.PortSwigger/OS Injection.md",
-    "WEB.PortSwigger/Path traversal.md",
     "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
