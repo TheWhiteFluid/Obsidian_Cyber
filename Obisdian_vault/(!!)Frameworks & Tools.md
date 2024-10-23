@@ -76,6 +76,7 @@ https://gtfobins.github.io/
 - [Decoder's Blog](https://decoder.cloud/)
 - [Token Kidnapping](https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf)
 - [Hacktricks - Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation)
+- https://github.com/PowerShellMafia
 
 
 - WinPEAS (https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS) (detectable)
