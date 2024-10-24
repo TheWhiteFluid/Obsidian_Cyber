@@ -25,12 +25,14 @@
             "id": "3afb98e8d17ecc6c",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.4"
+                "file": "(!!)Frameworks & Tools.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "(!!)Frameworks & Tools"
             }
           }
         ],
@@ -90,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 228.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -107,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEB.PortSwigger/File Upload.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for File Upload"
+              "title": "Backlinks for (!!)Frameworks & Tools"
             }
           },
           {
@@ -126,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEB.PortSwigger/File Upload.md",
+                "file": "(!!)Frameworks & Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from File Upload"
+              "title": "Outgoing links from (!!)Frameworks & Tools"
             }
           },
           {
@@ -153,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEB.PortSwigger/File Upload.md"
+                "file": "(!!)Frameworks & Tools.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of File Upload"
+              "title": "Outline of (!!)Frameworks & Tools"
             }
           }
         ]
