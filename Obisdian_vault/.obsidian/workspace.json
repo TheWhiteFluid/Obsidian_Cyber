@@ -25,14 +25,12 @@
             "id": "3afb98e8d17ecc6c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20240523113921.png"
               },
-              "icon": "lucide-file",
-              "title": "(!!)Frameworks & Tools"
+              "icon": "lucide-image",
+              "title": "Pasted image 20240523113921"
             }
           }
         ],
@@ -108,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "z.Screenshots/Pasted image 20240523113921.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for (!!)Frameworks & Tools"
+              "title": "Backlinks for Pasted image 20240523113921"
             }
           },
           {
@@ -127,12 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "z.Screenshots/Pasted image 20240523113921.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from (!!)Frameworks & Tools"
+              "title": "Outgoing links from Pasted image 20240523113921"
             }
           },
           {
@@ -154,10 +152,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(!!)Frameworks & Tools.md"
+                "file": "z.Screenshots/Pasted image 20240523113921.png"
               },
               "icon": "lucide-list",
-              "title": "Outline of (!!)Frameworks & Tools"
+              "title": "Outline of Pasted image 20240523113921"
             }
           }
         ]
@@ -177,10 +175,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3afb98e8d17ecc6c",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20241023214957.png",
     "WEB.PortSwigger/File Upload.md",
+    "WEB.PortSwigger/0.Info.md",
+    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "WEB.PortSwigger/Access Control & IDOR.md",
+    "WEB.PortSwigger/OS Injection.md",
+    "WEB.PortSwigger/SQL Injection.md",
+    "WEB.PortSwigger/Path traversal.md",
+    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
+    "WEB.PortSwigger/Authentication.md",
+    "WEB.PortSwigger/API testing -.md",
+    "(!!)Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20241023214957.png",
     "z.Screenshots/Pasted image 20241024023521.png",
     "z.Screenshots/Pasted image 20241024023230.png",
     "z.Screenshots/Pasted image 20241024023023.png",
@@ -190,22 +198,12 @@
     "z.Screenshots/Pasted image 20241024021121.png",
     "z.Screenshots/Pasted image 20241024020906.png",
     "z.Screenshots/Pasted image 20241024020810.png",
-    "z.Screenshots/Pasted image 20241024020239.png",
-    "WEB.PortSwigger/Path traversal.md",
-    "WEB.PortSwigger/Authentication.md",
-    "WEB.PortSwigger/API testing -.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
     "Additional Info/vids.md",
     "Additional Info/Websites Analyse Tools.md",
-    "WEB.PortSwigger/0.Info.md",
     "Additional Info/Certs.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/OS Injection.md",
-    "WEB.PortSwigger/SQL Injection.md",
     "WEB.PortSwigger/XSS - Cross Site Scripting.md",
     "WEB.PortSwigger/XEE - XML external entity injection.md",
     "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
     "WEB.PortSwigger/IDOR.md",
     "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
     "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
