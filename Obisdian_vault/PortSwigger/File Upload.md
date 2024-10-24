@@ -188,7 +188,7 @@ Analysis:
 ![[Pasted image 20241024023230.png]]
 ![[Pasted image 20241024023521.png]]
 
-# **7.  Web shell upload via race condition**
+# **7. Web shell upload via race condition**
 This lab contains a vulnerable image upload function. Although it performs robust validation on any files that are uploaded, it is possible to bypass this validation entirely by exploiting a race condition in the way it processes them.
 
 To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the contents of the file `/home/carlos/secret`. Submit this secret using the button provided in the lab banner.
@@ -202,10 +202,30 @@ As you can see from the source code above, the uploaded file is moved to an acce
 5. If you haven't already, add the [Turbo Intruder](https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988) extension to Burp from the BApp store.
 6. Right-click on the `POST /my-account/avatar` request that was used to submit the file upload and select **Extensions > Turbo Intruder > Send to turbo intruder**. The Turbo Intruder window opens.
 7. Copy and paste the following script template into Turbo Intruder's Python editor:
-    `def queueRequests(target, wordlists): engine = RequestEngine(endpoint=target.endpoint, concurrentConnections=10,) request1 = '''<YOUR-POST-REQUEST>''' request2 = '''<YOUR-GET-REQUEST>''' # the 'gate' argument blocks the final byte of each request until openGate is invoked engine.queue(request1, gate='race1') for x in range(5): engine.queue(request2, gate='race1') # wait until every 'race1' tagged request is ready # then send the final byte of each request # (this method is non-blocking, just like queue) engine.openGate('race1') engine.complete(timeout=60) def handleResponse(req, interesting): table.add(req)`
+    ```    
+    def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint, concurrentConnections=10,)
+
+    request1 = '''<YOUR-POST-REQUEST>'''
+
+    request2 = '''<YOUR-GET-REQUEST>'''
+
+    # the 'gate' argument blocks the final byte of each request until openGate is invoked
+    engine.queue(request1, gate='race1')
+    for x in range(5):
+        engine.queue(request2, gate='race1')
+
+    # wait until every 'race1' tagged request is ready
+    # then send the final byte of each request
+    # (this method is non-blocking, just like queue)
+    engine.openGate('race1')
+
+    engine.complete(timeout=60)
+    
+def handleResponse(req, interesting): table.add(req)
+
 8. In the script, replace `<YOUR-POST-REQUEST>` with the entire `POST /my-account/avatar` request containing your `exploit.php` file. You can copy and paste this from the top of the Turbo Intruder window.
 9. Replace `<YOUR-GET-REQUEST>` with a `GET` request for fetching your uploaded PHP file. The simplest way to do this is to copy the `GET /files/avatars/<YOUR-IMAGE>` request from your proxy history, then change the filename in the path to `exploit.php`.
 10. At the bottom of the Turbo Intruder window, click **Attack**. This script will submit a single `POST` request to upload your `exploit.php` file, instantly followed by 5 `GET` requests to `/files/avatars/exploit.php`.
 11. In the results list, notice that some of the `GET` requests received a 200 response containing Carlos's secret. These requests hit the server after the PHP file was uploaded, but before it failed validation and was deleted.
 
-Analysis:

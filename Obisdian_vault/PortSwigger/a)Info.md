@@ -1,11 +1,10 @@
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
 
-Information Disclosure 
 HTTP Host header attacks 
 Web cache poisoning 
 Insecure deserialization
-JWT 
 
+JWT 
 OAuth 
 NoSQL
 
