@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WEB.PortSwigger/File Upload.md",
+                "file": "PortSwigger/File Upload.md",
                 "mode": "source",
                 "source": false
               },
@@ -25,12 +25,14 @@
             "id": "3afb98e8d17ecc6c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240523113921.png"
+                "file": "PortSwigger/a)Info.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20240523113921"
+              "icon": "lucide-file",
+              "title": "a)Info"
             }
           }
         ],
@@ -106,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240523113921.png",
+                "file": "PortSwigger/a)Info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Pasted image 20240523113921"
+              "title": "Backlinks for a)Info"
             }
           },
           {
@@ -125,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240523113921.png",
+                "file": "PortSwigger/a)Info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Pasted image 20240523113921"
+              "title": "Outgoing links from a)Info"
             }
           },
           {
@@ -152,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20240523113921.png"
+                "file": "PortSwigger/a)Info.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20240523113921"
+              "title": "Outline of a)Info"
             }
           }
         ]
@@ -175,18 +177,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "3afb98e8d17ecc6c",
   "lastOpenFiles": [
-    "WEB.PortSwigger/File Upload.md",
-    "WEB.PortSwigger/0.Info.md",
-    "WEB.PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "WEB.PortSwigger/Access Control & IDOR.md",
-    "WEB.PortSwigger/OS Injection.md",
-    "WEB.PortSwigger/SQL Injection.md",
-    "WEB.PortSwigger/Path traversal.md",
-    "WEB.PortSwigger/SSRF - Server-side request forgery.md",
-    "WEB.PortSwigger/Authentication.md",
-    "WEB.PortSwigger/API testing -.md",
+    "Additional Info/a)vids.md",
+    "PortSwigger/API testing -.md",
+    "PortSwigger/Authentication.md",
+    "PortSwigger/File Upload.md",
+    "PortSwigger/Path traversal.md",
+    "PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "z.Screenshots/Pasted image 20240523113921.png",
+    "TryHackMe/SecurityEngineer",
+    "AppSec",
+    "PortSwigger/a)Info.md",
+    "PortSwigger/Access Control & IDOR.md",
+    "PortSwigger/OS Injection.md",
+    "PortSwigger/SQL Injection.md",
+    "PortSwigger/SSRF - Server-side request forgery.md",
     "(!!)Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20241023214957.png",
     "z.Screenshots/Pasted image 20241024023521.png",
@@ -197,32 +203,27 @@
     "z.Screenshots/Pasted image 20241024022931.png",
     "z.Screenshots/Pasted image 20241024021121.png",
     "z.Screenshots/Pasted image 20241024020906.png",
-    "z.Screenshots/Pasted image 20241024020810.png",
-    "Additional Info/vids.md",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Certs.md",
-    "WEB.PortSwigger/XSS - Cross Site Scripting.md",
-    "WEB.PortSwigger/XEE - XML external entity injection.md",
-    "WEB.PortSwigger/SSTI - Server Side Template Injection.md",
+    "PortSwigger/XSS - Cross Site Scripting.md",
+    "PortSwigger/XEE - XML external entity injection.md",
+    "PortSwigger/SSTI - Server Side Template Injection.md",
     "WEB.PortSwigger/IDOR.md",
-    "TryHackMe/PenTesting/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
     "Additional Info/Linux • Shell.md",
     "Additional Info",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits/Active Directory - Basics.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP Juice Shop.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Breaching Active Directory.md",
     "Usage",
-    "WEB.PortSwigger",
+    "PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Attacks & Exploits",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/Cloud/Pawned Labs",
     "RedTeam/ZeroPointSecurity",
     "TryHackMe/Cloud/Security Engineer",
-    "TryHackMe/Cloud/AWS",
-    "TryHackMe/PenTesting/CompTIA PenTest+/Planning and Scoping",
     "Untitled.canvas"
   ]
 }
