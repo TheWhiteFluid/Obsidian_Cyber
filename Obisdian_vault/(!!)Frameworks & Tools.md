@@ -36,7 +36,10 @@
 -  https://github.com/danielmiessler/SecLists (Bruteforce attack)
 ### MITM
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
-
+  
+### **RECON**
+https://github.com/projectdiscovery/nuclei
+https://github.com/six2dez/reconftw
 
 ### #WEB
 #### Injections
