@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/a)Info.md",
+                "file": "PortSwigger/File Upload.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "a)Info"
+              "title": "File Upload"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/a)Info.md",
+                "file": "PortSwigger/File Upload.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for a)Info"
+              "title": "Backlinks for File Upload"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger/a)Info.md",
+                "file": "PortSwigger/File Upload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from a)Info"
+              "title": "Outgoing links from File Upload"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger/a)Info.md"
+                "file": "PortSwigger/File Upload.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of a)Info"
+              "title": "Outline of File Upload"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "active": "3afb98e8d17ecc6c",
   "lastOpenFiles": [
+    "PortSwigger/a)Info.md",
     "Additional Info/a)vids.md",
     "PortSwigger/API testing -.md",
     "PortSwigger/Authentication.md",
@@ -188,7 +189,6 @@
     "z.Screenshots/Pasted image 20240523113921.png",
     "TryHackMe/SecurityEngineer",
     "AppSec",
-    "PortSwigger/a)Info.md",
     "PortSwigger/Access Control & IDOR.md",
     "PortSwigger/OS Injection.md",
     "PortSwigger/SQL Injection.md",
