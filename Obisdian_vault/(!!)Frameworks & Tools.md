@@ -1,13 +1,18 @@
-## #Map/Technologies
+## **==Map/Technologies==**
 
 -  https://github.com/Ignitetechnologies/Mindmap
 
-## #Info
+## **==RECON // OSINT==**
 -  https://dnsdumpster.com/ (DNS)
 -  https://www.shodan.io/ (DNS and more)
 - https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml (Service names & Port numbers)
+- https://github.com/projectdiscovery/nuclei
+- https://github.com/six2dez/reconftw
 
-## #Frameworks
+- https://haveibeenpwned.com/ (databreach - find email)
+- https://www.dehashed.com/ (leaked personal data)
+
+## ==**Frameworks**==
 -  https://owasp.org/ (OWASP)
 	 - [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
 	 - https://owasp.org/www-project-secure-headers
@@ -15,21 +20,16 @@
 -  https://www.nist.gov/cyberframework (NIST)
 -  https://www.itgovernance.co.uk/iso27001_pen_testing (ISO27001)
 
-## #OSINT
-- https://haveibeenpwned.com/ (databreach - find email)
-- https://www.dehashed.com/ (leaked personal data)
-
-
-## #Tools
+## **==Tools==**
 - https://pentestmonkey.net/ (pentest cheatsheet)
-- https://github.com/cyberheartmi9/PayloadsAllTheThings (Payloads)
-
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 - https://www.monkey.org/~dugsong/fragroute/ (Packets Fragmentation)
 - [CyberChef](https://icyberchef.com/) (Escaped Unicodes) 
-
+### Payloads
+ https://github.com/cyberheartmi9/PayloadsAllTheThings 
 ### Hashes
--  https://crackstation.net (Hashes database)
+-  https://crackstation.net (online)
+  - https://www.kali.org/tools/hashcat/ (offline)
 ### Brute Force
 -  https://github.com/vanhauser-thc/thc-hydra (Dictionary Password Attacks)
 -  https://github.com/mandatoryprogrammer/xsshunter-express (Blind XSS attacks)
@@ -37,16 +37,16 @@
 ### MITM
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
   
-### **RECON**
-https://github.com/projectdiscovery/nuclei
-https://github.com/six2dez/reconftw
-
-### #WEB
+### ==**WEB**==
 #### Injections
--  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md (Injections)
+-  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md 
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
 #### XSS
 - http://www.xss-payloads.com (XSS payloads)
+#### XXE
+- https://github.com/GoSecure/dtd-finder
+#### LFI(local file inclusion)
+- https://github.com/D35m0nd142/LFISuite 
 #### Reverse Shell
 -  https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Reverse Shell Cheat Sheet)
 -  https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
@@ -54,14 +54,7 @@ https://github.com/six2dez/reconftw
 - https://www.revshells.com/ (Reverse Shell Generator)
   - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
 
-#### **LFI(local file inclusion)**
-- https://github.com/D35m0nd142/LFISuite 
-
-#### **XXE**
-- https://github.com/GoSecure/dtd-finder
-
-
-## #PrivEscalation
+## **==PrivEscalation==**
 ### **Linux:**
 https://gtfobins.github.io/
 #### **Enumeration**
@@ -81,17 +74,19 @@ https://gtfobins.github.io/
 - [Hacktricks - Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation)
 - https://github.com/PowerShellMafia
 
-
 - WinPEAS (https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS) (detectable)
 - PrivescCheck (https://github.com/itm4n/PrivescCheck) (detectable)
 - WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
 - Metasploit (`multi/recon/local_exploit_suggester` module)
 
+## **==AWS // Cloud==**
 
 
-### #RedTeam
+
+
+### **==RedTeam==**
 https://github.com/bigb0sss/RedTeam-OffensiveSecurity/tree/master/01-CobaltStrike (Cobalt Strike)
-## Malware Detection
+### Malware Detection
 1. www.virustotal.com
 2. www.hybrid-analysis.com
 3. www.threatminer.com
