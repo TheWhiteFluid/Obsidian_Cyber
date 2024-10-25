@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(!!)Frameworks & Tools.md",
+                "file": "PortSwigger/API testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(!!)Frameworks & Tools"
+              "title": "API testing"
             }
           },
           {
@@ -66,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#PrivEscalation",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,12 +87,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 254.50390243530273
+    "width": 254.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -177,8 +177,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a63d18ad5dd517a",
+  "active": "e5a1e28a86a14e2c",
   "lastOpenFiles": [
+    "Pasted image 20241025043216.png",
+    "Pasted image 20241025042718.png",
+    "Pasted image 20241025042435.png",
+    "TryHackMe/PenTest/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Firewalls.md",
+    "PortSwigger/XSS - Cross Site Scripting.md",
+    "(!!)Frameworks & Tools.md",
     "PortSwigger/API testing.md",
     "PortSwigger/File Upload.md",
     "PortSwigger/a)Info.md",
@@ -191,15 +198,12 @@
     "z.Screenshots/Pasted image 20241024022931.png",
     "z.Screenshots/Pasted image 20241024021121.png",
     "z.Screenshots/Pasted image 20241024020906.png",
-    "z.Screenshots/Pasted image 20241024020810.png",
-    "z.Screenshots/Pasted image 20241024020239.png",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/SSRF.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/SQL Injections.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/IDOR Vulnerabilities.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Command Injection.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Content Discovery.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Authentication Bypass.md",
@@ -211,10 +215,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Introduction.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Exploitation.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Database.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Net Sec Challenge.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB",
     "TryHackMe/PenTest/Jr.Penetration Tester/Vulnerability Research",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation",

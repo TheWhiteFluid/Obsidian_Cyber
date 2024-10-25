@@ -79,6 +79,15 @@ https://gtfobins.github.io/
 - WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
 - Metasploit (`multi/recon/local_exploit_suggester` module)
 
+
+## **==APIs==**
+- https://portswigger.net/bappstore/6bf7574b632847faaaa4eb5e42f1757c
+- https://www.postman.com/
+- https://www.soapui.org/
+  
+
+
+
 ## **==AWS // Cloud==**
 
 
