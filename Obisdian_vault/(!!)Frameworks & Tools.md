@@ -85,12 +85,9 @@ https://gtfobins.github.io/
 - https://www.postman.com/
 - https://www.soapui.org/
   
-
-
-
 ## **==AWS // Cloud==**
 
-
+- https://github.com/salesforce/cloudsplaining (privesc)
 
 
 ### **==RedTeam==**
