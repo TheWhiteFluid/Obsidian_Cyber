@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTFs/Lateral Movement.md",
+                "file": "PortSwigger/API testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lateral Movement"
+              "title": "API testing"
             }
           },
           {
@@ -191,29 +191,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c3896080de00a44",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
-    "CTFs.md",
+    "z.Screenshots/Pasted image 20241026033037.png",
+    "z.Screenshots/Pasted image 20241026032559.png",
+    "z.Screenshots/Pasted image 20241026032408.png",
+    "z.Screenshots/Pasted image 20241026032122.png",
+    "z.Screenshots/Pasted image 20241026031950.png",
+    "z.Screenshots/Pasted image 20241026031802.png",
+    "z.Screenshots/Pasted image 20241026031704.png",
+    "z.Screenshots/Pasted image 20241026031530.png",
+    "z.Screenshots/Pasted image 20241026031431.png",
     "CTFs/Lateral Movement.md",
+    "CTFs.md",
     "CTFs",
     "(!!)Frameworks & Tools.md",
     "PortSwigger/API testing.md",
     "z.Screenshots/Pasted image 20241025043216.png",
     "z.Screenshots/Pasted image 20241025042718.png",
-    "z.Screenshots/Pasted image 20241025042435.png",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/File Inclusion-Path traversal.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Firewalls.md",
     "PortSwigger/XSS - Cross Site Scripting.md",
     "PortSwigger/File Upload.md",
     "PortSwigger/a)Info.md",
     "WEB.PortSwigger/File Upload.md",
-    "z.Screenshots/Pasted image 20241024023521.png",
-    "z.Screenshots/Pasted image 20241024023230.png",
-    "z.Screenshots/Pasted image 20241024023023.png",
-    "z.Screenshots/Pasted image 20241024022957.png",
-    "z.Screenshots/Pasted image 20241024022945.png",
-    "z.Screenshots/Pasted image 20241024022931.png",
-    "z.Screenshots/Pasted image 20241024021121.png",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/XSS.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/Subdomain Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB/SSRF.md",
@@ -229,7 +230,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Vulnerability Research/Exploit Vulnerabilities.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB",
     "TryHackMe/PenTest/Jr.Penetration Tester/Vulnerability Research",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation",

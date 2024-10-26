@@ -18,8 +18,7 @@ Analysis:
 ![[Pasted image 20241025042435.png]]
 ![[Pasted image 20241025043216.png]]
 
-# 2.Exploiting server-side parameter pollution in a query string
-
+# **2.Exploiting server-side parameter pollution in a query string**
 To solve the lab, log in as the `administrator` and delete `carlos`.
 
 1. In Burp's browser, trigger a password reset for the `administrator` user.
@@ -57,3 +56,41 @@ To solve the lab, log in as the `administrator` and delete `carlos`.
 16. Go to the **Admin panel** and delete `carlos` to solve the lab.
 
 Analysis:
+
+The **truncation test** (with `#`) accidentally revealed that the server expects a `field` parameter, even though we hadn’t specified it explicitly.
+
+- The server was fine with just `username=administrator` until we started experimenting with SSPP.
+- Using `%26` (addition) to see if the server could handle extra parameters  
+- Using `%23` (truncation) led to the discovery that `field` was required, suggesting internal logic that expected a `field` parameter in the request structure.
+- Brute forcing `field` parameter  // using `reset_token` as a `field` value for disclosure 
+
+This discovery was not because SSPP altered the server’s logic but rather because truncation revealed an existing dependency on the `field` parameter, likely tied to how the server internally parses and processes the query string for `/forgot-password`.
+
+![[Pasted image 20241026031431.png]]
+
+![[Pasted image 20241026031530.png]]
+
+![[Pasted image 20241026031802.png]]
+
+![[Pasted image 20241026031950.png]]
+![[Pasted image 20241026032122.png]]
+![[Pasted image 20241026032408.png]]
+![[Pasted image 20241026032559.png]]
+![[Pasted image 20241026033037.png]]
+
+# **3.Finding and exploiting an unused API endpoint**
+To solve the lab, exploit a hidden API endpoint to buy a **Lightweight l33t Leather Jacket**. You can log in to your own account using the following credentials: `wiener:peter`.
+
+1. In Burp's browser, access the lab and click on a product.
+2. In **Proxy > HTTP history**, notice the API request for the product. For example, `/api/products/3/price`.
+3. Right-click the API request and select **Send to Repeater**.
+4. In the **Repeater** tab, change the HTTP method for the API request from `GET` to `OPTIONS`, then send the request. Notice that the response specifies that the `GET` and `PATCH` methods are allowed.
+5. Change the method for the API request from `GET` to `PATCH`, then send the request. Notice that you receive an `Unauthorized` message. This may indicate that you need to be authenticated to update the order.
+6. In Burp's browser, log in to the application using the credentials `wiener:peter`.
+7. Click on the **Lightweight "l33t" Leather Jacket** product.
+8. In **Proxy > HTTP history**, right-click the `API/products/1/price` request for the leather jacket and select **Send to Repeater**.
+9. In the **Repeater** tab, change the method for the API request from `GET` to `PATCH`, then send the request. Notice that this causes an error due to an incorrect `Content-Type`. The error message specifies that the `Content-Type` should be `application/json`.
+10. Add a `Content-Type` header and set the value to `application/json`.
+11. Add an empty JSON object `{}` as the request body, then send the request. Notice that this causes an error due to the request body missing a `price` parameter.
+12. Add a `price` parameter with a value of `0` to the JSON object `{"price":0}`. Send the request.
+13. In Burp's browser, reload the leather jacket product page. Notice that the price of the leather jacket is now `$0.00`.
