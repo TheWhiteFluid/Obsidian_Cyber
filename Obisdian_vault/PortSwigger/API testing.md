@@ -94,3 +94,4 @@ To solve the lab, exploit a hidden API endpoint to buy a **Lightweight l33t Lea
 11. Add an empty JSON object `{}` as the request body, then send the request. Notice that this causes an error due to the request body missing a `price` parameter.
 12. Add a `price` parameter with a value of `0` to the JSON object `{"price":0}`. Send the request.
 13. In Burp's browser, reload the leather jacket product page. Notice that the price of the leather jacket is now `$0.00`.
+![[Pasted image 20241026234604.png]]
