@@ -1,12 +1,9 @@
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
 
-HTTP Host header attacks 
-Web cache poisoning 
-Insecure deserialization
-
 JWT 
 OAuth 
 NoSQL
+Insecure deserialization
 
 
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md

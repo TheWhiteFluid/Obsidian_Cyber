@@ -94,4 +94,118 @@ To solve the lab, exploit a hidden API endpoint to buy a **Lightweight l33t Lea
 11. Add an empty JSON object `{}` as the request body, then send the request. Notice that this causes an error due to the request body missing a `price` parameter.
 12. Add a `price` parameter with a value of `0` to the JSON object `{"price":0}`. Send the request.
 13. In Burp's browser, reload the leather jacket product page. Notice that the price of the leather jacket is now `$0.00`.
-![[Pasted image 20241026234604.png]]
+![[Pasted image 20241026234635.png]]
+![[Pasted image 20241026234717.png]]
+![[Pasted image 20241026235011.png]]
+![[Pasted image 20241026235208.png]]
+- add to cart now :)
+
+# **4.Exploiting a mass assignment vulnerability**
+To solve the lab, find and exploit a mass assignment vulnerability to buy a **Lightweight l33t Leather Jacket**. You can log in to your own account using the following credentials: `wiener:peter`.
+
+1. In Burp's browser, log in to the application using the credentials `wiener:peter`.
+2. Click on the **Lightweight "l33t" Leather Jacket** product and add it to your basket.
+3. Go to your basket and click **Place order**. Notice that you don't have enough credit for the purchase.
+4. In **Proxy > HTTP history**, notice both the `GET` and `POST` API requests for `/api/checkout`.
+5. Notice that the response to the `GET` request contains the same JSON structure as the `POST` request. Observe that the JSON structure in the `GET` response includes a `chosen_discount` parameter, which is not present in the `POST` request.
+6. Right-click the `POST /api/checkout` request and select **Send to Repeater**.
+7. In Repeater, add the `chosen_discount` parameter to the request. The JSON should look like the following:
+```
+{
+    "chosen_discount":{
+        "percentage":0
+    },
+    "chosen_products":[
+        {
+            "product_id":"1",
+            "quantity":1
+        }
+    ]
+}
+```
+8. Send the request. Notice that adding the `chosen_discount` parameter doesn't cause an error.
+9. Change the `chosen_discount` value to the string `"x"`, then send the request. Observe that this results in an error message as the parameter value isn't a number. This may indicate that the user input is being processed.
+10. Change the `chosen_discount` percentage to `100`, then send the request to solve the lab.
+
+Analysis:
+![[Pasted image 20241027000011.png]]
+![[Pasted image 20241027000027.png]]
+![[Pasted image 20241027000325.png]]
+
+# **5.Exploiting server-side parameter pollution in a REST URL**
+To solve the lab, log in as the `administrator` and delete `carlos`.
+
+1. In Burp's browser, trigger a password reset for the `administrator` user.
+2. In **Proxy > HTTP history**, notice the `POST /forgot-password` request and the related `/static/js/forgotPassword.js` JavaScript file.
+3. Right-click the `POST /forgot-password` request and select **Send to Repeater**.
+4. In the **Repeater** tab, resend the request to confirm that the response is consistent.
+5. Send a variety of requests with a modified username parameter value to determine whether the input is placed in the URL path of a server-side request without escaping:
+    1. Submit URL-encoded `administrator#` as the value of the `username` parameter.
+        Notice that this returns an `Invalid route` error message. This suggests that the server may have placed the input in the path of a server-side request, and that the fragment has truncated some trailing data. Observe that the message also refers to an API definition.
+    2. Change the value of the username parameter from `administrator%23` to URL-encoded `administrator?`, then send the request.
+        Notice that this also returns an `Invalid route` error message. This suggests that the input may be placed in a URL path, as the `?` character indicates the start of the query string and therefore truncates the URL path.
+    3. Change the value of the `username` parameter from `administrator%3F` to `./administrator` then send the request.
+        Notice that this returns the original response. This suggests that the request may have accessed the same URL path as the original request. This further indicates that the input may be placed in the URL path.
+    4. Change the value of the username parameter from `./administrator` to `../administrator`, then send the request.
+
+        Notice that this returns an `Invalid route` error message. This suggests that the request may have accessed an invalid URL path.
+
+## Navigate to the API definition
+1. Change the value of the username parameter from `../administrator` to `../%23`. Notice the `Invalid route` response.
+2. Incrementally add further `../` sequences until you reach `../../../../%23` Notice that this returns a `Not found` response. This indicates that you've navigated outside the API root.
+3. At this level, add some common API definition filenames to the URL path. For example, submit the following:
+	 `username=../../../../openapi.json%23
+    `
+    Notice that this returns an error message, which contains the following API endpoint for finding users:
+    `/api/internal/v1/users/{username}/field/{field}`
+    
+    Notice that this endpoint indicates that the URL path includes a parameter called `field`.
+
+## Exploit the vulnerability
+1. Update the value of the `username` parameter, using the structure of the identified endpoint. Add an invalid value for the `field` parameter:
+    `username=administrator/field/foo%23`
+    Send the request. Notice that this returns an error message, because the API only supports the email field.
+
+2. Add `email` as the value of the `field` parameter:
+    `username=administrator/field/email%23`
+    Send the request. Notice that this returns the original response. This may indicate that the server-side application recognizes the injected `field` parameter and that `email` is a valid field type.
+
+3. In **Proxy > HTTP history**, review the `/static/js/forgotPassword.js` JavaScript file. Identify the password reset endpoint, which refers to the `passwordResetToken` parameter:
+    `/forgot-password?passwordResetToken=${resetToken}`
+
+4. In the **Repeater** tab, change the value of the `field` parameter from `email` to `passwordResetToken`:
+    `username=administrator/field/passwordResetToken%23`
+    Send the request. Notice that this returns an error message, because the `passwordResetToken` parameter is not supported by the version of the API that is set by the application.
+
+5. Using the `/api/` endpoint that you identified earlier, change the version of the API in the value of the `username` parameter:
+    `username=../../v1/users/administrator/field/passwordResetToken%23`
+    Send the request. Notice that this returns a password reset token. Make a note of this.
+
+6. In Burp's browser, enter the password reset endpoint in the address bar. Add your password reset token as the value of the `reset_token` parameter. For example:
+    `/forgot-password?passwordResetToken=123456789
+7. Set a new password.
+8. Log in as the `administrator` using your password. Go to the **Admin panel** and delete `carlos` to solve the lab.
+
+Analysis (easy way):
+
+![[Pasted image 20241027015139.png]]
+![[Pasted image 20241027014947.png]]
+![[Pasted image 20241027015327.png]]
+![[Pasted image 20241027015531.png]]
+![[Pasted image 20241027015828.png]]
+![[Pasted image 20241027015922.png]]
+
+- we can use burp intruder to see other interesting API endpoints as: `openapi.json`
+![[Pasted image 20241027020332.png]]
+
+- make note of this: `/api/internal/v1/users/{username}/field/{field}`
+![[Pasted image 20241027020921.png]]
+
+- make note of this: `**This version of API** only supports the email field for security reasons`
+![[Pasted image 20241027021152.png]]
+![[Pasted image 20241027021241.png]]
+
+- having in mind last note: `/api/internal/v1/users/{username}/field/{field}` we will do a path traversal to the specified version that will allow us to extract `passwordResetToken` value:
+![[Pasted image 20241027021810.png]]
+
+
