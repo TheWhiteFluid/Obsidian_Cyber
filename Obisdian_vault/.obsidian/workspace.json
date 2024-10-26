@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254.50390243530273
+    "width": 254.50390243530273,
+    "collapsed": true
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -191,7 +192,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "2c3896080de00a44",
   "lastOpenFiles": [
     "z.Screenshots/Pasted image 20241026033037.png",
     "z.Screenshots/Pasted image 20241026032559.png",
