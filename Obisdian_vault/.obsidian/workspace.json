@@ -11,17 +11,30 @@
             "id": "3afb98e8d17ecc6c",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20241028010932.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241028010932"
+            }
+          },
+          {
+            "id": "7c2e1f284c80958e",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/WEB Cache(deception).md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WEB Cache(deception)"
+              "title": "Linux Privilege Escalation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nslookup",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.51103591918945,
-    "collapsed": true
+    "width": 267.51103591918945
   },
   "right": {
     "id": "c727e0ea026dcd00",
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/WEB Cache(deception).md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for WEB Cache(deception)"
+              "title": "Backlinks for Linux Privilege Escalation"
             }
           },
           {
@@ -113,12 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger/WEB Cache(deception).md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from WEB Cache(deception)"
+              "title": "Outgoing links from Linux Privilege Escalation"
             }
           },
           {
@@ -140,10 +152,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger/WEB Cache(deception).md"
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of WEB Cache(deception)"
+              "title": "Outline of Linux Privilege Escalation"
             }
           }
         ]
@@ -163,22 +175,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3afb98e8d17ecc6c",
+  "active": "7c2e1f284c80958e",
   "lastOpenFiles": [
-    "Pasted image 20241028160437.png",
-    "Pasted image 20241028160412.png",
-    "Pasted image 20241028160325.png",
-    "Pasted image 20241028160203.png",
-    "Pasted image 20241028160147.png",
-    "Pasted image 20241028155743.png",
-    "Pasted image 20241028155626.png",
-    "Pasted image 20241028155446.png",
-    "Pasted image 20241028153345.png",
-    "Pasted image 20241028150544.png",
-    "Pasted image 20241028150357.png",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows Privilege Escalation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Post Exploitation Tools.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux Privilege Escalation.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory",
+    "z.Screenshots/Pasted image 20241028010932.png",
+    "z.Screenshots/Pasted image 20241028011023.png",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Vulnerability Research/Vulnerabilities 101.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching Active Directory.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Active Directory - Basics.md",
+    "PortSwigger/WEB Cache(deception).md",
+    "z.Screenshots/Pasted image 20241028160437.png",
+    "z.Screenshots/Pasted image 20241028160412.png",
+    "z.Screenshots/Pasted image 20241028160325.png",
+    "z.Screenshots/Pasted image 20241028160203.png",
+    "z.Screenshots/Pasted image 20241028160147.png",
+    "z.Screenshots/Pasted image 20241028155743.png",
+    "z.Screenshots/Pasted image 20241028155626.png",
+    "z.Screenshots/Pasted image 20241028155446.png",
     "PortSwigger/WEB LLM(Large-Language-Model).md",
     "PortSwigger/File Upload.md",
-    "PortSwigger/WEB Cache(deception).md",
     "PortSwigger/API testing.md",
     "CTFs/Lateral Movement.md",
     "CTFs",
@@ -196,21 +217,12 @@
     "PortSwigger/SSRF - Server-side request forgery.md",
     "(!!)Frameworks & Tools.md",
     "Additional Info/Websites Analyse Tools.md",
-    "Additional Info/Certs.md",
-    "PortSwigger/XSS - Cross Site Scripting.md",
-    "PortSwigger/XEE - XML external entity injection.md",
-    "PortSwigger/SSTI - Server Side Template Injection.md",
-    "WEB.PortSwigger/IDOR.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/0)Passive Reconnaissance.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Windows Local Persistence.md",
-    "Additional Info/Linux • Shell.md",
     "Additional Info",
     "Usage",
     "PortSwigger",
     "TryHackMe/Cloud/AWS/Pawned Labs",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits",
     "TryHackMe/Cloud/Pawned Labs",
-    "RedTeam/ZeroPointSecurity",
     "Untitled.canvas"
   ]
 }
