@@ -1,7 +1,9 @@
 https://portswigger.net/web-security/web-cache-deception#constructing-a-web-cache-deception-attack
 
+https://book.hacktricks.xyz/pentesting-web/http-response-smuggling-desync
+
 # 1. Exploiting path mapping for web cache deception
-To solve the lab, find the API key for the user `carlos`. You can log in to your own account using the following credentials: `wiener:peter`.
+To solve the lab, find the API key for the user `carlos`. You can log in to your own account using r the following credentials: `wiener:peter`.
 
 ## Identify a target endpoint
 1. In Burp's browser, log in to the application using the credentials `wiener:peter`.
