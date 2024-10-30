@@ -8,35 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a7584f4fa10f065",
+            "id": "799e50f7e4e6fb09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Shells.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shells"
+              "title": "Capabilities"
             }
           },
           {
-            "id": "d80bb828363f83fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linux Privilege Escalation"
-            }
-          },
-          {
-            "id": "416786c0e5f63c3c",
+            "id": "9f8266346f9e6e28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,11 +177,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "416786c0e5f63c3c",
+  "active": "9f8266346f9e6e28",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Shells.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Cron Jobs.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/SUID.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Sudo.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Kernel Exploits.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Shells.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Webshell.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Metasploit.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Socat.md",
@@ -217,11 +208,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/BurpSuite/Other Modules.md",
     "CTFs/AWS Lateral Movement.md",
-    "TryHackMe/PenTest/IPS.md",
-    "TryHackMe/PenTest/Post Exploitation Tools.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
-    "PortSwigger/WEB LLM(Large-Language-Model).md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Local Persistence.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory",
