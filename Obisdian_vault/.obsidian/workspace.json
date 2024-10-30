@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumeration"
+              "title": "Linux Privilege Escalation"
             }
           }
         ],
@@ -191,11 +191,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "416786c0e5f63c3c",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Shells.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Webshell.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Metasploit.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Socat.md",
