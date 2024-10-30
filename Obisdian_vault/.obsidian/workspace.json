@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Privilege Escalation"
+              "title": "Capabilities"
             }
           }
         ],
@@ -179,8 +179,9 @@
   },
   "active": "9f8266346f9e6e28",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
+    "Frameworks & Tools.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Cron Jobs.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/SUID.md",
@@ -207,7 +208,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/BurpSuite/Extensions.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/BurpSuite/Intruder.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/BurpSuite/Other Modules.md",
-    "CTFs/AWS Lateral Movement.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory",
