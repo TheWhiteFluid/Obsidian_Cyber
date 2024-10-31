@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTFs/Hackout/AWS/Notes.md",
+                "file": "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "EC2 Permission Enumeration"
             }
           }
         ]
@@ -164,14 +164,14 @@
   },
   "active": "bb337d624506083f",
   "lastOpenFiles": [
+    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
+    "CTFs/Hackout/AWS/Notes.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Linux.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
     "CTFs/Hackout/AWS",
-    "CTFs/Hackout/AWS/Notes.md",
-    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
-    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
-    "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
-    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
-    "CTFs/Hackout/AWS/Enumeration/Machines/Linux.md",
     "CTFs/Hackout.DefCamp.BSide/Enumeration/Tools.md",
     "CTFs/Hackout/AWS/Lateral Movement",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
