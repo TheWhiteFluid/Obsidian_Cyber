@@ -1,4 +1,3 @@
-
 - https://www.youtube.com/watch?v=yOjVRkReTk4 (long)
   - https://www.youtube.com/watch?v=B7QUUHO_pC0&pp=ygUUYXdzIGxhdGVyYWwgbW92ZW1lbnQ%3D (short)
     
