@@ -73,6 +73,8 @@ https://gtfobins.github.io/
 - [Token Kidnapping](https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf)
 - [Hacktricks - Windows Local Privilege Escalation](https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation)
 - https://github.com/PowerShellMafia
+  
+  -  [Priv2Admin](https://github.com/gtworek/Priv2Admin)
 
 - WinPEAS (https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS) (detectable)
 - PrivescCheck (https://github.com/itm4n/PrivescCheck) (detectable)
