@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/0)Summary.md",
+                "file": "Additional Info/vids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "vids"
             }
           }
         ]
@@ -164,9 +164,13 @@
   },
   "active": "31e0a8a24c34f425",
   "lastOpenFiles": [
+    "Additional Info/Linux • Shell.md",
+    "Additional Info/vids.md",
+    "PortSwigger/Authentication.md",
+    "PortSwigger/0)Summary.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/0)Summary.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Output Saving.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/OS Detection.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/0)Summary.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Summary.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Exploits/Exploitation.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter/Meterpreter.md",
@@ -190,9 +194,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/More Details.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/Fragmented Packets.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/NULL Scan, FIN Scan, Xmas Scan.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/Zombie Scans.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/ACK Scan, Window Scan, Custom Scan.md",
-    "Frameworks & Tools.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Protocols",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Basic",
