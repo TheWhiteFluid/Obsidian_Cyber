@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Scheduled Tasks.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Passive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scheduled Tasks"
+              "title": "Passive"
             }
           }
         ],
@@ -177,8 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "648138d0e2f95f9a",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Active.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Scheduled Tasks.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Subnetworks.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/SSL & TLS.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Protocols/Telnet -23.md",
@@ -208,10 +210,8 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks/Password Attack.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Summary.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Passive Reconnaissance.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Active Reconnaissance.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Passive.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Unpatched Software.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges",
     "CTFs/Hackout/AWS/Lateral Movement",
