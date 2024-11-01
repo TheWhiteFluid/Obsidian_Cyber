@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Scheduled Tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Privilege Escalation"
+              "title": "Scheduled Tasks"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Scheduled Tasks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Privilege Escalation"
+              "title": "Scheduled Tasks"
             }
           }
         ],
@@ -177,45 +177,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "648138d0e2f95f9a",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks/Password Attack.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Summary.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Passive Reconnaissance.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/Active Reconnaissance.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Unpatched Software.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges/SeImpersonate & SeAssignPrimaryToken.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges/SeBackup & SeRestore.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Service Misconfigurations/Insecure Service Permissions.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Service Misconfigurations/Insecure Permissions on Service Executable.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Service Misconfigurations/Services.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges/SeTakeOwnership (Utilman).md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest/PuTTY.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest/Powershell History.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest/Unattended Windows Installation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest/IIS Configuration.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest/Saved Windows Credentials.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Service Misconfigurations/Unquoted Service Paths.md",
+    "CTFs/Hackout/AWS/Notes.md",
+    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
+    "CTFs/Hackout/AWS/Lateral Movement",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Linux.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions",
+    "CTFs/Hackout/AWS/Enumeration/Machines",
+    "CTFs/Hackout/AWS/Enumeration",
+    "CTFs/Hackout/AWS",
+    "CTFs/Hackout",
+    "z.Screenshots/Pasted image 20241031161304.png",
+    "Pasted image 20241031161304.png",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Service Misconfigurations",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Scheduled Tasks.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/PowerShell & CMD.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/AlwaysInstallElevated.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest/Unattended Windows Installation.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest/Saved Windows Credentials.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest/PuTTY.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest/Powershell History.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest/IIS Configuration.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Users.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Windows Privilege Escalation.md",
-    "TryHackMe/PenTest/IPS.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords harvest",
-    "PowerShell & CMD",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance/1)Active Reconnaissance.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Reconnaissance",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Local Persistance/(Jr.pen)Windows Local Persistence.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Local Persistance",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/PATH.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/NFS.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Cron Jobs.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Linux Privilege Escalation.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Metasploit.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Webshell.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Socat.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Shells.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Netcat.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Local Persistance/Windows Local Persistence.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/OWASP T10 - 2021.md",
     "z.Screenshots/Pasted image 20241028010932.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux",
     "z.Screenshots/Pasted image 20241028011023.png",
     "z.Screenshots/Pasted image 20241028160437.png",
     "z.Screenshots/Pasted image 20241028160412.png",
@@ -223,8 +225,6 @@
     "z.Screenshots/Pasted image 20241028160203.png",
     "z.Screenshots/Pasted image 20241028160147.png",
     "z.Screenshots/Pasted image 20241028155743.png",
-    "z.Screenshots/Pasted image 20241028155626.png",
-    "z.Screenshots/Pasted image 20241028155446.png",
     "Untitled.canvas"
   ]
 }
