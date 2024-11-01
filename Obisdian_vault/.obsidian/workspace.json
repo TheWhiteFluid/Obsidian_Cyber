@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Output Saving.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Database.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Output Saving"
+              "title": "Database"
             }
           }
         ]
@@ -162,12 +162,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31e0a8a24c34f425",
+  "active": "5ad812e41e7521b6",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Exploits",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Exploits/Exploitation.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter/Meterpreter.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Summary.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Database.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Output Saving.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Nmap Scripting Engine (NSE).md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/OS Detection.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/0)Summary.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Output Saving.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Basic/0)Summary.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/5)Nmap Post Port Scans.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/Service Detection.md",
@@ -185,11 +191,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/ACK Scan, Window Scan, Custom Scan.md",
     "Frameworks & Tools.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/Nmap Advanced Port Scans.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Advanced/Spoofing & Decoys.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks/Password Attack.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks/Man-in-the-Middle.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/0)Summary.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/SSL & TLS.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Protocols",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post",
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Basic",
@@ -199,7 +200,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Protocols & Servers/Attacks",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Passwords Harvest",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Dangerous Privileges",
-    "CTFs/Hackout/AWS/Lateral Movement",
     "z.Screenshots/Pasted image 20241031161304.png",
     "Pasted image 20241031161304.png",
     "z.Screenshots/Pasted image 20241028010932.png",
