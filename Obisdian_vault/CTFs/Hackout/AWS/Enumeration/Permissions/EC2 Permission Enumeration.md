@@ -11,3 +11,6 @@
 5. **CloudMapper**:
     - **Description**: A tool to visualize your AWS environment, including VPCs, subnets, and security groups.
     - **GitHub**: [CloudMapper](https://github.com/dualspark/cloudmapper)
+      
+6. **Prowler**
+   - Github: https://github.com/prowler-cloud/prowler

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Active Directory - Basics.md",
+                "file": "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Directory - Basics"
+              "title": "EC2 Permission Enumeration"
             }
           }
         ]
@@ -162,8 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ad812e41e7521b6",
+  "active": "b96b5ea997d05e09",
   "lastOpenFiles": [
+    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Active Directory - Basics.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Utilman.md",
@@ -194,9 +197,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Scheduled Tasks",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Local Persistance/(Jr.pen)Windows Local Persistence.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Planning and Scoping/Rules of Engagement.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Planning and Scoping/Governance & Regulations.md",
     "z.Screenshots/Pasted image 20241102012001.png",
     "z.Screenshots/Pasted image 20241102011842.png",
     "z.Screenshots/Pasted image 20241102012043.png",
