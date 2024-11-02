@@ -13,57 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SeTakeOwnership -- Utilman"
+              "title": "Windows Local Persistence"
             }
           },
           {
-            "id": "8b5a54395bcb09e8",
+            "id": "56f49c8816525f22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Executable Files.md",
+                "file": "Creating backdoor services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Executable Files"
+              "title": "Creating backdoor services"
             }
           },
           {
-            "id": "4820e7ea511b8e40",
+            "id": "11b3113b96a970d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
+                "file": "Modifying existing services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shortcut Files"
-            }
-          },
-          {
-            "id": "169c3bf6da5ac953",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Hijacking File Associations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hijacking File Associations"
+              "title": "Modifying existing services"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,18 +191,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e9e4c1b785a35db",
+  "active": "56f49c8816525f22",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
+    "Modifying existing services.md",
+    "Creating backdoor services.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Executable Files.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Hijacking File Associations.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Executable Files.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Privileges and Security Descriptors.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Persisting Through Existing Services",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring the Login Screen & RDP",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services",
@@ -243,8 +232,6 @@
     "z.Screenshots/Pasted image 20241102012023.png",
     "z.Screenshots/Pasted image 20241102011819.png",
     "z.Screenshots/Pasted image 20241102011802.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Network Security/Nmap/Port Scans/Post/5)Nmap Post Port Scans.md",
-    "Additional Info/vids.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/msfconsole",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Modules",
     "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter",
