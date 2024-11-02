@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SeImpersonate & SeAssignPrimaryToken"
+              "title": "SeTakeOwnership -- Utilman"
             }
           },
           {
@@ -206,6 +206,8 @@
   },
   "active": "2e9e4c1b785a35db",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Executable Files.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Hijacking File Associations.md",
@@ -213,9 +215,7 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Privileges and Security Descriptors.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership (Utilman).md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Persisting Through Existing Services",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring the Login Screen & RDP",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services",
