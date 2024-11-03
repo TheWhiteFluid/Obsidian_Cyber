@@ -31,3 +31,29 @@ This lab is vulnerable to web cache poisoning because it handles input from an u
 12. If the lab is still not solved, the victim did not access the page while the cache was poisoned. Keep sending the request every few seconds to re-poison the cache until the victim is affected and the lab is solved.
 
 Analysis:
+![](Pasted%20image%2020241103052909.png)
+
+![](Pasted%20image%2020241103053102.png)
+
+store the exploit on a server and deliver trough X-Forward-Host header:
+![](Pasted%20image%2020241103053433.png)
+
+![](Pasted%20image%2020241103053657.png)
+
+send the request until the payload is finally cached by the server ( hit )
+
+
+# 2.Web cache poisoning with an unkeyed cookie
+This lab is vulnerable to web cache poisoning because cookies aren't included in the cache key. An unsuspecting user regularly visits the site's home page. To solve this lab, poison the cache with a response that executes `alert(1)` in the visitor's browser.
+
+1. In Burp, go to "Proxy" > "HTTP history" and study the requests and responses that you generated. Notice that the first response you received sets the cookie `fehost=prod-cache-01`.
+2. Reload the home page and observe that the value from the `fehost` cookie is reflected inside a double-quoted JavaScript object in the response.
+3. Send this request to Burp Repeater and add a cache-buster query parameter.
+4. Change the value of the cookie to an arbitrary string and resend the request. Confirm that this string is reflected in the response.
+5. Place a suitable XSS payload in the `fehost` cookie, for example:
+    `fehost=someString"-alert(1)-"someString`
+6. Replay the request until you see the payload in the response and `X-Cache: hit` in the headers.
+7. Load the URL in the browser and confirm the `alert()` fires.
+8. Go back Burp Repeater, remove the cache buster, and replay the request to keep the cache poisoned until the victim visits the site and the lab is solved.
+
+Analysis:
