@@ -32,7 +32,7 @@ Exploit:
 ```
 - used another endpoint thus previous one was already cached by the server.
 
-# **2. Exploiting path delimiters for web cache deception**
+# 2. Exploiting path delimiters for web cache deception
 To solve the lab, find the API key for the user `carlos`. You can log in to your own account using the following credentials: `wiener:peter`. We have provided a list of possible delimiter characters to help you solve the lab: [Web cache deception lab delimiter list](https://portswigger.net/web-security/web-cache-deception/wcd-lab-delimiter-list).
 ## Identify path delimiters used by the origin server
 1. In **Proxy > HTTP history**, right-click the `GET /my-account` request and select **Send to Repeater**.
@@ -80,7 +80,7 @@ Exploit:
 <script> window.location="https://0a2900c90343f9d082757f9100360071.web-security-academy.net/my-account;test3.js" </script>
 ```
 
-# **3. Exploiting origin server normalization for web cache deception**
+# 3. Exploiting origin server normalization for web cache deception
 To solve the lab, find the API key for the user `carlos`. You can log in to your own account using the following credentials: `wiener:peter`. We have provided a list of possible delimiter characters to help you solve the lab: [Web cache deception lab delimiter list](https://portswigger.net/web-security/web-cache-deception/wcd-lab-delimiter-list).
 ## Investigate path delimiter discrepancies
 1. In **Proxy > HTTP history**, right-click the `GET /my-account` request and select **Send to Repeater**.
@@ -114,3 +114,67 @@ To solve the lab, find the API key for the user `carlos`. You can log in to you
 
 Analysis:
 
+![](Pasted%20image%2020241103025828.png)
+
+- resources page is cacheable so we will make use of this 
+![](Pasted%20image%2020241103030153.png)
+
+![](Pasted%20image%2020241103030321.png)
+
+Exploit:
+```
+<script> window.location="https://0a1c008503da8073e446b9b800f8008e.web-security-academy.net/resources/..%2fmyaccount" </script>
+```
+
+# 4. Exploiting cache server normalization for web cache deception
+To solve the lab, find the API key for the user `carlos`. You can log in to your own account using the following credentials: `wiener:peter`.
+
+We have provided a list of possible delimiter characters to help you solve the lab: [Web cache deception lab delimiter list](https://portswigger.net/web-security/web-cache-deception/wcd-lab-delimiter-list).
+
+## Investigate path delimiters used by the origin server
+1. In **Proxy > HTTP history**, right-click the `GET /my-account` request and select **Send to Repeater**.
+2. Change the URL path to `/my-account/abc`, then send the request. Notice the `404 Not Found` response. This indicates that the origin server doesn't abstract the path to `/my-account`.
+3. Change the path to `/my-accountabc`, then send the request. Notice that this returns a `404 Not Found` response with no evidence of caching.
+4. Right-click the message and select **Send to Intruder**.
+5. Go to the **Intruder** tab. Make sure that **Sniper attack** is selected and add a payload position after `/my-account` as follows: `/my-account§§abc`.
+6. In the **Payloads** side panel, under **Payload configuration**, add a list of characters that may be used as delimiters.
+7. Under **Payload encoding**, deselect **URL-encode these characters**.
+8. Click  **Start attack**. The attack runs in a new window.
+9. When the attack finishes, sort the results by **Status code**. Notice that the `#`, `?`, `%23`, and `%3f` characters receive a `200` response with your API key. This indicates that they're used by the origin server as path delimiters. Ignore the `#` character. It can't be used for an exploit as the victim's browser will use it as a delimiter before forwarding the request to the cache.
+
+## Investigate path delimiter discrepancies
+1. Go to the **Repeater** tab that contains the `/my-accountabc` request. Add the `?` character after `/my-account` and add a static extension to the path. For example, update the path to `/my-account?abc.js`.
+2. Send the request. Notice that the response doesn't contain evidence of caching. This either indicates that the cache also uses `?` as a path delimiter, or that the cache doesn't have a rule based on the `.js` extension.
+3. Repeat this test using the `%23` and `%3f` characters instead of `?`. Notice that the responses don't show evidence of caching.
+
+## Investigate normalization discrepancies
+1. Remove the query string and add an arbitrary directory followed by an encoded dot-segment to the start of the original path. For example, `/aaa/..%2fmy-account`.
+2. Send the request. Notice that this receives a `404` response. This indicates that the origin server doesn't decode or resolve the dot-segment to normalize the path to `/my-account`.
+3. In **Proxy > HTTP history**, notice that static resources share the URL path directory prefix `/resources`. Notice that responses to requests with the `/resources` prefix show evidence of caching.
+4. Right-click a request with the prefix `/resources` and select **Send to Repeater**.
+5. In **Repeater**, add an encoded dot-segment and arbitrary directory before the `/resources` prefix. For example, `/aaa/..%2fresources/YOUR-RESOURCE`.
+6. Send the request. Notice that the `404` response contains the `X-Cache: miss` header.
+7. Resend the request. Notice that the value of the `X-Cache` header updates to `hit`. This may indicate that the cache decodes and resolves the dot-segment and has a cache rule based on the `/resources` prefix. To confirm this, you'll need to conduct further testing. It's still possible that the response is being cached due to a different cache rule.
+8. Add an encoded dot-segment after the `/resources` path prefix as follows: `/resources/..%2fYOUR-RESOURCE`.
+9. Send the request. Notice that the `404` response no longer contains evidence of caching. This indicates that the cache decodes and resolves the dot-segment and has a cache rule based on the `/resources` prefix.
+
+## Craft an exploit
+1. Go to the **Repeater** tab that contains the `/aaa/..%2fmy-account` request. Use the `?` delimiter to attempt to construct an exploit as follows:
+    `/my-account?%2f%2e%2e%2fresources`
+2. Send the request. Notice that this receives a `200` response with your API key, but doesn't contain evidence of caching.
+3. Repeat this test using the `%23` and `%3f` characters instead of `?`. Notice that when you use the `%23` character this receives a `200` response with your API key and the `X-Cache: miss` header. Resend and notice that this updates to `X-Cache: hit`. You can use this delimiter for an exploit.
+4. In Burp's browser, click **Go to exploit server**.
+5. In the **Body** section, craft an exploit that navigates the victim user `carlos` to a malicious URL. Make sure to add an arbitrary parameter as a cache buster:
+    `<script>document.location="https://YOUR-LAB-ID.web-security-academy.net/my-account%23%2f%2e%2e%2fresources?wcd"</script>`
+6. Click **Deliver exploit to victim**.
+7. Go to the URL that you delivered to `carlos` in your exploit:
+    `https://YOUR-LAB-ID.web-security-academy.net/my-account%23%2f%2e%2e%2fresources?wcd`
+8. Notice that the response includes the API key for the user `carlos`. 
+
+
+????????????????????????????????????
+????????????????????????????
+???????????????
+???????
+?????
+???
