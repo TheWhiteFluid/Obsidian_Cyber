@@ -57,3 +57,40 @@ This lab is vulnerable to web cache poisoning because cookies aren't included in
 8. Go back Burp Repeater, remove the cache buster, and replay the request to keep the cache poisoned until the victim visits the site and the lab is solved.
 
 Analysis:
+
+- cookie `fehost=prod-cache-01`.![](Pasted%20image%2020241104012549.png)
+  - value of the `fehost` is now reflected in  response![](Pasted%20image%2020241104013750.png)
+  - testing for reflection ![](Pasted%20image%2020241104013931.png)
+  ![](Pasted%20image%2020241104014131.png)
+
+# 3.  Web cache poisoning with multiple headers
+This lab contains a web cache poisoning vulnerability that is only exploitable when you use multiple headers to craft a malicious request. A user visits the home page roughly once a minute. To solve this lab, poison the cache with a response that executes `alert(document.cookie)` in the visitor's browser.
+
+1. Go to "Proxy" > "HTTP history" and study the requests and responses that you generated. Find the `GET` request for the JavaScript file `/resources/js/tracking.js` and send it to Burp Repeater.
+2. Add a cache-buster query parameter and the `X-Forwarded-Host` header with an arbitrary hostname, such as `example.com`. Notice that this doesn't seem to have any effect on the response.
+3. Remove the `X-Forwarded-Host` header and add the `X-Forwarded-Scheme` header instead. Notice that if you include any value other than `HTTPS`, you receive a 302 response. The `Location` header shows that you are being redirected to the same URL that you requested, but using `https://`.
+4. Add the `X-Forwarded-Host: example.com` header back to the request, but keep `X-Forwarded-Scheme: nothttps` as well. Send this request and notice that the `Location` header of the 302 redirect now points to `https://example.com/`.
+5. Go to the exploit server and change the file name to match the path used by the vulnerable response:
+    `/resources/js/tracking.js`
+6. In the body, enter the payload `alert(document.cookie)` and store the exploit.
+7. Go back to the request in Burp Repeater and set the `X-Forwarded-Host` header as follows, remembering to enter your own exploit server ID:
+    `X-Forwarded-Host: YOUR-EXPLOIT-SERVER-ID.exploit-server.net`
+8. Make sure the `X-Forwarded-Scheme` header is set to anything other than `HTTPS`.
+9. Send the request until you see your exploit server URL reflected in the response and `X-Cache: hit` in the headers.
+10. To check that the response was cached correctly, right-click on the request in Burp, select "Copy URL", and load this URL in Burp's browser. If the cache was successfully poisoned, you will see the script containing your payload, `alert(document.cookie)`. Note that the `alert()` won't actually execute here.
+11. Go back to Burp Repeater, remove the cache buster, and resend the request until you poison the cache again.
+12. To simulate the victim, reload the home page in the browser and make sure that the `alert()` fires.
+13. Keep replaying the request to keep the cache poisoned until the victim visits the site and the lab is solved.
+
+- adding a cachebuster param
+	![](Pasted%20image%2020241104021240.png)
+- quick headers scan using Param Miner burp extension and we observe that `X-Forwarded-Scheme` header is unkeyed
+	![](Pasted%20image%2020241104021527.png)
+- https scheme --> 200 response (no backserver redirect) so we have to use a nonhttps scheme
+	![](Pasted%20image%2020241104022652.png)
+
+	![](Pasted%20image%2020241104022736.png)
+- scanning again using Param Miner
+	![](Pasted%20image%2020241104022921.png)![](Pasted%20image%2020241104023250.png)![](Pasted%20image%2020241104023333.png)
+- craft the exploit using our exploiting server with the poisoned cache
+	![](Pasted%20image%2020241104023529.png)
