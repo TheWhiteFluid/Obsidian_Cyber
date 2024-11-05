@@ -92,5 +92,8 @@ This lab contains a web cache poisoning vulnerability that is only exploitable w
 	![](Pasted%20image%2020241104022736.png)
 - scanning again using Param Miner
 	![](Pasted%20image%2020241104022921.png)![](Pasted%20image%2020241104023250.png)![](Pasted%20image%2020241104023333.png)
-- craft the exploit using our exploiting server with the poisoned cache
+- craft the exploit using our exploiting server as forwarded host with the poisoned cache
 	![](Pasted%20image%2020241104023529.png)
+
+# 4.Targeted web cache poisoning using an unknown header
+
