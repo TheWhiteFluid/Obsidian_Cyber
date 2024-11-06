@@ -90,6 +90,7 @@ https://gtfobins.github.io/
 ## **==AWS // Cloud==**
 
 - https://github.com/salesforce/cloudsplaining (privesc)
+- https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
 
 
 ### **==RedTeam==**

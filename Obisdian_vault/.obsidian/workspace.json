@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
+                "file": "CTFs/Hackout/AWS/Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NTLM Authenticated Services"
+              "title": "Notes"
             }
           }
         ],
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
+                "file": "CTFs/Hackout/AWS/Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from NTLM Authenticated Services"
+              "title": "Outgoing links from Notes"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md"
+                "file": "CTFs/Hackout/AWS/Notes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of NTLM Authenticated Services"
+              "title": "Outline of Notes"
             }
           }
         ],
@@ -179,9 +179,14 @@
   },
   "active": "0312025023569b63",
   "lastOpenFiles": [
+    "Frameworks & Tools.md",
+    "CTFs/Hackout/AWS/Notes.md",
+    "Pasted image 20241106205041.png",
+    "Pasted image 20241106205024.png",
+    "Pasted image 20241106204928.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Summary.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Basics/Trees, Forests and Trusts.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Basics/Authentication Methods.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Basics/Group Policies.md",
@@ -200,9 +205,6 @@
     "z.Screenshots/Pasted image 20241106015413.png",
     "z.Screenshots/Pasted image 20241106015111.png",
     "z.Screenshots/Pasted image 20241106014612.png",
-    "z.Screenshots/Pasted image 20241106014600.png",
-    "z.Screenshots/Pasted image 20241105222157.png",
-    "z.Screenshots/Pasted image 20241105222150.png",
     "PortSwigger/0)Summary.md",
     "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
     "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
@@ -215,8 +217,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Winlogon.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Run & RunOnce.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Scheduled Tasks/Task Scheduler.md",
-    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services",
