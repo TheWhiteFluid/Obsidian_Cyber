@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8044d55968a751ec",
+            "id": "b96b5ea997d05e09",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,7 +54,7 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.51103591918945,
+    "width": 290.51103591918945,
     "collapsed": true
   },
   "right": {
@@ -94,8 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows Local Persistence.md",
-                "collapseAll": false,
+                "file": "PortSwigger/WEB Cache(poisoning).md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Windows Local Persistence"
+              "title": "Backlinks for WEB Cache(poisoning)"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows Local Persistence.md",
+                "file": "WEB.PortSwigger/Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Windows Local Persistence"
+              "title": "Outgoing links from Authentication"
             }
           },
           {
@@ -140,18 +140,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows Local Persistence.md"
+                "file": "PortSwigger/WEB Cache(poisoning).md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Windows Local Persistence"
+              "title": "Outline of WEB Cache(poisoning)"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,54 +163,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8044d55968a751ec",
+  "active": "b96b5ea997d05e09",
   "lastOpenFiles": [
-    "Pasted image 20241105122855.png",
-    "Pasted image 20241105122353.png",
-    "Pasted image 20241105122322.png",
-    "Pasted image 20241105121922.png",
-    "Pasted image 20241105121805.png",
-    "Pasted image 20241105121620.png",
-    "Pasted image 20241105121057.png",
-    "z.Screenshots/Pasted image 20241104023529.png",
-    "z.Screenshots/Pasted image 20241104023435.png",
-    "z.Screenshots/Pasted image 20241104023333.png",
-    "z.Screenshots/Pasted image 20241104023250.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Summary.md",
+    "Pasted image 20241106020234.png",
+    "Pasted image 20241106020208.png",
+    "Pasted image 20241106015719.png",
+    "Pasted image 20241106015413.png",
+    "Pasted image 20241106015111.png",
+    "Pasted image 20241106014612.png",
+    "Pasted image 20241106014600.png",
+    "Pasted image 20241105222157.png",
+    "Pasted image 20241105222150.png",
+    "Pasted image 20241105221903.png",
+    "Pasted image 20241105215810.png",
+    "PortSwigger/WEB Cache(deception).md",
+    "PortSwigger/0)Summary.md",
     "PortSwigger/WEB Cache(poisoning).md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Active Directory - Basics.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
+    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Utilman.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Run & RunOnce.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Logon scripts.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Winlogon.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Run & RunOnce.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Scheduled Tasks/Task Scheduler.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Scheduled Tasks",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services/Modifying existing services.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Linux.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services/Creating backdoor services.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
-    "Creating backdoor services.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Windows Local Persistence.md",
-    "Modifying existing services.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services/Modifying existing services.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Hijacking File Associations.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Executable Files.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeTakeOwnership -- Utilman.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Privileges and Security Descriptors.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Persisting Through Existing Services",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring the Login Screen & RDP",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Scheduled Tasks",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files",
-    "TryHackMe/PenTest/Powershell CLM Bypass Using Runspaces.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Scheduled Tasks",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/msfconsole",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Modules",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Metasploit/Meterpreter",
     "Untitled.canvas"
   ]
 }
