@@ -1,7 +1,6 @@
 https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
 
-JWT 
-OAuth 
+JWT // OAuth 
 NoSQL
 Insecure deserialization
 
