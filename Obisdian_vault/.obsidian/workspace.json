@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTFs/Hackout/AWS/Notes.md",
+                "file": "PortSwigger/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notes"
+              "title": "0)Summary"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTFs/Hackout/AWS/Notes.md"
+                "file": "PortSwigger/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Notes"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -179,11 +179,13 @@
   },
   "active": "0312025023569b63",
   "lastOpenFiles": [
-    "Frameworks & Tools.md",
+    "PortSwigger/SSRF - Server-side request forgery.md",
+    "PortSwigger/OS Injection.md",
     "CTFs/Hackout/AWS/Notes.md",
-    "Pasted image 20241106205041.png",
-    "Pasted image 20241106205024.png",
-    "Pasted image 20241106204928.png",
+    "Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20241106205041.png",
+    "z.Screenshots/Pasted image 20241106205024.png",
+    "z.Screenshots/Pasted image 20241106204928.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Summary.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
@@ -215,8 +217,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Logon scripts.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Winlogon.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Run & RunOnce.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Abusing Services",

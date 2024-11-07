@@ -6,8 +6,9 @@ NoSQL
 Insecure deserialization
 
 
-https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
-### Vulnerabilities
+### Vulnerabilities 
+Repo: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
+
 1. [XXE Injection](https://www.hackingarticles.in/comprehensive-guide-on-xxe-injection/)
 2. [CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)
 3. [Cross-Site Scripting Exploitation](https://www.hackingarticles.in/cross-site-scripting-exploitation/)
