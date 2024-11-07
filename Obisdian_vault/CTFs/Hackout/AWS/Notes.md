@@ -9,7 +9,7 @@
 			    
 AWS VPC Section/
 AWS Security Section/
-Use CloudGoat & Pacu for simulate
+Use CloudGoat & Pacu for simulation
 
 AWS CLI commands
 https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
