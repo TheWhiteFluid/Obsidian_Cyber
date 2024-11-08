@@ -227,3 +227,54 @@ Analysis:
 	![](Pasted%20image%2020241108185933.png)
 	- keep in mind that the front end server will treat the `/` and `%2f`(encoded version of it) in the same way so in this way, front page being defaced, we can inject our payload and store it in the cache
 	![](Pasted%20image%2020241108190035.png)![](Pasted%20image%2020241108190338.png)![](Pasted%20image%2020241108190443.png)
+
+
+# 10. Web cache poisoning to exploit a DOM vulnerability via a cache with strict cacheability criteria
+This lab contains a DOM-based vulnerability that can be exploited as part of a web cache poisoning attack. A user visits the home page roughly once a minute. Note that the cache used by this lab has stricter criteria for deciding which responses are cacheable, so you will need to study the cache behavior closely. To solve the lab, poison the cache with a response that executes `alert(document.cookie)` in the visitor's browser.
+
+1. In Burp, go to "Proxy" > "HTTP history" and study the requests and responses that you generated. Find the `GET` request for the home page and send it to Burp Repeater.
+2. Use [Param Miner](https://portswigger.net/web-security/web-cache-poisoning#param-miner) to identify that the `X-Forwarded-Host` header is supported.
+3. Add a cache buster to the request, as well as the `X-Forwarded-Host` header with an arbitrary hostname, such as `example.com`. Notice that this header overwrites the `data.host` variable, which is passed into the `initGeoLocate()` function.
+4. Study the `initGeoLocate()` function in `/resources/js/geolocate.js` and notice that it is vulnerable to [DOM-XSS](https://portswigger.net/web-security/cross-site-scripting/dom-based) due to the way it handles the incoming JSON data.
+5. Go to the exploit server and change the file name to match the path used by the vulnerable response:
+    `/resources/json/geolocate.json`
+6. In the head, add the header `Access-Control-Allow-Origin: *` to enable [CORS](https://portswigger.net/web-security/cors/access-control-allow-origin)
+7. In the body, add a malicious JSON object that matches the one used by the vulnerable website. However, replace the value with a suitable XSS payload, for example:
+    `{ "country": "<img src=1 onerror=alert(document.cookie) />" }`
+8. Store the exploit.
+9. Back in Burp, find the request for the home page and send it to Burp Repeater.
+10. In Burp Repeater, add the following header, remembering to enter your own exploit server ID:
+    `X-Forwarded-Host: YOUR-EXPLOIT-SERVER-ID.exploit-server.net`
+11. Send the request until you see your exploit server URL reflected in the response and `X-Cache: hit` in the headers.
+12. If this doesn't work, notice that the response contains the `Set-Cookie` header. Responses containing this header are not cacheable on this site. Reload the home page to generate a new request, which should have a session cookie already set.
+13. Send this new request to Burp Repeater and repeat the steps above until you successfully poison the cache.
+14. To simulate the victim, load the URL in the browser and make sure that the `alert()` fires.
+
+Analysis:
+- move set cookie in the request part ( no need for backend to store it) in order to obtain a cacheability valid criteria
+![](Pasted%20image%2020241108215504.png)
+
+- identify a cache oracle
+  ![](Pasted%20image%2020241108215653.png)
+  - adding a cache buster
+    ![](Pasted%20image%2020241108215820.png)
+- using PARAM MINER in order to discover an unkeyed parameter
+	![](Pasted%20image%2020241108215953.png)
+- X-Forwarded-Host header value is reflected in the response
+  ![](Pasted%20image%2020241108220104.png)
+  - also pay attention where this is stored/reflected in the dom (trough a dictionary named data)
+	![](Pasted%20image%2020241108220306.png)
+- quick search after the data dictonary in the same response will lead us to this:
+  ![](Pasted%20image%2020241108220447.png)
+- following up the path will lead us to this:
+  ![](Pasted%20image%2020241108220630.png)
+  ![](Pasted%20image%2020241108220800.png)
+ - at line 21 it is used `.innerHTML` which is dangerous thus it represents a sink and we could inject our js payload over there
+   ![](Pasted%20image%2020241108220947.png)
+   Exploit:![](Pasted%20image%2020241108221240.png)
+   ![](Pasted%20image%2020241108221345.png)
+   - sending the request we obtain a CORS error:
+    ![](Pasted%20image%2020241108221506.png)![](Pasted%20image%2020241108221539.png)
+- RELAX THE SAME-ORIGIN policy by adding in our exploit server request `Access-Control-Allow-Origin: *`
+	![](Pasted%20image%2020241108221657.png)
+	![](Pasted%20image%2020241108221839.png)
