@@ -251,8 +251,8 @@ This lab contains a DOM-based vulnerability that can be exploited as part of a w
 14. To simulate the victim, load the URL in the browser and make sure that the `alert()` fires.
 
 Analysis:
-- move set cookie in the request part ( no need for backend to store it) in order to obtain a cacheability valid criteria
-![](Pasted%20image%2020241108215504.png)
+- move set cookie on the request part ( no need for backend to store it) in order to obtain a cacheability valid criteria
+	![](Pasted%20image%2020241108215504.png)
 
 - identify a cache oracle
   ![](Pasted%20image%2020241108215653.png)
