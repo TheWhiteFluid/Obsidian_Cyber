@@ -129,3 +129,60 @@ Analysis:
 
 ![](Pasted%20image%2020241105122855.png)
 
+# 5. Web cache poisoning via an unkeyed query parameter
+This lab is vulnerable to web cache poisoning because the query string is unkeyed. A user regularly visits this site's home page using Chrome. To solve the lab, poison the home page with a response that executes `alert(1)` in the victim's browser.
+
+1. Observe that the home page is a suitable cache oracle. Notice that you get a cache miss whenever you change the query string. This indicates that it is part of the cache key. Also notice that the query string is reflected in the response.
+2. Add a cache-buster query parameter.
+3. Use Param Miner's "Guess GET parameters" feature to identify that the parameter `utm_content` is supported by the application.
+4. Confirm that this parameter is unkeyed by adding it to the query string and checking that you still get a cache hit. Keep sending the request until you get a cache miss. Observe that this unkeyed parameter is also reflected in the response along with the rest of the query string.
+5. Send a request with a `utm_content` parameter that breaks out of the reflected string and injects an XSS payload:
+    `GET /?utm_content='/><script>alert(1)</script>`
+6. Once your payload is cached, remove the `utm_content` parameter, right-click on the request, and select "Copy URL". Open this URL in the browser and check that the `alert()` is triggered when you load the page.
+7. Remove your cache buster, re-add the `utm_content` parameter with your payload, and replay the request until the cache is poisoned for normal users. The lab will be solved when the victim user visits the poisoned home page.
+
+
+# 6. Web cache poisoning via an unkeyed query string
+This lab is vulnerable to web cache poisoning because the query string is unkeyed. A user regularly visits this site's home page using Chrome. To solve the lab, poison the home page with a response that executes `alert(1)` in the victim's browser.
+
+1. With Burp running, load the website's home page. In Burp, go to "Proxy" > "HTTP history". Find the `GET` request for the home page. Notice that this page is a potential cache oracle. Send the request to Burp Repeater.
+2. Add arbitrary query parameters to the request. Observe that you can still get a cache hit even if you change the query parameters. This indicates that they are not included in the cache key.
+3. Notice that you can use the `Origin` header as a cache buster. Add it to your request.
+4. When you get a cache miss, notice that your injected parameters are reflected in the response. If the response to your request is cached, you can remove the query parameters and they will still be reflected in the cached response.
+5. Add an arbitrary parameter that breaks out of the reflected string and injects an XSS payload:
+    `GET /?evil='/><script>alert(1)</script>`
+6. Keep replaying the request until you see your payload reflected in the response and `X-Cache: hit` in the headers.
+7. To simulate the victim, remove the query string from your request and send it again (while using the same cache buster). Check that you still receive the cached response containing your payload.
+8. Remove the cache-buster `Origin` header and add your payload back to the query string. Replay the request until you have poisoned the cache for normal users. Confirm this attack has been successful by loading the home page in the browser and observing the popup.
+
+Analysis:
+![](Pasted%20image%2020241108024948.png)
+
+- we need to change the position of the cache buster thus we will inject our payload in the GET request in order to be reflected as a string in the response
+- we will use `Origin` header for cb 
+	![](Pasted%20image%2020241108025301.png)
+# 7. Parameter cloaking
+This lab is vulnerable to web cache poisoning because it excludes a certain parameter from the cache key. There is also inconsistent parameter parsing between the cache and the back-end. A user regularly visits this site's home page using Chrome. To solve the lab, use the parameter cloaking technique to poison the cache with a response that executes `alert(1)` in the victim's browser.
+
+1. Identify that the `utm_content` parameter is supported. Observe that it is also excluded from the cache key.
+2. Notice that if you use a semicolon (`;`) to append another parameter to `utm_content`, the cache treats this as a single parameter. This means that the extra parameter is also excluded from the cache key. Alternatively, with Param Miner loaded, right-click on the request and select "Bulk scan" > "Rails parameter cloaking scan" to identify the vulnerability automatically.
+3. Observe that every page imports the script `/js/geolocate.js`, executing the callback function `setCountryCookie()`. Send the request `GET /js/geolocate.js?callback=setCountryCookie` to Burp Repeater.
+4. Notice that you can control the name of the function that is called on the returned data by editing the `callback` parameter. However, you can't poison the cache for other users in this way because the parameter is keyed.
+5. Study the cache behavior. Observe that if you add duplicate `callback` parameters, only the final one is reflected in the response, but both are still keyed. However, if you append the second `callback` parameter to the `utm_content` parameter using a semicolon, it is excluded from the cache key and still overwrites the callback function in the response:
+    `GET /js/geolocate.js?callback=setCountryCookie&utm_content=foo;callback=arbitraryFunction HTTP/1.1 200 OK X-Cache-Key: /js/geolocate.js?callback=setCountryCookie … arbitraryFunction({"country" : "United Kingdom"})`
+6. Send the request again, but this time pass in `alert(1)` as the callback function:
+    `GET /js/geolocate.js?callback=setCountryCookie&utm_content=foo;callback=alert(1)`
+7. Get the response cached, then load the home page in the browser. Check that the `alert()` is triggered.
+8. Replay the request to keep the cache poisoned. The lab will solve when the victim user visits any page containing this resource import URL.
+
+Analysis:
+- Identify a cache oracle
+  ![](Pasted%20image%2020241108025559.png)
+- Adding a cache buster using `Origin` header
+	![](Pasted%20image%2020241108025739.png)
+- Observe where the payload is reflected and in this case thus callback parameter is keyed we will obtain only an XSS so we need to trick the back end server
+  ![](Pasted%20image%2020241108025843.png)
+- Using Param Miner we discover an unkeyed param that we can make us of `utm_content`
+	![](Pasted%20image%2020241108030149.png)
+- we need to convert & in ; in order to trick the server that our payload is part of the unkeyed parameter and will be treated in the same way
+  ![](Pasted%20image%2020241108030427.png)![](Pasted%20image%2020241108030506.png)![](Pasted%20image%2020241108030532.png)
