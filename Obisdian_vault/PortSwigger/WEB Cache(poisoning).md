@@ -188,3 +188,42 @@ Analysis:
   ![](Pasted%20image%2020241108030427.png)![](Pasted%20image%2020241108030506.png)![](Pasted%20image%2020241108030532.png)
 # 8. Web cache poisoning via a fat GET request
 This lab is vulnerable to web cache poisoning. It accepts `GET` requests that have a body, but does not include the body in the cache key. A user regularly visits this site's home page using Chrome. To solve the lab, poison the cache with a response that executes `alert(1)` in the victim's browser.
+
+1. Observe that every page imports the script `/js/geolocate.js`, executing the callback function `setCountryCookie()`. Send the request `GET /js/geolocate.js?callback=setCountryCookie` to Burp Repeater.
+2. Notice that you can control the name of the function that is called in the response by passing in a duplicate `callback` parameter via the request body. Also notice that the cache key is still derived from the original `callback` parameter in the request line:
+    `GET /js/geolocate.js?callback=setCountryCookie … callback=arbitraryFunction HTTP/1.1 200 OK X-Cache-Key: /js/geolocate.js?callback=setCountryCookie … arbitraryFunction({"country" : "United Kingdom"})`
+3. Send the request again, but this time pass in `alert(1)` as the callback function. Check that you can successfully poison the cache.
+4. Remove any cache busters and re-poison the cache. The lab will solve when the victim user visits any page containing this resource import URL.
+
+Analysis:
+
+- identify cache oracle
+	![](Pasted%20image%2020241108181309.png)
+- adding a cache buster using `Origin` header
+	![](Pasted%20image%2020241108181427.png)
+- see where payload is reflected in the response (parameter pollution)
+	![](Pasted%20image%2020241108181728.png)
+- using PARAM MINER we observe that no unkeyed parameter is identified --> we will use a fat get request by passing in a duplicate `callback` parameter via the request body
+	![](Pasted%20image%2020241108182014.png)
+	![](Pasted%20image%2020241108182411.png)
+
+# 9. URL normalization
+This lab contains an XSS vulnerability that is not directly exploitable due to browser URL-encoding. To solve the lab, take advantage of the cache's normalization process to exploit this vulnerability. Find the XSS vulnerability and inject a payload that will execute `alert(1)` in the victim's browser. Then, deliver the malicious URL to the victim.
+
+1. In Burp Repeater, browse to any non-existent path, such as `GET /random`. Notice that the path you requested is reflected in the error message.
+2. Add a suitable reflected XSS payload to the request line:
+    `GET /random</p><script>alert(1)</script><p>foo`
+3. Notice that if you request this URL in the browser, the payload doesn't execute because it is URL-encoded.
+4. In Burp Repeater, poison the cache with your payload and then immediately load the URL in the browser. This time, the `alert()` is executed because the browser's encoded payload was URL-decoded by the cache, causing a cache hit with the earlier request.
+5. Re-poison the cache then immediately go to the lab and click "Deliver link to victim". Submit your malicious URL. The lab will be solved when the victim visits the link.
+
+Analysis:
+- adding a cache buster 
+	![](Pasted%20image%2020241108185018.png)
+- searching for unkeyed inputs using PARAM MINER -->
+	![](Pasted%20image%2020241108185130.png)
+- if no unkeyed value were found we will go next for a NORMALIZATION BEHAVIOR by the cache 
+- we will encode / in the request and we observe a 404 not found (this type of error is coming from backend server)
+	![](Pasted%20image%2020241108185933.png)
+	- keep in mind that the front end server will treat the `/` and `%2f`(encoded version of it) in the same way so in this way, front page being defaced, we can inject our payload and store it in the cache
+	![](Pasted%20image%2020241108190035.png)![](Pasted%20image%2020241108190338.png)![](Pasted%20image%2020241108190443.png)
