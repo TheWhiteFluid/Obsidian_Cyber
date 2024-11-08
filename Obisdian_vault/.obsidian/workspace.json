@@ -166,6 +166,7 @@
   },
   "active": "8044d55968a751ec",
   "lastOpenFiles": [
+<<<<<<< Updated upstream
     "z.Screenshots/Pasted image 20241108030532.png",
     "z.Screenshots/Pasted image 20241108030506.png",
     "z.Screenshots/Pasted image 20241108030427.png",
@@ -177,6 +178,19 @@
     "z.Screenshots/Pasted image 20241108025301.png",
     "z.Screenshots/Pasted image 20241108024948.png",
     "Pasted image 20241108221839.png",
+=======
+    "Pasted image 20241108221839.png",
+    "Pasted image 20241108221657.png",
+    "Pasted image 20241108221539.png",
+    "Pasted image 20241108221506.png",
+    "Pasted image 20241108221502.png",
+    "Pasted image 20241108221345.png",
+    "Pasted image 20241108221240.png",
+    "Pasted image 20241108221202.png",
+    "Pasted image 20241108220947.png",
+    "Pasted image 20241108220800.png",
+    "Pasted image 20241108220630.png",
+>>>>>>> Stashed changes
     "PortSwigger/0)Summary.md",
     "PortSwigger/WEB Cache(poisoning).md",
     "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",

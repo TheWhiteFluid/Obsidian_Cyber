@@ -277,6 +277,10 @@ Analysis:
     ![](Pasted%20image%2020241108221506.png)![](Pasted%20image%2020241108221539.png)
 - RELAX THE SAME-ORIGIN policy by adding in our exploit server request `Access-Control-Allow-Origin: *`
 	![](Pasted%20image%2020241108221657.png)
+<<<<<<< Updated upstream
 	![](Pasted%20image%2020241108221839.png)
 
 # 11.
+=======
+	![](Pasted%20image%2020241108221839.png)
+>>>>>>> Stashed changes
