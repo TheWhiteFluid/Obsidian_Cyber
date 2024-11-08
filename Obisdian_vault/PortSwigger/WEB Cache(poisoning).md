@@ -278,3 +278,5 @@ Analysis:
 - RELAX THE SAME-ORIGIN policy by adding in our exploit server request `Access-Control-Allow-Origin: *`
 	![](Pasted%20image%2020241108221657.png)
 	![](Pasted%20image%2020241108221839.png)
+
+# 11.
