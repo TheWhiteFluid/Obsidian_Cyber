@@ -251,8 +251,8 @@ This lab contains a DOM-based vulnerability that can be exploited as part of a w
 14. To simulate the victim, load the URL in the browser and make sure that the `alert()` fires.
 
 Analysis:
-- move set cookie in the request part ( no need for backend to store it) in order to obtain a cacheability valid criteria
-![](Pasted%20image%2020241108215504.png)
+- move set cookie on the request part ( no need for backend to store it) in order to obtain a cacheability valid criteria
+	![](Pasted%20image%2020241108215504.png)
 
 - identify a cache oracle
   ![](Pasted%20image%2020241108215653.png)
@@ -277,6 +277,12 @@ Analysis:
     ![](Pasted%20image%2020241108221506.png)![](Pasted%20image%2020241108221539.png)
 - RELAX THE SAME-ORIGIN policy by adding in our exploit server request `Access-Control-Allow-Origin: *`
 	![](Pasted%20image%2020241108221657.png)
+<<<<<<< Updated upstream
 	![](Pasted%20image%2020241108221839.png)
 
 # 11.
+
+# 11. Combining web cache poisoning vulnerabilities
+This lab is susceptible to web cache poisoning, but only if you construct a complex exploit chain. A user visits the home page roughly once a minute and their language is set to English. To solve this lab, poison the cache with a response that executes `alert(document.cookie)` in the visitor's browser.
+
+https://www.youtube.com/watch?v=3fStGzXQ4EY
