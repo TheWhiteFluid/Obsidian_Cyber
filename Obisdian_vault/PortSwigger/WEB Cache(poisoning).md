@@ -280,8 +280,6 @@ Analysis:
 <<<<<<< Updated upstream
 	![](Pasted%20image%2020241108221839.png)
 
-# 11.
-
 # 11. Combining web cache poisoning vulnerabilities
 This lab is susceptible to web cache poisoning, but only if you construct a complex exploit chain. A user visits the home page roughly once a minute and their language is set to English. To solve this lab, poison the cache with a response that executes `alert(document.cookie)` in the visitor's browser.
 
