@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PortSwigger/File Upload.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Upload"
+              "title": "Bypass Server-side filtering"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PortSwigger/File Upload.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for File Upload"
+              "title": "Backlinks for Bypass Server-side filtering"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PortSwigger/File Upload.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from File Upload"
+              "title": "Outgoing links from Bypass Server-side filtering"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PortSwigger/File Upload.md"
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of File Upload"
+              "title": "Outline of Bypass Server-side filtering"
             }
           }
         ],
@@ -164,11 +164,11 @@
   },
   "active": "e77956c28e925d74",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Client-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload",
     "PortSwigger/File Upload.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Client-side filtering.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload",
     "PortSwigger/Access Control & IDOR.md",
     "PortSwigger/0)Summary.md",
     "z.Screenshots/Pasted image 20241109123546.png",
