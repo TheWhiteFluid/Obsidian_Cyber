@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CTF Challange"
+              "title": "SQL Injections"
             }
           }
         ],
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 434.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CTF Challange"
+              "title": "Backlinks for SQL Injections"
             }
           },
           {
@@ -128,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CTF Challange"
+              "title": "Outgoing links from SQL Injections"
             }
           },
           {
@@ -155,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md"
+                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of CTF Challange"
+              "title": "Outline of SQL Injections"
             }
           }
         ],
@@ -166,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,10 +180,18 @@
   },
   "active": "3c2278b94b8b5eb8",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/Authentication Bypass.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SSRF.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
     "Pasted image 20241113155919.png",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Netcat.md",
     "Frameworks & Tools.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
     "z.Screenshots/Pasted image 20241112190313.png",
     "z.Screenshots/Pasted image 20241113152445.png",
     "z.Screenshots/Pasted image 20241113150553.png",
@@ -193,11 +201,8 @@
     "z.Screenshots/Pasted image 20241112194627.png",
     "z.Screenshots/Pasted image 20241112194408.png",
     "z.Screenshots/Pasted image 20241112192507.png",
-    "z.Screenshots/Pasted image 20241112192340.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Client-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
     "PortSwigger/File Upload.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload",
     "PortSwigger/Access Control & IDOR.md",
