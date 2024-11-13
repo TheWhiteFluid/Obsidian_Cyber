@@ -47,12 +47,14 @@
 - https://github.com/GoSecure/dtd-finder
 #### LFI(local file inclusion)
 - https://github.com/D35m0nd142/LFISuite 
-#### Reverse Shell
+#### ==Reverse Shell==
 -  https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Reverse Shell Cheat Sheet)
 -  https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
 -  https://github.com/danielmiessler/SecLists. (Wordlists & Shells)
 - https://www.revshells.com/ (Reverse Shell Generator)
   - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmdasp.aspx (rWebShell using ASP.NET)
+    
+- https://github.com/JohnHammond/poor-mans-pentest (shell STABILIZATION)    
 
 ## **==PrivEscalation==**
 ### **Linux:**

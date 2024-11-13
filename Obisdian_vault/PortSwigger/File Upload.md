@@ -129,7 +129,7 @@ Analysis:
 
 ![[Pasted image 20241023215441.png]]
 
-		![[Pasted image 20241023215537.png]]
+![[Pasted image 20241023215537.png]]
 			![[Pasted image 20241023215847.png]]
 
 This maps an arbitrary extension (`.l33t`) to the executable MIME type `application/x-httpd-php`. As the server uses the `mod_php` module, it knows how to handle this already.
