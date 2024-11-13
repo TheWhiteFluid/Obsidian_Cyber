@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Frameworks & Tools.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Frameworks & Tools"
+            }
+          },
+          {
+            "id": "3c2278b94b8b5eb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "CTF Challange"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,21 +178,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86e8d2bf5c796a0b",
+  "active": "3c2278b94b8b5eb8",
   "lastOpenFiles": [
-    "Pasted image 20241112194913.png",
-    "Pasted image 20241112194627.png",
-    "Pasted image 20241112194408.png",
-    "Pasted image 20241112192507.png",
-    "Pasted image 20241112192340.png",
-    "Pasted image 20241112192158.png",
-    "Pasted image 20241112192130.png",
-    "Pasted image 20241112191833.png",
-    "Pasted image 20241112191526.png",
-    "Pasted image 20241112190816.png",
-    "Pasted image 20241112190313.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
+    "Pasted image 20241113155919.png",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Netcat.md",
+    "Frameworks & Tools.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+    "z.Screenshots/Pasted image 20241112190313.png",
+    "z.Screenshots/Pasted image 20241113152445.png",
+    "z.Screenshots/Pasted image 20241113150553.png",
+    "z.Screenshots/Pasted image 20241113150433.png",
+    "z.Screenshots/Pasted image 20241113145954.png",
+    "z.Screenshots/Pasted image 20241112194913.png",
+    "z.Screenshots/Pasted image 20241112194627.png",
+    "z.Screenshots/Pasted image 20241112194408.png",
+    "z.Screenshots/Pasted image 20241112192507.png",
+    "z.Screenshots/Pasted image 20241112192340.png",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Client-side filtering.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
