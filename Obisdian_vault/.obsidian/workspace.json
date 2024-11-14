@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,10 +183,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md"
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Authentication Relays"
+              "title": "Outline of LDAP"
             }
           }
         ],
@@ -206,10 +206,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "16cca0f160c0e548",
+  "active": "aa0a8802cb7f0c05",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md",
+    "Pasted image 20241114050607.png",
+    "Pasted image 20241114050114.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
     "Pasted image 20241114032142.png",
     "Pasted image 20241114032121.png",
     "Pasted image 20241114032047.png",
@@ -218,8 +220,6 @@
     "Pasted image 20241114032001.png",
     "Pasted image 20241114031859.png",
     "Pasted image 20241114031856.png",
-    "Pasted image 20241114031851.png",
-    "Pasted image 20241114031835.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
@@ -244,7 +244,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Shell/Netcat.md",
-    "Frameworks & Tools.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
