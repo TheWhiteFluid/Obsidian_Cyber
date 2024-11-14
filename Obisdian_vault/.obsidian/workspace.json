@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CTF Challange"
+              "title": "NTLM Authenticated Services"
+            }
+          },
+          {
+            "id": "aa0a8802cb7f0c05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LDAP"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.51103591918945
+    "width": 224.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -154,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md"
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL Injections"
+              "title": "Outline of LDAP"
             }
           }
         ],
@@ -165,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,8 +191,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9debb17e4565888",
+  "active": "aa0a8802cb7f0c05",
   "lastOpenFiles": [
+    "Pasted image 20241114030440.png",
+    "Pasted image 20241114030402.png",
+    "Pasted image 20241114025951.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Summary.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
+    "TryHackMe/PenTest/Others",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/SUID.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Sudo.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/PATH.md",
@@ -188,7 +211,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Cron Jobs.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/Authentication Bypass.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SSRF.md",
@@ -208,14 +230,6 @@
     "z.Screenshots/Pasted image 20241113145954.png",
     "z.Screenshots/Pasted image 20241112194913.png",
     "z.Screenshots/Pasted image 20241112194627.png",
-    "z.Screenshots/Pasted image 20241112194408.png",
-    "z.Screenshots/Pasted image 20241112192507.png",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Server-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Bypass Client-side filtering.md",
-    "PortSwigger/File Upload.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload",
-    "PortSwigger/Access Control & IDOR.md",
-    "PortSwigger/0)Summary.md",
-    "TryHackMe/PenTest/DNS.md"
+    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
