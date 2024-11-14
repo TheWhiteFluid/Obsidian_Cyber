@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.51103591918945
+    "width": 224.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -193,9 +194,9 @@
   },
   "active": "aa0a8802cb7f0c05",
   "lastOpenFiles": [
-    "Pasted image 20241114030440.png",
-    "Pasted image 20241114030402.png",
-    "Pasted image 20241114025951.png",
+    "z.Screenshots/Pasted image 20241114030440.png",
+    "z.Screenshots/Pasted image 20241114030402.png",
+    "z.Screenshots/Pasted image 20241114025951.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
