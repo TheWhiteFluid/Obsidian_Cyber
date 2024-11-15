@@ -63,7 +63,6 @@
 ## **==PrivEscalation==**
 ### **Linux:**
 https://gtfobins.github.io/
-#### **Enumeration**
 - **LinPeas**: [https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)  (!!!)
 - **LinEnum:** [https://github.com/rebootuser/LinEnum](https://github.com/rebootuser/LinEnum)[](https://github.com/rebootuser/LinEnum)
 - **LES (Linux Exploit Suggester):** [https://github.com/mzet-/linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester)
@@ -93,8 +92,9 @@ https://gtfobins.github.io/
 - https://www.postman.com/
 - https://www.soapui.org/
   
-## **==Active Directory
+## ==Active Directory==
 - https://github.com/wavestone-cdt/powerpxe (PXE boot images) 
+- https://github.com/GhostPack/Seatbelt (enumeration)
   
 ## **==AWS // Cloud==**
 
@@ -102,7 +102,7 @@ https://gtfobins.github.io/
 - https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
 
 
-### **==RedTeam==**
+## **==RedTeam==**
 https://github.com/bigb0sss/RedTeam-OffensiveSecurity/tree/master/01-CobaltStrike (Cobalt Strike)
 ### Malware Detection
 1. www.virustotal.com
