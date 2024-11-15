@@ -53,3 +53,47 @@ Invoke-Command -Computername {TARGET} -Credential $credential -ScriptBlock {whoa
     - 445/TCP (RPC over SMB Named Pipes)
     - 139/TCP (RPC over SMB Named Pipes)
 - **Required Group Memberships:** Administrators
+
+Windows services can also be leveraged to run arbitrary commands since they execute a command when started. While a service executable is technically different from a regular application, if we configure a Windows service to run any application, it will still execute it and fail afterwards.
+
+We can create a service on a remote host with *sc.exe*, a standard tool available in Windows. When using sc, it will try to connect to the *Service Control Manager (SVCCTL)* remote service program through *RPC* in several ways:
+
+1. *A connection attempt will be made using RPC/DCE.* 
+	   The client will first connect to the Endpoint Mapper (EPM) at port 135, which serves as a catalogue of available RPC endpoints and request information on the SVCCTL service program. 
+		   The EPM will then respond with the IP and port to connect to SVCCTL, which is usually a dynamic port in the range of 49152-65535.
+	 ![](Pasted%20image%2020241116004617.png)
+2. *If the latter connection fails, sc will try to reach SVCCTL through SMB named pipes, either on port 445 (SMB) or 139 (SMB over NetBIOS)*.
+	 ![](Pasted%20image%2020241116004902.png)
+
+We can create and start a service named "THMservice" using the following commands:
+```shell-session
+sc.exe \\{TARGET} create {THMservice} binPath= "net user munra Pass123 /add" start= auto
+sc.exe \\{TARGET} start {THMservice}
+```
+The "net user" command will be executed when the service is started, creating a new local user on the system. Since the operating system is in charge of starting the service, you won't be able to look at the command output.
+
+To stop and delete the service, we can then execute the following commands:
+```shell-session
+sc.exe \\{TARGET} stop {THMservice}
+sc.exe \\{TARGET} delete {THMservice}
+```
+
+## Scheduled Tasks
+ You can create and run one remotely with schtasks, available in any Windows installation. To create a task named THMtask1, we can use the following commands:
+ ```shell-session
+schtasks /s {TARGET} /RU "SYSTEM" /create /tn {"THMtask1"} /tr "<command/payload to execute>" /sc ONCE /sd 01/01/1970 /st 00:00 
+
+schtasks /s {TARGET} /run /TN {"THMtask1"} 
+```
+
+We set the schedule type (`/sc`) to ONCE, which means the task is intended to be run only once at the specified time and date. Since we will be running the task manually, the starting date (`/sd`) and starting time (`/st`) won't matter much anyway.
+
+Since the system will run the scheduled task, the command's output won't be available to us, making this *a blind attack.*
+
+Finally, to delete the scheduled task, we can use the following command:
+```shell-session
+schtasks /S {TARGET} /TN {"THMtask1"} /DELETE /F
+```
+
+
+## Example
