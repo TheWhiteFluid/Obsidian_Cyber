@@ -1,5 +1,4 @@
 ## **==Map/Technologies==**
-
 -  https://github.com/Ignitetechnologies/Mindmap
 
 ## **==RECON // OSINT==**
@@ -25,28 +24,33 @@
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 - https://www.monkey.org/~dugsong/fragroute/ (Packets Fragmentation)
 - [CyberChef](https://icyberchef.com/) (Escaped Unicodes) 
-### Payloads
+  
+### **Payloads**
  https://github.com/cyberheartmi9/PayloadsAllTheThings 
-### Hashes
+ 
+### **Hashes**
 -  https://crackstation.net (online)
   - https://www.kali.org/tools/hashcat/ (offline)
-### Brute Force
+    
+### **Brute Force**
 -  https://github.com/vanhauser-thc/thc-hydra (Dictionary Password Attacks)
 -  https://github.com/mandatoryprogrammer/xsshunter-express (Blind XSS attacks)
 -  https://github.com/danielmiessler/SecLists (Bruteforce attack)
-### MITM
+  
+### **MITM**
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
   
 ### ==**WEB**==
-#### Injections
+#### **Injections**
 -  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md 
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
-#### XSS
+#### **XSS**
 - http://www.xss-payloads.com (XSS payloads)
-#### XXE
+#### **XXE**
 - https://github.com/GoSecure/dtd-finder
-#### LFI(local file inclusion)
+#### **LFI(local file inclusion)**
 - https://github.com/D35m0nd142/LFISuite 
+  
 #### ==Reverse Shell==
 -  https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Reverse Shell Cheat Sheet)
 -  https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet (Reverse Shell)
@@ -88,6 +92,9 @@ https://gtfobins.github.io/
 - https://portswigger.net/bappstore/6bf7574b632847faaaa4eb5e42f1757c
 - https://www.postman.com/
 - https://www.soapui.org/
+  
+## **==Active Directory
+- https://github.com/wavestone-cdt/powerpxe (PXE boot images) 
   
 ## **==AWS // Cloud==**
 

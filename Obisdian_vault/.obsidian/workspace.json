@@ -150,7 +150,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,20 +165,20 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
+    "z.Screenshots/Pasted image 20241115041227.png",
+    "z.Screenshots/Pasted image 20241115041204.png",
+    "z.Screenshots/Pasted image 20241115041020.png",
+    "z.Screenshots/Pasted image 20241115040733.png",
+    "z.Screenshots/Pasted image 20241115040637.png",
+    "Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20241115003536.png",
+    "z.Screenshots/Pasted image 20241115003343.png",
     "z.Screenshots/Pasted image 20241114055228.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md",
     "z.Screenshots/Pasted image 20241114050607.png",
     "z.Screenshots/Pasted image 20241114050114.png",
-    "z.Screenshots/Pasted image 20241114032142.png",
-    "z.Screenshots/Pasted image 20241114032121.png",
-    "z.Screenshots/Pasted image 20241114032047.png",
-    "z.Screenshots/Pasted image 20241114032028.png",
-    "z.Screenshots/Pasted image 20241114032013.png",
-    "z.Screenshots/Pasted image 20241114032001.png",
-    "z.Screenshots/Pasted image 20241114031859.png",
-    "z.Screenshots/Pasted image 20241114031856.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
@@ -200,7 +201,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
