@@ -101,8 +101,8 @@ Connecting to *THMJMP2* using the credentials assigned:
 `ssh za\\<AD Username>@thmjmp2.za.tryhackme.com`
 
 For this exercise, we will assume we have already captured some credentials with administrative access:
-	**User:** ZA.TRYHACKME.COM\t1_leonard.summers
-	**Password:** EZpass4ever
+- **User:** ZA.TRYHACKME.COM\t1_leonard.summers
+- **Password:** EZpass4ever
 
 We'll show how to use those credentials to move laterally to *THMIIS* using `sc.exe`. Feel free to try the other methods, as they all should work against *THMIIS*.
 	![](Pasted%20image%2020241116021722.png)

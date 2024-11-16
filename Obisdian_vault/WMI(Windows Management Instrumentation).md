@@ -118,3 +118,9 @@ wmic /node:TARGET /user:DOMAIN\USER product call install PackageLocation=c:\Wind
 
 
 ## Example
+To complete this exercise, you will need to connect to THMJMP2 using the credentials assigned to you. Once you have your credentials, connect to THMJMP2 via SSH:
+`ssh za\\<AD Username>@thmjmp2.za.tryhackme.com`
+
+For this exercise, we will assume we have already captured some credentials with administrative access:
+- **User:** ZA.TRYHACKME.COM\t1_corine.waters
+- **Password:** Korine.1994
