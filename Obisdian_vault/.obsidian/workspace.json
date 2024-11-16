@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "WMI(Windows Management Instrumentation)"
             }
+          },
+          {
+            "id": "f222b941d805c902",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Use of Alternate Authentication Material.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Use of Alternate Authentication Material"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -156,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WMI(Windows Management Instrumentation).md"
+                "file": "Use of Alternate Authentication Material.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of WMI(Windows Management Instrumentation)"
+              "title": "Outline of Use of Alternate Authentication Material"
             }
           }
         ],
@@ -179,10 +193,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1bdfd0a13c5d0e4",
+  "active": "f222b941d805c902",
   "lastOpenFiles": [
-    "Remotely Processes Creation.md",
+    "Pasted image 20241116201524.png",
+    "Use of Alternate Authentication Material.md",
     "WMI(Windows Management Instrumentation).md",
+    "Remotely Processes Creation.md",
     "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Unpatched Software.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
@@ -217,8 +233,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Kernel Exploits.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Cron Jobs.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Capabilities.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }

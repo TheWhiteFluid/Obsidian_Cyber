@@ -165,3 +165,4 @@ THMJMP2: Powershell
 ```shell-session
 PS C:\> Invoke-CimMethod -CimSession $Session -ClassName Win32_Product -MethodName Install -Arguments @{PackageLocation = "C:\Windows\{myinstaller.msi}"; Options = ""; AllUsers = $false}
 ```
+
