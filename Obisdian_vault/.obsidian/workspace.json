@@ -106,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 224.51103591918945
+    "width": 224.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -193,6 +194,9 @@
   },
   "active": "f222b941d805c902",
   "lastOpenFiles": [
+    "Pasted image 20241116212618.png",
+    "Pasted image 20241116212554.png",
+    "Pasted image 20241116212526.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
@@ -213,8 +217,6 @@
     "z.Screenshots/Pasted image 20241116025937.png",
     "z.Screenshots/Pasted image 20241116024251.png",
     "z.Screenshots/Pasted image 20241116023849.png",
-    "z.Screenshots/Pasted image 20241116023837.png",
-    "z.Screenshots/Pasted image 20241116023211.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Mitigations.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting",
