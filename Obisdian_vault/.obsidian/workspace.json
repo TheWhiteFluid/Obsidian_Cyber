@@ -180,8 +180,11 @@
   },
   "active": "65d0f1db45da3a40",
   "lastOpenFiles": [
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+    "Pasted image 20241118195945.png",
+    "Pasted image 20241118194648.png",
+    "Pasted image 20241118194131.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour ).md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
     "z.Screenshots/Pasted image 20241118181659.png",
     "z.Screenshots/Pasted image 20241118181507.png",
     "z.Screenshots/Pasted image 20241118180858.png",
@@ -193,8 +196,6 @@
     "z.Screenshots/Pasted image 20241116212618.png",
     "z.Screenshots/Pasted image 20241116212554.png",
     "z.Screenshots/Pasted image 20241116212526.png",
-    "Pasted image 20241116212618.png",
-    "Pasted image 20241116212554.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
     "WMI(Windows Management Instrumentation).md",
     "WMI.md",
@@ -217,7 +218,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
