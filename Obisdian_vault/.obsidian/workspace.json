@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "96bbb50542aa54ea",
+        "id": "e0a1d3b0970de39a",
         "type": "tabs",
         "children": [
           {
-            "id": "918c17bd2f74f37b",
+            "id": "5f9c48cb78a720a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Moving Through the Network"
+              "title": "Abusing User Behaviour"
             }
           }
         ]
@@ -52,10 +52,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "winrs",
                 "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
+                "explainSearch": true,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.51103591918945
+    "width": 224.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SQL Injections.md"
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Abusing User Behaviour.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL Injections"
+              "title": "Outline of Abusing User Behaviour"
             }
           }
         ],
@@ -150,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,46 +162,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "918c17bd2f74f37b",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Configuration Files.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Mitigations.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Summary.md",
     "z.Screenshots/Pasted image 20241116212618.png",
     "z.Screenshots/Pasted image 20241116212554.png",
     "z.Screenshots/Pasted image 20241116212526.png",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
-    "Pasted image 20241116212618.png",
-    "Pasted image 20241116212554.png",
-    "Pasted image 20241116212526.png",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
-    "z.Screenshots/Pasted image 20241116023837.png",
-    "z.Screenshots/Pasted image 20241116201524.png",
     "z.Screenshots/Pasted image 20241116001403.png",
     "z.Screenshots/Pasted image 20241116021722.png",
-    "WMI(Windows Management Instrumentation).md",
-    "WMI.md",
-    "Remotely Processes Creation.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
+    "z.Screenshots/Pasted image 20241116004902.png",
+    "z.Screenshots/Pasted image 20241116004617.png",
+    "Frameworks & Tools.md",
+    "TryHackMe/PenTest/Post Exploitation Tools.md",
+    "z.Screenshots/Pasted image 20241116201524.png",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Unpatched Software.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
+    "z.Screenshots/Pasted image 20241116025937.png",
+    "z.Screenshots/Pasted image 20241116024251.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Mitigations.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Configuration Files.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/LDAP.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Authentication Relays.md",
-    "TryHackMe/PenTest/Others/IPS.md",
-    "TryHackMe/PenTest/Others/IDS.md",
-    "TryHackMe/PenTest/Others/Firewalls.md",
-    "TryHackMe/PenTest/Others/DNS.md",
-    "TryHackMe/PenTest/Others",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/Authentication Bypass.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/SSRF.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Login Screen & RDP/Sticky Keys.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Existing Services/Web Shells.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Methodology.md",
+    "TryHackMe/PenTest/Others",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/SUID.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Sudo.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/PATH.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/NFS.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Kernel Exploits.md",
+    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
