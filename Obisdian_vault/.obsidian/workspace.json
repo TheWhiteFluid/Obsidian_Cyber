@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Writable Shares (Abusing User Behaviour )"
             }
+          },
+          {
+            "id": "65d0f1db45da3a40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Port Forwarding"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.51103591918945
+    "width": 282.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -139,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour ).md"
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Writable Shares (Abusing User Behaviour )"
+              "title": "Outline of Port Forwarding"
             }
           }
         ],
@@ -162,12 +178,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "918c17bd2f74f37b",
+  "active": "65d0f1db45da3a40",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour ).md",
+    "z.Screenshots/Pasted image 20241118181659.png",
+    "z.Screenshots/Pasted image 20241118181507.png",
+    "z.Screenshots/Pasted image 20241118180858.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour ).md",
     "z.Screenshots/Pasted image 20241118173354.png",
     "z.Screenshots/Pasted image 20241118170136.png",
     "z.Screenshots/Pasted image 20241116212618.png",
@@ -175,10 +195,7 @@
     "z.Screenshots/Pasted image 20241116212526.png",
     "Pasted image 20241116212618.png",
     "Pasted image 20241116212554.png",
-    "Pasted image 20241116212526.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
-    "z.Screenshots/Pasted image 20241116023837.png",
-    "z.Screenshots/Pasted image 20241116201524.png",
     "WMI(Windows Management Instrumentation).md",
     "WMI.md",
     "Remotely Processes Creation.md",
