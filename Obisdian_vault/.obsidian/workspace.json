@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.51103591918945,
-    "collapsed": true
+    "width": 282.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -165,24 +164,25 @@
   },
   "active": "8aad4874d63c8339",
   "lastOpenFiles": [
+    "Frameworks & Tools.md",
+    "TryHackMe/PenTest/Post Exploitation Tools.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Credentials.md",
+    "z.Screenshots/Pasted image 20241119183433.png",
+    "z.Screenshots/Pasted image 20241119182814.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour).md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
-    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
     "z.Screenshots/Pasted image 20241119025903.png",
     "z.Screenshots/Pasted image 20241119020148.png",
     "z.Screenshots/Pasted image 20241118194648.png",
     "z.Screenshots/Pasted image 20241118194131.png",
-    "Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20241119012950.png",
     "z.Screenshots/Pasted image 20241119005927.png",
     "z.Screenshots/Pasted image 20241118195945.png",
     "z.Screenshots/Pasted image 20241118181659.png",
-    "z.Screenshots/Pasted image 20241118181507.png",
-    "z.Screenshots/Pasted image 20241118180858.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
     "WMI(Windows Management Instrumentation).md",
     "WMI.md",
@@ -203,7 +203,6 @@
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Logon Triggered Persistence/Startup folder.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Backdooring Files/Shortcut Files.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/Filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
