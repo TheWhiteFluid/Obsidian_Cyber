@@ -95,7 +95,9 @@ https://gtfobins.github.io/
 ## ==Active Directory==
 - https://github.com/wavestone-cdt/powerpxe (PXE boot images) 
 - https://github.com/GhostPack/Seatbelt (enumeration)
-  
+- [Sshuttle](https://github.com/sshuttle/sshuttle) (l.movement)
+- [Rpivot](https://github.com/klsecservices/rpivot) (l.movement)
+- [Chisel](https://github.com/jpillora/chisel) (l.movement)
 ## **==AWS // Cloud==**
 
 - https://github.com/salesforce/cloudsplaining (privesc)
