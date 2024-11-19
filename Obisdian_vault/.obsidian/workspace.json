@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "through Tickets.md",
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Tickets.md",
                 "mode": "source",
                 "source": false
               },
@@ -155,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "through Tickets.md"
+                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Tickets.md"
               },
               "icon": "lucide-list",
               "title": "Outline of through Tickets"
@@ -180,8 +180,8 @@
   },
   "active": "79de5d57697208ff",
   "lastOpenFiles": [
-    "Pasted image 20241119201536.png",
-    "through Tickets.md",
+    "z.Screenshots/Pasted image 20241119201536.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Tickets.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Credentials.md",
     "Frameworks & Tools.md",
     "TryHackMe/PenTest/Post Exploitation Tools.md",
