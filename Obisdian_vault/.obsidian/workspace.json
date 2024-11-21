@@ -11,14 +11,10 @@
             "id": "5f9c48cb78a720a7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Abusing User Behaviour"
+              "title": "New tab"
             }
           }
         ]
@@ -164,6 +160,21 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Tickets.md",
+    "z.Screenshots/Pasted image 20241119201536.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting/through Credentials.md",
+    "z.Screenshots/Pasted image 20241119183433.png",
+    "z.Screenshots/Pasted image 20241119182814.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Persisting",
+    "z.Screenshots/Pasted image 20241119025903.png",
+    "z.Screenshots/Pasted image 20241119020148.png",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+    "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour).md",
+    "z.Screenshots/Pasted image 20241118195945.png",
+    "z.Screenshots/Pasted image 20241118194648.png",
+    "z.Screenshots/Pasted image 20241118194131.png",
+    "z.Screenshots/Pasted image 20241119005927.png",
+    "z.Screenshots/Pasted image 20241119012950.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
@@ -177,31 +188,17 @@
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/OSINT and Phishing.md",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Breaching/Summary.md",
-    "z.Screenshots/Pasted image 20241116212618.png",
-    "z.Screenshots/Pasted image 20241116212554.png",
-    "z.Screenshots/Pasted image 20241116212526.png",
-    "z.Screenshots/Pasted image 20241116001403.png",
-    "z.Screenshots/Pasted image 20241116021722.png",
-    "z.Screenshots/Pasted image 20241116004902.png",
-    "z.Screenshots/Pasted image 20241116004617.png",
     "Frameworks & Tools.md",
     "TryHackMe/PenTest/Post Exploitation Tools.md",
-    "z.Screenshots/Pasted image 20241116201524.png",
     "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Windows/Unpatched Software.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
-    "z.Screenshots/Pasted image 20241116025937.png",
-    "z.Screenshots/Pasted image 20241116024251.png",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/ActiveDirectory/Lateral Movement and Pivoting",
     "TryHackMe/PenTest/CompTIA PenTest+/Attacks & Exploits/Phishing/Phishing.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload/CTF Challange.md",
     "TryHackMe/PenTest/Others",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/SUID.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Sudo.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/PATH.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/NFS.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Kernel Exploits.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/Privilege Escalation/Linux/Enumeration.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/File Upload"
   ]
 }
