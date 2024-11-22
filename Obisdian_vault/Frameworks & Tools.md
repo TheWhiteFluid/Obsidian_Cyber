@@ -99,7 +99,8 @@ https://gtfobins.github.io/
 - [Sshuttle](https://github.com/sshuttle/sshuttle) (l.movement)
 - [Rpivot](https://github.com/klsecservices/rpivot) (l.movement)
 - [Chisel](https://github.com/jpillora/chisel) (l.movement)
-- 
+- [ForgeCert](https://github.com/GhostPack/ForgeCert) (persistance - certificates forging)
+- [DSInternals](https://github.com/MichaelGrafnetter/DSInternals) (persistance -  patch LSASS to update SID history)
 ## **==AWS // Cloud==**
 
 - https://github.com/salesforce/cloudsplaining (privesc)
