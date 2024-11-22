@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Credentials Harvesting.md",
+                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Credentials Harvesting"
+              "title": "Summary"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Credentials Harvesting.md"
+                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Credentials Harvesting"
+              "title": "Outline of Summary"
             }
           }
         ],
@@ -198,7 +198,7 @@
     "TryHackMe/PenTest/ActiveDirectory/Persisting/Prohibited techniques/through GPOs.md",
     "TryHackMe/PenTest/ActiveDirectory/Persisting/Prohibited techniques/through Group Membership.md",
     "TryHackMe/PenTest/ActiveDirectory/Persisting/Prohibited techniques/through SID History.md",
-    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Credentials Harvesting.md",
+    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Summary.md",
     "z.Screenshots/Pasted image 20241122192323.png",
     "z.Screenshots/Pasted image 20241122192143.png",
     "TryHackMe/PenTest/ActiveDirectory/Persisting/Mitigations.md",
