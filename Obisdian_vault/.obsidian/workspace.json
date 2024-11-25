@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
+                "file": "Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAPS (Local Administrator Password Solution)"
+              "title": "Frameworks & Tools"
             }
           }
         ],
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.51103591918945,
-    "collapsed": true
+    "width": 260.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -155,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md"
+                "file": "Frameworks & Tools.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of LAPS (Local Administrator Password Solution)"
+              "title": "Outline of Frameworks & Tools"
             }
           }
         ],
@@ -180,11 +179,12 @@
   },
   "active": "18447b95a3190cb3",
   "lastOpenFiles": [
+    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
+    "Pasted image 20241126005233.png",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
     "z.Screenshots/Pasted image 20241125235416.png",
     "z.Screenshots/Pasted image 20241125233401.png",
     "Frameworks & Tools.md",
-    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Domain Controller.md",
     "TryHackMe/PenTest/Privilege Escalation/Linux/Enumeration Commands.md",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Windows Credentials Manager.md",
@@ -199,7 +199,6 @@
     "z.Screenshots/Pasted image 20241124014259.png",
     "z.Screenshots/Pasted image 20241124013828.png",
     "z.Screenshots/Pasted image 20241124013616.png",
-    "z.Screenshots/Pasted image 20241124013431.png",
     "TryHackMe/PenTest/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
     "TryHackMe/PenTest/ActiveDirectory/Breaching/Mitigations.md",
     "TryHackMe/PenTest/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",

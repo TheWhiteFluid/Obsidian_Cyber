@@ -101,7 +101,9 @@ https://gtfobins.github.io/
 - [ForgeCert](https://github.com/GhostPack/ForgeCert) (persistance - certificates forging)
 - [DSInternals](https://github.com/MichaelGrafnetter/DSInternals) (persistance -  patch LSASS to update SID history)
 - [Get-GPPPassword](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1) (cracking group policy passwords)
-  
+- [LAPSToolkit](https://github.com/leoloobeek/LAPSToolkit) (LAPS machine enum)
+
+
 ## **==AWS // Cloud==**
 - https://github.com/salesforce/cloudsplaining (privesc)
 - https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
