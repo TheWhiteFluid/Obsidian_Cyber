@@ -86,7 +86,6 @@ https://gtfobins.github.io/
 - WES-NG: Windows Exploit Suggester - Next Generation (https://github.com/bitsadmin/wesng) (not-detectable)
 - Metasploit (`multi/recon/local_exploit_suggester` module)
 
-
 ## **==APIs==**
 - https://portswigger.net/bappstore/6bf7574b632847faaaa4eb5e42f1757c
 - https://www.postman.com/
@@ -101,8 +100,9 @@ https://gtfobins.github.io/
 - [Chisel](https://github.com/jpillora/chisel) (l.movement)
 - [ForgeCert](https://github.com/GhostPack/ForgeCert) (persistance - certificates forging)
 - [DSInternals](https://github.com/MichaelGrafnetter/DSInternals) (persistance -  patch LSASS to update SID history)
+- [Get-GPPPassword](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-GPPPassword.ps1) (cracking group policy passwords)
+  
 ## **==AWS // Cloud==**
-
 - https://github.com/salesforce/cloudsplaining (privesc)
 - https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
 
