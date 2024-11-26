@@ -1,0 +1,37 @@
+Basic authentication offers a more straightforward method when securing access to devices. It requires only a username and password, making it easy to implement and manage on devices with limited processing capabilities. Network devices such as routers typically utilize basic authentication to control access to their administrative interfaces. In this scenario, the primary goal is to prevent unauthorized access with minimal setup.
+
+While basic authentication does not offer the robust security features provided by more complex schemes like OAuth or token-based authentication, its simplicity makes it suitable for environments where session management and user tracking are not required or are managed differently. For example, in devices like routers that are primarily accessed for configuration changes rather than regular use, the overhead of maintaining session states is unnecessary and could complicate device performance.
+
+HTTP Basic Authentication is defined in [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617), which specifies that the credentials (username and password) *should be transported as a base64-encoded string within the HTTP Authorization header*. This method is straightforward *but not secure over non-HTTPS connections*, as base64 is not an encryption method and can be easily decoded. The real threat often comes from weak credentials that can be brute-forced.
+
+HTTP Basic Authentication provides a simple challenge-response mechanism for requesting user credentials.
+	![](Pasted%20image%2020241127001825.png)
+The Authorization header format is as follows:
+```html
+Authorization: Basic <credentials>
+```
+
+where `<credentials>` is the base64 encoding of `username:password`. For detailed specifications, refer to [RFC 7617](https://tools.ietf.org/html/rfc7617).
+
+## Example
+![](Pasted%20image%2020241127002000.png)
+
+Input any username and password in the pop-up and capture the Basic Auth Request using Burp.
+	![](Pasted%20image%2020241127002012.png)![](Pasted%20image%2020241127002114.png)
+Right-click the request and send it to Intruder. In Burp Intruder, go to the "Positions" tab and decode the base64 encoded string in the Authorization header.
+	![](Pasted%20image%2020241127002241.png)
+Once decoded, highlight the decoded string and click the Add button in the top right corner.
+	![](Pasted%20image%2020241127002258.png)
+Next is configuring the payloads. Go to the Payloads tab and set the payload type to Simple list and choose your preferred wordlist. In this demo, we will use the [500-worst-passwords.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/500-worst-passwords.txt) from SecLists.
+	![](Pasted%20image%2020241127002326.png)
+Since the header is base64 encoded, we need to add two rules in the Payload processing section. 
+	The first automatically adds a username to the password, so instead of 123456, the payload will be "admin:123456" so we have to add a prefix which value is admin.
+		![](Pasted%20image%2020241127002441.png)
+	The second rule will base64 encode the combined username and password from the supplied list.
+		![](Pasted%20image%2020241127002510.png)
+We should also remove the character "*=*" (equal sign) from the encoding because *base64 uses "=" for padding*. To do this, scroll down and remove the "=" sign from the list of characters in the Payload encoding section.
+	![](Pasted%20image%2020241127002554.png)
+Once done, go back to the Positions tab and click the Start Attack button. Once you get a Status code 200, it means the brute force is successful, and one of the passwords in the supplied list is working. Decode the encoded base64 string in the successful request.
+	![](Pasted%20image%2020241127002624.png)![](Pasted%20image%2020241127002649.png)
+Use the decoded base64 string to log into the application.
+	![](Pasted%20image%2020241127002706.png)

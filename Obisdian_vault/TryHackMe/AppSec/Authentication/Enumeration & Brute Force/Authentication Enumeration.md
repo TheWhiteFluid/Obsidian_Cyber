@@ -21,7 +21,6 @@ if (preg_match($pattern, $password)) {
 In the above example, if the supplied password doesn't satisfy the policy defined in the **pattern** variable, the application will return an error message revealing the regex code requirement. An attacker might generate a dictionary that satisfies this policy.
 
 ## Common Places to Enumerate
-
 **Registration Pages**
 Web applications typically make the user registration process straightforward and informative by immediately indicating whether an email or username is available. While this feedback is designed to enhance user experience, it can inadvertently serve a dual purpose. If a registration attempt results in a message stating that a username or email is already taken, the application is unwittingly confirming its existence to anyone trying to register. Attackers exploit this feature by testing potential usernames or emails, thus compiling a list of active users without needing direct access to the underlying database.
 
