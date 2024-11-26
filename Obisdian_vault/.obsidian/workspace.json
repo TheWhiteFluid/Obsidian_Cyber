@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTTP Basic Authentication.md",
+                "file": "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OSINT.md",
+                "file": "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
                 "mode": "source",
                 "source": false
               },
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.51103591918945,
-    "collapsed": true
+    "width": 260.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTTP Basic Authentication.md"
+                "file": "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md"
               },
               "icon": "lucide-list",
               "title": "Outline of HTTP Basic Authentication"
@@ -192,20 +191,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5a574ef6413ec139",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "OSINT.md",
-    "Pasted image 20241127003304.png",
-    "HTTP Basic Authentication.md",
-    "Pasted image 20241127002706.png",
-    "Pasted image 20241127002649.png",
-    "Pasted image 20241127002624.png",
-    "Pasted image 20241127002554.png",
-    "Pasted image 20241127002510.png",
-    "Pasted image 20241127002441.png",
-    "Pasted image 20241127002326.png",
-    "Pasted image 20241127002258.png",
-    "Pasted image 20241127002241.png",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
+    "z.Screenshots/Pasted image 20241127003304.png",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
+    "z.Screenshots/Pasted image 20241127002706.png",
+    "z.Screenshots/Pasted image 20241127002649.png",
+    "z.Screenshots/Pasted image 20241127002624.png",
+    "z.Screenshots/Pasted image 20241127002554.png",
+    "z.Screenshots/Pasted image 20241127002510.png",
+    "z.Screenshots/Pasted image 20241127002441.png",
+    "z.Screenshots/Pasted image 20241127002326.png",
+    "z.Screenshots/Pasted image 20241127002258.png",
+    "z.Screenshots/Pasted image 20241127002241.png",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Vulnerable Password Reset Logic.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Enumerating Users via Verbose Errors.md",
