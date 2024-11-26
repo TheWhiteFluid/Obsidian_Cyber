@@ -13,30 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Local Windows Credentials.md",
+                "file": "Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Local Windows Credentials"
+              "title": "Frameworks & Tools"
             }
           },
           {
-            "id": "c82c10bfee903875",
+            "id": "18447b95a3190cb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
+                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LSASS (Local Security Authority Subsystem Service)"
+              "title": "LAPS (Local Administrator Password Solution)"
+            }
+          },
+          {
+            "id": "0bea834855f873fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Other Attacks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Other Attacks"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -67,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "dump mimikatz",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -155,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md"
+                "file": "Other Attacks.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of LSASS (Local Security Authority Subsystem Service)"
+              "title": "Outline of Other Attacks"
             }
           }
         ],
@@ -178,7 +192,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c82c10bfee903875",
+  "active": "0bea834855f873fb",
   "lastOpenFiles": [
     "Other Attacks.md",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
@@ -186,45 +200,44 @@
     "Pasted image 20241126011037.png",
     "Pasted image 20241126010836.png",
     "Pasted image 20241126010708.png",
+    "Frameworks & Tools.md",
     "z.Screenshots/Pasted image 20241126005233.png",
-    "z.Screenshots/Pasted image 20241125233401.png",
+    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
     "z.Screenshots/Pasted image 20241125235416.png",
+    "z.Screenshots/Pasted image 20241125233401.png",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Domain Controller.md",
     "TryHackMe/PenTest/Privilege Escalation/Linux/Enumeration Commands.md",
-    "z.Screenshots/Pasted image 20241125155605.png",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Windows Credentials Manager.md",
-    "z.Screenshots/Pasted image 20241124015200.png",
-    "z.Screenshots/Pasted image 20241124013828.png",
+    "z.Screenshots/Pasted image 20241125155605.png",
+    "TryHackMe/PenTest/ActiveDirectory/Persisting/through Credentials.md",
+    "TryHackMe/PenTest/ActiveDirectory/Persisting/through Tickets.md",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Local Windows Credentials.md",
-    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
-    "Frameworks & Tools.md",
     "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/Summary.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/Bypass Server-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/Filtering.md",
+    "z.Screenshots/Pasted image 20241123160239.png",
+    "z.Screenshots/Pasted image 20241124015200.png",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/NTLM Authenticated Services.md",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/Mitigations.md",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/Authentication Relays.md",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/Configuration Files.md",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour).md",
+    "TryHackMe/PenTest/ActiveDirectory/Breaching/LDAP.md",
+    "PortSwigger/Authentication.md",
+    "TryHackMe/PenTest/ActiveDirectory/Basics/Users & Computers.md",
     "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/Methodology.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/CTF Challange.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/Bypass Client-side filtering.md",
-    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload",
-    "TryHackMe/PenTest/Privilege Escalation/Shell/Shells.md",
-    "TryHackMe/PenTest/Privilege Escalation/Linux/Enumeration.md",
-    "TryHackMe/PenTest/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Service Misconfigurations/Unquoted Service Paths.md",
-    "TryHackMe/PenTest/Privilege Escalation/Shell/Socat.md",
-    "TryHackMe/PenTest/Privilege Escalation/Shell/Metasploit.md",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Privileges/SeImpersonate & SeAssignPrimaryToken.md",
-    "TryHackMe/PenTest/Privilege Escalation/Shell/Netcat.md",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Unpatched Software.md",
-    "TryHackMe/PenTest/Privilege Escalation/Linux/Cron Jobs.md",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Privileges/SeBackup & SeRestore.md",
-    "TryHackMe/PenTest/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Service Misconfigurations",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Passwords Harvest",
-    "TryHackMe/PenTest/Privilege Escalation/Windows/Privileges",
-    "TryHackMe/PenTest/Privilege Escalation/Windows",
-    "TryHackMe/PenTest/Privilege Escalation/Shell",
-    "TryHackMe/PenTest/Privilege Escalation/Linux",
-    "TryHackMe/PenTest/Privilege Escalation",
-    "TryHackMe/PenTest/Local Persistance/Tampering w. Unprivileged Accounts",
-    "TryHackMe/PenTest/Local Persistance/Logon Triggered Persistence"
+    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload/Filtering.md",
+    "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting",
+    "TryHackMe/PenTest/ActiveDirectory/Exploiting --",
+    "TryHackMe/PenTest/ActiveDirectory/Enumerating --",
+    "TryHackMe/AppSec",
+    "TryHackMe/PenTest/ActiveDirectory/Persisting/Prohibited techniques",
+    "TryHackMe/PenTest/ActiveDirectory/Persisting",
+    "TryHackMe/PenTest/ActiveDirectory/Lateral Movement and Pivoting",
+    "TryHackMe/PenTest/Others",
+    "TryHackMe/PenTest/Jr.Penetration Tester/WEB Attacks/File Upload"
   ]
 }
