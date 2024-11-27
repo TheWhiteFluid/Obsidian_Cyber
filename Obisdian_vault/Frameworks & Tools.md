@@ -89,6 +89,7 @@ https://gtfobins.github.io/
 ## **==APIs==**
 - https://portswigger.net/bappstore/6bf7574b632847faaaa4eb5e42f1757c
 - https://www.postman.com/
+- https://swagger.io/
 - https://www.soapui.org/
   
 ## ==Active Directory==
