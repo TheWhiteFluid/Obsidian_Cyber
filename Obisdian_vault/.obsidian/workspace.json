@@ -8,35 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "27b7ec6dcae2fb49",
+            "id": "a2c2c4817a754f7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "TryHackMe/AppSec/Authentication/Session Management/Cookies vs Tokens.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "Cookies vs Tokens"
             }
           },
           {
-            "id": "18447b95a3190cb3",
+            "id": "4dbea9b4e0765fa6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
+                "file": "TryHackMe/AppSec/Authentication/Session Management/Mitigations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAPS (Local Administrator Password Solution)"
+              "title": "Mitigations"
+            }
+          },
+          {
+            "id": "bd701f080629493d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exploiting Insecure Session Management - Example"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -67,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dump mimikatz",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -155,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md"
+                "file": "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of LAPS (Local Administrator Password Solution)"
+              "title": "Outline of Exploiting Insecure Session Management - Example"
             }
           }
         ],
@@ -166,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,13 +193,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "18447b95a3190cb3",
+  "active": "bd701f080629493d",
   "lastOpenFiles": [
-    "Pasted image 20241127144910.png",
-    "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md",
     "Pasted image 20241127154544.png",
     "Pasted image 20241127154412.png",
     "Pasted image 20241127154409.png",
+    "Pasted image 20241127144910.png",
     "Pasted image 20241127144833.png",
     "Pasted image 20241127144539.png",
     "Pasted image 20241127144508.png",
@@ -192,16 +206,20 @@
     "Pasted image 20241127144218.png",
     "Pasted image 20241127144002.png",
     "Pasted image 20241127143559.png",
+    "Exploiting Insecure Session Management.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md",
     "TryHackMe/AppSec/Authentication/Session Management/Mitigations.md",
-    "TryHackMe/AppSec/Authentication/Session Management/Securing the Session Lifecycle.md",
-    "TryHackMe/AppSec/Authentication/Session Management/Cookies vs Tokens.md",
     "TryHackMe/AppSec/Authentication/Session Management/Authentication vs Authorisation.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Cookies vs Tokens.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Securing the Session Lifecycle.md",
     "TryHackMe/AppSec/Authentication/Session Management/Session Management Lifecycle.md",
-    "TryHackMe/AppSec/Authentication/Session Management",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
+    "TryHackMe/AppSec/Authentication/Session Management",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Enumerating Users via Verbose Errors.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Vulnerable Password Reset Logic.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Enumerating Users via Verbose Errors.md",
+    "Frameworks & Tools.md",
     "TryHackMe/PenTest/WEB Attacks/SQL Injections.md",
     "TryHackMe/PenTest/WEB Attacks/XSS.md",
     "TryHackMe/PenTest/WEB Attacks/File Inclusion-Path traversal.md",
@@ -214,17 +232,14 @@
     "TryHackMe/PenTest/WEB Attacks/IDOR Vulnerabilities.md",
     "TryHackMe/PenTest/WEB Attacks/SSRF.md",
     "TryHackMe/PenTest/WEB Attacks/Fundamentals-Frameworks.md",
-    "TryHackMe/PenTest/WEB Attacks/Subdomain Enumeration.md",
-    "TryHackMe/PenTest/WEB Attacks/File Upload/CTF Challange.md",
-    "TryHackMe/PenTest/WEB Attacks/File Upload/Bypass Client-side filtering.md",
     "TryHackMe/PenTest/WEB Attacks/File Upload",
     "TryHackMe/PenTest/WEB Attacks",
     "TryHackMe/Offensive Pentesting",
+    "TryHackMe/AppSec/WEB Attacks/File Upload",
+    "TryHackMe/AppSec/WEB Attacks",
     "TryHackMe/PenTest/Vulnerability Research",
     "TryHackMe/PenTest/Network Security/Protocols & Servers/Protocols",
     "TryHackMe/PenTest/Network Security/Protocols & Servers/Attacks",
-    "TryHackMe/PenTest/Network Security/Nmap/Port Scans/Advanced",
-    "TryHackMe/PenTest/Network Security/Nmap/Port Scans/Basic",
-    "TryHackMe/PenTest/Network Security/Nmap/Port Scans/Post"
+    "TryHackMe/PenTest/Network Security/Nmap/Port Scans/Advanced"
   ]
 }
