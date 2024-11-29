@@ -34,7 +34,7 @@ Below are the two cURL requests you can use to interface with the API. For auth
 
 For user verification, the following cURL request can be made:
 ```
-`curl -H 'Authorization: Bearer [JWT token]' http://10.10.210.48/api/v1.0/example2?username=Y`
+`curl -H 'Authorization: Bearer {JWT token}' http://10.10.210.48/api/v1.0/exampleX?username=Y`
 ```
 
 The `[JWT token]` component has to be replaced with the JWT received from the first request. In this case, `Y` can be either `user` or `admin`, depending on your permissions.

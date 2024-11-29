@@ -10,7 +10,7 @@ Let's take a look at a practical example. Let's authenticate to our API using 
 Let's take a look at a practical example. Let's authenticate to our API using the following cURL request:
 
 ```
-`curl -H 'Content-Type: application/json' -X POST -d '{ "username" : "user", "password" : "password1" }' http://10.10.210.48/api/v1.0/example1`  
+curl -H 'Content-Type: application/json' -X POST -d '{ "username" : "user", "password" : "password1" }' http://10.10.210.48/api/v1.0/example1
 ```
 
 This will provide you with a JWT token. Once recovered, decode the body of the JWT to uncover sensitive information. You can decode the body manually or use a website such as [JWT.io](https://jwt.io/) for this process.
