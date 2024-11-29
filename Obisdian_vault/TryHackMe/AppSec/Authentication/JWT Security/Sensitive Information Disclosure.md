@@ -36,3 +36,13 @@ payload = jwt.decode(token, self.secret, algorithms="HS256")
 username = payload['username']
 flag = self.db_lookup(username, "flag")
 ```
+
+Let's take a look at a practical example. Let's authenticate to our API using the following cURL request:
+```
+curl -H 'Content-Type: application/json' -X POST -d '{ "username" : "user", "password" : "password1" }' http://10.10.66.238/api/v1.0/example1
+```
+
+![](Pasted%20image%2020241129190006.png)
+
+Token decode using [JWT.io](https://jwt.io/)
+	![](Pasted%20image%2020241129190210.png)

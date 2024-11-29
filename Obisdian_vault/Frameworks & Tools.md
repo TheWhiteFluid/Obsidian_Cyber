@@ -41,6 +41,7 @@
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
   
 ### ==**WEB**==
+[JWT.io](https://jwt.io/) (JWT token decoder)
 #### **Injections**
 -  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md 
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
