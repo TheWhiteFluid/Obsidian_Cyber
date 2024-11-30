@@ -39,18 +39,40 @@
             "id": "bd701f080629493d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20241130172540.png"
               },
-              "icon": "lucide-file",
-              "title": "Signature Validation Mistakes"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241130172540"
+            }
+          },
+          {
+            "id": "72fe386703400895",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20241130172528.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241130172528"
+            }
+          },
+          {
+            "id": "f731327d8ce3f9d5",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20241130172653.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241130172653"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -106,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,10 +190,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md"
+                "file": "z.Screenshots/Pasted image 20241130172653.png"
               },
               "icon": "lucide-list",
-              "title": "Outline of Signature Validation Mistakes"
+              "title": "Outline of Pasted image 20241130172653"
             }
           }
         ],
@@ -192,25 +213,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd701f080629493d",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20241130183525.png",
-    "Pasted image 20241130183509.png",
-    "Pasted image 20241130182916.png",
-    "Pasted image 20241130182852.png",
-    "Pasted image 20241130181924.png",
-    "Pasted image 20241130180743.png",
-    "Pasted image 20241130180717.png",
-    "Pasted image 20241130180227.png",
-    "Pasted image 20241130175933.png",
-    "Pasted image 20241130175844.png",
-    "Pasted image 20241130173349.png",
+    "z.Screenshots/Pasted image 20241130172540.png",
+    "z.Screenshots/Pasted image 20241130172528.png",
+    "z.Screenshots/Pasted image 20241130173024.png",
+    "z.Screenshots/Pasted image 20241130180227.png",
+    "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
+    "z.Screenshots/Pasted image 20241130183525.png",
+    "z.Screenshots/Pasted image 20241130183509.png",
+    "z.Screenshots/Pasted image 20241130182916.png",
+    "z.Screenshots/Pasted image 20241130182852.png",
+    "z.Screenshots/Pasted image 20241130181924.png",
+    "z.Screenshots/Pasted image 20241130180743.png",
+    "z.Screenshots/Pasted image 20241130180717.png",
     "TryHackMe/AppSec/Authentication/JWT Security/Sensitive Information Disclosure.md",
     "TryHackMe/AppSec/Authentication/Session Management/Mitigations.md",
     "TryHackMe/AppSec/Authentication/Session Management/Securing the Session Lifecycle.md",
     "TryHackMe/AppSec/Authentication/Session Management/Session Management Lifecycle.md",
     "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
     "TryHackMe/AppSec/Authentication/JWT Security/Token-Based Authentication.md",
     "TryHackMe/AppSec/Authentication/JWT Security/JSON Web Tokens.md",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
