@@ -1,16 +1,20 @@
-Í## **==Map/Technologies==**
+## **==Map/Technologies==**
 -  https://github.com/Ignitetechnologies/Mindmap
 
 ## **==RECON // OSINT==**
 -  https://dnsdumpster.com/ (DNS)
 -  https://www.shodan.io/ (DNS and more)
-- https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml (Service names & Port numbers)
-- https://github.com/projectdiscovery/nuclei
-- https://github.com/six2dez/reconftw
-
-- https://haveibeenpwned.com/ (databreach - find email)
+- https://github.com/six2dez/reconftw (reconftw)
+- https://github.com/blacklanternsecurity/bbot (bbot)
+- https://github.com/michenriksen/aquatone (auquatone)
+  
+- https://github.com/sullo/nikto (nikto - vuln scan)
+- https://github.com/projectdiscovery/nuclei (nuclei - vuln scan)  
+  
+-  https://haveibeenpwned.com/ (databreach - find email)
 - https://www.dehashed.com/ (leaked personal data)
-
+- https://intelx.io/ (inteligenceX)
+- https://leakix.net/ (leakix)
 ## ==**Frameworks**==
 -  https://owasp.org/ (OWASP)
 	 - [https://wiki.owasp.org/index.php/OWASP_favicon_database](https://wiki.owasp.org/index.php/OWASP_favicon_database)
@@ -24,7 +28,8 @@
 -  https://github.com/es3n1n/no-defender/blob/master/README.md (Windows Defender breaker via WSC API)
 - https://www.monkey.org/~dugsong/fragroute/ (Packets Fragmentation)
 - [CyberChef](https://icyberchef.com/) (Escaped Unicodes) 
-  
+- https://github.com/sc0tfree/updog (FILE TRANSFER // PYTHON SERVER)  
+- https://github.com/kgretzky/pwndrop (FILE HOSTING SERVICE)    
 ### **Payloads**
  https://github.com/cyberheartmi9/PayloadsAllTheThings 
  
@@ -41,6 +46,7 @@
 -  [Ettercap](https://www.ettercap-project.org/) and [Bettercap](https://www.bettercap.org/). (MITM)
   
 ### ==**WEB**==
+[JWT.io](https://jwt.io/) (JWT token decoder)
 #### **Injections**
 -  https://github.com/payloadbox/command-injection-payload-list/blob/master/README.md 
 - https://github.com/sqlmapproject/sqlmap (SQLMap - automated tool for sql injections)
@@ -89,6 +95,7 @@ https://gtfobins.github.io/
 ## **==APIs==**
 - https://portswigger.net/bappstore/6bf7574b632847faaaa4eb5e42f1757c
 - https://www.postman.com/
+- https://swagger.io/
 - https://www.soapui.org/
   
 ## ==Active Directory==
