@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OAuth Grant Types.md",
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
                 "mode": "source",
                 "source": false
               },
@@ -55,16 +55,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OAuth Flow.md",
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "OAuth Flow"
             }
+          },
+          {
+            "id": "6e036d113987cfa5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Identifying the OAuth Services"
+            }
+          },
+          {
+            "id": "b92e7c0679618e3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exploiting OAuth - Stealing OAuth Token"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -183,10 +211,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OAuth Flow.md"
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of OAuth Flow"
+              "title": "Outline of Exploiting OAuth - Stealing OAuth Token"
             }
           }
         ],
@@ -206,21 +234,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b4f2d682eb9e7fe",
+  "active": "b92e7c0679618e3b",
   "lastOpenFiles": [
-    "Pasted image 20241201145135.png",
-    "Pasted image 20241201144834.png",
-    "Pasted image 20241201144638.png",
-    "Pasted image 20241201144616.png",
-    "Pasted image 20241201144227.png",
-    "OAuth Flow.md",
-    "OAuth Grant Types.md",
-    "Pasted image 20241201143726.png",
-    "Pasted image 20241201143533.png",
-    "Pasted image 20241201143255.png",
-    "Pasted image 20241201141944.png",
-    "Pasted image 20241201141842.png",
-    "Pasted image 20241201141730.png",
+    "z.Screenshots/Pasted image 20241201141730.png",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md",
+    "z.Screenshots/Pasted image 20241201171358.png",
+    "z.Screenshots/Pasted image 20241201171257.png",
+    "z.Screenshots/Pasted image 20241201171215.png",
+    "z.Screenshots/Pasted image 20241201165923.png",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
+    "z.Screenshots/Pasted image 20241201155200.png",
+    "z.Screenshots/Pasted image 20241201145135.png",
+    "z.Screenshots/Pasted image 20241201144834.png",
+    "z.Screenshots/Pasted image 20241201144638.png",
+    "z.Screenshots/Pasted image 20241201144616.png",
+    "z.Screenshots/Pasted image 20241201144227.png",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Key Concepts.md",
     "TryHackMe/AppSec/Authentication/Session Management/Summary.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
@@ -246,8 +276,6 @@
     "TryHackMe/AppSec/Authentication/Session Management/Authentication vs Authorisation.md",
     "TryHackMe/AppSec/Authentication/Session Management/Session Management Lifecycle.md",
     "TryHackMe/AppSec/Authentication/Session Management",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
     "TryHackMe/PenTest/WEB Attacks/File Upload",
     "TryHackMe/PenTest/WEB Attacks",
     "TryHackMe/Offensive Pentesting",
