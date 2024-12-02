@@ -16,11 +16,10 @@ A **Cross-Service misconfiguration** happens when a JWT (JSON Web Token) meant
     Each application must **enforce audience claim checks** to ensure the JWT is valid **only for its specific service**. This prevents tokens from being misused across apps.
 
 	![](Screen%20Recording%202024-12-01%20at%201.20.39%20AM.mov)
-
 ### Example
 For this last practical example, there are two API endpoints namely `example7_appA` and `example7_appB`. You can use the same GET request you made in the previous examples to recover the flag, but you will need to point it to these endpoints. Furthermore, for authentication, you now also have to include the `"application" : "appX"` data value in the login request made to `example7`. Use the following steps to perform the example:
 
-1. Authenticate to `example7` using the following data segment: `'{ "username" : "user", "password" : "password7", "application" : "appA"}'`. You will notice that an audience claim is added, but that you are not an admin.  
+1. Authenticate to `exa0mple7` using the following data segment: `'{ "username" : "user", "password" : "password7", "application" : "appA"}'`. You will notice that an audience claim is added, but that you are not an admin.  
 2. Use this token in both the admin and user requests you make to `example7_appA` and `example7_appB`. You will notice that while appA accepts the token, you are not an admin, and appB does not accept the token as the audience is incorrect.
 3. Authenticate to `example7` using the following data segment: `'{ "username" : "user", "password" : "password7", "application" : "appB"}'`. You will notice that an audience claim is added again and you are an admin this time.
 4. Use this token again to verify yourself on both applications and see what happens.
