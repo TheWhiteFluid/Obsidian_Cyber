@@ -8,63 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "27b7ec6dcae2fb49",
+            "id": "a2c2c4817a754f7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/JWT Security/JSON Web Tokens.md",
+                "file": "TryHackMe/AppSec/Authentication/Session Management/Cookies vs Tokens.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSON Web Tokens"
+              "title": "Cookies vs Tokens"
             }
           },
           {
-            "id": "d7bdcecc7333471d",
+            "id": "d85e79259871ac85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
+                "file": "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Signature Validation Mistakes"
-            }
-          },
-          {
-            "id": "890fa6d0aba8a41e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/How MFA Works.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "How MFA Works"
-            }
-          },
-          {
-            "id": "d8acc3c087c8e320",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Implementations and Applications"
+              "title": "JWT Lifetimes"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.51103591918945
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -182,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md"
+                "file": "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Implementations and Applications"
+              "title": "Outline of JWT Lifetimes"
             }
           }
         ],
@@ -205,53 +177,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8acc3c087c8e320",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
-    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/How MFA Works.md",
+    "linkedin.md",
     "z.Screenshots/Pasted image 20241202212714.png",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Summary.md",
     "TryHackMe/AppSec/Authentication/JWT Security/Summary.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - CSRF in OAuth.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Implicit Grant Flow.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Token-Based Authentication.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Sensitive Information Disclosure.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/JSON Web Tokens.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Cross-Service Relay Attacks.md",
     "PortSwigger/JWT.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Vulnerable Password Reset Logic.md",
-    "exprt",
-    "Frameworks & Tools.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Enumerating Users via Verbose Errors.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
-    "TryHackMe/PenTest/ActiveDirectory/Breaching/OSINT and Phishing.md",
-    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
+    "TryHackMe/AppSec/Authentication/JWT Security/Cross-Service Relay Attacks.md",
+    "z.Screenshots/Pasted image 20241202011542.png",
     "z.Screenshots/Pasted image 20241202012236.png",
     "z.Screenshots/Pasted image 20241202012117.png",
-    "z.Screenshots/Pasted image 20241202011542.png",
     "z.Screenshots/Pasted image 20241202010128.png",
     "z.Screenshots/Pasted image 20241202000931.png",
-    "z.Screenshots/Pasted image 20241202000836.png",
-    "z.Screenshots/Pasted image 20241202000003.png",
     "z.Screenshots/Pasted image 20241201235458.png",
-    "z.Screenshots/Pasted image 20241201232233.png",
+    "z.Screenshots/Pasted image 20241201172132.png",
+    "z.Screenshots/Pasted image 20241201172136.png",
+    "z.Screenshots/Pasted image 20241201172246.png",
+    "TryHackMe/AppSec/Authentication/Session Management/Summary.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Other Vulnerabilities and Evolution of OAuth 2.1.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Implicit Grant Flow.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - CSRF in OAuth.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
-    "z.Screenshots/Screen Recording 2024-12-01 at 1.20.39 AM.mov",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/How MFA Works.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
+    "TryHackMe/AppSec/Authentication/Session Management/Mitigations.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Sensitive Information Disclosure.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Securing the Session Lifecycle.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Session Management Lifecycle.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Exploiting Insecure Session Management - Example.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Token-Based Authentication.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/JSON Web Tokens.md",
+    "Additional Info/Powershell CLM Bypass Using Runspaces.md",
     "TryHackMe/AppSec/Authentication/JWT Security",
     "TryHackMe/AppSec/Authentication/Session Management",
     "TryHackMe/PenTest/WEB Attacks/File Upload",
     "TryHackMe/PenTest/WEB Attacks",
     "TryHackMe/Offensive Pentesting",
+    "TryHackMe/AppSec/WEB Attacks/File Upload",
+    "TryHackMe/AppSec/WEB Attacks",
     "TryHackMe/PenTest/Vulnerability Research"
   ]
 }
