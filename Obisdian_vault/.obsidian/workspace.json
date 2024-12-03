@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/PenTest/Planning and Scoping/Governance & Regulations.md",
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Governance & Regulations"
+              "title": "Identifying the OAuth Services"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/PenTest/Planning and Scoping/Governance & Regulations.md"
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Governance & Regulations"
+              "title": "Outline of Identifying the OAuth Services"
             }
           }
         ],
@@ -164,34 +164,38 @@
   },
   "active": "3289074eae862a1d",
   "lastOpenFiles": [
-    "linkedin.md",
-    "TryHackMe/PenTest/Planning and Scoping/Governance & Regulations.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
+    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits",
     "TryHackMe/AppSec/Authentication/JWT Security/JSON Web Tokens.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Summary.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Token-Based Authentication.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Exploits/JWT Lifetimes.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Exploits/Cross-Service Relay Attacks.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Session Management Lifecycle.md",
+    "TryHackMe/AppSec/Authentication/JWT Security/Exploits",
+    "TryHackMe/AppSec/Authentication/Session Management/Securing the Session Lifecycle.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Mitigations.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Cookies vs Tokens.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Authentication vs Authorisation.md",
+    "TryHackMe/AppSec/Authentication/Session Management/Exploits",
+    "TryHackMe/AppSec/Authentication/Session Management/Exploits/Exploiting Insecure Session Management - Example.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
+    "TryHackMe/PenTest/Planning and Scoping/Governance & Regulations.md",
+    "linkedin.md",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/How MFA Works.md",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
     "z.Screenshots/Pasted image 20241202212714.png",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Summary.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Summary.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Stealing OAuth Token.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - CSRF in OAuth.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploiting OAuth - Implicit Grant Flow.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Token-Based Authentication.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Signature Validation Mistakes.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Sensitive Information Disclosure.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Cross-Service Relay Attacks.md",
-    "PortSwigger/JWT.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Vulnerable Password Reset Logic.md",
     "exprt",
-    "Frameworks & Tools.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/OSINT.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/HTTP Basic Authentication.md",
-    "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Enumerating Users via Verbose Errors.md",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
     "z.Screenshots/Pasted image 20241202012236.png",
     "z.Screenshots/Pasted image 20241202012117.png",
@@ -205,10 +209,6 @@
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
     "z.Screenshots/Screen Recording 2024-12-01 at 1.20.39 AM.mov",
     "TryHackMe/AppSec/Authentication/JWT Security",
-    "TryHackMe/AppSec/Authentication/Session Management",
-    "TryHackMe/PenTest/WEB Attacks/File Upload",
-    "TryHackMe/PenTest/WEB Attacks",
-    "TryHackMe/Offensive Pentesting",
-    "TryHackMe/PenTest/Vulnerability Research"
+    "TryHackMe/AppSec/Authentication/Session Management"
   ]
 }
