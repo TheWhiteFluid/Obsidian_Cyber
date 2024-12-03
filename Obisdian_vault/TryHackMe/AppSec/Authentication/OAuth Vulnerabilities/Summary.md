@@ -1,4 +1,3 @@
-
 ### Structure
 The following structure ensures secure access to resources while giving users control over their data and permissions:
 
@@ -43,7 +42,6 @@ The following structure ensures secure access to resources while giving users co
     _Example:_ Ensures the response you get matches your initial login request.
     
 11. **Token & Authorization Endpoints:**
-    
     - **Authorization Endpoint:** Where the user logs in and authorizes access.
     - **Token Endpoint:** Where the client exchanges the authorization grant for an access token.  
         _Example:_ The app interacts with these endpoints to authenticate you and access your data.

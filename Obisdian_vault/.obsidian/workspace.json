@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Identifying the OAuth Services"
+              "title": "Summary"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md"
+                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Identifying the OAuth Services"
+              "title": "Outline of Summary"
             }
           }
         ],
@@ -164,6 +164,7 @@
   },
   "active": "3289074eae862a1d",
   "lastOpenFiles": [
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
@@ -184,7 +185,6 @@
     "TryHackMe/AppSec/Authentication/Session Management/Authentication vs Authorisation.md",
     "TryHackMe/AppSec/Authentication/Session Management/Exploits",
     "TryHackMe/AppSec/Authentication/Session Management/Exploits/Exploiting Insecure Session Management - Example.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
