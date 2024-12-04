@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d85e79259871ac85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Insecure Coding"
-            }
-          },
-          {
             "id": "fec1cf5a0b575373",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Auto-Logout Feature"
+              "title": "Summary"
             }
           }
         ]
@@ -91,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -154,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md"
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Insecure Coding"
+              "title": "Outline of Summary"
             }
           }
         ],
@@ -177,21 +162,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d85e79259871ac85",
+  "active": "fec1cf5a0b575373",
   "lastOpenFiles": [
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+    "z.Screenshots/Pasted image 20241204172929.png",
+    "z.Screenshots/Pasted image 20241204172659.png",
+    "z.Screenshots/Pasted image 20241204172816.png",
+    "z.Screenshots/Pasted image 20241204173046.png",
+    "z.Screenshots/Pasted image 20241204173054.png",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Summary.md",
+    "z.Screenshots/Pasted image 20241204185450.png",
+    "z.Screenshots/Pasted image 20241204185202.png",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-    "Pasted image 20241204173521.png",
-    "Pasted image 20241204173308.png",
-    "Pasted image 20241204173222.png",
+    "z.Screenshots/Pasted image 20241204173521.png",
+    "z.Screenshots/Pasted image 20241204173308.png",
+    "z.Screenshots/Pasted image 20241204173222.png",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
-    "Pasted image 20241204173054.png",
-    "Pasted image 20241204173046.png",
-    "Pasted image 20241204172929.png",
-    "Pasted image 20241204172816.png",
-    "Pasted image 20241204172659.png",
     "TryHackMe/PenTest/Tools and Code Analysis/Metasploit/Summary.md",
-    "z.Screenshots/Pasted image 20241204105840.png",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
@@ -214,11 +201,9 @@
     "TryHackMe/PenTest/Tools and Code Analysis/Metasploit/Meterpreter.md",
     "TryHackMe/AppSec/Authentication/JWT Security/JWT Lifetimes.md",
     "linkedin.md",
-    "z.Screenshots/Pasted image 20241202212714.png",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Summary.md",
     "TryHackMe/AppSec/Authentication/JWT Security/Summary.md",
     "PortSwigger/JWT.md",
-    "TryHackMe/AppSec/Authentication/JWT Security/Cross-Service Relay Attacks.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
     "TryHackMe/AppSec/Authentication/JWT Security",
