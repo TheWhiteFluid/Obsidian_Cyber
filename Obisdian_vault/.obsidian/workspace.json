@@ -13,15 +13,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Summary"
+              "title": "Implementations and Applications"
+            }
+          },
+          {
+            "id": "7aca2fdc86f9dda0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Common Vulnerabilities in MFA"
+            }
+          },
+          {
+            "id": "53a10e3554b5dfc4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OTP Leakage"
+            }
+          },
+          {
+            "id": "83a60b6517854da1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Insecure Coding"
+            }
+          },
+          {
+            "id": "95a13601039a899a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Auto-Logout Feature"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -139,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md"
+                "file": "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Summary"
+              "title": "Outline of Auto-Logout Feature"
             }
           }
         ],
@@ -162,9 +219,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3289074eae862a1d",
+  "active": "95a13601039a899a",
   "lastOpenFiles": [
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits",
+    "z.Screenshots/Pasted image 20241204105840.png",
+    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
+    "z.Screenshots/Pasted image 20241201143255.png",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Summary.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Authentication Enumeration.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
     "TryHackMe/AppSec/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
@@ -186,14 +254,6 @@
     "TryHackMe/AppSec/Authentication/Session Management/Exploits",
     "TryHackMe/AppSec/Authentication/Session Management/Exploits/Exploiting Insecure Session Management - Example.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
-    "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
-    "TryHackMe/PenTest/Planning and Scoping/Governance & Regulations.md",
-    "linkedin.md",
-    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/How MFA Works.md",
-    "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
     "z.Screenshots/Pasted image 20241202212714.png",
     "exprt",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
@@ -204,11 +264,8 @@
     "z.Screenshots/Pasted image 20241202000931.png",
     "z.Screenshots/Pasted image 20241202000836.png",
     "z.Screenshots/Pasted image 20241202000003.png",
-    "z.Screenshots/Pasted image 20241201235458.png",
-    "z.Screenshots/Pasted image 20241201232233.png",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
     "z.Screenshots/Screen Recording 2024-12-01 at 1.20.39 AM.mov",
-    "TryHackMe/AppSec/Authentication/JWT Security",
-    "TryHackMe/AppSec/Authentication/Session Management"
+    "TryHackMe/AppSec/Authentication/JWT Security"
   ]
 }
