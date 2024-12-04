@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eternal",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -88,8 +88,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -178,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d85e79259871ac85",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
     "z.Screenshots/Pasted image 20241204105840.png",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
