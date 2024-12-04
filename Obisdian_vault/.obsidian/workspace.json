@@ -162,8 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fec1cf5a0b575373",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "TryHackMe/AppSec/Injections/NoSQL",
+    "TryHackMe/AppSec/Injections/SQL",
+    "TryHackMe/AppSec/Injections",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
     "z.Screenshots/Pasted image 20241204172929.png",
     "z.Screenshots/Pasted image 20241204172659.png",
@@ -206,8 +209,6 @@
     "PortSwigger/JWT.md",
     "TryHackMe/AppSec/Authentication/OAuth Vulnerabilities",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication",
-    "TryHackMe/AppSec/Authentication/JWT Security",
-    "TryHackMe/AppSec/Authentication/Session Management",
-    "TryHackMe/PenTest/WEB Attacks/File Upload"
+    "TryHackMe/AppSec/Authentication/JWT Security"
   ]
 }
