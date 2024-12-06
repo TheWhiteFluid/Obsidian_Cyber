@@ -47,3 +47,17 @@ ffuf -w codes.txt -u "http://10.10.252.115:1337/reset_password.php" -X "POST" -d
 
 - we obtained following access code: 6707 and after resseting user password we are in
 	![](Pasted%20image%2020241206182436.png)![](Pasted%20image%2020241206182553.png)
+- we have found a key
+	![](Pasted%20image%2020241206235920.png)
+- running other command(high privileged ones) is not allowed so we have to bypass it 
+	![](Pasted%20image%2020241207000646.png)
+- lets decode the JWT token and try to elevate our privileges
+	![](Pasted%20image%2020241207000939.png)
+
+- since the key that we have found is stored on the web page --> location of the kid is : /var/www/html/188ade1.key
+- we will modify our role in the payload (user --> admin)
+- we will sign using the value that we found in 188ade1.key as a secret
+	![](Pasted%20image%2020241207002042.png)![](Pasted%20image%2020241207002131.png)
+
+- changing the authorization bearer token we escalated our privileges
+	  ![](Pasted%20image%2020241207002820.png)
