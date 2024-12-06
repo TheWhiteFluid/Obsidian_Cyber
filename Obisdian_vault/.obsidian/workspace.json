@@ -11,14 +11,12 @@
             "id": "fec1cf5a0b575373",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/Challange - Hammer.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20241206130150.png"
               },
-              "icon": "lucide-file",
-              "title": "Challange - Hammer"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241206130150"
             }
           }
         ]
@@ -139,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TryHackMe/AppSec/Authentication/Challange - Hammer.md"
+                "file": "z.Screenshots/Pasted image 20241206130150.png"
               },
               "icon": "lucide-list",
-              "title": "Outline of Challange - Hammer"
+              "title": "Outline of Pasted image 20241206130150"
             }
           }
         ],
@@ -163,15 +161,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fec1cf5a0b575373",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20241206182553.png",
-    "Pasted image 20241206182436.png",
-    "Pasted image 20241206181516.png",
-    "Pasted image 20241206181128.png",
-    "PortSwigger/Authentication.md",
     "TryHackMe/AppSec/Authentication/Challange - Hammer.md",
-    "Pasted image 20241206174908.png",
+    "z.Screenshots/Pasted image 20241206182553.png",
+    "z.Screenshots/Pasted image 20241206182436.png",
+    "z.Screenshots/Pasted image 20241206181516.png",
+    "z.Screenshots/Pasted image 20241206181128.png",
+    "PortSwigger/Authentication.md",
+    "z.Screenshots/Pasted image 20241206174908.png",
     "TryHackMe/PenTest/WEB Attacks/Content Discovery.md",
     "TryHackMe/PenTest/WEB Attacks/Subdomain Enumeration.md",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Summary.md",
@@ -184,7 +182,6 @@
     "z.Screenshots/Pasted image 20241204172816.png",
     "z.Screenshots/Pasted image 20241204173046.png",
     "z.Screenshots/Pasted image 20241204173054.png",
-    "z.Screenshots/Pasted image 20241204185450.png",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
     "TryHackMe/AppSec/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
     "TryHackMe/PenTest/Tools and Code Analysis/Metasploit/Summary.md",
