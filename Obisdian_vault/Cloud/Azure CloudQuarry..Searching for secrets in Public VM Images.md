@@ -1,0 +1,1 @@
+More info on: https://securitycafe.ro/2024/11/19/azure-cloudquarry-searching-for-secrets-in-public-vm-images/

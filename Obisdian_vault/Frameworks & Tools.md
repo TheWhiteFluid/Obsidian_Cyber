@@ -115,9 +115,11 @@ https://gtfobins.github.io/
 
 
 ## **==AWS // Cloud==**
+- https://hackingthe.cloud/aws/exploitation/Misconfigured_Resource-Based_Policies/exploting_public_resources_attack_playbook/ (CheatSheet !!!)
 - https://github.com/salesforce/cloudsplaining (privesc)
 - https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
-
+- https://prowler.com/blog/prowler-5/ (prowler)
+- https://securitycafe.ro/2024/11/19/azure-cloudquarry-searching-for-secrets-in-public-vm-images/ (Azure CloudQuarry)
 
 ## **==RedTeam==**
 https://github.com/bigb0sss/RedTeam-OffensiveSecurity/tree/master/01-CobaltStrike (Cobalt Strike)
