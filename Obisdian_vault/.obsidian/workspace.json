@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Second-Order SQL Injection"
+              "title": "0)Summary"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md"
+                "file": "AppSec/PortSwigger/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Second-Order SQL Injection"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -177,11 +177,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "370efc0aba4f141d",
   "lastOpenFiles": [
+    "Frameworks & Tools.md",
+    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
+    "Cloud/PwnedLabs",
+    "Cloud/TryHackMe/DevSecOps",
+    "AppSec/TryHackMe/Injections/NoSQL",
+    "PenTest/TryHackMe/ActiveDirectory/Enumerating --",
+    "PenTest/TryHackMe/ActiveDirectory/Exploiting --",
     "z.Screenshots/Pasted image 20241207194946.png",
     "z.Screenshots/Pasted image 20241207194811.png",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "z.Screenshots/Pasted image 20241207194802.png",
     "AppSec/TryHackMe/Injections/SQL/Introduction.md",
     "z.Screenshots/Pasted image 20241207194046.png",
@@ -190,11 +196,9 @@
     "z.Screenshots/Pasted image 20241207183421.png",
     "Cloud/Hacking the Cloud - Playbook.md",
     "AppSec/PortSwigger/Authentication.md",
-    "Frameworks & Tools.md",
     "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
     "Cloud/Prowler v.5.0.md",
     "Cloud/Azure CloudQuarry..Searching for secrets in Public VM Images.md",
-    "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
     "PortSwigger/JWT.md",
@@ -205,11 +209,9 @@
     "z.Screenshots/Pasted image 20241207002820.png",
     "z.Screenshots/Pasted image 20241207002131.png",
     "z.Screenshots/Pasted image 20241207002042.png",
-    "z.Screenshots/Pasted image 20241207000939.png",
     "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Summary.md",
-    "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL",
     "AppSec/TryHackMe/Injections",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
@@ -221,9 +223,6 @@
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits",
-    "AppSec/TryHackMe/Authentication/Session Management/Exploits"
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md"
   ]
 }
