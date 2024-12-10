@@ -1,9 +1,9 @@
 - port scanning phase:
 	nmap -sC -sV -p- {IP}![](Pasted%20image%2020241206130150.png)
-![](Pasted%20image%2020241206131016.png)
+	![](Pasted%20image%2020241206131016.png)
 
 - inspect source page
-![](Pasted%20image%2020241206131028.png)
+	![](Pasted%20image%2020241206131028.png)
 
 - dir enumeration phase
 ```
@@ -18,10 +18,10 @@ gobuster dir --url http://10.10.208.169:1337/hmr_ -w /usr/share/wordlists/SecLis
 	![](Pasted%20image%2020241206145934.png)
 		![](Pasted%20image%2020241206150228.png)
 - check for cookies (PHPSESSID: eevapv194ivfivf2ovtibf4vp9)
-![](Pasted%20image%2020241206174908.png)
+	![](Pasted%20image%2020241206174908.png)
 
 - using burp for security code fuzz (OTP)
-![](Pasted%20image%2020241206151052.png)
+	![](Pasted%20image%2020241206151052.png)
 
 - we have a Rate-Limit-Pending response header and we have to bypass it using 'X-Forwarded- For' request header spoofing our IP address
 - let s generate a list of possible code combinations (0000-9999) using: 
