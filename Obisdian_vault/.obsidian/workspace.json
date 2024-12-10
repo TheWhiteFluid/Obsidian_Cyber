@@ -39,12 +39,14 @@
             "id": "805f8cc582fec883",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241210180321.png"
+                "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241210180321"
+              "icon": "lucide-file",
+              "title": "Out-of-band SQL Injection"
             }
           }
         ],
@@ -166,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241210180321.png"
+                "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20241210180321"
+              "title": "Outline of Out-of-band SQL Injection"
             }
           }
         ],
@@ -189,16 +191,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "805f8cc582fec883",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
+    "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
+    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "z.Screenshots/Pasted image 20241210180321.png",
+    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "z.Screenshots/Pasted image 20241210180319.png",
     "z.Screenshots/Pasted image 20241210180150.png",
     "z.Screenshots/Pasted image 20241210180148.png",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Introduction.md",
     "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "z.Screenshots/Pasted image 20241210175706.png",
     "z.Screenshots/Pasted image 20241210175702.png",
@@ -215,7 +220,6 @@
     "PenTest/TryHackMe/ActiveDirectory/Exploiting --",
     "Cloud/Hacking the Cloud - Playbook.md",
     "AppSec/PortSwigger/Authentication.md",
-    "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
     "Cloud/Prowler v.5.0.md",
     "Cloud/Azure CloudQuarry..Searching for secrets in Public VM Images.md",
     "Cloud/TryHackMe",
@@ -223,10 +227,9 @@
     "PortSwigger/JWT.md",
     "AppSec/PortSwigger/Access Control & IDOR.md",
     "AppSec/PortSwigger/File Upload.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Summary.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
     "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Summary.md",
     "AppSec/TryHackMe/Injections/SQL",
     "AppSec/TryHackMe/Injections",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
