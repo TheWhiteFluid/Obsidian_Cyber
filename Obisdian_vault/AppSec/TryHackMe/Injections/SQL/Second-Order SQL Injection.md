@@ -2,7 +2,7 @@ Second-order SQL injection, also known as stored SQL injection, exploits vul
 	![](Pasted%20image%2020241207194811.png)
 
 *Impact:*
-The danger of Second-Order SQL Injection lies in its ability to bypass typical front-end defences like basic input validation or sanitization, which only occur at the point of initial data entry. Since the payload does not cause disruption during the first step, it can be overlooked until it's too late, making the attack particularly stealthy.
+The danger of Second-Order SQL Injection lies in its ability to bypass typical front-end defenses like basic input validation or sanitization, which only occur at the point of initial data entry. Since the payload does not cause disruption during the first step, it can be overlooked until it's too late, making the attack particularly stealthy.
 
 ## Example
 We will be using a book review application. The application allows users to add new books via a web page (`add.php`). Users are prompted to provide details about the book they wish to add to the database. You can access the app at `http://MACHINE_IP/second/add.php`[.](http://machine_ip/case1.) The data collected includes the `SSN`, `book_name`, and `author`. Let's consider adding a book with the following details: **SSN: UI00012**, **Book Name: Intro to PHP**, **Author: Tim**. 
