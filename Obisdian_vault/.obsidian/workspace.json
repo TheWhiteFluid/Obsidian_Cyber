@@ -179,6 +179,10 @@
   },
   "active": "370efc0aba4f141d",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
+    "z.Screenshots/Pasted image 20241208000910.png",
+    "z.Screenshots/Pasted image 20241207235827.png",
+    "z.Screenshots/Pasted image 20241207235645.png",
     "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "AppSec/PortSwigger/0)Summary.md",
     "Frameworks & Tools.md",
@@ -207,9 +211,6 @@
     "AppSec/PortSwigger/File Upload.md",
     "AppSec/TryHackMe/Authentication/JWT Security/Summary.md",
     "z.Screenshots/Pasted image 20241206235920.png",
-    "z.Screenshots/Pasted image 20241207002820.png",
-    "z.Screenshots/Pasted image 20241207002131.png",
-    "z.Screenshots/Pasted image 20241207002042.png",
     "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Summary.md",
@@ -223,7 +224,6 @@
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md"
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md"
   ]
 }
