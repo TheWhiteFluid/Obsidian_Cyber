@@ -25,14 +25,12 @@
             "id": "370efc0aba4f141d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20241211020203.png"
               },
-              "icon": "lucide-file",
-              "title": "Out-of-band SQL Injection"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241211020203"
             }
           }
         ],
@@ -92,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -155,10 +152,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md"
+                "file": "z.Screenshots/Pasted image 20241211020203.png"
               },
               "icon": "lucide-list",
-              "title": "Outline of Out-of-band SQL Injection"
+              "title": "Outline of Pasted image 20241211020203"
             }
           }
         ],
@@ -178,11 +175,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "370efc0aba4f141d",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20241211020203.png",
-    "Pasted image 20241211020151.png",
     "Pasted image 20241211020148.png",
+    "z.Screenshots/Pasted image 20241211020203.png",
+    "Pasted image 20241211020151.png",
+    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
@@ -197,8 +195,6 @@
     "z.Screenshots/Pasted image 20241210174352.png",
     "z.Screenshots/Pasted image 20241210180150.png",
     "z.Screenshots/Pasted image 20241210180148.png",
-    "z.Screenshots/Pasted image 20241210174343.png",
-    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/File Upload.md",
     "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
