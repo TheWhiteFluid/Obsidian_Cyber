@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "Frameworks & Tools"
             }
+          },
+          {
+            "id": "370efc0aba4f141d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Out-of-band SQL Injection"
+            }
+          },
+          {
+            "id": "cb6e5406f8811cee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Other Techniques"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -139,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "AppSec/TryHackMe/Injections/SQL/Other Techniques.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Frameworks & Tools"
+              "title": "Outline of Other Techniques"
             }
           }
         ],
@@ -150,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,11 +191,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bf00473563b7fdea",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20241211185016.png",
+    "z.Screenshots/Pasted image 20241211184800.png",
+    "z.Screenshots/Pasted image 20241211182059.png",
+    "z.Screenshots/Pasted image 20241211182044.png",
+    "z.Screenshots/Pasted image 20241211182041.png",
+    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-    "Pasted image 20241211020203.png",
-    "Pasted image 20241211020151.png",
+    "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
+    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
+    "z.Screenshots/Pasted image 20241211181205.png",
+    "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
+    "z.Screenshots/Pasted image 20241211180442.png",
+    "z.Screenshots/Pasted image 20241211180258.png",
+    "z.Screenshots/Pasted image 20241211170822.png",
+    "z.Screenshots/Pasted image 20241211020203.png",
     "Pasted image 20241211020148.png",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
@@ -175,24 +216,13 @@
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
     "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
-    "z.Screenshots/Pasted image 20241210180321.png",
-    "z.Screenshots/Pasted image 20241210175702.png",
-    "z.Screenshots/Pasted image 20241210175706.png",
-    "z.Screenshots/Pasted image 20241210174419.png",
-    "z.Screenshots/Pasted image 20241210174352.png",
-    "z.Screenshots/Pasted image 20241210180150.png",
-    "z.Screenshots/Pasted image 20241210180148.png",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/File Upload.md",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "Frameworks & Tools.md",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
     "Additional Info/Linux • Shell.md",
-    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Introduction.md",
-    "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "Cloud/Hacking the Cloud - Playbook.md",
     "AppSec/PortSwigger/Authentication.md",
     "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
@@ -202,7 +232,6 @@
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
     "PortSwigger/JWT.md",
-    "AppSec/PortSwigger/Access Control & IDOR.md",
     "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL",
     "AppSec/TryHackMe/Injections",

