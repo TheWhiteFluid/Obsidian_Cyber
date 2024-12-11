@@ -11,7 +11,7 @@ This information is input through a form on the `add.php` page, and upon submi
 	![](Pasted%20image%2020241207194946.png)
 As we know, Second-Order SQL injection is notably challenging to identify. Unlike traditional SQL Injection, which exploits real-time processing vulnerabilities, it occurs when data previously stored in a database is later used in a SQL query. Detecting this vulnerability often requires understanding how data flows through the application and is reused, necessitating a deep knowledge of the backend operations.
 
-### Code Analysis
+### **Code Analysis**
 Consider the PHP code snippet used in our application for adding books:
 ```php
 if (isset($_POST['submit'])) {
@@ -70,7 +70,7 @@ These variables (`ssn, new_book_name, new_author`) are then used to construct an
 $update_sql = "UPDATE books SET book_name = '$new_book_name', author = '$new_author' WHERE ssn = '$ssn'; INSERT INTO logs (page) VALUES ('update.php');";
 ```
 
-### Preparing the Payload
+### **Payload**
 We know that we can add or modify the book details based on their `ssn`. The normal query for updating a book might look like this:
 ```php
 UPDATE books SET book_name = '$new_book_name', author = '$new_author' WHERE ssn = '123123';

