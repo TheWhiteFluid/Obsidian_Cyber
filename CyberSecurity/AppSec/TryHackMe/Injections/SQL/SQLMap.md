@@ -3,8 +3,6 @@ Installing Sqlmap
 
 If you're using Kali Linux, sqlmap is pre-installed. Otherwise, you can download it here: https://github.com/sqlmapproject/sqlmap
 
-# Commands
-
 |**Options**|**Description**|
 |---|---|
 |`-u URL`, `--url=URL`|Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)")|
