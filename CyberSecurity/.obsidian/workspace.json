@@ -27,20 +27,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Filter Evasion Techniques"
-            }
-          },
-          {
-            "id": "805f8cc582fec883",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
                 "mode": "source",
                 "source": false
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945
+    "width": 220.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -191,53 +178,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "805f8cc582fec883",
+  "active": "370efc0aba4f141d",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
+    "Pasted image 20241211020203.png",
+    "Pasted image 20241211020151.png",
+    "Pasted image 20241211020148.png",
+    "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
     "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
     "z.Screenshots/Pasted image 20241210180321.png",
-    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
-    "z.Screenshots/Pasted image 20241210180319.png",
-    "z.Screenshots/Pasted image 20241210180150.png",
-    "z.Screenshots/Pasted image 20241210180148.png",
-    "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
-    "z.Screenshots/Pasted image 20241210175706.png",
     "z.Screenshots/Pasted image 20241210175702.png",
+    "z.Screenshots/Pasted image 20241210175706.png",
     "z.Screenshots/Pasted image 20241210174419.png",
     "z.Screenshots/Pasted image 20241210174352.png",
+    "z.Screenshots/Pasted image 20241210180150.png",
+    "z.Screenshots/Pasted image 20241210180148.png",
     "z.Screenshots/Pasted image 20241210174343.png",
-    "z.Screenshots/Pasted image 20241208000910.png",
-    "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
+    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
+    "AppSec/PortSwigger/File Upload.md",
+    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "Frameworks & Tools.md",
-    "Cloud/PwnedLabs",
-    "Cloud/TryHackMe/DevSecOps",
-    "AppSec/TryHackMe/Injections/NoSQL",
-    "PenTest/TryHackMe/ActiveDirectory/Enumerating --",
-    "PenTest/TryHackMe/ActiveDirectory/Exploiting --",
+    "Additional Info/Websites Analyse Tools.md",
+    "Additional Info/Powershell CLM Bypass Using Runspaces.md",
+    "Additional Info/Linux • Shell.md",
+    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
+    "AppSec/TryHackMe/Injections/SQL/Introduction.md",
+    "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "Cloud/Hacking the Cloud - Playbook.md",
     "AppSec/PortSwigger/Authentication.md",
+    "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
     "Cloud/Prowler v.5.0.md",
     "Cloud/Azure CloudQuarry..Searching for secrets in Public VM Images.md",
+    "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
     "PortSwigger/JWT.md",
     "AppSec/PortSwigger/Access Control & IDOR.md",
-    "AppSec/PortSwigger/File Upload.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
-    "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
-    "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
+    "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL",
     "AppSec/TryHackMe/Injections",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
-    "PenTest/TryHackMe/Tools and Code Analysis/Metasploit/Summary.md",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md"
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits",
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits",
+    "AppSec/TryHackMe/Authentication/Session Management/Exploits"
   ]
 }
