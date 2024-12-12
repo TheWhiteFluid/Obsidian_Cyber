@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
+                "file": "Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Other Techniques"
+              "title": "Frameworks & Tools"
             }
           }
         ],
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Other Techniques.md"
+                "file": "Frameworks & Tools.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Other Techniques"
+              "title": "Outline of Frameworks & Tools"
             }
           }
         ],
@@ -191,8 +191,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "cb6e5406f8811cee",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
     "z.Screenshots/Pasted image 20241211185016.png",
     "z.Screenshots/Pasted image 20241211184800.png",
     "z.Screenshots/Pasted image 20241211182059.png",
@@ -200,7 +201,6 @@
     "z.Screenshots/Pasted image 20241211182041.png",
     "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "z.Screenshots/Pasted image 20241211181205.png",
@@ -209,7 +209,6 @@
     "z.Screenshots/Pasted image 20241211180258.png",
     "z.Screenshots/Pasted image 20241211170822.png",
     "z.Screenshots/Pasted image 20241211020203.png",
-    "Pasted image 20241211020148.png",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",

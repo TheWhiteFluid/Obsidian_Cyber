@@ -1,0 +1,31 @@
+
+## Token Lifetime
+Before verifying the signature of the token, the lifetime of the token should be calculated to ensure that the token has not expired. This is usually performed by reading the `exp` (expiration time) claim from the token and calculating if the token is still valid.
+
+A common issue is if the `exp` value is set too large (or not set at all), the token would be valid for too long or might even never expire. With cookies, the cookie can be expired server-side. However, JWTs do not have this same feature built-in. If we want to expire a token before the `exp` time, we must keep a blocklist of these tokens, breaking the model of decentralised applications using the same authentication server. Therefore, the care should be given to choose the correct `exp` value, given the application's functionality. For example, a different `exp` value is probably used between a mail server and a banking application.
+
+Another approach is to use refresher tokens. If you are going to test an  API that uses JWTs, it is recommended that you do some research into these.
+
+### Example
+In this example, the JWT implementation did not specify an exp value, meaning tokens are permanently persistent. Use the token below to recover your flag: 
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJhZG1pbiI6MX0.ko7EQiATQQzrQPwRO8ZTY37pQWGLPZWEvdWH0tVDNPU
+```
+![](Pasted%20image%2020241201000433.png)
+	![](Pasted%20image%2020241201000513.png)
+### The Development Mistake
+As mentioned above, the JWT does not have an `exp` value, meaning it will be persistent. In the event that an `exp` claim isn't present, most JWT libraries would accept the token as valid if the signature is verified.
+
+### The Fix  
+An `exp` value should be added to the claims. Once added, most libraries will include reviewing the expiry time of the JWT into their checks for validity. This can be done as shown in the example below:
+```python
+lifetime = datetime.datetime.now() + datetime.timedelta(minutes=5)
+
+payload = {
+    'username' : username,
+    'admin' : 0,
+    'exp' : lifetime
+}
+
+access_token = jwt.encode(payload, self.secret, algorithm="HS256")
+```
