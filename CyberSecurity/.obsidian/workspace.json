@@ -41,16 +41,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "Second-Order SQL Injection"
+            }
+          },
+          {
+            "id": "3aeb73ab65021ce9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SQL/Automation/Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Summary"
+            }
+          },
+          {
+            "id": "a937acc8e5e9aab5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQLMap"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -168,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Frameworks & Tools"
+              "title": "Outline of SQLMap"
             }
           }
         ],
@@ -191,8 +219,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb6e5406f8811cee",
+  "active": "a937acc8e5e9aab5",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+    "AppSec/TryHackMe/Injections/SQL/Automation/Summary.md",
+    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Automation",
+    "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md",
+    "Frameworks & Tools.md",
     "AppSec/TryHackMe/Authentication/JWT Security/Token-Based Authentication.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
@@ -204,8 +238,6 @@
     "z.Screenshots/Pasted image 20241211182041.png",
     "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
     "z.Screenshots/Pasted image 20241211181205.png",
     "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
     "z.Screenshots/Pasted image 20241211180442.png",
@@ -219,7 +251,6 @@
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/File Upload.md",
-    "Frameworks & Tools.md",
     "Additional Info/Websites Analyse Tools.md",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
     "Additional Info/Linux • Shell.md",
@@ -227,8 +258,6 @@
     "Cloud/Hacking the Cloud - Playbook.md",
     "AppSec/PortSwigger/Authentication.md",
     "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
-    "Cloud/Prowler v.5.0.md",
-    "Cloud/Azure CloudQuarry..Searching for secrets in Public VM Images.md",
     "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
@@ -237,7 +266,6 @@
     "AppSec/TryHackMe/Injections",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits",
-    "AppSec/TryHackMe/Authentication/Session Management/Exploits"
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits"
   ]
 }
