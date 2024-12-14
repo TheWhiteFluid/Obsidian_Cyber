@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "CSRF - Cross Site Request Forgery"
             }
           }
         ],
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Frameworks & Tools.md"
+                "file": "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Frameworks & Tools"
+              "title": "Outline of CSRF - Cross Site Request Forgery"
             }
           }
         ],
@@ -193,6 +193,28 @@
   },
   "active": "cb6e5406f8811cee",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20241214205821.png",
+    "z.Screenshots/Pasted image 20241214205911.png",
+    "z.Screenshots/Pasted image 20241214210436.png",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Bypassing the Login Screen.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
+    "AppSec/TryHackMe/Injections/NoSQL/MongoDB.md",
+    "Pasted image 20241214210436.png",
+    "Pasted image 20241214205911.png",
+    "Pasted image 20241214205821.png",
+    "AppSec/TryHackMe/Injections/NoSQL",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/OAuth Grant Types.md",
+    "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md",
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+    "AppSec/TryHackMe/Injections/SQL/Automation/Summary.md",
+    "AppSec/TryHackMe/Injections/SQL/Automation",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Identifying the OAuth Services.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/Token-Based Authentication.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/JSON Web Tokens.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
+    "Frameworks & Tools.md",
     "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
     "z.Screenshots/Pasted image 20241211185016.png",
     "z.Screenshots/Pasted image 20241211184800.png",
@@ -203,40 +225,19 @@
     "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/SQLMap.md",
-    "z.Screenshots/Pasted image 20241211181205.png",
     "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
-    "z.Screenshots/Pasted image 20241211180442.png",
-    "z.Screenshots/Pasted image 20241211180258.png",
-    "z.Screenshots/Pasted image 20241211170822.png",
-    "z.Screenshots/Pasted image 20241211020203.png",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/File Upload.md",
-    "Frameworks & Tools.md",
-    "Additional Info/Websites Analyse Tools.md",
-    "Additional Info/Powershell CLM Bypass Using Runspaces.md",
-    "Additional Info/Linux • Shell.md",
-    "AppSec/TryHackMe/Injections/SQL/Introduction.md",
-    "Cloud/Hacking the Cloud - Playbook.md",
-    "AppSec/PortSwigger/Authentication.md",
-    "AppSec/TryHackMe/Authentication/Challange - Hammer.md",
-    "Cloud/Prowler v.5.0.md",
-    "Cloud/Azure CloudQuarry..Searching for secrets in Public VM Images.md",
     "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
-    "PortSwigger/JWT.md",
-    "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL",
     "AppSec/TryHackMe/Injections",
     "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits",
-    "AppSec/TryHackMe/Authentication/Session Management/Exploits"
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits"
   ]
 }

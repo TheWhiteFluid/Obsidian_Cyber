@@ -70,7 +70,7 @@ These variables (`ssn, new_book_name, new_author`) are then used to construct an
 $update_sql = "UPDATE books SET book_name = '$new_book_name', author = '$new_author' WHERE ssn = '$ssn'; INSERT INTO logs (page) VALUES ('update.php');";
 ```
 
-### Preparing the Payload
+### Preparing the Preparing the Payload
 We know that we can add or modify the book details based on their `ssn`. The normal query for updating a book might look like this:
 ```php
 UPDATE books SET book_name = '$new_book_name', author = '$new_author' WHERE ssn = '123123';
