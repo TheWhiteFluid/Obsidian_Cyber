@@ -185,6 +185,6 @@ Or we can simply dump all the available databases and tables using the following
 `sqlmap -r req.txt-p  -D <database_name> --dump-all`  
 
 
-# Challange
+# Challenge
 
 

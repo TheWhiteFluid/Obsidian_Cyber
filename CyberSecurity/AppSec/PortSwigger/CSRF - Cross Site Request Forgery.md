@@ -342,7 +342,7 @@ In order to exploit this vulnerability, we need to perform 2 things:
 python3 -m http.server <port-number>
 ```
 
-## **7. SameSite Lax bypass via method override**
+# **7. SameSite Lax bypass via method override**
 
 ##### Study the change email function
 1. In Burp's browser, log in to your own account and change your email address.
@@ -381,7 +381,7 @@ python3 -m http.server <port-number>
 </script>
 ```
 
-## 8. SameSite Strict bypass via client-side redirect
+# 8. SameSite Strict bypass via client-side redirect
 ##### Study the change email function
 1. In Burp's browser, log in to your own account and change your email address.
 2. In Burp, go to the **Proxy > HTTP history** tab.
@@ -459,7 +459,7 @@ document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/conf
 </script>
 ```
 
-## **9. SameSite Lax bypass via cookie refresh
+# 9. SameSite Lax bypass via cookie refresh
 ##### Study the change email function
 1. In Burp's browser, log in via your social media account and change your email address.
 2. In Burp, go to the **Proxy > HTTP history** tab.
@@ -540,7 +540,7 @@ Note that we've opened the `/social-login` in a new window to avoid navigating
 Analysis:
 ![[Pasted image 20240925152141.png]]
 
-## **10. CSRF where Referer validation depends on header being present**
+# **10. CSRF where Referer validation depends on header being present**
 This lab's email change functionality is vulnerable to CSRF. It attempts to block cross domain requests but has an insecure fallback.
 
 1. Open Burp's browser and log in to your account. Submit the "Update email" form, and find the resulting request in your Proxy history.
@@ -589,7 +589,7 @@ Testing Referer header for CSRF attacks:
 </html>
 ```
 
-## **11. CSRF with broken Referer validation**
+# **11. CSRF with broken Referer validation**
 This lab's email change functionality is vulnerable to CSRF. It attempts to detect and block cross domain requests, but the detection mechanism can be bypassed.
 
 1. Open Burp's browser and log in to your account. Submit the "Update email" form, and find the resulting request in your Proxy history.
