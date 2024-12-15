@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Identification and Data Extraction"
             }
+          },
+          {
+            "id": "3e59fc7a5742beeb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/PortSwigger/OAuth.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OAuth"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -155,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md"
+                "file": "AppSec/PortSwigger/OAuth.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Identification and Data Extraction"
+              "title": "Outline of OAuth"
             }
           }
         ],
@@ -178,47 +191,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49d1d98c6a47eec0",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20241215150154.png",
-    "Pasted image 20241215145219.png",
-    "Pasted image 20241215145055.png",
+    "z.Screenshots/Pasted image 20241215222841.png",
+    "z.Screenshots/Pasted image 20241215222155.png",
+    "z.Screenshots/Pasted image 20241215221943.png",
+    "AppSec/PortSwigger/Path Traversal.md",
+    "AppSec/PortSwigger/SQL Injection.md",
+    "AppSec/PortSwigger/WEB Cache(poisoning).md",
+    "AppSec/PortSwigger/OAuth.md",
+    "AppSec/TryHackMe/Injections/NoSQL/MongoDB.md",
+    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
+    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "AppSec/PortSwigger/File Upload.md",
+    "AppSec/PortSwigger/OS Injection.md",
+    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
+    "AppSec/PortSwigger/API testing.md",
+    "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/PortSwigger/Access Control & IDOR.md",
+    "AppSec/PortSwigger/Authentication.md",
+    "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
+    "AppSec/PortSwigger/WEB Cache(deception).md",
+    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
+    "AppSec/PortSwigger/XEE - XML external entity injection.md",
+    "AppSec/PortSwigger/WEB LLM(Large-Language-Model).md",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
+    "z.Screenshots/Pasted image 20241215150154.png",
+    "z.Screenshots/Pasted image 20241215145219.png",
+    "z.Screenshots/Pasted image 20241215145055.png",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Extracting Users' Passwords.md",
     "Frameworks & Tools.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Logging in as Other Users.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "z.Screenshots/Pasted image 20241215144019.png",
     "z.Screenshots/Pasted image 20241215143945.png",
     "z.Screenshots/Pasted image 20241215143906.png",
     "z.Screenshots/Pasted image 20241215143818.png",
     "z.Screenshots/Pasted image 20241215142145.png",
-    "z.Screenshots/Pasted image 20241215142019.png",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Bypassing the Login Screen.md",
-    "z.Screenshots/Pasted image 20241215141531.png",
-    "z.Screenshots/Pasted image 20241215141500.png",
-    "AppSec/TryHackMe/Injections/NoSQL/MongoDB.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
-    "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md",
     "AppSec/TryHackMe/Injections/NoSQL",
-    "AppSec/TryHackMe/Injections/SQL/Automation/Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Automation",
-    "AppSec/TryHackMe/Authentication/JWT Security/Token-Based Authentication.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
-    "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
-    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
-    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
-    "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
-    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
-    "AppSec/PortSwigger/File Upload.md",
-    "Additional Info/Websites Analyse Tools.md",
     "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",

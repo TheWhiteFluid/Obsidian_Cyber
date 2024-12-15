@@ -1,6 +1,5 @@
 
-JWT // OAuth 
-NoSQL // Insecure deserialization
+JWT// NoSQL // Insecure deserialization
 
 ### Vulnerabilities 
 Repo: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md
