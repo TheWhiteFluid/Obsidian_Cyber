@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "OAuth"
             }
+          },
+          {
+            "id": "98592462c30fc01f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/PortSwigger/Clickjacking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clickjacking"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -155,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/OAuth.md"
+                "file": "AppSec/PortSwigger/Clickjacking.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of OAuth"
+              "title": "Outline of Clickjacking"
             }
           }
         ],
@@ -178,22 +192,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e59fc7a5742beeb",
+  "active": "98592462c30fc01f",
   "lastOpenFiles": [
-    "Pasted image 20241216123711.png",
-    "Pasted image 20241216122941.png",
-    "Pasted image 20241216122850.png",
-    "Pasted image 20241216122828.png",
-    "Pasted image 20241216122752.png",
-    "Pasted image 20241216122633.png",
-    "Pasted image 20241216122226.png",
-    "Pasted image 20241216122038.png",
-    "Pasted image 20241216121933.png",
-    "Pasted image 20241216121556.png",
-    "Pasted image 20241216121506.png",
+    "Pasted image 20241216194836.png",
+    "Pasted image 20241216193901.png",
+    "Pasted image 20241216193835.png",
+    "Pasted image 20241216193646.png",
+    "Pasted image 20241216193522.png",
+    "Pasted image 20241216193448.png",
+    "Pasted image 20241216193118.png",
+    "Pasted image 20241216191836.png",
+    "Pasted image 20241216191430.png",
+    "Pasted image 20241216191217.png",
+    "Pasted image 20241216191158.png",
+    "AppSec/PortSwigger/OAuth.md",
+    "AppSec/PortSwigger/Clickjacking.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "Frameworks & Tools.md",
-    "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/Path Traversal.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
@@ -215,7 +230,6 @@
     "AppSec/PortSwigger/XEE - XML external entity injection.md",
     "AppSec/PortSwigger/WEB LLM(Large-Language-Model).md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Extracting Users' Passwords.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Logging in as Other Users.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
     "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL/Automation",

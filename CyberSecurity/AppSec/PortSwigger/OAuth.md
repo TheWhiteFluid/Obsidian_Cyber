@@ -152,3 +152,9 @@ If the hash is present:
 - The `redirect_uri` appears to include a path manipulation (`../`) to redirect the user to a malicious or unexpected URL. This could be used for:
     - **Open Redirect Exploit**: Redirecting the user to an untrusted domain.
     - **Token Hijacking**: Redirecting the access token to an attacker's server (`YOUR-EXPLOIT-SERVER-ID.exploit-server.net`).
+
+
+## 4. SSRF via OpenID dynamic client registration
+
+
+## 5. OAuth account hijacking via redirect_uri
