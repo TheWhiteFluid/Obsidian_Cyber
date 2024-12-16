@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/Clickjacking.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clickjacking"
+              "title": "0)Summary"
             }
           }
         ],
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945,
-    "collapsed": true
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/Clickjacking.md"
+                "file": "AppSec/PortSwigger/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Clickjacking"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -194,19 +193,18 @@
   },
   "active": "98592462c30fc01f",
   "lastOpenFiles": [
-    "Pasted image 20241216194836.png",
-    "Pasted image 20241216193901.png",
-    "Pasted image 20241216193835.png",
-    "Pasted image 20241216193646.png",
-    "Pasted image 20241216193522.png",
-    "Pasted image 20241216193448.png",
-    "Pasted image 20241216193118.png",
-    "Pasted image 20241216191836.png",
-    "Pasted image 20241216191430.png",
-    "Pasted image 20241216191217.png",
-    "Pasted image 20241216191158.png",
-    "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/Clickjacking.md",
+    "z.Screenshots/Pasted image 20241216210634.png",
+    "z.Screenshots/Pasted image 20241216210545.png",
+    "z.Screenshots/Pasted image 20241216210412.png",
+    "z.Screenshots/Pasted image 20241216210309.png",
+    "z.Screenshots/Pasted image 20241216205453.png",
+    "z.Screenshots/Pasted image 20241216194836.png",
+    "z.Screenshots/Pasted image 20241216193901.png",
+    "z.Screenshots/Pasted image 20241216193835.png",
+    "z.Screenshots/Pasted image 20241216193646.png",
+    "z.Screenshots/Pasted image 20241216193522.png",
+    "AppSec/PortSwigger/OAuth.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "Frameworks & Tools.md",
     "AppSec/PortSwigger/Path Traversal.md",
