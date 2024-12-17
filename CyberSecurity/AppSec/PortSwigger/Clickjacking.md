@@ -125,7 +125,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 <iframe src="https://0a1600150327536484f84221000300b3.web-security-academy.net/my-account/?email=paein@test3.com"></iframe>
 ```
 
-## 3. Clickjacking with a frame buster script
+n## 3. Clickjacking with a frame buster script
 This lab is protected by a frame buster which prevents the website from being framed. Can you get around the frame buster and conduct a clickjacking attack that changes the users email address?
 
 To solve the lab, craft some HTML that frames the account page and fools the user into changing their email address by clicking on "Click me". The lab is solved when the email address is changed.

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/OAuth.md",
+                "file": "AppSec/PortSwigger/Clickjacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OAuth"
+              "title": "Clickjacking"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/OAuth.md"
+                "file": "AppSec/PortSwigger/Clickjacking.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of OAuth"
+              "title": "Outline of Clickjacking"
             }
           }
         ],
@@ -179,6 +179,7 @@
   },
   "active": "3e59fc7a5742beeb",
   "lastOpenFiles": [
+    "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/Clickjacking.md",
     "z.Screenshots/Pasted image 20241216210634.png",
@@ -191,7 +192,6 @@
     "z.Screenshots/Pasted image 20241216193835.png",
     "z.Screenshots/Pasted image 20241216193646.png",
     "z.Screenshots/Pasted image 20241216193522.png",
-    "AppSec/PortSwigger/OAuth.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "Frameworks & Tools.md",
     "AppSec/PortSwigger/Path Traversal.md",
