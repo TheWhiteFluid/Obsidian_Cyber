@@ -154,7 +154,10 @@ If the hash is present:
     - **Token Hijacking**: Redirecting the access token to an attacker's server (`YOUR-EXPLOIT-SERVER-ID.exploit-server.net`).
 
 
+## 5. OAuth account hijacking via redirect_uri
+
+
 ## 4. SSRF via OpenID dynamic client registration
 
 
-## 5. OAuth account hijacking via redirect_uri
+
