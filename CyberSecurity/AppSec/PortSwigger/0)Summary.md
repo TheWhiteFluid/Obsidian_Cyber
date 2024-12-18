@@ -1,5 +1,5 @@
 
-JWT // OAuth 
+JWT(partially)
 NoSQL // Insecure deserialization
 
 ### Vulnerabilities 
