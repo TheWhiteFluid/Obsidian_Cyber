@@ -33,7 +33,6 @@ If we wanted to retrieve all documents where the age is less than 50, we could u
 
 This would return the second and third documents. Notice we are using the **$lt** operator in a nested array. Operators allow for more complex filters by nesting conditions. A complete reference of possible operators can be found on the following link: [MongoDB Operator Reference](https://docs.mongodb.com/manual/reference/operator/query/)
 
-
 ## Injection
 The root cause of an injection attack is that improper concatenation of untrusted user input into a command can allow an attacker to alter the command itself. With SQL injection, the most common approach is to inject a single or double quote, that terminates the current data concatenation and allows the attacker to modify the query. The same approach applies to NoSQL Injection. If untrusted user input is directly added to the query, we have the opportunity to modify the query itself. However, with NoSQL Injection, even if we can't escape the current query, we still have the opportunity to manipulate the query itself. Therefore, there are two main types of NoSQL Injection:
 
