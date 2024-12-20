@@ -141,6 +141,17 @@ Character Entities are used to represent special or reserved characters that can
 
 This usage ensures that the special characters are processed correctly by the XML parser without breaking the document's structure.
 
-## DOM Structure
+### DOM Structure
 The image below shows the type of entities in a DOM structure:
 ![](Pasted%20image%2020241218095112.png)
+## XML Parsing
+XML parsing is the process by which an XML file is read, and its information is accessed and manipulated by a software program. XML parsers convert data from XML format into a structure that a program can use (like a DOM tree). During this process, parsers may validate XML data against a schema or a DTD, ensuring the structure conforms to certain rules.
+
+If a parser is configured to process external entities, it can lead to unauthorized access to files, internal systems, or external websites.
+
+Several XML parsers are used across different programming environments; each parser may handle XML data differently, which can affect vulnerability to XXE injection.
+
+- **DOM (Document Object Model) Parser**: This method builds the entire XML document into a memory-based tree structure, allowing random access to all parts of the document. It is resource-intensive but very flexible.
+- **SAX (Simple API for XML) Parser**: Parses XML data sequentially without loading the whole document into memory, making it suitable for large XML files. However, it is less flexible for accessing XML data randomly.
+- **StAX (Streaming API for XML) Parser**: Similar to SAX, StAX parses XML documents in a streaming fashion but gives the programmer more control over the XML parsing process.
+- **XPath Parser**: Parses an XML document based on expression and is used extensively in conjunction with XSLT.

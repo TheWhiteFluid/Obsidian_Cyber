@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b58de6155e183225",
+            "id": "d1cdabde3bcabe59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/NoSQL/MongoDB.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MongoDB"
+              "title": "In-Band XXE"
             }
           },
           {
-            "id": "5b94f3a3cfc2a4f5",
+            "id": "d47bb0381d137258",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Bypassing the Login Screen.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bypassing the Login Screen"
-            }
-          },
-          {
-            "id": "d4685d28cfd74b75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "Out-of-Band XXE"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945
+    "width": 220.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -168,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/XEE/0)Summary.md"
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of Out-of-Band XXE"
             }
           }
         ],
@@ -191,11 +178,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "d47bb0381d137258",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+    "Pasted image 20241219092835.png",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
+    "Pasted image 20241219092711.png",
+    "Pasted image 20241219092532.png",
+    "Pasted image 20241219092513.png",
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Filter Evasion Techniques.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits",
+    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
     "z.Screenshots/Pasted image 20241218095112.png",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Bypassing the Login Screen.md",
-    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
     "AppSec/TryHackMe/Injections/XEE",
     "AppSec/PortSwigger/Clickjacking.md",
     "AppSec/PortSwigger/OAuth.md",
@@ -204,11 +201,6 @@
     "z.Screenshots/Pasted image 20241216193118.png",
     "z.Screenshots/Pasted image 20241216191430.png",
     "z.Screenshots/Pasted image 20241216191158.png",
-    "z.Screenshots/Pasted image 20241216191217.png",
-    "z.Screenshots/Pasted image 20241216181718.png",
-    "z.Screenshots/Pasted image 20241216191836.png",
-    "z.Screenshots/Pasted image 20241216184624.png",
-    "z.Screenshots/Pasted image 20241216172828.png",
     "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Logging in as Other Users.md",
@@ -218,26 +210,20 @@
     "AppSec/TryHackMe/Injections/SQL/Automation/SQLMap.md",
     "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL/Automation/Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
-    "AppSec/TryHackMe/Injections/SQL/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Automation",
     "Frameworks & Tools.md",
     "AppSec/TryHackMe/Authentication/JWT Security/Token-Based Authentication.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/OAuth Flow.md",
     "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
-    "AppSec/TryHackMe/Injections/SQL/Filter Evasion Techniques.md",
-    "AppSec/TryHackMe/Injections/SQL/Out-of-band SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Authentication/Session Management/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/0)Summary.md",
     "Cloud/PwnedLabs",
     "Cloud/TryHackMe",
     "AppSec/TryHackMe",
-    "AppSec/TryHackMe/Injections/NoSQL",
-    "AppSec/TryHackMe/Injections/SQL",
-    "AppSec/TryHackMe/Injections"
+    "AppSec/TryHackMe/Injections/NoSQL"
   ]
 }
