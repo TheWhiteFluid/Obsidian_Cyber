@@ -22,15 +22,17 @@
             }
           },
           {
-            "id": "796074c3a67b8b70",
+            "id": "a8910d278b1e8b93",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241219092513.png"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241219092513"
+              "icon": "lucide-file",
+              "title": "0)Summary"
             }
           }
         ],
@@ -152,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20241219092513.png"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20241219092513"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -175,9 +177,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "a8910d278b1e8b93",
   "lastOpenFiles": [
     "AppSec/TryHackMe/Injections/XEE/Mitigations.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF",
+    "AppSec/TryHackMe/Client-Side Attacks",
+    "z.Screenshots/Pasted image 20241219092513.png",
     "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
     "z.Screenshots/Pasted image 20241220123405.png",
     "z.Screenshots/Pasted image 20241220121337.png",
@@ -189,7 +195,6 @@
     "z.Screenshots/Pasted image 20241220120911.png",
     "z.Screenshots/Pasted image 20241220120129.png",
     "z.Screenshots/Pasted image 20241220120112.png",
-    "z.Screenshots/Pasted image 20241220120014.png",
     "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
     "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
@@ -218,10 +223,7 @@
     "AppSec/TryHackMe/Injections/SQL/Other Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/0)Introduction.md",
-    "AppSec/PortSwigger/0)Summary.md",
     "Cloud/PwnedLabs",
-    "Cloud/TryHackMe",
-    "AppSec/TryHackMe",
-    "AppSec/TryHackMe/Injections/NoSQL"
+    "Cloud/TryHackMe"
   ]
 }
