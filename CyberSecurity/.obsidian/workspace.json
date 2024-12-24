@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/Clickjacking.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clickjacking"
+              "title": "0)Summary"
+            }
+          },
+          {
+            "id": "55855a0cbc9dc559",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Basic CSRF - Hidden Link & Image Exploitation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basic CSRF - Hidden Link & Image Exploitation"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -154,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/Clickjacking.md"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Basic CSRF - Hidden Link & Image Exploitation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Clickjacking"
+              "title": "Outline of Basic CSRF - Hidden Link & Image Exploitation"
             }
           }
         ],
@@ -177,52 +191,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3e59fc7a5742beeb",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Basic CSRF - Hidden Link & Image Exploitation.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "z.Screenshots/Pasted image 20241224132847.png",
+    "z.Screenshots/Pasted image 20241224131838.png",
+    "z.Screenshots/Pasted image 20241224131817.png",
+    "z.Screenshots/Pasted image 20241224131423.png",
+    "z.Screenshots/Pasted image 20241224131411.png",
+    "z.Screenshots/Pasted image 20241224131402.png",
+    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration",
+    "PenTest/TryHackMe/WEB Attacks/Authentication Bypass.md",
+    "PenTest/TryHackMe/WEB Attacks/Command Injection.md",
+    "PenTest/TryHackMe/WEB Attacks/File Inclusion-Path traversal.md",
+    "PenTest/TryHackMe/Vulnerability Research/Vulnerabilities 101.md",
+    "PenTest/TryHackMe/Vulnerability Research/Nessus.md",
+    "PenTest/TryHackMe/Vulnerability Research/Exploit Vulnerabilities.md",
+    "AppSec/TryHackMe/Injections/XEE/Mitigations.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF",
+    "AppSec/TryHackMe/Client-Side Attacks",
+    "z.Screenshots/Pasted image 20241220120930.png",
+    "z.Screenshots/Pasted image 20241219092711.png",
+    "z.Screenshots/Pasted image 20241220120950.png",
+    "z.Screenshots/Pasted image 20241220120014.png",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
+    "AppSec/PortSwigger/Clickjacking.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Filter Evasion Techniques.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits",
+    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
+    "AppSec/TryHackMe/Injections/XEE",
     "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/PortSwigger/Clickjacking.md",
-    "z.Screenshots/Pasted image 20241216210634.png",
-    "z.Screenshots/Pasted image 20241216210545.png",
-    "z.Screenshots/Pasted image 20241216210412.png",
-    "z.Screenshots/Pasted image 20241216210309.png",
-    "z.Screenshots/Pasted image 20241216205453.png",
-    "z.Screenshots/Pasted image 20241216194836.png",
-    "z.Screenshots/Pasted image 20241216193901.png",
-    "z.Screenshots/Pasted image 20241216193835.png",
-    "z.Screenshots/Pasted image 20241216193646.png",
-    "z.Screenshots/Pasted image 20241216193522.png",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
     "Frameworks & Tools.md",
     "AppSec/PortSwigger/Path Traversal.md",
     "AppSec/PortSwigger/SQL Injection.md",
-    "AppSec/PortSwigger/WEB Cache(poisoning).md",
-    "AppSec/TryHackMe/Injections/NoSQL/MongoDB.md",
-    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
-    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "AppSec/PortSwigger/File Upload.md",
-    "AppSec/PortSwigger/OS Injection.md",
-    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/0)Summary.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/0)Summary.md",
-    "AppSec/PortSwigger/API testing.md",
-    "AppSec/PortSwigger/Access Control & IDOR.md",
-    "AppSec/PortSwigger/Authentication.md",
-    "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
-    "AppSec/PortSwigger/WEB Cache(deception).md",
-    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
-    "AppSec/PortSwigger/XEE - XML external entity injection.md",
-    "AppSec/PortSwigger/WEB LLM(Large-Language-Model).md",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Extracting Users' Passwords.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
     "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL/Automation",
-    "Cloud/PwnedLabs",
-    "Cloud/TryHackMe",
-    "AppSec/TryHackMe",
-    "AppSec/TryHackMe/Injections/NoSQL",
-    "AppSec/TryHackMe/Injections/SQL",
-    "AppSec/TryHackMe/Injections",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits"
+    "Cloud/PwnedLabs"
   ]
 }
