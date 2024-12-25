@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Basic CSRF - Hidden Link & Image Exploitation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Best Practices"
+              "title": "Basic CSRF - Hidden Link & Image Exploitation"
+            }
+          },
+          {
+            "id": "898276619590f879",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Auto-Logout Feature"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -168,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Best Practices.md"
+                "file": "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Best Practices"
+              "title": "Outline of Auto-Logout Feature"
             }
           }
         ],
@@ -191,50 +205,50 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55855a0cbc9dc559",
+  "active": "898276619590f879",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Basic CSRF - Hidden Link & Image Exploitation.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Implicit Grant Flow.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Stealing OAuth Token.md",
+    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Signature Validation Mistakes.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Cross-Service Relay Attacks.md",
+    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/JWT Lifetimes.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/How MFA Works.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
+    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Exploits/Exploiting Insecure Session Management - Example.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Session Management Lifecycle.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Securing the Session Lifecycle.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Mitigations.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Cookies vs Tokens.md",
+    "AppSec/TryHackMe/Authentication/Session Management/Authentication vs Authorisation.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+    "Frameworks & Tools.md",
+    "z.Screenshots/Pasted image 20241224140017.png",
+    "z.Screenshots/Pasted image 20241224135317.png",
     "z.Screenshots/Pasted image 20241224132847.png",
     "z.Screenshots/Pasted image 20241224131838.png",
     "z.Screenshots/Pasted image 20241224131817.png",
     "z.Screenshots/Pasted image 20241224131423.png",
     "z.Screenshots/Pasted image 20241224131411.png",
     "z.Screenshots/Pasted image 20241224131402.png",
-    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
-    "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
-    "PenTest/TryHackMe/WEB Attacks/Authentication Bypass.md",
-    "PenTest/TryHackMe/WEB Attacks/Command Injection.md",
-    "PenTest/TryHackMe/WEB Attacks/File Inclusion-Path traversal.md",
-    "PenTest/TryHackMe/Vulnerability Research/Vulnerabilities 101.md",
-    "PenTest/TryHackMe/Vulnerability Research/Nessus.md",
-    "PenTest/TryHackMe/Vulnerability Research/Exploit Vulnerabilities.md",
-    "AppSec/TryHackMe/Injections/XEE/Mitigations.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
     "z.Screenshots/Pasted image 20241220120930.png",
     "z.Screenshots/Pasted image 20241219092711.png",
-    "z.Screenshots/Pasted image 20241220120950.png",
-    "z.Screenshots/Pasted image 20241220120014.png",
-    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
-    "AppSec/PortSwigger/Clickjacking.md",
-    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
-    "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Exploits",
-    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
     "AppSec/TryHackMe/Injections/XEE",
-    "AppSec/PortSwigger/OAuth.md",
-    "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
-    "Frameworks & Tools.md",
-    "AppSec/PortSwigger/Path Traversal.md",
-    "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
     "AppSec/TryHackMe/Injections/NoSQL",
     "AppSec/TryHackMe/Injections/SQL/Automation",
