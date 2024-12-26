@@ -8,54 +8,26 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6bd6c200ea70af9",
+            "id": "d1cdabde3bcabe59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "In-Band XXE"
             }
           },
           {
-            "id": "242ee6d91dfc1b3c",
+            "id": "a8910d278b1e8b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Other Techniques"
-            }
-          },
-          {
-            "id": "04b1e3032fc26350",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Mitigations"
-            }
-          },
-          {
-            "id": "bcff4ce30679a670",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
@@ -64,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md"
               },
               "icon": "lucide-list",
               "title": "Outline of 0)Summary"
@@ -205,52 +177,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "a8910d278b1e8b93",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
+    "AppSec/TryHackMe/Injections/XEE/Mitigations.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "z.Screenshots/Pasted image 20241225190552.png",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
     "z.Screenshots/Pasted image 20241225181628.png",
     "z.Screenshots/Pasted image 20241225181043.png",
     "z.Screenshots/Pasted image 20241225165733.png",
     "z.Screenshots/Pasted image 20241225165731.png",
     "z.Screenshots/Pasted image 20241225165407.png",
+    "AppSec/TryHackMe/Injections/SSTI",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
-    "z.Screenshots/Pasted image 20241225160747.png",
-    "z.Screenshots/Pasted image 20241225160731.png",
-    "z.Screenshots/Pasted image 20241225160440.png",
-    "z.Screenshots/Pasted image 20241225155710.png",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Implicit Grant Flow.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Stealing OAuth Token.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Signature Validation Mistakes.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Cross-Service Relay Attacks.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/JWT Lifetimes.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/How MFA Works.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
-    "AppSec/TryHackMe/Authentication/Session Management/Exploits/Exploiting Insecure Session Management - Example.md",
-    "AppSec/TryHackMe/Authentication/Session Management/Session Management Lifecycle.md",
-    "PenTest/TryHackMe/WEB Attacks/Enumeration",
+    "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
+    "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
+    "z.Screenshots/Pasted image 20241225155710.png",
+    "z.Screenshots/Pasted image 20241225160747.png",
+    "z.Screenshots/Pasted image 20241225160440.png",
+    "z.Screenshots/Pasted image 20241225155415.png",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/Exploits",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Bypassing the Login Screen.md",
     "AppSec/TryHackMe/Injections/XEE",
+    "AppSec/PortSwigger/Clickjacking.md",
+    "AppSec/PortSwigger/OAuth.md",
+    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Identification and Data Extraction.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Logging in as Other Users.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection/Extracting Users' Passwords.md",
     "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
     "AppSec/TryHackMe/Injections/NoSQL"
   ]
