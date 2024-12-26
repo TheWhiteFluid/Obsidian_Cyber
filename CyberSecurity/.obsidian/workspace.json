@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "Double Submit Cookie Bypass"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of Double Submit Cookie Bypass"
             }
           }
         ],
@@ -179,14 +179,18 @@
   },
   "active": "a8910d278b1e8b93",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
     "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
     "AppSec/TryHackMe/Injections/XEE/Mitigations.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
@@ -197,10 +201,6 @@
     "z.Screenshots/Pasted image 20241225165731.png",
     "z.Screenshots/Pasted image 20241225165407.png",
     "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
     "PenTest/TryHackMe/WEB Attacks/Subdomain Enumeration.md",
     "PenTest/TryHackMe/WEB Attacks/Content Discovery.md",
