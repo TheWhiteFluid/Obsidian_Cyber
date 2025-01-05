@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6bd6c200ea70af9",
+            "id": "d1cdabde3bcabe59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "In-Band XXE"
             }
           },
           {
-            "id": "bcff4ce30679a670",
+            "id": "a8910d278b1e8b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
+                "file": "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumerating Users via Verbose Errors"
+              "title": "Out-of-band SQL Injection"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md"
+                "file": "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Enumerating Users via Verbose Errors"
+              "title": "Outline of Out-of-band SQL Injection"
             }
           }
         ],
@@ -177,47 +177,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bcff4ce30679a670",
+  "active": "a8910d278b1e8b93",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20241225160747.png",
-    "z.Screenshots/Pasted image 20241225160731.png",
-    "z.Screenshots/Pasted image 20241225160440.png",
-    "z.Screenshots/Pasted image 20241225155710.png",
-    "z.Screenshots/Pasted image 20241225155515.png",
-    "z.Screenshots/Pasted image 20241225155415.png",
-    "z.Screenshots/Pasted image 20241224140017.png",
-    "z.Screenshots/Pasted image 20241224135317.png",
-    "z.Screenshots/Pasted image 20241224132847.png",
-    "z.Screenshots/Pasted image 20241224131838.png",
-    "z.Screenshots/Pasted image 20241224131817.png",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
-    "Frameworks & Tools.md",
-    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
-    "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Implicit Grant Flow.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Stealing OAuth Token.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Signature Validation Mistakes.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Cross-Service Relay Attacks.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/JWT Lifetimes.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/How MFA Works.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/PATH.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/Kernel Exploits.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
+    "PenTest/TryHackMe/Network Security/Net Sec Challenge.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Sniffing Attack.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Man-in-the-Middle.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Password Attack.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/SMTP -25.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/POP3 -110.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/IMAP -143.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Summary.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/SSL & TLS.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Subnetworks.md",
+    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/Target enumeration.md",
+    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ICMP.md",
+    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ARP.md",
+    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
+    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/Privileges and Security Descriptors.md",
+    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
+    "PenTest/TryHackMe/Local Persistance/Scheduled Tasks/Task Scheduler.md",
+    "PenTest/TryHackMe/Local Persistance/Logon Triggered Persistence/Winlogon.md",
+    "PenTest/TryHackMe/Local Persistance/Logon Triggered Persistence/Startup folder.md",
+    "z.Screenshots/Pasted image 20250105004749.png",
+    "z.Screenshots/Pasted image 20250105004641.png",
+    "z.Screenshots/Pasted image 20250105004556.png",
+    "z.Screenshots/Pasted image 20250105003831.png",
+    "z.Screenshots/Pasted image 20250105003751.png",
+    "z.Screenshots/Pasted image 20250105003655.png",
+    "z.Screenshots/Pasted image 20250105003624.png",
+    "z.Screenshots/Pasted image 20250105003608.png",
+    "z.Screenshots/Pasted image 20250105003541.png",
+    "z.Screenshots/Pasted image 20250105003502.png",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
+    "AppSec/TryHackMe/Injections/SSTI",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
