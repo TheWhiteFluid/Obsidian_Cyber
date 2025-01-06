@@ -8,35 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6bd6c200ea70af9",
+            "id": "d1cdabde3bcabe59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frameworks & Tools.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Frameworks & Tools"
+              "title": "In-Band XXE"
             }
           },
           {
-            "id": "bcff4ce30679a670",
+            "id": "a8910d278b1e8b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PenTest/TryHackMe/Privilege Escalation/Linux/Enumeration Commands.md",
+                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumeration Commands"
+              "title": "0)Summary"
+            }
+          },
+          {
+            "id": "eb8eb7effc3df0d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHP - Smarty"
+            }
+          },
+          {
+            "id": "84ab9f1db89507f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NodeJS - Pug"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -154,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PenTest/TryHackMe/Privilege Escalation/Linux/Enumeration Commands.md"
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Enumeration Commands"
+              "title": "Outline of NodeJS - Pug"
             }
           }
         ],
@@ -177,53 +205,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bcff4ce30679a670",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20250106044353.png",
-    "z.Screenshots/Pasted image 20250106044420.png",
-    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+    "z.Screenshots/Pasted image 20250106044420.png",
+    "z.Screenshots/Pasted image 20250106044353.png",
+    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
     "z.Screenshots/Pasted image 20250106044159.png",
     "z.Screenshots/Pasted image 20250106044128.png",
     "z.Screenshots/Pasted image 20250106044052.png",
     "z.Screenshots/Pasted image 20250106044030.png",
-    "z.Screenshots/Pasted image 20250106043417.png",
     "AppSec/TryHackMe/Injections/SSTI/Automation",
+    "z.Screenshots/Pasted image 20250106043417.png",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits",
     "z.Screenshots/Pasted image 20250106023252.png",
     "z.Screenshots/Pasted image 20250106023248.png",
+    "AppSec/PortSwigger/OS Injection.md",
+    "AppSec/PortSwigger/Path Traversal.md",
+    "AppSec/PortSwigger/SQL Injection.md",
+    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
+    "AppSec/TryHackMe/Injections/SQL/Untitled",
+    "AppSec/PortSwigger/0)Summary.md",
     "z.Screenshots/Pasted image 20250106015134.png",
-    "z.Screenshots/Pasted image 20250106015118.png",
-    "AppSec/TryHackMe/Injections/SSTI/Exploits",
-    "PenTest/TryHackMe/IPS.md",
-    "PenTest/TryHackMe/IDS.md",
-    "PenTest/TryHackMe/Firewalls.md",
-    "PenTest/TryHackMe/DNS.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
-    "Frameworks & Tools.md",
-    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
-    "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Other Techniques.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Auto-Logout Feature.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/Insecure Coding.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Implicit Grant Flow.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Stealing OAuth Token.md",
-    "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Signature Validation Mistakes.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
+    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
+    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/PATH.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/Kernel Exploits.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
+    "PenTest/TryHackMe/Network Security/Net Sec Challenge.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Sniffing Attack.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Man-in-the-Middle.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Password Attack.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/SMTP -25.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/POP3 -110.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/IMAP -143.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Summary.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/SSL & TLS.md",
+    "PenTest/TryHackMe/Network Security/Protocols & Servers/Subnetworks.md",
+    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/Target enumeration.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
+    "AppSec/TryHackMe/Injections/SSTI",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
-    "AppSec/TryHackMe/Injections/SQL/Exploits",
-    "AppSec/TryHackMe/Injections/XEE"
+    "AppSec/TryHackMe/Injections/SQL/Exploits"
   ]
 }
