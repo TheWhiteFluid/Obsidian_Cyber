@@ -179,8 +179,16 @@
   },
   "active": "a8910d278b1e8b93",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
+    "AppSec/PortSwigger/OS Injection.md",
+    "AppSec/PortSwigger/Path Traversal.md",
+    "AppSec/PortSwigger/SQL Injection.md",
+    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
+    "AppSec/TryHackMe/Injections/SQL/Untitled",
+    "AppSec/PortSwigger/0)Summary.md",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
+    "Pasted image 20250106015134.png",
+    "Pasted image 20250106015118.png",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
     "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/PATH.md",
@@ -200,11 +208,6 @@
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ICMP.md",
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ARP.md",
     "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
-    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/Privileges and Security Descriptors.md",
-    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/Assign Group Memberships.md",
-    "PenTest/TryHackMe/Local Persistance/Scheduled Tasks/Task Scheduler.md",
-    "PenTest/TryHackMe/Local Persistance/Logon Triggered Persistence/Winlogon.md",
-    "PenTest/TryHackMe/Local Persistance/Logon Triggered Persistence/Startup folder.md",
     "z.Screenshots/Pasted image 20250105004749.png",
     "z.Screenshots/Pasted image 20250105004641.png",
     "z.Screenshots/Pasted image 20250105004556.png",
@@ -213,8 +216,6 @@
     "z.Screenshots/Pasted image 20250105003655.png",
     "z.Screenshots/Pasted image 20250105003624.png",
     "z.Screenshots/Pasted image 20250105003608.png",
-    "z.Screenshots/Pasted image 20250105003541.png",
-    "z.Screenshots/Pasted image 20250105003502.png",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
@@ -223,7 +224,6 @@
     "AppSec/TryHackMe/Injections/XEE/Exploits",
     "AppSec/TryHackMe/Injections/SQL/Exploits",
     "AppSec/TryHackMe/Injections/XEE",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
-    "AppSec/TryHackMe/Injections/NoSQL"
+    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection"
   ]
 }
