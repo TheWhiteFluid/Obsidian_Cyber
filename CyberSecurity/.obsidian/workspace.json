@@ -27,16 +27,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
+                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Out-of-band SQL Injection"
+              "title": "0)Summary"
+            }
+          },
+          {
+            "id": "eb8eb7effc3df0d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHP - Smarty"
+            }
+          },
+          {
+            "id": "84ab9f1db89507f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NodeJS - Pug"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -154,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md"
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Out-of-band SQL Injection"
+              "title": "Outline of NodeJS - Pug"
             }
           }
         ],
@@ -179,18 +207,28 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+    "z.Screenshots/Pasted image 20250106044420.png",
+    "z.Screenshots/Pasted image 20250106044353.png",
+    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
+    "z.Screenshots/Pasted image 20250106044159.png",
+    "z.Screenshots/Pasted image 20250106044128.png",
+    "z.Screenshots/Pasted image 20250106044052.png",
+    "z.Screenshots/Pasted image 20250106044030.png",
+    "AppSec/TryHackMe/Injections/SSTI/Automation",
+    "z.Screenshots/Pasted image 20250106043417.png",
+    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits",
-    "Pasted image 20250106023252.png",
-    "Pasted image 20250106023248.png",
+    "z.Screenshots/Pasted image 20250106023252.png",
+    "z.Screenshots/Pasted image 20250106023248.png",
     "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
     "AppSec/TryHackMe/Injections/SQL/Untitled",
     "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
-    "Pasted image 20250106015134.png",
-    "Pasted image 20250106015118.png",
+    "z.Screenshots/Pasted image 20250106015134.png",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
     "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
     "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
@@ -208,22 +246,12 @@
     "PenTest/TryHackMe/Network Security/Protocols & Servers/SSL & TLS.md",
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Subnetworks.md",
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/Target enumeration.md",
-    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ICMP.md",
-    "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ARP.md",
-    "z.Screenshots/Pasted image 20250105004749.png",
-    "z.Screenshots/Pasted image 20250105004641.png",
-    "z.Screenshots/Pasted image 20250105004556.png",
-    "z.Screenshots/Pasted image 20250105003831.png",
-    "z.Screenshots/Pasted image 20250105003751.png",
-    "z.Screenshots/Pasted image 20250105003655.png",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
-    "AppSec/TryHackMe/Injections/SQL/Exploits",
-    "AppSec/TryHackMe/Injections/XEE",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection"
+    "AppSec/TryHackMe/Injections/SQL/Exploits"
   ]
 }
