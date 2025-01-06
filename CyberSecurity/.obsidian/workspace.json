@@ -177,8 +177,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8910d278b1e8b93",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/SSTI/Exploits",
+    "Pasted image 20250106023252.png",
+    "Pasted image 20250106023248.png",
     "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
     "AppSec/PortSwigger/SQL Injection.md",
@@ -207,15 +210,12 @@
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/Target enumeration.md",
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ICMP.md",
     "PenTest/TryHackMe/Network Security/Nmap/Host Discovery/ARP.md",
-    "PenTest/TryHackMe/Local Persistance/Tampering w. Unprivileged Accounts/RID Hijacking.md",
     "z.Screenshots/Pasted image 20250105004749.png",
     "z.Screenshots/Pasted image 20250105004641.png",
     "z.Screenshots/Pasted image 20250105004556.png",
     "z.Screenshots/Pasted image 20250105003831.png",
     "z.Screenshots/Pasted image 20250105003751.png",
     "z.Screenshots/Pasted image 20250105003655.png",
-    "z.Screenshots/Pasted image 20250105003624.png",
-    "z.Screenshots/Pasted image 20250105003608.png",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
