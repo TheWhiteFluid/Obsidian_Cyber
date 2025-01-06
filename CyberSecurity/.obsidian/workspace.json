@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
+                "file": "PenTest/TryHackMe/Privilege Escalation/Linux/Enumeration Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Enumerating Users via Verbose Errors"
+              "title": "Enumeration Commands"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md"
+                "file": "PenTest/TryHackMe/Privilege Escalation/Linux/Enumeration Commands.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Enumerating Users via Verbose Errors"
+              "title": "Outline of Enumeration Commands"
             }
           }
         ],
@@ -179,17 +179,26 @@
   },
   "active": "bcff4ce30679a670",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20241225160747.png",
-    "z.Screenshots/Pasted image 20241225160731.png",
-    "z.Screenshots/Pasted image 20241225160440.png",
-    "z.Screenshots/Pasted image 20241225155710.png",
-    "z.Screenshots/Pasted image 20241225155515.png",
-    "z.Screenshots/Pasted image 20241225155415.png",
-    "z.Screenshots/Pasted image 20241224140017.png",
-    "z.Screenshots/Pasted image 20241224135317.png",
-    "z.Screenshots/Pasted image 20241224132847.png",
-    "z.Screenshots/Pasted image 20241224131838.png",
-    "z.Screenshots/Pasted image 20241224131817.png",
+    "z.Screenshots/Pasted image 20250106044353.png",
+    "z.Screenshots/Pasted image 20250106044420.png",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+    "z.Screenshots/Pasted image 20250106044159.png",
+    "z.Screenshots/Pasted image 20250106044128.png",
+    "z.Screenshots/Pasted image 20250106044052.png",
+    "z.Screenshots/Pasted image 20250106044030.png",
+    "z.Screenshots/Pasted image 20250106043417.png",
+    "AppSec/TryHackMe/Injections/SSTI/Automation",
+    "z.Screenshots/Pasted image 20250106023252.png",
+    "z.Screenshots/Pasted image 20250106023248.png",
+    "z.Screenshots/Pasted image 20250106015134.png",
+    "z.Screenshots/Pasted image 20250106015118.png",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits",
+    "PenTest/TryHackMe/IPS.md",
+    "PenTest/TryHackMe/IDS.md",
+    "PenTest/TryHackMe/Firewalls.md",
+    "PenTest/TryHackMe/DNS.md",
+    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/HTTP Basic Authentication.md",
     "Frameworks & Tools.md",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
@@ -206,24 +215,15 @@
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Other Vulnerabilities and Evolution of OAuth 2.1.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - Stealing OAuth Token.md",
     "AppSec/TryHackMe/Authentication/OAuth Vulnerabilities/Exploits/Exploiting OAuth - CSRF in OAuth.md",
-    "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Enumerating Users via Verbose Errors.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/OSINT.md",
     "AppSec/TryHackMe/Authentication/Enumeration & Brute Force/Exploits/Vulnerable Password Reset Logic.md",
     "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Signature Validation Mistakes.md",
     "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Sensitive Information Disclosure.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/Cross-Service Relay Attacks.md",
-    "AppSec/TryHackMe/Authentication/JWT Security/Exploits/JWT Lifetimes.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/How MFA Works.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Common Vulnerabilities in MFA.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Implementations and Applications.md",
-    "AppSec/TryHackMe/Authentication/Multi-Factor Authentication/Exploits/OTP Leakage.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF",
     "AppSec/TryHackMe/Client-Side Attacks",
     "AppSec/TryHackMe/Injections/XEE/Exploits",
     "AppSec/TryHackMe/Injections/SQL/Exploits",
-    "AppSec/TryHackMe/Injections/XEE",
-    "AppSec/TryHackMe/Injections/NoSQL/Operator Injection",
-    "AppSec/TryHackMe/Injections/NoSQL"
+    "AppSec/TryHackMe/Injections/XEE"
   ]
 }
