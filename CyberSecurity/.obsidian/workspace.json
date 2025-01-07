@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d1cdabde3bcabe59",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "In-Band XXE"
-            }
-          },
-          {
             "id": "a8910d278b1e8b93",
             "type": "leaf",
             "state": {
@@ -33,90 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "0)Summary"
-            }
-          },
-          {
-            "id": "335367bc24eca5b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Python - Jinja2"
-            }
-          },
-          {
-            "id": "e8f0beaae1efeef3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SSTImap"
-            }
-          },
-          {
-            "id": "b9c95734e3192399",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Mitigation"
-            }
-          },
-          {
-            "id": "d5f0605613dd9285",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0)Summary"
-            }
-          },
-          {
-            "id": "60aa3bbd30c4b2d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fundamentals"
-            }
-          },
-          {
-            "id": "ee122943648436ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Blind LDAP Injection"
             }
           },
           {
@@ -134,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
