@@ -48,9 +48,37 @@
               "icon": "lucide-file",
               "title": "Python - Jinja2"
             }
+          },
+          {
+            "id": "e8f0beaae1efeef3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SSTImap"
+            }
+          },
+          {
+            "id": "b9c95734e3192399",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mitigation"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -168,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md"
+                "file": "AppSec/TryHackMe/Injections/SSTI/Mitigation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Python - Jinja2"
+              "title": "Outline of Mitigation"
             }
           }
         ],
@@ -193,20 +221,23 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
+    "AppSec/TryHackMe/Injections/LDAP",
+    "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
+    "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
+    "z.Screenshots/Pasted image 20250107021009.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
+    "z.Screenshots/Pasted image 20250107021719.png",
+    "z.Screenshots/Pasted image 20250107021350.png",
+    "z.Screenshots/Pasted image 20250107021337.png",
+    "z.Screenshots/Pasted image 20250107021250.png",
+    "z.Screenshots/Pasted image 20250107021243.png",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "z.Screenshots/Pasted image 20250107005328.png",
     "z.Screenshots/Pasted image 20250107004539.png",
     "z.Screenshots/Pasted image 20250107004214.png",
     "z.Screenshots/Pasted image 20250106202955.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
-    "z.Screenshots/Pasted image 20250106044420.png",
-    "z.Screenshots/Pasted image 20250106044353.png",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "z.Screenshots/Pasted image 20250106044159.png",
-    "z.Screenshots/Pasted image 20250106044128.png",
-    "z.Screenshots/Pasted image 20250106044052.png",
-    "z.Screenshots/Pasted image 20250106044030.png",
     "AppSec/TryHackMe/Injections/SSTI/Automation",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits",
@@ -229,9 +260,6 @@
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/SMTP -25.md",
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/POP3 -110.md",
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/IMAP -143.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Summary.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/SSL & TLS.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Subnetworks.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
