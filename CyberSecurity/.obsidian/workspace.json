@@ -27,29 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PHP - Smarty"
-            }
-          },
-          {
-            "id": "84ab9f1db89507f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Content Discovery"
+              "title": "NodeJS - Pug"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md"
+                "file": "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of NodeJS - Pug"
             }
           }
         ],
@@ -190,28 +177,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "eb8eb7effc3df0d8",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
+    "z.Screenshots/Pasted image 20250107054346.png",
+    "AppSec/TryHackMe/Injections/LDAP/Automation",
+    "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
+    "z.Screenshots/Pasted image 20250107052711.png",
+    "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
+    "AppSec/TryHackMe/Injections/LDAP/Exploits",
+    "AppSec/TryHackMe/Injections/LDAP",
+    "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
+    "z.Screenshots/Pasted image 20250107021009.png",
+    "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
+    "z.Screenshots/Pasted image 20250107021250.png",
+    "z.Screenshots/Pasted image 20250107021243.png",
+    "z.Screenshots/Pasted image 20250107021719.png",
+    "z.Screenshots/Pasted image 20250107021350.png",
+    "z.Screenshots/Pasted image 20250107021337.png",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
+    "z.Screenshots/Pasted image 20250107005328.png",
+    "z.Screenshots/Pasted image 20250107004539.png",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
+    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
-    "z.Screenshots/Pasted image 20250106202955.png",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
-    "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
-    "z.Screenshots/Pasted image 20250106044420.png",
-    "z.Screenshots/Pasted image 20250106044353.png",
-    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "z.Screenshots/Pasted image 20250106044159.png",
-    "z.Screenshots/Pasted image 20250106044128.png",
-    "z.Screenshots/Pasted image 20250106044052.png",
-    "z.Screenshots/Pasted image 20250106044030.png",
     "AppSec/TryHackMe/Injections/SSTI/Automation",
-    "z.Screenshots/Pasted image 20250106043417.png",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits",
-    "z.Screenshots/Pasted image 20250106023252.png",
-    "z.Screenshots/Pasted image 20250106023248.png",
     "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
     "AppSec/PortSwigger/SQL Injection.md",
@@ -225,18 +221,9 @@
     "PenTest/TryHackMe/Privilege Escalation/Linux/Kernel Exploits.md",
     "PenTest/TryHackMe/Network Security/Net Sec Challenge.md",
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Sniffing Attack.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Man-in-the-Middle.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Password Attack.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/SMTP -25.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/POP3 -110.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Protocols/IMAP -143.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Summary.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF",
-    "AppSec/TryHackMe/Client-Side Attacks",
-    "AppSec/TryHackMe/Injections/XEE/Exploits",
-    "AppSec/TryHackMe/Injections/SQL/Exploits"
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF"
   ]
 }
