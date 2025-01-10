@@ -179,6 +179,13 @@
   },
   "active": "272f3c1352aa8464",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
+    "AppSec/TryHackMe/Injections/ORM",
+    "AppSec/TryHackMe/Injections/LDAP/Automation/Python.md",
+    "z.Screenshots/Pasted image 20250107225837.png",
+    "z.Screenshots/Pasted image 20250107225533.png",
+    "z.Screenshots/Pasted image 20250107225506.png",
+    "z.Screenshots/Pasted image 20250107224703.png",
     "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
     "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
     "Untitled.md",
@@ -195,11 +202,7 @@
     "z.Screenshots/Pasted image 20250107021719.png",
     "z.Screenshots/Pasted image 20250107021350.png",
     "z.Screenshots/Pasted image 20250107021337.png",
-    "z.Screenshots/Pasted image 20250107021250.png",
-    "z.Screenshots/Pasted image 20250107021243.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
-    "z.Screenshots/Pasted image 20250107005328.png",
-    "z.Screenshots/Pasted image 20250107004539.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
     "AppSec/TryHackMe/Injections/SSTI/Automation",
@@ -219,11 +222,8 @@
     "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
     "PenTest/TryHackMe/Network Security/Net Sec Challenge.md",
     "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Sniffing Attack.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Man-in-the-Middle.md",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/Attacks/Password Attack.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
     "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF"
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits"
   ]
 }
