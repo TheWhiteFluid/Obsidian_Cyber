@@ -153,6 +153,3 @@ After defining the migration, run the command `php artisan migrate` to apply t
 
 In the context of ORM, migrations simplify the process of mapping database tables to application models. They enable developers to focus on writing clean, maintainable code while ensuring that the underlying database schema supports the application's data requirements. However, from a red team perspective, improperly configured migrations and weak implementations can lead to vulnerabilities like ORM injection. Hackers often exploit these weaknesses to manipulate database queries and gain unauthorised access to sensitive data. Therefore, it is crucial to use migrations effectively to enforce strong, secure database schema designs and ensure robust ORM configurations to prevent such security flaws.
 
-
-## Identifying ORM Injection
-Identifying ORM injection vulnerabilities involves examining how user inputs are handled within ORM queries. These vulnerabilities typically arise when user inputs are directly embedded into ORM query methods without proper sanitisation or validation. Indicators of potential ORM injection issues include the use of dynamic queries that concatenate user inputs, raw query execution methods, and insufficient use of parameterised queries.

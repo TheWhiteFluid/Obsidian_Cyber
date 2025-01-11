@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "0)Summary"
             }
+          },
+          {
+            "id": "15d67ef048507121",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Techniques for Testing ORM Injection"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945
+    "width": 200
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -154,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/ORM/0)Summary.md"
+                "file": "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of Techniques for Testing ORM Injection"
             }
           }
         ],
@@ -177,12 +191,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "272f3c1352aa8464",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20250110204352.png",
-    "Pasted image 20250110154927.png",
-    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
+    "z.Screenshots/Pasted image 20250111215654.png",
+    "z.Screenshots/Pasted image 20250111215536.png",
+    "z.Screenshots/Pasted image 20250111215445.png",
+    "z.Screenshots/Pasted image 20250111215032.png",
     "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits",
+    "z.Screenshots/Pasted image 20250110204352.png",
+    "z.Screenshots/Pasted image 20250110154927.png",
+    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
     "AppSec/TryHackMe/Injections/ORM",
     "AppSec/TryHackMe/Injections/LDAP/Automation/Python.md",
     "z.Screenshots/Pasted image 20250107225837.png",
@@ -190,19 +210,14 @@
     "z.Screenshots/Pasted image 20250107225506.png",
     "z.Screenshots/Pasted image 20250107224703.png",
     "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
-    "Untitled.md",
     "AppSec/TryHackMe/Injections/LDAP/Automation",
     "z.Screenshots/Pasted image 20250107054346.png",
     "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
-    "z.Screenshots/Pasted image 20250107052711.png",
     "AppSec/TryHackMe/Injections/LDAP/Exploits",
     "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
     "AppSec/TryHackMe/Injections/LDAP",
     "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
-    "z.Screenshots/Pasted image 20250107021009.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
-    "z.Screenshots/Pasted image 20250107021719.png",
-    "z.Screenshots/Pasted image 20250107021350.png",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
     "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
@@ -223,7 +238,6 @@
     "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
     "PenTest/TryHackMe/Network Security/Net Sec Challenge.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration",
-    "AppSec/TryHackMe/Injections/SSTI",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits"
+    "AppSec/TryHackMe/Injections/SSTI"
   ]
 }
