@@ -22,49 +22,33 @@
             }
           },
           {
-            "id": "efc5da7252920b0b",
+            "id": "4cc9a22ff9ef747b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20250114010712.png"
               },
-              "icon": "lucide-file",
-              "title": "Weak Implementation"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250114010712"
             }
           },
           {
-            "id": "e288a08fffa0cf87",
+            "id": "ba44fde4504fde15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Best Practices"
-            }
-          },
-          {
-            "id": "7d233704b9a2787d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Challenge - Injectics"
+              "title": "0)Summary"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -120,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 220.51103591918945
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -182,10 +166,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/Challenge - Injectics.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenge - Injectics"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -207,51 +191,50 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
+    "z.Screenshots/Pasted image 20250114010712.png",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation",
+    "AppSec/TryHackMe/Server-Side Attacks",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
-    "AppSec/PortSwigger/API testing.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
-    "z.Screenshots/Pasted image 20250112195940.png",
-    "z.Screenshots/Pasted image 20250112195140.png",
-    "z.Screenshots/Pasted image 20250112195037.png",
-    "z.Screenshots/Pasted image 20250112192230.png",
-    "z.Screenshots/Pasted image 20250112191848.png",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
-    "Untitled",
-    "z.Screenshots/Pasted image 20250111215654.png",
-    "z.Screenshots/Pasted image 20250111215536.png",
-    "z.Screenshots/Pasted image 20250111215445.png",
-    "z.Screenshots/Pasted image 20250111215032.png",
+    "z.Screenshots/Pasted image 20250114012549.png",
+    "z.Screenshots/Pasted image 20250114012508.png",
+    "z.Screenshots/Pasted image 20250114012459.png",
+    "z.Screenshots/Pasted image 20250114011424.png",
+    "z.Screenshots/Pasted image 20250114010729.png",
+    "02.Hyperboli.flac",
+    "z.Screenshots/Pasted image 20250114010451.png",
+    "z.Screenshots/Pasted image 20250114010439.png",
+    "z.Screenshots/Pasted image 20250114010333.png",
+    "z.Screenshots/Pasted image 20250114010005.png",
+    "Frameworks & Tools.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
+    "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
+    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
     "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
+    "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits",
-    "z.Screenshots/Pasted image 20250110204352.png",
-    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
-    "AppSec/TryHackMe/Injections/ORM",
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Identification and Data Extraction.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Extracting Users' Passwords.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Logging in as Other Users.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Bypassing the Login Screen.md",
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection",
     "AppSec/TryHackMe/Injections/LDAP/Automation/Python.md",
+    "AppSec/TryHackMe/Injections/ORM",
+    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
     "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
+    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "AppSec/TryHackMe/Injections/LDAP/Automation",
     "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
     "AppSec/TryHackMe/Injections/LDAP/Exploits",
-    "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
     "AppSec/TryHackMe/Injections/LDAP",
+    "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
     "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
-    "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
-    "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SSTI/Automation",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Out-of-band SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SSTI/Exploits",
-    "AppSec/PortSwigger/OS Injection.md",
-    "AppSec/PortSwigger/Path Traversal.md",
-    "AppSec/PortSwigger/SQL Injection.md",
-    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/TryHackMe/Injections/SQL/Untitled",
-    "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/Exploits/Second-Order SQL Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/Best Practices.md",
-    "AppSec/TryHackMe/Injections/SQL/0)Summary.md",
-    "PenTest/TryHackMe/WEB Attacks/Enumeration"
+    "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+    "AppSec/TryHackMe/Injections/SSTI/Automation"
   ]
 }
