@@ -1,6 +1,5 @@
 Insecure deserialisation exploits occur when an application trusts serialised data enough to use it without validating its authenticity. This trust can lead to disastrous outcomes as attackers manipulate serialised objects to achieve remote code execution, escalate privileges, or launch denial-of-service attacks. This type of vulnerability is prevalent in applications that serialise and deserialise complex data structures across various programming environments, such as Java, .NET, and PHP, which often use serialisation for remote procedure calls, session management, and more.
 
-
 ## Serialisation
 In programming, serialisation is the process of transforming an object's state into a human-readable or binary format (or a mix of both) that can be stored or transmitted and reconstructed as and when required. This capability is essential in applications where data must be transferred between different parts of a system or across a network, such as in web-based applications.	
 	![](Pasted%20image%2020250116002125.png)
@@ -54,7 +53,6 @@ Some specific incidents where serialisation vulnerabilities played a critical ro
 **Jenkins Java Deserialisation CVE-2016-0792**
 - **Incident**: [Jenkins](https://www.tenable.com/plugins/nessus/89034), a popular automation server used in software development, experienced a critical vulnerability involving Java deserialisation. Attackers could send crafted serialisation payloads to the Jenkins CLI, which, when deserialised, could allow arbitrary code execution.
 - **Impact**: This allowed attackers to execute shell commands, potentially taking over the Jenkins server, which often has broad access to a software development environment, including source code, build systems, and potentially deployment environments.
-
 
 ## Serialisation Formats
 While different programming languages may use varying keywords and functions for serialisation, the underlying principle remains consistent. As we know, serialisation is the process of converting an object's state into a format that can be easily stored or transmitted and then reconstructed later. Whether Java, Python, .NET, or PHP, each language implements serialisation to accommodate specific features or security measures inherent to its environment. 
@@ -129,3 +127,22 @@ elif request.method == 'POST':
 Beyond these two languages, serialisation is a common feature across various programming environments, each with unique implementations and libraries. In Java, object serialisation is facilitated through the `Serializable` interface, allowing objects to be converted into byte streams and vice versa, which is essential for network communication and data persistence. For .NET, serialisation has evolved significantly over the years. Initially, `BinaryFormatter` was commonly used for binary serialisation; however, its use is now discouraged due to security concerns. Modern .NET applications typically use `System.Text.Json` for JSON serialisation, or **System.Xml.Serialization** for XML tasks, reflecting a shift towards safer, more standardised data interchange formats. Ruby offers simplicity with its `Marshal` module, which is renowned for serialising and deserialising objects, and for more human-readable formats, it often utilises YAML. Each language’s approach to serialisation reflects its usage contexts and security considerations, highlighting the importance of understanding and properly implementing serialisation to ensure the integrity and security of data across web applications.
 
 ## Identification
+﻿﻿After a thorough understanding of serialisation across different programming languages, we will now transition into a critical aspect of cyber security, exploiting and mitigating vulnerabilities related to serialisation. Before discussing the specifics of exploitation techniques, it's crucial to understand how to identify these vulnerabilities in applications, whether you have access to the code (white-box testing) or not (black-box testing).
+
+### **Access to the Source Code**
+When access to the source code is available, identifying serialisation vulnerabilities can be more straightforward but requires a keen understanding of what to look for. For example, through code review, we can examine the source code for uses of serialisation functions such as `serialize()`, `unserialize()`, `pickle.loads(`), and others. We must pay special attention to any point where user-supplied input might be passed directly to these functions.
+
+### **No Access to the Source Code**
+When auditing an application without access to its source code, the challenge lies in deducing how it processes data based solely on external observations and interactions. This is commonly referred to as **black-box testing**. Here, we focus on detecting patterns in server responses and cookies that might indicate the use of serialisation and potential vulnerabilities. 
+
+*Note:*
+	As a pentester, appending a tilde `~` at the end of a PHP file name is a common technique attackers use to try to access backup or temporary files created by text editors or version control systems. When a file is edited or saved, some text editors or version control systems may make a backup copy of the original file with a tilde appended to the file name.
+
+**Analysing Server Responses**
+- **Error messages**: Certain error messages can indirectly indicate issues with serialisation. For instance, PHP might throw errors or warnings that contain phrases like `**unserialize()**` or **Object deserialisation error**, which are giveaways of underlying serialisation processes and potential points of vulnerability.
+- **Inconsistencies in application behaviour**: Unexpected behaviour in response to manipulated input (e.g., modified cookies or POST data) can suggest issues with how data is deserialised and handled. Observing how the application handles altered serialised data can provide clues about potentially vulnerable code.
+
+**Examining Cookies**
+Cookies are often used to store serialised data in web applications. By examining the contents of cookies, one can usually infer:
+- **Base64 encoded values in cookies (PHP and .NET)**: If cookies contain data that looks base64 encoded, decoding it might reveal serialised objects or data structures. PHP often uses serialisation for session management and storing session variables in serialised format.
+- **ASP.NET view state**: .NET applications might use serialisation in the view state sent to the client's browser. A field named `__VIEWSTATE`, which is base64 encoded, can sometimes be seen. Decoding and examining it can reveal whether it contains serialised data that could be exploited.
