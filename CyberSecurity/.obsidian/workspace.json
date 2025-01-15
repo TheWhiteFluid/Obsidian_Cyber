@@ -104,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.51103591918945
+    "width": 247.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -191,6 +191,11 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20250116011158.png",
+    "z.Screenshots/Pasted image 20250116005511.png",
+    "z.Screenshots/Pasted image 20250116004405.png",
+    "z.Screenshots/Pasted image 20250116002812.png",
+    "z.Screenshots/Pasted image 20250116002125.png",
     "z.Screenshots/Pasted image 20250114010712.png",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation",
@@ -202,10 +207,6 @@
     "z.Screenshots/Pasted image 20250114011424.png",
     "z.Screenshots/Pasted image 20250114010729.png",
     "02.Hyperboli.flac",
-    "z.Screenshots/Pasted image 20250114010451.png",
-    "z.Screenshots/Pasted image 20250114010439.png",
-    "z.Screenshots/Pasted image 20250114010333.png",
-    "z.Screenshots/Pasted image 20250114010005.png",
     "Frameworks & Tools.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
