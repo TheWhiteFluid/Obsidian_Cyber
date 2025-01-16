@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Object Injection"
+              "title": "scripts"
             }
           }
         ],
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Object Injection"
+              "title": "Outline of scripts"
             }
           }
         ],
@@ -193,8 +193,10 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+    "z.Screenshots/Pasted image 20250116210238.png",
+    "z.Screenshots/Pasted image 20250116210235.png",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
     "z.Screenshots/Pasted image 20250116204209.png",
     "z.Screenshots/Pasted image 20250116203729.png",
     "z.Screenshots/Pasted image 20250116203059.png",
@@ -209,8 +211,6 @@
     "z.Screenshots/Pasted image 20250116011158.png",
     "z.Screenshots/Pasted image 20250116005511.png",
     "z.Screenshots/Pasted image 20250116004405.png",
-    "z.Screenshots/Pasted image 20250116002812.png",
-    "z.Screenshots/Pasted image 20250116002125.png",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation",
     "AppSec/TryHackMe/Server-Side Attacks",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
@@ -237,7 +237,6 @@
     "AppSec/TryHackMe/Injections/SSTI/Exploits/NodeJS - Pug.md",
     "AppSec/TryHackMe/Injections/LDAP/Automation",
     "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
-    "AppSec/TryHackMe/Injections/LDAP/Exploits",
-    "AppSec/TryHackMe/Injections/SSTI/Automation/SSTImap.md"
+    "AppSec/TryHackMe/Injections/LDAP/Exploits"
   ]
 }
