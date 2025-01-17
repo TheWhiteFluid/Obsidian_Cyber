@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic"
+              "title": "Blind"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Basic"
+              "title": "Outline of Blind"
             }
           }
         ],
@@ -162,12 +162,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "196e56ee8e64a637",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20250117160325.png",
-    "Pasted image 20250117160257.png",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
+    "z.Screenshots/Pasted image 20250117181206.png",
+    "z.Screenshots/Pasted image 20250117181108.png",
+    "z.Screenshots/Pasted image 20250117180949.png",
+    "z.Screenshots/Pasted image 20250117180910.png",
+    "z.Screenshots/Pasted image 20250117160325.png",
+    "z.Screenshots/Pasted image 20250117160257.png",
+    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/0)Summary.md",
     "z.Screenshots/Pasted image 20250117155338.png",
     "z.Screenshots/Pasted image 20250117155328.png",
@@ -180,11 +184,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
     "z.Screenshots/Pasted image 20250117000430.png",
-    "z.Screenshots/Pasted image 20250117000107.png",
-    "z.Screenshots/Pasted image 20250116210238.png",
-    "z.Screenshots/Pasted image 20250116210235.png",
-    "z.Screenshots/Pasted image 20250116204209.png",
-    "z.Screenshots/Pasted image 20250116203729.png",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation",
     "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits",
