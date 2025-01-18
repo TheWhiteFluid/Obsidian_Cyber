@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "Best Practices"
             }
+          },
+          {
+            "id": "f9211692773f9198",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0)Summary"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -168,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Best Practices"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -193,9 +207,15 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "DevSecOps/TryHackMe/DevSecOps",
+    "DevSecOps/TryHackMe/Security Engineer",
+    "DevSecOps/TryHackMe",
+    "DevSecOps",
+    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
     "z.Screenshots/Pasted image 20250118223930.png",
     "z.Screenshots/Pasted image 20250118223840.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
@@ -220,9 +240,7 @@
     "AppSec/TryHackMe/Injections/SSTI/Mitigation.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation",
-    "AppSec/TryHackMe/Server-Side Attacks",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
-    "02.Hyperboli.flac",
     "Frameworks & Tools.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Content Discovery.md",
     "PenTest/TryHackMe/WEB Attacks/Enumeration/Subdomain Enumeration.md",
@@ -232,12 +250,8 @@
     "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits",
     "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Identification and Data Extraction.md",
     "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Extracting Users' Passwords.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Logging in as Other Users.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Bypassing the Login Screen.md",
-    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection",
-    "AppSec/TryHackMe/Injections/ORM"
+    "AppSec/TryHackMe/Injections/NoSQL/Exploits - Operator Injection/Logging in as Other Users.md"
   ]
 }
