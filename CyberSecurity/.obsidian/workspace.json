@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenge - Injectics"
+              "title": "0)Summary"
             }
           }
         ],
@@ -182,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/Challenge - Injectics.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenge - Injectics"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -207,16 +207,32 @@
   },
   "active": "7d233704b9a2787d",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
+    "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
+    "CTFs/Hackout/AWS/Enumeration/Permissions",
+    "CTFs/Hackout/AWS/Notes.md",
+    "CTFs/Hackout/AWS/Lateral Movement/EC2 Lateral Movement.md",
+    "CTFs/Hackout/AWS/Lateral Movement",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Windows.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Linux.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines/Generic.md",
+    "CTFs/Hackout/AWS/Enumeration/Machines",
+    "CTFs/Hackout/AWS/Enumeration",
+    "CTFs/Hackout/AWS",
+    "CTFs/Hackout",
     "z.Screenshots/Pasted image 20250119141741.png",
     "z.Screenshots/Pasted image 20250119141544.png",
     "z.Screenshots/Pasted image 20250119141724.png",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
     "DevSecOps/TryHackMe/Security Engineer",
     "DevSecOps/TryHackMe/DevSecOps",
     "DevSecOps/TryHackMe",
     "DevSecOps",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
     "z.Screenshots/Pasted image 20250118223840.png",
     "z.Screenshots/Pasted image 20250118222937.png",
@@ -227,31 +243,15 @@
     "z.Screenshots/Pasted image 20250117181206.png",
     "z.Screenshots/Pasted image 20250117180910.png",
     "z.Screenshots/Pasted image 20250117181108.png",
-    "z.Screenshots/Pasted image 20250117160257.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/0)Summary.md",
     "Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
-    "Cloud/AWS/Pawned Labs",
-    "Cloud/AWS",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
     "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
-    "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/PortSwigger/API testing.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
-    "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
-    "AppSec/TryHackMe/Injections/LDAP/Exploits/Fundamentals.md",
-    "AppSec/TryHackMe/Injections/LDAP/Automation/Python.md",
-    "AppSec/TryHackMe/Injections/LDAP/Exploits/Blind LDAP Injection.md",
-    "AppSec/TryHackMe/Injections/LDAP/0)Summary.md",
-    "AppSec/TryHackMe/Injections/SSTI/Mitigation.md"
+    "AppSec/TryHackMe/Injections/ORM/0)Summary.md"
   ]
 }
