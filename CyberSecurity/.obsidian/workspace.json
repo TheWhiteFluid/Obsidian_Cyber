@@ -8,63 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a8910d278b1e8b93",
+            "id": "0373276d92b5d8e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SSTI/0)Summary.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/Base Directory Breakouts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "Base Directory Breakouts"
             }
           },
           {
-            "id": "efc5da7252920b0b",
+            "id": "f115aca1a829d090",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Session Files.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weak Implementation"
+              "title": "LFI2RCE - Session Files"
             }
           },
           {
-            "id": "e288a08fffa0cf87",
+            "id": "b3e2a7b06ca81b4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Log Poisoning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Best Practices"
-            }
-          },
-          {
-            "id": "7d233704b9a2787d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "LFI2RCE - Log Poisoning"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Log Poisoning.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of LFI2RCE - Log Poisoning"
             }
           }
         ],
@@ -207,13 +193,25 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Session Files.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Log Poisoning.md",
+    "z.Screenshots/Pasted image 20250122034010.png",
+    "z.Screenshots/Pasted image 20250122033917.png",
+    "z.Screenshots/Pasted image 20250122033748.png",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/Base Directory Breakouts.md",
+    "z.Screenshots/Pasted image 20250122031758.png",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/PHP Wrappers.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
+    "z.Screenshots/Pasted image 20250122024513.png",
+    "z.Screenshots/Pasted image 20250122024913.png",
+    "z.Screenshots/Pasted image 20250122024433.png",
+    "z.Screenshots/Pasted image 20250122024422.png",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
     "z.Screenshots/Pasted image 20250122023836.png",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/0)Summary.md",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
     "CTFs/Hackout/AWS/Enumeration/Permissions/EC2 Permission Enumeration.md",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
@@ -228,30 +226,18 @@
     "CTFs/Hackout/AWS",
     "CTFs/Hackout",
     "z.Screenshots/Pasted image 20250119141741.png",
-    "z.Screenshots/Pasted image 20250119141544.png",
-    "z.Screenshots/Pasted image 20250119141724.png",
     "DevSecOps/TryHackMe/Security Engineer",
     "DevSecOps/TryHackMe/DevSecOps",
     "DevSecOps/TryHackMe",
     "DevSecOps",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
-    "z.Screenshots/Pasted image 20250118223840.png",
-    "z.Screenshots/Pasted image 20250118222937.png",
-    "z.Screenshots/Pasted image 20250118223930.png",
-    "z.Screenshots/Pasted image 20250118221653.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
-    "z.Screenshots/Pasted image 20250117181206.png",
-    "z.Screenshots/Pasted image 20250117180910.png",
-    "z.Screenshots/Pasted image 20250117181108.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/0)Summary.md",
     "Cloud/AWS/Pawned Labs/SSRF on GoogleCloud.md",
     "Cloud/AWS/Pawned Labs/Identify the AWS Account ID from a Public S3 Bucket.md",
     "AppSec/TryHackMe/Injections/ORM/Best Practices.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
-    "AppSec/PortSwigger/API testing.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md"
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md"
   ]
 }
