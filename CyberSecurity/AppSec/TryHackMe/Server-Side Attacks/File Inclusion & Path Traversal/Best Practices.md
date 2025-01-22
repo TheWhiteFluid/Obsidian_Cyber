@@ -1,0 +1,8 @@
+File Inclusion and Path Traversal vulnerabilities arise from improper handling of user-supplied input in web applications. In File Inclusion, attackers exploit the way web applications handle files, leading to Local File Inclusion or Remote File Inclusion. On the other hand, Path Traversal involves navigating the server's directory structure to access files outside the intended directory. Both vulnerabilities can be used to access unauthorized data or system compromise.
+
+## Mitigation and Prevention Strategies
+1. Ensure all user inputs are properly validated and sanitized. This is a crucial step to prevent attackers from manipulating file paths or including malicious files.
+2. Implement allow listing for file inclusion and access. Define which files can be included or accessed and reject any request that does not match these criteria.
+3. Configure server settings to disallow remote file inclusion and limit the ability of scripts to access the filesystem. For PHP, directives like `allow_url_fopen` and `allow_url_include` should be disabled if not needed.
+4. Performing regular code reviews and security audits to identify potential vulnerabilities with the help of automated tools. Manual checks are also essential.
+5. Ensure that everyone involved in the development process understands the importance of security. Regular training on secure coding practices can significantly reduce the risk of this vulnerability.
