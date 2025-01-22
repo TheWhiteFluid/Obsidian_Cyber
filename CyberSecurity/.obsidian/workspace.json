@@ -205,8 +205,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d233704b9a2787d",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20250122023836.png",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/0)Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
@@ -251,7 +252,6 @@
     "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/PortSwigger/API testing.md",
     "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
-    "AppSec/TryHackMe/Injections/ORM/0)Summary.md"
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md"
   ]
 }
