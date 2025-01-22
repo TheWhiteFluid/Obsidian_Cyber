@@ -43,7 +43,7 @@ store the exploit on a server and deliver trough X-Forward-Host header:
 send the request until the payload is finally cached by the server ( hit )
 
 
-# 2.Web cache poisoning with an unkeyed cookie
+# 2. Web cache poisoning with an unkeyed cookie
 This lab is vulnerable to web cache poisoning because cookies aren't included in the cache key. An unsuspecting user regularly visits the site's home page. To solve this lab, poison the cache with a response that executes `alert(1)` in the visitor's browser.
 
 1. In Burp, go to "Proxy" > "HTTP history" and study the requests and responses that you generated. Notice that the first response you received sets the cookie `fehost=prod-cache-01`.
@@ -184,7 +184,7 @@ Analysis:
   ![](Pasted%20image%2020241108025843.png)
 - Using Param Miner we discover an unkeyed param that we can make us of `utm_content`
 	![](Pasted%20image%2020241108030149.png)
-- we need to convert & in ; in order to trick the server that our payload is part of the unkeyed parameter and will be treated in the same way
+- we need to convert `&` in `;` in order to trick the server that our payload is part of the unkeyed parameter and will be treated in the same way
   ![](Pasted%20image%2020241108030427.png)![](Pasted%20image%2020241108030506.png)![](Pasted%20image%2020241108030532.png)
 # 8. Web cache poisoning via a fat GET request
 This lab is vulnerable to web cache poisoning. It accepts `GET` requests that have a body, but does not include the body in the cache key. A user regularly visits this site's home page using Chrome. To solve the lab, poison the cache with a response that executes `alert(1)` in the victim's browser.
