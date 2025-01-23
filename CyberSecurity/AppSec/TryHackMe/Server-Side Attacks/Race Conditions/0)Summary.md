@@ -10,7 +10,7 @@ Let's have a quick overview of the following terms:
 - **Multi-threading**
 
 ### **Programs**
-A **program** is a set of instructions to achieve a specific task. You need to execute the program to accomplish what you want. Unless you execute it, it won’t do anything and remains a set of static instructions. As example please see the following minimalistic Flask server.  
+A **program** is a set of instructions to achieve a specific task. Unless you execute it, it won’t do anything and remains a set of static instructions. As example please see the following minimalistic Flask server.  
 
 The code below dictates that the app will listen on port 8080 and respond with a minimal greeting HTML page that contains “Hello, World!” However, we must run these instructions (program) before we expect to get any greeting pages.
 ```python
@@ -37,7 +37,9 @@ if __name__ == '__main__':
 ```
 
 ### **Processes**
-A **process** is a **_program_** in execution. In some literature, you might come across the term **job**. Both terms refer to the same thing, although the term process has superseded the term job. Unlike a program, which is static, a process is a dynamic entity. It holds several key aspects, in particular:
+A **process** is a **_program_** ***in execution***. In some literature, you might come across the term **job**. Unlike a program, which is static, a process is a dynamic entity.
+
+ It holds several key aspects, in particular:
 - **Program**: The executable code related to the process
 - **Memory**: Temporary data storage
 - **State**: A process usually hops between different states. After it is in the New state, i.e., just created, it moves to the Ready state, i.e., ready to run once given CPU time. Once the CPU allocates time for it, it goes to the Running state. Furthermore, it can be in the Waiting state pending I/O or event completion. Once it exits, it moves to the Terminated state.
