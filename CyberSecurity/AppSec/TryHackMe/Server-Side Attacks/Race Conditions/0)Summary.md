@@ -60,8 +60,6 @@ Press CTRL+C to quit
 ```
 
 ### **Threads**
-Let’s wrap up with another coffee analogy! Consider the case of a commercial espresso machine in a coffee shop. Let’s say it has two portafilters. At the start of the work day, the barista turns on the espresso machine, and whenever a customer orders an espresso, one portafilter is used to prepare an espresso shot for them. Does another customer order an espresso? No problem, the second portafilter to the rescue! The warmed-up espresso machine is the process; each new order is assigned a portafilter; that’s the analogy for the thread.
-
 *A thread is a lightweight unit of execution*. It shares various memory parts and instructions with the process. In many cases, we need to replicate the same process repeatedly. Think of a web server serving thousands of users the same page (or a personalized page). We can adopt one of two main approaches:
 - *Serial*: One process is running; it serves one user after the other sequentially. New users are enqueued.
 - *Parallel*: One process is running; it creates a thread to serve every new user. New users are only enqueued after the maximum number of running threads is reached.
@@ -112,7 +110,7 @@ Let’s consider another scenario:
 
 Thread 2 will proceed with the withdrawal, although such a transaction should have been declined.
 
-Examples A and B demonstrate a Time-of-Check to Time-of-Use (TOCTOU) vulnerability.
+Examples A and B demonstrate a *Time-of-Check to Time-of-Use (TOCTOU) vulnerability*.
 
 
 ### Example Code
@@ -187,5 +185,5 @@ As we saw in the last program, two threads were changing the same variable. When
 Generally speaking, a common cause of race conditions lies in shared resources. For example, when multiple threads concurrently access and modify the same shared data. Examples of shared data are a database record and an in-memory data structure. There are many subtle causes, but we will mention three common ones:
 
 - **Parallel Execution**: Web servers may execute multiple requests in parallel to handle concurrent user interactions. If these requests access and modify shared resources or application states without proper synchronization, it can lead to race conditions and unexpected behaviour.
-- **Database Operations**: Concurrent database operations, such as read-modify-write sequences, can introduce race conditions. For example, two users attempting to update the same record simultaneously may result in inconsistent data or conflicts. The solution lies in enforcing proper locking mechanisms and transaction isolation.
+- **Database Operations**: Concurrent database operations, such as read-modify-write sequences, can introduce race conditions. For example, two users attempting to update the same record simultaneously may result in inconsistent data or conflicts. *The solution lies in enforcing proper locking mechanisms and transaction isolation.*
 - **Third-Party Libraries and Services**: Nowadays, web applications often integrate with third-party libraries, APIs, and other services. If these external components are not designed to handle concurrent access properly, race conditions may occur when multiple requests or operations interact with them simultaneously.
