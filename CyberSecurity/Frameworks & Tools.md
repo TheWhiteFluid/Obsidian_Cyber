@@ -1,6 +1,9 @@
 ## **==Map/Technologies==**
 -  https://github.com/Ignitetechnologies/Mindmap
 
+## **OWASP Cheat Sheet**
+- https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#alternative-using-a-double-submit-cookie-pattern
+
 ## **==RECON // OSINT==**
 -  https://dnsdumpster.com/ (DNS)
 -  https://www.shodan.io/ (DNS and more)

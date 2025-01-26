@@ -15,7 +15,7 @@ Understanding CSRF's impact is crucial for keeping online activities secure. Alt
 
 ## Types
 ### **Traditional CSRF**
-Conventional CSRF attacks frequently concentrate on state-changing actions carried out by submitting forms. The victim is tricked into submitting a form without realising the associated data like cookies, URL parameters, etc. The victim's web browser sends an HTTP request to a web application form where the victim has already been authenticated. These forms are made to transfer money, modify account information, or alter an email address.
+Conventional CSRF attacks frequently concentrate on state-changing actions carried out by submitting forms. The victim's web browser sends an HTTP request to a web application form where the victim has already been authenticated. These forms are made to transfer money, modify account information, or alter an email address.
 	![](Pasted%20image%2020241224131838.png)
 
 The above diagram shows traditional CSRF examples in the following steps:
@@ -35,6 +35,6 @@ The following is a simplified overview of the steps that an asynchronous CSRF 
 - The `mailbox.thm` session cookie is included with the AJAX request in the victim's browser.
 - After receiving the AJAX request, mailbox.thm evaluates it and modifies the victim's settings if no CSRF defences exist.
 
-## **Flash-based CSRF**
+### **Flash-based CSRF**
 The term "Flash-based CSRF" describes the technique of conducting a CSRF attack by taking advantage of flaws in Adobe Flash Player components. Internet applications with features like **interactive content, video streaming, and intricate animations** have been made possible with Flash. But over time, security flaws in Flash, particularly those that can be used to launch CSRF attacks, have become a major source of worry. As HTML5 technology advanced and security flaws multiplied, official support for Adobe Flash Player ceased on [December 31, 2020](https://www.adobe.com/products/flashplayer/end-of-life.html)![](Pasted%20image%2020241224132847.png)
 Even though Flash is no longer supported, a talk about Flash-based cross-site request forgery threats is instructive, particularly for legacy systems that still rely on antiquated technologies. A **malicious Flash file (.swf)** posted on the attacker's website would typically send unauthorised requests to other websites to carry out Flash-based CSRF attacks.
