@@ -41,16 +41,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSRF - Cross Site Request Forgery"
+              "title": "Denial of Service"
+            }
+          },
+          {
+            "id": "07632b94a301c85e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scripts"
+            }
+          },
+          {
+            "id": "73609d358fff1376",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Best Practices"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -168,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of CSRF - Cross Site Request Forgery"
+              "title": "Outline of Best Practices"
             }
           }
         ],
@@ -191,8 +219,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9211692773f9198",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
+    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
     "Frameworks & Tools.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
@@ -203,7 +235,6 @@
     "z.Screenshots/Pasted image 20250125051159.png",
     "z.Screenshots/Pasted image 20250125051048.png",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
     "z.Screenshots/Pasted image 20250125045830.png",
     "z.Screenshots/Pasted image 20250125043550.png",
     "z.Screenshots/Pasted image 20250125041756.png",
@@ -229,9 +260,6 @@
     "PenTest/TryHackMe/Privilege Escalation/Linux/NFS.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/Kernel Exploits.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/Enumeration Commands.md",
-    "PenTest/TryHackMe/Privilege Escalation/Linux/Cron Jobs.md",
-    "PenTest/TryHackMe/Privilege Escalation/Linux/Capabilities.md",
-    "CTFs/Hackout/AWS/Notes.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
