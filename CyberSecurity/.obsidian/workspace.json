@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c6c58bccaf4d0002",
+            "id": "2d48914d2e098fc2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Wrappers.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LFI2RCE - Wrappers"
+              "title": "Server Crash"
             }
           },
           {
-            "id": "1fc074496485a2bb",
+            "id": "2645e78cc62e2844",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/XSS.md",
+                "file": "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS"
+              "title": "Best Practices"
             }
           },
           {
-            "id": "c8d6f24fa339539b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Property Injection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Property Injection"
-            }
-          },
-          {
-            "id": "03dd82de58d818b2",
+            "id": "f9211692773f9198",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,9 +48,51 @@
               "icon": "lucide-file",
               "title": "Denial of Service"
             }
+          },
+          {
+            "id": "07632b94a301c85e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scripts"
+            }
+          },
+          {
+            "id": "73609d358fff1376",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Denial of Service"
+            }
+          },
+          {
+            "id": "ec16f18d7c2b9eaa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Challenge - Include"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -182,10 +210,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Denial of Service"
+              "title": "Outline of Challenge - Include"
             }
           }
         ],
@@ -207,45 +235,45 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
     "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Property Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/XSS.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
+    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
+    "Frameworks & Tools.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CSRF/0)Summary.md",
+    "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
     "z.Screenshots/Pasted image 20250125051159.png",
     "z.Screenshots/Pasted image 20250125051048.png",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Property Injection.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
     "z.Screenshots/Pasted image 20250125045830.png",
     "z.Screenshots/Pasted image 20250125043550.png",
     "z.Screenshots/Pasted image 20250125041756.png",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/XSS.md",
-    "z.Screenshots/Pasted image 20250125025429.png",
-    "z.Screenshots/Pasted image 20250125025340.png",
-    "z.Screenshots/Pasted image 20250125024840.png",
     "z.Screenshots/Pasted image 20250125024803.png",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Wrappers.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Session Files.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Log Poisoning.md",
-    "AppSec/TryHackMe/Injections/XEE/0)Summary.md",
-    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/PHP Wrappers.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/0)Summary.md",
+    "z.Screenshots/Pasted image 20250125025340.png",
+    "z.Screenshots/Pasted image 20250125025429.png",
+    "z.Screenshots/Pasted image 20250125024840.png",
     "z.Screenshots/Pasted image 20250125015916.png",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits/Grouping the request.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Web Application Architecture.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Best Practices.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits/Challenge Web App.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/0)Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Best Practices.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/0)Summary.md",
-    "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits/Grouping the request.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Web Application Architecture.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/SUID.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/Sudo.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/PATH.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/NFS.md",
+    "PenTest/TryHackMe/Privilege Escalation/Linux/Kernel Exploits.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
