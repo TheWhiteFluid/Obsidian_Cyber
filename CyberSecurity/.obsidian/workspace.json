@@ -207,6 +207,9 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
     "z.Screenshots/Pasted image 20250125051159.png",
     "z.Screenshots/Pasted image 20250125051048.png",
@@ -243,15 +246,12 @@
     "AppSec/TryHackMe/Injections/ORM/0)Summary.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/SUID.md",
     "PenTest/TryHackMe/Privilege Escalation/Linux/Sudo.md",
-    "PenTest/TryHackMe/Privilege Escalation/Linux/PATH.md",
-    "PenTest/TryHackMe/Privilege Escalation/Linux/NFS.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
     "CTFs/Hackout/AWS/Lateral Movement",
     "CTFs/Hackout/AWS/Enumeration/Machines",
     "CTFs/Hackout/AWS/Enumeration",
-    "CTFs/Hackout/AWS",
-    "CTFs/Hackout"
+    "CTFs/Hackout/AWS"
   ]
 }

