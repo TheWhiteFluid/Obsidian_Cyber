@@ -11,12 +11,14 @@
             "id": "ec16f18d7c2b9eaa",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250129222533.png"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250129222533"
+              "icon": "lucide-file",
+              "title": "Challenge - Include"
             }
           }
         ]
@@ -137,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250129222533.png"
+                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250129222533"
+              "title": "Outline of Challenge - Include"
             }
           }
         ],
@@ -160,15 +162,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ec16f18d7c2b9eaa",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20250129224431.png",
+    "z.Screenshots/Pasted image 20250129224422.png",
+    "z.Screenshots/Pasted image 20250129224413.png",
+    "z.Screenshots/Pasted image 20250129224331.png",
+    "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+    "z.Screenshots/Pasted image 20250129222533.png",
     "z.Screenshots/Pasted image 20250129222303.png",
     "PenTest/TryHackMe/Network Security/Enumeration/Content Discovery.md",
-    "z.Screenshots/Pasted image 20250129222533.png",
     "z.Screenshots/Pasted image 20250129222023.png",
     "z.Screenshots/Pasted image 20250129221819.png",
     "z.Screenshots/Pasted image 20250129221740.png",
-    "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
     "z.Screenshots/Pasted image 20250129222112.png",
     "z.Screenshots/Pasted image 20250129221306.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
@@ -177,11 +184,7 @@
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/XSS.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Denial of Service.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits/Property Injection.md",
-    "z.Screenshots/Pasted image 20250129202632.png",
-    "z.Screenshots/Pasted image 20250129202305.png",
-    "z.Screenshots/Pasted image 20250129202237.png",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/0)Summary.md",
-    "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
     "PenTest/TryHackMe/Network Security/Enumeration/Subdomain Enumeration.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",

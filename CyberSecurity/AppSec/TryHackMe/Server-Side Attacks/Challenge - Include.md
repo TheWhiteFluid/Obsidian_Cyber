@@ -1,5 +1,5 @@
 
-- Nmap initial scan 
+## Nmap initial scan 
 ```shell
 ┌──(root㉿kali)-[~]
 └─# nmap -sV -sC -p- 10.10.3.152
@@ -141,6 +141,8 @@ Progress: 4423 / 4714 (93.83%)==================================================
 ===============================================================
 ```
 
+
+## Application functionality
 - using leaked credentials guest/guest we are logged on the main page:
   ![](Pasted%20image%2020250129201706.png)
   - we can observe some fields (first taught was injecting into the albums fields however we have discovered a more approachable way in a bit)
@@ -170,5 +172,21 @@ Since those are internal API's we need to find out a way to make a request to th
 
 - inspecting the source page we see a possible LFI vulnerability:
 	![](Pasted%20image%2020250129222533.png)
-	
-	
+
+## SSH
+Let s try various payloads to acces sensitive information trough a LFI poisoning and we applied an encoded path traversal payload as follows:
+```shell
+....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2F....%2F%2Fetc%2Fpasswd
+```
+
+![](Pasted%20image%2020250129224431.png)
+
+- now we will try to fuzz SSH one of these accounts using hydra as brute forcer:
+```shell
+hydra -l joshua -P /usr/share/wordlists/fasttrack.txt <IP> ssh
+```
+
+## Summary
+Nmap scan revealed an ssh service and two webservers running at port 4000 and 50000. In port 4000, changing the isAdmin field to ‘true’ in the guest account led to administrator privileges subsequently opening an API and settings section. Fetching the API from the settings section gave us base64 encoded admin password for the SysMon login portal at port 50000. Logging in to SysMon portal revealed a dashboard containing the first flag. Checking the source code we found that the profile picture of the admin was a png file that was requested by a query parameter ‘img’. LFI injection revealed the /etc/passwd file which in turn revealed 2 usernames Joshua and Charles. A valid password for joshua was found for SSH login. The second flag was found in the /var/www/html directory.
+
+
