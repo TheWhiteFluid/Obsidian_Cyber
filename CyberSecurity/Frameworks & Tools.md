@@ -61,7 +61,8 @@
 #### **XXE**
 - https://github.com/GoSecure/dtd-finder
 #### **LFI(local file inclusion)**
-- https://github.com/D35m0nd142/LFISuite 
+- https://github.com/D35m0nd142/LFISuite
+- https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/LFI/LFI-Jhaddix.txt
   
 #### ==Reverse Shell==
 -  https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md (Reverse Shell Cheat Sheet)
