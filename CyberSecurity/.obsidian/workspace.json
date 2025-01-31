@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenge - Include"
+              "title": "In-Band XXE"
+            }
+          },
+          {
+            "id": "66ff3554aa1fbaa8",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +53,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -139,10 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md"
+                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenge - Include"
+              "title": "Outline of In-Band XXE"
             }
           }
         ],
@@ -162,14 +179,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "66ff3554aa1fbaa8",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Vulnerable Implementation.md",
+    "AppSec/TryHackMe/Injections/ORM/Exploits/Techniques for Testing ORM Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
     "z.Screenshots/Pasted image 20250129224431.png",
     "z.Screenshots/Pasted image 20250129224422.png",
     "z.Screenshots/Pasted image 20250129224413.png",
     "z.Screenshots/Pasted image 20250129224331.png",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
     "z.Screenshots/Pasted image 20250129222533.png",
     "z.Screenshots/Pasted image 20250129222303.png",
     "PenTest/TryHackMe/Network Security/Enumeration/Content Discovery.md",
@@ -177,7 +199,6 @@
     "z.Screenshots/Pasted image 20250129221819.png",
     "z.Screenshots/Pasted image 20250129221740.png",
     "z.Screenshots/Pasted image 20250129222112.png",
-    "z.Screenshots/Pasted image 20250129221306.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
@@ -199,10 +220,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Best Practices.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits/Grouping the request.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Web Application Architecture.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
