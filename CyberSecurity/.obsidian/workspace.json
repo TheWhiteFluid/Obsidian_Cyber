@@ -164,6 +164,9 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits",
+    "AppSec/TryHackMe/Client-Side Attacks/XSS/0)Summary.md",
+    "AppSec/TryHackMe/Client-Side Attacks/XSS",
     "z.Screenshots/Pasted image 20250129224431.png",
     "z.Screenshots/Pasted image 20250129224422.png",
     "z.Screenshots/Pasted image 20250129224413.png",
@@ -177,7 +180,6 @@
     "z.Screenshots/Pasted image 20250129221819.png",
     "z.Screenshots/Pasted image 20250129221740.png",
     "z.Screenshots/Pasted image 20250129222112.png",
-    "z.Screenshots/Pasted image 20250129221306.png",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
@@ -202,13 +204,11 @@
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits/Grouping the request.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Web Application Architecture.md",
-    "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions",
     "CTFs/Hackout/AWS/Enumeration/Permissions",
     "CTFs/Hackout/AWS/Lateral Movement",
     "CTFs/Hackout/AWS/Enumeration/Machines",
-    "CTFs/Hackout/AWS/Enumeration",
-    "CTFs/Hackout/AWS"
+    "CTFs/Hackout/AWS/Enumeration"
   ]
 }
