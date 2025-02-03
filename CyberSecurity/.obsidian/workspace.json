@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "0)Summary"
             }
+          },
+          {
+            "id": "adda608b2b8a97ed",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,13 +153,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline"
             }
           }
         ],
@@ -166,13 +178,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56de96c90aa9be1c",
+  "active": "adda608b2b8a97ed",
   "lastOpenFiles": [
+    "PenTest/CompTia+",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Best Practices.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/DOM-based.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
-    "PenTest/CompTia+",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks",
     "z.Screenshots/Pasted image 20250201192747.png",
     "z.Screenshots/Pasted image 20250201192410.png",
