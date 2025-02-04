@@ -11,14 +11,10 @@
             "id": "56de96c90aa9be1c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "New tab"
             }
           }
         ]
@@ -140,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline"
             }
           }
         ],
@@ -168,9 +163,12 @@
   },
   "active": "56de96c90aa9be1c",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Best Practices.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/DOM-based.md",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
     "PenTest/CompTia+",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks",
@@ -210,8 +208,6 @@
     "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Exploits",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions"
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution"
   ]
 }
