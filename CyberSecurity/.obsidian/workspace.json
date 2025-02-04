@@ -20,8 +20,51 @@
               "icon": "lucide-file",
               "title": "0)Summary"
             }
+          },
+          {
+            "id": "f51e972b91f56c56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0)Summary"
+            }
+          },
+          {
+            "id": "05e3441cd5d7d903",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/DOM-Based XSS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DOM-Based XSS"
+            }
+          },
+          {
+            "id": "6ae92a083fefea1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "XSS Weaponization"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -140,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of XSS Weaponization"
             }
           }
         ],
@@ -166,9 +209,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56de96c90aa9be1c",
+  "active": "6ae92a083fefea1f",
   "lastOpenFiles": [
+    "Frameworks & Tools.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/DOM-Based XSS.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+    "Blog Articles/Exploiting the DOM, what is DOM and how could be exploited.md",
+    "Blog Articles",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/0)Summary.md",
@@ -205,14 +255,7 @@
     "PenTest/TryHackMe/Network Security/Enumeration/Subdomain Enumeration.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
-    "AppSec/PortSwigger/CSRF - Cross Site Request Forgery.md",
-    "Frameworks & Tools.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Double Submit Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Samesite Cookie Bypass.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Exploits/Basic CSRF - Hidden Link & Image Exploitation.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Mitigations.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution"
+    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits"
   ]
 }
