@@ -6,6 +6,8 @@ Instead of reloading the DOM with each request, the responses only contain the d
 
 Modern frontend frameworks such as Angular, React, and Vue allow developers to create these SPAs. Instead of the web server being responsible for the DOM as well, the SPA is loaded once and then interfaces with the web server through API requests. While this increases the responsiveness of the web application, it can lead to interesting misconfigurations and vulnerabilities. The two most common are discussed below.
 
+
+## Mistakes
 - The first common mistake is confusing where the security boundary sits. There is a common saying in application security that states: "Client-side controls are only for the user experience; all security controls must be implemented server-side". This is important because a threat actor can control everything in the browser and, thus, can be bypassed.
 	
 	Not understanding this principle most commonly leads to authorization bypasses. An example of this is when the developers disabled the "edit" button in JavaScript. However, since you can alter the DOM in your browser, you can re-enable the button and make the request, thus leading to an authorization bypass. While it creates a better user experience to have the button disabled, a server-side security check is still needed to ensure that the user making the request has the relevant permissions to perform the edit action.
