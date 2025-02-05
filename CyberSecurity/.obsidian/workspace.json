@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "XSS Weaponization"
             }
           },
           {
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of XSS Weaponization"
             }
           }
         ],
@@ -182,12 +182,12 @@
   },
   "active": "56de96c90aa9be1c",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/DOM-Based XSS.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
     "Untitled.md",
     "Frameworks & Tools.md",
     "Untitled 1.md",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
     "Blog Articles/Exploiting the DOM, what is DOM and how could be exploited.md",
     "Blog Articles",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits",
