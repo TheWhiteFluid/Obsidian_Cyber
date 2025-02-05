@@ -9,3 +9,12 @@ Same-origin policy or SOP is a policy that instructs how web browsers interact
 1. **Scope of SOP**: It's commonly misunderstood that SOP only applies to scripts. In reality, it applies to all web page aspects, including embedded images, stylesheets, and frames, restricting how these resources interact based on their origins.
 2. **SOP Restricts All Cross-Origin Interactions**: Another misconception is that SOP completely prevents all cross-origin interactions. While SOP does restrict specific interactions, modern web applications often leverage various techniques (like CORS, postMessage, etc.) to enable safe and controlled cross-origin communications.
 3. **Same Domain Implies Same Origin**: People often think that if two URLs share the same domain, they are of the same origin. However, SOP also considers protocol and port, so two URLs with the same domain but different protocols or ports are considered different origins.
+
+### SOP Decision Process
+The below flowchart illustrates the sequence of checks a browser performs under SOP:
+1) It first checks if the protocols match, then the hostnames, and finally the port numbers.
+ 2) If all three match, the resource is allowed; otherwise, it is blocked. 
+ 
+ This diagram simplifies the concept, making it easier to understand and remember.
+	 ![](Pasted%20image%2020250205180723.png)
+
