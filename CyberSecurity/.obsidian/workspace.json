@@ -11,12 +11,14 @@
             "id": "56de96c90aa9be1c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250205164450.png"
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250205164450"
+              "icon": "lucide-file",
+              "title": "XSS Weaponization"
             }
           },
           {
@@ -152,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250205164450.png",
+                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250205164450"
+              "title": "Outline of XSS Weaponization"
             }
           }
         ],
@@ -178,10 +180,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "56de96c90aa9be1c",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
     "z.Screenshots/Pasted image 20250205164450.png",
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
     "z.Screenshots/Pasted image 20250205164419.png",
     "z.Screenshots/Pasted image 20250205164338.png",
     "z.Screenshots/Pasted image 20250205163702.png",
