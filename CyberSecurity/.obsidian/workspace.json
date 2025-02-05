@@ -11,14 +11,12 @@
             "id": "56de96c90aa9be1c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20250205164450.png"
               },
-              "icon": "lucide-file",
-              "title": "XSS Weaponization"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250205164450"
             }
           },
           {
@@ -154,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
+                "file": "z.Screenshots/Pasted image 20250205164450.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of XSS Weaponization"
+              "title": "Outline of Pasted image 20250205164450"
             }
           }
         ],
@@ -180,11 +178,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56de96c90aa9be1c",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
+    "z.Screenshots/Pasted image 20250205164450.png",
+    "z.Screenshots/Pasted image 20250205164419.png",
+    "z.Screenshots/Pasted image 20250205164338.png",
+    "z.Screenshots/Pasted image 20250205163702.png",
+    "z.Screenshots/Pasted image 20250205163520.png",
+    "z.Screenshots/Pasted image 20250205160514.png",
+    "z.Screenshots/Pasted image 20250205160330.png",
+    "z.Screenshots/Pasted image 20250205160130.png",
+    "z.Screenshots/Pasted image 20250205160118.png",
+    "z.Screenshots/Pasted image 20250205160028.png",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/0)Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/DOM-Based XSS.md",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Exploits/XSS Weaponization.md",
     "Untitled.md",
     "Frameworks & Tools.md",
     "Untitled 1.md",
@@ -198,22 +206,12 @@
     "PenTest/CompTia+",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based Attacks",
-    "z.Screenshots/Pasted image 20250201192747.png",
-    "z.Screenshots/Pasted image 20250201192410.png",
-    "z.Screenshots/Pasted image 20250201192316.png",
-    "z.Screenshots/Pasted image 20250201192309.png",
-    "z.Screenshots/Pasted image 20250201191850.png",
-    "z.Screenshots/Pasted image 20250201191416.png",
-    "z.Screenshots/Pasted image 20250201191447.png",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Stored.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
-    "z.Screenshots/Pasted image 20250201181025.png",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/0)Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Challenge - Include.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/XSS",
-    "z.Screenshots/Pasted image 20250129224431.png",
-    "z.Screenshots/Pasted image 20250129224422.png",
     "AppSec/TryHackMe/Injections/Challenge - Injectics.md",
     "PenTest/TryHackMe/Network Security/Enumeration/Content Discovery.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Server Crash.md",
@@ -225,7 +223,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/0)Summary.md",
     "PenTest/TryHackMe/Network Security/Enumeration/Subdomain Enumeration.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Best Practices.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation/Scripts.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Automation",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Exploits"
   ]
