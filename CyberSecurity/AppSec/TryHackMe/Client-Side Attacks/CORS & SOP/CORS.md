@@ -43,3 +43,5 @@ The below flowchart shows the basic process of a CORS request.
 3. If the origin is allowed, the server responds with the appropriate `Access-Control-Allow-Origin` header.
 4. The browser will block the cross-origin request if the origin is not allowed.
 	![](Pasted%20image%2020250205182541.png)
+
+Cross-Origin Resource Sharing (CORS) and Same-Origin Policy (SOP) are two important elements in web security. CORS enables secure cross-origin requests and data sharing, while SOP serves as a fundamental security mechanism, restricting interactions between different origins to protect sensitive data.
