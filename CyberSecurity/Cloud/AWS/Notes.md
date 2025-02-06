@@ -14,8 +14,6 @@ Use CloudGoat & Pacu for simulation
 AWS CLI commands
 https://github.com/eon01/AWS-CheatSheet?tab=readme-ov-file
 
-![](Pasted%20image%2020241031161304.png)
-
 
 ![](Pasted%20image%2020241106204928.png)
 
