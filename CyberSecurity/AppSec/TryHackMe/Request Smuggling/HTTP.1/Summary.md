@@ -1,3 +1,7 @@
+---
+NotionID-: 1951aa85-ad05-81ac-ba4c-f8a5fa89e8c6
+link-: https://www.notion.so/Summary-1951aa85ad0581acba4cf8a5fa89e8c6
+---
 
 ## Components of Modern Web Applications
 Modern web applications are no longer straightforward, monolithic structures. They are composed of different components that work with each other. Below are some of the components that a modern web application usually consists of:
@@ -52,7 +56,7 @@ q=smuggledData
 The Transfer-Encoding header is used to specify the form of encoding applied to the message body of an HTTP request or response. A commonly used value for this header is "chunked", indicating that the message body is divided into a series of chunks, each preceded by its size in hexadecimal format. Other possible values for the Transfer-Encoding header include "compress", "deflate", and "gzip", each indicating a different type of encoding. 
 
 Transfer-Encoding Sample Request
-```shell-session
+```shell
 POST /submit HTTP/1.1
 Host: good.com
 Content-Type: application/x-www-form-urlencoded

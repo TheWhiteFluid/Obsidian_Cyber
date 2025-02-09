@@ -1,0 +1,33 @@
+{
+  "NextButton": true,
+  "notionAPINext": "",
+  "databaseIDNext": "",
+  "bannerUrl": "",
+  "notionUser": "",
+  "NotionLinkDisplay": true,
+  "proxy": "",
+  "GeneralButton": true,
+  "tagButton": true,
+  "customTitleButton": false,
+  "customTitleName": "",
+  "notionAPIGeneral": "",
+  "databaseIDGeneral": "",
+  "CustomButton": false,
+  "CustomValues": "",
+  "notionAPICustom": "",
+  "databaseIDCustom": "",
+  "databaseDetails": {
+    "": {
+      "format": "general",
+      "fullName": "Obsidian Notes",
+      "abName": "",
+      "notionAPI": "ntn_v71558545979EozPLAnLYMvKgwNxgyYreM8tPoNZPvAcA8",
+      "databaseID": "1951aa85ad0580f1b89edd46d777e7dc",
+      "tagButton": false,
+      "customTitleButton": false,
+      "customTitleName": "",
+      "customProperties": [],
+      "saved": true
+    }
+  }
+}
