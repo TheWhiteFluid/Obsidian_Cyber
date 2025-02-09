@@ -87,5 +87,5 @@ HTTP Request Smuggling primarily occurs due to discrepancies in how different s
 3. This discrepancy can lead to one component believing the request has ended while another thinks it's still ongoing, leading to smuggling.
 
 **Example:** 
-Suppose a front-end server uses the Content-Length header to determine the end of a request while a back-end server uses the Transfer-Encoding header. An attacker can craft a request that appears to have one boundary to the front-end server but a different boundary to the back-end server. This can lead to one request being "smuggled" inside another, causing unexpected behaviour and potential vulnerabilities.
+	Suppose a front-end server uses the Content-Length header to determine the end of a request while a back-end server uses the Transfer-Encoding header. An attacker can craft a request that appears to have one boundary to the front-end server but a different boundary to the back-end server. This can lead to one request being "smuggled" inside another, causing unexpected behaviour and potential vulnerabilities.
 	![](Pasted%20image%2020250209112556.png)
