@@ -3,7 +3,7 @@
 ![](Pasted%20image%2020250208160826.png)
 
 - 22 - ssh open
-- 80 - cookie httponly secure flag not set
+- 80 - cookie secure flag not set
 
 Let s see what is on port 8081 
 	![](Pasted%20image%2020250208161928.png)
@@ -62,13 +62,13 @@ Now let s try to steal the moderator session using his cookies:
 ## administrator account takeover
 ### **CSRF (request of password change)**
 
-We have noticed the change password feature and it s endpoint (it is useful functionality for our CSRF payload)
+We have noticed that change password functionality and it s endpoint (it is useful functiability for our CSRF payload)
 	![](Pasted%20image%2020250208213857.png)
 Parameter that we wanna change is new_password (this one will be injected in our req)
 	![](Pasted%20image%2020250208220056.png)Also we have the chat option where we can get in touch with our actual victim(admin)
 	![](Pasted%20image%2020250208214135.png)
 
-Perfect scenario until now... let's build the payload script that will be sent over the chat. Here's an example of how an attacker can update a password  and send an asynchronous request to update email/password seamlessly.
+Perfect scenario until now... let's build the payload script that will be sent over the chat. Here's an example of how an attacker can update a password  and send an asynchronous request to update the email seamlessly.
 
 ```javascript
 <script>
@@ -87,7 +87,7 @@ Perfect scenario until now... let's build the payload script that will be sent o
 </script>
 ```
 
-However, it must be noticed that our payload is included now in a `<href` attribute (is converted as a direct link)
+However, it must be noticed that our payload is included now in a <href attribute (is converted in a direct link)
 	![](Pasted%20image%2020250208220532.png)
 
 To solve this problem we have to encode whole url and use javascript decoder built in function `atob`.
@@ -113,3 +113,4 @@ To solve this problem we have to encode whole url and use javascript decoder bui
 
 Now we can log in into the admin page with the newly created password :)
 
+AdM!nP@wnEd
