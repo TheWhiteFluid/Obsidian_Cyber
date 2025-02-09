@@ -53,16 +53,46 @@
             "id": "cefe271378576ea4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250209141456.png"
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250209141456"
+              "icon": "lucide-file",
+              "title": "Practical Example"
+            }
+          },
+          {
+            "id": "d792d8e6c1950941",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Summary"
+            }
+          },
+          {
+            "id": "9a9115475cbbc7e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HTTP.2 Desync"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -181,13 +211,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250209141456.png",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250209141456"
+              "title": "Outline of HTTP.2 Desync"
             }
           }
         ],
@@ -209,27 +239,31 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "9a9115475cbbc7e6",
   "lastOpenFiles": [
-    "z.Screenshots/Pasted image 20250209141644.png",
-    "z.Screenshots/Pasted image 20250209141456.png",
-    "z.Screenshots/Pasted image 20250209141934.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Example.md",
-    "z.Screenshots/Pasted image 20250209142132.png",
-    "z.Screenshots/Pasted image 20250209142048.png",
-    "z.Screenshots/Pasted image 20250209142026.png",
-    "z.Screenshots/Pasted image 20250209141957.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Transfer Encoding Obfuscation.md",
+    "z.Screenshots/Pasted image 20250209172349.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
+    "z.Screenshots/Pasted image 20250209171946.png",
+    "z.Screenshots/Pasted image 20250209171943.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Summary.md",
+    "z.Screenshots/Pasted image 20250209171053.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Transfer Encoding Obfuscation.md",
+    "z.Screenshots/Pasted image 20250209170532.png",
+    "z.Screenshots/Pasted image 20250209170444.png",
+    "z.Screenshots/Pasted image 20250209170332.png",
+    "z.Screenshots/Pasted image 20250209170308.png",
+    "z.Screenshots/Pasted image 20250209170245.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
+    "z.Screenshots/Pasted image 20250209141456.png",
+    "z.Screenshots/Pasted image 20250209141644.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/CL.TE.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
-    "z.Screenshots/Pasted image 20250209140836.png",
-    "z.Screenshots/Pasted image 20250209135909.png",
     "z.Screenshots.zip",
     "AppSec/TryHackMe.zip",
     "AppSec/TryHackMe/Client-Side Attacks/Challenge - What's Your Name.md",
-    "z.Screenshots/Pasted image 20250209114557.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits/Arbitrary Origin.md",
     "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/SOP.md",
@@ -247,14 +281,11 @@
     "AppSec/TryHackMe/Injections/ORM/Exploits/Weak Implementation.md",
     "AppSec/TryHackMe/Injections/LDAP/Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/WebSockets",
     "AppSec/TryHackMe/Request Smuggling/Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1",
     "AppSec/TryHackMe/Request Smuggling",
-    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits",
-    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP"
+    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits"
   ]
 }
