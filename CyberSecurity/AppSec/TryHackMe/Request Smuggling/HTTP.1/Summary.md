@@ -68,4 +68,20 @@ In this example:
 -  the chunk `q=smuggledData` is the actual data, followed by a new line.
  - "0"  indicating the end of the message body. Each chunk size is given in hexadecimal format, and the end of the chunked body is signified by a chunk of size 0.
 
+
 ## How Headers Affect Request Processing
+Headers play an important role in guiding the server to process the request. This is because they determine how to parse the request body and influence caching behaviours. They can also affect authentication, redirection, and other server responses.
+	![](Pasted%20image%2020250209112351.png)
+Manipulating headers like Content-Length and Transfer-Encoding can create vulnerabilities. For instance, if a proxy server gets confused by these headers, it might not properly distinguish where one request ends and another starts.
+
+
+## HTTP Request Smuggling Origin
+HTTP Request Smuggling primarily occurs due to discrepancies in how different servers (like a front-end server and a back-end server) interpret HTTP request boundaries. For example:
+
+1. If both Content-Length and Transfer-Encoding headers are present, ambiguities can arise.
+2. Some components prioritize Content-Length, while others prioritize Transfer-Encoding.
+3. This discrepancy can lead to one component believing the request has ended while another thinks it's still ongoing, leading to smuggling.
+
+**Example:** 
+Suppose a front-end server uses the Content-Length header to determine the end of a request while a back-end server uses the Transfer-Encoding header. An attacker can craft a request that appears to have one boundary to the front-end server but a different boundary to the back-end server. This can lead to one request being "smuggled" inside another, causing unexpected behaviour and potential vulnerabilities.
+	![](Pasted%20image%2020250209112556.png)
