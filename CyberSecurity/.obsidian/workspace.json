@@ -235,12 +235,14 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-to-notion:Share to notion": false,
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "9a9115475cbbc7e6",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
+    "Red_Team_Handbook.pdf",
+    "Cloud_aws_pentest.pdf",
+    "Bug_bounty_tools.pdf",
     "z.Screenshots/Pasted image 20250209172349.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
@@ -258,7 +260,6 @@
     "z.Screenshots/Pasted image 20250209170245.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
     "z.Screenshots/Pasted image 20250209141456.png",
-    "z.Screenshots/Pasted image 20250209141644.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/CL.TE.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
     "z.Screenshots.zip",
@@ -284,8 +285,6 @@
     "AppSec/TryHackMe/Request Smuggling/WebSockets",
     "AppSec/TryHackMe/Request Smuggling/Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1",
-    "AppSec/TryHackMe/Request Smuggling",
-    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits"
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1"
   ]
 }
