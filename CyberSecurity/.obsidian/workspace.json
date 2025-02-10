@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TE.CL"
+              "title": "HTTP.2 Desync"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TE.CL"
+              "title": "Outline of HTTP.2 Desync"
             }
           }
         ],
@@ -168,16 +168,17 @@
   },
   "active": "c8aa412f7c740fbe",
   "lastOpenFiles": [
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/0)Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
     "z.Screenshots/Pasted image 20250209172349.png",
     "z.Screenshots/Pasted image 20250209171946.png",
     "z.Screenshots/Pasted image 20250209171053.png",
     "z.Screenshots/Pasted image 20250209171943.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits",
     "z.Screenshots/Pasted image 20250209170532.png",
     "z.Screenshots/Pasted image 20250209170444.png",
@@ -186,7 +187,6 @@
     "z.Screenshots/Pasted image 20250209170332.png",
     "z.Screenshots/Pasted image 20250209141644.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Transfer Encoding Obfuscation.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/CL.TE.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Summary.md",
