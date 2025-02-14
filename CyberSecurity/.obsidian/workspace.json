@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c8aa412f7c740fbe",
+            "id": "c96ac4c89805cc94",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,21 +22,31 @@
             }
           },
           {
-            "id": "c96ac4c89805cc94",
+            "id": "e4b4b99fb664f20a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20250214104223.png"
               },
-              "icon": "lucide-file",
-              "title": "Tunneling"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250214104223"
+            }
+          },
+          {
+            "id": "c3f6f4820b664376",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "z.Screenshots/Pasted image 20250214104223.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250214104223"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5,
-    "collapsed": true
+    "width": 253.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -156,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
+                "file": "z.Screenshots/Pasted image 20250214104223.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tunneling"
+              "title": "Outline of Pasted image 20250214104223"
             }
           }
         ],
@@ -183,21 +192,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c96ac4c89805cc94",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Pasted image 20250214115832.png",
-    "Pasted image 20250214111323.png",
-    "Pasted image 20250214111309.png",
-    "Pasted image 20250214111300.png",
-    "Pasted image 20250214111220.png",
-    "Pasted image 20250214111137.png",
-    "Pasted image 20250214105321.png",
-    "Pasted image 20250214105220.png",
-    "Pasted image 20250214105209.png",
-    "Pasted image 20250214105136.png",
-    "Pasted image 20250214105041.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling - Leaking Internal Headers.md",
+    "z.Screenshots/Pasted image 20250214105037.png",
+    "z.Screenshots/Pasted image 20250214104223.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
+    "z.Screenshots/Pasted image 20250214122942.png",
+    "z.Screenshots/Pasted image 20250214122554.png",
+    "z.Screenshots/Pasted image 20250214122447.png",
+    "z.Screenshots/Pasted image 20250214122150.png",
+    "z.Screenshots/Pasted image 20250214122039.png",
+    "z.Screenshots/Pasted image 20250214122002.png",
+    "z.Screenshots/Pasted image 20250214121903.png",
+    "z.Screenshots/Pasted image 20250214120434.png",
+    "z.Screenshots/Pasted image 20250214120416.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling - Leaking Internal Headers.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
     "PDF_tools/Cloud_aws_pentest.pdf",
@@ -226,7 +236,6 @@
     "AppSec/TryHackMe/Injections/LDAP/Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Summary.md",
     "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CSRF/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2",
