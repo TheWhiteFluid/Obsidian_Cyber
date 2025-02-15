@@ -4,53 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "e0a1d3b0970de39a",
+        "id": "68a9d1fbe0ee8787",
         "type": "tabs",
         "children": [
           {
-            "id": "c96ac4c89805cc94",
+            "id": "9fe108ae05114410",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tunneling"
+              "title": "Broken WebSocket Tunnels"
             }
           },
           {
-            "id": "c3f6f4820b664376",
+            "id": "e79dfd64b96bcb76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "h2c smuggling"
-            }
-          },
-          {
-            "id": "7f5e819e3041bfd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Summary"
+              "title": "Defeating Secure Proxies"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Summary"
+              "title": "Outline of Defeating Secure Proxies"
             }
           }
         ],
@@ -187,62 +173,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "share-to-notionnext:Share to NotionNext": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "share-to-notionnext:Share to NotionNext": false
     }
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
-    "WebSockets",
-    "z.Screenshots/Pasted image 20250214133330.png",
-    "z.Screenshots/Pasted image 20250214133219.png",
+    "z.Screenshots/Pasted image 20250215035020.png",
+    "z.Screenshots/Pasted image 20250215034452.png",
+    "z.Screenshots/Pasted image 20250215034337.png",
+    "z.Screenshots/Pasted image 20250215034145.png",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
+    "z.Screenshots/Pasted image 20250215033506.png",
+    "z.Screenshots/Pasted image 20250215033435.png",
+    "z.Screenshots/Pasted image 20250215033331.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
-    "z.Screenshots/Pasted image 20250214132445.png",
-    "z.Screenshots/Pasted image 20250214132414.png",
-    "z.Screenshots/Pasted image 20250214131556.png",
-    "z.Screenshots/Pasted image 20250214131004.png",
-    "z.Screenshots/Pasted image 20250214125957.png",
-    "z.Screenshots/Pasted image 20250214125543.png",
-    "z.Screenshots/Pasted image 20250214125010.png",
-    "z.Screenshots/Pasted image 20250214124720.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling - Leaking Internal Headers.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
-    "PDF_tools/Cloud_aws_pentest.pdf",
-    "PDF_tools/Bug_bounty_tools.pdf",
+    "z.Screenshots/Pasted image 20250215032752.png",
+    "z.Screenshots/Pasted image 20250215032641.png",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits.md",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
+    "z.Screenshots/Pasted image 20250215032434.png",
+    "z.Screenshots/Pasted image 20250215032347.png",
     "PDF_tools/Red_Team_Handbook.pdf",
     "PDF_tools",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/HTTP.2 Desync.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
+    "PDF_tools/Cloud_aws_pentest.pdf",
+    "PDF_tools/Bug_bounty_tools.pdf",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/0)Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Transfer Encoding Obfuscation.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/CL.TE.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
+    "z.Screenshots.zip",
+    "AppSec/TryHackMe.zip",
+    "AppSec/TryHackMe/Client-Side Attacks/Challenge - What's Your Name.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits",
+    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits/Arbitrary Origin.md",
+    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/SOP.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Summary.md",
     "AppSec/TryHackMe/Injections/XEE/Summary.md",
-    "AppSec/TryHackMe/Injections/SSTI/Summary.md",
-    "AppSec/TryHackMe/Injections/SQL/Summary.md",
-    "AppSec/TryHackMe/Injections/ORM/Summary.md",
-    "AppSec/TryHackMe/Injections/LDAP/Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/XSS/Summary.md",
-    "AppSec/TryHackMe/Client-Side Attacks/DOM-Based/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/Browser Desync",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2"
+    "AppSec/TryHackMe/Request Smuggling/WebSockets"
   ]
 }
