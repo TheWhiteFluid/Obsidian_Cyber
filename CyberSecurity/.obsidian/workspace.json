@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -198,6 +199,11 @@
   },
   "active": "27e4e5712ee79189",
   "lastOpenFiles": [
+    "Pasted image 20250215043909.png",
+    "Pasted image 20250215043857.png",
+    "Pasted image 20250215043647.png",
+    "Pasted image 20250215043608.png",
+    "Pasted image 20250215043554.png",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
@@ -208,16 +214,12 @@
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
     "z.Screenshots/Pasted image 20250215033506.png",
     "z.Screenshots/Pasted image 20250215033435.png",
-    "z.Screenshots/Pasted image 20250215033331.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
-    "z.Screenshots/Pasted image 20250215032752.png",
-    "z.Screenshots/Pasted image 20250215032641.png",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits.md",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
-    "z.Screenshots/Pasted image 20250215032434.png",
     "PDF_tools/Red_Team_Handbook.pdf",
     "PDF_tools",
     "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
@@ -242,7 +244,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Summary.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Summary.md",
-    "AppSec/TryHackMe/Injections/XEE/Summary.md"
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Summary.md"
   ]
 }
