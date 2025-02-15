@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9fe108ae05114410",
+            "id": "1b221ee137d889cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Broken WebSocket Tunnels"
-            }
-          },
-          {
-            "id": "e79dfd64b96bcb76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Defeating Secure Proxies"
-            }
-          },
-          {
-            "id": "27e4e5712ee79189",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Summary"
-            }
-          },
-          {
-            "id": "630a3e2e04729bfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "XSS Chaining"
+              "title": "Example"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of XSS Chaining"
+              "title": "Outline of Example"
             }
           }
         ],
@@ -212,9 +169,10 @@
   },
   "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "z.Screenshots/Pasted image 20250215051036.png",
     "z.Screenshots/Pasted image 20250215051000.png",
     "z.Screenshots/Pasted image 20250215050438.png",
@@ -249,7 +207,6 @@
     "z.Screenshots.zip",
     "AppSec/TryHackMe.zip",
     "AppSec/TryHackMe/Client-Side Attacks/Challenge - What's Your Name.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits",
     "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits/Arbitrary Origin.md",
     "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/SOP.md",
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Summary.md",

