@@ -1,0 +1,1 @@
+- https://0xb0b.gitbook.io/writeups/hackthebox/2024/devvortex
