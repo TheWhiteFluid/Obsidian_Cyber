@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+                "file": "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenge - El Bandito"
+              "title": "through Tickets"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+                "file": "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenge - El Bandito"
+              "title": "Outline of through Tickets"
             }
           }
         ],
@@ -169,9 +169,33 @@
   },
   "active": "ac825b56c3cc53c4",
   "lastOpenFiles": [
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/through Credentials.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Mitigations.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through SID History.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through Group Membership.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through GPOs.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through Certificates.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through ACLs.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/note !.md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour).md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Windows Credentials Manager.md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Summary.md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Other Attacks.md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Local Windows Credentials.md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/LAPS (Local Administrator Password Solution).md",
+    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Domain Controller.md",
+    "PenTest/TryHackMe/ActiveDirectory/Breaching/Authentication Relays.md",
+    "PenTest/TryHackMe/ActiveDirectory/Breaching/Configuration Files.md",
+    "PenTest/TryHackMe/ActiveDirectory/Breaching/LDAP.md",
+    "PenTest/TryHackMe/ActiveDirectory/Breaching/Microsoft Deployment Toolkit.md",
+    "PenTest/TryHackMe/ActiveDirectory/Breaching/Mitigations.md",
+    "PenTest/TryHackMe/Offensive",
     "z.Screenshots/Pasted image 20250216054522.png",
     "z.Screenshots/Pasted image 20250216054414.png",
     "z.Screenshots/Pasted image 20250216054405.png",
@@ -180,40 +204,16 @@
     "z.Screenshots/Pasted image 20250216052243.png",
     "z.Screenshots/Pasted image 20250216052123.png",
     "z.Screenshots/Pasted image 20250216051852.png",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "z.Screenshots/Pasted image 20250215051036.png",
     "z.Screenshots/Pasted image 20250215051000.png",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits.md",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
     "PDF_tools/Red_Team_Handbook.pdf",
     "PDF_tools",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Practical Example.md",
     "PDF_tools/Cloud_aws_pentest.pdf",
     "PDF_tools/Bug_bounty_tools.pdf",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Summary.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/Transfer Encoding Obfuscation.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Best Practices.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/CL.TE.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.1/Exploits/TE.CL.md",
-    "z.Screenshots.zip",
-    "AppSec/TryHackMe.zip",
-    "AppSec/TryHackMe/Client-Side Attacks/Challenge - What's Your Name.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/Exploits/Arbitrary Origin.md",
-    "AppSec/TryHackMe/Client-Side Attacks/CORS & SOP/SOP.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Summary.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Summary.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Summary.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md"
+    "z.Screenshots.zip"
   ]
 }
