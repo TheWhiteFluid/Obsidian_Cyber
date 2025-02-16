@@ -95,13 +95,15 @@ This lab is vulnerable to username enumeration using its response times. To solv
 Analysis:
 - The longer the password, the more work the algorithm has to do in terms of processing each character and producing a hash. This results in **increased response time** for longer passwords. When an **invalid username** is entered, the system may bypass the password hashing and comparison altogether, quickly returning a generic "invalid credentials" message, resulting in a uniform response time.
 
-![[Pasted image 20241017165815.png]]
+	![[Pasted image 20241017165815.png]]
+	
 - using `X-Forwarded-For` to bypass IP blocking by too many requests
-![[Pasted image 20241017165935.png]]
-![[Pasted image 20241017170132.png]]
-![[Pasted image 20241017170554.png]]
+	![[Pasted image 20241017165935.png]]
+	![[Pasted image 20241017170132.png]]
+	![[Pasted image 20241017170554.png]]
+	
 - fuzzing the username --> password
-![[Pasted image 20241017170653.png]]
+	![[Pasted image 20241017170653.png]]
 
 # **5.  Broken brute-force protection, IP block**
 This lab is vulnerable due to a logic flaw in its password brute-force protection. To solve the lab, brute-force the victim's password, then log in and access their account page.
@@ -120,13 +122,15 @@ This lab is vulnerable due to a logic flaw in its password brute-force protectio
 8. Log in to Carlos's account using the password that you identified and access his account page to solve the lab.
 
 Analysis:
-![[Pasted image 20241017173139.png]]
-![[Pasted image 20241017173228.png]]
+	![[Pasted image 20241017173139.png]]
+	![[Pasted image 20241017173228.png]]
+	
 - alternating list with valid credentials in order to reset the login attempt treshold
-![[Pasted image 20241017173718.png]]
-![[Pasted image 20241017173831.png]]
+	![[Pasted image 20241017173718.png]]
+	![[Pasted image 20241017173831.png]]
+
 - filtering by 302 http response on carlos username
-![[Pasted image 20241017181023.png]]
+	![[Pasted image 20241017181023.png]]
 1. **IP Blocking Mechanism**: The server blocks an IP after 3 failed login attempts, which is supposed to protect against brute-force attacks.
 2. **Logic Flaw**: You can **reset** the failure count by logging into your own account before hitting the limit. By doing this, you bypass the IP block.
 3. **Burp Suite Attack**: You configure a **Pitchfork attack** in Burp Intruder to alternate login requests between your account (**wiener**) and the victim’s account (**carlos**).
@@ -155,7 +159,6 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 8. Wait for a minute to allow the account lock to reset. Log in using the username and password that you identified and access the user account page to solve the lab.
 
 Analysis:
-
 - invalid username/password --> 'Invalid username or password'
 - valid username/password --> You have made too many incorrect login attempts
     
@@ -181,13 +184,13 @@ This lab's two-factor authentication is vulnerable due to its flawed logic. To s
 8. Click **My account** to solve the lab.
 
 Analysis:
-![[Pasted image 20241019002453.png]]
-![[Pasted image 20241019002839.png]]
+	![[Pasted image 20241019002453.png]]
+	![[Pasted image 20241019002839.png]]
 
 - in order to trick the server to generate a temporary 2FA for user `carlos` we will modify the `verify` parameter of the GET/login2 request(while we are still logged as wiener)-->carlos.
-![[Pasted image 20241019003549.png]]
+	![[Pasted image 20241019003549.png]]
 - now we will generate fail attempt on 2FA (POST/login2) and send it to intruder to brute force the temporary generated 2FA code for user carlos
-![[Pasted image 20241019004838.png]]
+	![[Pasted image 20241019004838.png]]
 
 # **8.  Brute-forcing a stay-logged-in cookie**
 This lab allows users to stay logged in even after they close their browser session. The cookie used to provide this functionality is vulnerable to brute-forcing.
@@ -268,14 +271,14 @@ This lab is vulnerable to password reset poisoning. The user `carlos` will car
 
 Analysis:
 - capture forgot-password request in burp
-![[Pasted image 20241021141937.png]]
+	![[Pasted image 20241021141937.png]]
 
 - adding `X-Forwarded-Host: external exploit server` to capture the new forgot password request with a new username: `carlos`
-![[Pasted image 20241021142119.png]]
+	![[Pasted image 20241021142119.png]]
 	![[Pasted image 20241021142233.png]]
 
 - we will use our valid change password URL and swap token with the new one that we have generated for user `carlos`
-![[Pasted image 20241021142519.png]]
+	![[Pasted image 20241021142519.png]]
 
 # **11.  Password brute-force via password change**
 This lab's password change functionality makes it vulnerable to brute-force attacks. To solve the lab, use the list of candidate passwords to brute-force Carlos's account and access his "My account" page.
@@ -301,11 +304,11 @@ Analysis:
 - correct password, newpassword1 **=** newpassword2 (changing current password);
 - correct password, newpassword1 **!=** newpassword2 (message: new passwords do not match);
 
-![[Pasted image 20241021155151.png]]
+	![[Pasted image 20241021155151.png]]
 
-![[Pasted image 20241021155339.png]]
+	![[Pasted image 20241021155339.png]]
 	![[Pasted image 20241021155608.png]]
-![[Pasted image 20241021155818.png]]
+	![[Pasted image 20241021155818.png]]
 
 # **12. Broken brute-force protection, multiple credentials per request**
 This lab is vulnerable due to a logic flaw in its brute-force protection. To solve the lab, brute-force Carlos's password, then access his account page.
@@ -322,8 +325,8 @@ This lab is vulnerable due to a logic flaw in its brute-force protection. To sol
 5. Click **My account** to access Carlos's account page and solve the lab.
 
 Analysis:
-![[Pasted image 20241021160340.png]]
-![[Pasted image 20241021160445.png]]
+	![[Pasted image 20241021160340.png]]
+	![[Pasted image 20241021160445.png]]
 	![[Pasted image 20241021160537.png]]
 
 # **13. 2FA bypass using a brute-force attack**
