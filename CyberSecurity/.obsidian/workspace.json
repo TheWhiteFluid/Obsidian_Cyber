@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Example"
+              "title": "Exploit - Challenge"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Example"
+              "title": "Outline of Exploit - Challenge"
             }
           }
         ],
@@ -167,24 +168,25 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "1b221ee137d889cd",
   "lastOpenFiles": [
+    "Pasted image 20250216054522.png",
+    "Pasted image 20250216054414.png",
+    "Pasted image 20250216054405.png",
+    "Pasted image 20250216054347.png",
+    "Pasted image 20250216052319.png",
+    "Pasted image 20250216052243.png",
+    "Pasted image 20250216052123.png",
+    "Pasted image 20250216051852.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Example.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "z.Screenshots/Pasted image 20250215051036.png",
     "z.Screenshots/Pasted image 20250215051000.png",
     "z.Screenshots/Pasted image 20250215050438.png",
-    "z.Screenshots/Pasted image 20250215045837.png",
-    "z.Screenshots/Pasted image 20250215043909.png",
-    "z.Screenshots/Pasted image 20250215043857.png",
-    "z.Screenshots/Pasted image 20250215043647.png",
-    "z.Screenshots/Pasted image 20250215043608.png",
-    "z.Screenshots/Pasted image 20250215043554.png",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
-    "z.Screenshots/Pasted image 20250215035020.png",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
@@ -213,7 +215,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/Race Conditions/Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Prototype Pollution/Summary.md",
     "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Summary.md"
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md"
   ]
 }
