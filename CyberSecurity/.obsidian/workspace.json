@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Writeups"
+              "title": "Challenge - El Bandito"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Writeups"
+              "title": "Outline of Challenge - El Bandito"
             }
           }
         ],
@@ -184,8 +184,8 @@
   },
   "active": "a391a714c7aaa246",
   "lastOpenFiles": [
-    "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "Writeups.md",
+    "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Credentials.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/Mitigations.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/Prohibited techniques/through SID History.md",
@@ -224,10 +224,10 @@
     "z.Screenshots/Pasted image 20250215051000.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
-    "PDF_tools/Red_Team_Handbook.pdf",
-    "PDF_tools",
-    "PDF_tools/Cloud_aws_pentest.pdf",
-    "PDF_tools/Bug_bounty_tools.pdf",
+    "PDFs/Red_Team_Handbook.pdf",
+    "PDFs",
+    "PDFs/Cloud_aws_pentest.pdf",
+    "PDFs/Bug_bounty_tools.pdf",
     "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits",
     "z.Screenshots.zip"
   ]
