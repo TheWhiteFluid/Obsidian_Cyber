@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exploit - Challenge"
+              "title": "Exploit - XSS form"
+            }
+          },
+          {
+            "id": "ac825b56c3cc53c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Exploit - XSS form"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -141,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
+                "file": "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Exploit - Challenge"
+              "title": "Outline of Exploit - XSS form"
             }
           }
         ],
@@ -168,23 +182,23 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "1b221ee137d889cd",
+  "active": "ac825b56c3cc53c4",
   "lastOpenFiles": [
-    "Pasted image 20250216054522.png",
-    "Pasted image 20250216054414.png",
-    "Pasted image 20250216054405.png",
-    "Pasted image 20250216054347.png",
-    "Pasted image 20250216052319.png",
-    "Pasted image 20250216052243.png",
-    "Pasted image 20250216052123.png",
-    "Pasted image 20250216051852.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - Challenge.md",
+    "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
+    "z.Screenshots/Pasted image 20250216054522.png",
+    "z.Screenshots/Pasted image 20250216054414.png",
+    "z.Screenshots/Pasted image 20250216054405.png",
+    "z.Screenshots/Pasted image 20250216054347.png",
+    "z.Screenshots/Pasted image 20250216052319.png",
+    "z.Screenshots/Pasted image 20250216052243.png",
+    "z.Screenshots/Pasted image 20250216052123.png",
+    "z.Screenshots/Pasted image 20250216051852.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits/XSS Chaining.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "z.Screenshots/Pasted image 20250215051036.png",
     "z.Screenshots/Pasted image 20250215051000.png",
-    "z.Screenshots/Pasted image 20250215050438.png",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
