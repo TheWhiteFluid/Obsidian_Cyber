@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenge - El Bandito"
+              "title": "0)Summary"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenge - El Bandito"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -198,11 +198,29 @@
   },
   "active": "a70ae718f0a82492",
   "lastOpenFiles": [
+    "AppSec/PortSwigger/Access Control & IDOR.md",
+    "z.Screenshots/Pasted image 20250217043143.png",
+    "z.Screenshots/Pasted image 20250217042214.png",
+    "z.Screenshots/Pasted image 20250217042500.png",
+    "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
+    "z.Screenshots/Pasted image 20250217053331.png",
+    "z.Screenshots/Pasted image 20250217053121.png",
+    "z.Screenshots/Pasted image 20250217052851.png",
+    "z.Screenshots/Pasted image 20250217052755.png",
+    "z.Screenshots/Pasted image 20250217051954.png",
+    "z.Screenshots/Pasted image 20250217051524.png",
+    "z.Screenshots/Pasted image 20250217051234.png",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Tunneling.md",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Defeating Secure Proxies.md",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits/Broken WebSocket Tunnels.md",
+    "AppSec/TryHackMe/Request Smuggling/WebSockets/Summary.md",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploit - XSS form.md",
     "Roadmap.md",
     "AppSec/PortSwigger/Clickjacking.md",
     "AppSec/PortSwigger/Authentication.md",
     "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
     "Writeups.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Credentials.md",
@@ -216,26 +234,8 @@
     "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Writable Shares (Abusing User Behaviour).md",
     "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
     "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
-    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Port Forwarding.md",
-    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Moving Through the Network.md",
-    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Alternate Authentication Material.md",
-    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Windows Credentials Manager.md",
-    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Summary.md",
-    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Other Attacks.md",
-    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/LSASS (Local Security Authority Subsystem Service).md",
-    "PenTest/TryHackMe/ActiveDirectory/Credentials Harvesting/Local Windows Credentials.md",
     "PenTest/TryHackMe/Offensive",
-    "z.Screenshots/Pasted image 20250216054522.png",
-    "z.Screenshots/Pasted image 20250216054414.png",
-    "z.Screenshots/Pasted image 20250216054405.png",
-    "z.Screenshots/Pasted image 20250216054347.png",
-    "z.Screenshots/Pasted image 20250216052319.png",
-    "z.Screenshots/Pasted image 20250216052243.png",
-    "z.Screenshots/Pasted image 20250216052123.png",
-    "z.Screenshots/Pasted image 20250216051852.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
-    "z.Screenshots/Pasted image 20250215051036.png",
-    "z.Screenshots/Pasted image 20250215051000.png",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
     "PDFs/Red_Team_Handbook.pdf",
