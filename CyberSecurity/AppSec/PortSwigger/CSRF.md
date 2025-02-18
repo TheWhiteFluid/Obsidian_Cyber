@@ -1,4 +1,6 @@
-[CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)https://book.hacktricks.xyz/pentesting-web/csrf-cross-site-request-forgery
+- [CSRF](https://www.hackingarticles.in/understanding-the-csrf-vulnerability-a-beginners-guide/)
+- https://portswigger.net/web-security/csrf
+- https://book.hacktricks.xyz/pentesting-web/csrf-cross-site-request-forgery
 
 ## **1. CSRF vulnerability with no defenses**
 This lab's email change functionality is vulnerable to CSRF.

@@ -1,6 +1,14 @@
 
-JWT(partially)
-NoSQL // Insecure deserialization
+1.JWT & OAuth - 
+2.CORS 
+3.HTTP Host Header 
+4.Business logic
+5.Race Conditions
+6.OS command 
+7.NoSQL
+8.Request Smuggling 
+9.Web Sockets
+10.Insecure deserialization
 
 ### Vulnerabilities 
 Repo: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md

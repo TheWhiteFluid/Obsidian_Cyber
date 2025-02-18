@@ -1,4 +1,5 @@
-https://portswigger.net/web-security/api-testing
+- https://portswigger.net/web-security/api-testing
+- https://hacktricks.boitatech.com.br/pentesting/pentesting-web/web-api-pentesting
 
 # **1.Exploiting an API endpoint using documentation**
 To solve the lab, find the exposed API documentation and delete `carlos`. You can log in to your own account using the following credentials: `wiener:peter`.

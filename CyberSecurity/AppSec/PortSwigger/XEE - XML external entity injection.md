@@ -1,5 +1,6 @@
-[XXE Injection](https://www.hackingarticles.in/comprehensive-guide-on-xxe-injection/)
-https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity
+- [XXE Injection](https://www.hackingarticles.in/comprehensive-guide-on-xxe-injection/)
+- https://portswigger.net/web-security/xxe#what-is-xml-external-entity-injection
+- https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity
 
 ## **1. Exploiting XXE using external entities to retrieve files**
 This lab has a "Check stock" feature that parses XML input and returns any unexpected values in the response.

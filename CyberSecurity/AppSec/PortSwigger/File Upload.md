@@ -1,10 +1,9 @@
-[Unrestricted File Upload](https://www.hackingarticles.in/comprehensive-guide-on-unrestricted-file-upload/)
-[Remote File Inclusion (RFI)](https://www.hackingarticles.in/comprehensive-guide-to-remote-file-inclusion-rfi/)
-[Local File Inclusion (LFI)](https://www.hackingarticles.in/comprehensive-guide-to-local-file-inclusion/)
+- [Unrestricted File Upload](https://www.hackingarticles.in/comprehensive-guide-on-unrestricted-file-upload/)
+- [Remote File Inclusion (RFI)](https://www.hackingarticles.in/comprehensive-guide-to-remote-file-inclusion-rfi/)
+- [Local File Inclusion (LFI)](https://www.hackingarticles.in/comprehensive-guide-to-local-file-inclusion/)
 
-https://portswigger.net/web-security/file-upload#what-are-file-upload-vulnerabilities
-
-https://book.hacktricks.xyz/pentesting-web/file-upload
+- https://portswigger.net/web-security/file-upload#what-are-file-upload-vulnerabilities
+- https://book.hacktricks.xyz/pentesting-web/file-upload
 
 # **1. Remote code execution via web shell upload**
 This lab contains a vulnerable image upload function. It doesn't perform any validation on the files users upload before storing them on the server's filesystem.

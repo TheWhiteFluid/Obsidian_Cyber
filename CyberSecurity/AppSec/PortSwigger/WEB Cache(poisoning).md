@@ -1,6 +1,4 @@
-https://portswigger.net/web-security/web-cache-poisoning#what-is-web-cache-poisoning
-https://portswigger.net/web-security/web-cache-poisoning/exploiting-design-flaws
-https://portswigger.net/web-security/web-cache-poisoning/exploiting-implementation-flaws
+- https://portswigger.net/web-security/web-cache-poisoning#what-is-web-cache-poisoning
 
 #### Param Miner
 You can automate the process of identifying unkeyed inputs by adding the [Param Miner](https://portswigger.net/bappstore/17d2949a985c4b7ca092728dba871943) extension to Burp from the BApp store. To use Param Miner, you simply right-click on a request that you want to investigate and click "Guess headers". Param Miner then runs in the background, sending requests containing different inputs from its extensive, built-in list of headers. If a request containing one of its injected inputs has an effect on the response, Param Miner logs this in Burp, either in the "Issues" pane if you are using Burp Suite Professional, or in the "Output" tab of the extension ("Extensions" > "Installed" > "Param Miner" > "Output") if you are using Burp Suite Community Edition.

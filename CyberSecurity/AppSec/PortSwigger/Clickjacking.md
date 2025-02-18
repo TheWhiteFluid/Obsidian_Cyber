@@ -1,11 +1,11 @@
-https://portswigger.net/web-security/clickjacking#what-is-clickjacking
+- https://portswigger.net/web-security/clickjacking#what-is-clickjacking
+- https://hacktricks.boitatech.com.br/pentesting-web/clickjacking
 
 ## Clues of clickjacking(reverse engineering)
 ### X-Frame-Options
 X-Frame-Options was originally introduced as an unofficial response header in Internet Explorer 8 and it was rapidly adopted within other browsers. The header provides the website owner with control over the use of iframes or objects so that inclusion of a web page within a frame can be prohibited with the `deny` directive: `X-Frame-Options: deny`
 
-Alternatively, framing can be restricted to the same origin as the website using the `sameorigin` directive: `X-Frame-Options: sameorigin`
-
+Alternatively, framing can be restricted to the same origin as the website using the `sameorigin` directive: `X-Frame-Options: sameorigin` 
 or to a named website using the `allow-from` directive: `X-Frame-Options: allow-from https://normal-website.com`
 
 X-Frame-Options is not implemented consistently across browsers (the `allow-from` directive is not supported in Chrome version 76 or Safari 12 for example). However, when properly applied in conjunction with Content Security Policy as part of a multi-layer defense strategy it can provide effective protection against clickjacking attacks.
@@ -125,7 +125,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 <iframe src="https://0a1600150327536484f84221000300b3.web-security-academy.net/my-account/?email=paein@test3.com"></iframe>
 ```
 
-n## 3. Clickjacking with a frame buster script
+## 3. Clickjacking with a frame buster script
 This lab is protected by a frame buster which prevents the website from being framed. Can you get around the frame buster and conduct a clickjacking attack that changes the users email address?
 
 To solve the lab, craft some HTML that frames the account page and fools the user into changing their email address by clicking on "Click me". The lab is solved when the email address is changed.
@@ -225,7 +225,7 @@ src="YOUR-LAB-ID.web-security-academy.net/feedback?name=<img src=1 onerror=print
 ![](Pasted%20image%2020241216193646.png)
 
 - let s test the name field for XSS using a basic xss error script
-  ![](Pasted%20image%2020241216193835.png)![](Pasted%20image%2020241216193901.png)  
+	![](Pasted%20image%2020241216193901.png)  
 - building our payload using  the exploit server
 ```html
 <style>

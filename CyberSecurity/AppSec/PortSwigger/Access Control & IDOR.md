@@ -1,4 +1,6 @@
-https://portswigger.net/web-security/access-control
+- https://portswigger.net/web-security/access-control
+- https://hacktricks.boitatech.com.br/pentesting-web/idor
+
 # **1. Unprotected admin functionality**
 This lab has an unprotected admin panel. Solve the lab by deleting the user `carlos`.
 

@@ -1,4 +1,5 @@
-https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
+- https://portswigger.net/web-security/server-side-template-injection
+- https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection
 
 Example of a template where user input is reflected (could be website form template/ email templates etc...)
 	![[Pasted image 20241008200755.png]]

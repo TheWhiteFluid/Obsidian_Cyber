@@ -1,5 +1,6 @@
-https://www.hackingarticles.in/comprehensive-guide-on-path-traversal/
-https://hacktricks.boitatech.com.br/pentesting-web/file-inclusion
+- https://portswigger.net/web-security/file-path-traversal
+- https://www.hackingarticles.in/comprehensive-guide-on-path-traversal/
+- https://hacktricks.boitatech.com.br/pentesting-web/file-inclusion
 
 # **1. File path traversal, simple case**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.

@@ -1,9 +1,6 @@
-https://portswigger.net/web-security/web-cache-deception#constructing-a-web-cache-deception-attack
+- https://portswigger.net/web-security/web-cache-deception#constructing-a-web-cache-deception-attack
 
-https://book.hacktricks.xyz/pentesting-web/http-response-smuggling-desync
-
-- Web cache poisoning manipulates cache keys to inject malicious content into a cached response, which is then served to other users.
-- Web cache deception exploits cache rules to trick the cache into storing sensitive or private content, which the attacker can then access.
+Web cache poisoning manipulates cache keys to inject malicious content into a cached response, which is then served to other users // Web cache deception exploits cache rules to trick the cache into storing sensitive or private content, which the attacker can then access.
 # 1. Exploiting path mapping for web cache deception
 To solve the lab, find the API key for the user `carlos`. You can log in to your own account using r the following credentials: `wiener:peter`.
 

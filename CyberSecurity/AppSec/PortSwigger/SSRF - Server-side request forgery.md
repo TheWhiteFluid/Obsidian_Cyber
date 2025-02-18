@@ -1,4 +1,5 @@
-https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery
+- https://portswigger.net/web-security/ssrf
+- https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery
 
 ## **1. Basic SSRF against the local server**
 This lab has a stock check feature which fetches data from an internal system.
