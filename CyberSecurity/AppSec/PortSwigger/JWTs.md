@@ -115,29 +115,55 @@ Analysis:
 	![](Pasted%20image%2020250219023945.png)
 
 
-## 4. Jwk header injection
+## 4. JWK header injection
 This lab uses a JWT-based mechanism for handling sessions. The server supports the `jwk` parameter in the JWT header. This is sometimes used to embed the correct verification key directly in the token. However, it fails to check whether the provided key came from a trusted source.
 
 To solve the lab, modify and sign a JWT that gives you access to the admin panel at `/admin`, then delete the user `carlos`.
 You can log in to your own account using the following credentials: `wiener:peter`
 
 **Analysis:**
-- **Send the post-login request** (`GET /my-account`) to **Burp Repeater**.
-- **Attempt Admin Panel Access**:
-    - Change the request path to **`/admin`** and send it.
-    - Access is **denied** (only for "administrator" user).
-- **Generate a New RSA Key**:
-    - Go to **JWT Editor Keys** in Burp's main tab.
-    - Click **New RSA Key** → Click **Generate** → Click **OK**.
-- Go back to the `GET /admin` request in Burp Repeater and switch to the extension-generated `JSON Web Token` tab.
-- In the payload, change the value of the `sub` claim to `administrator`.
-- At the bottom of the **JSON Web Token** tab, click **Attack**, then select **Embedded JWK**. When prompted, select your newly generated RSA key and click **OK**.
-- In the header of the JWT, observe that a `jwk` parameter has been added containing your public key.
-- Send the request. Observe that you have successfully accessed the admin panel.
-- In the response, find the URL for deleting `carlos` (`/admin/delete?username=carlos`). Send the request to this endpoint to solve the lab.
+According to the JWS specification, only the `alg` header parameter is mandatory. In practice, however, JWT headers (also known as JOSE headers) often contain several other parameters. The following ones are of particular interest to attackers.
+
+- `jwk` (JSON Web Key) - Provides an embedded JSON object representing the key.
+- `jku` (JSON Web Key Set URL) - Provides a URL from which servers can fetch a set of keys containing the correct key.
+- `kid` (Key ID) - Provides an ID that servers can use to identify the correct key in cases where there are multiple keys to choose from. Depending on the format of the key, this may have a matching `kid` parameter.
+
+As we can see, these user-controllable parameters each tell the recipient server which key to use when verifying the signature. In this section, you'll learn how to exploit these to inject modified JWTs signed using your own arbitrary key rather than the server's secret.
+
+### Injecting self-signed JWTs via the jwk parameter
+
+The JSON Web Signature (JWS) specification describes an optional `jwk` header parameter, which servers can use to embed their public key directly within the token itself in JWK format.
+
+A JWK (JSON Web Key) is a standardized format for representing keys as a JSON object. You can see an example of this in the following JWT header:
+```json
+{
+    "kid": "ed2Nf8sb-sD6ng0-scs5390g-fFD8sfxG",
+    "typ": "JWT",
+    "alg": "RS256",
+    "jwk": {
+        "kty": "RSA",
+        "e": "AQAB",
+        "kid": "ed2Nf8sb-sD6ng0-scs5390g-fFD8sfxG",
+        "n": "yy1wpYmffgXBxhAUJzHHocCuJolwDqql75ZWuCQ_cb33K2vh9m"
+    }
+}
+```
+
+Ideally, servers should only use a limited whitelist of public keys to verify JWT signatures. However, misconfigured servers sometimes use any key that's embedded in the `jwk` parameter.
+
+You can exploit this behavior by signing a modified JWT using your own RSA private key, then embedding the matching public key in the `jwk` header.
+
+Although you can manually add or modify the `jwk` parameter in Burp, the [JWT Editor extension](https://portswigger.net/bappstore/26aaa5ded2f74beea19e2ed8345a93dd) provides a useful feature to help you test for this vulnerability:
+1. With the extension loaded, in Burp's main tab bar, go to the **JWT Editor Keys** tab.
+2. [Generate a new RSA key.](https://portswigger.net/burp/documentation/desktop/testing-workflow/session-management/jwts#adding-a-jwt-signing-key)
+3. Send a request containing a JWT to Burp Repeater.
+4. In the message editor, switch to the extension-generated **JSON Web Token** tab and [modify](https://portswigger.net/burp/documentation/desktop/testing-workflow/session-management/jwts#editing-jwts) the token's payload however you like.
+5. Click **Attack**, then select **Embedded JWK**. When prompted, select your newly generated RSA key.
+6. Send the request to test how the server responds.
+
 
 **Workflow:**
-1. after tampering with the JWT payload we have to generate a new RSA key to sign it
+1. after tampering with the JWT payload(invalid signature error tho) we have to generate a new RSA key to sign it
 	![](Pasted%20image%2020250219024828.png)
 2. we will use JWT editor for that
 	![](Pasted%20image%2020250219025217.png)
@@ -149,4 +175,12 @@ You can log in to your own account using the following credentials: `wiener:pet
 4. after attack SEND the request to see the results 
 	![](Pasted%20image%2020250219030603.png)
 		![](Pasted%20image%2020250219030712.png)
-	
+
+
+## 5. JKU header injection
+This lab uses a JWT-based mechanism for handling sessions. The server supports the `jku` parameter in the JWT header. However, it fails to check whether the provided URL belongs to a trusted domain before fetching the key.
+
+To solve the lab, forge a JWT that gives you access to the admin panel at `/admin`, then delete the user `carlos`.
+You can log in to your own account using the following credentials: `wiener:peter`
+
+**Analysis:**
