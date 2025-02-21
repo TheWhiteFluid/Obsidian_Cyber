@@ -282,8 +282,33 @@ You can log in to your own account using the following credentials: `wiener:pet
 4. Send the request and observe that you have successfully accessed the admin panel.
 	![](Pasted%20image%2020250221210537.png)
 
-### 6. Algorithm confusion
 
-EXPERT
+## 6. Algorithm confusion
 
-LABNot solved
+This lab uses a JWT-based mechanism for handling sessions. It uses a robust RSA key pair to sign and verify tokens. However, due to implementation flaws, this mechanism is vulnerable to algorithm confusion attacks.
+
+To solve the lab, first obtain the server's public key. This is exposed via a standard endpoint. Use this key to sign a modified session token that gives you access to the admin panel at `/admin`, then delete the user `carlos`.
+You can log in to your own account using the following credentials: `wiener:peter`
+
+**Analysis:**
+##### Obtain the server's public key
+1. In Burp Repeater, change the path to `/admin` and send the request. Observe that the admin panel is only accessible when logged in as the `administrator` user.
+2. In the browser, go to the standard endpoint `/jwks.json` and observe that the server exposes a JWK Set containing a single public key.
+3. Copy the JWK object from inside the `keys` array. Make sure that you don't accidentally copy any characters from the surrounding array.
+
+##### Generate a malicious signing key
+1. In Burp, go to the **JWT Editor Keys** tab in Burp's main tab bar. Click **New RSA Key**.
+2. In the dialog, make sure that the **JWK** option is selected, then paste the JWK that you just copied. Click **OK** to save the key.
+3. Right-click on the entry for the key that you just created, then select **Copy Public Key as PEM**. Use the **Decoder** tab to Base64 encode this PEM key, then copy the resulting string.
+4. Go back to the **JWT Editor Keys** tab in Burp's main tab bar. Click **New Symmetric Key**. In the dialog, click **Generate** to generate a new key in JWK format. Note that you don't need to select a key size as this will automatically be updated later.
+5. Replace the generated value for the k property with a Base64-encoded PEM that you just created. Save the key.
+
+##### Modify and sign the token
+1. Go back to the `GET /admin` request in Burp Repeater and switch to the extension-generated **JSON Web Token** tab.
+2. In the header of the JWT, change the value of the `alg` parameter to `HS256`. In the payload, change the value of the `sub` claim to `administrator`.
+3. At the bottom of the tab, click **Sign**, then select the symmetric key that you generated in the previous section.
+	Make sure that the **Don't modify header** option is selected, then click **OK**. The modified token is now signed using the server's public key as the secret key.
+4. Send the request and observe that you have successfully accessed the admin panel.
+
+
+**Workflow:**
