@@ -184,8 +184,7 @@ To solve the lab, forge a JWT that gives you access to the admin panel at `/adm
 You can log in to your own account using the following credentials: `wiener:peter`
 
 **Analysis:**
-#### Generate and upload a malicious JWK Set
-
+##### Generate and upload a malicious JWK Set
 1. In Burp Repeater, change the path to `/admin` and send the request. Observe that the admin panel is only accessible when logged in as the `administrator` user.
 2. Go to the **JWT Editor Keys** tab in Burp's main tab bar.
 3. Click **New RSA Key**.
@@ -215,7 +214,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 }
 ```
 
-#### Modify and sign the JWT
+##### Modify and sign the JWT
 
 1. Go back to the `GET /admin` request in Burp Repeater and switch to the extension-generated **JSON Web Token** message editor tab.
 2. In the header of the JWT, replace the current value of the `kid` parameter with the `kid` of the JWK that you uploaded to the exploit server.
@@ -249,3 +248,42 @@ You can log in to your own account using the following credentials: `wiener:pet
 
 Note:
 	If it doesn't work try to store the `jwk` as `jwk.json` file on the exploit server as it presented above 
+
+
+## 6. KID header path traversal
+This lab uses a JWT-based mechanism for handling sessions. In order to verify the signature, the server uses the `kid` parameter in JWT header to fetch the relevant key from its filesystem.
+
+To solve the lab, forge a JWT that gives you access to the admin panel at `/admin`, then delete the user `carlos`.
+You can log in to your own account using the following credentials: `wiener:peter`
+
+**Analysis:**
+##### Generate a suitable signing key
+1. In the lab, log in to your own account and send the post-login `GET /my-account` request to Burp Repeater. Change the path to `/admin` and send the request. Observe that the admin panel is only accessible when logged in as the `administrator` user.
+2. Go to the **JWT Editor Keys** tab in Burp's main tab bar and click **New Symmetric Key**. In the dialog, click **Generate** to generate a new key in JWK format. Note that you don't need to select a key size as this will automatically be updated later.
+3. Replace the generated value for the `k` property with a Base64-encoded null byte (`AA==`). *this is just a workaround because the JWT Editor extension won't allow you to sign tokens using an empty string.* Click **OK** to save the key.
+
+##### Modify and sign the JWT
+1. Go back to the `GET /admin` request in Burp Repeater and switch to the extension-generated **JSON Web Token** message editor tab.
+2. In the header of the JWT, change the value of the `kid` parameter to a path traversal sequence pointing to the `/dev/null` file:
+```
+../../../../../../../dev/null
+```
+3. In the JWT payload, change the value of the `sub` claim to `administrator`. At the bottom of the tab, click **Sign**, then select the symmetric key that you generated in the previous section.
+	Make sure that the **Don't modify header** option is selected, then click **OK**. The modified token is now signed using a null byte as the secret key.
+4. Send the request and observe that you have successfully accessed the admin panel.
+
+**Workflow:**
+1. Go to the **JWT Editor Keys** tab in Burp's main tab bar and click **New Symmetric Key**.
+	![](Pasted%20image%2020250221205856.png)
+2. Replace the generated value for the `k` property with a Base64-encoded null byte (that s because JWT Editor extension won't allow you to sign tokens using an empty string)
+	![](Pasted%20image%2020250221210108.png)
+3. In the header of the JWT, change the value of the `kid` parameter to a path traversal sequence pointing to the `/dev/null` file and **Sign** with the symmetric key that you generated in the previous section.
+	![](Pasted%20image%2020250221210240.png)
+4. Send the request and observe that you have successfully accessed the admin panel.
+	![](Pasted%20image%2020250221210537.png)
+
+### 6. Algorithm confusion
+
+EXPERT
+
+LABNot solved
