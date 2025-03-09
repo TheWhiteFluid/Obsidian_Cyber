@@ -1,12 +1,14 @@
 
-3.HTTP Host Header 
-4.Business logic
-5.Race Conditions
-6.OS command 
-7.NoSQL
-8.Request Smuggling 
-9.Web Sockets
-10.Insecure deserialization
+1.HTTP Host Header 
+2.Business logic
+3.Race Conditions
+4.OS command 
+5.NoSQL
+6.Web Sockets
+7.Request Smuggling 
+8.Insecure deserialization
+
+All recap and formatting
 
 ### Vulnerabilities 
 Repo: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.md

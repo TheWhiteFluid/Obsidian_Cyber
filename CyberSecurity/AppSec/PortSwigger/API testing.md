@@ -133,6 +133,7 @@ Analysis:
 ![[Pasted image 20241027000027.png]]
 ![[Pasted image 20241027000325.png]]
 
+
 # **5.Exploiting server-side parameter pollution in a REST URL**
 To solve the lab, log in as the `administrator` and delete `carlos`.
 
@@ -155,11 +156,9 @@ To solve the lab, log in as the `administrator` and delete `carlos`.
 1. Change the value of the username parameter from `../administrator` to `../%23`. Notice the `Invalid route` response.
 2. Incrementally add further `../` sequences until you reach `../../../../%23` Notice that this returns a `Not found` response. This indicates that you've navigated outside the API root.
 3. At this level, add some common API definition filenames to the URL path. For example, submit the following:
-	 `username=../../../../openapi.json%23
-    `
+	 `username=../../../../openapi.json%23`
     Notice that this returns an error message, which contains the following API endpoint for finding users:
     `/api/internal/v1/users/{username}/field/{field}`
-    
     Notice that this endpoint indicates that the URL path includes a parameter called `field`.
 
 ## Exploit the vulnerability

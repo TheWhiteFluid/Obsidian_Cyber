@@ -57,13 +57,13 @@ The application blocks input containing path traversal sequences. It then perfor
 3. Observe that the response contains the contents of the `/etc/passwd` file.
 
 Analysis:
-- if none of the above method are working, we will try to encode the relative path (once/twice)
+- if none of the above method is working, we will try to encode the relative path (once/twice)
 	![[Pasted image 20241013233650.png]]
 	![[Pasted image 20241013234033.png]]
 
+
 # **5. File path traversal, validation of start of path**
 This lab contains a [path traversal](https://portswigger.net/web-security/file-path-traversal) vulnerability in the display of product images.
-
 The application transmits the full file path via a request parameter, and validates that the supplied path starts with the expected folder.
 
 1. Use Burp Suite to intercept and modify a request that fetches a product image.

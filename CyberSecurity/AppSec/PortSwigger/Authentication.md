@@ -50,6 +50,7 @@ Analysis:
 	![[Pasted image 20241016181819.png]]
 - change username to carlos in order to reset his password
 	![[Pasted image 20241016182101.png]]
+
 # **3.** **Username enumeration via subtly different responses**
 This lab is subtly vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password, which can be found in the following wordlists:
 

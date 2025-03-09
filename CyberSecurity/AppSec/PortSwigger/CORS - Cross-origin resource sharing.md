@@ -199,7 +199,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 ```
 5. Click **View exploit**. Observe that the exploit works - you have landed on the log page and your API key is in the URL. Go back to the exploit server and click **Deliver exploit to victim**. Click **Access log**, retrieve and submit the victim's API key to complete the lab.
 
-Workflow:
+**Workflow**:
 1. Review the history and observe that your key is retrieved via an AJAX request to `/accountDetails`, and the response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS.
 	![](Pasted%20image%2020250307024846.png)
 2. Send the request to Burp Repeater, and resubmit it with the added header `Origin: http://subdomain.lab-id` where `lab-id` is the lab domain name. Observe that the origin is reflected in the `Access-Control-Allow-Origin` header, confirming that the CORS configuration allows access from arbitrary subdomains, both HTTPS and HTTP.
