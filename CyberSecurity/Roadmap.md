@@ -1,3 +1,0 @@
-PortSwigger labs(finish+recap)--> Network+ --> Offensive Pentest Path --> PenTest+
-
-to be continued...

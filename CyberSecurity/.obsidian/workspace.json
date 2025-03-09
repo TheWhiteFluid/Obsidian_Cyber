@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/CORS - Cross-origin resource sharing.md",
+                "file": "AppSec/PortSwigger/OAuth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CORS - Cross-origin resource sharing"
+              "title": "OAuth"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/CORS - Cross-origin resource sharing.md",
+                "file": "AppSec/PortSwigger/OAuth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of CORS - Cross-origin resource sharing"
+              "title": "Outline of OAuth"
             }
           }
         ],
@@ -169,19 +169,22 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
-    "AppSec/PortSwigger/JWTs.md",
-    "z.Screenshots/Pasted image 20250304114703.png",
-    "z.Screenshots/Pasted image 20250304113525.png",
-    "z.Screenshots/Pasted image 20250304113109.png",
-    "PenTest/Pasted image 20250304112751.png",
-    "PenTest/Pasted image 20250304113019.png",
-    "PenTest/Pasted image 20250304113230.png",
-    "PenTest/Pasted image 20250304112942.png",
-    "AppSec/PortSwigger/CORS - Cross-origin resource sharing.md",
-    "z.Screenshots/Pasted image 20250221195120.png",
-    "z.Screenshots/Pasted image 20250221200119.png",
-    "z.Screenshots/Pasted image 20250221200730.png",
     "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
+    "Pasted image 20250308033722.png",
+    "Pasted image 20250308033454.png",
+    "Pasted image 20250308032215.png",
+    "Pasted image 20250308032212.png",
+    "Pasted image 20250308032143.png",
+    "Pasted image 20250308032033.png",
+    "Pasted image 20250308032019.png",
+    "Pasted image 20250308031958.png",
+    "Pasted image 20250308031756.png",
+    "Pasted image 20250308031315.png",
+    "Additional Info/Writeups.md",
+    "AppSec/PortSwigger/CORS - Cross-origin resource sharing.md",
+    "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
+    "AppSec/PortSwigger/JWTs.md",
     "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/Access Control & IDOR.md",
     "AppSec/PortSwigger/Clickjacking.md",
@@ -199,11 +202,8 @@
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
     "AppSec/PortSwigger/WEB LLM(Large-Language-Model).md",
     "AppSec/PortSwigger/XEE - XML external entity injection.md",
-    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "Roadmap.md",
     "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/Desync.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP.2/Exploits/h2c smuggling.md",
     "PenTest/TryHackMe/Offensive",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",

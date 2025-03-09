@@ -1,6 +1,4 @@
 
-1.CORS - XSS finish
-2.OAuth
 3.HTTP Host Header 
 4.Business logic
 5.Race Conditions
