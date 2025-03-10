@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
+                "file": "AppSec/PortSwigger/OAuth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
+              "title": "OAuth"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
+                "file": "AppSec/PortSwigger/OAuth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0)Summary"
+              "title": "Outline of OAuth"
             }
           }
         ],
@@ -167,10 +168,21 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
-    "AppSec/PortSwigger/OAuth.md",
+    "Pasted image 20250310025720.png",
+    "Pasted image 20250310025405.png",
+    "Pasted image 20250310025225.png",
+    "Pasted image 20250310025048.png",
+    "Pasted image 20250310024807.png",
+    "Pasted image 20250310024651.png",
+    "Pasted image 20250310024535.png",
+    "Pasted image 20250310023745.png",
+    "Pasted image 20250310023212.png",
+    "Pasted image 20250310023045.png",
+    "Pasted image 20250310022018.png",
     "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
@@ -183,16 +195,6 @@
     "AppSec/PortSwigger/Authentication.md",
     "AppSec/PortSwigger/API testing.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
-    "z.Screenshots/Pasted image 20250308033722.png",
-    "z.Screenshots/Pasted image 20250308033454.png",
-    "z.Screenshots/Pasted image 20250308032215.png",
-    "z.Screenshots/Pasted image 20250308032212.png",
-    "z.Screenshots/Pasted image 20250308032143.png",
-    "z.Screenshots/Pasted image 20250308032033.png",
-    "z.Screenshots/Pasted image 20250308032019.png",
-    "z.Screenshots/Pasted image 20250308031958.png",
-    "z.Screenshots/Pasted image 20250308031756.png",
-    "z.Screenshots/Pasted image 20250308031315.png",
     "Additional Info/Writeups.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
     "AppSec/PortSwigger/Access Control & IDOR.md",
