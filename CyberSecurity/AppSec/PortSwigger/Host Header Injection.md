@@ -53,6 +53,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 	![](Pasted%20image%2020250310182806.png)
 	![](Pasted%20image%2020250310182844.png)
 
+
 # 2. Host header authentication bypass
 This lab makes an assumption about the privilege level of the user based on the HTTP Host header. To solve the lab, access the admin panel and delete the user `carlos`.
 

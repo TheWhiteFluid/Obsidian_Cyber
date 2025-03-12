@@ -11,12 +11,14 @@
             "id": "288bf5c8707cdcf9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250310021557.png"
+                "file": "AppSec/PortSwigger/Host Header Injection.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250310021557"
+              "icon": "lucide-file",
+              "title": "Host Header Injection"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -138,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250310021557.png",
+                "file": "AppSec/PortSwigger/Host Header Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250310021557"
+              "title": "Outline of Host Header Injection"
             }
           }
         ],
@@ -165,8 +168,9 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20250310021557.png",
     "AppSec/PortSwigger/Host Header Injection.md",
     "AppSec/PortSwigger/OAuth.md",
     "z.Screenshots/Pasted image 20250311152231.png",
@@ -202,7 +206,6 @@
     "AppSec/PortSwigger/WEB LLM(Large-Language-Model).md",
     "AppSec/PortSwigger/XEE - XML external entity injection.md",
     "Roadmap.md",
-    "AppSec/TryHackMe/Request Smuggling/Challenge - El Bandito.md",
     "PenTest/TryHackMe/Offensive",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
