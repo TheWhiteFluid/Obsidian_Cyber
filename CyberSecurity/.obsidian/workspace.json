@@ -11,14 +11,12 @@
             "id": "288bf5c8707cdcf9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/PortSwigger/OAuth.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20250310021557.png"
               },
-              "icon": "lucide-file",
-              "title": "OAuth"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250310021557"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -141,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/OAuth.md",
+                "file": "z.Screenshots/Pasted image 20250310021557.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OAuth"
+              "title": "Outline of Pasted image 20250310021557"
             }
           }
         ],
@@ -168,21 +165,21 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "288bf5c8707cdcf9",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "HTTP Host Header.md",
-    "Pasted image 20250311152231.png",
-    "Pasted image 20250311151941.png",
-    "Pasted image 20250311151840.png",
-    "Pasted image 20250311151643.png",
-    "Pasted image 20250311151511.png",
-    "Pasted image 20250311151043.png",
-    "Pasted image 20250311151006.png",
-    "Pasted image 20250311150907.png",
-    "Pasted image 20250310193943.png",
-    "Pasted image 20250310193231.png",
-    "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/PortSwigger/Host Header Injection.md",
     "AppSec/PortSwigger/OAuth.md",
+    "z.Screenshots/Pasted image 20250311152231.png",
+    "z.Screenshots/Pasted image 20250311151941.png",
+    "z.Screenshots/Pasted image 20250311151840.png",
+    "z.Screenshots/Pasted image 20250311151643.png",
+    "z.Screenshots/Pasted image 20250311151511.png",
+    "z.Screenshots/Pasted image 20250311151043.png",
+    "z.Screenshots/Pasted image 20250311151006.png",
+    "z.Screenshots/Pasted image 20250311150907.png",
+    "z.Screenshots/Pasted image 20250310193943.png",
+    "z.Screenshots/Pasted image 20250310193231.png",
+    "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
