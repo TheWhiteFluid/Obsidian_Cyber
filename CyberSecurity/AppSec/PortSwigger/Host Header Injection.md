@@ -146,11 +146,59 @@ To solve the lab, access the internal admin panel located in the `192.168.0.0/2
     `GET https://YOUR-LAB-ID.web-security-academy.net/`
 3. Notice that when you do this, modifying the Host header no longer causes your request to be blocked. Instead, you receive a timeout error. This suggests that the absolute URL is being validated instead of the Host header.
 4. Use Burp Collaborator to confirm that you can make the website's middleware issue requests to an arbitrary server in this way. For example, the following request will trigger an HTTP request to your Collaborator server:
-    `GET https://YOUR-LAB-ID.web-security-academy.net/ Host: BURP-COLLABORATOR-SUBDOMAIN`
+    `GET https://YOUR-LAB-ID.web-security-academy.net/ 
+    `Host: BURP-COLLABORATOR-SUBDOMAIN`
 5. Right-click and select **Insert Collaborator payload** to insert a Burp Collaborator subdomain where indicated in the request. Send the request containing the absolute URL to Burp Intruder.
 6. Go to **Intruder** and deselect **Update Host header to match target**. Use the Host header to scan the IP range `192.168.0.0/24` to identify the IP address of the admin interface. Send this request to Burp Repeater.
 7. In Burp Repeater, append `/admin` to the absolute URL in the request line and send the request. Observe that you now have access to the admin panel, including a form for deleting users. Change the absolute URL in your request to point to `/admin/delete`. Copy the CSRF token from the displayed response and add it as a query parameter to your request. Also add a `username` parameter containing `carlos`. The request line should now look like this but with a different CSRF token:
     `GET https://YOUR-LAB-ID.web-security-academy.net/admin/delete?csrf=QCT5OmPeAAPnyTKyETt29LszLL7CbPop&username=carlos`
 8. Copy the session cookie from the `Set-Cookie` header in the displayed response and add it to your request. Right-click on your request and select "Change request method". Burp will convert it to a `POST` request.
+
+**Workflow**:
+1. Send the `GET /` request that received a `200` response to Burp Repeater and study the lab's behavior. Observe that the website validates the Host header and blocks any requests in which it has been modified.
+	![](Pasted%20image%2020250312210232.png)
+2. Observe that you can also access the home page by supplying an absolute URL in the request line as follows; Notice that when you do this, modifying the Host header no longer causes your request to be blocked. Instead, you receive a timeout error. 
+	***This suggests that the absolute URL is being validated instead of the Host header**.*
+	![](Pasted%20image%2020250312210602.png)
+3.  Use Burp Collaborator to confirm that you can make the website's middleware issue requests to an arbitrary server in this way. For example, the following request will trigger an HTTP request to your Collaborator server:
+    `GET https://YOUR-LAB-ID.web-security-academy.net/ 
+    `Host: BURP-COLLABORATOR-SUBDOMAIN`
+	![](Pasted%20image%2020250312211023.png)
+
+4. Go to **Intruder** and deselect **Update Host header to match target**. Use the Host header to scan the IP range `192.168.0.0/24` to identify the IP address of the admin interface. Send this request to Burp Repeater.
+	![](Pasted%20image%2020250312211059.png)
+		![](Pasted%20image%2020250312211153.png)
+5. In Burp Repeater, append `/admin` to the absolute URL in the request line and send the request. Observe that you now have access to the admin panel, including a form for deleting users. Change the absolute URL in your request to point to `/admin/delete`. Copy the CSRF token from the displayed response and add it as a query parameter to your request. Also add a `username` parameter containing `carlos`. The request line should now look like this but with a different CSRF token:
+    ![](Pasted%20image%2020250312211307.png)
+    ![](Pasted%20image%2020250312211445.png)
+
+
+# 6. Host validation bypass via connection state attack
+This lab is vulnerable to routing-based SSRF via the Host header. Although the front-end server may initially appear to perform robust validation of the Host header, it makes assumptions about all requests on a connection based on the first request it receives.
+
+To solve the lab, exploit this behavior to access an internal admin panel located at `192.168.0.1/admin`, then delete the user `carlos`.
+
+**Analysis**:
+1. Send the `GET /` request to Burp Repeater. Make the following adjustments:
+    - Change the path to `/admin`.
+    - Change `Host` header to `192.168.0.1`.
+2. Send the request. Observe that you are simply redirected to the homepage. Duplicate the tab, then add both tabs to a new group. Select the first tab and make the following adjustments:
+    - Change the path back to `/`.
+    - Change the `Host` header back to `YOUR-LAB-ID.h1-web-security-academy.net`.
+3. Using the drop-down menu next to the **Send** button, change the send mode to **Send group in sequence (single connection)**. Change the `Connection` header to `keep-alive`. Send the sequence and check the responses. Observe that the second request has successfully accessed the admin panel.
+4. Study the response and observe that the admin panel contains an HTML form for deleting a given user. Make a note of the following details:
+    - The action attribute (`/admin/delete`)
+    - The name of the input (`username`)
+    - The `csrf` token.
+5. On the second tab in your group, use these details to replicate the request that would be issued when submitting the form. The result should look something like this; 
+```html
+POST /admin/delete HTTP/1.1 
+    Host: 192.168.0.1
+    Cookie: _lab=YOUR-LAB-COOKIE; session=YOUR-SESSION-COOKIE 
+    Content-Type: x-www-form-urlencoded 
+    Content-Length: CORRECT 
+    csrf=YOUR-CSRF-TOKEN&username=carlos
+```
+6. Send the requests in sequence down a single connection to solve the lab.
 
 **Workflow**:
