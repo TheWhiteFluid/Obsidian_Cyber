@@ -1,12 +1,10 @@
-
-1.HTTP Host Header - done
-2.Business logic
-3.Race Conditions
-4.OS command 
-5.NoSQL
-6.Web Sockets
-7.Request Smuggling 
-8.Insecure deserialization
+1. OS command 
+2. Web Sockets
+3. Request Smuggling 
+4. Insecure deserialization
+5. Business logic
+6. Race Conditions
+7. NoSQL 
 
 All recap and formatting
 

