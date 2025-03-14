@@ -205,18 +205,18 @@ POST /admin/delete HTTP/1.1
 1. Send the `GET /` request to Burp Repeater. Make the following adjustments:
     - Change the path to `/admin`.
     - Change `Host` header to `192.168.0.1`.
-	![](Pasted%20image%2020250314181912.png)
+	![](Pasted%20image%2020250314181912%201.png)
 2. Duplicate the tab, then add both tabs to a new group. Select the first tab and make the following adjustments:
     - Change the path back to `/`.
     - Change the `Host` header back to `YOUR-LAB-ID.h1-web-security-academy.net`
-    ![](Pasted%20image%2020250314182350.png)
+    ![](Pasted%20image%2020250314182350%201.png)
 3. Using the drop-down menu next to the **Send** button, change the send mode to **Send group in sequence (single connection)**. Change the `Connection` header to `keep-alive`. Send the sequence and check the responses. Observe that the second request has successfully accessed the admin panel.
-	![](Pasted%20image%2020250314182650.png)
+	![](Pasted%20image%2020250314182650%201.png)
 4.  Observe that the admin panel contains an HTML form for deleting a given user. Make a note of the following details:
     - The action attribute (`/admin/delete`)
     - The name of the input (`username`)
     - The `csrf` token.
-    ![](Pasted%20image%2020250314183206.png)
+    ![](Pasted%20image%2020250314183206%201.png)
 
 
 # 6. Password reset poisoning via dangling markup

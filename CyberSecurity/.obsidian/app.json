@@ -2,5 +2,6 @@
   "promptDelete": true,
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
-  "spellcheck": true
+  "spellcheck": true,
+  "alwaysUpdateLinks": true
 }

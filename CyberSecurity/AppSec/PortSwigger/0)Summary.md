@@ -1,4 +1,4 @@
-1. OS command 
+1. OS command - in progress
 2. Web Sockets
 3. Request Smuggling 
 4. Insecure deserialization
