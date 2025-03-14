@@ -11,12 +11,14 @@
             "id": "288bf5c8707cdcf9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250314183206.png"
+                "file": "AppSec/PortSwigger/OAuth.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250314183206"
+              "icon": "lucide-file",
+              "title": "OAuth"
             }
           }
         ]
@@ -138,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "z.Screenshots/Pasted image 20250314183206.png",
+                "file": "AppSec/PortSwigger/OAuth.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Pasted image 20250314183206"
+              "title": "Outline of OAuth"
             }
           }
         ],
@@ -165,18 +167,18 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "AppSec/PortSwigger/Host Injection.md",
+    "z.Screenshots/Pasted image 20250314183206.png",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
     "AppSec/PortSwigger/WEB LLM.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/PortSwigger/HOST Header Injection.md",
     "AppSec/PortSwigger/API testing.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
     "AppSec/PortSwigger/CORS.md",
     "AppSec/PortSwigger/0)Summary.md",
-    "z.Screenshots/Pasted image 20250314183206.png",
     "z.Screenshots/Pasted image 20250314182650.png",
     "z.Screenshots/Pasted image 20250314182646.png",
     "z.Screenshots/Pasted image 20250314182350.png",
