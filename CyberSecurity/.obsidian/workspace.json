@@ -11,14 +11,12 @@
             "id": "288bf5c8707cdcf9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AppSec/PortSwigger/HOST Header Injection.md",
-                "mode": "source",
-                "source": false
+                "file": "z.Screenshots/Pasted image 20250314183206.png"
               },
-              "icon": "lucide-file",
-              "title": "HOST Header Injection"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250314183206"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -141,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/HOST Header Injection.md",
+                "file": "z.Screenshots/Pasted image 20250314183206.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of HOST Header Injection"
+              "title": "Outline of Pasted image 20250314183206"
             }
           }
         ],
@@ -168,7 +165,7 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "288bf5c8707cdcf9",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
@@ -179,11 +176,11 @@
     "AppSec/PortSwigger/AccessControl & IDOR.md",
     "AppSec/PortSwigger/CORS.md",
     "AppSec/PortSwigger/0)Summary.md",
-    "Pasted image 20250314183206.png",
-    "Pasted image 20250314182650.png",
-    "Pasted image 20250314182646.png",
-    "Pasted image 20250314182350.png",
-    "Pasted image 20250314181912.png",
+    "z.Screenshots/Pasted image 20250314183206.png",
+    "z.Screenshots/Pasted image 20250314182650.png",
+    "z.Screenshots/Pasted image 20250314182646.png",
+    "z.Screenshots/Pasted image 20250314182350.png",
+    "z.Screenshots/Pasted image 20250314181912.png",
     "z.Screenshots/Pasted image 20250312211445.png",
     "z.Screenshots/Pasted image 20250312211307.png",
     "z.Screenshots/Pasted image 20250312211153.png",
