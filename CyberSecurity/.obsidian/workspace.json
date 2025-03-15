@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/OS Command.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OS Command"
+              "title": "0)Summary"
+            }
+          },
+          {
+            "id": "29c3020ba625371e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AppSec/PortSwigger/0)Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0)Summary"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -141,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/OS Command.md",
+                "file": "AppSec/PortSwigger/0)Summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OS Command"
+              "title": "Outline of 0)Summary"
             }
           }
         ],
@@ -168,20 +182,23 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "288bf5c8707cdcf9",
+  "active": "29c3020ba625371e",
   "lastOpenFiles": [
-    "AppSec/PortSwigger/Host Injection.md",
-    "Pasted image 20250315170556.png",
-    "Pasted image 20250315170505.png",
-    "Pasted image 20250315170423.png",
-    "Pasted image 20250315170346.png",
-    "Pasted image 20250315163915.png",
-    "Pasted image 20250315163318.png",
-    "Pasted image 20250315163237.png",
-    "Pasted image 20250315162953.png",
-    "Pasted image 20250315162831.png",
-    "Pasted image 20250315162657.png",
+    "AppSec/PortSwigger/WebSockets.md",
+    "Pasted image 20250315194728.png",
+    "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/OS Command.md",
+    "AppSec/PortSwigger/Host Injection.md",
+    "z.Screenshots/Pasted image 20250315170556.png",
+    "z.Screenshots/Pasted image 20250315170505.png",
+    "z.Screenshots/Pasted image 20250315170423.png",
+    "z.Screenshots/Pasted image 20250315170346.png",
+    "z.Screenshots/Pasted image 20250315163915.png",
+    "z.Screenshots/Pasted image 20250315163318.png",
+    "z.Screenshots/Pasted image 20250315163237.png",
+    "z.Screenshots/Pasted image 20250315162953.png",
+    "z.Screenshots/Pasted image 20250315162831.png",
     "AppSec/PortSwigger/HOST Header Injection.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
@@ -190,11 +207,9 @@
     "AppSec/PortSwigger/API testing.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
     "AppSec/PortSwigger/CORS.md",
-    "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
-    "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/JWTs.md",
     "AppSec/PortSwigger/File Upload.md",
     "AppSec/PortSwigger/CSRF.md",
@@ -204,7 +219,6 @@
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
-    "AppSec/PortSwigger/WEB Cache(deception).md",
     "PenTest/TryHackMe/Offensive",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
