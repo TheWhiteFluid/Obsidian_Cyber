@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/HOST Header Injection.md",
+                "file": "AppSec/PortSwigger/Host Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HOST Header Injection"
+              "title": "Host Injection"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/HOST Header Injection.md",
+                "file": "AppSec/PortSwigger/Host Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of HOST Header Injection"
+              "title": "Outline of Host Injection"
             }
           }
         ],
@@ -170,25 +170,28 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "Pasted image 20250315170556.png",
+    "Pasted image 20250315170505.png",
+    "Pasted image 20250315170423.png",
+    "Pasted image 20250315170346.png",
+    "Pasted image 20250315163915.png",
+    "Pasted image 20250315163318.png",
+    "Pasted image 20250315163237.png",
+    "Pasted image 20250315162953.png",
+    "Pasted image 20250315162831.png",
+    "Pasted image 20250315162657.png",
+    "Pasted image 20250315162622.png",
+    "AppSec/PortSwigger/OS Command.md",
+    "AppSec/PortSwigger/Host Injection.md",
+    "AppSec/PortSwigger/HOST Header Injection.md",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
     "AppSec/PortSwigger/WEB LLM.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/PortSwigger/HOST Header Injection.md",
     "AppSec/PortSwigger/API testing.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
     "AppSec/PortSwigger/CORS.md",
     "AppSec/PortSwigger/0)Summary.md",
-    "Pasted image 20250314183206.png",
-    "Pasted image 20250314182650.png",
-    "Pasted image 20250314182646.png",
-    "Pasted image 20250314182350.png",
-    "Pasted image 20250314181912.png",
-    "z.Screenshots/Pasted image 20250312211445.png",
-    "z.Screenshots/Pasted image 20250312211307.png",
-    "z.Screenshots/Pasted image 20250312211153.png",
-    "z.Screenshots/Pasted image 20250312211059.png",
-    "z.Screenshots/Pasted image 20250312211023.png",
     "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/SQL Injection.md",
     "AppSec/PortSwigger/Path Traversal.md",
@@ -203,8 +206,6 @@
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
     "AppSec/PortSwigger/WEB Cache(deception).md",
-    "AppSec/PortSwigger/XEE - XML external entity injection.md",
-    "Roadmap.md",
     "PenTest/TryHackMe/Offensive",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
