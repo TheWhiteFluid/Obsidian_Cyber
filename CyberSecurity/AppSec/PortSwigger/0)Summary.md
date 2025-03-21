@@ -1,10 +1,7 @@
-1. OS command - in progress
-2. Web Sockets
-3. Request Smuggling 
-4. Insecure deserialization
-5. Business logic
-6. Race Conditions
-7. NoSQL 
+1. Insecure deserialization - in progress
+2. Business logic
+3. Race Conditions
+4. NoSQL 
 
 All recap and formatting
 
@@ -37,9 +34,8 @@ Repo: https://github.com/CyberSecurityUP/OSCE3-Complete-Guide/blob/main/README.m
 26. [Understanding the HTTP Protocol](https://www.hackingarticles.in/understanding-http-protocol/)
 27. [Broken Authentication & Session Management](https://www.hackingarticles.in/comprehensive-guide-on-broken-authentication-session-management/)
 28. [Apache Log Poisoning through LFI](https://www.hackingarticles.in/apache-log-poisoning-through-lfi/)
-29. [Beginner’s Guide to SQL Injection (Part 1)](https://www.hackingarticles.in/beginner-guide-sql-injection-part-1/)
-30. [Boolean Based](https://www.hackingarticles.in/beginner-guide-sql-injection-boolean-based-part-2/)
-31. [How to Bypass SQL Injection Filter](https://www.hackingarticles.in/bypass-filter-sql-injection-manually/)
-32. [Form Based SQL Injection](https://www.hackingarticles.in/form-based-sql-injection-manually/)
-33. [Dumping Database using Outfile](https://www.hackingarticles.in/dumping-database-using-outfile/)
-34. [IDOR](https://www.hackingarticles.in/beginner-guide-insecure-direct-object-references/)
+29. [Boolean Based](https://www.hackingarticles.in/beginner-guide-sql-injection-boolean-based-part-2/)
+30. [How to Bypass SQL Injection Filter](https://www.hackingarticles.in/bypass-filter-sql-injection-manually/)
+31. [Form Based SQL Injection](https://www.hackingarticles.in/form-based-sql-injection-manually/)
+32. [Dumping Database using Outfile](https://www.hackingarticles.in/dumping-database-using-outfile/)
+33. [IDOR](https://www.hackingarticles.in/beginner-guide-insecure-direct-object-references/)

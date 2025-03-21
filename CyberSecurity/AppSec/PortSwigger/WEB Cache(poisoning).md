@@ -282,3 +282,5 @@ Analysis:
 This lab is susceptible to web cache poisoning, but only if you construct a complex exploit chain. A user visits the home page roughly once a minute and their language is set to English. To solve this lab, poison the cache with a response that executes `alert(document.cookie)` in the visitor's browser.
 
 https://www.youtube.com/watch?v=3fStGzXQ4EY
+
+To be continued..

