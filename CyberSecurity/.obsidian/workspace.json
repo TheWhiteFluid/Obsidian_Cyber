@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -198,9 +199,10 @@
   },
   "active": "864eace10088629b",
   "lastOpenFiles": [
+    "Untitled.md",
+    "AppSec/PortSwigger/Insecure deserialization.md",
     "Pasted image 20250315194728.png",
     "AppSec/PortSwigger/0)Summary.md",
-    "AppSec/PortSwigger/Insecure deserialization.md",
     "AppSec/PortSwigger/WebSockets.md",
     "z.Screenshots/Pasted image 20250321160148.png",
     "z.Screenshots/Pasted image 20250321155605.png",
@@ -212,7 +214,6 @@
     "z.Screenshots/Pasted image 20250321154242.png",
     "z.Screenshots/Pasted image 20250321154240 1.png",
     "z.Screenshots/Pasted image 20250321154240.png",
-    "z.Screenshots/Pasted image 20250321153508.png",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/OS Command.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
