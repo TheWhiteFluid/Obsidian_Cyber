@@ -196,8 +196,9 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "864eace10088629b",
   "lastOpenFiles": [
+    "Pasted image 20250315194728.png",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/Insecure deserialization.md",
     "AppSec/PortSwigger/WebSockets.md",
@@ -237,7 +238,6 @@
     "Additional Info/Writeups.md",
     "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
     "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
-    "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
