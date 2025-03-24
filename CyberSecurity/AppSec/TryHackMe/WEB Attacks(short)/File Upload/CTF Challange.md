@@ -4,8 +4,10 @@ kali IP address: 10.10.159.125
 # Recon 
 `nmap -sV(service) -sC(script) -oN(output) file  10.10.126.11` 
 	![](Pasted%20image%2020241112190313.png)
+
 `nikto -h http://10.10.126.11 | tee nikto.log (output)`
 	![](Pasted%20image%2020241112190816.png)
+
 `gobuster dir -u http://10.10.126.11 -w /root/Desktop/wordlists/dirb/big.txt -x php,sh,txt,cgi,html,js,css,py | tee gobuster.log(output)`
 	![](Pasted%20image%2020241112191526.png)
 

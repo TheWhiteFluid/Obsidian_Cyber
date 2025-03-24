@@ -9,7 +9,7 @@ WebSockets are a communication protocol that provides full-duplex communication 
 - Uses `ws://` (unencrypted) or `wss://` (encrypted) URI scheme
 - Operates on ports 80/443 by default, but can use any port
 
-	![](Pasted%20image%2020250315194728.png)
+	![](Pasted%20image%2020250315194728%201.png)
 
 ##  Vulnerabilities
 1. **Cross-Site WebSocket Hijacking (CSWSH)**

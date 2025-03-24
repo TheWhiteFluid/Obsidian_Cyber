@@ -13,44 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
+                "file": "AppSec/TryHackMe/WEB Attacks(short)/SSRF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
-            }
-          },
-          {
-            "id": "458831a728a04266",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0)Summary"
-            }
-          },
-          {
-            "id": "864eace10088629b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/PortSwigger/Insecure deserialization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Insecure deserialization"
+              "title": "SSRF"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5,
-    "collapsed": true
+    "width": 269.5
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -170,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/Insecure deserialization.md",
+                "file": "AppSec/TryHackMe/WEB Attacks(short)/SSRF.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Insecure deserialization"
+              "title": "Outline of SSRF"
             }
           }
         ],
@@ -197,12 +167,28 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "864eace10088629b",
+  "active": "de55c564cd05073b",
   "lastOpenFiles": [
-    "Untitled.md",
-    "AppSec/PortSwigger/Insecure deserialization.md",
-    "Pasted image 20250315194728.png",
+    "AppSec/TryHackMe/WEB Attacks(short)/IDOR Vulnerabilities.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/Authentication Bypass.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/File Upload/Methodology.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/File Upload/Filtering.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/File Upload/CTF Challange.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/File Upload/Bypass Server-side filtering.md",
+    "AppSec/TryHackMe/WEB Attacks(short)/File Upload/Bypass Client-side filtering.md",
     "AppSec/PortSwigger/0)Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
+    "Frameworks & Tools.md",
+    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/PHP Wrappers.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Wrappers.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Session Files.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/LFI2RCE - Log Poisoning.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/Exploits/Base Directory Breakouts.md",
+    "AppSec/PortSwigger/Insecure deserialization.md",
+    "z.Screenshots/Pasted image 20250315194728 1.png",
+    "Untitled.md",
+    "Pasted image 20250315194728.png",
     "AppSec/PortSwigger/WebSockets.md",
     "z.Screenshots/Pasted image 20250321160148.png",
     "z.Screenshots/Pasted image 20250321155605.png",
@@ -213,7 +199,6 @@
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
     "z.Screenshots/Pasted image 20250321154242.png",
     "z.Screenshots/Pasted image 20250321154240 1.png",
-    "z.Screenshots/Pasted image 20250321154240.png",
     "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/PortSwigger/OS Command.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
@@ -224,21 +209,6 @@
     "PenTest/CompTia",
     "DevSecOps/TryHackMe",
     "DevSecOps",
-    "AppSec/PortSwigger/WEB LLM.md",
-    "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/PortSwigger/API testing.md",
-    "AppSec/PortSwigger/CORS.md",
-    "AppSec/PortSwigger/SQL Injection.md",
-    "AppSec/PortSwigger/Path Traversal.md",
-    "AppSec/PortSwigger/OS Injection.md",
-    "AppSec/PortSwigger/JWTs.md",
-    "AppSec/PortSwigger/File Upload.md",
-    "AppSec/PortSwigger/CSRF.md",
-    "AppSec/PortSwigger/Clickjacking.md",
-    "AppSec/PortSwigger/Authentication.md",
-    "Additional Info/Writeups.md",
-    "AppSec/TryHackMe/Client-Side Attacks/XSS/Exploits/Reflected.md",
-    "PenTest/TryHackMe/ActiveDirectory/Persisting/through Tickets.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
