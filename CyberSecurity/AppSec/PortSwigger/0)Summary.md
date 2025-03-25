@@ -1,8 +1,7 @@
-1. Web Sockets - in progress
-2. Insecure deserialization
-3. Business logic
-4. Race Conditions
-5. NoSQL 
+1. Insecure deserialization - in progress
+2. Business logic
+3. Race Conditions
+4. NoSQL 
 
 All recap and formatting
 
