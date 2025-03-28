@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Additional Info/Writeups.md",
+                "file": "AppSec/PortSwigger/Insecure deserialization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Writeups"
+              "title": "Insecure deserialization"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Additional Info/Writeups.md",
+                "file": "AppSec/PortSwigger/Insecure deserialization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Writeups"
+              "title": "Outline of Insecure deserialization"
             }
           }
         ],
@@ -169,6 +169,7 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "Additional Info/Writeups.md",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
     "Additional Info/Linux • Shell.md",
     "PenTest/TryHackMe/IPS.md",
@@ -209,7 +210,6 @@
     "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
     "AppSec/PortSwigger/WEB Cache(poisoning).md",
-    "AppSec/PortSwigger/XSS - Cross Site Scripting.md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
