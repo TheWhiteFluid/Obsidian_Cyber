@@ -348,9 +348,19 @@ You can log in to your own account using the following credentials: `wiener:pet
 5. To solve the lab, Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie:
 
 **Workflow**:
-
-
-
+1. Log in to your own account and notice that the session cookie contains a serialized PHP object. Notice that the website references the file `/cgi-bin/libs/CustomTemplate.php`. Obtain the source code by submitting a request using the `.php~` backup file extension.
+	![](Pasted%20image%2020250328051555.png)
+	![](Pasted%20image%2020250328051732.png)
+2. In the source code, notice that the `__wakeup()` magic method for a `CustomTemplate` will create a new `Product` by referencing the `default_desc_type` and `desc` from the `CustomTemplate`.
+	![](Pasted%20image%2020250328052046.png)
+3. Also notice that the `DefaultMap` class has the `__get()` magic method, which will be invoked if you try to read an attribute that doesn't exist for this object. This magic method invokes `call_user_func()`, which will execute any function that is passed into it via the `DefaultMap->callback` attribute. The function will be executed on the `$name`, which is the non-existent attribute that was requested.
+	![](Pasted%20image%2020250328052759.png)
+4. You can exploit this gadget chain to invoke `exec(rm /home/carlos/morale.txt)` by passing in a `CustomTemplate` object where:
+    `CustomTemplate->default_desc_type = "rm /home/carlos/morale.txt"; CustomTemplate->desc = DefaultMap; DefaultMap->callback = "exec"`
+    
+    If you follow the data flow in the source code, you will notice that this causes the `Product` constructor to try and fetch the `default_desc_type` from the `DefaultMap` object. As it doesn't have this attribute, the `__get()` method will invoke the callback `exec()` method on the `default_desc_type`, which is set to our shell command.
+	![](Pasted%20image%2020250328053159.png)
+	Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie.
 
 
 # 9. Using PHAR deserialization to deploy a custom gadget chain (expert)
@@ -361,15 +371,23 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
 **Analysis**:
 1. Observe that the website has a feature for uploading your own avatar, which only accepts `JPG` images. Upload a valid `JPG` as your avatar. Notice that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
 2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension.
-3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes.
-4. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
-5. Notice that the website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file:
+3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
+4. Notice that the website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file:
     `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}`
-6. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
-    `class CustomTemplate {} class Blog {} $object = new CustomTemplate; $blog = new Blog; $blog->desc = '{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}'; $blog->user = 'user'; $object->template_file_path = $blog;`
-7. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). Alternatively, you can download our [ready-made one](https://github.com/PortSwigger/serialization-examples/blob/master/php/phar-jpg-polyglot.jpg).
-8. Upload this file as your avatar.
-9. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+5. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
+    ```php
+    class CustomTemplate {} 
+    class Blog {} 
+    $object = new CustomTemplate; 
+    $blog = new Blog; 
+    $blog->desc = '{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}'; 
+    $blog->user = 'user'; 
+    $object->template_file_path = $blog;
+    ```
+
+6. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). Alternatively, you can download our [ready-made one](https://github.com/PortSwigger/serialization-examples/blob/master/php/phar-jpg-polyglot.jpg).
+7. Upload this file as your avatar.
+8. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
 
 **Workflow**:
 

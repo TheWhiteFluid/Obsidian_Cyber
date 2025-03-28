@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,6 +170,12 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "Pasted image 20250328053159.png",
+    "Pasted image 20250328052759.png",
+    "Pasted image 20250328052046.png",
+    "Pasted image 20250328052036.png",
+    "Pasted image 20250328051732.png",
+    "Pasted image 20250328051555.png",
     "Additional Info/Writeups.md",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
     "Additional Info/Linux • Shell.md",
@@ -185,11 +192,6 @@
     "z.Screenshots/Pasted image 20250328033057.png",
     "z.Screenshots/Pasted image 20250328033010.png",
     "z.Screenshots/Pasted image 20250328032927.png",
-    "z.Screenshots/Pasted image 20250328032724.png",
-    "z.Screenshots/Pasted image 20250328032428.png",
-    "z.Screenshots/Pasted image 20250328032353.png",
-    "z.Screenshots/Pasted image 20250328012113.png",
-    "z.Screenshots/Pasted image 20250328012104.png",
     "AppSec/PortSwigger/Host Header Injection.md",
     "AppSec/PortSwigger/OS Command.md",
     "AppSec/PortSwigger/WebSockets.md",
@@ -209,7 +211,6 @@
     "AppSec/PortSwigger/WEB LLM.md",
     "AppSec/PortSwigger/SSTI - Server Side Template Injection.md",
     "AppSec/PortSwigger/SSRF - Server-side request forgery.md",
-    "AppSec/PortSwigger/WEB Cache(poisoning).md",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
     "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
     "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits",
