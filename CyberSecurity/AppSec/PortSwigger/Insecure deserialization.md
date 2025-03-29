@@ -349,17 +349,17 @@ You can log in to your own account using the following credentials: `wiener:pet
 
 **Workflow**:
 1. Log in to your own account and notice that the session cookie contains a serialized PHP object. Notice that the website references the file `/cgi-bin/libs/CustomTemplate.php`. Obtain the source code by submitting a request using the `.php~` backup file extension.
-	![](Pasted%20image%2020250328051555.png)
-	![](Pasted%20image%2020250328051732.png)
+	![](Pasted%20image%2020250328051555%201.png)
+	![](Pasted%20image%2020250328051732%201.png)
 2. In the source code, notice that the `__wakeup()` magic method for a `CustomTemplate` will create a new `Product` by referencing the `default_desc_type` and `desc` from the `CustomTemplate`.
-	![](Pasted%20image%2020250328052046.png)
+	![](Pasted%20image%2020250328052046%201.png)
 3. Also notice that the `DefaultMap` class has the `__get()` magic method, which will be invoked if you try to read an attribute that doesn't exist for this object. This magic method invokes `call_user_func()`, which will execute any function that is passed into it via the `DefaultMap->callback` attribute. The function will be executed on the `$name`, which is the non-existent attribute that was requested.
-	![](Pasted%20image%2020250328052759.png)
+	![](Pasted%20image%2020250328052759%201.png)
 4. You can exploit this gadget chain to invoke `exec(rm /home/carlos/morale.txt)` by passing in a `CustomTemplate` object where:
     `CustomTemplate->default_desc_type = "rm /home/carlos/morale.txt"; CustomTemplate->desc = DefaultMap; DefaultMap->callback = "exec"`
     
     If you follow the data flow in the source code, you will notice that this causes the `Product` constructor to try and fetch the `default_desc_type` from the `DefaultMap` object. As it doesn't have this attribute, the `__get()` method will invoke the callback `exec()` method on the `default_desc_type`, which is set to our shell command.
-	![](Pasted%20image%2020250328053159.png)
+	![](Pasted%20image%2020250328053159%201.png)
 	Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie.
 
 

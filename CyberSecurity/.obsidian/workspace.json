@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/AccessControl & IDOR.md",
+                "file": "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AccessControl & IDOR"
+              "title": "SQL Injections"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/AccessControl & IDOR.md",
+                "file": "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AccessControl & IDOR"
+              "title": "Outline of SQL Injections"
             }
           }
         ],
@@ -167,19 +167,22 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
-    "Pasted image 20250328053159.png",
-    "Pasted image 20250328052759.png",
-    "Pasted image 20250328052046.png",
-    "Pasted image 20250328052036.png",
-    "Pasted image 20250328051732.png",
-    "Pasted image 20250328051555.png",
-    "AppSec/TryHackMe/WEB(short)/File Upload/Methodology.md",
-    "AppSec/TryHackMe/WEB(short)/File Upload/Filtering.md",
-    "AppSec/TryHackMe/WEB(short)/File Upload/Bypass Server-side filtering.md",
-    "AppSec/TryHackMe/WEB(short)/File Upload/CTF Challange.md",
-    "AppSec/TryHackMe/WEB(short)/File Upload/Bypass Client-side filtering.md",
+    "z.Screenshots/Pasted image 20250328052046 1.png",
+    "OSCP.md",
+    "AppSec/PortSwigger/Insecure deserialization.md",
+    "AppSec/PortSwigger/AccessControl & IDOR.md",
+    "z.Screenshots/Pasted image 20250328053159 1.png",
+    "z.Screenshots/Pasted image 20250328052759 1.png",
+    "z.Screenshots/Pasted image 20250328052036 1.png",
+    "z.Screenshots/Pasted image 20250328051732 1.png",
+    "z.Screenshots/Pasted image 20250328051555 1.png",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Methodology.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Filtering.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Bypass Server-side filtering.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/CTF Challange.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Bypass Client-side filtering.md",
     "AppSec/TryHackMe/WEB(short)/SSRF.md",
     "AppSec/TryHackMe/WEB(short)/XSS.md",
     "AppSec/TryHackMe/WEB(short)/SQL Injections.md",
@@ -187,7 +190,7 @@
     "AppSec/TryHackMe/WEB(short)/Command Injection.md",
     "AppSec/TryHackMe/WEB(short)/Fundamentals-Frameworks.md",
     "AppSec/TryHackMe/WEB(short)/File Inclusion-Path traversal.md",
-    "AppSec/TryHackMe/WEB(short)/File Upload",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1",
     "AppSec/TryHackMe/WEB(short)/Authentication Bypass.md",
     "AppSec/TryHackMe/WEB(short)",
     "Additional Info/Powershell CLM Bypass Using Runspaces.md",
@@ -200,11 +203,8 @@
     "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
     "AppSec/TryHackMe/Server-Side Attacks/Command Injection.md",
     "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
-    "AppSec/TryHackMe/Client-Side Attacks/XSS/XSS.md",
-    "AppSec/PortSwigger/Insecure deserialization.md",
     "z.Screenshots/Pasted image 20250329123906.png",
     "z.Screenshots/Pasted image 20250326042154.png",
-    "AppSec/PortSwigger/Path Traversal.md",
     "z.Screenshots/Pasted image 20250328053159.png",
     "z.Screenshots/Pasted image 20250328052759.png",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload",
