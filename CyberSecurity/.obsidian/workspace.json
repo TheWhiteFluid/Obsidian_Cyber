@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
+                "file": "AppSec/PortSwigger/OS Injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Injections"
+              "title": "OS Injection"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
+                "file": "AppSec/PortSwigger/OS Injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL Injections"
+              "title": "Outline of OS Injection"
             }
           }
         ],
@@ -169,6 +169,13 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "AppSec/PortSwigger/OS Command.md",
+    "AppSec/PortSwigger/OS Injection.md",
+    "AppSec/PortSwigger/SQL Injection.md",
+    "AppSec/PortSwigger/WEB Cache(deception).md",
+    "AppSec/PortSwigger/WEB LLM.md",
+    "AppSec/PortSwigger/WebSockets.md",
+    "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
     "z.Screenshots/Pasted image 20250328052046 1.png",
     "OSCP.md",
     "AppSec/PortSwigger/Insecure deserialization.md",
@@ -197,12 +204,6 @@
     "Additional Info/Writeups.md",
     "AppSec/TryHackMe/Authentication/Authentication Bypass.md",
     "PDFs/Bug_bounty_tools.pdf",
-    "AppSec/TryHackMe/IDOR Vulnerabilities.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Inclusion-Path traversal.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Basic.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/Exploits/Blind.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Command Injection.md",
-    "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
     "z.Screenshots/Pasted image 20250329123906.png",
     "z.Screenshots/Pasted image 20250326042154.png",
     "z.Screenshots/Pasted image 20250328053159.png",
