@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "right": {
     "id": "a7ca32e1cb9c75d4",
@@ -169,6 +170,13 @@
   },
   "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "Pasted image 20250329143107.png",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
+    "AppSec/PortSwigger/Insecure Deserialization.md",
     "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
     "AppSec/PortSwigger/API testing.md",
@@ -179,7 +187,6 @@
     "AppSec/PortSwigger/File Upload.md",
     "AppSec/PortSwigger/JWTs.md",
     "AppSec/PortSwigger/Host Header Injection.md",
-    "AppSec/PortSwigger/Insecure Deserialization.md",
     "AppSec/PortSwigger/OAuth.md",
     "AppSec/PortSwigger/OS Injection.md",
     "AppSec/PortSwigger/OS Command.md",
@@ -195,12 +202,6 @@
     "z.Screenshots/Pasted image 20250328052036 1.png",
     "z.Screenshots/Pasted image 20250328051732 1.png",
     "z.Screenshots/Pasted image 20250328051555 1.png",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Methodology.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Bypass Server-side filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/CTF Challange.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1/Bypass Client-side filtering.md",
-    "AppSec/TryHackMe/WEB(short)/SSRF.md",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1",
     "AppSec/TryHackMe/WEB(short)",
     "PDFs/Bug_bounty_tools.pdf",
