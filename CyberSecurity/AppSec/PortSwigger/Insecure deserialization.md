@@ -331,6 +331,7 @@ You can log in to your own account using the following credentials: `wiener: pet
 
 
 # 8. Developing a custom gadget chain for PHP deserialization (expert)
+
 This lab uses a serialization-based session mechanism. By deploying a custom gadget chain, you can exploit its insecure deserialization to achieve remote code execution. To solve the lab, delete the `morale.txt` file from Carlos's home directory.
 
 You can log in to your own account using the following credentials: `wiener:peter`
@@ -340,8 +341,10 @@ You can log in to your own account using the following credentials: `wiener:pet
 2. In the source code, notice that the `__wakeup()` magic method for a `CustomTemplate` will create a new `Product` by referencing the `default_desc_type` and `desc` from the `CustomTemplate`.
 3. Also notice that the `DefaultMap` class has the `__get()` magic method, which will be invoked if you try to read an attribute that doesn't exist for this object. This magic method invokes `call_user_func()`, which will execute any function that is passed into it via the `DefaultMap->callback` attribute. The function will be executed on the `$name`, which is the non-existent attribute that was requested.
 4. You can exploit this gadget chain to invoke `exec(rm /home/carlos/morale.txt)` by passing in a `CustomTemplate` object where:
+
     `CustomTemplate->default_desc_type = "rm /home/carlos/morale.txt"; CustomTemplate->desc = DefaultMap; DefaultMap->callback = "exec"`
     If you follow the data flow in the source code, you will notice that this causes the `Product` constructor to try and fetch the `default_desc_type` from the `DefaultMap` object. As it doesn't have this attribute, the `__get()` method will invoke the callback `exec()` method on the `default_desc_type`, which is set to our shell command.
+    
 5. To solve the lab, Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie:
 
 **Workflow**:
@@ -359,42 +362,6 @@ You can log in to your own account using the following credentials: `wiener:pet
 	![](Pasted%20image%2020250328053159.png)
 	Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie.
 
-**Gadget chain code explanation:**
-```
-O:14:"CustomTemplate":2:{s:17:"default_desc_type";s:26:"rm /home/carlos/morale.txt";}
-```
-This means: "an Object of class CustomTemplate with 2 properties, the first is a string named 'default_desc_type' with value 'rm /home/carlos/morale.txt'"
-
-PHP has special functions called "magic methods" that automatically run during certain events:
-- `__construct()`: Runs when an object is created
-- `__wakeup()`: Runs when an object is deserialized
-- `__get()`: Runs when you try to access a property that doesn't exist
-- `__destruct()`: Runs when an object is destroyed
-
-```
-O:14:"CustomTemplate":2:{ s:17:"default_desc_type";s:26:"rm /home/carlos/morale.txt"; s:4:"desc";O:10:"DefaultMap":1:{ s:8:"callback";s:4:"exec"; } }
-```
-- **First Gadget - CustomTemplate**:
-    - When deserialized, its `__wakeup()` method runs. This method calls `build_product()` which  creates a new Product with the values of `default_desc_type` and `desc`
-- **Second Gadget - Product Constructor**:
-    - Product constructor tries to use `desc->default_desc_type`. But `desc` is a DefaultMap object, not a string and doesn't have a `default_desc_type` property
-- **Third Gadget - DefaultMap's __get Method**:
-    - When tries to access the non-existent `default_desc_type`, PHP calls DefaultMap's `__get("default_desc_type")` method.
-    - This method returns:  `call_user_func("exec", "rm /home/carlos/morale.txt");` which simply executes: `exec("rm /home/carlos/morale.txt");`
-	![](Pasted%20image%2020250329123906.png)
-
-The key insight is that when the Product constructor tries to use `desc->default_desc_type`, it triggers the DefaultMap's `__get()` method, which executes the callback function with the property name as an argument.
-
-s:17:"default_desc_type" --> s:26:"rm /home/carlos/morale.txt" 
-	default_desc_type = rm /home/carlos/morale.txt
-	
-s:4:"desc"; --> O:10:"DefaultMap" ({ s:8:"callback" --> s:4:"exec"; } } 
-	callback = exec
-
-desc(default_desc_type) => DefaultMap(default_desc_type) => exec(default_desc_type) =>
-exec(rm /home/carlos/morale.txt)
-
------------------------------------------------------------------------
 
 # 9. Using PHAR deserialization to deploy a custom gadget chain (expert)
 This lab does not explicitly use deserialization. However, if you combine `PHAR` deserialization with other advanced hacking techniques, you can still achieve remote code execution via a custom gadget chain.
@@ -417,34 +384,21 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
     $blog->user = 'user'; 
     $object->template_file_path = $blog;
     ```
+
 6. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). Alternatively, you can download our [ready-made one](https://github.com/PortSwigger/serialization-examples/blob/master/php/phar-jpg-polyglot.jpg).
-7. Upload this file as your avatar. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+7. Upload this file as your avatar.
+8. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
 
 **Workflow**:
-1. Observe that the website has a feature for uploading your own avatar, which only accepts `JPG` images. Upload a valid `JPG` as your avatar. Notice that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
-
-
-2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension.
-
-
-3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
-
-
-4. Notice that the website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file:
-    `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}`
 
 
 
 
 
-
-
-
-
-------------------------------------------------------
 # 10. Developing a custom gadget chain for Java deserialization (expert)
 This lab uses a serialization-based session mechanism. If you can construct a suitable gadget chain, you can exploit this lab's insecure deserialization to obtain the administrator's password.
 
 To solve the lab, gain access to the source code and use it to construct a gadget chain to obtain the administrator's password. Then, log in as the `administrator` and delete `carlos`You can log in to your own account using the following credentials: `wiener:peter`
 
-ref: https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
+
+https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
