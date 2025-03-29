@@ -1,5 +1,5 @@
 {
-  "promptDelete": true,
+  "promptDelete": false,
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
   "spellcheck": true,

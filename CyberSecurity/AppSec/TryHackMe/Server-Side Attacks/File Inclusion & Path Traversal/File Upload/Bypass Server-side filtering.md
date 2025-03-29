@@ -1,6 +1,6 @@
 ## File Extensions
  In the real world we wouldn't be able to see the code for this, but for this example, it will be included here:
-```php
+```
 <?php
     //Get the extension
     $extension = pathinfo($_FILES["fileToUpload"]["name"])["extension"];

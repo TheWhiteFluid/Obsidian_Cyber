@@ -138,7 +138,7 @@ You can log in to your own account using the following credentials: `wiener:pet
 
 2. Send the request to Burp Repeater, and resubmit it with the added header:
 `Origin: https://example.com` and observe that the origin is reflected in the `Access-Control-Allow-Origin` header.
-	![](Pasted%20image%2020250304113230.png)
+	![](Pasted%20image%2020250304113230%201.png)
 	
 3. In the browser, go to the exploit server and enter the following HTML, replacing `YOUR-LAB-ID` (which is reflected in host header) with your unique lab URL:
 	![](Pasted%20image%2020250304114703.png)
