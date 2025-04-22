@@ -13,44 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
+                "file": "AppSec/PortSwigger/Insecure Deserialization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0)Summary"
-            }
-          },
-          {
-            "id": "458831a728a04266",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/PortSwigger/0)Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0)Summary"
-            }
-          },
-          {
-            "id": "864eace10088629b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AppSec/PortSwigger/WebSockets.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "WebSockets"
+              "title": "Insecure Deserialization"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/PortSwigger/WebSockets.md",
+                "file": "AppSec/PortSwigger/Insecure Deserialization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of WebSockets"
+              "title": "Outline of Insecure Deserialization"
             }
           }
         ],
@@ -196,53 +167,53 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "864eace10088629b",
+  "active": "288bf5c8707cdcf9",
   "lastOpenFiles": [
+    "z.Screenshots/Pasted image 20250329152352.png",
     "z.Screenshots/Pasted image 20250329151403.png",
-    "z.Screenshots/Pasted image 20250329143107.png",
-    "z.Screenshots/Pasted image 20250329153454.png",
-    "z.Screenshots/Pasted image 20250329160737.png",
+    "AppSec/PortSwigger/Insecure Deserialization.md",
     "z.Screenshots/Pasted image 20250329161220.png",
+    "z.Screenshots/Pasted image 20250329161031.png",
     "z.Screenshots/Pasted image 20250329160957.png",
+    "z.Screenshots/Pasted image 20250329160737.png",
+    "z.Screenshots/Pasted image 20250329160650.png",
     "z.Screenshots/Pasted image 20250329160539.png",
+    "z.Screenshots/Pasted image 20250329160356.png",
     "z.Screenshots/Pasted image 20250329160215.png",
     "z.Screenshots/Pasted image 20250329160209.png",
-    "z.Screenshots/Pasted image 20250329153901.png",
-    "z.Screenshots/Pasted image 20250329161031.png",
-    "AppSec/PortSwigger/Insecure Deserialization.md",
-    "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
-    "AppSec/TryHackMe/Client-Side Attacks/XSS/XSS.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Inclusion-Path traversal.md",
-    "AppSec/TryHackMe/Server-Side Attacks/Command Injection.md",
-    "AppSec/TryHackMe/Authentication/Authentication Bypass.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Bypass Server-side filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Methodology.md",
-    "AppSec/TryHackMe/Server-Side Attacks/SSRF/SSRF.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/CTF Challange.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Bypass Client-side filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload",
-    "PenTest/TryHackMe/Network Security/Protocols & Servers/DNS.md",
-    "AppSec/OWASP/OWASP T10 - 2021.md",
-    "AppSec/OWASP/OWASP Top 10.md",
-    "AppSec/OWASP/OWASP Juice Shop.md",
-    "AppSec/OWASP",
-    "OSCP.md",
-    "AppSec/PortSwigger/Host Header Injection.md",
-    "AppSec/PortSwigger/OS Command.md",
-    "AppSec/PortSwigger/WebSockets.md",
-    "Cloud/Lateral Movement/EC2 Lateral Movement.md",
-    "PenTest/TryHackMe/Offensive",
-    "Cloud/Lateral Movement",
-    "DevSecOps/TryHackMe",
-    "PenTest/CompTia",
-    "DevSecOps",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Best Practices.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Update Proprieties.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Exploits/Object Injection.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Summary.md",
+    "AppSec/TryHackMe/Server-Side Attacks/Insecure Deserialisation/Automation/scripts (phpggc).md",
+    "AppSec/PortSwigger/0)Summary.md",
     "AppSec/PortSwigger/AccessControl & IDOR.md",
+    "AppSec/PortSwigger/API testing.md",
+    "AppSec/PortSwigger/Authentication.md",
+    "AppSec/PortSwigger/Clickjacking.md",
+    "AppSec/PortSwigger/CORS.md",
     "AppSec/PortSwigger/CSRF.md",
     "AppSec/PortSwigger/File Upload.md",
-    "AppSec/PortSwigger/Host Injection.md",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits",
-    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync",
-    "AppSec/TryHackMe/Request Smuggling/WebSockets/Exploits"
+    "AppSec/PortSwigger/JWTs.md",
+    "AppSec/PortSwigger/Host Header Injection.md",
+    "AppSec/PortSwigger/OAuth.md",
+    "AppSec/PortSwigger/OS Injection.md",
+    "AppSec/PortSwigger/OS Command.md",
+    "AppSec/PortSwigger/SQL Injection.md",
+    "AppSec/PortSwigger/WEB Cache(deception).md",
+    "AppSec/PortSwigger/WEB LLM.md",
+    "AppSec/PortSwigger/WebSockets.md",
+    "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
+    "OSCP.md",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1",
+    "AppSec/TryHackMe/WEB(short)",
+    "PDFs/Bug_bounty_tools.pdf",
+    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload",
+    "AppSec/OWASP",
+    "PenTest/TryHackMe/Offensive",
+    "PenTest/CompTia",
+    "DevSecOps/TryHackMe",
+    "DevSecOps",
+    "AppSec/TryHackMe/Request Smuggling/HTTP Browser Desync/Exploits"
   ]
 }
