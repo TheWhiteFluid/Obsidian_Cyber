@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
+                "file": "Frameworks & Tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Remotely Processes Creation"
+              "title": "Frameworks & Tools"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
+                "file": "Frameworks & Tools.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Remotely Processes Creation"
+              "title": "Outline of Frameworks & Tools"
             }
           }
         ],
@@ -182,12 +182,13 @@
       "share-to-notionnext:Share to NotionNext": false
     }
   },
-  "active": "de55c564cd05073b",
+  "active": "cc05a8994ddbb7b9",
   "lastOpenFiles": [
-    "PenTest/TryHackMe/ActiveDirectory/Enumerating",
-    "PenTest/TryHackMe/ActiveDirectory/Exploting",
-    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
     "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/Remotely Processes Creation.md",
+    "OSCP.md",
+    "PenTest/TryHackMe/ActiveDirectory/Enumerating -",
+    "PenTest/TryHackMe/ActiveDirectory/Exploiting -",
+    "PenTest/TryHackMe/ActiveDirectory/Lateral Movement and Pivoting/WMI(Windows Management Instrumentation).md",
     "PenTest/TryHackMe/Local Persistance/Login Screen & RDP/Utilman.md",
     "PenTest/TryHackMe/Local Persistance/Abusing Services/Creating backdoor services.md",
     "PenTest/TryHackMe/Privilege Escalation/Windows.zip",
@@ -228,7 +229,6 @@
     "AppSec/PortSwigger/CORS.md",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload 1",
     "AppSec/TryHackMe/WEB(short)",
-    "PDFs/Bug_bounty_tools.pdf",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload"
+    "PDFs/Bug_bounty_tools.pdf"
   ]
 }
