@@ -3,7 +3,7 @@ Mitigating the risks associated with insecure deserialisation is paramount in en
 ## Red Teamer / Pentester Perspective
 - **Codebase analysis**: Conduct a comprehensive review of the application's serialisation mechanisms. Identify potential points of deserialisation and serialisation throughout the codebase.
 - **Vulnerability identification**: Use static analysis tools to detect insecure deserialisation vulnerabilities. Look for improper input validation, insecure libraries, and outdated dependencies.
-- **Fuzzing and dynamic analysis**: Employ fuzzing techniques to generate invalid or unexpected input data. Use dynamic analysis tools to monitor the application's behaviour during runtime.
+- **Fuzzing and dynamic analysis**: Employ fuzzing techniques to generate invalid or unexpected input data. Use dynamic analysis tools to monitor the application's behavior during runtime.
 - **Error handling assessment**: Evaluate how the application handles errors during deserialisation. Look for potential error messages or stack traces that reveal system details.
 
 ## Secure Coder Perspective

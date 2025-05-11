@@ -286,13 +286,6 @@ echo $cookie;
 7. Construct a valid cookie containing this malicious object and sign it correctly using the secret key you obtained earlier. You can use the following PHP script to do this. Before running the script, you just need to make the following changes:
     - Assign the object you generated in PHPGGC to the `$object` variable.
     - Assign the secret key that you copied from the `phpinfo.php` file to the `$secretKey` variable.
-```php 
-<?php
-$object = "OBJECT-GENERATED-BY-PHPGGC";
-$secretKey = "LEAKED-SECRET-KEY-FROM-PHPINFO.PHP";
-$cookie = urlencode('{"token":"' . $object . '","sig_hmac_sha1":"' . hash_hmac('sha1', $object, $secretKey) . '"}');
-echo $cookie;
-```
 ![](Pasted%20image%2020250328012049.png)
 8. In Burp Repeater, replace your session cookie with the malicious one you just created, then send the request to solve the lab.
 	![](Pasted%20image%2020250328012113.png)
@@ -349,20 +342,69 @@ You can log in to your own account using the following credentials: `wiener:pet
 
 **Workflow**:
 1. Log in to your own account and notice that the session cookie contains a serialized PHP object. Notice that the website references the file `/cgi-bin/libs/CustomTemplate.php`. Obtain the source code by submitting a request using the `.php~` backup file extension.
-	![](Pasted%20image%2020250328051555.png)
-	![](Pasted%20image%2020250328051732.png)
+	![](Pasted%20image%2020250328051555%201.png)
+	![](Pasted%20image%2020250328051732%201.png)
 2. In the source code, notice that the `__wakeup()` magic method for a `CustomTemplate` will create a new `Product` by referencing the `default_desc_type` and `desc` from the `CustomTemplate`.
-	![](Pasted%20image%2020250328052046.png)
+	![](Pasted%20image%2020250328052046%201.png)
 3. Also notice that the `DefaultMap` class has the `__get()` magic method, which will be invoked if you try to read an attribute that doesn't exist for this object. This magic method invokes `call_user_func()`, which will execute any function that is passed into it via the `DefaultMap->callback` attribute. The function will be executed on the `$name`, which is the non-existent attribute that was requested.
-	![](Pasted%20image%2020250328052759.png)
+	![](Pasted%20image%2020250328052759%201.png)
 4. You can exploit this gadget chain to invoke `exec(rm /home/carlos/morale.txt)` by passing in a `CustomTemplate` object where:
     `CustomTemplate->default_desc_type = "rm /home/carlos/morale.txt"; CustomTemplate->desc = DefaultMap; DefaultMap->callback = "exec"`
     
     If you follow the data flow in the source code, you will notice that this causes the `Product` constructor to try and fetch the `default_desc_type` from the `DefaultMap` object. As it doesn't have this attribute, the `__get()` method will invoke the callback `exec()` method on the `default_desc_type`, which is set to our shell command.
-	![](Pasted%20image%2020250328053159.png)
+	![](Pasted%20image%2020250328053159%201.png)
 	Base64 and URL-encode the following serialized object, and pass it into the website via your session cookie.
 
+-----------------------------------------------------------------------
+**Gadget chain exploitation detailed:**
+Looking at the source code revealed we can see several important components:
+- **Custom Template Class**: Contains a constructor and magic method `__wakeup()` that builds a product
+- **Product Class**: Takes parameters from the CustomTemplate to build itself
+- **Description Class**: Defines HTML and text descriptions
+- **Default Map Class**: Contains a dangerous `__get()` method that executes callbacks
 
+PHP has special functions called "magic methods" that automatically run during certain events:
+- `__construct()`: Runs when an object is created
+- `__wakeup()`: Runs when an object is deserialized
+- `__get()`: Runs when you try to access a property that doesn't exist
+- `__destruct()`: Runs when an object is destroyed
+
+`O:14:"CustomTemplate":2:{s:17:"default_desc_type";s:26:"rm /home/carlos/morale.txt";s:4:"desc";O:10:"DefaultMap":1:{s:8:"callback";s:4:"exec";}}`
+
+This serialized object represents:
+- A CustomTemplate object with 2 properties
+- `default_desc_type` containing our shell command (rm /home/carlos...)
+- `desc` containing a DefaultMap object with its callback set to `exec`
+
+The vulnerability exists because of a "gadget chain" where multiple classes interact in a way that allows code execution:
+- When PHP deserializes the session cookie, it creates objects and calls magic methods
+- The `__wakeup()` method in CustomTemplate calls `build_product()`. This creates a new Product using `$this->default_desc_type` and `$this->desc`
+- If we can control these values, we can create a chain where:
+    - `default_desc_type` is our shell command (`rm /home/carlos/morale.txt`)
+    - `desc` is a DefaultMap object and DefaultMap's callback is set to `exec`
+
+1. **First Gadget - CustomTemplate**:
+- When deserialized, its `__wakeup()` method runs. This method calls `build_product()` which creates a new Product with the values of `default_desc_type` and `desc`.
+
+2. **Second Gadget - Product Constructor**:
+- Product constructor tries to use `desc->default_desc_type`; but `desc` is a DefaultMap object, not a string and doesn't have a `default_desc_type` property
+
+3. **Third Gadget - DefaultMap's __get Method**:
+- When it tries to access the non-existent `default_desc_type`, PHP calls DefaultMap's `__get("default_desc_type")` method (because does not not exist) which contains: `return call_user_func($this->callback, $name);`
+- This translates to: `call_user_func("exec", "rm /home/carlos/morale.txt");` which simply executes: `exec("rm /home/carlos/morale.txt");`
+
+![](Pasted%20image%2020250329143107.png)
+
+s:17:"default_desc_type" --> s:26:"rm /home/carlos/morale.txt" 
+	**'default_desc_type' = 'rm /home/carlos/morale.txt'** 
+	
+s:4:"desc"; --> O:10:"DefaultMap" ({ s:8:"callback" --> s:4:"exec"; }
+	**'desc' = 'DefaultMap'** object WHERE **'callback' = 'exec'**
+
+desc(default_desc_type) ==> DefaultMap(default_desc_type) == _ _get(default_desc_type)  ==> return(callback, default_desc_type) ==> return(exec, 'rm /home/carlos/morale.txt) ==> exec(rm /home/carlos/morale.txt)
+
+
+-----------------------------------------------------------------------
 # 9. Using PHAR deserialization to deploy a custom gadget chain (expert)
 This lab does not explicitly use deserialization. However, if you combine `PHAR` deserialization with other advanced hacking techniques, you can still achieve remote code execution via a custom gadget chain.
 
@@ -373,9 +415,11 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
 2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension.
 3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
 4. Notice that the website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file:
-    `{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}`
+    ```TWIG
+    {{_self.env.registerUndefinedFilterCallback("exec")}}  {{_self.env.getFilter("rm /home/carlos/morale.txt")}}
+    ```
 5. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
-    ```php
+    ```PHP
     class CustomTemplate {} 
     class Blog {} 
     $object = new CustomTemplate; 
@@ -384,21 +428,67 @@ To solve the lab, delete the `morale.txt` file from Carlos's home directory. Y
     $blog->user = 'user'; 
     $object->template_file_path = $blog;
     ```
-
 6. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). Alternatively, you can download our [ready-made one](https://github.com/PortSwigger/serialization-examples/blob/master/php/phar-jpg-polyglot.jpg).
-7. Upload this file as your avatar.
-8. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+7. Upload this file as your avatar. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+
+-----------------------------------------------------------------------
+PHP provides several URL-style wrappers that you can use for handling different protocols when accessing file paths. One of these is the `phar://` wrapper, which provides a stream interface for accessing PHP Archive (`.phar`) files.
+
+The PHP documentation reveals that `PHAR` manifest files contain serialized metadata. Crucially, if you perform any filesystem operations on a `phar://` stream, this metadata is implicitly deserialized. This means that a `phar://` stream can potentially be a vector for exploiting insecure deserialization, provided that you can pass this stream into a filesystem method.
+
+In the case of obviously dangerous filesystem methods, such as `include()` or `fopen()`, websites are likely to have implemented counter-measures to reduce the potential for them to be used maliciously. However, methods such as `file_exists()`, which are not so overtly dangerous, may not be as well protected.
+
+This technique also requires you to upload the `PHAR` to the server somehow. One approach is to use an image upload functionality, for example. If you are able to create a polyglot file, with a `PHAR` masquerading as a simple `JPG`, you can sometimes bypass the website's validation checks. If you can then force the website to load this polyglot "`JPG`" from a `phar://` stream, any harmful data you inject via the `PHAR` metadata will be deserialized. As the file extension is not checked when PHP reads a stream, it does not matter that the file uses an image extension.
+
+As long as the class of the object is supported by the website, both the `__wakeup()` and `__destruct()` magic methods can be invoked in this way, allowing you to potentially kick off a gadget chain using this technique.
+
 
 **Workflow**:
+1. Observe that the website has a feature for uploading your own avatar, which only accepts `JPG` images. Upload a valid `JPG` as your avatar. Notice that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
+	tried to upload a .png file and it is not accepted
+	![](Pasted%20image%2020250329151403.png)
+	browsing trough the web application posts I observed that .jpg extension is allowed
+	![](Pasted%20image%2020250329152409.png)
+	![](Pasted%20image%2020250329152733.png)
+	After upload a valid .jpg image i have noticed that it is loaded using `GET /cgi-bin/avatar.php?avatar=wiener`.
+	![](Pasted%20image%2020250329153454.png)
+2. In Burp Repeater, request `GET /cgi-bin` to find an index that shows a `Blog.php` and `CustomTemplate.php` file. Obtain the source code by requesting the files using the `.php~` backup extension. 
+	![](Pasted%20image%2020250329153714.png)
+3. Study the source code and identify the gadget chain involving the `Blog->desc` and `CustomTemplate->lockFilePath` attributes. Notice that the `file_exists()` filesystem method is called on the `lockFilePath` attribute.
+	`CustomTemplate.php` file:
+	![](Pasted%20image%2020250329153901.png)
+	`Blog.php` file:
+	![](Pasted%20image%2020250329154030.png)
+4. The website uses the Twig template engine. You can use deserialization to pass in an server-side template injection (SSTI) payload. Find a documented SSTI payload for remote code execution on Twig, and adapt it to delete Carlos's file. Write a some PHP for creating a `CustomTemplate` and `Blog` containing your SSTI payload:
+    ```PHP
+    class CustomTemplate {} 
+    class Blog {} 
+    $object = new CustomTemplate; 
+    $blog = new Blog; 
+    $blog->desc = '{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("rm /home/carlos/morale.txt")}}'; 
+    $blog->user = 'user'; 
+    $object->template_file_path = $blog;
+```
+	![](Pasted%20image%2020250329160215.png)
+5. Create a `PHAR-JPG` polyglot containing your PHP script. You can find several scripts for doing this online (search for "`phar jpg polyglot`"). 
+	We will use this repo:
+	https://github.com/kunte0/phar-jpg-polyglot
+	![](Pasted%20image%2020250329160356.png)
+	we have to edit the second php file from repo which is **phar_japg_polyglot.php** which our own php class exploit described above
+	![](Pasted%20image%2020250329160539.png)
+	![](Pasted%20image%2020250329160650.png)
+		![](Pasted%20image%2020250329160737.png)
+	we will run the full repo comand (**php.ini** + **phar_japg_polyglot.php**) to generate our polyglot jpg file with SSTI serialized exploit
+	![](Pasted%20image%2020250329160957.png)
+6. Upload this file as your avatar. In Burp Repeater, modify the request line to deserialize your malicious avatar using a `phar://` stream as follows:  `GET /cgi-bin/avatar.php?avatar=phar://wiener`
+	![](Pasted%20image%2020250329161031.png)
+	![](Pasted%20image%2020250329161220.png)
 
 
-
-
-
+-----------------------------------------------------------------------
 # 10. Developing a custom gadget chain for Java deserialization (expert)
 This lab uses a serialization-based session mechanism. If you can construct a suitable gadget chain, you can exploit this lab's insecure deserialization to obtain the administrator's password.
 
 To solve the lab, gain access to the source code and use it to construct a gadget chain to obtain the administrator's password. Then, log in as the `administrator` and delete `carlos`You can log in to your own account using the following credentials: `wiener:peter`
 
-
-https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
+ref: https://www.youtube.com/watch?v=O5FooPYSz1E&t=129s
