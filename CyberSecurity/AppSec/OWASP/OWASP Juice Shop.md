@@ -7,13 +7,19 @@ This task will be focusing on injection vulnerabilities. Injection vulnerabiliti
 | Email Injection   | Email injection is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields, which are not interpreted by the server correctly.        |
 	![[Pasted image 20240908022109.png]]
 
-	![[Pasted image 20240908022120.png]]
-
+![[Pasted image 20240908022120.png]]
+```
+' or 1=1--
+```
 Similar to what we did earlier, we will now log into Bender's account! Capture the login request again, but this time we will put: bender@juice-sh.op'-- as the email. 
 
 ![](https://i.imgur.com/1F1ufc3.png)
+```
+valid@email.com'--
+```
+Why don't we put the 1=1? Well, as the email address is valid (which will return true), we do not need to force it to be true. Thus we are able to use **'--** to bypass the login system. 
 
-Why don't we put the 1=1? Well, as the email address is valid (which will return true), we do not need to force it to be true. Thus we are able to use **'--** to bypass the login system. Note the **1=1** can be used when the email or username is not known or invalid.
+Note the **1=1** can be used when the email or username is not known or invalid.
 
 ## **Broken Authentication/.Brute force**
 In this task, we will look at exploiting authentication through different flaws. When talking about flaws within authentication, we include mechanisms that are vulnerable to manipulation. These mechanisms, listed below, are what we will be exploiting. 
@@ -26,10 +32,6 @@ We have used SQL Injection to log into the Administrator account but we still do
 	![[Pasted image 20240908025356.png]]
 
 For the payload, we will be using the `best1050.txt` from Seclists. (Which can be installed via: **apt-get install seclists**). Once the file is loaded into Burp, start the attack. You will want to filter for the request by status:
-- A failed request will receive a 401 Unauthorized   ![](https://i.imgur.com/HcUs6eW.png)
-
-- Whereas a successful request will return a 200 OK. ![](https://i.imgur.com/q5jcfIA.png)
-
 	![[Pasted image 20240908025935.png]]
 	![[Pasted image 20240908025951.png]]
 
@@ -57,7 +59,7 @@ Modern-day systems will allow for multiple users to have access to different pag
 When Broken Access Control exploits or bugs are found, it will be categorised into one of **two types**:
 
 - **Horizontal** Privilege Escalation: Occurs when a user can perform an action or access data of another user with the **same** level of permissions.
-- **Vertical** Privilege EscalationOccurs when a user can perform an action or access data of another user with a higher level of permissions.
+- **Vertical** Privilege Escalation: Occurs when a user can perform an action or access data of another user with a higher level of permissions.
 
 	![[Pasted image 20240908033517.png]]
 
@@ -76,7 +78,6 @@ This hints towards a page called “/#/administration” as can be seen by the a
 	![[Pasted image 20240908162722.png]]
 
 Now, we are going to change the number **1** after /basket/ to **2**. It will now show you the basket of UserID 2. You can do this for other UserIDs as well, provided that they have one.
-
 	![[Pasted image 20240908162811.png]]
 	![[Pasted image 20240908162815.png]]
 
@@ -93,7 +94,7 @@ We are using **iframe** which is a common HTML element found in many web appli
 
 It is common practice that the search bar will send a request to the server in which it will then send back the related information, but this is where the flaw lies. Without correct input sanitation, we are able to perform an XSS attack against the search bar.
 
-```
+```javascript
 <iframe src="javascript:alert(`xss`)">
 ```
 

