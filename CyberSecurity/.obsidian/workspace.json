@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
+                "file": "AppSec/OWASP/OWASP Top 10.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSRF + XXE"
+              "title": "OWASP Top 10"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
+                "file": "AppSec/OWASP/OWASP Top 10.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SSRF + XXE"
+              "title": "Outline of OWASP Top 10"
             }
           }
         ],
@@ -184,12 +184,15 @@
   },
   "active": "a0850f7fa75415de",
   "lastOpenFiles": [
+    "AppSec/OWASP/OWASP Juice Shop.md",
+    "AppSec/OWASP/OWASP T10 - 2021.md",
+    "AppSec/OWASP/OWASP Top 10.md",
+    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/Out-of-Band XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Exploits/In-Band XXE.md",
     "AppSec/TryHackMe/Injections/SQL/Exploits/Filter Evasion Techniques.md",
     "AppSec/TryHackMe/Injections/SQL/SQL Injections.md",
     "AppSec/PortSwigger/XEE - XML external entity injection.md",
-    "AppSec/TryHackMe/Injections/XEE/Exploits/SSRF + XXE.md",
     "AppSec/TryHackMe/Injections/XEE/Summary.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/Python - Jinja2.md",
     "AppSec/TryHackMe/Injections/SSTI/Exploits/PHP - Smarty.md",
@@ -217,9 +220,6 @@
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Inclusion-Path traversal.md",
     "AppSec/TryHackMe/Server-Side Attacks/Command Injection.md",
     "AppSec/TryHackMe/Authentication/Authentication Bypass.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Bypass Server-side filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Filtering.md",
-    "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload/Methodology.md",
     "AppSec/TryHackMe/Server-Side Attacks/File Inclusion & Path Traversal/File Upload",
     "PenTest/TryHackMe/Offensive",
     "Cloud/Lateral Movement",
